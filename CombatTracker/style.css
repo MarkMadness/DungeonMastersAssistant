@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+}
+
+body{
+    margin: 10px;
+    background-image: url("images/paper_texture.jpg");
+    background-color: rgb(241, 218, 143);
+    background-size: 1920px 1080px;
+}
+
+/*==================== Toolbar ====================*/
+
+#toolbar{
+    background-color: rgb(32, 32, 31);
+    width: 100%;
+    height: 100px;
+}
+
+/*-------------------- Main section container --------------------*/
+
+    #combat-tracker{
+        display: flex;
+        height: 80%;
+        width: 100%;
+        justify-content: center;
+    }
+
+/*==================== Profile Library ====================*/
+
+#profile-library{
+    background-color: rgb(245, 237, 210);
+    width: 25%;
+    height: 100%;
+    margin: 25px;
+    padding: 20px;
+}
+
+    #search-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+        input{
+            font-size: 14pt;
+        }
+
+    #library-list{
+        border: 2px black solid;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .profile{
+            border: 1px black dotted;
+            padding: 0 20px 0 20px;
+            margin: 1px 2px 1px 2px;
+        }
+
+/*==================== Combat Tracking ====================*/
+
+#tracking-section{
+    background-color: rgb(251, 249, 242);
+    width: 45%;
+    margin: 25px;
+    padding: 20px;
+}
+
+    .initiative-container{
+        border: 2px black solid;
+        width: 100%;
+    }
+
+        table{
+            width: 100%;
+        }
+
+            table td{
+                padding: 10px 20px 10px 20px;
+            }
+
+            table tr:nth-child(1){width: 10%;}
+            table tr:nth-child(2){width: 40%;}
+            table tr:nth-child(3){width: 25%;}
+            table tr:nth-child(4){width: 25%;}
+
+        table th{
+            padding: 6px;
+            font-size: 22pt;
+            color: white;
+            background-color: rgb(42, 42, 42);
+            
+        }
+
+        table tr{
+            padding: 4px;
+            font-size: 14pt;
+            color: black;
+            background-color: rgb(226, 226, 226);
+        }
+        
+        table tr:nth-child(even){
+            background-color: rgb(200,200,200);
+        }
+
+    #initiative-options{}
+
+/*==================== Profile Details ====================*/
+
+#profile-details{
+    background-color: rgb(245, 237, 210);
+    width: 25%;
+    height: 100%;
+    margin: 25px;
+    padding: 20px;
+}
+
+    #profile-library, #tracking-section, #profile-details{
+        box-shadow: 8px 4px 6px rgba(0,0,0,.5);
+    }
+
+/*-------------------- General --------------------*/
+
+.section-container{
+    border: 2px black solid;
+    width: 100%;
+    height: 94%;
+}
+
+h1{
+    font-size: 30pt;
+}
+
+h2{
+    font-size: 22pt;
+}
+
+h3{
+    font-size: 18pt;
+}
+
+p{
+    font-size: 14pt;
+}
