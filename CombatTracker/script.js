@@ -1,3 +1,12 @@
+// Fetches the monster information from the monsters.json file
+const monsters = fetch("./monsters.json").then(response => {
+    return response.json();
+}).then(data => console.log(data));
+
+// const monsterLibrary = JSON.parse(monsters);
+
+console.log(monsters[0]);
+
 var profiles = [
     {
         name: "Monster 1",
