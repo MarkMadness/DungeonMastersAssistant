@@ -1,0 +1,26 @@
+{"monsterLibrary":[
+    {
+        "ID": 0,
+        "Name": "template name",
+        "HitPoints": 1,
+        "ArmorClass": 0
+    },
+    {
+        "ID": 1,
+        "Name": "Monster 1",
+        "HitPoints": 15,
+        "ArmorClass": 20
+    },
+    {
+        "ID": 2,
+        "Name": "Monster 2",
+        "HitPoints": 15,
+        "ArmorClass": 20
+    },
+    {
+        "ID": 3,
+        "Name": "Monster 3",
+        "HitPoints": 15,
+        "ArmorClass": 20
+    }
+]}

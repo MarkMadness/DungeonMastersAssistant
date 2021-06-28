@@ -120,6 +120,26 @@ body{
         box-shadow: 8px 4px 6px rgba(0,0,0,.5);
     }
 
+        #library-list{
+            padding: 0;
+        }
+
+        .monster-profile{
+            list-style: none;
+            padding: 4px 20px 4px 20px;
+            font-size: 14pt;
+            background-color: rgb(235, 235, 235);
+        }
+
+        .monster-profile:nth-child(even){
+            background-color: rgb(210,210,210);
+        }
+
+        .monster-profile:hover{
+            background-color: rgb(179, 179, 179);
+            font-weight: bold;
+        }
+
 /*-------------------- General --------------------*/
 
 .section-container{
