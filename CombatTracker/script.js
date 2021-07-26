@@ -3,6 +3,7 @@
     // https://www.youtube.com/watch?v=Pb-8DzAObmg
 
 var monsters = {};
+var combatOrder = [];
 
 // Fetches the monster information from the monsters.json file
 fetch("./monsterLibrary.json")
@@ -33,28 +34,57 @@ let showData = function() {
 // }
 
 
-
+// Still working on adding an onclick event
 function populateLibrary() {
     for (let x=1;x<monstersLocal.length;x++) {
         let list = document.getElementById("library-list");
         let li = document.createElement("li");
         let div = document.createElement("div");
         li.classList.add("monster-profile");
+        //li.onclick.add("addToCombat");
         let text = document.createTextNode(monstersLocal[x].Name);
         li.appendChild(text);
         list.appendChild(li);
     }
 }
 
+// Will need to rework the logic for the parent forin loop
 function addToCombat(name) {
     console.log(name);
-    for(select in monstersLocal){
-        if(monstersLocal[select].Name == name || uniqueLocal[select].Name == name || playersLocal[select].Name == name){
-            populateCombatOrder(name);
+    for(select in monstersLocal) {
+        if(monstersLocal[select].Name == name) {
+            let creature = monstersLocal[select];
+            populateCombatOrder(creature);
             break;
-        } else{
-
+        } else if(uniqueLocal[select].Name == name) {
+            let creature = uniqueLocal[select];
+            populateCombatOrder(creature);
+            break;
+        } else if(playersLocal[select].Name == name) {
+            let creature = playersLocal[select];
+            populateCombatOrder(creature);
+            break;
+        } else {
+            console.log("Error >>> addToCombat() didn't work.");
         }
+    }
+}
+
+// Still working on this
+function populateCombatOrder(addedCreature){
+    combatOrder.push(addedCreature);
+    console.log(combatOrder);
+    for(creature in combatOrder){
+        let table = document.getElementById("combat-table");
+        let tr = document.createElement("tr");
+        let td = document.createElement("td");
+        //tr.classList.add("monster-profile");
+        let initiative = document.createTextNode("0");
+        let name = document.createTextNode(monstersLocal[x].Name);
+        let hitpoints = document.createTextNode(monstersLocal[x].HitPoints);
+        let armorclass = document.createTextNode(monstersLocal[x].ArmorClass);
+        tr.appendChild(name);
+        table.appendChild(li);
     }
 }
 
@@ -72,205 +102,6 @@ function selectCreature(id) {
 
 function populateDetails(monsterid) {
     console.log(monsterid);
-
+    
 }
-
-//=================================================================================================
-//=================================================================================================
-//=================================================================================================
-const monstersLocal = [
-    {
-        ID: 0,
-        Name: "template name",
-        Type: "Size type, alignment",
-        Source: "Monster Manual",
-        HitPoints: 1,
-        ArmorClass: [10, "natural armor"],
-        Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 10,
-        Constitution: 10,
-        Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [1, 200],
-        Traits: [],
-        Actions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        Description: "Description here"
-    },
-    {
-        ID: 1,
-        Name: "Aarakocra",
-        Type: "Medium humanoid(aarakocra), neutral good",
-        Source: "Monster Manual",
-        HitPoints: 13,
-        ArmorClass: [12, "natural armor"],
-        Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 14,
-        Constitution: 10,
-        Intelligence: 11,
-        Wisdom: 12,
-        Charisma: 11,
-        SavingThrows: [],
-        Skills: ["Perception +5"],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: ["passive Perception 15"],
-        Languages: ["Auran"],
-        Challenge: [.25, 50],
-        Traits: [
-            {
-                Title: "Dive Attack",
-                Desc: "If the aarakocra is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 (1d6) damage to the target"
-            }
-        ],
-        Actions: [
-            {
-                Title: "Talon",
-                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
-            },
-            {
-                Title: "Javelin",
-                Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage. "
-            }
-        ],
-        Reactions: [],
-        LegendaryActions: [],
-        Description: "Description here"
-    },
-    {
-        ID: 2,
-        Name: "Monster 2",
-        Type: "Size type, alignment",
-        Source: "Monster Manual",
-        HitPoints: 1,
-        ArmorClass: [12, "natural armor"],
-        Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 10,
-        Constitution: 10,
-        Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [1, 200],
-        Traits: [],
-        Actions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        Description: "Description here"
-    },
-    {
-        ID: 3,
-        Name: "Monster 3",
-        Type: "Size type, alignment",
-        Source: "Monster Manual",
-        HitPoints: 1,
-        ArmorClass: [12, "natural armor"],
-        Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 10,
-        Constitution: 10,
-        Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [1, 200],
-        Traits: [],
-        Actions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        Description: "Description here"
-    }
-];
-
-const uniqueLocal = [
-    {
-        ID: 0,
-        Name: "template name",
-        Type: "Size type, alignment",
-        Source: "Monster Manual",
-        HitPoints: 1,
-        ArmorClass: [10, "natural armor"],
-        Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 10,
-        Constitution: 10,
-        Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [1, 200],
-        Traits: [],
-        Actions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        Description: "Description here"
-    },
-];
-
-const playersLocal = [
-    {
-        ID: 0,
-        Name: "template name",
-        Type: "Size type, alignment",
-        Source: "Monster Manual",
-        HitPoints: 1,
-        ArmorClass: [10, "natural armor"],
-        Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 10,
-        Constitution: 10,
-        Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [1, 200],
-        Traits: [],
-        Actions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        Description: "Description here"
-    },
-];
+//#P = new paragragh

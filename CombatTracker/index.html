@@ -8,7 +8,12 @@
 </head>
 <body onload="populateLibrary()">
     <div id="toolbar">
-        
+        <div id="toolbar-top">
+
+        </div>
+        <div id="toolbar-bottom">
+
+        </div>
     </div>
 
     <div id='combat-tracker'>
@@ -32,8 +37,7 @@
         <div id='tracking-section'>
             <h1>Combat Order</h1>
             <div class="initiative-container">
-                <table cellspacing="0">
-                    <colgroup></colgroup>
+                <table cellspacing="0" id="combat-table">
                     <tr>
                         <th>Order</th>
                         <th>Name</th>
@@ -75,6 +79,7 @@
     </div>
 
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="monsters.js"></script>
     
 </body>
 </html>
