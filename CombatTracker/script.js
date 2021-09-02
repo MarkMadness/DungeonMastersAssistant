@@ -56,14 +56,6 @@ function addToCombat(name) {
             let creature = monstersLocal[select];
             populateCombatOrder(creature);
             break;
-        } else if(uniqueLocal[select].Name == name) {
-            let creature = uniqueLocal[select];
-            populateCombatOrder(creature);
-            break;
-        } else if(playersLocal[select].Name == name) {
-            let creature = playersLocal[select];
-            populateCombatOrder(creature);
-            break;
         } else {
             console.log("Error >>> addToCombat() didn't work.");
         }
@@ -91,11 +83,11 @@ function populateCombatOrder(addedCreature){
 function selectCreature(id) {
     console.log(id);
     for(select in monstersLocal){
-        if(monstersLocal[select].ID == id || uniqueLocal[select].ID == id || playersLocal[select].ID == id){
+        if(monstersLocal[select].ID == id){
             populateDetails(id);
             break;
-        } else{
-
+        } else {
+            
         }
     }
 }
