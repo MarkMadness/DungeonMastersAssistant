@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+
+#treasure-body{
+    
+}
+
+.main-header{
+    font-size: 42pt;
+    display: flex;
+    justify-content: center;
+}
+
+#gems-body{
+    /* display: flex;
+    justify-content: center; */
+}
+
+.gems{
+    display: flex;
+    justify-content: center;
+}
+
+.title, .label-row{
+    display: flex;
+    justify-content: center;
+    margin: 0 100px 0 100px;
+}
+    .label-row h2{
+        padding: 10px 110px 0 110px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .textbox{
+        margin: 10px 50px 10px 50px;
+    }
+
+    #gems-area{
+        font-size: 12pt;
+    }
+
+    .textbox{
+        height: 120px;
+        width: 400px;
+        border: 1px solid black;
+    }
+
+button{
+    padding: 6px;
+    font-size: 12pt;
+    margin: 8px;
+    background-color: rgb(80, 169, 247);
+}
+
+button:hover{
+    background-color: rgb(173, 217, 255);
+}

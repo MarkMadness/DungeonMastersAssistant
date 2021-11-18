@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure</title>
+    <link rel='stylesheet' href='treasure.css'
+</head>
+<body>
+    <div id='treasure-body'>
+        <h1 class='main-header'>Treasure Rewards in Soul of Denethor!</h1>
+        <div id='gems-body'>
+            <h1 class='title'>Gems</h1>
+            <div class=gems>
+                <!-- <button onclick="gemSelect('common')">Common Gems</button>
+                <button onclick="gemSelect('uncommon')">Uncommon Gems</button>
+                <button onclick="gemSelect('rare')">Rare Gems</button>
+                <button onclick="gemSelect('very rare')">Very Rare Gems</button> -->
+
+                <button onclick="commonSelect()">Common Gems</button>
+                <button onclick="uncommonSelect()">Uncommon Gems</button>
+                <button onclick="rareSelect()">Rare Gems</button>
+                <button onclick="veryRareSelect()">Very Rare Gems</button>
+            </div>
+            <div class='gems'>
+                <textarea id='gems-area' rows='12' cols='80'></textarea>
+            </div>
+
+        </div>
+
+        <div id='common-magical-items-body'>
+            <h1 class='title'>Finding Magical Items</h1>
+            <div class='label-row'>
+                <button onclick='magicalItemsSelect()'>Magical Item</button>
+            </div>
+            <div class='label-row'>
+                <h2>Echo Shards</h2>
+                <h2>Minor Cities</h2>
+                <h2>Major Cities</h2>
+            </div>
+            <div class='label-row'>
+                <div id='echoshards' class='textbox'></div>
+                <div id='minorcities' class='textbox'></div>
+                <div id='majorcities' class='textbox'></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src='treasure.js'></script>
+</html>
