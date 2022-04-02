@@ -380,10 +380,12 @@ const monstersLocal = [
         ],
         LairActions: [],
         Description: "Description here"
-    },
-    // Unique monsters & bosses
+    }
+];
+
+const uniqueLocal = [
     {
-        ID: 10000,
+        ID: 0,
         Name: "template name",
         Type: "Size type, alignment",
         Source: "Monster Manual",
@@ -412,9 +414,11 @@ const monstersLocal = [
         LegendaryActions: [],
         Description: "Description here"
     },
-    // Players & Non players
+];
+
+const playersLocal = [
     {
-        ID: 1000000,
+        ID: 0,
         Name: "template name",
         Type: "Size type, alignment",
         Source: "Monster Manual",
@@ -441,5 +445,5 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         Description: "Description here"
-    }
+    },
 ];

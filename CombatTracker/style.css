@@ -3,7 +3,7 @@
 }
 
 body{
-    margin: 10px;
+    margin: 5px;
     background-image: url("images/paper_texture.jpg");
     background-color: rgb(241, 218, 143);
     background-size: 1920px 1080px;
@@ -19,20 +19,20 @@ body{
 
 /*-------------------- Main section container --------------------*/
 
-#combat-tracker{
-    display: flex;
-    height: 82%;
-    width: 100%;
-    justify-content: center;
-}
+    #combat-tracker{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
 
 /*==================== Profile Library ====================*/
 
 #profile-library{
     background-color: rgb(245, 237, 210);
-    width: 25%;
+    width: 20%;
     height: 100%;
-    margin: 25px;
+    margin: 10px;
     padding: 20px;
 }
 
@@ -63,7 +63,8 @@ body{
 #tracking-section{
     background-color: rgb(251, 249, 242);
     width: 45%;
-    margin: 25px;
+    height: 100%;
+    margin: 10px;
     padding: 20px;
 }
 
@@ -108,15 +109,15 @@ body{
 
 /*==================== Profile Details ====================*/
 
-#profile-details{
+#profile-details-container{
     background-color: rgb(245, 237, 210);
     width: 25%;
     height: 100%;
-    margin: 25px;
+    margin: 10px;
     padding: 20px;
 }
 
-    #profile-library, #tracking-section, #profile-details{
+    #profile-library, #tracking-section, #profile-details-container{
         box-shadow: 8px 4px 6px rgba(0,0,0,.5);
     }
 
@@ -137,7 +138,7 @@ body{
 
         .monster-profile:hover{
             background-color: rgb(179, 179, 179);
-            /* font-weight: bold; */
+            font-weight: bold;
         }
 
 /*-------------------- General --------------------*/

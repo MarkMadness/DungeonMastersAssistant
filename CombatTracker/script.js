@@ -5,95 +5,114 @@
 var monsters = {};
 var combatOrder = [];
 
-// Fetches the monster information from the monsters.json file
-fetch("./monsterLibrary.json")
-    .then(function(response) {
-        return response.json();
-    }).then(function(data) {
-        console.log(data);
-        monsters = data;
-        showData();
-    });
-
-let showData = function() {
-    for (monster in monsters){
-        console.log(monsters[monster]);
-    }
-    // populateLibrary();
-}
-
-// function populateLibrary() {
-//     for (let x = 1;x < monsters.length;x++) {
-//         console.log("populateLibrary: " + monsters[x]);
-//         let list = document.getElementById("library-list");
-//         let div = document.createElement("div");
-//         let text = document.createTextNode(monsters[profile].Name);
-//         div.appendChild(text);
-//         list.appendChild(div);
+// // Fetches the monster information from the monsters.json file
+// fetch("./monsterLibrary.json")
+//     .then(function(response) {
+//         return response.json();
+//     }).then(function(data) {
+//         console.log(data);
+//         monsters = data;
+//         showData();
+//     });
+//
+// let showData = function() {
+//     for (monster in monsters){
+//         console.log(monsters[monster]);
 //     }
 // }
 
-
-// Still working on adding an onclick event
 function populateLibrary() {
     for (let x=1;x<monstersLocal.length;x++) {
         let list = document.getElementById("library-list");
         let li = document.createElement("li");
         let div = document.createElement("div");
         li.classList.add("monster-profile");
-        //li.onclick.add("addToCombat");
+        let onclickName = "addToCombat('" + monstersLocal[x].Name + "')";
+        li.setAttribute("onclick", onclickName);
         let text = document.createTextNode(monstersLocal[x].Name);
         li.appendChild(text);
         list.appendChild(li);
     }
+    console.log("populateLibrary() worked!!!");
 }
 
 // Will need to rework the logic for the parent forin loop
 function addToCombat(name) {
-    console.log(name);
+    console.log("name = " + name);
     for(select in monstersLocal) {
         if(monstersLocal[select].Name == name) {
             let creature = monstersLocal[select];
             populateCombatOrder(creature);
-            break;
-        } else {
-            console.log("Error >>> addToCombat() didn't work.");
         }
     }
 }
 
-// Still working on this
+function removeFromCombat() {
+
+}
+
 function populateCombatOrder(addedCreature){
-    combatOrder.push(addedCreature);
-    console.log(combatOrder);
-    for(creature in combatOrder){
-        let table = document.getElementById("combat-table");
-        let tr = document.createElement("tr");
-        let td = document.createElement("td");
-        //tr.classList.add("monster-profile");
-        let initiative = document.createTextNode("0");
-        let name = document.createTextNode(monstersLocal[x].Name);
-        let hitpoints = document.createTextNode(monstersLocal[x].HitPoints);
-        let armorclass = document.createTextNode(monstersLocal[x].ArmorClass);
-        tr.appendChild(name);
-        table.appendChild(li);
-    }
+    let creatureInit = 0;
+    let creatureName = addedCreature.Name;
+    let creatureHP = addedCreature.HitPoints;
+    let creatureAC = addedCreature.ArmorClass[0];
+    let creatureArray = [creatureInit, creatureName, creatureHP, creatureAC]
+    combatOrder.push(creatureArray);
+    console.log("combatOrder[0] = " + combatOrder[0]);
+    console.log("combatOrder = " + combatOrder);
+    let table = document.getElementById("combat-table");
+    let tr = document.createElement("tr");
+    let tdInit = document.createElement("td");
+    let tdName = document.createElement("td");
+    let tdHP = document.createElement("td");
+    let tdAC = document.createElement("td");
+    let tdX = document.createElement("td");
+    // nodes for addedCreature
+    let initiative = document.createTextNode("0");
+    let name = document.createTextNode(addedCreature.Name);
+    let hitpoints = document.createTextNode(addedCreature.HitPoints + "/" + addedCreature.HitPoints);
+    let armorclass = document.createTextNode(addedCreature.ArmorClass[0]);
+    let X = document.createTextNode("X")
+    // onClick appends
+    let onclickInit = "changeInit('" + creatureInit + "')";
+    tdInit.setAttribute("onclick", onclickInit);
+    let onclickName = "selectCreature('" + creatureName + "')";
+    tdName.setAttribute("onclick", onclickName);
+    let onclickHP = "changeHP('" + creatureHP + "')";
+    tdHP.setAttribute("onclick", onclickHP);
+    let onclickX = "removeFromCombat()";
+    tdX.setAttribute("onclick", onclickX);
+    // Append to cells
+    tdInit.appendChild(initiative);
+    tdName.appendChild(name);
+    tdHP.appendChild(hitpoints);
+    tdHP.className = "hitPoints";
+    tdAC.appendChild(armorclass);
+    tdX.appendChild(X);
+    // Append to rows
+    tr.appendChild(tdInit);
+    tr.appendChild(tdName);
+    tr.appendChild(tdHP);
+    tr.appendChild(tdAC);
+    tr.appendChild(tdX);
+    // Append to table
+    table.appendChild(tr);
 }
 
-function selectCreature(id) {
-    console.log(id);
+function selectCreature(name) {
+    console.log(name);
     for(select in monstersLocal){
-        if(monstersLocal[select].ID == id){
-            populateDetails(id);
+        if(monstersLocal[select].Name == name){
+            populateDetails(name);
             break;
-        } else {
-            
+        } else{
+
         }
     }
 }
 
-function populateDetails(monsterid) {
-    console.log(monsterid);
+function populateDetails(creatureName) {
+    console.log(creatureName);
     
 }
 //#P = new paragragh
