@@ -19,12 +19,12 @@ body{
 
 /*-------------------- Main section container --------------------*/
 
-    #combat-tracker{
-        display: flex;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-    }
+#combat-tracker{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
 
 /*==================== Profile Library ====================*/
 
@@ -75,6 +75,7 @@ body{
 
         table{
             width: 100%;
+            table-layout: fixed;
         }
 
             table td{
@@ -87,11 +88,11 @@ body{
             table tr:nth-child(4){width: 25%;}
 
         table th{
-            padding: 6px;
-            font-size: 22pt;
+            padding: 6px 6px 6px 15px;
+            font-size: 18pt;
             color: white;
             background-color: rgb(42, 42, 42);
-            
+            text-align: left;
         }
 
         table tr{
@@ -140,6 +141,10 @@ body{
             background-color: rgb(179, 179, 179);
             font-weight: bold;
         }
+
+    #profile-content{
+        display: block;
+    }
 
 /*-------------------- General --------------------*/
 

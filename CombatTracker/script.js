@@ -47,10 +47,6 @@ function addToCombat(name) {
     }
 }
 
-function removeFromCombat() {
-
-}
-
 function populateCombatOrder(addedCreature){
     let creatureInit = 0;
     let creatureName = addedCreature.Name;
@@ -99,6 +95,13 @@ function populateCombatOrder(addedCreature){
     table.appendChild(tr);
 }
 
+function changeInit() {
+    // GET the initial combat order int and store it in var initOrder
+    // Generate a popup window with initOrder in an input window, arrows up and down, and a checkmark box
+    // On the ENTER key down or click on checkmark box, set the selected row's order to the new number
+    // do something for reorganizing the table
+}
+
 function selectCreature(name) {
     console.log(name);
     for(select in monstersLocal){
@@ -111,8 +114,18 @@ function selectCreature(name) {
     }
 }
 
-function populateDetails(creatureName) {
-    console.log(creatureName);
-    
+function changeHP() {
+    // GET the current and total HP ints and assign to var currentHP and var totalHP
+    // generate a popup window with input window, arrows up and down, and a checkmark box
+    // On the ENTER kwy down or click on checkmark box, subtract or add the input value to curentHP and return the new value to the table
 }
+
+function removeFromCombat() {
+    // 
+}
+
+function populateDetails(creatureName) {
+    console.log(creatureName);   
+}
+
 //#P = new paragragh
