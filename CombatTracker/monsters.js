@@ -1,7 +1,7 @@
 const monstersLocal = [
     {
         ID: 0,
-        Name: "template name",
+        Name: "template",
         Type: "Size type, alignment",
         Source: "Monster Manual",
         HitPoints: 1,
@@ -233,7 +233,7 @@ const monstersLocal = [
         Name: "Planetar",
         Type: "Size type, alignment",
         Source: "Monster Manual",
-        HitPoints: 1,
+        HitPoints: 200,
         ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
@@ -284,7 +284,7 @@ const monstersLocal = [
         Name: "Solar",
         Type: "Size type, alignment",
         Source: "Monster Manual",
-        HitPoints: 1,
+        HitPoints: 243,
         ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
