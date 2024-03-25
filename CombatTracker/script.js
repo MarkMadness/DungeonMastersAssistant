@@ -49,6 +49,19 @@
             }
         }
     }
+
+    function removeFromCombat(creatureID) {
+        // TODO removes specific creature from the combatOrder array. Need to reload the table. 
+            // Have to build reloadCombatOrder()
+        console.log('removeFromCombat + ' + creatureID);
+        for(let x = 0;x<combatOrder.length;x++){
+            if (combatOrder[x][0] == creatureID)
+            {
+                combatOrder.splice(x, 1);
+            }
+        }
+        console.log("combatOrder = " + combatOrder);
+    }
     
     function populateCombatOrder(addedCreature){
         idCount++;
@@ -62,7 +75,59 @@
         let creatureArray = [creatureID, creatureInit, creatureName, currentHP, creatureHPTotal, creatureAC]
         combatOrder.push(creatureArray);
         // console.log("combatOrder[0] = " + combatOrder[0]);
-        console.log("combatOrder = " + combatOrder);
+        //console.log("combatOrder = " + combatOrder);
+
+        reloadCombatOrder(combatOrder);
+        // // Create elements for table row
+        // let table = document.getElementById("combat-table");
+        // let tr = document.createElement("tr");
+        // let tdInit = document.createElement("td");
+        // let tdName = document.createElement("td");
+        // let tdHP = document.createElement("td");
+        // let tdAC = document.createElement("td");
+        // let tdX = document.createElement("td");
+
+        // // nodes for addedCreature
+        // let initiative = document.createTextNode("0"); // will need to add a function like RollForInitiative() to handle initiatives. Maybe even auto for NPCs, manual for PCs
+        // let name = document.createTextNode(creatureName);
+        // let hitpoints = document.createTextNode(currentHP + "/" + creatureHPTotal);
+        // let armorclass = document.createTextNode(creatureAC);
+        // let X = document.createTextNode("X")
+        // // onClick appends
+        // let onclickInit = "changeInit('" + creatureInit + "')";
+        // tdInit.setAttribute("onclick", onclickInit);
+        // let onclickName = "selectCreature('" + creatureName + "')";
+        // tdName.setAttribute("onclick", onclickName);
+        // let onclickHP = "changeHP('" + currentHP + "/" + creatureHPTotal + "/" + creatureID + "')";
+        // tdHP.setAttribute("onclick", onclickHP);
+        // let onclickX = 'removeFromCombat("' + creatureID + '")';
+        // tdX.setAttribute("onclick", onclickX);
+        // // Append to cells
+        // tdInit.appendChild(initiative);
+        // tdName.appendChild(name);
+        // tdHP.appendChild(hitpoints);
+        // tdHP.className = "hitPoints";
+        // tdAC.appendChild(armorclass);
+        // tdX.appendChild(X);
+        // // Append to rows
+        // tr.setAttribute('id', creatureID);
+        // tr.appendChild(tdInit);
+        // tr.appendChild(tdName);
+        // tr.appendChild(tdHP);
+        // tr.appendChild(tdAC);
+        // tr.appendChild(tdX);
+        // // Append to table
+        // table.appendChild(tr);
+    }
+
+    function reloadCombatOrder(tableRows) {
+        // TODO: work on condition below to remove previous table if there is a table currently in combat order that needs updating
+        // delete rows of table by id
+        let tableEl = document.getElementById("combat-table");
+        console.log('tableEl = ' + JSON.stringify(tableEl)); //returns as {} no matter how many rows are in combatOrder
+        if (tableRows.length > 1){
+
+        }
 
         // Create elements for table row
         let table = document.getElementById("combat-table");
@@ -72,38 +137,53 @@
         let tdHP = document.createElement("td");
         let tdAC = document.createElement("td");
         let tdX = document.createElement("td");
+        let X = document.createTextNode("X");
 
-        // nodes for addedCreature
-        let initiative = document.createTextNode("0"); // will need to add a function like RollForInitiative() to handle initiatives. Maybe even auto for NPCs, manual for PCs
-        let name = document.createTextNode(creatureName);
-        let hitpoints = document.createTextNode(currentHP + "/" + creatureHPTotal);
-        let armorclass = document.createTextNode(creatureAC);
-        let X = document.createTextNode("X")
-        // onClick appends
-        let onclickInit = "changeInit('" + creatureInit + "')";
-        tdInit.setAttribute("onclick", onclickInit);
-        let onclickName = "selectCreature('" + creatureName + "')";
-        tdName.setAttribute("onclick", onclickName);
-        let onclickHP = "changeHP('" + currentHP + "/" + creatureHPTotal + "/" + creatureID + "')";
-        tdHP.setAttribute("onclick", onclickHP);
-        let onclickX = 'removeFromCombat("' + creatureID + '")';
-        tdX.setAttribute("onclick", onclickX);
-        // Append to cells
-        tdInit.appendChild(initiative);
-        tdName.appendChild(name);
-        tdHP.appendChild(hitpoints);
-        tdHP.className = "hitPoints";
-        tdAC.appendChild(armorclass);
-        tdX.appendChild(X);
-        // Append to rows
-        tr.setAttribute('id', creatureID);
-        tr.appendChild(tdInit);
-        tr.appendChild(tdName);
-        tr.appendChild(tdHP);
-        tr.appendChild(tdAC);
-        tr.appendChild(tdX);
-        // Append to table
-        table.appendChild(tr);
+        for(let i = 0; i < tableRows.length;i++){
+            console.log(tableRows);
+            // instantiate values for creture from array index
+            let rowID = tableRows[i][0];
+            let rowInit = tableRows[i][1];
+            let rowName = tableRows[i][2];
+            let rowHP = tableRows[i][3];
+            let rowHPTotal = tableRows[i][4];
+            let rowAC = tableRows[i][5];
+
+            // nodes for addedCreature
+            let initiative = document.createTextNode(rowInit); // will need to add a function like RollForInitiative() to handle initiatives. Maybe even auto for NPCs, manual for PCs
+            let name = document.createTextNode(rowName);
+            let hitpoints = document.createTextNode(rowHP + "/" + rowHPTotal);
+            let armorclass = document.createTextNode(rowAC);
+
+            // onClick appends
+            let onclickInit = "changeInit('" + rowInit + "')";
+            tdInit.setAttribute("onclick", onclickInit);
+            let onclickName = "selectCreature('" + rowName + "')";
+            tdName.setAttribute("onclick", onclickName);
+            let onclickHP = "changeHP('" + rowHP + "/" + rowHPTotal + "/" + rowID + "')";
+            tdHP.setAttribute("onclick", onclickHP);
+            let onclickX = 'removeFromCombat("' + rowID + '")';
+            tdX.setAttribute("onclick", onclickX);
+
+            // Append to cells
+            tdInit.appendChild(initiative);
+            tdName.appendChild(name);
+            tdHP.appendChild(hitpoints);
+            tdHP.className = "hitPoints";
+            tdAC.appendChild(armorclass);
+            tdX.appendChild(X);
+
+            // Append to rows
+            tr.setAttribute('id', rowID);
+            tr.setAttribute('class', 'combatRow');
+            tr.appendChild(tdInit);
+            tr.appendChild(tdName);
+            tr.appendChild(tdHP);
+            tr.appendChild(tdAC);
+            tr.appendChild(tdX);
+            // Append to table
+            table.appendChild(tr);
+        }
     }
     
     function changeInit() {
@@ -179,19 +259,6 @@
 
             modal.style.display = "none";
         }
-    }
-    
-    function removeFromCombat(creatureID) {
-        // TODO removes specific creature from the combatOrder array. Need to reload the table. 
-            // May have to rewrite populateCombatOrder. Maybe have two separate functions of 'populateCombatOrder' and addCombatOrder'
-        console.log('removeFromCombat + ' + creatureID);
-        for(let x = 0;x<combatOrder.length;x++){
-            if (combatOrder[x][0] == creatureID)
-            {
-                combatOrder.splice(x, 1);
-            }
-        }
-        console.log("combatOrder = " + combatOrder);
     }
     
     function populateDetails(creatureName) {
