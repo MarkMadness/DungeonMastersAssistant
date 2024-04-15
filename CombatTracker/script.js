@@ -51,22 +51,22 @@
     }
 
     function removeFromCombat(creatureID) {
-        // TODO removes specific creature from the combatOrder array. Need to reload the table. 
-            // Have to build reloadCombatOrder()
-        console.log('removeFromCombat + ' + creatureID);
+        let remove = false;
         for(let x = 0;x<combatOrder.length;x++){
             if (combatOrder[x][0] == creatureID)
             {
                 combatOrder.splice(x, 1);
             }
         }
-        console.log("combatOrder = " + combatOrder);
+        if (!combatOrder[1]){
+            remove = true;
+        }
+        reloadCombatOrder(combatOrder, remove);
     }
     
     function populateCombatOrder(addedCreature){
         idCount++;
         let creatureID = idName + idCount;
-        // console.log('creatureID = ' + creatureID);
         let creatureInit = 0;
         let creatureName = addedCreature.Name;
         currentHP = addedCreature.HitPoints;
@@ -74,73 +74,68 @@
         let creatureAC = addedCreature.ArmorClass[0];
         let creatureArray = [creatureID, creatureInit, creatureName, currentHP, creatureHPTotal, creatureAC]
         combatOrder.push(creatureArray);
-        // console.log("combatOrder[0] = " + combatOrder[0]);
-        //console.log("combatOrder = " + combatOrder);
 
-        reloadCombatOrder(combatOrder);
-        // // Create elements for table row
-        // let table = document.getElementById("combat-table");
-        // let tr = document.createElement("tr");
-        // let tdInit = document.createElement("td");
-        // let tdName = document.createElement("td");
-        // let tdHP = document.createElement("td");
-        // let tdAC = document.createElement("td");
-        // let tdX = document.createElement("td");
-
-        // // nodes for addedCreature
-        // let initiative = document.createTextNode("0"); // will need to add a function like RollForInitiative() to handle initiatives. Maybe even auto for NPCs, manual for PCs
-        // let name = document.createTextNode(creatureName);
-        // let hitpoints = document.createTextNode(currentHP + "/" + creatureHPTotal);
-        // let armorclass = document.createTextNode(creatureAC);
-        // let X = document.createTextNode("X")
-        // // onClick appends
-        // let onclickInit = "changeInit('" + creatureInit + "')";
-        // tdInit.setAttribute("onclick", onclickInit);
-        // let onclickName = "selectCreature('" + creatureName + "')";
-        // tdName.setAttribute("onclick", onclickName);
-        // let onclickHP = "changeHP('" + currentHP + "/" + creatureHPTotal + "/" + creatureID + "')";
-        // tdHP.setAttribute("onclick", onclickHP);
-        // let onclickX = 'removeFromCombat("' + creatureID + '")';
-        // tdX.setAttribute("onclick", onclickX);
-        // // Append to cells
-        // tdInit.appendChild(initiative);
-        // tdName.appendChild(name);
-        // tdHP.appendChild(hitpoints);
-        // tdHP.className = "hitPoints";
-        // tdAC.appendChild(armorclass);
-        // tdX.appendChild(X);
-        // // Append to rows
-        // tr.setAttribute('id', creatureID);
-        // tr.appendChild(tdInit);
-        // tr.appendChild(tdName);
-        // tr.appendChild(tdHP);
-        // tr.appendChild(tdAC);
-        // tr.appendChild(tdX);
-        // // Append to table
-        // table.appendChild(tr);
+        reloadCombatOrder(combatOrder, false);
     }
 
-    function reloadCombatOrder(tableRows) {
-        // TODO: work on condition below to remove previous table if there is a table currently in combat order that needs updating
+    function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         // delete rows of table by id
-        let tableEl = document.getElementById("combat-table");
-        console.log('tableEl = ' + JSON.stringify(tableEl)); //returns as {} no matter how many rows are in combatOrder
-        if (tableRows.length > 1){
+        let table = document.getElementById("combat-table");
+        let container = document.getElementById("initiative-container");
+        
+        if (tableRows.length > 1 || removeFromCombatCondition == true){
+            table.remove();
 
+            let tbl = document.createElement("table");
+            tbl.setAttribute('cellspacing', 0);
+            tbl.setAttribute('id', "combat-table");
+            let hRow = document.createElement("tr");
+            let thOne = document.createElement("th");
+                thOne.setAttribute('width', '50px');
+            let thTwo = document.createElement("th");
+                thTwo.setAttribute('width', '275px');
+            let thThree = document.createElement("th");
+                thThree.setAttribute('width', '75px');
+            let thFour = document.createElement("th");
+                thFour.setAttribute('width', '75px');
+            let thFive = document.createElement("th");
+                thFive.setAttribute('width', '50px');
+
+            let textOne = document.createTextNode("#");
+            let textTwo = document.createTextNode("Name");
+            let textThree = document.createTextNode("HP");
+            let textFour = document.createTextNode("AC");
+            let textFive = document.createTextNode("X");
+
+            thOne.appendChild(textOne);
+            thTwo.appendChild(textTwo);
+            thThree.appendChild(textThree);
+            thFour.appendChild(textFour);
+            thFive.appendChild(textFive);
+
+            hRow.appendChild(thOne);
+            hRow.appendChild(thTwo);
+            hRow.appendChild(thThree);
+            hRow.appendChild(thFour);
+            hRow.appendChild(thFive);
+
+            tbl.appendChild(hRow);
+            container.appendChild(tbl);
         }
 
-        // Create elements for table row
-        let table = document.getElementById("combat-table");
-        let tr = document.createElement("tr");
-        let tdInit = document.createElement("td");
-        let tdName = document.createElement("td");
-        let tdHP = document.createElement("td");
-        let tdAC = document.createElement("td");
-        let tdX = document.createElement("td");
-        let X = document.createTextNode("X");
-
+        // Create element for new table so for loop below can function. 
+        let tableNew = document.getElementById("combat-table");
+        
         for(let i = 0; i < tableRows.length;i++){
-            console.log(tableRows);
+            // Create elements for table row
+            let tr = document.createElement("tr");
+            let tdInit = document.createElement("td");
+            let tdName = document.createElement("td");
+            let tdHP = document.createElement("td");
+            let tdAC = document.createElement("td");
+            let tdX = document.createElement("td");
+            let X = document.createTextNode("X");
+
             // instantiate values for creture from array index
             let rowID = tableRows[i][0];
             let rowInit = tableRows[i][1];
@@ -182,7 +177,7 @@
             tr.appendChild(tdAC);
             tr.appendChild(tdX);
             // Append to table
-            table.appendChild(tr);
+            tableNew.appendChild(tr);
         }
     }
     

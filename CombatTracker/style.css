@@ -68,7 +68,7 @@ body{
     padding: 20px;
 }
 
-    .initiative-container{
+    #initiative-container{
         border: 2px black solid;
         width: 100%;
     }
