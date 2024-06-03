@@ -66,15 +66,16 @@
     
     function populateCombatOrder(addedCreature){
         idCount++;
-        let creatureID = idName + idCount;
+        let creatureID = addedCreature.ID;
+        let creatureNameID = idName + idCount;
         let creatureInit = 0;
         let creatureName = addedCreature.Name;
         currentHP = addedCreature.HitPoints;
         let creatureHPTotal = addedCreature.HitPoints;
         let creatureAC = addedCreature.ArmorClass[0];
-        let creatureArray = [creatureID, creatureInit, creatureName, currentHP, creatureHPTotal, creatureAC]
+        let creatureArray = [creatureNameID, creatureInit, creatureName, currentHP, creatureHPTotal, creatureAC, creatureID];
         combatOrder.push(creatureArray);
-
+        duplicateNamesCheck(creatureArray);
         reloadCombatOrder(combatOrder, false);
     }
 
@@ -263,4 +264,62 @@
     function clearCombatOrder(){
         console.log("clearCombatOrder");
         // add 'idCount reset to 0' here
+    }
+
+    function duplicateNamesCheck(newCreature){
+        // do an if function for creatures in CombatOrder that already have the same name as newCreature
+        // if function hit = check if the same named creature already has a number at the end of it's name.
+        // return combatOrder with the updated names 
+        var IDCount = 0;
+        if(combatOrder.length > 1)
+        {
+            console.log("combatOrder = " + combatOrder);
+            var newName = newCreature[2]; // CreatureName index
+            console.log("newName = " + newName);
+            var addedID = newCreature[6]; // CreatureID index
+            var numCount = 1;
+            // for(var x = 0;x<combatOrder.length;x++){
+            //     var currentID = combatOrder[x][6]; // CreatureID index
+                
+            //     if(currentID === addedID)
+            //     {
+            //         console.log("currentID === addedID");
+            //         if(IDCount === 0){
+            //             console.log("IDCount === 0");
+            //             var currentName = combatOrder[x][6];
+            //             combatOrder[x][6] = currentName + " " + IDCount;
+            //         }
+            //         IDCount++;
+            //     }
+            // }
+
+            // if(IDCount > 0){
+            //     console.log("IDCount > 1");
+            //     combatOrder[combatOrder.length - 1][2] = newName + " " + IDCount;
+            // }
+
+            for(var i = 0;i<combatOrder.length;i++){
+                var currentName = combatOrder[i][2]; // CreatureName index
+                var currentNameOnly = currentName.slice(0,newName.length);
+                // need to check length if there is alreayd a number at the end
+                console.log("currentName = " + currentName);
+                if (currentNameOnly === newName)
+                {
+                    console.log("if statement hit");
+                    if (isNaN(currentName.slice(-1)) === true)
+                    {
+                        currentName = currentName + " " + numCount;
+                        combatOrder[i][2] = currentName;
+                        numCount++;
+                    } else {
+                        numCount++;
+                    }
+                    console.log("combatOrder after if statement = " + combatOrder);
+                }
+            }
+            // if(numCount > 1) {
+            //     combatOrder[combatOrder.length - 1][2] = newName + " " + numCount;
+            // }
+        }
+        return combatOrder;
     }
