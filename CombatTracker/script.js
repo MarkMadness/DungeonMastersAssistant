@@ -74,9 +74,9 @@
         let creatureHPTotal = addedCreature.HitPoints;
         let creatureAC = addedCreature.ArmorClass[0];
         let creatureArray = [creatureNameID, creatureInit, creatureName, currentHP, creatureHPTotal, creatureAC, creatureID];
-        combatOrder.push(creatureArray);
+        //combatOrder.push(creatureArray);
         duplicateNamesCheck(creatureArray);
-        reloadCombatOrder(combatOrder, false);
+        //reloadCombatOrder(combatOrder, false);
     }
 
     function reloadCombatOrder(tableRows, removeFromCombatCondition) {
@@ -270,56 +270,62 @@
         // do an if function for creatures in CombatOrder that already have the same name as newCreature
         // if function hit = check if the same named creature already has a number at the end of it's name.
         // return combatOrder with the updated names 
-        var IDCount = 0;
-        if(combatOrder.length > 1)
-        {
-            console.log("combatOrder = " + combatOrder);
-            var newName = newCreature[2]; // CreatureName index
-            console.log("newName = " + newName);
-            var addedID = newCreature[6]; // CreatureID index
-            var numCount = 1;
-            // for(var x = 0;x<combatOrder.length;x++){
-            //     var currentID = combatOrder[x][6]; // CreatureID index
-                
-            //     if(currentID === addedID)
-            //     {
-            //         console.log("currentID === addedID");
-            //         if(IDCount === 0){
-            //             console.log("IDCount === 0");
-            //             var currentName = combatOrder[x][6];
-            //             combatOrder[x][6] = currentName + " " + IDCount;
-            //         }
-            //         IDCount++;
-            //     }
-            // }
+        // maybe need to store numCount and when checking duplicate names add it to new monster based on latest number. 
+            // Currently, it adds based on number of same monsters rather than the latest number, which results in monster 1, monster 3, monster 3
+        // // if(combatOrder.length > 1)
+        // // {
+        // //     var newName = newCreature[2]; // CreatureName index
+        // //     var numCount = 1;
 
-            // if(IDCount > 0){
-            //     console.log("IDCount > 1");
-            //     combatOrder[combatOrder.length - 1][2] = newName + " " + IDCount;
-            // }
+        // //     for(var i = 0;i<combatOrder.length;i++){
+        // //         var currentName = combatOrder[i][2]; // CreatureName index
+        // //         var currentNameOnly = currentName.slice(0,newName.length);
+        // //         // need to check length if there is already a number at the end
+        // //         console.log("currentName = " + currentName);
+        // //         if (currentNameOnly === newName)
+        // //         {
+        // //             console.log("if statement hit");
+        // //             if (isNaN(currentName.slice(-1)) === true)
+        // //             {
+        // //                 currentName = currentName + " " + numCount;
+        // //                 combatOrder[i][2] = currentName;
+        // //                 numCount++;
+        // //             } else {
+        // //                 numCount++;
+        // //             }
+                    
+        // //         }
+        // //     }
+        // //     console.log("combatOrder after if statement = " + combatOrder);
+        // // }
 
-            for(var i = 0;i<combatOrder.length;i++){
-                var currentName = combatOrder[i][2]; // CreatureName index
-                var currentNameOnly = currentName.slice(0,newName.length);
-                // need to check length if there is alreayd a number at the end
-                console.log("currentName = " + currentName);
-                if (currentNameOnly === newName)
-                {
-                    console.log("if statement hit");
-                    if (isNaN(currentName.slice(-1)) === true)
-                    {
-                        currentName = currentName + " " + numCount;
-                        combatOrder[i][2] = currentName;
-                        numCount++;
-                    } else {
-                        numCount++;
-                    }
-                    console.log("combatOrder after if statement = " + combatOrder);
-                }
+         // Extract the base name from the newCreature
+        let newName = newCreature[2]; // The name of the new creature
+        let baseName = newName.trim(); // Base name, initially the full name
+
+        // Initialize the maximum number found
+        let maxNumber = 0;
+
+        // Iterate over existing names in combatOrder to find the highest number for the base name
+        for (let i = 0; i < combatOrder.length; i++) {
+            let currentName = combatOrder[i][2];
+            // Split currentName into baseName and number
+            let nameParts = currentName.trim().split(/\s+/);
+            let currentNumber = parseInt(nameParts.pop(), 10); // Try to parse the last part as a number
+            let currentBaseName = nameParts.join(" "); // Join the remaining parts as the base name
+
+            // Check if the base names match and update maxNumber if necessary
+            if (currentBaseName === newName && !isNaN(currentNumber)) {
+                maxNumber = Math.max(maxNumber, currentNumber);
             }
-            // if(numCount > 1) {
-            //     combatOrder[combatOrder.length - 1][2] = newName + " " + numCount;
-            // }
         }
-        return combatOrder;
+
+        // Assign the new number to the newCreature
+        newCreature[2] = `${newName} ${maxNumber + 1}`;
+        combatOrder.push(newCreature);
+
+        // Refresh the combat order display
+        reloadCombatOrder(combatOrder, false);
+    
+        //return combatOrder;
     }
