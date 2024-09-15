@@ -165,7 +165,7 @@
             tdInit.appendChild(initiative);
             tdName.appendChild(name);
             tdHP.appendChild(hitpoints);
-            tdHP.className = "hitPoints";
+            tdHP.className = "hitPoints hp-green";
             tdAC.appendChild(armorclass);
             tdX.appendChild(X);
 
@@ -206,6 +206,7 @@
         // GET the current and total HP ints and assign to var currentHP and var totalHP
         var hpRatio = hpPassed.split("/");
         currentHP = hpRatio[0];
+        differenceBoxValue = 0;
         var hpTotal = hpRatio[1];
         let id = hpRatio[2];
         // console.log('id = ' + id);
@@ -213,6 +214,7 @@
         // generate a popup window with input window, arrows up and down, and a checkmark box
         var modal = document.getElementById("hpModal");
         var inputBox = document.getElementById("inputBox");
+        var differenceBox = document.getElementById("differenceBox");
         var closeBtn = document.getElementById("close");
         var checkmarkBtn = document.getElementById("checkmark");
         var arrowUpBtn = document.getElementById("arrowUp");
@@ -221,29 +223,63 @@
         modal.style.display = "block";
 
         // button functions
+        // function differenceFromOriginal(changed){
+        //     if(changed > currentHP){
+        //         inputBox.style.color = "green";
+        //     } else if (changed < currentHP) {
+        //         inputBox.style.color = "red";
+        //     } else {
+        //         inputBox.style.color = "black";
+        //     }
+        // }
+
+        function updateDifference(changed) {
+            var difference = changed - currentHP;
+            differenceBox.textContent = (difference > 0 ? '+' : '') + difference; // Display difference with a '+' sign if positive
+            differenceBox.style.color = difference === 0 ? 'black' : (difference > 0 ? 'green' : 'red');
+        }
+
         closeBtn.onclick = function() { modal.style.display = "none"; }
         arrowUpBtn.onclick = function() {
             var plus = parseInt(inputBox.value) + 1;
             inputBox.setAttribute('value', plus);
+            updateDifference(plus);
         }
         arrowDownBtn.onclick = function() {
             var minus = parseInt(inputBox.value) - 1;
             inputBox.setAttribute('value', minus);
+            updateDifference(minus);
         }
 
         // On the ENTER kwy down or click on checkmark box, subtract or add the input value to curentHP and return the new value to the table
         checkmarkBtn.onclick = function() {
             var finalValue = parseInt(inputBox.value);
-            let newText = finalValue + '/' + hpTotal + '/' + id;
-            console.log(newText);
-            var newHPattribute = "changeHP('" + newText + "')";
+            let newHPText = finalValue + '/' + hpTotal;
+            console.log(newHPText);
+            var newHPattribute = "changeHP('" + newHPText + "/" + id + "')";
 
             // second method attempting to change the text. Didn't work
-            let changeText = document.querySelector('#' + id);
-            console.log(changeText.childNodes[2]);
-            changeText.addEventListener("click", function() {
-                changeText.childNodes[2].newText = newText;
-            });
+            let cellHP = document.querySelector(`#${id} .hitPoints`);
+            cellHP.innerText = newHPText;
+            cellHP.setAttribute('onclick', newHPattribute);
+            
+            // removes classes beforehand to add new ones below
+            cellHP.classList.remove('hp-green');
+            cellHP.classList.remove('hp-yellow');
+            cellHP.classList.remove('hp-orange');
+            cellHP.classList.remove('hp-red');
+
+            //check percentage of monster health and add appropriate class for color
+            var percentage = Math.round((finalValue/hpTotal) * 100);
+            if(percentage >= 100) {
+                cellHP.classList.add('hp-green');
+            } else if (percentage <= 99 && percentage >= 60){
+                cellHP.classList.add('hp-yellow');
+            } else if (percentage <= 59 && percentage >= 30){
+                cellHP.classList.add('hp-orange');
+            } else {
+                cellHP.classList.add('hp-red');
+            }
 
             // First attempt to change the text. Didn't work, but it did save the inputBox.value from before
             // // let row = document.getElementById(id);
@@ -252,6 +288,9 @@
             // // // UPDATE: the inputBox.value remains after checkmarkBtn runs, but the DOM text doesn't update
             // // row.setAttribute("onclick", newHPattribute);
             // // row.getElementsByClassName("hitPoints").text = newText;
+
+            differenceBox.textContent = '0';
+            differenceBox.style.color = 'black';
 
             modal.style.display = "none";
         }
@@ -262,8 +301,15 @@
     }
 
     function clearCombatOrder(){
-        console.log("clearCombatOrder");
-        // add 'idCount reset to 0' here
+        combatOrder = [];
+        $('#combat-table').empty().html(
+            `<tr>
+                <th style="width: 50px">#</th>
+                <th style="width: 275px">Name</th>
+                <th style="width: 75px">HP</th>
+                <th style="width: 75px">AC</th>
+                <th style="width: 50px">X</th>
+            </tr>`);
     }
 
     function duplicateNamesCheck(newCreature){

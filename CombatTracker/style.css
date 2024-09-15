@@ -17,6 +17,13 @@ body{
     height: 80px;
 }
 
+    #toolbar button{
+        font-size: 12pt;
+        padding: 5px;
+        font-family: Arial;
+        margin: 3px;
+    }
+
 /*-------------------- Main section container --------------------*/
 
 #combat-tracker{
@@ -108,6 +115,15 @@ body{
 
     /* #initiative-options{} */
 
+    .hitPoints{
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+        .hp-green{color: green;}
+        .hp-yellow{color: rgb(249, 192, 24);}
+        .hp-orange{color: rgb(255, 139, 45);}
+        .hp-red{color: red;}
+
 /*==================== Profile Details ====================*/
 
 #profile-details-container{
@@ -166,7 +182,7 @@ body{
         margin: 15% auto; /* 15% from the top and centered */
         padding: 20px;
         border: 1px solid #888;
-        width: 24%;
+        width: 30%;
         display: flex;
     }
   
@@ -198,11 +214,18 @@ body{
         }
 
         /*--------------------HP--------------------*/
-            #inputBox{
+            #inputBox, #differenceBox{
                 font-size: 24pt;
                 text-align: center;
                 width: 240px;
             }
+
+            #differenceBox {
+                margin: auto;
+                padding: 32px;
+                border: 1px solid #888;
+            }
+
 /*-------------------- General --------------------*/
 
 .section-container{

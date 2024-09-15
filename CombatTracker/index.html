@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combat Tracker</title>
     <link rel='stylesheet' href='style.css'>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body onload="populateLibrary()">
     <div id="toolbar">
         <div id="toolbar-top">
-
+            <button type="button" onclick="clearCombatOrder()">Clear Board</button>
         </div>
         <div id="toolbar-bottom">
 
@@ -68,6 +69,7 @@
     <!-- Modal for Hit Points -->
     <div id="hpModal" class="modal">
         <div class="modal-content">
+            <div id="differenceBox">0</div>
             <input type="text" id="inputBox">
             <div id="arrows">
                 <div id="arrowUp">&#11165;</div>
