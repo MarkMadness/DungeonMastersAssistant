@@ -152,7 +152,7 @@
             let armorclass = document.createTextNode(rowAC);
 
             // onClick appends
-            let onclickInit = "changeInit('" + rowInit + "')";
+            let onclickInit = "changeInit('" + rowInit + "', '" + rowID + "')";
             tdInit.setAttribute("onclick", onclickInit);
             let onclickName = "selectCreature('" + rowName + "')";
             tdName.setAttribute("onclick", onclickName);
@@ -163,6 +163,7 @@
 
             // Append to cells
             tdInit.appendChild(initiative);
+            tdInit.className = "init";
             tdName.appendChild(name);
             tdHP.appendChild(hitpoints);
             tdHP.className = "hitPoints hp-green";
@@ -182,11 +183,50 @@
         }
     }
     
-    function changeInit() {
+    function changeInit(initiativeNumber, tableRowID) {
         console.log('changeInit');
-        // GET the initial combat order int and store it in var initOrder
         // Generate a popup window with initOrder in an input window, arrows up and down, and a checkmark box
+        const initModal = $('#initModal');
+        var inputBox = initModal.find(".inputBox");
+        var closeBtn = initModal.find(".close");
+        var checkmarkBtn = initModal.find(".checkmark");
+        var arrowUpBtn = initModal.find(".arrowUp");
+        var arrowDownBtn = initModal.find(".arrowDown");
+        inputBox.val(initiativeNumber);
+        initModal.css('display', 'block');
+
+        // Remove existing event listeners for reopen of initModal
+        inputBox.off('click');
+        closeBtn.off('click');
+        checkmarkBtn.off('click');
+        arrowUpBtn.off('click');
+        arrowDownBtn.off('click');
+
         // On the ENTER key down or click on checkmark box, set the selected row's order to the new number
+        closeBtn.on('click', function() { initModal.css('display', 'none'); }); 
+
+        arrowUpBtn.on('click', function() {
+            var plus = parseInt(inputBox.val(), 10) + 1;
+            inputBox.val(plus);
+        });
+
+        arrowDownBtn.on('click', function() {
+            var minus = parseInt(inputBox.val(), 10) - 1; 
+            inputBox.val(minus); 
+        });
+
+        // On the ENTER key down or click on checkmark box, subtract or add the input value and return the new value to the table
+        checkmarkBtn.on('click', function() {
+            let newInitText = parseInt(inputBox.val(), 10);
+            var newInitattribute = "changeInit('" + newInitText + "', '" + tableRowID + "')";
+        
+            // second method attempting to change the text. Didn't work
+            let cellInit = $(`#${tableRowID} .init`);
+            cellInit.text(newInitText);
+            cellInit.attr('onclick', newInitattribute);
+
+            initModal.css('display', 'none'); 
+        });
         // do something for reorganizing the table
     }
     
@@ -205,22 +245,38 @@
     function changeHP(hpPassed) {
         // GET the current and total HP ints and assign to var currentHP and var totalHP
         var hpRatio = hpPassed.split("/");
-        currentHP = hpRatio[0];
-        differenceBoxValue = 0;
-        var hpTotal = hpRatio[1];
+        var currentHP = parseInt(hpRatio[0], 10);
+        var hpTotal = parseInt(hpRatio[1], 10);
         let id = hpRatio[2];
         // console.log('id = ' + id);
 
         // generate a popup window with input window, arrows up and down, and a checkmark box
-        var modal = document.getElementById("hpModal");
-        var inputBox = document.getElementById("inputBox");
-        var differenceBox = document.getElementById("differenceBox");
-        var closeBtn = document.getElementById("close");
-        var checkmarkBtn = document.getElementById("checkmark");
-        var arrowUpBtn = document.getElementById("arrowUp");
-        var arrowDownBtn = document.getElementById("arrowDown");
-        inputBox.setAttribute('value', currentHP);
-        modal.style.display = "block";
+        const hpModal = $('#hpModal');
+        var inputBox = hpModal.find(".inputBox");
+        var differenceBox = hpModal.find(".differenceBox");
+        var closeBtn = hpModal.find(".close");
+        var checkmarkBtn = hpModal.find(".checkmark");
+        var arrowUpBtn = hpModal.find(".arrowUp");
+        var arrowDownBtn = hpModal.find(".arrowDown");
+        inputBox.val(currentHP); // Use .attr() instead of setAttribute
+        hpModal.css('display', 'block'); // Use .css() instead of style.display
+
+        // Remove existing event listeners for reopen of hpModal
+        inputBox.off('click');
+        closeBtn.off('click');
+        checkmarkBtn.off('click');
+        arrowUpBtn.off('click');
+        arrowDownBtn.off('click');
+
+        // var modal = hpModal.getElementById("hpModal");
+        // var inputBox = document.getElementById("inputBox");
+        // var differenceBox = document.getElementById("differenceBox");
+        // var closeBtn = document.getElementById("close");
+        // var checkmarkBtn = document.getElementById("checkmark");
+        // var arrowUpBtn = document.getElementById("arrowUp");
+        // var arrowDownBtn = document.getElementById("arrowDown");
+        // inputBox.setAttribute('value', currentHP);
+        // hpModal.style.display = "block";
 
         // button functions
         // function differenceFromOriginal(changed){
@@ -235,50 +291,49 @@
 
         function updateDifference(changed) {
             var difference = changed - currentHP;
-            differenceBox.textContent = (difference > 0 ? '+' : '') + difference; // Display difference with a '+' sign if positive
-            differenceBox.style.color = difference === 0 ? 'black' : (difference > 0 ? 'green' : 'red');
+            differenceBox.text((difference > 0 ? '+' : '') + difference); // Use .text() instead of textContent
+            differenceBox.css('color', difference === 0 ? 'black' : (difference > 0 ? 'green' : 'red')); // Use .css() instead of style.color
         }
+    
+        closeBtn.on('click', function() { hpModal.css('display', 'none'); }); // Use .on('click') instead of onclick
 
-        closeBtn.onclick = function() { modal.style.display = "none"; }
-        arrowUpBtn.onclick = function() {
-            var plus = parseInt(inputBox.value) + 1;
-            inputBox.setAttribute('value', plus);
+        arrowUpBtn.on('click', function() {
+            var plus = parseInt(inputBox.val(), 10) + 1; // Use .val() instead of .value
+            inputBox.val(plus); // Use .val() instead of setAttribute
             updateDifference(plus);
-        }
-        arrowDownBtn.onclick = function() {
-            var minus = parseInt(inputBox.value) - 1;
-            inputBox.setAttribute('value', minus);
-            updateDifference(minus);
-        }
+        });
 
-        // On the ENTER kwy down or click on checkmark box, subtract or add the input value to curentHP and return the new value to the table
-        checkmarkBtn.onclick = function() {
-            var finalValue = parseInt(inputBox.value);
+        arrowDownBtn.on('click', function() {
+            var minus = parseInt(inputBox.val(), 10) - 1; // Use .val() instead of .value
+            inputBox.val(minus); // Use .val() instead of setAttribute
+            updateDifference(minus);
+        });
+
+        // On the ENTER key down or click on checkmark box, subtract or add the input value to currentHP and return the new value to the table
+        checkmarkBtn.on('click', function() {
+            var finalValue = parseInt(inputBox.val(), 10); // Ensure the value is parsed as an integer
             let newHPText = finalValue + '/' + hpTotal;
             console.log(newHPText);
             var newHPattribute = "changeHP('" + newHPText + "/" + id + "')";
-
+        
             // second method attempting to change the text. Didn't work
-            let cellHP = document.querySelector(`#${id} .hitPoints`);
-            cellHP.innerText = newHPText;
-            cellHP.setAttribute('onclick', newHPattribute);
+            let cellHP = $(`#${id} .hitPoints`); // Use jQuery selector
+            cellHP.text(newHPText); // Use .text() instead of innerText
+            cellHP.attr('onclick', newHPattribute); // Use .attr() instead of setAttribute
             
             // removes classes beforehand to add new ones below
-            cellHP.classList.remove('hp-green');
-            cellHP.classList.remove('hp-yellow');
-            cellHP.classList.remove('hp-orange');
-            cellHP.classList.remove('hp-red');
-
+            cellHP.removeClass('hp-green hp-yellow hp-orange hp-red'); // Use .removeClass() instead of classList.remove
+        
             //check percentage of monster health and add appropriate class for color
-            var percentage = Math.round((finalValue/hpTotal) * 100);
-            if(percentage >= 100) {
-                cellHP.classList.add('hp-green');
-            } else if (percentage <= 99 && percentage >= 60){
-                cellHP.classList.add('hp-yellow');
-            } else if (percentage <= 59 && percentage >= 30){
-                cellHP.classList.add('hp-orange');
+            var percentage = Math.round((finalValue / hpTotal) * 100);
+            if (percentage >= 100) {
+                cellHP.addClass('hp-green'); // Use .addClass() instead of classList.add
+            } else if (percentage <= 99 && percentage >= 60) {
+                cellHP.addClass('hp-yellow'); // Use .addClass() instead of classList.add
+            } else if (percentage <= 59 && percentage >= 30) {
+                cellHP.addClass('hp-orange'); // Use .addClass() instead of classList.add
             } else {
-                cellHP.classList.add('hp-red');
+                cellHP.addClass('hp-red'); // Use .addClass() instead of classList.add
             }
 
             // First attempt to change the text. Didn't work, but it did save the inputBox.value from before
@@ -289,13 +344,13 @@
             // // row.setAttribute("onclick", newHPattribute);
             // // row.getElementsByClassName("hitPoints").text = newText;
 
-            differenceBox.textContent = '0';
-            differenceBox.style.color = 'black';
+            differenceBox.text('0'); // Use .text() instead of textContent
+            differenceBox.css('color', 'black'); // Use .css() instead of style.color
 
-            modal.style.display = "none";
-        }
+            hpModal.css('display', 'none'); // Use .css() instead of style.display
+        });
     }
-    
+        
     function populateDetails(creatureName) {
         console.log("populateDetails");   
     }
