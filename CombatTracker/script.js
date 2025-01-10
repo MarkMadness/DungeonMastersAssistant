@@ -68,13 +68,12 @@
         idCount++;
         let creatureID = addedCreature.ID;
         let creatureNameID = idName + idCount;
-        let creatureInit = 0;
+        let creatureInit = Math.ceil(((Math.random() * 20) + 1) + ((addedCreature.Dexterity - 10) / 2));
         let creatureName = addedCreature.Name;
         currentHP = addedCreature.HitPoints;
         let creatureHPTotal = addedCreature.HitPoints;
         let creatureAC = addedCreature.ArmorClass[0];
         let creatureArray = [creatureNameID, creatureInit, creatureName, currentHP, creatureHPTotal, creatureAC, creatureID];
-        //combatOrder.push(creatureArray);
         duplicateNamesCheck(creatureArray);
         //reloadCombatOrder(combatOrder, false);
     }
@@ -126,6 +125,8 @@
 
         // Create element for new table so for loop below can function. 
         let tableNew = document.getElementById("combat-table");
+
+        initiativeSort(tableRows);
         
         for(let i = 0; i < tableRows.length;i++){
             // Create elements for table row
@@ -137,7 +138,7 @@
             let tdX = document.createElement("td");
             let X = document.createTextNode("X");
 
-            // instantiate values for creture from array index
+            // instantiate values for creature from array index
             let rowID = tableRows[i][0];
             let rowInit = tableRows[i][1];
             let rowName = tableRows[i][2];
@@ -203,6 +204,20 @@
         arrowDownBtn.off('click');
 
         // On the ENTER key down or click on checkmark box, set the selected row's order to the new number
+        $(document).on('keydown', function(event) {
+            if (event.key === 'Enter') {
+                checkmarkBtn.click();
+            } else if (event.key === 'ArrowUp') {
+                event.preventDefault();
+                var plus = parseInt(inputBox.val(), 10) + 1;
+                inputBox.val(plus);
+            } else if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                var minus = parseInt(inputBox.val(), 10) - 1;
+                inputBox.val(minus);
+            }
+        });
+
         closeBtn.on('click', function() { initModal.css('display', 'none'); }); 
 
         arrowUpBtn.on('click', function() {
@@ -307,6 +322,22 @@
             var minus = parseInt(inputBox.val(), 10) - 1; // Use .val() instead of .value
             inputBox.val(minus); // Use .val() instead of setAttribute
             updateDifference(minus);
+        });
+
+        $(document).on('keydown', function(event) {
+            if (event.key === 'Enter') {
+                checkmarkBtn.click();
+            } else if (event.key === 'ArrowUp') {
+                event.preventDefault();
+                var plus = parseInt(inputBox.val(), 10) + 1;
+                inputBox.val(plus);
+                updateDifference(plus);
+            } else if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                var minus = parseInt(inputBox.val(), 10) - 1;
+                inputBox.val(minus);
+                updateDifference(minus);
+            }
         });
 
         // On the ENTER key down or click on checkmark box, subtract or add the input value to currentHP and return the new value to the table
@@ -429,4 +460,8 @@
         reloadCombatOrder(combatOrder, false);
     
         //return combatOrder;
+    }
+
+    function initiativeSort(table = combatOrder){
+        return table.sort((a, b) => b[1] - a[1]);
     }
