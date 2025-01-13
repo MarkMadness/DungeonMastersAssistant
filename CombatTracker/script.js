@@ -155,7 +155,7 @@
             // onClick appends
             let onclickInit = "changeInit('" + rowInit + "', '" + rowID + "')";
             tdInit.setAttribute("onclick", onclickInit);
-            let onclickName = "selectCreature('" + rowName + "')";
+            let onclickName = "populateProfileDetails('" + rowName + "')";
             tdName.setAttribute("onclick", onclickName);
             let onclickHP = "changeHP('" + rowHP + "/" + rowHPTotal + "/" + rowID + "')";
             tdHP.setAttribute("onclick", onclickHP);
@@ -384,6 +384,14 @@
         
     function populateDetails(creatureName) {
         console.log("populateDetails");   
+    }
+
+    function populateProfileDetails(creatureName) {
+        console.log("populateProfileDetails");
+
+        //Legendary Actions:
+        /*TEMPLATE: The [Name] can take [#] legendary actions, choosing from the options below. Only one legendary action option can be used at a time 
+        and only at the end of another [Name]'s turn. The [Name] regains spent legendary actions at the start of its turn.*/
     }
 
     function clearCombatOrder(){

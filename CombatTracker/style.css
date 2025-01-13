@@ -37,7 +37,7 @@ body{
 
 #profile-library{
     background-color: rgb(245, 237, 210);
-    width: 20%;
+    width: 15%;
     height: 100%;
     margin: 10px;
     padding: 20px;
@@ -59,11 +59,35 @@ body{
         margin-right: auto;
     }
 
-        .profile{
+        /* .profile{
             border: 1px black dotted;
             padding: 0 20px 0 20px;
             margin: 1px 2px 1px 2px;
+        } */
+
+        #profile-library, #tracking-section, #profile-details-container{
+            box-shadow: 8px 4px 6px rgba(0,0,0,.5);
         }
+    
+            #library-list{
+                padding: 0;
+            }
+    
+            .monster-profile{
+                list-style: none;
+                padding: 4px 20px 4px 20px;
+                font-size: 14pt;
+                background-color: rgb(235, 235, 235);
+            }
+    
+            .monster-profile:nth-child(even){
+                background-color: rgb(210,210,210);
+            }
+    
+            .monster-profile:hover{
+                background-color: rgb(179, 179, 179);
+                font-weight: bold;
+            }
 
 /*==================== Combat Tracking ====================*/
 
@@ -128,39 +152,20 @@ body{
 
 #profile-details-container{
     background-color: rgb(245, 237, 210);
-    width: 25%;
+    width: 30%;
     height: 100%;
     margin: 10px;
     padding: 20px;
 }
 
-    #profile-library, #tracking-section, #profile-details-container{
-        box-shadow: 8px 4px 6px rgba(0,0,0,.5);
-    }
-
-        #library-list{
-            padding: 0;
-        }
-
-        .monster-profile{
-            list-style: none;
-            padding: 4px 20px 4px 20px;
-            font-size: 14pt;
-            background-color: rgb(235, 235, 235);
-        }
-
-        .monster-profile:nth-child(even){
-            background-color: rgb(210,210,210);
-        }
-
-        .monster-profile:hover{
-            background-color: rgb(179, 179, 179);
-            font-weight: bold;
-        }
-
     #profile-content{
         display: block;
+        padding: 10px;
     }
+
+.profile-section{
+    border-bottom: 3px red solid;
+}
 
 /*----------------------Modal----------------------*/
 
@@ -248,4 +253,24 @@ h3{
 
 p{
     font-size: 14pt;
+}
+
+.text-x-sm{
+    font-size: 10pt;
+}
+
+.text-sm{
+    font-size: 12pt;
+}
+
+.text-md{
+    font-size: 14pt;
+}
+
+.text-lg{
+    font-size: 16pt;
+}
+
+.text-x-lg{
+    font-size: 20pt;
 }

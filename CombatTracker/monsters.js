@@ -13,38 +13,85 @@ const monstersLocal = [
         Intelligence: 10,
         Wisdom: 10,
         Charisma: 10,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
+        SavingThrows: ["Strength +5", "Dexterity +5", "Constitution +5", "Intelligence +5", "Wisdom +5", "Charisma +5"],
+        Skills: ["Athletics +5", "Acrobatics +5", "Sleight of Hand +5", "Stealth +5", "Arcana +5", "History +5", "Investigation +5", 
+            "Nature +5", "Religion +5", "Animal Handling +5", "Insight +5", "Medicine +5", "Persuasion +5", "Deception +5", 
+            "Intimidation +5", "Performance +5", "Survival +5"],
+        DamageVulnerabilities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+            "Bludgeoning", "Piercing", "Slashing"],
+        DamageResistances: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+            "Bludgeoning", "Piercing", "Slashing", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+        DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+            "Bludgeoning", "Piercing", "Slashing", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened", "Grappled", "Incapacitated", "Invisible", "Paralyzed", 
+            "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
+        Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Tremorsense 60 ft.", "Passive Perception 10"],
+        Languages: ["Common", "Draconic", "Elvish", "Dwarvish", "Infernal", "Celestial", "Giant", "Gnomish", "Halfling", "Orc", 
+            "Sylvan", "Abyssal", "Undercommon", "Deep Speech", "Primordial", "Goblin", "Gnoll", "Celestial", "Elvish", "Thieves' Cant", 
+            "Giant", "Draconic", "Aquan", "Ignan", "Terran", "Auran", "Celestial", "Sylvan", "Telepathy 120 ft."],
         Challenge: [1, 200],
         ExtraRewards: "",
         Traits: [
             {
-                Title: "",
-                Desc: ""
+                Title: "Trait One",
+                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                Title: "Trait Two",
+                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                Title: "Trait Three",
+                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
         ],
         Actions: [
             {
-                Title: "",
-                Desc: ""
+                Title: "Multiattack",
+                Desc: "The creature makes two attacks: one with its 'Action Two' and one with its 'Action Three'."
+            },
+            {
+                Title: "Action Two",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 5) slashing damage."
+            },
+            {
+                Title: "Action Three (Recharge 5-6)",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (2d8 + 5) piercing damage. " +
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
         ],
         Reactions: [
             {
-                Title: "",
-                Desc: ""
+                Title: "Reaction One",
+                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
         ],
         LegendaryActions: [
             {
-                Title: "",
-                Desc: ""
+                Title: "Attack",
+                Desc: "The creature makes one 'Action Two' attack."
+            },
+            {
+                Title: "Big Attack (Costs 2 Actions)",
+                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
         ],
         LairActions: [],
@@ -70,7 +117,7 @@ const monstersLocal = [
         DamageResistances: [],
         DamageImmunities: [],
         ConditionImmunities: [],
-        Senses: ["passive Perception 15"],
+        Senses: ["Passive Perception 15"],
         Languages: ["Auran"],
         Challenge: [.25, 50],
         Traits: [
@@ -114,8 +161,8 @@ const monstersLocal = [
         DamageResistances: [],
         DamageImmunities: [],
         ConditionImmunities: [],
-        Senses: ["darkvision 120 ft.", "passive Perception 20"],
-        Languages: ["Deep Speech", "telepathy 120 ft."],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 20"],
+        Languages: ["Deep Speech", "Telepathy 120 ft."],
         Challenge: [10, 5900],
         ExtraRewards: "",
         Traits: [
