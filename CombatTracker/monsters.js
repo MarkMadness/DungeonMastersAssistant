@@ -5,6 +5,7 @@ const monstersLocal = [
         Type: "Size type, alignment",
         Source: "Monster Manual",
         HitPoints: 1,
+        HitPointsRoll: "#d# + #",
         ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
@@ -94,7 +95,22 @@ const monstersLocal = [
                 "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
         ],
-        LairActions: [],
+        LairActions: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of 11 or higher, the [template] " +
+                "takes a lair action to cause one of the following effects. It can't use the same effect two rounds in a row. ",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
         Description: "Description here"
     },
     {
@@ -103,6 +119,7 @@ const monstersLocal = [
         Type: "Medium humanoid(aarakocra), neutral good",
         Source: "Monster Manual",
         HitPoints: 13,
+        HitPointsRoll: "3d8",
         ArmorClass: [12, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
@@ -147,6 +164,7 @@ const monstersLocal = [
         Type: "Large aberration, lawful evil",
         Source: "Monster Manual",
         HitPoints: 135,
+        HitPointsRoll: "18d10 + 36",
         ArmorClass: [17, "natural armor"],
         Speed: ["10 ft.", "swim 40 ft."],
         Strength: 21,
@@ -221,6 +239,7 @@ const monstersLocal = [
         Type: "Medium Celestial, lawful good",
         Source: "Monster Manual",
         HitPoints: 136,
+        HitPointsRoll: "16d8 + 64",
         ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "fly 90 ft."],
         Strength: 18,
@@ -281,6 +300,7 @@ const monstersLocal = [
         Type: "Size type, alignment",
         Source: "Monster Manual",
         HitPoints: 200,
+        HitPointsRoll: "16d10 + 112",
         ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
@@ -332,9 +352,10 @@ const monstersLocal = [
         Type: "Size type, alignment",
         Source: "Monster Manual",
         HitPoints: 243,
+        HitPointsRoll: "18d10 + 144",
         ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
-        Strength: 10,
+        Strength: 8,
         Dexterity: 10,
         Constitution: 10,
         Intelligence: 10,

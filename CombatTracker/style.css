@@ -163,6 +163,10 @@ body{
         padding: 10px;
     }
 
+        #profile-attributes td {
+            padding: 4px;
+        }
+
 .profile-section{
     border-bottom: 3px red solid;
 }

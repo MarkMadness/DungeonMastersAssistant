@@ -388,6 +388,90 @@
 
     function populateProfileDetails(creatureName) {
         console.log("populateProfileDetails");
+        const $content = $("#profile-content");
+        const $name = creatureName.replace(/\s\d+$/, ' ').trim(); 
+        //console.log('$name: ', $name);
+        //console.log('$name length: ', $name.length);
+        
+        const $creature = monstersLocal.find(monster => monster.Name === $name);
+
+        if($creature) {
+            $content.find("#profile-name").html("<strong>" + $creature.Name + "</strong>");
+            $content.find("#profile-source").text($creature.Source);
+            $content.find("#profile-type").text($creature.Type); 
+
+            $content.find("#profile-armorclass").html("<strong>Armor Class</strong> " + $creature.ArmorClass[0] + ", " + $creature.ArmorClass[1]);
+            if($creature.Speed.length > 1) {
+                $content.find("#profile-speed").html("<strong>Speed</strong> " + $creature.Speed.toString().replace(',', ', '));
+            } else {
+                $content.find("#profile-speed").html("<strong>Speed</strong> " + $creature.Speed);
+            }
+
+            let strMod = Math.floor(($creature.Strength - 10) / 2);
+            let dexMod = Math.floor(($creature.Dexterity - 10) / 2);
+            let conMod = Math.floor(($creature.Constitution - 10) / 2);
+            let intMod = Math.floor(($creature.Intelligence - 10) / 2);
+            let wisMod = Math.floor(($creature.Wisdom - 10) / 2);
+            let chaMod = Math.floor(($creature.Charisma - 10) / 2);
+            $content.find("#profile-str").html("STR " + $creature.Strength + "<br>" + (strMod >= 0 ? "+" + strMod : strMod));
+            $content.find("#profile-dex").html("DEX " + $creature.Dexterity + "<br>" + (dexMod >= 0 ? "+" + dexMod : dexMod));
+            $content.find("#profile-con").html("CON " + $creature.Constitution + "<br>" + (conMod >= 0 ? "+" + conMod : conMod));
+            $content.find("#profile-int").html("INT " + $creature.Intelligence + "<br>" + (intMod >= 0 ? "+" + intMod : intMod));
+            $content.find("#profile-wis").html("WIS " + $creature.Wisdom + "<br>" + (wisMod >= 0 ? "+" + wisMod : wisMod));
+            $content.find("#profile-cha").html("CHA " + $creature.Charisma + "<br>" + (chaMod >= 0 ? "+" + chaMod : chaMod));
+
+            if($creature.SavingThrows.length > 0) {
+                $content.find("#profile-saves").html("<strong>Saving Throws</strong> " + $creature.SavingThrows.toString().replace(',', ', '));
+            } else {
+                $content.find("#profile-saves").hide();
+            }
+            if($creature.Skills.length > 0) {
+                $content.find("#profile-skills").html("<strong>Skills</strong> " + $creature.Skills.toString().replace(',', ', '));
+            } else {
+                $content.find("#profile-skills").hide();
+            }
+            if($creature.DamageVulnerabilities.length > 0) {
+                $content.find("#profile-damagevuln").html("<strong>Damage Vulnerabilities</strong> " + $creature.DamageVulnerabilities.toString().replace(',', ', '));
+            } else {
+                $content.find("#profile-damagevuln").hide();
+            }
+            if($creature.DamageResistances.length > 0) {
+                $content.find("#profile-damageres").html("<strong>Damage Resistances</strong> " + $creature.DamageResistances.toString().replace(',', ', '));
+            } else {
+                $content.find("#profile-damageres").hide();
+            }
+            if($creature.DamageImmunities.length > 0) {
+                $content.find("#profile-damageimm").html("<strong>Damage Immunities</strong> " + $creature.DamageImmunities.toString().replace(',', ', '));
+            } else {
+                $content.find("#profile-damageimm").hide();
+            }
+            if($creature.ConditionImmunities.length > 0) {
+                $content.find("#profile-condimm").html("<strong>Condition Immunities</strong> " + $creature.ConditionImmunities.toString().replace(',', ', '));
+            } else {
+                $content.find("#profile-condimm").hide();
+            }
+            if($creature.Senses.length > 0) {
+                $content.find("#profile-senses").html("<strong>Senses</strong> " + $creature.Senses.toString().replace(',', ', '));
+            } else {
+                $content.find("#profile-senses").hide();
+            }
+            if($creature.Languages.length > 0) {
+                $content.find("#profile-languages").html("<strong>Languages</strong> " + $creature.Languages.toString().replace(',', ', '));
+            } else {
+                $content.find("#profile-languages").hide();
+            }
+            $content.find("#profile-challenge").html("<strong>Challenge</strong> " + $creature.Challenge[0] + " (" + $creature.Challenge[1] + " XP)");
+            $content.find("#profile-extra-rewards").html("<strong>Extra Rewards</strong> " + $creature.ExtraRewards);
+
+            // $content.find("#profile-traits");
+            // $content.find("#profile-actions");
+            // $content.find("#profile-reactions");
+            // $content.find("#profile-legendary-actions");
+            // $content.find("#profile-lair-actions");
+            // $content.find("#profile-desc");
+        } else {
+            console.log('Monster profile in monstersLocal not found');
+        }
 
         //Legendary Actions:
         /*TEMPLATE: The [Name] can take [#] legendary actions, choosing from the options below. Only one legendary action option can be used at a time 
