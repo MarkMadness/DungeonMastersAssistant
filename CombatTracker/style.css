@@ -28,7 +28,7 @@ body{
 
 #combat-tracker{
     display: flex;
-    height: 100%;
+    height: 86%;
     width: 100%;
     justify-content: center;
 }
@@ -161,7 +161,11 @@ body{
     #profile-content{
         display: block;
         padding: 10px;
+        word-wrap: break-word;
     }
+        #profile-details .section-container{
+            overflow: scroll;
+        }
 
         #profile-attributes td {
             padding: 4px;
@@ -240,7 +244,7 @@ body{
 .section-container{
     border: 2px black solid;
     width: 100%;
-    height: 94%;
+    height: 100%;
 }
 
 h1{
@@ -272,9 +276,14 @@ p{
 }
 
 .text-lg{
-    font-size: 16pt;
+    font-size: 20pt;
 }
 
 .text-x-lg{
-    font-size: 20pt;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.text-italic{
+    font-style: italic;
 }

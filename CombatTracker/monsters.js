@@ -137,6 +137,7 @@ const monstersLocal = [
         Senses: ["Passive Perception 15"],
         Languages: ["Auran"],
         Challenge: [.25, 50],
+        ExtraRewards: "",
         Traits: [
             {
                 Title: "Dive Attack.",
@@ -182,7 +183,7 @@ const monstersLocal = [
         Senses: ["Darkvision 120 ft.", "Passive Perception 20"],
         Languages: ["Deep Speech", "Telepathy 120 ft."],
         Challenge: [10, 5900],
-        ExtraRewards: "",
+        ExtraRewards: null,
         Traits: [
             {
                 Title: "Amphibious.",
@@ -292,6 +293,7 @@ const monstersLocal = [
         ],
         Reactions: [],
         LegendaryActions: [],
+        LairActions: [],
         Description: "Description here"
     },
     {
