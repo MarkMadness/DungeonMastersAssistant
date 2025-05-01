@@ -6,62 +6,60 @@ var options = $("#options");
 var npcName = $("#npcName");
 const paragraph = document.createElement("p");
 const divAdd = document.createElement("div");
+let history = [];
 
 $("document").ready(() => renderDialogue("initial"));
 
 function renderDialogue(key) {
+    if (history.length === 0 || history[history.length - 1] !== key) {
+        history.push(key);
+    }
+
     // Get dialogue data
     const $dialogue = dialogueOptions[key];
+
+    npcName.empty();
+    header.empty();
+    options.empty();
 
     if (!$dialogue) {
         header.append("Dialogue not found!");
         return;
     }
 
-    if($dialogue.returnToParent) {returnToParent();}
-
-    npcName.empty();
-    header.empty();
-    options.empty();
-
-    if($("#btnSecondHome").attr("display") == "none") {
-        $("#btnSecondHome").css("display", "block");
-        $("#btnSecondHome").addEventListener("click", () => renderDialogue(key));
-    }
-
-    if($("#btnThirdHome").attr("display") == "none") {
-        $("#btnThirdHome").css("display", "block");
-        $("#btnThirdHome").addEventListener("click", () => renderDialogue(key));
-    }
-
-    if($("#btnFourthHome").attr("display") == "none") {
-        $("#btnFourthHome").css("display", "block");
-        $("#btnFourthHome").addEventListener("click", () => renderDialogue(key));
-    }
-
     npcName.append($dialogue.title);
-    header.append($dialogue.header);
+    header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + $dialogue.header);
 
     // Create buttons for options
     $dialogue.options.forEach(option => {
         const btn = document.createElement("button");
         btn.textContent = option.text;
         btn.setAttribute("id", option.id);
-        btn.addEventListener("click", () => renderDialogue(option.id));
+        
+        if (option.goBack) {
+            btn.addEventListener("click", () => goBack());
+        } else {
+            btn.addEventListener("click", () => renderDialogue(option.id));
+        }
+
         options.append(btn);
     });
 }
 
-function returnToParent() {
-    if ($("#btnFourthHome").css("display") === "block") {
-        $("#btnFourthHome").trigger("click");
-        return;
-    } else if ($("#btnThirdHome").css("display") === "block") {
-        $("#btnThirdHome").trigger("click");
-        return;
-    } else if ($("#btnSecondHome").css("display") === "block") {
-        $("#btnSecondHome").trigger("click");
-        return;
-    }
+function goHome() {
+    renderDialogue('initial');
+    history = []; // Clear history when going home
+}
 
+function goBack() {
+    // Remove the current dialogue from the history stack
+    history.pop();
+
+    // Get the previous dialogue key
+    const previousKey = history[history.length - 1];
+
+    // Render the previous dialogue
+    if (previousKey) {
+        renderDialogue(previousKey);
+    }
 }
