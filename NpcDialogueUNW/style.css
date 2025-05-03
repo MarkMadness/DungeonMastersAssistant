@@ -21,6 +21,10 @@
         width: 200px;
     }
 
+    #dialogue-container{
+        min-width: 1000px;
+    }
+
 #npcName, #header, #options {
     color: white;
     padding: 10px;
