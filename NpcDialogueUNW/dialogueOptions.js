@@ -9,12 +9,15 @@ const dialogueOptions = {
             { id: "earthrimZone", text: "Earthrim" }
         ]
     },
+//#region Arezoth
     arezothZone: {
         header: "You are in Arezoth. Where are you?",
         options: [
             { id: "townSilvershire", text: "Silvershire" },
+            { id: "townGlintmere", text: "Glintmere" },
         ]
     },
+    //#region Silvershire
         townSilvershire: {
             header: "You are in Silvershire. Which location are you in?",
             options: [
@@ -100,54 +103,54 @@ const dialogueOptions = {
                 title: "Town Guard",
                 header: "How can I help you, adventurer?",
                 options: [
-                    { id: "townguardDirections", text: "Can you give me directions?" },
-                    { id: "townguardTalk", text: "Just talking." },
-                    { id: "townguardGoodbye", text: "Goodbye.", goBack: true }
+                    { id: "silvershireTownguardDirections", text: "Can you give me directions?" },
+                    { id: "silvershireTownguardTalk", text: "Just talking." },
+                    { id: "silvershireTownguardGoodbye", text: "Goodbye.", goBack: true }
                 ]
             },
                 
-                townguardDirections: {
+                silvershireTownguardDirections: {
                     title: "Town Guard",
                     header: "Of course. Where do you need to go?",
                     options: [
-                        { id: "townguardDirectionInn", text: "Where is the Gilded Acorn Inn?" },
-                        { id: "townguardDirectionBloom", text: "Where is Briella’s Bloom?" },
-                        { id: "townguardDirectionGuildhall", text: "Where is the Moonrose Guildhall?" },
-                        { id: "townguardDirectionCouncil", text: "Where is the Council Hall?" },
-                        { id: "townguardDirectionBarracks", text: "Where are the Barracks?" },
-                        { id: "townguardDirectionTrinketry", text: "Where is Farrowfort’s Trinketry?" },
+                        { id: "silvershireTownguardDirectionInn", text: "Where is the Gilded Acorn Inn?" },
+                        { id: "silvershireTownguardDirectionBloom", text: "Where is Briella’s Bloom?" },
+                        { id: "silvershireTownguardDirectionGuildhall", text: "Where is the Moonrose Guildhall?" },
+                        { id: "silvershireTownguardDirectionCouncil", text: "Where is the Council Hall?" },
+                        { id: "silvershireTownguardDirectionBarracks", text: "Where are the Barracks?" },
+                        { id: "silvershireTownguardDirectionTrinketry", text: "Where is Farrowfort’s Trinketry?" },
                         { id: "silvershireTownGuard", text: "Back to main options" }
                     ]
                 },
                     
-                    townguardDirectionInn: {
+                    silvershireTownguardDirectionInn: {
                         header: "The Gilded Acorn Inn is just southeast of the town square. Big building, you can’t miss it.",
-                        options: [{ id: "townguardDirections", text: "More directions?", goBack: true }]
+                        options: [{ id: "silvershireTownguardDirections", text: "More directions?", goBack: true }]
                     },
                     
-                    townguardDirectionBloom: {
+                    silvershireTownguardDirectionBloom: {
                         header: "Briella’s Bloom is the round building just north of the town square—full of flowers and potion scents.",
-                        options: [{ id: "townguardDirections", text: "More directions?", goBack: true }]
+                        options: [{ id: "silvershireTownguardDirections", text: "More directions?", goBack: true }]
                     },
                     
-                    townguardDirectionGuildhall: {
+                    silvershireTownguardDirectionGuildhall: {
                         header: "Head southwest from the square and you’ll find the Moonrose Guildhall just before the outer road bends.",
-                        options: [{ id: "townguardDirections", text: "More directions?", goBack: true }]
+                        options: [{ id: "silvershireTownguardDirections", text: "More directions?", goBack: true }]
                     },
                     
-                    townguardDirectionCouncil: {
+                    silvershireTownguardDirectionCouncil: {
                         header: "The Council Hall is the large building on the west side of the square. Lots of official types in there.",
-                        options: [{ id: "townguardDirections", text: "More directions?", goBack: true }]
+                        options: [{ id: "silvershireTownguardDirections", text: "More directions?", goBack: true }]
                     },
                     
-                    townguardDirectionBarracks: {
+                    silvershireTownguardDirectionBarracks: {
                         header: "Barracks are northeast of the square. That’s where we muster—and where we sleep when lucky.",
-                        options: [{ id: "townguardDirections", text: "More directions?", goBack: true }]
+                        options: [{ id: "silvershireTownguardDirections", text: "More directions?", goBack: true }]
                     },
                     
-                    townguardDirectionTrinketry: {
+                    silvershireTownguardDirectionTrinketry: {
                         header: "Farrowfort’s Trinketry is tucked between the Council Hall and Briella’s Bloom. Odd smells. Odder man.",
-                        options: [{ id: "townguardDirections", text: "More directions?", goBack: true }]
+                        options: [{ id: "silvershireTownguardDirections", text: "More directions?", goBack: true }]
                     },
                 
             // townguardTalk: {
@@ -177,14 +180,14 @@ const dialogueOptions = {
                 //     title: "Town Guard",
                 //     header: "How can I help you, adventurer?",
                 //     options: [
-                //         { id: "townguardDirectionInn", text: "Where is the inn?" },
-                //         { id: "townguardGoodbye", text: "Goodbye.", goBack: true }
+                //         { id: "silvershireTownguardDirectionInn", text: "Where is the inn?" },
+                //         { id: "silvershireTownguardGoodbye", text: "Goodbye.", goBack: true }
                 //     ]
                 // },
-                //     townguardDirectionInn: {
+                //     silvershireTownguardDirectionInn: {
                 //         header: "The inn is to the left of the town square.",
                 //         options: [
-                //             { id: "townguardDirectionInn_Annswer", text: "I have another question?", goBack: true },
+                //             { id: "silvershireTownguardDirectionInn_Annswer", text: "I have another question?", goBack: true },
                 //         ]
                 //     },
                 silvershireGreg: {
@@ -260,6 +263,9 @@ const dialogueOptions = {
                     TheClericsSpellbookAccept: {
                         title: "Errit Marwin",
                         header: `“Thank you! Now quickly go and-” The image of Errit fades away...`,
+                        options: [
+                            { id: "TheClericsSpellbookQuestCompleted", text: "Quest Completed?" }
+                        ]
                     },
                     TheClericsSpellbookDecline: {
                         title: "Errit Marwin",
@@ -269,6 +275,16 @@ const dialogueOptions = {
                             { id: "TheClericsSpellbookDecline_Answer", text: "Goodbye", goBack: true }
                         ]
                     },
+                        TheClericsSpellbookQuestCompleted: {
+                            title: "Errit Marwin",
+                            header: `Inside his tower, another spectral image of the gnome cleric stands before you, looking relieved and grateful.
+                                ` + $newPara + `“Thank you adventurers for retrieving my spellbook! I unfortunately am caught between duties again, but if you could travel south to Glintmere and deliver it to me in person at my residence in the Moonfen Spire, I will add onto your reward from today.”
+                                ` + $newPara + `The specter of Errit Marwin hands you 10 gp and 200 xp.`,
+                                options: [
+                                    { id: "TheHolyDeliveryAccept", text: "Quest Accept?" },
+                                    { id: "TheHolyDeliveryDecline", text: "Quest Decline?" }
+                                ]
+                        },
                 silvershireQuib: {
                     title: "Quib",
                     header: `A short, wiry man with tousled red hair and sharp, alert eyes that miss nothing. His skin is sun-touched and freckled, and he wears a patchy leather coat that hangs a bit too big on his frame. His hands are quick and stained with ink and oil, always fidgeting with something small and strange.
@@ -823,10 +839,19 @@ const dialogueOptions = {
                 //         { id: "gregExtra", text: "-Prompt here-" }
                 //     ]
                 // },
+    //#endregion
 
+    //#region Glintmere
+    townGlintmere: {
+        header: "You are in Glintmere. Which location are you in?",
+        options: [
+            { id: "codeLabel", text: "Text" },
+        ]
+    },
+    //#endregion
+//#endregion
 
-
-
+//#region Earthrim
     earthrimZone: {
         header: "You are in Earthrim. What do you want to do?",
         options: [
@@ -834,4 +859,6 @@ const dialogueOptions = {
             { id: "leaveEarthrim", text: "Leave Earthrim" }
         ]
     },
+
+//#endregion
 }
