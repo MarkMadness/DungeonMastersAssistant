@@ -211,7 +211,7 @@ const dialogueOptions = {
                         ` + $newPara + `Greg hands you # gp and # xp.
                         ` + $newPara + `“Now, if you haven't already you'll need to head next to WhiteRock in Earthrim, but if you wish to continue staying in Arezoth you are welcome to. After all, you are adventurers and adventure remains in this land.”`,
                         options: [
-                            { id: "gregQuestCompleted_Answer", text: "Goodbye", goBack: true }
+                            { id: "gregQuestCompletedFinal", text: "Goodbye", goBack: true }
                         ]
                     },
                 silvershireCabbageMan: {
@@ -842,13 +842,112 @@ const dialogueOptions = {
     //#endregion
 
     //#region Glintmere
-    townGlintmere: {
-        header: "You are in Glintmere. Which location are you in?",
+        townGlintmere: {
+            header: "You are in Glintmere. Which location are you in?",
+            options: [
+                { id: "runestoneCrossing", text: "Runestone Crossing (Streets)" },
+                { id: "moonfenSpire", text: "Moonfen Spire" },
+                { id: "starbrookSanctum", text: "Starbrook Sanctum" },
+                { id: "gildedEcho", text: "Gilded Echo" },
+                { id: "bramble_Broth", text: "Bramble & Broth" },
+                { id: "wyrdwoodRoost", text: "Wyrdwood Roost" },
+            ]
+        },
+            runestoneCrossing: {
+                header: "You are in the Runestone Crossing (streets). Who are you talking to?",
+                options: [
+                    {id: "", text: ""}
+                ]
+            },
+            moonfenSpire: {
+                header: "You are in the Moonfen Spire. Where are you inside?",
+                options: [
+                    {id: "lobby", text: "Lobby"},
+                    {id: "office", text: "Office"},
+                    {id: "library", text: "Library"},
+                    {id: "classroom", text: "Classroom"},
+                    {id: "magusHollow", text: "Magus Hollow"}
+                ]
+            },
+                magusHollow: {
+                    header: "You are in the Magus Hollow. Who are you talking to?",
+                    options: [
+                        {id: "erritMarwin", text: "Errit Marwin"}
+                    ]
+                },
+            starbrookSanctum: {
+                header: "You are in the Starbrook Sanctum. Who are you talking to?",
+                options: [
+                    {id: "", text: ""}
+                ]
+            },
+            gildedEcho: {
+                header: "You are in the Gilded Echo. Who are you talking to?",
+                options: [
+                    {id: "", text: ""}
+                ]
+            },
+            bramble_Broth: {
+                header: "You are in the Bramble & Broth. Who are you talking to?",
+                options: [
+                    {id: "", text: ""}
+                ]
+            },
+            wyrdwoodRoost: {
+                header: "You are in the Wyrdwood Roost. Who are you talking to?",
+                options: [
+                    {id: "", text: ""}
+                ]
+            },
+    //#endregion
+
+    //#region Barleyshade Fields
+    townBarleyshadeFields: {
+        header: "You are in Barleyshade Fields. Who are you talking to?",
         options: [
-            { id: "codeLabel", text: "Text" },
+            { id: "selinaDapplefield", text: "Selina Dapplefield" }
         ]
     },
+        selinaDapplefield: {
+            header: `Selina stands in front of a broken-down scarecrow, wiping sweat from her brow as the wind rustles through the fields.
+            ` + $newPara + `"Hello traveler. What bring you to my farm?"`,
+            options: [
+                { id: "theHauntedHarvestQuestOffer", text: "Quest: The Haunted Harvest"},
+                { id: "", text: ""},
+                { id: "", text: ""},
+            ]
+        },
+        theHauntedHarvestQuestOffer: {
+            header: `“Ah, travelers! You’ve come just in time. I could use your help with something strange. The scarecrows, you see... well, they’ve started moving on their own. Some of them are enchanted, and others are just the usual protective ones. Problem is, I can’t afford to make more, and I don’t want you breaking the wrong ones. There’s no telling which are the real ones and which are the monsters! Please, be careful. If you destroy one of my good scarecrows, I won’t be able to protect my crops.”
+            ` + $newPara + `Selina looks at you with pleading eyes. “Will you help me sort them out?”`,
+            options: [
+                { id: "theHauntedHarvestQuestAccept", text: "Quest Accept?" },
+                { id: "theHauntedHarvestQuestDecline", text: "Quest Decline?" },
+            ]
+        },
+            theHauntedHarvestQuestAccept: {
+                header: `"Thank you!"`,
+                options: [
+                    { id: "theHauntedHarvestQuestComplete", text: "Quest Completed?" }
+                ]
+            },
+            theHauntedHarvestQuestDecline: {
+                header: `"Oh...Ok..."`,
+                options: [
+                    { id: "theHauntedHarvestQuestDeclined", text: "Goodbye", goBack: true }
+                ]
+            },
+                theHauntedHarvestQuestComplete: {
+                    header: `Selina waves her hand gratefully as you return.
+                    ` + $newPara + `“You’ve done it! You’ve saved my farm from those cursed creatures. I don't know how to thank you enough. My scarecrows are safe, and my crops should be protected again. I’ll make sure to offer you something in return for your trouble.”
+                    ` + $newPara + `She hands over 10 gp, 200 xp, and an Arezoth Quest Completion Token, her face bright with relief. “Thank you. I’ll do my best to make sure nothing like this happens again.”`,
+                    options: [
+                        { id: "theHauntedHarvestQuestCompleteFinal", text: "Goodbye", goBack: true }
+                    ]
+                },
     //#endregion
+
+    
 //#endregion
 
 //#region Earthrim
