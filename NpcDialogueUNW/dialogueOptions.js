@@ -1,3 +1,4 @@
+
 //const $firstPara = "&nbsp;&nbsp;&nbsp;&nbsp;";
 const $newPara = "<br>&nbsp;&nbsp;&nbsp;&nbsp;";
 
@@ -13,12 +14,14 @@ const dialogueOptions = {
     arezothZone: {
         header: "You are in Arezoth. Where are you?",
         options: [
-            { id: "townSilvershire", text: "Silvershire" },
-            { id: "townGlintmere", text: "Glintmere" },
+            { id: "locationSilvershire", text: "Silvershire" },
+            { id: "locationGlintmere", text: "Glintmere" },
+            { id: "locationBarleyshadeFields", text: "Barleyshade Fields" },
+            { id: "locationThornrootPeak", text: "Thornroot Peak" },
         ]
     },
     //#region Silvershire
-        townSilvershire: {
+        locationSilvershire: {
             header: "You are in Silvershire. Which location are you in?",
             options: [
                 { id: "gildedAcornInn", text: "The Gilded Acorn Inn" },
@@ -281,8 +284,8 @@ const dialogueOptions = {
                                 ` + $newPara + `“Thank you adventurers for retrieving my spellbook! I unfortunately am caught between duties again, but if you could travel south to Glintmere and deliver it to me in person at my residence in the Moonfen Spire, I will add onto your reward from today.”
                                 ` + $newPara + `The specter of Errit Marwin hands you 10 gp and 200 xp.`,
                                 options: [
-                                    { id: "TheHolyDeliveryAccept", text: "Quest Accept?" },
-                                    { id: "TheHolyDeliveryDecline", text: "Quest Decline?" }
+                                    { id: "theHolyDeliveryAccept", text: "Quest Accept?" },
+                                    { id: "theHolyDeliveryDecline", text: "Quest Decline?" }
                                 ]
                         },
                 silvershireQuib: {
@@ -842,7 +845,7 @@ const dialogueOptions = {
     //#endregion
 
     //#region Glintmere
-        townGlintmere: {
+        locationGlintmere: {
             header: "You are in Glintmere. Which location are you in?",
             options: [
                 { id: "runestoneCrossing", text: "Runestone Crossing (Streets)" },
@@ -872,9 +875,27 @@ const dialogueOptions = {
                 magusHollow: {
                     header: "You are in the Magus Hollow. Who are you talking to?",
                     options: [
-                        {id: "erritMarwin", text: "Errit Marwin"}
+                        {id: "glintmereErritMarwin", text: "Errit Marwin"}
                     ]
                 },
+                    glintmereErritMarwin: {
+                        title: "Errit Marwin",
+                        header: `Hello, friend. Good to see you!`,
+                        options: [
+                            { id: "theHolyDeliveryQuestComplete", text: "A Holy Delivery Quest Complete?" },
+                        ]
+                    },
+                        theHolyDeliveryQuestComplete: {
+                            title: "Errit Marwin",
+                            header: `Inside the room of Magus Hollow, erratic sparks continue to burst from nearby devices. The scent of singed parchment and magical ozone clings to the air. Arcane gadgets buzz, float, and occasionally pop with harmless sparks of light. At the back of the room, Errit Marwin now stands in the flesh—no longer a mere image. He turns to greet you as you approach, his eyes lighting up with gratitude. 
+                            ` + $newPara + `“Ah, splendid! You’ve returned my spellbook. With this back in hand, my work for Glintmere—and its people—can continue uninterrupted. There’s still much to do, but with help like yours, this town is in good hands.”
+                            ` + $newPara + `He bows his head with quiet respect, adjusting his soot-stained sleeves. “Thank you again for your help, adventurers. May the Weave guide your path.”
+                            ` + $newPara + `Errit hands you 10 gp, 200 xp, and an Arezoth Quest Completion Token.
+                            ` + $newPara + `[DEV NOTE: This is currently the final quest available in Glintmere, as additional content for this town is still in development. In the next patch, our team will be completing additional NPCs, quests, and encounters. Thank you for your patience—and as always, enjoy your adventure in Arezoth!]`,
+                            options: [
+                                { id: "theHolyDeliveryQuestCompleteFinal", text: "Goodbye", goBack: true }
+                            ]
+                        },
             starbrookSanctum: {
                 header: "You are in the Starbrook Sanctum. Who are you talking to?",
                 options: [
@@ -902,13 +923,14 @@ const dialogueOptions = {
     //#endregion
 
     //#region Barleyshade Fields
-    townBarleyshadeFields: {
+    locationBarleyshadeFields: {
         header: "You are in Barleyshade Fields. Who are you talking to?",
         options: [
             { id: "selinaDapplefield", text: "Selina Dapplefield" }
         ]
     },
         selinaDapplefield: {
+            title: "Selina Dapplefield",
             header: `Selina stands in front of a broken-down scarecrow, wiping sweat from her brow as the wind rustles through the fields.
             ` + $newPara + `"Hello traveler. What bring you to my farm?"`,
             options: [
@@ -918,6 +940,7 @@ const dialogueOptions = {
             ]
         },
         theHauntedHarvestQuestOffer: {
+            title: "Selina Dapplefield",
             header: `“Ah, travelers! You’ve come just in time. I could use your help with something strange. The scarecrows, you see... well, they’ve started moving on their own. Some of them are enchanted, and others are just the usual protective ones. Problem is, I can’t afford to make more, and I don’t want you breaking the wrong ones. There’s no telling which are the real ones and which are the monsters! Please, be careful. If you destroy one of my good scarecrows, I won’t be able to protect my crops.”
             ` + $newPara + `Selina looks at you with pleading eyes. “Will you help me sort them out?”`,
             options: [
@@ -926,18 +949,21 @@ const dialogueOptions = {
             ]
         },
             theHauntedHarvestQuestAccept: {
+                title: "Selina Dapplefield",
                 header: `"Thank you!"`,
                 options: [
                     { id: "theHauntedHarvestQuestComplete", text: "Quest Completed?" }
                 ]
             },
             theHauntedHarvestQuestDecline: {
+                title: "Selina Dapplefield",
                 header: `"Oh...Ok..."`,
                 options: [
                     { id: "theHauntedHarvestQuestDeclined", text: "Goodbye", goBack: true }
                 ]
             },
                 theHauntedHarvestQuestComplete: {
+                    title: "Selina Dapplefield",
                     header: `Selina waves her hand gratefully as you return.
                     ` + $newPara + `“You’ve done it! You’ve saved my farm from those cursed creatures. I don't know how to thank you enough. My scarecrows are safe, and my crops should be protected again. I’ll make sure to offer you something in return for your trouble.”
                     ` + $newPara + `She hands over 10 gp, 200 xp, and an Arezoth Quest Completion Token, her face bright with relief. “Thank you. I’ll do my best to make sure nothing like this happens again.”`,
@@ -947,7 +973,37 @@ const dialogueOptions = {
                 },
     //#endregion
 
-    
+    //#region Thornroot Peak
+    locationThornrootPeak: {
+        header: "You are in Thornroot Peak. Who are you talking to?",
+        options: [
+            { id: "thornrootPeakGreg", text: "Greg" }
+        ]
+    },
+        thornrootPeakGreg: {
+            header: `Greg stands nervously in the center of a crude wooden cage, his green shirt dirtied and his brown vest torn. He clutches the bars as you approach, eyes wide with hope.
+            ` + $newPara + `“Hello, adventurers. I ran into some bad luck after leaving Silvershire to run a few errands. These bugbears grabbed me and tossed me in here—I can’t get out on my own.”
+            ` + $newPara + `“If you can escort me safely back to Silvershire, I promise you’ll be rewarded wonderfully.”`,
+            options: [
+                { id: "rescueGregFromBugbearsQuestAccept", text: "Quest Accept?"},
+                { id: "rescueGregFromBugbearsQuestDecline", text: "Quest Decline?"},
+            ]
+        },
+            rescueGregFromBugbearsQuestAccept: {
+                header: `"Oh, thank you! Bless the gods for they surely sent you all my way. Thank you, let's get going"
+                ` + $newPara + `The cage door swings open and Greg steps out, his nameplate updates to [insert player name here]'s Companion.`,
+                options: [
+                    { id: "rescueGregFromBugbearsQuestComplete", text: "Quest Completed?" }
+                ]
+            },
+            rescueGregFromBugbearsQuestDecline: {
+                header: `"What the fuck, adventurer!?"`,
+                options: [
+                    { id: "rescueGregFromBugbearsQuestDeclined", text: "Goodbye", goBack: true }
+                ]
+            },
+    //#endregion
+
 //#endregion
 
 //#region Earthrim
