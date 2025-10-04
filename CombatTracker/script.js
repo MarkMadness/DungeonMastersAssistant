@@ -28,8 +28,46 @@ $(document).ready(function() {
 //     }
 // }
 
-function populateLibrary() {
-    for (let x=0;x<monstersLocal.length;x++) {
+function removeAllMonsters() {
+    console.log('combatOrder = ' + combatOrder);
+    for (let i = combatOrder.length - 1; i >= 0; i--) {
+        console.log('iteration')
+        if (combatOrder[i][7] === "Monster") {
+            console.log('removing ' + combatOrder[i][2] + ' ' + combatOrder[i][6])
+            removeFromCombat(combatOrder[i][6]);
+        }
+    }
+    // console.log('sup')
+    // console.log(combatOrder)
+    // loop through each item in combatOrder
+        // identfy if the item's ProfileType
+        // If ProfileType === "Monster", remove from combatOrder via removeFromCombat(creatureID)
+}
+
+function removeAllPlayers() {
+    console.log('sup')
+    // loop through each item in combatOrder
+        // identfy if the item's ProfileType
+        // If ProfileType === "Player", remove from combatOrder via removeFromCombat(creatureID)
+}
+
+function libraryNav(libraryType) {
+    if (libraryType === "monsters") {
+        populateLibrary('monstersLocal')
+    } else if(libraryType === "unique") {
+        populateLibrary('uniqueLocal')
+    } else if(libraryType === "players") {
+        populateLibrary('playersLocal')
+    }
+}
+
+function populateLibrary(libraryType = 'monstersLocal') {
+    // console.log('libraryType = ' + libraryType);
+    let dataArray = window[libraryType];
+    // console.log("dataArray = " + dataArray);
+    document.getElementById("library-list").innerHTML = "";
+
+    for (let x=0;x<dataArray.length;x++) {
         let list = document.getElementById("library-list");
         let li = document.createElement("li");
         let div = document.createElement("div");
@@ -77,7 +115,8 @@ function populateCombatOrder(addedCreature){
     currentHP = addedCreature.HitPoints;
     let creatureHPTotal = addedCreature.HitPoints;
     let creatureAC = addedCreature.ArmorClass[0];
-    let creatureArray = [creatureNameID, creatureInit, creatureName, currentHP, creatureHPTotal, creatureAC, creatureID];
+    let creatureProfileType = addedCreature.ProfileType;
+    let creatureArray = [creatureNameID, creatureInit, creatureName, currentHP, creatureHPTotal, creatureAC, creatureID, creatureProfileType];
     duplicateNamesCheck(creatureArray);
     //reloadCombatOrder(combatOrder, false);
 }

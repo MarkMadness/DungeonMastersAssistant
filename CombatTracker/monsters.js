@@ -1,6 +1,7 @@
-const monstersLocal = [
+window.monstersLocal = [
     {
         ID: 0,
+        ProfileType: "Monster",
         Name: "template",
         Type: "Size type, alignment",
         Source: "Monster Manual",
@@ -115,6 +116,7 @@ const monstersLocal = [
     },
     {
         ID: 1,
+        ProfileType: "Monster",
         Name: "Aarakocra",
         Type: "Medium humanoid(aarakocra), neutral good",
         Source: "Monster Manual",
@@ -161,6 +163,7 @@ const monstersLocal = [
     },
     {
         ID: 2,
+        ProfileType: "Monster",
         Name: "Aboleth",
         Type: "Large aberration, lawful evil",
         Source: "Monster Manual",
@@ -236,6 +239,7 @@ const monstersLocal = [
     },
     {
         ID: 3,
+        ProfileType: "Monster",
         Name: "Deva",
         Type: "Medium Celestial, lawful good",
         Source: "Monster Manual",
@@ -298,6 +302,7 @@ const monstersLocal = [
     },
     {
         ID: 5,
+        ProfileType: "Monster",
         Name: "Planetar",
         Type: "Size type, alignment",
         Source: "Monster Manual",
@@ -350,6 +355,7 @@ const monstersLocal = [
     },
     {
         ID: 6,
+        ProfileType: "Monster",
         Name: "Solar",
         Type: "Size type, alignment",
         Source: "Monster Manual",
@@ -402,6 +408,7 @@ const monstersLocal = [
     },
     {
         ID: 7,
+        ProfileType: "Monster",
         Name: "template name",
         Type: "Size type, alignment",
         Source: "Monster Manual",
@@ -453,9 +460,10 @@ const monstersLocal = [
     }
 ];
 
-const uniqueLocal = [
+window.uniqueLocal = [
     {
         ID: 0,
+        ProfileType: "Unique",
         Name: "template name",
         Type: "Size type, alignment",
         Source: "Monster Manual",
@@ -486,9 +494,10 @@ const uniqueLocal = [
     },
 ];
 
-const playersLocal = [
+window.playersLocal = [
     {
         ID: 0,
+        ProfileType: "Player",
         Name: "template name",
         Type: "Size type, alignment",
         Source: "Monster Manual",
