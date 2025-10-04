@@ -18,6 +18,7 @@ const dialogueOptions = {
             { id: "locationGlintmere", text: "Glintmere" },
             { id: "locationBarleyshadeFields", text: "Barleyshade Fields" },
             { id: "locationThornrootPeak", text: "Thornroot Peak" },
+            { id: "locationUnnamedTown", text: "Unnamed Town"},
         ]
     },
     //#region Silvershire
@@ -969,6 +970,52 @@ const dialogueOptions = {
                     ` + $newPara + `She hands over 10 gp, 200 xp, and an Arezoth Quest Completion Token, her face bright with relief. “Thank you. I’ll do my best to make sure nothing like this happens again.”`,
                     options: [
                         { id: "theHauntedHarvestQuestCompleteFinal", text: "Goodbye", goBack: true }
+                    ]
+                },
+    //#endregion
+
+    //#region Unnamed Town
+    locationUnnamedTown: {
+        header: "You are in Unnamed Town. Who are you talking to?",
+        options: [
+            { id: "daniel", text: "Daniel" }
+        ]
+    },
+        daniel: {
+            title: "Daniel",
+            header: `Daniel stands in the center of the town square`,
+            options: [
+                { id: "theShatteredBannerQuestOffer", text: "Quest: The Shattered Banner"},
+            ]
+        },
+        theShatteredBannerQuestOffer: {
+            title: "Daniel",
+            header: `“Hello adventurers! I have a task that must be completed for the sake of ‘Town Name Here’. To the north, there’s a watchtower that was burned down a short while ago. Our town guard were once stationed there, but there hasn’t been any news on the culprits. If you can go to the watchtower and scout for any evidence as to who might have done this it would be a great service to our town.”`,
+            options: [
+                { id: "theShatteredBannerQuestAccept", text: "Quest Accept?" },
+                { id: "theShatteredBannerQuestDecline", text: "Quest Decline?" },
+            ]
+        },
+            theShatteredBannerQuestAccept: {
+                title: "Daniel",
+                header: `"Thank you! Good luck, Adventurers!"`,
+                options: [
+                    { id: "theShatteredBannerQuestComplete", text: "Quest Completed?" }
+                ]
+            },
+            theShatteredBannerQuestDecline: {
+                title: "Daniel",
+                header: `"Oh...Ok...If you change your mind I'll be here"`,
+                options: [
+                    { id: "theShatteredBannerQuestDeclined", text: "Goodbye", goBack: true }
+                ]
+            },
+                theShatteredBannerQuestComplete: {
+                    title: "Daniel",
+                    header: `"Adventurers! You did it! Thank you! Here’s your reward"
+                    ` + $newPara + `He hands over 10 gp, 200 xp`,
+                    options: [
+                        { id: "theShatteredBannerQuestCompleteFinal", text: "Goodbye", goBack: true }
                     ]
                 },
     //#endregion
