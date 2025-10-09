@@ -126,7 +126,6 @@ const dialogueOptions = {
                         { id: "silvershireTownGuard", text: "Back to main options" }
                     ]
                 },
-                    
                     silvershireTownguardDirectionInn: {
                         header: "The Gilded Acorn Inn is just southeast of the town square. Big building, you can’t miss it.",
                         options: [{ id: "silvershireTownguardDirections", text: "More directions?", goBack: true }]
@@ -884,6 +883,9 @@ const dialogueOptions = {
                         header: `Hello, friend. Good to see you!`,
                         options: [
                             { id: "theHolyDeliveryQuestComplete", text: "A Holy Delivery Quest Complete?" },
+                            { id: "theUnstableCoreQuestOffer", text: "The Unstable Core" },
+                            { id: "questNameQuestOffer", text: "Quest Name" },
+                            { id: "dungeonOfTheBadGuyQuestOffer", text: "[DUNGEON] Dungeon of the Bad Guy" },
                         ]
                     },
                         theHolyDeliveryQuestComplete: {
@@ -897,6 +899,102 @@ const dialogueOptions = {
                                 { id: "theHolyDeliveryQuestCompleteFinal", text: "Goodbye", goBack: true }
                             ]
                         },
+                        theUnstableCoreQuestOffer: {
+                            title: "Errit Marwin",
+                            header: `dialogue text 
+                            ` + $newPara + `“dialogue text continued”`,
+                            options: [
+                                { id: "theUnstableCoreQuestAccept", text: "Quest Accept?" },
+                                { id: "theUnstableCoreQuestDecline", text: "Quest Decline?" },
+                            ]
+                        },
+                            theUnstableCoreQuestAccept: {
+                                title: "Errit Marwin",
+                                header: `"Thank you!"`,
+                                options: [
+                                    { id: "theUnstableCoreQuestComplete", text: "Quest Completed?" },
+                                    { id: "theUnstableCoreQuestFailed", text: "Quest Failed?" }
+                                ]
+                            },
+                                theUnstableCoreQuestComplete: {
+                                    title: "Errit Marwin",  
+                                    header: `dialogue text
+                                    ` + $newPara + `dialogue text continued`,
+                                    options: [
+                                        { id: "theUnstableCoreQuestCompleteFinal", text: "Goodbye", goBack: true }
+                                    ]
+                                },
+                                theUnstableCoreQuestDecline: {
+                                    title: "Errit Marwin",
+                                    header: `"Oh...Ok..."`,
+                                    options: [
+                                        { id: "theUnstableCoreQuestDeclined", text: "Goodbye", goBack: true }
+                                    ]
+                                },
+                        questNameQuestOffer: {
+                            title: "Errit Marwin",
+                            header: `dialogue text 
+                            ` + $newPara + `“dialogue text continued”`,
+                            options: [
+                                { id: "questNameQuestAccept", text: "Quest Accept?" },
+                                { id: "questNameQuestDecline", text: "Quest Decline?" },
+                            ]
+                        },
+                            questNameQuestAccept: {
+                                title: "Errit Marwin",
+                                header: `"Thank you!"`,
+                                options: [
+                                    { id: "questNameQuestComplete", text: "Quest Completed?" },
+                                    { id: "questNameQuestFailed", text: "Quest Failed?" }
+                                ]
+                            },
+                                questNameQuestComplete: {
+                                    title: "Errit Marwin",  
+                                    header: `dialogue text
+                                    ` + $newPara + `dialogue text continued`,
+                                    options: [
+                                        { id: "questNameQuestCompleteFinal", text: "Goodbye", goBack: true }
+                                    ]
+                                },
+                                questNameQuestDecline: {
+                                    title: "Errit Marwin",
+                                    header: `"Oh...Ok..."`,
+                                    options: [
+                                        { id: "questNameQuestDeclined", text: "Goodbye", goBack: true }
+                                    ]
+                                },
+                        dungeonOfTheBadGuyQuestOffer: {
+                            title: "Errit Marwin",
+                            header: `dialogue text 
+                            ` + $newPara + `“dialogue text continued”`,
+                            options: [
+                                { id: "dungeonOfTheBadGuyQuestAccept", text: "Quest Accept?" },
+                                { id: "dungeonOfTheBadGuyQuestDecline", text: "Quest Decline?" },
+                            ]
+                        },
+                            dungeonOfTheBadGuyQuestAccept: {
+                                title: "Errit Marwin",
+                                header: `"Thank you!"`,
+                                options: [
+                                    { id: "dungeonOfTheBadGuyQuestComplete", text: "Quest Completed?" },
+                                    { id: "dungeonOfTheBadGuyQuestFailed", text: "Quest Failed?" }
+                                ]
+                            },
+                                dungeonOfTheBadGuyQuestComplete: {
+                                    title: "Errit Marwin",  
+                                    header: `dialogue text
+                                    ` + $newPara + `dialogue text continued`,
+                                    options: [
+                                        { id: "dungeonOfTheBadGuyCompleteFinal", text: "Goodbye", goBack: true }
+                                    ]
+                                },
+                            dungeonOfTheBadGuyQuestDecline: {
+                                title: "Errit Marwin",
+                                header: `"Oh...Ok..."`,
+                                options: [
+                                    { id: "dungeonOfTheBadGuyQuestDeclined", text: "Goodbye", goBack: true }
+                                ]
+                            },
             starbrookSanctum: {
                 header: "You are in the Starbrook Sanctum. Who are you talking to?",
                 options: [
