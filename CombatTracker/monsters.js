@@ -1,3 +1,7 @@
+/*
+    for InnateSpellcasting, if a slot number is 10 that means 'at will' or unlimited uses
+*/
+
 window.monstersLocal = [
     {
         ID: 0,
@@ -462,7 +466,7 @@ window.monstersLocal = [
 
 window.uniqueLocal = [
     {
-        ID: 0,
+        ID: 100000,
         ProfileType: "Unique",
         Name: "template name",
         Type: "Size type, alignment",
@@ -487,20 +491,233 @@ window.uniqueLocal = [
         Challenge: [1, 200],
         ExtraRewards: "",
         Traits: [],
+        InnateSpellcasting: [
+            {
+                Description: "",
+                Cantrips: {
+                    Slots: "at will",
+                    Spells: [""]
+                },
+                Level1: {
+                    Slots: 4,
+                    Spells: [""]
+                },
+                Level2: {
+                    Slots: 3,
+                    Spells: [""]
+                },
+                Level3: {
+                    Slots: 3,
+                    Spells: [""]
+                },
+                Level4: {
+                    Slots: 3,
+                    Spells: [""]
+                },
+                Level5: {
+                    Slots: 2,
+                    Spells: [""]  
+                },
+                Level6: {
+                    Slots: 1,
+                    Spells: [""]  
+                },
+                Level7: {
+                    Slots: 1,
+                    Spells: [""]
+                },
+                Level8: {
+                    Slots: 1,
+                    Spells: [""]
+                },
+                Level9: {
+                    Slots: 1,
+                    Spells: [""]
+                }
+            }
+        ],
         Actions: [],
         Reactions: [],
         LegendaryActions: [],
+        Description: "Description here"
+    },
+    {
+        ID: 100001,
+        ProfileType: "Unique",
+        Name: "Omega",
+        Type: "gargantuan construct, neutral",
+        Source: "Homebrew",
+        HitPoints: 999,
+        ArmorClass: [25, "natural armor"],
+        Speed: ["100 ft.", "fly 100 ft.", "climb 100 ft.", "swim 100 ft.", "hover 100 ft."],
+        Strength: 30,
+        Dexterity: 30,
+        Constitution: 30,
+        Intelligence: 30,
+        Wisdom: 30,
+        Charisma: 30,
+        SavingThrows: ["Strength +20", "Dexterity +20", "Constitution +20", "Intelligence +20", "Wisdom +20", "Charisma +20"],
+        Skills: ["All +20"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder"],
+        DamageImmunities: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Paralyzed", "Petrified", "Poisoned", "Prone", "Stunned", "Unconscious"],
+        Senses: ["blindsight 60 ft.", "darkvision 120 ft.", "tremorsense 60 ft.", "truesight 120 ft.", "passive perception 30"],
+        Languages: ["All", "telepathy 5 miles"],
+        Challenge: [30, 155000],
+        ExtraRewards: "REWARD: 100 boons, 50 Very Rare Gems, 50 Rare Gems, 50 Uncommon Gems, 50 Common Gems, +3 magical item for each player’s choice, 10 spell scrolls, 1,000,000 gold, 50 Supreme Healing potions",
+        Traits: [
+            {
+                Title: "Legendary Resistances (3/Combat)",
+                Desc: "If Omega fails a save, it can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Omega has advantage on saving throws against spells and other magical effects.",
+            },
+            {
+                Title: "Magical Weapons",
+                Desc: "All Omega’s attacks are magical.",
+            },
+            {
+                Title: "Show of Endurance",
+                Desc: "Omega doesn’t show any sign of tiredness, wear & tear, or any indication of the state of hit points or condition.",
+            },
+            {
+                Title: "Immune to Finishers",
+                Desc: "Omega cannot be instantly killed by a skill like Quivering Palm, Power Word Kill, or Wish. Instead, Omega automatically saves and takes the successful save amount of damage. If damage isn’t described in the spell, attacker rolls 55 (10d10) force damage.",
+            },
+        ],
+        InnateSpellcasting: [
+            {
+                Description: "Omega’s innate spellcasting ability is Intelligence, Wisdom, or Charisma depending on the spell (spell save DC 20, +20 to hit). Omega can innately cast the following spells, requiring no material components (Roll 10d12 for damage of all spells that deal damage):",
+                Cantrips: {
+                    Slots: "at will",
+                    Spells: ["all cantrips"]
+                },
+                Level1: {
+                    Slots: 9,
+                    Spells: ["all level 1 spells"]
+                },
+                Level2: {
+                    Slots: 8,
+                    Spells: ["all level 2 spells"]
+                },
+                Level3: {
+                    Slots: 7,
+                    Spells: ["all level 3 spells"]
+                },
+                Level4: {
+                    Slots: 6,
+                    Spells: ["all level 4 spells"]
+                },
+                Level5: {
+                    Slots: 5,
+                    Spells: ["all level 5 spells"]
+                },
+                Level6: {
+                    Slots: 4,
+                    Spells: ["all level 6 spells"]
+                },
+                Level7: {
+                    Slots: 3,
+                    Spells: ["all level 7 spells"]
+                },
+                Level8: {
+                    Slots: 2,
+                    Spells: ["all level 8 spells"]
+                },
+                Level9: {
+                    Slots: 1,
+                    Spells: ["all level 9 spells"]
+                }
+            }
+        ],
+        Actions: [
+            {
+                Title: "Melee Offense",
+                Desc: "Melee Weapon Attack: +20 to hit, reach 10 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:" +  "\n" +
+                "Blugeoning | Mace, Hammer, Flail, Maul, Staff | Hit: 26 (4d12 bludgeoning damage)" + "\n" +
+                "Slashing | Axe, Sickle, Glaive, Halberd, Sword, Bladed Whip | Hit: 26 (4d12 slashing damage)" + "\n" +
+                "Piercing | Dagger, Javelin, Spear, Lance, Morningstar, Rapier, Trident | Hit: 26 (4d12 piercing damage)" + "\n" +
+                "Then select what kind of damage is inflicted from the list below:" + "\n" +
+                "Acid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder" + "\n" +
+                "Hit: 26 (4d12) type damage",
+            },
+            {
+                Title: "Ranged Offense",
+                Desc: "Ranged Weapon Attack: +20 to hit, reach 1,000 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:" +  "\n" +
+                "Blugeoning | Sling | Hit: 26 (4d12 bludgeoning damage)" + "\n" +
+                "Slashing | Bladed Whip | Hit: 26 (4d12 slashing damage)" + "\n" +
+                "Piercing | Crossbow, Dart, Bow, Blowgun | Hit: 26 (4d12 piercing damage)" + "\n" +
+                "Then select what kind of damage is inflicted from the list below:" + "\n" +
+                "Acid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder" + "\n" +
+                "Hit: 26 (4d12) type damage",
+            },
+            {
+                Title: "Scythe of Near Death (Recharge 20)",
+                Desc: "Melee Weapon Attack: +20 to hit, reach 15 ft., one target. " +  "\n" +
+                "If attack hits, a scythe of pure cosmic energy forms in Omega’s hands. It swings at its target, the energy from the blade forming a tornado of colorful energy swirling around the target. It spirals in closer darkening the world around the target for a brief moment as a spark of cosmic light explodes from the target. The target takes an enormous amount of damage leaving them with one hit point remaining." +  "\n" +
+                "If attack misses, cosmic light explodes around the target. If the target is a conscious being, they get the feeling if that hit them they would have been near death." +  "\n" +
+                "Whether the attack hit or missed, Omega falls prone to one knee and cannot take any actions, legendary actions, or reactions until its next turn.",
+            },
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "Omega makes one attack.",
+            },
+            {
+                Title: "Move",
+                Desc: "Move up to Omega’s full speed.",
+            },
+            {
+                Title: "Parry",
+                Desc: "Omega can add +2 to his AC to parry an attack that would hit him.",
+            },
+        ],
         Description: "Description here"
     },
 ];
 
 window.playersLocal = [
     {
-        ID: 0,
+        ID: 1000000,
         ProfileType: "Player",
-        Name: "template name",
-        Type: "Size type, alignment",
-        Source: "Monster Manual",
+        Name: "RealLifeName (CharacterName)",
+        Type: "Medium humanoid(), alignment",
+        Source: "Player's Handbook",
+        HitPoints: 1,
+        ArmorClass: [10, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: [],
+        Languages: [],
+        Challenge: [1, 200],
+        Traits: [],
+        Actions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        Description: "Description here"
+    },
+    {
+        ID: 1000001,
+        ProfileType: "Player",
+        Name: "Adam (CharacterName)",
+        Type: "Medium humanoid(), alignment",
+        Source: "Player's Handbook",
         HitPoints: 1,
         ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],

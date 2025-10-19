@@ -31,24 +31,34 @@ $(document).ready(function() {
 function removeAllMonsters() {
     console.log('combatOrder = ' + combatOrder);
     for (let i = combatOrder.length - 1; i >= 0; i--) {
-        console.log('iteration')
+        // console.log('iteration')
         if (combatOrder[i][7] === "Monster") {
-            console.log('removing ' + combatOrder[i][2] + ' ' + combatOrder[i][6])
+            // console.log('removing ' + combatOrder[i][2] + ' ' + combatOrder[i][6])
             removeFromCombat(combatOrder[i][6]);
         }
     }
-    // console.log('sup')
     // console.log(combatOrder)
     // loop through each item in combatOrder
         // identfy if the item's ProfileType
         // If ProfileType === "Monster", remove from combatOrder via removeFromCombat(creatureID)
 }
 
+function removeAllUnique() {
+    console.log('combatOrder = ' + combatOrder);
+    for (let i = combatOrder.length - 1; i >= 0; i--) {
+        if (combatOrder[i][7] === "Unique") {
+            removeFromCombat(combatOrder[i][6]);
+        }
+    }
+}
+
 function removeAllPlayers() {
-    console.log('sup')
-    // loop through each item in combatOrder
-        // identfy if the item's ProfileType
-        // If ProfileType === "Player", remove from combatOrder via removeFromCombat(creatureID)
+    console.log('combatOrder = ' + combatOrder);
+    for (let i = combatOrder.length - 1; i >= 0; i--) {
+        if (combatOrder[i][7] === "Player") {
+            removeFromCombat(combatOrder[i][6]);
+        }
+    }
 }
 
 function libraryNav(libraryType) {
@@ -63,18 +73,18 @@ function libraryNav(libraryType) {
 
 function populateLibrary(libraryType = 'monstersLocal') {
     // console.log('libraryType = ' + libraryType);
-    let dataArray = window[libraryType];
-    // console.log("dataArray = " + dataArray);
+    let monsterArray = window[libraryType];
+    // console.log("monsterArray = " + JSON.stringify(monsterArray));
     document.getElementById("library-list").innerHTML = "";
 
-    for (let x=0;x<dataArray.length;x++) {
+    for (let x=0;x<monsterArray.length;x++) {
         let list = document.getElementById("library-list");
         let li = document.createElement("li");
         let div = document.createElement("div");
         li.classList.add("monster-profile");
-        let onclickName = "addToCombat('" + monstersLocal[x].Name + "')";
+        let onclickName = "addToCombat('" + monsterArray[x].Name + "', '" + libraryType + "')";
         li.setAttribute("onclick", onclickName);
-        let text = document.createTextNode(monstersLocal[x].Name);
+        let text = document.createTextNode(monsterArray[x].Name);
         li.appendChild(text);
         list.appendChild(li);
     }
@@ -82,20 +92,22 @@ function populateLibrary(libraryType = 'monstersLocal') {
 }
 
 // Will need to rework the logic for the parent forin loop
-function addToCombat(name) {
+function addToCombat(name, monsterType) {
     // console.log("name = " + name);
-    for(select in monstersLocal) {
-        if(monstersLocal[select].Name == name) {
-            let creature = monstersLocal[select];
-            populateCombatOrder(creature);
+    for(select in window[monsterType]) {
+        if(window[monsterType][select].Name == name) {
+            // Add a check in here to prevent adding duplicate unique monsters and players
+            let creature = window[monsterType][select];
+            populateCombatOrder(creature, monsterType);
         }
     }
 }
 
 function removeFromCombat(creatureID) {
+    // console.log('removeFromCombat creatureID = ' + creatureID);
     let remove = false;
     for(let x = 0;x<combatOrder.length;x++){
-        if (combatOrder[x][0] == creatureID)
+        if (combatOrder[x][6] === creatureID)
         {
             combatOrder.splice(x, 1);
         }
@@ -103,6 +115,7 @@ function removeFromCombat(creatureID) {
     if (!combatOrder[1]){
         remove = true;
     }
+    // console.log('combatOrder after removal = ' + combatOrder);
     reloadCombatOrder(combatOrder, remove);
 }
 
@@ -188,6 +201,7 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         let rowHP = tableRows[i][3];
         let rowHPTotal = tableRows[i][4];
         let rowAC = tableRows[i][5];
+        let rowProfileType = tableRows[i][7];
 
         // nodes for addedCreature
         let initiative = document.createTextNode(rowInit); // will need to add a function like RollForInitiative() to handle initiatives. Maybe even auto for NPCs, manual for PCs
@@ -198,7 +212,7 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         // onClick appends
         let onclickInit = "changeInit('" + rowInit + "', '" + rowID + "')";
         tdInit.setAttribute("onclick", onclickInit);
-        let onclickName = "populateProfileDetails('" + rowName + "')";
+        let onclickName = "populateProfileDetails('" + rowName + "', '" + rowProfileType + "')";
         tdName.setAttribute("onclick", onclickName);
         let onclickHP = "changeHP('" + rowHP + "/" + rowHPTotal + "/" + rowID + "')";
         tdHP.setAttribute("onclick", onclickHP);
@@ -429,15 +443,24 @@ function populateDetails(creatureName) {
     console.log("populateDetails");   
 }
 
-function populateProfileDetails(creatureName) {
+function populateProfileDetails(creatureName, creatureType) {
     const $content = $("#profile-content");
     $content.show();
     $('#profile-placeholder').hide();
     const $name = creatureName.replace(/\s\d+$/, ' ').trim(); 
     //console.log('$name: ', $name);
     //console.log('$name length: ', $name.length);
-    
-    const $creature = monstersLocal.find(monster => monster.Name === $name);
+    let monsterLibrary;
+
+    if (creatureType === "Monster") {
+        monsterLibrary = monstersLocal;
+    } else if (creatureType === "Unique") {
+        monsterLibrary = uniqueLocal;
+    } else if (creatureType === "Player") {
+        monsterLibrary = playersLocal;
+    }
+
+    const $creature = monsterLibrary.find(monster => monster.Name === $name);
 
     if($creature) {
         $content.find("#profile-name").html("<strong>" + $creature.Name + "</strong>");
@@ -526,6 +549,22 @@ function populateProfileDetails(creatureName) {
             for(let i = 0; i < $creature.Traits.length; i++) {
                 $content.find("#profile-traits")
                 .append("<p class='text-md'><strong>" + $creature.Traits[i].Title + "</strong></p><p class='text-md'> " + $creature.Traits[i].Desc + "<p/><br>");
+            }
+
+            if($creature.InnateSpellcasting != null) {
+                $content.find("#profile-innateSpellcasting").show();
+                $content.find("#profile-innateSpellcasting").html("<strong>Innate Spellcasting</strong><br>");
+                
+                const cis = $creature.InnateSpellcasting;
+
+                console.log('InnateSpellcasting = ' + JSON.stringify(cis[0]));
+
+                //$content.find("#profile-innateSpellcasting")
+                  //  .append("<p class='text-md'> " + $creature.InnateSpellcasting.Description + "<p/><br>" + 
+                    //    "<p class='text-md'>Cantrips (" + $creature.InnateSpellcasting.Cantrips[0] + "): " + $creature.InnateSpellcasting.Cantrips[1] + "<p/><br>");
+
+            } else {
+                $content.find("#profile-innateSpellcasting").hide();
             }
         } else {
             $content.find("#profile-traits").hide();
@@ -638,7 +677,15 @@ function duplicateNamesCheck(newCreature){
     // //     console.log("combatOrder after if statement = " + combatOrder);
     // // }
 
-        // Extract the base name from the newCreature
+
+
+
+    if (newCreature[7] !== "Monster") {
+        combatOrder.push(newCreature);
+        reloadCombatOrder(combatOrder, false);
+        return;
+    }
+    // Extract the base name from the newCreature
     let newName = newCreature[2]; // The name of the new creature
     let baseName = newName.trim(); // Base name, initially the full name
 
