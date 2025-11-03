@@ -105,9 +105,10 @@ function addToCombat(name, monsterType) {
 
 function removeFromCombat(creatureID) {
     // console.log('removeFromCombat creatureID = ' + creatureID);
+    // console.log('combatOrder before removal = ' + JSON.stringify(combatOrder));
     let remove = false;
     for(let x = 0;x<combatOrder.length;x++){
-        if (combatOrder[x][6] === creatureID)
+        if (combatOrder[x][0] === creatureID)
         {
             combatOrder.splice(x, 1);
         }
@@ -468,6 +469,7 @@ function populateProfileDetails(creatureName, creatureType) {
         $content.find("#profile-type").text($creature.Type); 
 
         $content.find("#profile-armorclass").html("<strong>Armor Class</strong> " + $creature.ArmorClass[0] + ", " + $creature.ArmorClass[1]);
+        $content.find("#profile-hitpoints").html("<strong>Hit Points</strong> " + $creature.HitPoints + ($creature.HitPointsRoll != "" ? " (" + $creature.HitPointsRoll + ")" : ""));
         if($creature.Speed.length > 1) {
             $content.find("#profile-speed").html("<strong>Speed</strong> " + $creature.Speed.toString().replace(',', ', '));
         } else {
@@ -555,13 +557,57 @@ function populateProfileDetails(creatureName, creatureType) {
                 $content.find("#profile-innateSpellcasting").show();
                 $content.find("#profile-innateSpellcasting").html("<strong>Innate Spellcasting</strong><br>");
                 
-                const cis = $creature.InnateSpellcasting;
+                const cis = $creature.InnateSpellcasting[0];
+                // console.log('InnateSpellcasting = ' + JSON.stringify(cis));
 
-                console.log('InnateSpellcasting = ' + JSON.stringify(cis[0]));
+                $content.find("#profile-innateSpellcasting")
+                   .append("<p class='text-md'> " + cis.Description + "<p/><br>" + 
+                       "<p class='text-md'>Cantrips (" + cis.Cantrips.Slots + "): <i>" + cis.Cantrips.Spells + "</i><p/>");
 
-                //$content.find("#profile-innateSpellcasting")
-                  //  .append("<p class='text-md'> " + $creature.InnateSpellcasting.Description + "<p/><br>" + 
-                    //    "<p class='text-md'>Cantrips (" + $creature.InnateSpellcasting.Cantrips[0] + "): " + $creature.InnateSpellcasting.Cantrips[1] + "<p/><br>");
+                    if(cis.Level1) {
+                        $content.find("#profile-innateSpellcasting")
+                        .append("<p class='text-md'>Level 1 (" + cis.Level1.Slots + " slots): <i>" + cis.Level1.Spells + "</i><p/>");
+                    }
+
+                    if(cis.Level2) {
+                        $content.find("#profile-innateSpellcasting")
+                        .append("<p class='text-md'>Level 2 (" + cis.Level2.Slots + " slots): <i>" + cis.Level2.Spells + "</i><p/>");
+                    }
+
+                    if(cis.Level3) {
+                        $content.find("#profile-innateSpellcasting")
+                        .append("<p class='text-md'>Level 3 (" + cis.Level3.Slots + " slots): <i>" + cis.Level3.Spells + "</i><p/>");
+                    }
+
+                    if(cis.Level4) {
+                        $content.find("#profile-innateSpellcasting")
+                        .append("<p class='text-md'>Level 4 (" + cis.Level4.Slots + " slots): <i>" + cis.Level4.Spells + "</i><p/>");
+                    }
+
+                    if(cis.Level5) {
+                        $content.find("#profile-innateSpellcasting")
+                        .append("<p class='text-md'>Level 5 (" + cis.Level5.Slots + " slots): <i>" + cis.Level5.Spells + "</i><p/>");
+                    }
+
+                    if(cis.Level6) {
+                        $content.find("#profile-innateSpellcasting")
+                        .append("<p class='text-md'>Level 6 (" + cis.Level6.Slots + " slots): <i>" + cis.Level6.Spells + "</i><p/>");
+                    }
+
+                    if(cis.Level7) {
+                        $content.find("#profile-innateSpellcasting")
+                        .append("<p class='text-md'>Level 7 (" + cis.Level7.Slots + " slots): <i>" + cis.Level7.Spells + "</i><p/>");
+                    }
+
+                    if(cis.Level8) {
+                        $content.find("#profile-innateSpellcasting")
+                        .append("<p class='text-md'>Level 8 (" + cis.Level8.Slots + " slots): <i>" + cis.Level8.Spells + "</i><p/>");
+                    }
+
+                    if(cis.Level9) {
+                        $content.find("#profile-innateSpellcasting")
+                        .append("<p class='text-md'>Level 9 (" + cis.Level9.Slots + " slots): <i>" + cis.Level9.Spells + "</i><p/>");
+                    }
 
             } else {
                 $content.find("#profile-innateSpellcasting").hide();
@@ -600,13 +646,13 @@ function populateProfileDetails(creatureName, creatureType) {
                 "The " + $creature.Name + " regains spent legendary actions at the start of its turn.</p><br>");
             for(let i = 0; i < $creature.LegendaryActions.length; i++) {
                 $content.find("#profile-legendaryactions")
-                .append("<p class='text-md'><strong>" + $creature.LegendaryActions[i].Title + "</strong></p><p class='text-md'> " + $creature.LegendaryActions[i].Desc + "<p/><br>");
+                .append("<p class='text-md'><strong>" + $creature.LegendaryActions[i].Title + ".</strong> " + $creature.LegendaryActions[i].Desc + "<p/><br>");
             }
         } else {
             $content.find("#profile-legendaryactions").hide();
         }
 
-        if($creature.LairActions.length > 0) {
+        if($creature.LairActions != null) {
             $content.find("#profile-lair-actions").show();
             $content.find("#profile-lair-actions").html("<strong>Lair Actions</strong><br>");
             for(let i = 0; i < $creature.LairActions.length; i++) {
