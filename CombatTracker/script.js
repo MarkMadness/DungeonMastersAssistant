@@ -147,10 +147,12 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         tbl.setAttribute('cellspacing', 0);
         tbl.setAttribute('id', "combat-table");
         let hRow = document.createElement("tr");
+        let thZero = document.createElement("th");
+            thZero.setAttribute('width', '80px');
         let thOne = document.createElement("th");
             thOne.setAttribute('width', '50px');
         let thTwo = document.createElement("th");
-            thTwo.setAttribute('width', '275px');
+            thTwo.setAttribute('width', '225px');
         let thThree = document.createElement("th");
             thThree.setAttribute('width', '75px');
         let thFour = document.createElement("th");
@@ -158,18 +160,21 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         let thFive = document.createElement("th");
             thFive.setAttribute('width', '50px');
 
+        let textZero = document.createTextNode("Tier");
         let textOne = document.createTextNode("#");
         let textTwo = document.createTextNode("Name");
         let textThree = document.createTextNode("HP");
         let textFour = document.createTextNode("AC");
         let textFive = document.createTextNode("X");
 
+        thZero.appendChild(textZero);
         thOne.appendChild(textOne);
         thTwo.appendChild(textTwo);
         thThree.appendChild(textThree);
         thFour.appendChild(textFour);
         thFive.appendChild(textFive);
 
+        hRow.appendChild(thZero);
         hRow.appendChild(thOne);
         hRow.appendChild(thTwo);
         hRow.appendChild(thThree);
@@ -188,6 +193,7 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
     for(let i = 0; i < tableRows.length;i++){
         // Create elements for table row
         let tr = document.createElement("tr");
+        let tdTier = document.createElement("td");
         let tdInit = document.createElement("td");
         let tdName = document.createElement("td");
         let tdHP = document.createElement("td");
@@ -196,6 +202,7 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         let X = document.createTextNode("X");
 
         // instantiate values for creature from array index
+        //let rowTier = tableRows[i][0];
         let rowID = tableRows[i][0];
         let rowInit = tableRows[i][1];
         let rowName = tableRows[i][2];
@@ -203,6 +210,44 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         let rowHPTotal = tableRows[i][4];
         let rowAC = tableRows[i][5];
         let rowProfileType = tableRows[i][7];
+
+        // nodes for tier
+        let tier = document.createElement("select");
+        tier.className = "ddlTier";
+        // tier.id = `${rowID}-tier`;
+        tier.dataset.rowId = rowID;
+
+        const option1 = document.createElement("option");
+        option1.value = "normal";
+        option1.textContent = "Normal";
+        option1.selected = true; // Set this option as selected by default
+        tier.appendChild(option1);
+
+        const option2 = document.createElement("option");
+        option2.value = "heroic";
+        option2.textContent = "Heroic";
+        tier.appendChild(option2);
+
+        const option3 = document.createElement("option");
+        option3.value = "legendary";
+        option3.textContent = "Legendary";
+        tier.appendChild(option3);
+
+        const option4 = document.createElement("option");
+        option4.value = "godly";
+        option4.textContent = "Godly";
+        tier.appendChild(option4);
+
+        // single change handler — grabs selected value, the select id, dataset rowId and the parent <tr>
+        tier.addEventListener("change", function (e) {
+            const selectedValue = e.target.value;
+            // const selectId = e.target.id;
+            const monsterName = String(rowName).replace(/\s+\d+$/,'').trim(); // removes the trailing numeric suffix like " 4" so "Monster Name 4" -> "Monster Name"
+            const monsterProfileType = rowProfileType;
+            const associatedRowId = e.target.dataset.rowId;
+            const parentRow = e.target.closest("tr") || document.getElementById(associatedRowId);
+            handleTierChange(associatedRowId, selectedValue, monsterName, monsterProfileType, parentRow);
+        });
 
         // nodes for addedCreature
         let initiative = document.createTextNode(rowInit); // will need to add a function like RollForInitiative() to handle initiatives. Maybe even auto for NPCs, manual for PCs
@@ -221,6 +266,7 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         tdX.setAttribute("onclick", onclickX);
 
         // Append to cells
+        tdTier.appendChild(tier);
         tdInit.appendChild(initiative);
         tdInit.className = "init";
         tdName.appendChild(name);
@@ -232,6 +278,7 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         // Append to rows
         tr.setAttribute('id', rowID);
         tr.setAttribute('class', 'combatRow');
+        tr.appendChild(tdTier);
         tr.appendChild(tdInit);
         tr.appendChild(tdName);
         tr.appendChild(tdHP);
@@ -239,6 +286,58 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         tr.appendChild(tdX);
         // Append to table
         tableNew.appendChild(tr);
+    }
+}
+
+function handleTierChange(rowId, tierValue, monsterName, monsterProfileType, parentRow) {
+    // rowId: the row identifier (e.g. "monster3")
+    // tierValue: selected option value ("normal"|"heroic"|"legendary"|"godly")
+    // monsterName: name of the monster
+    // monsterProfileType: type of the monster profile (e.g. "monster", "unique", "player")
+    // parentRow: the <tr> element for this row (may be null if not found)
+    console.log('Tier changed:', { rowId, tierValue, monsterName, monsterProfileType, parentRowId: parentRow ? parentRow.id : null });
+    // example: store tier on the row element for later use
+    if (parentRow) {
+        parentRow.dataset.tier = tierValue;
+    }
+    // Adjust health pool and HP cell text and onclick
+        let adjustedHitPoints = alterHitPointsBasedOnTier(monsterName, monsterProfileType, tierValue);
+        let cellHP = $(`#${rowId} .hitPoints`);
+        cellHP.text(`${adjustedHitPoints}` + '/' + `${adjustedHitPoints}`);
+        cellHP.attr('onclick', `changeHP('${adjustedHitPoints}/${adjustedHitPoints}/${rowId}')`);
+
+    // Adjust experience points
+
+    // Add modifier to all stats
+
+}
+
+function alterHitPointsBasedOnTier(monsterName, monsterProfileType, tierValue) {
+    // Implementation to alter health based on tier
+    let monsterLibrary;
+
+    if (monsterProfileType === "Monster") {
+        monsterLibrary = monstersLocal;
+    } else if (monsterProfileType === "Unique") {
+        monsterLibrary = uniqueLocal;
+    } else if (monsterProfileType === "Player") {
+        monsterLibrary = playersLocal;
+    }
+
+    // Find the monster in the library
+    let monster = monsterLibrary.find(m => m.Name === monsterName);
+    if (!monster) {
+        return 0;
+    }
+
+    if( tierValue === "normal") {
+        return monster.HitPoints;
+    } else if ( tierValue === "heroic") {
+        return monster.HitPoints * 3;
+    } else if ( tierValue === "legendary") {
+        return monster.HitPoints * 5;
+    } else if ( tierValue === "godly") {
+        return monster.HitPoints * 10;
     }
 }
 
@@ -445,10 +544,11 @@ function populateDetails(creatureName) {
 }
 
 function populateProfileDetails(creatureName, creatureType) {
+    console.log('creatureName = ' + creatureName + ', creatureType = ' + creatureType); 
     const $content = $("#profile-content");
     $content.show();
     $('#profile-placeholder').hide();
-    const $name = creatureName.replace(/\s\d+$/, ' ').trim(); 
+    const $name = creatureName.replace(/\s\d+$/, ' ').trim(); // removes trailing numeric suffix like " 4" so "Monster Name 4" -> "Monster Name"
     //console.log('$name: ', $name);
     //console.log('$name length: ', $name.length);
     let monsterLibrary;
@@ -461,7 +561,29 @@ function populateProfileDetails(creatureName, creatureType) {
         monsterLibrary = playersLocal;
     }
 
-    const $creature = monsterLibrary.find(monster => monster.Name === $name);
+    // // =========Works on PC=============
+    // const $creature = monsterLibrary.find(monster => monster.Name === $name);
+    // // =========Works on PC=============
+    // =========Works on Mac=============
+    if (!Array.isArray(monsterLibrary)) {
+        console.error('monsterLibrary is not an array for type:', creatureType, monsterLibrary);
+    }
+
+    const normalizedTarget = String($name).trim().normalize('NFC').replace(/\s+/g, ' ').toLowerCase();
+
+    const $creature =
+        (Array.isArray(monsterLibrary) && (
+            // exact match (normalized)
+            monsterLibrary.find(m => String(m.Name || '').trim().normalize('NFC').toLowerCase() === normalizedTarget) ||
+            // case-insensitive / normalized prefix (handles "Goblin 1" vs "Goblin")
+            monsterLibrary.find(m => String(m.Name || '').trim().normalize('NFC').toLowerCase().startsWith(normalizedTarget)) ||
+            // fallback: contains
+            monsterLibrary.find(m => String(m.Name || '').trim().normalize('NFC').toLowerCase().includes(normalizedTarget))
+        )) || null;
+
+    console.log('populateProfileDetails lookup:', { target: normalizedTarget, found: $creature ? $creature.Name : null });
+
+    // =========Works on Mac=============
 
     if($creature) {
         $content.find("#profile-name").html("<strong>" + $creature.Name + "</strong>");
