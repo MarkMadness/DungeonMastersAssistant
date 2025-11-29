@@ -887,3 +887,11 @@ function duplicateNamesCheck(newCreature){
 function initiativeSort(table = combatOrder){
     return table.sort((a, b) => b[1] - a[1]);
 }
+
+function openDiceRoller() {
+    const diceRoller = $('#diceRollerModal');
+    var closeBtn = diceRoller.find(".close");
+    diceRoller.css('display', 'block');
+
+    closeBtn.on('click', function() { diceRoller.css('display', 'none'); });
+}

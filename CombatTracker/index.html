@@ -11,11 +11,12 @@
     <div id="toolbar">
         <div id="toolbar-top">
             <button type="button" onclick="clearCombatOrder()">Clear Board</button>
-        </div>
-        <div id="toolbar-bottom">
             <button type="button" onclick="removeAllMonsters()">Remove All Monsters</button>
             <button type="button" onclick="removeAllUnique()">Remove All Unique</button>
             <button type="button" onclick="removeAllPlayers()">Remove All Players</button>
+        </div>
+        <div id="toolbar-bottom">
+            <button type="button" onclick="openDiceRoller()">Open Dice Roller</button>
         </div>
     </div>
 
@@ -174,6 +175,22 @@
             </div>
             <div class="close-container">
                 <div class="checkmark">&#10004;</div>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal for Dice Roller-->
+    <div id="diceRollerModal" class="modal">
+        <div class="modal-content">
+            <div class="dice-container">
+                <input type="text" id="diceInput" placeholder="Enter dice notation (e.g., 2d6)">
+                <button type="button" onclick="rollDice()">Roll</button>
+            </div>
+            <div class="dice-result">
+                <p id="diceOutput"></p>
+            </div>
+            <div class="close-container">
                 <span class="close">&times;</span>
             </div>
         </div>
