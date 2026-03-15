@@ -271,7 +271,7 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
         tdInit.className = "init";
         tdName.appendChild(name);
         tdHP.appendChild(hitpoints);
-        tdHP.className = "hitPoints hp-green";
+        tdHP.className = "hitPoints hp-full";
         tdAC.appendChild(armorclass);
         tdX.appendChild(X);
 
@@ -346,7 +346,6 @@ function changeInit(initiativeNumber, tableRowID) {
     // Generate a popup window with initOrder in an input window, arrows up and down, and a checkmark box
     const initModal = $('#initModal');
     var inputBox = initModal.find(".inputBox");
-    var differenceBox = initModal.find(".differenceBox");
     var closeBtn = initModal.find(".close");
     var checkmarkBtn = initModal.find(".checkmark");
     var arrowUpBtn = initModal.find(".arrowUp");
@@ -381,13 +380,11 @@ function changeInit(initiativeNumber, tableRowID) {
     arrowUpBtn.on('click', function() {
         var plus = parseInt(inputBox.val(), 10) + 1;
         inputBox.val(plus);
-        updateDifferenceBox(differenceBox, initiativeNumber, plus);
     });
 
     arrowDownBtn.on('click', function() {
         var minus = parseInt(inputBox.val(), 10) - 1; 
         inputBox.val(minus); 
-        updateDifferenceBox(differenceBox, initiativeNumber, minus);
     });
 
     // On the ENTER key down or click on checkmark box, subtract or add the input value and return the new value to the table
@@ -400,18 +397,7 @@ function changeInit(initiativeNumber, tableRowID) {
         cellInit.text(newInitText);
         cellInit.attr('onclick', newInitattribute);
 
-        differenceBox.text('0'); // Use .text() instead of textContent
-        differenceBox.css('color', 'black'); // Use .css() instead of style.color
-
         initModal.css('display', 'none'); 
-        
-        // Update the initiative value in the combatOrder so that when the table is reloaded, the new initiative value is used
-        combatOrder.forEach(function(creature) {
-            if (creature[0] === tableRowID) {
-                creature[1] = newInitText;
-            }
-        });
-        console.log('combatOrder after initiative change: ', combatOrder);
     });
     // do something for reorganizing the table
 }
@@ -428,19 +414,13 @@ function selectCreature(name) {
     }
 }
 
-function updateDifferenceBox(modalDifferenceBox, currentNumber, changed) {
-    var difference = changed - currentNumber;
-    modalDifferenceBox.text((difference > 0 ? '+' : '') + difference); // Use .text() instead of textContent
-    modalDifferenceBox.css('color', difference === 0 ? 'black' : (difference > 0 ? 'green' : 'red')); // Use .css() instead of style.color
-}
-
 function changeHP(hpPassed) {
     // GET the current and total HP ints and assign to var currentHP and var totalHP
     var hpRatio = hpPassed.split("/");
     var currentHP = parseInt(hpRatio[0], 10);
     var hpTotal = parseInt(hpRatio[1], 10);
-    let tableRowID = hpRatio[2];
-    // console.log('tableRowID = ' + tableRowID);
+    let id = hpRatio[2];
+    // console.log('id = ' + id);
 
     // generate a popup window with input window, arrows up and down, and a checkmark box
     const hpModal = $('#hpModal');
@@ -481,18 +461,24 @@ function changeHP(hpPassed) {
     //     }
     // }
 
+    function updateDifference(changed) {
+        var difference = changed - currentHP;
+        differenceBox.text((difference > 0 ? '+' : '') + difference); // Use .text() instead of textContent
+        differenceBox.css('color', difference === 0 ? 'black' : (difference > 0 ? 'green' : 'red')); // Use .css() instead of style.color
+    }
+
     closeBtn.on('click', function() { hpModal.css('display', 'none'); }); // Use .on('click') instead of onclick
 
     arrowUpBtn.on('click', function() {
         var plus = parseInt(inputBox.val(), 10) + 1; // Use .val() instead of .value
         inputBox.val(plus); // Use .val() instead of setAttribute
-        updateDifferenceBox(differenceBox, currentHP, plus);
+        updateDifference(plus);
     });
 
     arrowDownBtn.on('click', function() {
         var minus = parseInt(inputBox.val(), 10) - 1; // Use .val() instead of .value
         inputBox.val(minus); // Use .val() instead of setAttribute
-        updateDifferenceBox(differenceBox, currentHP, minus);
+        updateDifference(minus);
     });
 
     $(document).on('keydown', function(event) {
@@ -502,40 +488,40 @@ function changeHP(hpPassed) {
             event.preventDefault();
             var plus = parseInt(inputBox.val(), 10) + 1;
             inputBox.val(plus);
-            updateDifferenceBox(differenceBox, currentHP, plus);
+            updateDifference(plus);
         } else if (event.key === 'ArrowDown') {
             event.preventDefault();
             var minus = parseInt(inputBox.val(), 10) - 1;
             inputBox.val(minus);
-            updateDifferenceBox(differenceBox, currentHP, minus);
+            updateDifference(minus);
         }
     });
 
     // On the ENTER key down or click on checkmark box, subtract or add the input value to currentHP and return the new value to the table
     checkmarkBtn.on('click', function() {
-        var finalHPValue = parseInt(inputBox.val(), 10); // Ensure the value is parsed as an integer
-        let newHPText = finalHPValue + '/' + hpTotal;
+        var finalValue = parseInt(inputBox.val(), 10); // Ensure the value is parsed as an integer
+        let newHPText = finalValue + '/' + hpTotal;
         console.log(newHPText);
-        var newHPattribute = "changeHP('" + newHPText + "/" + tableRowID + "')";
+        var newHPattribute = "changeHP('" + newHPText + "/" + id + "')";
     
         // second method attempting to change the text. Didn't work
-        let cellHP = $(`#${tableRowID} .hitPoints`); // Use jQuery selector
+        let cellHP = $(`#${id} .hitPoints`); // Use jQuery selector
         cellHP.text(newHPText); // Use .text() instead of innerText
         cellHP.attr('onclick', newHPattribute); // Use .attr() instead of setAttribute
         
         // removes classes beforehand to add new ones below
-        cellHP.removeClass('hp-green hp-yellow hp-orange hp-red'); // Use .removeClass() instead of classList.remove
+        cellHP.removeClass('hp-full hp-mostlyfull hp-halfway hp-critical'); // Use .removeClass() instead of classList.remove
     
         //check percentage of monster health and add appropriate class for color
-        var percentage = Math.round((finalHPValue / hpTotal) * 100);
+        var percentage = Math.round((finalValue / hpTotal) * 100);
         if (percentage >= 100) {
-            cellHP.addClass('hp-green'); // Use .addClass() instead of classList.add
+            cellHP.addClass('hp-full'); // Use .addClass() instead of classList.add
         } else if (percentage <= 99 && percentage >= 60) {
-            cellHP.addClass('hp-yellow'); // Use .addClass() instead of classList.add
+            cellHP.addClass('hp-mostlyfull'); // Use .addClass() instead of classList.add
         } else if (percentage <= 59 && percentage >= 30) {
-            cellHP.addClass('hp-orange'); // Use .addClass() instead of classList.add
+            cellHP.addClass('hp-halfway'); // Use .addClass() instead of classList.add
         } else {
-            cellHP.addClass('hp-red'); // Use .addClass() instead of classList.add
+            cellHP.addClass('hp-critical'); // Use .addClass() instead of classList.add
         }
 
         // First attempt to change the text. Didn't work, but it did save the inputBox.value from before
@@ -548,13 +534,6 @@ function changeHP(hpPassed) {
 
         differenceBox.text('0'); // Use .text() instead of textContent
         differenceBox.css('color', 'black'); // Use .css() instead of style.color
-
-        // Update the HP value in the combatOrder so that when the table is reloaded, the new HP value is used
-        combatOrder.forEach(function(creature) {
-            if (creature[0] === tableRowID) {
-                creature[3] = finalHPValue;
-            }
-        });
 
         hpModal.css('display', 'none'); // Use .css() instead of style.display
     });
@@ -866,6 +845,9 @@ function duplicateNamesCheck(newCreature){
     // //     console.log("combatOrder after if statement = " + combatOrder);
     // // }
 
+
+
+
     if (newCreature[7] !== "Monster") {
         combatOrder.push(newCreature);
         reloadCombatOrder(combatOrder, false);
@@ -904,12 +886,4 @@ function duplicateNamesCheck(newCreature){
 
 function initiativeSort(table = combatOrder){
     return table.sort((a, b) => b[1] - a[1]);
-}
-
-function openDiceRoller() {
-    const diceRoller = $('#diceRollerModal');
-    var closeBtn = diceRoller.find(".close");
-    diceRoller.css('display', 'block');
-
-    closeBtn.on('click', function() { diceRoller.css('display', 'none'); });
 }
