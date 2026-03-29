@@ -2,7 +2,8 @@
     for InnateSpellcasting, if a slot number is 10 that means 'at will' or unlimited uses
 */
 
-window.monstersLocal = [
+// YOUR EXISTING DATA
+const monstersLocal = [
     {
         ID: 0,
         ProfileType: "Monster",
@@ -464,8 +465,7 @@ window.monstersLocal = [
         Description: "Description here"
     }
 ];
-
-window.uniqueLocal = [
+const uniqueLocal = [
     {
         ID: 100000,
         ProfileType: "Unique",
@@ -683,8 +683,7 @@ window.uniqueLocal = [
         Description: "Description here"
     },
 ];
-
-window.playersLocal = [
+const playersLocal = [
     {
         ID: 1000000,
         ProfileType: "Player",
@@ -748,3 +747,23 @@ window.playersLocal = [
         Description: "Description here"
     },
 ];
+
+// NEW WRAPPER
+const DB = {
+    monsters: monstersLocal,
+    unique: uniqueLocal,
+    players: playersLocal
+};
+
+// NEW INDEX SYSTEM
+const Index = {
+    monsters: {},
+    unique: {},
+    players: {}
+};
+
+["monsters", "unique", "players"].forEach(type => {
+    DB[type].forEach(entry => {
+        Index[type][entry.Name.toLowerCase()] = entry;
+    });
+});

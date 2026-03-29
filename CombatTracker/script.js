@@ -4,6 +4,16 @@
 
 var monsters = {};
 var combatOrder = [];
+    // creatureArray = 
+    //     creatureNameID,   // 0
+    //     creatureInit,     // 1
+    //     creatureName,     // 2
+    //     currentHP,        // 3
+    //     totalHP,          // 4
+    //     creatureAC,       // 5
+    //     creatureID,       // 6
+    //     creatureProfileType, // 7
+    //     baseHP            // 8 (true base HP for scaling)
 var currentHP = 0;
 var idName = 'monster';
 var idCount = 0;
@@ -12,68 +22,48 @@ $(document).ready(function() {
     $("#profile-content").hide();
 });
 
-// // Fetches the monster information from the monsters.json file
-// fetch("./monsterLibrary.json")
-//     .then(function(response) {
-//         return response.json();
-//     }).then(function(data) {
-//         console.log(data);
-//         monsters = data;
-//         showData();
-//     });
-//
-// let showData = function() {
-//     for (monster in monsters){
-//         console.log(monsters[monster]);
-//     }
-// }
-
 function removeAllMonsters() {
-    console.log('combatOrder = ' + combatOrder);
-    for (let i = combatOrder.length - 1; i >= 0; i--) {
-        // console.log('iteration')
+    let toRemove = [];
+
+    for (let i = 0; i < combatOrder.length; i++) {
         if (combatOrder[i][7] === "Monster") {
-            // console.log('removing ' + combatOrder[i][2] + ' ' + combatOrder[i][6])
-            removeFromCombat(combatOrder[i][6]);
+            toRemove.push(combatOrder[i][0]);
         }
     }
-    // console.log(combatOrder)
-    // loop through each item in combatOrder
-        // identfy if the item's ProfileType
-        // If ProfileType === "Monster", remove from combatOrder via removeFromCombat(creatureID)
+
+    console.log('toRemove = ' + toRemove);
+    toRemove.forEach(id => removeFromCombat(id));
 }
 
 function removeAllUnique() {
-    console.log('combatOrder = ' + combatOrder);
-    for (let i = combatOrder.length - 1; i >= 0; i--) {
+    let toRemove = [];
+
+    for (let i = 0; i < combatOrder.length; i++) {
         if (combatOrder[i][7] === "Unique") {
-            removeFromCombat(combatOrder[i][6]);
+            toRemove.push(combatOrder[i][0]);
         }
     }
+
+    console.log('toRemove = ' + toRemove);
+    toRemove.forEach(id => removeFromCombat(id));
 }
 
 function removeAllPlayers() {
-    console.log('combatOrder = ' + combatOrder);
-    for (let i = combatOrder.length - 1; i >= 0; i--) {
+    let toRemove = [];
+
+    for (let i = 0; i < combatOrder.length; i++) {
         if (combatOrder[i][7] === "Player") {
-            removeFromCombat(combatOrder[i][6]);
+            toRemove.push(combatOrder[i][0]);
         }
     }
+
+    console.log('toRemove = ' + toRemove);
+    toRemove.forEach(id => removeFromCombat(id));
 }
 
-function libraryNav(libraryType) {
-    if (libraryType === "monsters") {
-        populateLibrary('monstersLocal')
-    } else if(libraryType === "unique") {
-        populateLibrary('uniqueLocal')
-    } else if(libraryType === "players") {
-        populateLibrary('playersLocal')
-    }
-}
-
-function populateLibrary(libraryType = 'monstersLocal') {
+function populateLibrary(libraryType = 'monsters') {
     // console.log('libraryType = ' + libraryType);
-    let monsterArray = window[libraryType];
+    let monsterArray = DB[libraryType];
     // console.log("monsterArray = " + JSON.stringify(monsterArray));
     document.getElementById("library-list").innerHTML = "";
 
@@ -93,12 +83,21 @@ function populateLibrary(libraryType = 'monstersLocal') {
 
 // Will need to rework the logic for the parent forin loop
 function addToCombat(name, monsterType) {
-    // console.log("name = " + name);
-    for(select in window[monsterType]) {
-        if(window[monsterType][select].Name == name) {
-            // Add a check in here to prevent adding duplicate unique monsters and players
-            let creature = window[monsterType][select];
+    console.log("name = " + name);
+    console.log("monsterType = " + monsterType);
+    let collection = DB[monsterType];
+
+    if (!collection) {
+        console.error("Invalid monsterType:", monsterType);
+        return;
+    }
+
+    for (let i = 0; i < collection.length; i++) {
+        if (collection[i].Name === name) {
+            let creature = collection[i];
             populateCombatOrder(creature, monsterType);
+            // console.log('combatOrder = ' + JSON.stringify(combatOrder));
+            return; // stop once found
         }
     }
 }
@@ -107,13 +106,12 @@ function removeFromCombat(creatureID) {
     // console.log('removeFromCombat creatureID = ' + creatureID);
     // console.log('combatOrder before removal = ' + JSON.stringify(combatOrder));
     let remove = false;
-    for(let x = 0;x<combatOrder.length;x++){
-        if (combatOrder[x][0] === creatureID)
-        {
+    for (let x = combatOrder.length - 1; x >= 0; x--) {
+        if (combatOrder[x][0] === creatureID) {
             combatOrder.splice(x, 1);
         }
     }
-    if (!combatOrder[1]){
+    if (combatOrder.length === 0){
         remove = true;
     }
     // console.log('combatOrder after removal = ' + combatOrder);
@@ -122,17 +120,35 @@ function removeFromCombat(creatureID) {
 
 function populateCombatOrder(addedCreature){
     idCount++;
+
     let creatureID = addedCreature.ID;
     let creatureNameID = idName + idCount;
+
     let creatureInit = Math.ceil(((Math.random() * 20) + 1) + ((addedCreature.Dexterity - 10) / 2));
+
     let creatureName = addedCreature.Name;
-    currentHP = addedCreature.HitPoints;
-    let creatureHPTotal = addedCreature.HitPoints;
+
+    let baseHP = addedCreature.HitPoints; // ✅ NEW: base HP stored
+    let currentHP = baseHP;
+    let totalHP = baseHP;
+
+
     let creatureAC = addedCreature.ArmorClass[0];
     let creatureProfileType = addedCreature.ProfileType;
-    let creatureArray = [creatureNameID, creatureInit, creatureName, currentHP, creatureHPTotal, creatureAC, creatureID, creatureProfileType];
+
+    let creatureArray = [
+        creatureNameID,   // 0
+        creatureInit,     // 1
+        creatureName,     // 2
+        currentHP,        // 3
+        totalHP,          // 4
+        creatureAC,       // 5
+        creatureID,       // 6
+        creatureProfileType, // 7
+        baseHP            // 8 ✅ NEW (true base HP for scaling)
+    ];
+
     duplicateNamesCheck(creatureArray);
-    //reloadCombatOrder(combatOrder, false);
 }
 
 function reloadCombatOrder(tableRows, removeFromCombatCondition) {
@@ -290,55 +306,47 @@ function reloadCombatOrder(tableRows, removeFromCombatCondition) {
 }
 
 function handleTierChange(rowId, tierValue, monsterName, monsterProfileType, parentRow) {
-    // rowId: the row identifier (e.g. "monster3")
-    // tierValue: selected option value ("normal"|"heroic"|"legendary"|"godly")
-    // monsterName: name of the monster
-    // monsterProfileType: type of the monster profile (e.g. "monster", "unique", "player")
-    // parentRow: the <tr> element for this row (may be null if not found)
-    console.log('Tier changed:', { rowId, tierValue, monsterName, monsterProfileType, parentRowId: parentRow ? parentRow.id : null });
-    // example: store tier on the row element for later use
     if (parentRow) {
         parentRow.dataset.tier = tierValue;
     }
-    // Adjust health pool and HP cell text and onclick
-        let adjustedHitPoints = alterHitPointsBasedOnTier(monsterName, monsterProfileType, tierValue);
-        let cellHP = $(`#${rowId} .hitPoints`);
-        cellHP.text(`${adjustedHitPoints}` + '/' + `${adjustedHitPoints}`);
-        cellHP.attr('onclick', `changeHP('${adjustedHitPoints}/${adjustedHitPoints}/${rowId}')`);
 
-    // Adjust experience points
+    let creature = combatOrder.find(c => c[0] === rowId);
+    if (!creature) return;
 
-    // Add modifier to all stats
+    let baseHP = creature[8]; // ✅ ALWAYS use stored base HP
+    let newMaxHP = baseHP;
 
+    if (tierValue === "heroic") newMaxHP = baseHP * 3;
+    else if (tierValue === "legendary") newMaxHP = baseHP * 5;
+    else if (tierValue === "godly") newMaxHP = baseHP * 10;
+
+    // ✅ Update data model
+    creature[3] = newMaxHP; // current HP
+    creature[4] = newMaxHP; // max HP
+
+    // ✅ Update UI
+    let cellHP = $(`#${rowId} .hitPoints`);
+    cellHP.text(`${newMaxHP}/${newMaxHP}`);
+    cellHP.attr('onclick', `changeHP('${newMaxHP}/${newMaxHP}/${rowId}')`);
 }
 
 function alterHitPointsBasedOnTier(monsterName, monsterProfileType, tierValue) {
-    // Implementation to alter health based on tier
     let monsterLibrary;
 
-    if (monsterProfileType === "Monster") {
-        monsterLibrary = monstersLocal;
-    } else if (monsterProfileType === "Unique") {
-        monsterLibrary = uniqueLocal;
-    } else if (monsterProfileType === "Player") {
-        monsterLibrary = playersLocal;
-    }
+    if (monsterProfileType === "Monster") monsterLibrary = monstersLocal;
+    else if (monsterProfileType === "Unique") monsterLibrary = uniqueLocal;
+    else if (monsterProfileType === "Player") monsterLibrary = playersLocal;
 
-    // Find the monster in the library
     let monster = monsterLibrary.find(m => m.Name === monsterName);
-    if (!monster) {
-        return 0;
-    }
+    if (!monster) return 0;
 
-    if( tierValue === "normal") {
-        return monster.HitPoints;
-    } else if ( tierValue === "heroic") {
-        return monster.HitPoints * 3;
-    } else if ( tierValue === "legendary") {
-        return monster.HitPoints * 5;
-    } else if ( tierValue === "godly") {
-        return monster.HitPoints * 10;
-    }
+    let baseHP = monster.HitPoints;
+
+    if (tierValue === "heroic") return baseHP * 3;
+    if (tierValue === "legendary") return baseHP * 5;
+    if (tierValue === "godly") return baseHP * 10;
+
+    return baseHP;
 }
 
 function changeInit(initiativeNumber, tableRowID) {
@@ -481,6 +489,7 @@ function changeHP(hpPassed) {
         updateDifference(minus);
     });
 
+    $(document).off('keydown');
     $(document).on('keydown', function(event) {
         if (event.key === 'Enter') {
             checkmarkBtn.click();
@@ -877,6 +886,7 @@ function duplicateNamesCheck(newCreature){
     // Assign the new number to the newCreature
     newCreature[2] = `${newName} ${maxNumber + 1}`;
     combatOrder.push(newCreature);
+    // console.log('combatOrder = ' + JSON.stringify(combatOrder));
 
     // Refresh the combat order display
     reloadCombatOrder(combatOrder, false);
