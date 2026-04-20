@@ -38,6 +38,9 @@ function renderDialogue(key) {
         
         if (option.goBack) {
             btn.addEventListener("click", () => goBack());
+        } else if (option.openStore) {
+            // Handle store options
+            btn.addEventListener("click", () => openStoreModal(option.storeData));
         } else {
             btn.addEventListener("click", () => renderDialogue(option.id));
         }
@@ -63,3 +66,76 @@ function goBack() {
         renderDialogue(previousKey);
     }
 }
+
+// Store Modal Functions
+function convertCopperToCoins(copperAmount) {
+    const gold = Math.floor(copperAmount / 100);
+    const silver = Math.floor((copperAmount % 100) / 10);
+    const copper = copperAmount % 10;
+    
+    let priceString = "";
+    if (gold > 0) {
+        priceString += `${gold} gp`;
+    }
+    if (silver > 0) {
+        if (priceString.length > 0) priceString += " ";
+        priceString += `${silver} sp`;
+    }
+    if (copper > 0 || priceString.length === 0) {
+        if (priceString.length > 0) priceString += " ";
+        priceString += `${copper} cp`;
+    }
+    
+    return priceString;
+}
+
+function openStoreModal(storeData) {
+    const modal = document.getElementById('storeModal');
+    const storeTitle = document.getElementById('storeTitle');
+    const storeTableBody = document.getElementById('storeTableBody');
+    
+    // Set the store title
+    storeTitle.textContent = storeData.title;
+    
+    // Clear existing table rows
+    storeTableBody.innerHTML = '';
+    
+    // Populate table with items
+    storeData.items.forEach(item => {
+        const row = document.createElement('tr');
+        const nameCell = document.createElement('td');
+        const priceCell = document.createElement('td');
+        
+        nameCell.textContent = item.name;
+        priceCell.textContent = convertCopperToCoins(item.price);
+        
+        row.appendChild(nameCell);
+        row.appendChild(priceCell);
+        storeTableBody.appendChild(row);
+    });
+    
+    // Show the modal
+    modal.style.display = 'block';
+}
+
+function closeStoreModal() {
+    const modal = document.getElementById('storeModal');
+    modal.style.display = 'none';
+}
+
+// Modal event listeners
+$(document).ready(function() {
+    // Close modal when clicking the X
+    $('.close').click(closeStoreModal);
+    
+    // Close modal when clicking the close button
+    $('#closeModalBtn').click(closeStoreModal);
+    
+    // Close modal when clicking outside of it
+    $(window).click(function(event) {
+        const modal = document.getElementById('storeModal');
+        if (event.target === modal) {
+            closeStoreModal();
+        }
+    });
+});

@@ -50,7 +50,8 @@ const dialogueOptions = {
                     { id: "silvershireGreg", text: "Greg" },
                     { id: "silvershireCabbageMan", text: "Cabbage Man" },
                     { id: "silvershireErritMarwin", text: "Errit Marwin" },
-                    { id: "silvershireQuib", text: "Quib" },
+                    // { id: "silvershireQuib", text: "Quib" },
+                    { id: "silvershireRodger", text: "Rodger"},
                     { id: "silvershireTomaGreenthumb", text: "Toma Greenthumb" }, 
                     { id: "silvershireJerrekSilverTongier", text: "Jerrek the Silver-Tongue" },
                 ]
@@ -198,7 +199,8 @@ const dialogueOptions = {
                     header: `"Ah! Hello Adventurer! Welcome to the town of Silvershire. Now your next task for the King begins.",
                     ` + $newPara + `“The people of Silvershire are in need and if you help them with their quests they will give you an Arezoth Quest Completion Token. Bring me three of these tokens and your quest here will be completed.”`,
                     options: [
-                        { id: "gregQuestStart", text: "Accept Quest" }
+                        { id: "gregQuestStart", text: "Accept Quest" },
+                        { id: "goodbye", text: "Goodbye.", goBack: true } 
                     ]
                 },
                     gregQuestStart: {
@@ -220,47 +222,76 @@ const dialogueOptions = {
                 silvershireCabbageMan: {
                     title: "Cabbage Man",
                     header: `A wiry, middle-aged man with a receding hairline and a constantly panicked look, tends to his wobbly wooden cart overflowing with cabbages. He wears earth-toned clothes, a crooked straw hat, and looks like he hasn’t had a good day in years. His eyes are sharp, his movements twitchy—forever bracing for the next cabbage-related disaster. He sweeps his hands dramatically over the produce as you approach.
-                            ` + $newPara + `“Ah! Please adventurers! You must help me! My fine cabbages, my friends, are unlike any you've ever seen before. They're fresh, organic, and guaranteed to change your life!”
-                            ` + $newPara + `He looks around nervously and leans in closer, as if afraid someone might overhear.
-                            ` + $newPara + `“There’s just one problem. Lately, a group of ruffians keeps stealing or destroying my cabbages! I have no idea why, but my business can’t stand it anymore. Please, I beg of you—keep them away from my cart! I can’t afford to lose any more of my precious cabbages! You must protect it with your lives! Well, at least... until I finish selling them.”
-                            ` + $newPara + `His eyes gleam with desperate hope. "I’m going to take my cart to the market and try to get as many sales as I can while my cart is intact. I will need you to hold off anyone who tries to destroy my cart or steal my cabbages. Will you help me?"`,
+                            ` + $newPara + `“Hello! Would you like to buy some cabbages?”`,
                     options: [
-                        { id: "cabbageManAccepted", text: `Accept Quest?` },
-                        { id: "cabbageManDeclined", text: `Decline Quest?` }
+                        { 
+                            id: "cabbageManShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Cabbage Man's Shop",
+                                items: [
+                                    { name: "Cabbage (Single)", price: 2 },
+                                    { name: "Cabbage Bundle (5)", price: 8 },
+                                    { name: "Cabbage Crate (20)", price: 30 },
+                                    { name: "Red Cabbage", price: 3 },
+                                    { name: "Green Cabbage", price: 2 },
+                                    { name: "Cabbage Seeds (Pack)", price: 5 },
+                                    { name: "Fermented Cabbage Jar", price: 10 },
+                                    { name: "Cabbage Soup (Bowl)", price: 3 },
+                                    { name: "Cabbage Stew (Hearty)", price: 10 },
+                                    { name: "Damaged Cabbage (Discount)", price: 1 }
+                                ]
+                            }
+                        },
+                        { id: "cabbageManQuest", text: `Quest?` },
+                        { id: "goodbye", text: "Goodbye.", goBack: true } 
                     ]
                 },
-                    cabbageManAccepted: {
+                    cabbageManQuest: {
                         title: "Cabbage Man",
-                        header: `“Oh thank you, thank you! You won’t regret this! Keep your eyes peeled and your weapons ready—these cabbage bandits are sneaky and relentless. I’ll start shouting about my cabbages to lure in customers—and hopefully not trouble.”`,
+                        header: `“Ah! Please adventurers! You must help me! My fine cabbages, my friends, are unlike any you've ever seen before. They're fresh, organic, and guaranteed to change your life!”
+                                ` + $newPara + `He looks around nervously and leans in closer, as if afraid someone might overhear.
+                                ` + $newPara + `“There’s just one problem. Lately, a group of ruffians keeps stealing or destroying my cabbages! I have no idea why, but my business can’t stand it anymore. Please, I beg of you—keep them away from my cart! I can’t afford to lose any more of my precious cabbages! You must protect it with your lives! Well, at least... until I finish selling them.”
+                                ` + $newPara + `His eyes gleam with desperate hope. "I’m going to take my cart to the market and try to get as many sales as I can while my cart is intact. I will need you to hold off anyone who tries to destroy my cart or steal my cabbages. Will you help me?"`,
                         options: [
-                            { id: "cabbageManQuestCompleted", text: "Quest Completed?" },
-                            { id: "cabbageManQuestFailed", text: "Quest Failed?" }
+                            { id: "cabbageManAccepted", text: `Accept Quest?` },
+                            { id: "cabbageManDeclined", text: `Decline Quest?` }
                         ]
                     },
-                    cabbageManDeclined: {
-                        title: "Cabbage Man",
-                        header: `The man's hopeful expression collapses like a wilted leaf. “Oh... well. I understand. Cabbages are a dangerous business. I’ll find someone else... I have to.”`,
-                        options: [
-                            { id: "cabbageManDeclined_Answer", text: "Goodbye", goBack: true }
-                        ]
-                    },
-                        cabbageManQuestCompleted: {
-                            header: `Cabbage Man grins with the glee of someone who has narrowly avoided disaster. His eyes sparkle as he looks over the cabbages, untouched and in perfect condition.
-                                ` + $newPara + `“You did it! My cabbages are safe! You’re my heroes, my saviors! I... I can't believe it! This is the best day of my life! You've protected my legacy! My cabbages will thrive in this town, thanks to you!”
-                                ` + $newPara + `He quickly rummages through his cart and pulls out a small, wrapped bundle. “Take this, my friends! A token of my eternal gratitude. You’ve earned it, and so much more!”
-                                ` + $newPara + `Cabbage Man hands you 20 gp, 400 xp, and one Arezoth Quest Completion Token.
-                                ` + $newPara + `“No one will ever steal my cabbages again, I promise you that! Now, if you'll excuse me, I must go... tend to my cabbages. They’re my true love.”`,
+                        cabbageManAccepted: {
+                            title: "Cabbage Man",
+                            header: `“Oh thank you, thank you! You won’t regret this! Keep your eyes peeled and your weapons ready—these cabbage bandits are sneaky and relentless. I’ll start shouting about my cabbages to lure in customers—and hopefully not trouble.”`,
+                            options: [
+                                { id: "cabbageManQuestCompleted", text: "Quest Completed?" },
+                                { id: "cabbageManQuestFailed", text: "Quest Failed?" }
+                            ]
                         },
-                        cabbageManQuestFailed: {
-                            header: `Cabbage Man falls to his knees in despair. “MY CABBAGES!!!” He slumps down beside the cart, looking utterly defeated as his tears flow endlessly down his cheers and saturating the soil beneath his feet.`,
+                        cabbageManDeclined: {
+                            title: "Cabbage Man",
+                            header: `The man's hopeful expression collapses like a wilted leaf. “Oh... well. I understand. Cabbages are a dangerous business. I’ll find someone else... I have to.”`,
+                            options: [
+                                { id: "cabbageManDeclined_Answer", text: "Goodbye", goBack: true }
+                            ]
                         },
+                            cabbageManQuestCompleted: {
+                                header: `Cabbage Man grins with the glee of someone who has narrowly avoided disaster. His eyes sparkle as he looks over the cabbages, untouched and in perfect condition.
+                                    ` + $newPara + `“You did it! My cabbages are safe! You’re my heroes, my saviors! I... I can't believe it! This is the best day of my life! You've protected my legacy! My cabbages will thrive in this town, thanks to you!”
+                                    ` + $newPara + `He quickly rummages through his cart and pulls out a small, wrapped bundle. “Take this, my friends! A token of my eternal gratitude. You’ve earned it, and so much more!”
+                                    ` + $newPara + `Cabbage Man hands you 20 gp, 400 xp, and one Arezoth Quest Completion Token.
+                                    ` + $newPara + `“No one will ever steal my cabbages again, I promise you that! Now, if you'll excuse me, I must go... tend to my cabbages. They’re my true love.”`,
+                            },
+                            cabbageManQuestFailed: {
+                                header: `Cabbage Man falls to his knees in despair. “MY CABBAGES!!!” He slumps down beside the cart, looking utterly defeated as his tears flow endlessly down his cheers and saturating the soil beneath his feet.`,
+                            },
                 silvershireErritMarwin: {
                     title: "Errit Marwin",
                     header: `An illusionary flickering mirror image of a gnome Halfling man dressed in a dirted white robe with yellow front capes over his scale armor with a mace and shield sheathed.
                         ` + $newPara + `“Adventurer! Quick! I haven’t much time. I’m Errit Marwin. I’m a cleric in need of aid. There is a spellbook that was taken from me by the orcs to the northwest. I would retrieve it myself so I sent my mirror image in my place, but as you can see. My magic is fading right now and I can’t go any further. If you could retrieve my spellbook from the orcs and bring it to my residence, I will reward you.”`,
                     options: [
                         { id: "TheClericsSpellbookAccept", text: "Accept Quest?" },
-                        { id: "TheClericsSpellbookDecline", text: "Decline Quest?" }
+                        { id: "TheClericsSpellbookDecline", text: "Decline Quest?" },
+                        { id: "goodbye", text: "Goodbye.", goBack: true } 
                     ]
                 },
                     TheClericsSpellbookAccept: {
@@ -294,6 +325,7 @@ const dialogueOptions = {
                         ` + $newPara + `“Adventurers! I need your aid! Orcs are encamped to the northwest and they’ve been terrorizing Silvershire and all travelers on the road. If you can thin their ranks and take out their chieftain, I will reward you greatly!”`,
                     options: [
                         { id: "thinTheOrcsDownAccepted", text: "Accept Quest" },
+                        { id: "goodbye", text: "Goodbye.", goBack: true } 
                     ]
                 },
                     thinTheOrcsDownAccepted: {
@@ -303,12 +335,122 @@ const dialogueOptions = {
                             { id: "thinTheOrcsDownQuestCompleted", text: "Quest Completed?" }
                         ]
                     },
+                silvershireRodger:{
+                    title: "Rodger",
+                    header: `A stocky, broad-shouldered man with muscular arms and a tan, weathered face from years of working at the forge. His hair is a messy mop of black and gray, and a short, scruffy beard covers his chin. Rodger's attire consists of a heavy leather apron over a simple tunic, blackened from soot and oil. His hands are calloused, with smudges of coal still visible under his nails.
+                        ` + $newPara + `“Hello, adventurer! What can I do for ya?”`,
+                    options: [
+                        { 
+                            id: "rodgerShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Rodger's Shop",
+                                items: [
+                                    { name: "Club", price: 10 },
+                                    { name: "Dagger", price: 200 },
+                                    { name: "Greatclub", price: 20 },
+                                    { name: "Handaxe", price: 500 },
+                                    { name: "Javelin", price: 50 },
+                                    { name: "Light Hammer", price: 200 },
+                                    { name: "Mace", price: 500 },
+                                    { name: "Quarterstaff", price: 20 },
+                                    { name: "Sickle", price: 100 },
+                                    { name: "Spear", price: 100 },
+                                    { name: "Light Crossbow", price: 2500 },
+                                    { name: "Dart", price: 6 },
+                                    { name: "Shortbow", price: 2500 },
+                                    { name: "Sling", price: 10 },
+                                    { name: "Battleaxe", price: 1000 },
+                                    { name: "Flail", price: 1000 },
+                                    { name: "Glaive", price: 2000 },
+                                    { name: "Greataxe", price: 3000 },
+                                    { name: "Greatsword", price: 5000 },
+                                    { name: "Halberd", price: 2000 },
+                                    { name: "Lance", price: 1000 },
+                                    { name: "Longsword", price: 1500 },
+                                    { name: "Maul", price: 1000 },
+                                    { name: "Morningstar", price: 1500 },
+                                    { name: "Pike", price: 500 },
+                                    { name: "Rapier", price: 2500 },
+                                    { name: "Scimitar", price: 2500 },
+                                    { name: "Shortsword", price: 1000 },
+                                    { name: "Trident", price: 500 },
+                                    { name: "War Pick", price: 500 },
+                                    { name: "Warhammer", price: 1500 },
+                                    { name: "Whip", price: 200 },
+                                    { name: "Padded Armor", price: 500 },
+                                    { name: "Leather Armor", price: 1000 },
+                                    { name: "Studded Leather Armor", price: 4500 },
+                                    { name: "Hide Armor", price: 1000 },
+                                    { name: "Chain Shirt", price: 5000 },
+                                    { name: "Scale Mail", price: 5000 },
+                                    { name: "Breastplate", price: 40000 },
+                                    { name: "Half Plate", price: 75000 },
+                                    { name: "Ring Mail", price: 3000 },
+                                    { name: "Chain Mail", price: 7500 },
+                                    { name: "Splint Armor", price: 20000 },
+                                    { name: "Plate Armor", price: 150000 },
+                                    { name: "Shield", price: 1000 },
+                                    { name: "Arrows (20)", price: 100 },
+                                    { name: "Bolts (20)", price: 100 },
+                                    { name: "Sling Bullets (20)", price: 4 },
+                                    { name: "Blowgun Needles (50)", price: 100 }
+                                ]
+                            }
+                        },
+                        { id: "rodgerGoodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
                 silvershireTomaGreenthumb: {
                     title: "Toma Greenthumb",
                     header: `A cheerful halfling with dirt-stained hands and a wide-brimmed hat greets you warmly.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;"Hello there, adventurer! Looking for some fresh produce or maybe some gardening tips?"`,
                     options: [
-                        { id: "tomaQuest", text: "Do you have any tasks for me?" },
+                        { 
+                            id: "tomaShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Toma Greenthumb's Shop",
+                                items: [
+                                    { name: "Club", price: 5 },
+                                    { name: "Greatclub", price: 10 },
+                                    { name: "Light Crossbow", price: 1400 },
+                                    { name: "Dart", price: 2 },
+                                    { name: "Shortbow", price: 1200 },
+                                    { name: "Sling", price: 5 },
+                                    { name: "Blowgun", price: 500 },
+                                    { name: "Hand Crossbow", price: 3700 },
+                                    { name: "Heavy Crossbow", price: 2500 },
+                                    { name: "Longbow", price: 2500 },
+                                    { name: "Abacus", price: 100 },
+                                    { name: "Arrows (20)", price: 100 },
+                                    { name: "Blowgun Needles (50)", price: 100 },
+                                    { name: "Crossbow Bolts (20)", price: 100 },
+                                    { name: "Bow String", price: 5 },
+                                    { name: "Bucket", price: 2 },
+                                    { name: "Case (Crossbow Bolt)", price: 250 },
+                                    { name: "Case (Map or Scroll)", price: 1 },
+                                    { name: "Druidic Focus (Totem)", price: 50 },
+                                    { name: "Druidic Focus (Wooden Staff)", price: 250 },
+                                    { name: "Druidic Focus (Yew Wand)", price: 500 },
+                                    { name: "Flask or Tankard", price: 1 },
+                                    { name: "Ladder (10 ft)", price: 5 },
+                                    { name: "Pole (10 ft)", price: 2 },
+                                    { name: "Torch", price: 1 },
+                                    { name: "Woodcarver's Tools", price: 100 },
+                                    { name: "Dulcimer", price: 1200 },
+                                    { name: "Flute", price: 100 },
+                                    { name: "Lute", price: 1700 },
+                                    { name: "Lyre", price: 1500 },
+                                    { name: "Pan Flute", price: 600 },
+                                    { name: "Shawm", price: 10 },
+                                    { name: "Viol", price: 150 },
+                                ]
+                            }
+                        },
+                        // { id: "tomaQuest", text: "Do you have any tasks for me?" },
                         { id: "tomaGoodbye", text: "Goodbye.", goBack: true }
                     ]
                 },
@@ -317,7 +459,38 @@ const dialogueOptions = {
                     header: `A slick-looking man with a charming smile and a silver-tipped cane approaches you.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;"Ah, a fellow connoisseur of fine goods! What can I do for you today?"`,
                     options: [
-                        { id: "jerrekQuest", text: "Do you have any work for me?" },
+                        { 
+                            id: "jerrekShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Jerrek's Shop",
+                                items: [
+                                    { name: "Backpack", price: 200 },
+                                    { name: "Bedroll", price: 100 },
+                                    { name: "Blanket", price: 50 },
+                                    { name: "Bottle (Glass)", price: 200 },
+                                    { name: "Bucket", price: 5 },
+                                    { name: "Candle", price: 1 },
+                                    { name: "Chain (10 ft)", price: 500 },
+                                    { name: "Chest", price: 500 },
+                                    { name: "Crowbar", price: 200 },
+                                    { name: "Fishing Tackle", price: 100 },
+                                    { name: "Flask", price: 2 },
+                                    { name: "Grappling Hook", price: 200 },
+                                    { name: "Hammer", price: 100 },
+                                    { name: "Healer's Kit", price: 500 },
+                                    { name: "Lantern (Hooded)", price: 500 },
+                                    { name: "Mess Kit", price: 20 },
+                                    { name: "Oil (Flask)", price: 10 },
+                                    { name: "Rope (Hempen, 50 ft)", price: 100 },
+                                    { name: "Sack", price: 1 },
+                                    { name: "Shovel", price: 200 },
+                                    { name: "Torch", price: 1 },
+                                    { name: "Waterskin", price: 20 }
+                                ]
+                            }
+                        },
                         { id: "jerrekGoodbye", text: "Goodbye.", goBack: true }
                     ]
                 },
@@ -343,7 +516,7 @@ const dialogueOptions = {
                             { id: "silvershireClaraDreelTalk_Answer", text: "Goodbye", goBack: true }
                         ]
                     },
-
+                // #region Class Trainers
                 moonroseMavellaCopperstone: {
                     title: "Mavella Copperstone",
                     header: "Dwarf, Female — Short with tan skin and a braided red beard. She wears sturdy leather work gloves, a tool belt, and heavy goggles perched atop her head." + $newPara + "Class Trainer: Artificer",
@@ -580,15 +753,80 @@ const dialogueOptions = {
                         { id: "goodbye", text: "Goodbye.", goBack: true }
                     ]
                     },
-
+                //#endregion
                 silvershireHenricThistledown: {
                     title: "Henric Thistledown",
                     header: `Henric is a tall and lanky human man, balding with a long mustache and a cane he doesn’t need.
                         ` + $newPara + `Welcome adventurer! What can I get you?`,
                     options: [
-                        { id: "henricFood", text: "I would like food." },
-                        { id: "henricDrink", text: "I would like a drink." },
-                        { id: "henricRoom", text: "I'd like to purchase a room for the day." },
+                        { 
+                            id: "henricFoodShop", 
+                            text: "I would like food.", 
+                            openStore: true,
+                            storeData: {
+                                title: "Henric's Food Menu",
+                                items: [
+                                    { name: "Crisped Worm and Potatoes", price: 3 },
+                                    { name: "Frogs on Skewers", price: 3 },
+                                    { name: "Green Chili Stew", price: 3 },
+                                    { name: "Grilled Snake and Macadamia", price: 3 },
+                                    { name: "Humble Pie", price: 3 },
+                                    { name: "Lizard Gruel with Nutbread", price: 3 },
+                                    { name: "Barbecued Gopher Legs", price: 6 },
+                                    { name: "Bog-beetle Dumplings", price: 6 },
+                                    { name: "Bread-bowl Stew", price: 6 },
+                                    { name: "Leg of Mutton and Goose Eggs", price: 6 },
+                                    { name: "Mushroom Stew with Bread", price: 6 },
+                                    { name: "Rabbit and Baked Pumpkin", price: 6 },
+                                    { name: "Squash and Fish Soup", price: 6 },
+                                    { name: "Broiled Salmon and Potatoes", price: 30 },
+                                    { name: "Cheese Pie and Onion Soup", price: 30 },
+                                    { name: "Grilled Wild Boar Chops", price: 30 },
+                                    { name: "Rabbit Stew and Crackers", price: 30 },
+                                    { name: "Roast Chicken and Potatoes", price: 30 },
+                                    { name: "Baked Loin of Pork with Gravy", price: 80 },
+                                    { name: "Beef Steak and Kidney Pie", price: 80 }
+                                ]
+                            }
+                        },
+                        { 
+                            id: "henricDrink", 
+                            text: "I would like a drink.", 
+                            openStore: true,
+                            storeData: {
+                                title: "Henric's Drink Menu",
+                                items: [
+                                    { name: "Goblin Spit Ale", price: 2 },
+                                    { name: "Grog", price: 2 },
+                                    { name: "Turnip Wine", price: 2 },
+                                    { name: "Dwarven Ale", price: 40 },
+                                    { name: "King's Ale", price: 40 },
+                                    { name: "Spiced Ale", price: 40 },
+                                    { name: "Trollbane Ale", price: 40 },
+                                    { name: "Desert Star Wine", price: 20 },
+                                    { name: "Wight Wine", price: 20 },
+                                    { name: "Fey Wine", price: 1000 },
+                                    { name: "Bacon Beer", price: 20 },
+                                    { name: "Berry Brandy", price: 200 },
+                                    { name: "Cactus Spirits", price: 40 },
+                                    { name: "Honeysuckle Mead", price: 200 }
+                                ]
+                            }
+                        },
+                        { 
+                            id: "henricRoomShop", 
+                            text: "I'd like to purchase a room for the day.", 
+                            openStore: true,
+                            storeData: {
+                                title: "Henric's Lodging Options",
+                                items: [
+                                    { name: "Inn Stay - Squalid", price: 7 },
+                                    { name: "Inn Stay - Poor", price: 10 },
+                                    { name: "Inn Stay - Modest", price: 50 },
+                                    { name: "Inn Stay - Comfortable", price: 80 }
+                                ]
+                            }
+                        },
                         { id: "henricGoodbye", text: "Goodbye.", goBack: true }
                     ]
                 },
@@ -597,80 +835,77 @@ const dialogueOptions = {
                     header: `Olma is a short and round human woman with silvery hair tied in a neat bun and warm brown eyes. She wears a simple dress with an apron, and her hands are often stained with flour or herbs. She has a kind smile and a gentle demeanor.
                         ` + $newPara + `"Welcome to the Gilded Acorn, darlings. Pine pillows, enchanted linens, and absolutely no assassins. Anymore."`,
                     options: [
-                        { id: "olmaFood", text: "I would like food." },
-                        { id: "olmaDrink", text: "I would like a drink." },
-                        { id: "olmaRoom", text: "I'd like to purchase a room for the day." },
+                        { 
+                            id: "olmaFoodShop", 
+                            text: "I would like food.", 
+                            openStore: true,
+                            storeData: {
+                                title: "Olma's Food Menu",
+                                items: [
+                                    { name: "Crisped Worm and Potatoes", price: 3 },
+                                    { name: "Frogs on Skewers", price: 3 },
+                                    { name: "Green Chili Stew", price: 3 },
+                                    { name: "Grilled Snake and Macadamia", price: 3 },
+                                    { name: "Humble Pie", price: 3 },
+                                    { name: "Lizard Gruel with Nutbread", price: 3 },
+                                    { name: "Barbecued Gopher Legs", price: 6 },
+                                    { name: "Bog-beetle Dumplings", price: 6 },
+                                    { name: "Bread-bowl Stew", price: 6 },
+                                    { name: "Leg of Mutton and Goose Eggs", price: 6 },
+                                    { name: "Mushroom Stew with Bread", price: 6 },
+                                    { name: "Rabbit and Baked Pumpkin", price: 6 },
+                                    { name: "Squash and Fish Soup", price: 6 },
+                                    { name: "Broiled Salmon and Potatoes", price: 30 },
+                                    { name: "Cheese Pie and Onion Soup", price: 30 },
+                                    { name: "Grilled Wild Boar Chops", price: 30 },
+                                    { name: "Rabbit Stew and Crackers", price: 30 },
+                                    { name: "Roast Chicken and Potatoes", price: 30 },
+                                    { name: "Baked Loin of Pork with Gravy", price: 80 },
+                                    { name: "Beef Steak and Kidney Pie", price: 80 }
+                                ]
+                            }
+                        },
+                        { 
+                            id: "olmaDrink", 
+                            text: "I would like a drink.", 
+                            openStore: true,
+                            storeData: {
+                                title: "Olma's Drink Menu",
+                                items: [
+                                    { name: "Goblin Spit Ale", price: 2 },
+                                    { name: "Grog", price: 2 },
+                                    { name: "Turnip Wine", price: 2 },
+                                    { name: "Dwarven Ale", price: 40 },
+                                    { name: "King's Ale", price: 40 },
+                                    { name: "Spiced Ale", price: 40 },
+                                    { name: "Trollbane Ale", price: 40 },
+                                    { name: "Desert Star Wine", price: 20 },
+                                    { name: "Wight Wine", price: 20 },
+                                    { name: "Fey Wine", price: 1000 },
+                                    { name: "Bacon Beer", price: 20 },
+                                    { name: "Berry Brandy", price: 200 },
+                                    { name: "Cactus Spirits", price: 40 },
+                                    { name: "Honeysuckle Mead", price: 200 }
+                                ]
+                            }
+                        },
+                        { 
+                            id: "olmaRoomShop", 
+                            text: "I'd like to purchase a room for the day.", 
+                            openStore: true,
+                            storeData: {
+                                title: "Olma's Lodging Options",
+                                items: [
+                                    { name: "Inn Stay - Squalid", price: 7 },
+                                    { name: "Inn Stay - Poor", price: 10 },
+                                    { name: "Inn Stay - Modest", price: 50 },
+                                    { name: "Inn Stay - Comfortable", price: 80 }
+                                ]
+                            }
+                        },
                         { id: "olmaGoodbye", text: "Goodbye.", goBack: true }
                     ]
-                },
-                    henricFood: {
-                        title: "Henric Thistledown - Food",
-                        header: "Here's our menu, fresh off the hearth:" + $newPara + 
-                                "Squalid: Stale Bread and Onion Broth - 2 cp" + $newPara + 
-                                "Poor: Turnip Stew with a Crust of Bread - 6 cp" + $newPara + 
-                                "Modest: Herb-Roasted Chicken with Barley - 3 sp" + $newPara + 
-                                "Comfortable: Baked Trout with Lemon Cream and Vegetables - 8 sp",
-                        options: [
-                        { id: "henricGoodbye", text: "Goodbye.", goBack: true },
-                        { id: "henricMain", text: "I have another question.", goBack: true }
-                        ]
-                    },
-                    henricDrink: {
-                        title: "Henric Thistledown - Drink",
-                        header: "Fancy a drink? Here’s what’s on tap:" + $newPara + 
-                                "Cheap: Weak Cider - 2 cp" + $newPara + 
-                                "Ale: Local Brown Ale - 4 cp" + $newPara + 
-                                "Wine: Spiced Mulled Wine - 2 sp",
-                        options: [
-                        { id: "henricGoodbye", text: "Goodbye.", goBack: true },
-                        { id: "henricMain", text: "I have another question.", goBack: true }
-                        ]
-                    },
-                    henricRoom: {
-                        title: "Henric Thistledown - Room",
-                        header: "Need a place to rest your head?" + $newPara + 
-                                "Modest Lodging: Shared Room with Feather Mattress - 5 sp per night" + $newPara + 
-                                "Comfortable Lodging: Private Room with Magical Linens - 8 sp per night",
-                        options: [
-                        { id: "henricGoodbye", text: "Goodbye.", goBack: true },
-                        { id: "henricMain", text: "I have another question.", goBack: true }
-                        ]
-                    },
-                    olmaFood: {
-                        title: "Olma Thistledown - Food",
-                        header: "Oh, you’ll want to speak to Henric if you’re buying anything, dear." + $newPara +
-                                "But here’s what’s on the board today:" + $newPara + 
-                                "Squalid: Stale Bread and Onion Broth - 2 cp" + $newPara + 
-                                "Poor: Turnip Stew with a Crust of Bread - 6 cp" + $newPara + 
-                                "Modest: Herb-Roasted Chicken with Barley - 3 sp" + $newPara + 
-                                "Comfortable: Baked Trout with Lemon Cream and Vegetables - 8 sp",
-                        options: [
-                        { id: "olmaGoodbye", text: "Goodbye.", goBack: true },
-                        { id: "olmaMain", text: "I have another question.", goBack: true }
-                        ]
-                    },
-                    olmaDrink: {
-                        title: "Olma Thistledown - Drink",
-                        header: "We do love our beverages here. Henric handles the pouring, but here’s what we’ve got:" + $newPara + 
-                                "Cheap: Weak Cider - 2 cp" + $newPara + 
-                                "Ale: Local Brown Ale - 4 cp" + $newPara + 
-                                "Wine: Spiced Mulled Wine - 2 sp",
-                        options: [
-                        { id: "olmaGoodbye", text: "Goodbye.", goBack: true },
-                        { id: "olmaMain", text: "I have another question.", goBack: true }
-                        ]
-                    },
-                    olmaRoom: {
-                        title: "Olma Thistledown - Room",
-                        header: "Looking for a room? Henric handles the keys, but I’ll tell you what we offer:" + $newPara + 
-                                "Modest Lodging: Shared Room with Feather Mattress - 5 sp per night" + $newPara + 
-                                "Comfortable Lodging: Private Room with Magical Linens - 8 sp per night",
-                        options: [
-                        { id: "olmaGoodbye", text: "Goodbye.", goBack: true },
-                        { id: "olmaMain", text: "I have another question.", goBack: true }
-                        ]
-                    },
-                
+                },                
                 silvershireWendellPerlow: {
                     title: `Wendel "Winks" Perlow`,
                     header: `A weathered human man with a ragged gray beard, mismatched eyes, and a long coat with hidden flask pockets.
@@ -695,6 +930,63 @@ const dialogueOptions = {
                         ` + $newPara + `She holds up a small vial filled with clear liquid. 
                         ` + $newPara + `“I’ve created a remedy to attempt to heal the plants, but last time the plants lashed out and hurt me. I need you to apply the remedy to the plants and report back what happens. Can you help me?”`,
                     options: [
+                        { 
+                            id: "briellaShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Briella Stormwhisper's Shop",
+                                items: [
+                                    { name: "Acid (Vial)", price: 1200 },
+                                    { name: "Alchemist's Fire (Flask)", price: 2500 },
+                                    { name: "Antitoxin", price: 1200 },
+                                    { name: "Bottle (Glass)", price: 100 },
+                                    { name: "Candle", price: 50 },
+                                    { name: "Component Pouch", price: 1200 },
+                                    { name: "Flask", price: 1 },
+                                    { name: "Healer's Kit", price: 250 },
+                                    { name: "Ink (1 oz)", price: 500 },
+                                    { name: "Ink Pen", price: 1 },
+                                    { name: "Jug", price: 1 },
+                                    { name: "Oil (Flask)", price: 5 },
+                                    { name: "Perfume (Vial)", price: 250 },
+                                    { name: "Poison (Basic Vial)", price: 500 },
+                                    { name: "Oil Flask", price: 5 },
+                                    { name: "Perfume Vial", price: 250 },
+                                    { name: "Basic Poison", price: 5000 },
+                                    { name: "Vial", price: 50 },
+                                    { name: "Alchemist's Supplies", price: 2500 },
+                                    { name: "Brewer's Supplies", price: 1000 },
+                                    { name: "Glassblower's Tools", price: 1500 },
+                                    { name: "Poisoner's Kit", price: 2500 },
+                                    { name: "Herbalism Kit", price: 250 },
+                                    { name: "Spell Components", price: 250 },
+                                    { name: "Potion of Healing", price: 2500 },
+                                    { name: "Philter of Love", price: 4500 },
+                                    { name: "Potion of Poison", price: 5000 },
+                                    { name: "Elixir of Health", price: 6000 },
+                                    { name: "Potion of Fire Breath", price: 7500 },
+                                    { name: "Potion of Greater Healing", price: 7500 },
+                                    { name: "Potion of Climbing", price: 9000 },
+                                    { name: "Potion of Heroism", price: 9000 },
+                                    { name: "Potion of Invisibility", price: 9000 },
+                                    { name: "Potion of Mind Reading", price: 9000 },
+                                    { name: "Potion of Water Breathing", price: 9000 },
+                                    { name: "Potion of Animal Friendship", price: 10000 },
+                                    { name: "Potion of Diminution", price: 13500 },
+                                    { name: "Potion of Growth", price: 13500 },
+                                    { name: "Potion of Gaseous Form", price: 15000 },
+                                    { name: "Potion of Resistance", price: 15000 },
+                                    { name: "Potion of Speed", price: 20000 },
+                                    { name: "Potion of Superior Healing", price: 22500 },
+                                    { name: "Potion of Flying", price: 25000 },
+                                    { name: "Potion of Clairvoyance", price: 48000 },
+                                    { name: "Potion of Vitality", price: 48000 },
+                                    { name: "Potion of Supreme Healing", price: 67500 },
+                                    { name: "Potion of Invulnerability", price: 192000 }
+                                ]
+                            }
+                        },
                         { id: "fadedPetalsAccepted", text: `Accept Quest?` },
                         { id: "fadedPetalsDeclined", text: `Decline Quest?` }
                     ]
@@ -748,7 +1040,30 @@ const dialogueOptions = {
                     header: `A gnome with a mischievous grin and a collection of odd trinkets waves at you.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;"Ah, a fellow lover of curiosities! What can I interest you in today?"`,
                     options: [
-                        { id: "millaQuest", text: "Do you have any tasks for me?" },
+                        { 
+                            id: "millaShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Milla Picklewick's Shop",
+                                items: [
+                                    { name: "Tinker's Tools", price: 5000 },
+                                    { name: "Scrap Parts (Bundle)", price: 50 },
+                                    { name: "Bent Gear", price: 20 },
+                                    { name: "Loose Springs (Set)", price: 30 },
+                                    { name: "Tin Whistle", price: 50 },
+                                    { name: "Wind-Up Mouse", price: 100 },
+                                    { name: "Clicking Noisemaker", price: 30 },
+                                    { name: "Simple Music Box", price: 300 },
+                                    { name: "Small Hammer", price: 100 },
+                                    { name: "Nails (Bag of 50)", price: 100 },
+                                    { name: "Wire Spool (10 ft)", price: 50 },
+                                    { name: "Wooden Gear", price: 30 },
+                                    { name: "Crank Mechanism", price: 100 },
+                                    { name: "Odd Trinket (Random)", price: 50 }
+                                ]
+                            }
+                        },
                         { id: "millaGoodbye", text: "Goodbye.", goBack: true }
                     ]
                 },
@@ -854,6 +1169,7 @@ const dialogueOptions = {
                 { id: "gildedEcho", text: "Gilded Echo" },
                 { id: "bramble_Broth", text: "Bramble & Broth" },
                 { id: "wyrdwoodRoost", text: "Wyrdwood Roost" },
+                { id: "shatterglassAtelier", text: "Shatterglass Atelier" },
             ]
         },
             runestoneCrossing: {
@@ -865,14 +1181,29 @@ const dialogueOptions = {
             moonfenSpire: {
                 header: "You are in the Moonfen Spire. Where are you inside?",
                 options: [
-                    {id: "lobby", text: "Lobby"},
-                    {id: "office", text: "Office"},
-                    {id: "library", text: "Library"},
-                    {id: "classroom", text: "Classroom"},
-                    {id: "magusHollow", text: "Magus Hollow"}
+                    {id: "moonfenSpireLobby", text: "Lobby"},
+                    {id: "moonfenSpireOffice", text: "Office"},
+                    {id: "moonfenSpireLibrary", text: "Library"},
+                    {id: "moonfenSpireClassroom", text: "Classroom"},
+                    {id: "moonfenSpireMagusHollow", text: "Magus Hollow"}
                 ]
             },
-                magusHollow: {
+                moonfenSpireOffice: {
+                    header: "You are in the Office of Moonfen Spire. Who are you talking to?",
+                    options: [
+                        {id: "glintmereHeadmistressEnvaraMyrr", text: "Headmistress Envara Myrr"}
+                    ]
+                },
+                    glintmereHeadmistressEnvaraMyrr: {
+                        title: "Headmistress Envara Myrr",
+                        header: `A stern-looking elf with sharp features and piercing green eyes. She wears a long, flowing robe adorned with intricate silver embroidery, and her hair is pulled back into a tight bun. As you approach, she looks up from a stack of papers with a raised eyebrow and a hint of curiosity.
+                        ` + $newPara + `“Ah, a visitor. What brings you to Moonfen Spire?”`,
+                        options: [
+                            { id: "envaraQuest", text: "quest name here" },
+                            { id: "envaraGoodbye", text: "Goodbye.", goBack: true }
+                        ]
+                    },
+                moonfenSpireMagusHollow: {
                     header: "You are in the Magus Hollow. Who are you talking to?",
                     options: [
                         {id: "glintmereErritMarwin", text: "Errit Marwin"}
@@ -998,27 +1329,362 @@ const dialogueOptions = {
             starbrookSanctum: {
                 header: "You are in the Starbrook Sanctum. Who are you talking to?",
                 options: [
-                    {id: "", text: ""}
+                    {id: "glintmereMiraWexley", text: "Mira Wexley"}
                 ]
             },
+                glintmereMiraWexley: {
+                    title: "Mira Wexley",
+                    header: `A tall, elegant woman with silver-streaked hair and a serene expression. She wears flowing robes adorned with star motifs, and her eyes seem to hold the wisdom of the cosmos. As you approach, she offers a gentle smile and a nod of acknowledgment. 
+                    ` + $newPara + `“Welcome to the Starbrook Sanctum. It’s a place of reflection and knowledge. If you have any questions about the stars or seek guidance, feel free to ask.”`,   
+                    options: [
+                        { 
+                            id: "miraShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Mira Wexley's Shop",
+                                items: [
+                                    { name: "Acid (Vial)", price: 1200 },
+                                    { name: "Alchemist's Fire (Flask)", price: 2500 },
+                                    { name: "Antitoxin", price: 1200 },
+                                    { name: "Bottle (Glass)", price: 100 },
+                                    { name: "Candle", price: 50 },
+                                    { name: "Component Pouch", price: 1200 },
+                                    { name: "Flask", price: 1 },
+                                    { name: "Healer's Kit", price: 250 },
+                                    { name: "Ink (1 oz)", price: 500 },
+                                    { name: "Ink Pen", price: 1 },
+                                    { name: "Jug", price: 1 },
+                                    { name: "Oil (Flask)", price: 5 },
+                                    { name: "Perfume (Vial)", price: 250 },
+                                    { name: "Poison (Basic Vial)", price: 500 },
+                                    { name: "Oil Flask", price: 5 },
+                                    { name: "Perfume Vial", price: 250 },
+                                    { name: "Basic Poison", price: 5000 },
+                                    { name: "Vial", price: 50 },
+                                    { name: "Alchemist's Supplies", price: 2500 },
+                                    { name: "Brewer's Supplies", price: 1000 },
+                                    { name: "Glassblower's Tools", price: 1500 },
+                                    { name: "Poisoner's Kit", price: 2500 },
+                                    { name: "Herbalism Kit", price: 250 },
+                                    { name: "Spell Components", price: 250 },
+                                    { name: "Potion of Healing", price: 2500 },
+                                    { name: "Philter of Love", price: 4500 },
+                                    { name: "Potion of Poison", price: 5000 },
+                                    { name: "Elixir of Health", price: 6000 },
+                                    { name: "Potion of Fire Breath", price: 7500 },
+                                    { name: "Potion of Greater Healing", price: 7500 },
+                                    { name: "Potion of Climbing", price: 9000 },
+                                    { name: "Potion of Heroism", price: 9000 },
+                                    { name: "Potion of Mind Reading", price: 9000 },
+                                    { name: "Potion of Water Breathing", price: 9000 },
+                                    { name: "Potion of Animal Friendship", price: 10000 },
+                                    { name: "Potion of Diminution", price: 13500 },
+                                    { name: "Potion of Growth", price: 13500 },
+                                    { name: "Potion of Gaseous Form", price: 15000 },
+                                    { name: "Potion of Resistance", price: 15000 },
+                                    { name: "Potion of Clairvoyance", price: 48000 },
+                                    { name: "Potion of Invulnerability", price: 192000 }
+                                ]
+                            }
+                        },
+                        { id: "miraQuest", text: "Quest name here" },
+                        { id: "miraGoodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
             gildedEcho: {
                 header: "You are in the Gilded Echo. Who are you talking to?",
                 options: [
-                    {id: "", text: ""}
+                    {id: "glintmereJasperFen", text: "Jasper “Featherlock” Fen"}
                 ]
             },
+                glintmereJasperFen: {
+                    title: "Jasper “Featherlock” Fen",
+                    header: `A male druidic caretaker with feathers braided into his beard greets you warmly.
+                    ` + $newPara + `“Welcome newcomers! What may you require for your next adventure?”`,
+                    options: [
+                        { 
+                            id: "glintmereJasperFenShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Jasper “Featherlock” Fen's Shop",
+                                items: [
+                                    { name: "Abacus", price: 200 },
+                                    { name: "Barrel", price: 200 },
+                                    { name: "Basket", price: 40 },
+                                    { name: "Blanket", price: 50 },
+                                    { name: "Bottle (Glass)", price: 200 },
+                                    { name: "Bucket", price: 5 },
+                                    { name: "Candle", price: 1 },
+                                    { name: "Chain (10 ft)", price: 500 },
+                                    { name: "Chalk (1)", price: 1 },
+                                    { name: "Chest", price: 500 },
+                                    { name: "Clothes (Common)", price: 50 },
+                                    { name: "Clothes (Traveler's)", price: 200 },
+                                    { name: "Crowbar", price: 200 },
+                                    { name: "Fishing Tackle", price: 100 },
+                                    { name: "Flask or Tankard", price: 2 },
+                                    { name: "Hammer", price: 100 },
+                                    { name: "Ink (1 oz)", price: 1000 },
+                                    { name: "Ink Pen", price: 2 },
+                                    { name: "Jug or Pitcher", price: 2 },
+                                    { name: "Ladder (10 ft)", price: 10 },
+                                    { name: "Lantern (Hooded)", price: 500 },
+                                    { name: "Lock", price: 1000 },
+                                    { name: "Mess Kit", price: 20 },
+                                    { name: "Mirror (Steel)", price: 500 },
+                                    { name: "Oil (Flask)", price: 10 },
+                                    { name: "Paper (Sheet)", price: 20 },
+                                    { name: "Parchment (Sheet)", price: 10 },
+                                    { name: "Miner's Pick", price: 200 },
+                                    { name: "Piton", price: 5 },
+                                    { name: "Pole (10 ft)", price: 5 },
+                                    { name: "Pot (Iron)", price: 200 },
+                                    { name: "Pouch", price: 50 },
+                                    { name: "Rope (Hempen, 50 ft)", price: 100 },
+                                    { name: "Rope (Silk, 50 ft)", price: 1000 },
+                                    { name: "Sack", price: 1 },
+                                    { name: "Sealing Wax", price: 50 },
+                                    { name: "Shovel", price: 200 },
+                                    { name: "Soap", price: 2 },
+                                    { name: "Spikes, Iron (10)", price: 100 },
+                                    { name: "Tent (Two-Person)", price: 200 },
+                                    { name: "Tinderbox", price: 50 },
+                                    { name: "Torch", price: 1 },
+                                    { name: "Vial", price: 100 },
+                                    { name: "Waterskin", price: 20 },
+                                    { name: "Mason's Tools", price: 1000 },
+                                    { name: "Painter's Supplies", price: 1000 },
+                                    { name: "Potter's Tools", price: 1000 },
+                                    { name: "Dice Set", price: 10 },
+                                    { name: "Playing Card Set", price: 50 },
+                                    { name: "Wheat (1 lb)", price: 1 },
+                                    { name: "Flour (1 lb)", price: 2 },
+                                    { name: "Salt (1 lb)", price: 5 },
+                                    { name: "Ginger (1 lb)", price: 100 },
+                                    { name: "Cinnamon (1 lb)", price: 200 },
+                                    { name: "Pepper (1 lb)", price: 200 },
+                                    { name: "Saffron (1 lb)", price: 1500 }
+                                ]
+                            }
+                        },
+                        { id: "ownerQuest", text: "Quest name here" },
+                        { id: "ownerGoodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
             bramble_Broth: {
                 header: "You are in the Bramble & Broth. Who are you talking to?",
                 options: [
-                    {id: "", text: ""}
+                    {id: "glintmereZelbinCoppercloak", text: "Zelbin Coppercloak"}
                 ]
             },
+                glintmereZelbinCoppercloak: {
+                    title: "Zelbin Coppercloak",
+                    header: `A halfling with a wide-brimmed hat and a cloak that seems to shimmer with hidden pockets. He greets you with a sly smile and a twinkle in his eye.
+                    ` + $newPara + `“Looking for something special? I might have just the thing. Or maybe you’re here for a story? I’ve got plenty of those too, if you’re interested.”`,
+                    options: [
+                        { 
+                            id: "zelbinShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Zelbin Coppercloak's Shop",
+                                items: [
+                                    { name: "Crisped Worm and Potatoes", price: 3 },
+                                    { name: "Frogs on Skewers", price: 3 },
+                                    { name: "Green Chili Stew", price: 3 },
+                                    { name: "Grilled Snake and Macadamia", price: 3 },
+                                    { name: "Humble Pie", price: 3 },
+                                    { name: "Lizard Gruel with Nutbread", price: 3 },
+                                    { name: "Barbecued Gopher Legs", price: 6 },
+                                    { name: "Bog-beetle Dumplings", price: 6 },
+                                    { name: "Bread-bowl Stew", price: 6 },
+                                    { name: "Leg of Mutton and Goose Eggs", price: 6 },
+                                    { name: "Mushroom Stew with Bread", price: 6 },
+                                    { name: "Rabbit and Baked Pumpkin", price: 6 },
+                                    { name: "Squash and Fish Soup", price: 6 },
+                                    { name: "Broiled Salmon and Potatoes", price: 30 },
+                                    { name: "Cheese Pie and Onion Soup", price: 30 },
+                                    { name: "Grilled Wild Boar Chops", price: 30 },
+                                    { name: "Rabbit Stew and Crackers", price: 30 },
+                                    { name: "Roast Chicken and Potatoes", price: 30 },
+                                    { name: "Elven Bread", price: 80 },
+                                    { name: "Honey Braised Boar Ribs", price: 80 },
+                                    { name: "Pork Chop and Curds", price: 80 },
+                                    { name: "Rack of Lamb Platter", price: 80 },
+                                    { name: "Smoked Salmon and Wild Berries", price: 200 },
+                                    { name: "Stuffed Trout with Plum Pudding", price: 200 },
+                                    { name: "Goblin Spit Ale", price: 2 },
+                                    { name: "Grog", price: 2 },
+                                    { name: "Turnip Wine", price: 2 },
+                                    { name: "Dwarven Ale", price: 40 },
+                                    { name: "King's Ale", price: 40 },
+                                    { name: "Spiced Ale", price: 40 },
+                                    { name: "Trollbane Ale", price: 40 },
+                                    { name: "Desert Star Wine", price: 20 },
+                                    { name: "Wight Wine", price: 20 },
+                                    { name: "Stonesulder Wine", price: 1000 },
+                                    { name: "Wild Orchid Wine", price: 1000 },
+                                    { name: "Bacon Beer", price: 20 },
+                                    { name: "Berry Brandy", price: 200 },
+                                    { name: "Cactus Spirits", price: 40 },
+                                    { name: "Honeysuckle Mead", price: 200 },
+                                    { name: "Scorpionweed Reserve", price: 1000 },
+                                    { name: "Wheat (1 lb)", price: 1 },
+                                    { name: "Flour (1 lb)", price: 1 },
+                                    { name: "Salt (1 lb)", price: 2 },
+                                    { name: "Ginger (1 lb)", price: 50 },
+                                    { name: "Cinnamon (1 lb)", price: 100 },
+                                    { name: "Pepper (1 lb)", price: 100 },
+                                    { name: "Saffron (1 lb)", price: 700 }
+                                ]
+                            }
+                        },
+                        { id: "zelbinQuest", text: "Déjà Brew" }
+                    ]
+                },
             wyrdwoodRoost: {
                 header: "You are in the Wyrdwood Roost. Who are you talking to?",
                 options: [
                     {id: "", text: ""}
                 ]
             },
+            shatterglassAtelier: {
+                header: "You are in the Shatterglass Atelier. Who are you talking to?",
+                options: [
+                    {id: "glintmereTovik", text: "Specter-Cleric Tovik"},
+                    {id: "glintmereLirael", text: "Lirael"}
+                ]
+            },
+                glintmereTovik: {
+                    title: "Specter-Cleric Tovik",
+                    header: `A ghostly figure clad in tattered clerical robes, his form flickering like a candle in the wind. He greets you with a solemn nod, his eyes hollow yet filled with an ancient wisdom.
+                    ` + $newPara + `“Welcome to the Shatterglass Atelier. I am Tovik, a cleric who has long since passed from this world. If you seek knowledge of the afterlife or guidance on matters of the spirit, I may be able to assist you.”`,
+                    options: [
+                        { 
+                            id: "tovikShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Specter-Cleric Tovik's Shop",
+                                items: [
+                                    { name: "Exquisite Necklace/Amulet", price: 250 },
+                                    { name: "Mundane Necklace/Amulet", price: 25 },
+                                    { name: "Arcane Focus (Crystal)", price: 500 },
+                                    { name: "Arcane Focus (Orb)", price: 1000 },
+                                    { name: "Exquisite Earrings", price: 250 },
+                                    { name: "Mundane Earrings", price: 20 },
+                                    { name: "Jewelry (set with gem)", price: 10 },
+                                    { name: "Exquisite Ring", price: 150 },
+                                    { name: "Mundane Ring", price: 15 },
+                                    { name: "Signet Ring", price: 250 },
+                                    { name: "Jeweler's Tools", price: 1200 },
+                                    { name: "Gemstone Appraisal (3 gems)", price: 500 },
+                                    { name: "Resizing Jewelry", price: 1000 },
+                                    { name: "Stonecutting", price: 250 },
+                                    { name: "Copper (1 lb)", price: 25 },
+                                    { name: "Silver (1 lb)", price: 250 },
+                                    { name: "Gold (1 lb)", price: 2500 },
+                                    { name: "Platinum (1 lb)", price: 25000 },
+                                    { name: "Azurite", price: 1000 },
+                                    { name: "Banded Agate", price: 1000 },
+                                    { name: "Blue Quartz", price: 1000 },
+                                    { name: "Eye Agate", price: 1000 },
+                                    { name: "Hematite", price: 1000 },
+                                    { name: "Lapis Lazuli", price: 1000 },
+                                    { name: "Malachite", price: 1000 },
+                                    { name: "Moss Agate", price: 1000 },
+                                    { name: "Obsidian", price: 1000 },
+                                    { name: "Rhodochrosite", price: 1000 },
+                                    { name: "Tiger Eye", price: 1000 },
+                                    { name: "Turquoise", price: 1000 },
+                                    { name: "Bloodstone", price: 5000 },
+                                    { name: "Carnelian", price: 5000 },
+                                    { name: "Chalcedony", price: 5000 },
+                                    { name: "Chrysoprase", price: 5000 },
+                                    { name: "Citrine", price: 5000 },
+                                    { name: "Jasper", price: 5000 },
+                                    { name: "Moonstone", price: 5000 },
+                                    { name: "Onyx", price: 5000 },
+                                    { name: "Quartz", price: 5000 },
+                                    { name: "Sardonyx", price: 5000 },
+                                    { name: "Star Rose Quartz", price: 5000 },
+                                    { name: "Zircon", price: 5000 },
+                                    { name: "Amber", price: 10000 },
+                                    { name: "Amethyst", price: 10000 },
+                                    { name: "Chrysoberyl", price: 10000 },
+                                    { name: "Coral", price: 10000 },
+                                    { name: "Garnet", price: 10000 },
+                                    { name: "Jade", price: 10000 },
+                                    { name: "Jet", price: 10000 },
+                                    { name: "Pearl", price: 10000 },
+                                    { name: "Spinel", price: 10000 },
+                                    { name: "Tourmaline", price: 10000 }
+                                ]
+                            }
+                        },
+                        { id: "tovikQuest", text: "Quest name here" },
+                        { id: "tovikGoodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+                glintmereLirael: {
+                    title: "Lirael",
+                    header: `A mysterious woman with long, flowing hair that seems to shimmer with an otherworldly light. Her eyes are a deep, mesmerizing shade of violet, and her voice carries a melodic quality that captivates those who listen. As you approach, she offers a warm smile and a gentle nod of acknowledgment.
+                    ` + $newPara + `“Welcome to the Shatterglass Atelier. I am Lirael, a practitioner of the arcane arts. If you have any questions about magic or seek guidance on your magical journey, I may be able to assist you.”`,
+                    options: [
+                        { 
+                            id: "liraelShop", 
+                            text: "Shop", 
+                            openStore: true,
+                            storeData: {
+                                title: "Lirael's Shop",
+                                items: [
+                                    { name: "Quarterstaff", price: 10 },
+                                    { name: "Abacus", price: 100 },
+                                    { name: "Alchemist's Fire (Flask)", price: 2500 },
+                                    { name: "Arcane Focus (Crystal)", price: 500 },
+                                    { name: "Arcane Focus (Orb)", price: 1000 },
+                                    { name: "Arcane Focus (Rod)", price: 500 },
+                                    { name: "Arcane Focus (Staff)", price: 250 },
+                                    { name: "Arcane Focus (Wand)", price: 500 },
+                                    { name: "Book", price: 1200 },
+                                    { name: "Bottle (Glass)", price: 100 },
+                                    { name: "Candle", price: 1 },
+                                    { name: "Case (Map or Scroll)", price: 50 },
+                                    { name: "Component Pouch", price: 1200 },
+                                    { name: "Druidic Focus (Sprig of Mistletoe)", price: 50 },
+                                    { name: "Druidic Focus (Totem)", price: 50 },
+                                    { name: "Druidic Focus (Wooden Staff)", price: 250 },
+                                    { name: "Druidic Focus (Yew Wand)", price: 500 },
+                                    { name: "Flask", price: 1 },
+                                    { name: "Hourglass", price: 1200 },
+                                    { name: "Oil (Flask)", price: 5 },
+                                    { name: "Ink (1 oz)", price: 500 },
+                                    { name: "Ink Pen", price: 1 },
+                                    { name: "Paper (Sheet)", price: 10 },
+                                    { name: "Parchment (Sheet)", price: 5 },
+                                    { name: "Pouch", price: 25 },
+                                    { name: "Robes", price: 50 },
+                                    { name: "Sealing Wax", price: 25 },
+                                    { name: "Spellbook", price: 2500 },
+                                    { name: "Vial", price: 50 },
+                                    { name: "Calligrapher's Tools", price: 1400 },
+                                    { name: "Lute", price: 700 },
+                                    { name: "Lyre", price: 1400 },
+                                    { name: "Spell Scroll (Common - Cantrip)", price: 500 },
+                                    { name: "Spell Scroll (Common - Level 1)", price: 3000 },
+                                    { name: "Spell Scroll (Uncommon - Level 2)", price: 6000 },
+                                    { name: "Spell Scroll (Uncommon - Level 3)", price: 10000 },
+                                    { name: "Magic Appraisal (Identify)", price: 10000 },
+                                    { name: "Spell Components", price: 250 }
+                                ]
+                            }
+                        },
+                        { id: "liraelQuest", text: "Quest name here" },
+                        { id: "liraelGoodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },  
     //#endregion
 
     //#region Barleyshade Fields
