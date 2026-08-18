@@ -7,12 +7,74 @@ var npcName = $("#npcName");
 const paragraph = document.createElement("p");
 const divAdd = document.createElement("div");
 let history = [];
+let currentRumorIndex = null;
 
 $("document").ready(() => renderDialogue("initial"));
 
-function renderDialogue(key) {
-    if (history.length === 0 || history[history.length - 1] !== key) {
+function getRandomRumorIndex(excludeIndex) {
+    const availableIndices = rumorDialogueOptions
+        .map((_, index) => index)
+        .filter(index => index !== excludeIndex);
+
+    const nextIndices = availableIndices.length > 0 ? availableIndices : rumorDialogueOptions.map((_, index) => index);
+    return nextIndices[Math.floor(Math.random() * nextIndices.length)];
+}
+
+function renderRandomRumor() {
+    const nextRumorIndex = getRandomRumorIndex(currentRumorIndex);
+    const shouldReplaceCurrent = currentRumorIndex !== null;
+
+    renderRumorDialogue(rumorDialogueOptions[nextRumorIndex], { replaceCurrent: shouldReplaceCurrent, rumorIndex: nextRumorIndex });
+}
+
+function renderRumorDialogue(headerText, renderOptions = {}) {
+    const { replaceCurrent = false, rumorIndex = null } = renderOptions;
+
+    if (replaceCurrent && history.length > 0) {
+        history[history.length - 1] = "rumors";
+    } else if (history.length === 0 || history[history.length - 1] !== "rumors") {
+        history.push("rumors");
+    }
+
+    currentRumorIndex = rumorIndex;
+
+    npcName.empty();
+    header.empty();
+    options.empty();
+
+    npcName.append("Rumors");
+    header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + headerText);
+
+    [
+        { id: "rumorBack", text: "Back", goBackLevels: 1 },
+        { id: "rumors", text: "Another rumor." },
+        { id: "rumorGoodbye", text: "Goodbye.", goBackLevels: 2 }
+    ].forEach(option => {
+        const btn = document.createElement("button");
+        btn.textContent = option.text;
+        btn.setAttribute("id", option.id);
+
+        if (option.goBackLevels) {
+            btn.addEventListener("click", () => goBack(option.goBackLevels));
+        } else {
+            btn.addEventListener("click", () => renderRandomRumor());
+        }
+
+        options.append(btn);
+    });
+}
+
+function renderDialogue(key, renderOptions = {}) {
+    const { replaceCurrent = false } = renderOptions;
+
+    if (replaceCurrent && history.length > 0) {
+        history[history.length - 1] = key;
+    } else if (history.length === 0 || history[history.length - 1] !== key) {
         history.push(key);
+    }
+
+    if (key !== "rumors") {
+        currentRumorIndex = null;
     }
 
     // Get dialogue data
@@ -38,9 +100,13 @@ function renderDialogue(key) {
         
         if (option.goBack) {
             btn.addEventListener("click", () => goBack());
+        } else if (option.goBackLevels) {
+            btn.addEventListener("click", () => goBack(option.goBackLevels));
         } else if (option.openStore) {
             // Handle store options
             btn.addEventListener("click", () => openStoreModal(option.storeData));
+        } else if (option.randomRumor || option.id === "rumors") {
+            btn.addEventListener("click", () => renderRandomRumor());
         } else {
             btn.addEventListener("click", () => renderDialogue(option.id));
         }
@@ -54,9 +120,11 @@ function goHome() {
     history = []; // Clear history when going home
 }
 
-function goBack() {
-    // Remove the current dialogue from the history stack
-    history.pop();
+function goBack(levels = 1) {
+    // Remove the current dialogue and any requested parent scopes from the history stack
+    for (let index = 0; index < levels; index += 1) {
+        history.pop();
+    }
 
     // Get the previous dialogue key
     const previousKey = history[history.length - 1];

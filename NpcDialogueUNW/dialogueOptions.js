@@ -319,22 +319,22 @@ const dialogueOptions = {
                                     { id: "theHolyDeliveryDecline", text: "Quest Decline?" }
                                 ]
                         },
-                silvershireQuib: {
-                    title: "Quib",
-                    header: `A short, wiry man with tousled red hair and sharp, alert eyes that miss nothing. His skin is sun-touched and freckled, and he wears a patchy leather coat that hangs a bit too big on his frame. His hands are quick and stained with ink and oil, always fidgeting with something small and strange.
-                        ` + $newPara + `“Adventurers! I need your aid! Orcs are encamped to the northwest and they’ve been terrorizing Silvershire and all travelers on the road. If you can thin their ranks and take out their chieftain, I will reward you greatly!”`,
-                    options: [
-                        { id: "thinTheOrcsDownAccepted", text: "Accept Quest" },
-                        { id: "goodbye", text: "Goodbye.", goBack: true } 
-                    ]
-                },
-                    thinTheOrcsDownAccepted: {
-                        title: "Quib",
-                        header: `“Thank you, adventurer! I knew you would be the right person for the job. Come see me when it's done!"`,
-                        options: [
-                            { id: "thinTheOrcsDownQuestCompleted", text: "Quest Completed?" }
-                        ]
-                    },
+                // silvershireQuib: {
+                //     title: "Quib",
+                //     header: `A short, wiry man with tousled red hair and sharp, alert eyes that miss nothing. His skin is sun-touched and freckled, and he wears a patchy leather coat that hangs a bit too big on his frame. His hands are quick and stained with ink and oil, always fidgeting with something small and strange.
+                //         ` + $newPara + `“Adventurers! I need your aid! Orcs are encamped to the northwest and they’ve been terrorizing Silvershire and all travelers on the road. If you can thin their ranks and take out their chieftain, I will reward you greatly!”`,
+                //     options: [
+                //         { id: "thinTheOrcsDownAccepted", text: "Accept Quest" },
+                //         { id: "goodbye", text: "Goodbye.", goBack: true } 
+                //     ]
+                // },
+                //     thinTheOrcsDownAccepted: {
+                //         title: "Quib",
+                //         header: `“Thank you, adventurer! I knew you would be the right person for the job. Come see me when it's done!"`,
+                //         options: [
+                //             { id: "thinTheOrcsDownQuestCompleted", text: "Quest Completed?" }
+                //         ]
+                //     },
                 silvershireRodger:{
                     title: "Rodger",
                     header: `A stocky, broad-shouldered man with muscular arms and a tan, weathered face from years of working at the forge. His hair is a messy mop of black and gray, and a short, scruffy beard covers his chin. Rodger's attire consists of a heavy leather apron over a simple tunic, blackened from soot and oil. His hands are calloused, with smudges of coal still visible under his nails.
@@ -1819,12 +1819,61 @@ const dialogueOptions = {
 
 //#region Earthrim
     earthrimZone: {
-        header: "You are in Earthrim. What do you want to do?",
+        header: "You are in Earthrim. Where are you?",
         options: [
-            { id: "exploreEarthrim", text: "Explore Earthrim" },
-            { id: "leaveEarthrim", text: "Leave Earthrim" }
+            { id: "locationTheSnowGate", text: "The Snow Gate" },
+            { id: "locationWhiteRock", text: "White Rock" }
         ]
     },
+    //region The Snow Gate
+    locationTheSnowGate: {
+        header: "You are in The Snow Gate. Who are you talking to?",
+        options: [
+            { id: "snowGateGuard", text: "Snow Gate Guard" }
+        ]   
+    },
+    //#endregion
+
+    //region White Rock
+    locationWhiteRock: {
+        header: "You are in White Rock. Which location are you in?",
+        options: [
+            { id: "whiteRockStreets", text: "Streets" },
+            { id: "silverStagInn", text: "The Silver Stag Inn" }
+        ]   
+    },
+        whiteRockStreets: {
+            header: "You are in the Streets of White Rock. Who are you talking to?",
+            options: [
+                { id: "whiteRockTownGuard", text: "Town Guard" },
+                { id: "whiteRockGreg", text: "Greg" },
+            ]
+        },
+            whiteRockTownGuard: {
+                title: "Town Guard",
+                header: "How can I help you?",
+                options: [
+                    { id: "whiteRockTownguardDirections", text: "Can you give me directions?" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "whiteRockTownguardGoodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+    //#endregion
 
 //#endregion
 }
+
+const rumorDialogueOptions = [
+    "A patrol captain says the northern road has been freezing over overnight, even when the rest of the valley stays dry. Travelers claim they hear hoofbeats with no rider in the dark.",
+    "A merchant caravan vanished east of White Rock three nights ago. The wagons were found later, untouched and empty, as if the people had simply stepped out into the snow and never returned.",
+    "Old miners swear the abandoned shaft beyond the ridge is lit at night by lanterns that no one carries. The closest anyone gets to the entrance hears singing from underground.",
+    "Someone has been lighting a signal fire in the ruined watchtower to the north. The guard says no one should be there, but the smoke appears whenever the storm rolls in.",
+    "Fisherfolk talk about a moonlit lake south of town where the ice never quite freezes. They say reflections in the water move a moment too late.",
+    "The smith's forge has burned blue twice this week. Old hands insist that means something magical is being worked in secret, though the smith won't say a word.",
+    "Hunters argue over a black stag that appears on the ridge at dusk and disappears when chased. One says it never leaves tracks, even in fresh snow.",
+    "A peddler from the south claimed the next frost fair won't be held in the market at all, but somewhere hidden in the woods where the bells ring under the snow.",
+    "There is a chapel bell outside town that has not rung in years, yet several locals insist they heard it toll once during the last storm.",
+    "Carters whisper about a road beneath the cliffs that should not exist. They say the path is there one day and gone the next, leading somewhere under the mountain.",
+    "A healer says the newest crop of patients all complained about the same thing: numb fingers, cold breath, and a gray film on their skin after visiting the western ruins.",
+    "Every few winters, strange lights dance above the northern peaks. This year they appeared early, and the hunters who saw them refused to camp outside afterward."
+];
