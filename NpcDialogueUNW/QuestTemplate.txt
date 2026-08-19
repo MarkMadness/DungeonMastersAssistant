@@ -47,3 +47,85 @@ locationNameNpcName: {
 				{ id: "questNameQuestDeclined", text: "Goodbye", goBack: true }
 			]
 		},
+
+
+{ id: "goodbye", text: "Goodbye.", goBack: true }
+{ id: "rumors", text: "Rumors" },
+
+
+EARTHRIM
+
+
+earthrimNpcTemplateSingle: {
+    title: "NpcName",
+    header: "Hello, traveler. What do you need?",
+    options: [
+        { id: "earthrimNpcTemplateBranchA", text: "Ask about work" },
+        { id: "earthrimNpcTemplateBranchB", text: "Ask about the town" },
+        { id: "rumors", text: "Rumors" },
+        { id: "goodbye", text: "Goodbye.", goBack: true }
+    ]
+},
+
+
+
+earthrimNpcTemplateStaged: {
+    title: "NpcName",
+    header: "Opening line for fallback (optional when using earthrimSequence).",
+    earthrimSequence: [
+        "Stage 1 line goes here.",
+        "Stage 2 line goes here.",
+        "Final stage line that leads into options."
+    ],
+    options: [
+        { id: "earthrimNpcTemplateStagedBranch", text: "Follow-up topic" },
+        { id: "rumors", text: "Rumors" },
+        { id: "goodbye", text: "Goodbye.", goBack: true }
+    ]
+},
+
+
+
+earthrimNpcTemplateCheckRoot: {
+    title: "NpcName",
+    earthrimSequence: [
+        "You want information? That depends on how you ask.",
+        "Make your move."
+    ],
+    options: [
+        {
+            id: "earthrimNpcTemplateSkillCheckIntimidate",
+            text: "Intimidate",
+            check: {
+                prompt: "Roll for intimidation...",
+                successId: "earthrimNpcTemplateSkillCheckIntimidateSuccess",
+                failureId: "earthrimNpcTemplateSkillCheckIntimidateFailed"
+            }
+        },
+        { id: "goodbye", text: "Goodbye.", goBack: true }
+    ]
+},
+
+earthrimNpcTemplateSkillCheckIntimidateSuccess: {
+    title: "NpcName",
+    earthrimSequence: [
+        "Fine. You made your point.",
+        "Here is what I know..."
+    ],
+    options: [
+        { id: "earthrimNpcTemplateCheckRoot", text: "Back" },
+        { id: "goodbye", text: "Goodbye.", goBack: true }
+    ]
+},
+
+earthrimNpcTemplateSkillCheckIntimidateFailed: {
+    title: "NpcName",
+    earthrimSequence: [
+        "Not convincing.",
+        "Try a different approach."
+    ],
+    options: [
+        { id: "earthrimNpcTemplateCheckRoot", text: "Back" },
+        { id: "goodbye", text: "Goodbye.", goBack: true }
+    ]
+},
