@@ -132,6 +132,54 @@ function renderCheckPrompt(option) {
     showCheckResultButtons(checkConfig);
 }
 
+function isLocationContextNode(key) {
+    const dialogue = dialogueOptions[key];
+    if (!dialogue || typeof dialogue.header !== "string") {
+        return false;
+    }
+
+    const headerText = dialogue.header.toLowerCase();
+    const hasLocationPrompt =
+        headerText.includes("who are you talking to") ||
+        headerText.includes("which location are you in") ||
+        headerText.includes("where are you inside") ||
+        headerText.includes("where are you?");
+
+    // Most location selectors in this data set do not define an NPC title.
+    return key.startsWith("location") || (hasLocationPrompt && !dialogue.title);
+}
+
+function getNearestLocationContextFromHistory() {
+    // Skip the current dialogue (last item) and walk backwards.
+    for (let index = history.length - 2; index >= 0; index -= 1) {
+        const candidateKey = history[index];
+        if (isLocationContextNode(candidateKey)) {
+            return candidateKey;
+        }
+    }
+
+    return null;
+}
+
+function redirectFromGoodbye(option) {
+    const explicitTarget = option.goTo;
+    const targetKey = explicitTarget || getNearestLocationContextFromHistory();
+
+    if (!targetKey || !dialogueOptions[targetKey]) {
+        goBack();
+        return;
+    }
+
+    const targetHistoryIndex = history.lastIndexOf(targetKey);
+    if (targetHistoryIndex >= 0) {
+        history = history.slice(0, targetHistoryIndex + 1);
+        renderDialogue(targetKey, { replaceCurrent: true });
+        return;
+    }
+
+    renderDialogue(targetKey);
+}
+
 function renderOptionsList(optionsList) {
     options.empty();
     hideCheckResultButtons();
@@ -142,7 +190,11 @@ function renderOptionsList(optionsList) {
         btn.setAttribute("id", option.id);
 
         if (option.goBack) {
-            btn.addEventListener("click", () => goBack());
+            if (option.id === "goodbye") {
+                btn.addEventListener("click", () => redirectFromGoodbye(option));
+            } else {
+                btn.addEventListener("click", () => goBack());
+            }
         } else if (option.goBackLevels) {
             btn.addEventListener("click", () => goBack(option.goBackLevels));
         } else if (option.check && option.check.successId && option.check.failureId) {

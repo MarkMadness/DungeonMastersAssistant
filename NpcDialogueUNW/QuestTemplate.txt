@@ -69,16 +69,16 @@ earthrimNpcTemplateSingle: {
 
 
 
-snowGate00000000: {
-    title: "Ralof",
-    header: "Dialogue here (optional when using earthrimSequence).",
+earthrimNpcTemplateStaged: {
+    title: "NpcName",
+    header: "Opening line for fallback (optional when using earthrimSequence).",
     earthrimSequence: [
-        "Dialogue 1 line goes here.",
-        "Dialogue 2 line goes here.",
-        "Final dialogue line that leads into options."
+        "Stage 1 line goes here.",
+        "Stage 2 line goes here.",
+        "Final stage line that leads into options."
     ],
     options: [
-        { id: "snowGate0000000000", text: "Follow-up topic" },
+        { id: "earthrimNpcTemplateStagedBranch", text: "Follow-up topic" },
         { id: "rumors", text: "Rumors" },
         { id: "goodbye", text: "Goodbye.", goBack: true }
     ]
@@ -106,36 +106,26 @@ earthrimNpcTemplateCheckRoot: {
     ]
 },
 
-    {
-        id: "snowGate0322",
-        text: "I’m the guy who’s gonna show you who you’re messing with if you don’t let us in. (Intimidation)",
-        check: {
-            prompt: "Roll for intimidation...",
-            successId: "snowGate0322Success",
-            failureId: "snowGate0322Failed"
-        }
-    },
+earthrimNpcTemplateSkillCheckIntimidateSuccess: {
+    title: "NpcName",
+    earthrimSequence: [
+        "Fine. You made your point.",
+        "Here is what I know..."
+    ],
+    options: [
+        { id: "earthrimNpcTemplateCheckRoot", text: "Back" },
+        { id: "goodbye", text: "Goodbye.", goBack: true }
+    ]
+},
 
-    earthrimNpcTemplateSkillCheckIntimidateSuccess: {
-        title: "NpcName",
-        earthrimSequence: [
-            "Fine. You made your point.",
-            "Here is what I know..."
-        ],
-        options: [
-            { id: "earthrimNpcTemplateCheckRoot", text: "Back" },
-            { id: "goodbye", text: "Goodbye.", goBack: true }
-        ]
-    },
-
-    earthrimNpcTemplateSkillCheckIntimidateFailed: {
-        title: "NpcName",
-        earthrimSequence: [
-            "Not convincing.",
-            "Try a different approach."
-        ],
-        options: [
-            { id: "earthrimNpcTemplateCheckRoot", text: "Back" },
-            { id: "goodbye", text: "Goodbye.", goBack: true }
-        ]
-    },
+earthrimNpcTemplateSkillCheckIntimidateFailed: {
+    title: "NpcName",
+    earthrimSequence: [
+        "Not convincing.",
+        "Try a different approach."
+    ],
+    options: [
+        { id: "earthrimNpcTemplateCheckRoot", text: "Back" },
+        { id: "goodbye", text: "Goodbye.", goBack: true }
+    ]
+},

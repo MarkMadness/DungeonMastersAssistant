@@ -1955,7 +1955,6 @@ const dialogueOptions = {
                                 { id: "goodbye", text: "Goodbye.", goBack: true }
                             ]
                         },
-                        //>>>>>>>>>>>>>>>left off here
                     snowGate032: {
                         title: "Ralof",
                         header: "Who are you to talk to me like that?",
@@ -2038,7 +2037,7 @@ const dialogueOptions = {
                                     { id: "goodbye", text: "Goodbye.", goBack: true }
                                 ]
                             },
-                        snowGate0322Success: {
+                        snowGate0322Success: { //<<<<<LEFT OFF HERE>>>>>>
                             title: "Ralof",
                             header: "Dialogue here (optional when using earthrimSequence).",
                             earthrimSequence: [
