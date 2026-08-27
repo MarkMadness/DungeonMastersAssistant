@@ -2037,34 +2037,54 @@ const dialogueOptions = {
                                     { id: "goodbye", text: "Goodbye.", goBack: true }
                                 ]
                             },
-                        snowGate0322Success: { //<<<<<LEFT OFF HERE>>>>>>
+                        snowGate0322Success: {
                             title: "Ralof",
                             header: "Dialogue here (optional when using earthrimSequence).",
                             earthrimSequence: [
-                                "Dialogue 1 line goes here.",
-                                "Dialogue 2 line goes here.",
-                                "Final dialogue line that leads into options."
+                                "SUCCESS: Ok! Ok! No need to get hostile, sir!",
+                                "(Ralof proceeds to open the gate. The gate opens)",
+                                "Go on in. Just let me be."
                             ],
                             options: [
-                                { id: "snowGate0000000000", text: "Follow-up topic" },
-                                { id: "rumors", text: "Rumors" },
-                                { id: "goodbye", text: "Goodbye.", goBack: true }
+                                { id: "goodbye", text: "End", goBack: true }
                             ]
                         },
-                        snowGate0322Failed: {
+                        snowGate0322Failed: { 
                             title: "Ralof",
                             header: "Dialogue here (optional when using earthrimSequence).",
                             earthrimSequence: [
-                                "Dialogue 1 line goes here.",
-                                "Dialogue 2 line goes here.",
-                                "Final dialogue line that leads into options."
+                                "FAIL: Ha! You think I’m scared of you! Go ahead and try your luck. If you dare!",
+                                "Ralof draws his sword (Threatened)"
                             ],
                             options: [
-                                { id: "snowGate0000000000", text: "Follow-up topic" },
-                                { id: "rumors", text: "Rumors" },
-                                { id: "goodbye", text: "Goodbye.", goBack: true }
+                                { id: "snowGate0322F1", text: "Calm down sir! I was just kidding." },
+                                { id: "goodbye", text: "I dare (roll initiative)", goBack: true }
                             ]
                         },
+                            snowGate0322F1: {
+                                title: "Ralof",
+                                header: "I have no time or patience for your humor. Tell you what, you want in? It’ll cost you 10 gold, for each of you!",
+                                options: [
+                                    { id: "snowGate0322F11", text: "Fine! Here’s your gold…(asshole) (Pay 10 gp)" },
+                                    { id: "snowGate0322F12", text: "I’m not paying you anything!" }
+                                ]
+                            },
+                                snowGate0322F11: {
+                                    title: "Ralof",
+                                    header: "That’s more like it. Go on in before I change my mind.",
+                                    options: [
+                                        { id: "goodbye", text: "End", goBack: true }
+                                    ]
+                                },
+                                snowGate0322F12: {
+                                    title: "Ralof",
+                                    header: "Then you better turn around and go back to where you came from.",
+                                    options: [
+                                        { id: "snowGatePayGoldChangeMind", text: "(Talk to Ralof again)" },
+                                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                                    ]
+                                },
+                                //<<<<<LEFT OFF HERE>>>>>>
                         snowGate0323Success: {
                             title: "Ralof",
                             header: "Dialogue here (optional when using earthrimSequence).",
@@ -2155,7 +2175,6 @@ const dialogueOptions = {
 
 
 
-                        //>>>>>>>>>>>>>>>left off here
                     snowGate033: {
                         title: "Ralof",
                         header: "Well, you don’t have to be so insulting about it. Then if you’re not who I am expecting, who are you?",
@@ -2164,8 +2183,7 @@ const dialogueOptions = {
                             { id: "snowGate0332", text: "" }
                         ]
                     },
-                        //>>>>>>>>>>>>>>>left off here
-                //asdfdfasdfadsfadfadfd
+                //generated code.
 //#region Branch: Mistaken Identity
            
                 snowGateMeadSympathy: {

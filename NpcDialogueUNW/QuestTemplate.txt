@@ -102,7 +102,7 @@ earthrimNpcTemplateCheckRoot: {
                 failureId: "earthrimNpcTemplateSkillCheckIntimidateFailed"
             }
         },
-        { id: "goodbye", text: "Goodbye.", goBack: true }
+        { id: "goodbye", text: "Goodbye. OR End", goBack: true }
     ]
 },
 
