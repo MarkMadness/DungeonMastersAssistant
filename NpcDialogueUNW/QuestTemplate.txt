@@ -129,3 +129,26 @@ earthrimNpcTemplateSkillCheckIntimidateFailed: {
         { id: "goodbye", text: "Goodbye.", goBack: true }
     ]
 },
+
+
+{ id: "snowGatePayGoldChangeMind", text: "(Talk to Ralof again)" },
+{ id: "goodbye", text: "Goodbye.", goBack: true }
+
+{ id: "goodbye", text: "End", goBack: true }
+
+
+
+snowGate04: {
+    title: "Ralof",
+    header: "Opening line for fallback (optional when using earthrimSequence).",
+    earthrimSequence: [
+        "Stage 1 line goes here.",
+        "Stage 2 line goes here.",
+        "Final stage line that leads into options."
+    ],
+    options: [
+        { id: "snowGate04", text: "" },
+        { id: "snowGate04", text: "" },
+        { id: "snowGate04", text: "" },
+    ]
+},

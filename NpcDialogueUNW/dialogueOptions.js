@@ -2084,1241 +2084,752 @@ const dialogueOptions = {
                                         { id: "goodbye", text: "Goodbye.", goBack: true }
                                     ]
                                 },
-                                //<<<<<LEFT OFF HERE>>>>>>
                         snowGate0323Success: {
                             title: "Ralof",
                             header: "Dialogue here (optional when using earthrimSequence).",
                             earthrimSequence: [
-                                "Dialogue 1 line goes here.",
-                                "Dialogue 2 line goes here.",
-                                "Final dialogue line that leads into options."
+                                "SUCCESS: Oh! By the gods! Sir! I am so sorry. I didn’t recognize…uh…I’ll get the gate open right away.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in, sir! Uh Welcome home."
                             ],
                             options: [
-                                { id: "snowGate0000000000", text: "Follow-up topic" },
-                                { id: "rumors", text: "Rumors" },
-                                { id: "goodbye", text: "Goodbye.", goBack: true }
+                                { id: "goodbye", text: "End", goBack: true }
                             ]
                         },
                         snowGate0323Failed: {
                             title: "Ralof",
-                            header: "Dialogue here (optional when using earthrimSequence).",
-                            earthrimSequence: [
-                                "Dialogue 1 line goes here.",
-                                "Dialogue 2 line goes here.",
-                                "Final dialogue line that leads into options."
-                            ],
+                            header: "FAIL: Nice try! I could report you and have you arrested for trying to deceive a guard of the realm, but instead I’ll let you pay 10 gold to allow you all through. And that’s 10 gold each person.",
                             options: [
-                                { id: "snowGate0000000000", text: "Follow-up topic" },
-                                { id: "rumors", text: "Rumors" },
-                                { id: "goodbye", text: "Goodbye.", goBack: true }
+                                { id: "snowGate0323F1", text: "Fine! Here’s your gold…(asshole) (Pay 10 gp)" },
+                                { id: "snowGate0323F2", text: "I’m not paying you anything!" },
                             ]
                         },
+                            snowGate0323F1: {
+                                title: "Ralof",
+                                header: "That’s more like it. Go on in before I change my mind.",
+                                options: [
+                                    { id: "goodbye", text: "End", goBack: true }
+                                ]
+                            },
+                            snowGate0323F2: {
+                                title: "Ralof",
+                                header: "Then you better turn around and go back to where you came from.",
+                                options: [
+                                    { id: "snowGatePayGoldChangeMind", text: "(Talk to Ralof again)" },
+                                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                                ]
+                            },
                         snowGate0324Success: {
                             title: "Ralof",
                             header: "Dialogue here (optional when using earthrimSequence).",
                             earthrimSequence: [
-                                "Dialogue 1 line goes here.",
-                                "Dialogue 2 line goes here.",
-                                "Final dialogue line that leads into options."
+                                "SUCCESS: Oh! By the gods! You’re right! What am I good for if I can’t even do this simple job right.",
+                                "You have done me a great service. Once my shift is done, I shall go home and rethink my life. Here, let me get the gate for you. It’s the least I can do.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
                             ],
                             options: [
-                                { id: "snowGate0000000000", text: "Follow-up topic" },
-                                { id: "rumors", text: "Rumors" },
-                                { id: "goodbye", text: "Goodbye.", goBack: true }
+                                { id: "goodbye", text: "End", goBack: true }
                             ]
                         },
                         snowGate0324Failed: {
                             title: "Ralof",
-                            header: "Dialogue here (optional when using earthrimSequence).",
-                            earthrimSequence: [
-                                "Dialogue 1 line goes here.",
-                                "Dialogue 2 line goes here.",
-                                "Final dialogue line that leads into options."
-                            ],
+                            header: "FAIL: Or maybe you and your friends need to smarten up and pay your way into Earthrim. That will be 10 gold for each of you by the way.",
                             options: [
-                                { id: "snowGate0000000000", text: "Follow-up topic" },
-                                { id: "rumors", text: "Rumors" },
-                                { id: "goodbye", text: "Goodbye.", goBack: true }
+                                { id: "snowGate0324F1", text: "Fine! Here’s your gold…(asshole) (Pay 10 gp)" },
+                                { id: "snowGate0324F2", text: "I’m not paying you anything!" },
                             ]
                         },
-                        snowGate0325Success: {
-                            title: "Ralof",
-                            header: "Dialogue here (optional when using earthrimSequence).",
-                            earthrimSequence: [
-                                "Dialogue 1 line goes here.",
-                                "Dialogue 2 line goes here.",
-                                "Final dialogue line that leads into options."
-                            ],
-                            options: [
-                                { id: "snowGate0000000000", text: "Follow-up topic" },
-                                { id: "rumors", text: "Rumors" },
-                                { id: "goodbye", text: "Goodbye.", goBack: true }
-                            ]
-                        },
-                        snowGate0325Failed: {
-                            title: "Ralof",
-                            header: "Dialogue here (optional when using earthrimSequence).",
-                            earthrimSequence: [
-                                "Dialogue 1 line goes here.",
-                                "Dialogue 2 line goes here.",
-                                "Final dialogue line that leads into options."
-                            ],
-                            options: [
-                                { id: "snowGate0000000000", text: "Follow-up topic" },
-                                { id: "rumors", text: "Rumors" },
-                                { id: "goodbye", text: "Goodbye.", goBack: true }
-                            ]
-                        },
-
-
-
-
-
-
+                            snowGate0324F1: {
+                                title: "Ralof",
+                                header: "That’s more like it. Go on in before I change my mind.",
+                                options: [
+                                    { id: "goodbye", text: "End", goBack: true }
+                                ]
+                            },
+                            snowGate0324F2: {
+                                title: "Ralof",
+                                header: "Then you better turn around and go back to where you came from.",
+                                options: [
+                                    { id: "snowGatePayGoldChangeMind", text: "(Talk to Ralof again)" },
+                                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                                ]
+                            },
                     snowGate033: {
                         title: "Ralof",
                         header: "Well, you don’t have to be so insulting about it. Then if you’re not who I am expecting, who are you?",
                         options: [
-                            { id: "snowGate0331", text: "" },
-                            { id: "snowGate0332", text: "" }
+                            { id: "snowGate0331", text: "We are adventurers wishing to gain entry into Earthrim for more adventures." },
+                            { id: "snowGate0332", text: "None of your business." }
                         ]
                     },
-                //generated code.
-//#region Branch: Mistaken Identity
-           
-                snowGateMeadSympathy: {
-                    title: "Ralof",
-                    header: "Glad you made it out of there alive. Earthrim has enough trouble without the Frostmoure and Stonemoure at each other's throats if you ask me.",
-                    options: [
-                        { id: "snowGateLoreIntro_MeadSympathy", text: "Continue" }
-                    ]
-                },
-                snowGateGetActTogether: {
-                    title: "Ralof",
-                    header: `I appreciate your understanding. Now then` + $newPara + `(clears throat) "Let's be proper about this. I need you to state your business in Earthrim."`,
-                    options: [
-                        { id: "snowGateBusinessQuestion_GetActTogether", text: "Continue" }
-                    ]
-                },
-                snowGateTerribleJob: {
-                    title: "Ralof",
-                    header: "Who are you to talk to me like that?",
-                    options: [
-                        {
-                            id: "snowGatePersuasionCalm",
-                            text: "Calm down, man. Just let us through the gate. (Persuasion)",
-                            check: {
-                                prompt: "Roll for Persuasion...",
-                                successId: "snowGatePersuasionCalmSuccess",
-                                failureId: "snowGatePersuasionCalmFailed"
-                            }
-                        },
-                        {
-                            id: "snowGateIntimidateThreat",
-                            text: "I'm the guy who's gonna show you who you're messing with if you don't let us in. (Intimidation)",
-                            check: {
-                                prompt: "Roll for Intimidation...",
-                                successId: "snowGateIntimidateThreatSuccess",
-                                failureId: "snowGateIntimidateThreatFailed"
-                            }
-                        },
-                        {
-                            id: "snowGatePersuasionMirror",
-                            text: "Your life is falling apart. You need to take a look in the mirror and fix the man you see looking back at you. (Persuasion)",
-                            check: {
-                                prompt: "Roll for Persuasion...",
-                                successId: "snowGatePersuasionMirrorSuccess",
-                                failureId: "snowGatePersuasionMirrorFailed"
-                            }
-                        },
-                        {
-                            id: "snowGateDeceptionOfficer",
-                            text: "You don't recognize a commanding officer when you see one! (Deception)",
-                            check: {
-                                prompt: "Roll for Deception...",
-                                successId: "snowGateDeceptionOfficerSuccess",
-                                failureId: "snowGateDeceptionOfficerFailed"
-                            }
-                        }
-                    ]
-                },
-                    snowGatePersuasionCalmSuccess: {
-                        title: "Ralof",
-                        header: `You're right. I should be better if I am going to be in charge of the gate into the country. Thank you.` + $newPara + `"Let me get the gate open for you."`,
-                        options: [
-                            { id: "snowGateGateOpen_PersuasionCalm", text: "Continue" }
-                        ]
-                    },
-                        snowGateGateOpen_PersuasionCalm: {
+                        snowGate0331: {
                             title: "Ralof",
-                            header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "Ah! Adventurers are always welcome here. Plenty of adventuring in this realm.",
+                                "Here, let me get the gate for you.",
+                                "Ralof proceeds to open the gate. The gate opens",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
                             options: [
-                                { id: "whiteRockStreets", text: "Enter Earthrim." }
+                                { id: "goodbye", text: "End", goBack: true }
                             ]
                         },
-                    snowGatePersuasionCalmFailed: {
-                        title: "Ralof",
-                        header: "No, I won't calm down. In fact, I just remembered that it costs 10 gold pieces to enter the country. For each of you!",
-                        options: [
-                            { id: "snowGateTollDemand_PersuasionCalmFailed", text: "Continue" }
-                        ]
-                    },
-                    snowGateIntimidateThreatSuccess: {
-                        title: "Ralof",
-                        header: `Ok! Ok! No need to get hostile, sir!` + $newPara + `"Go on in. Just let me be."`,
-                        options: [
-                            { id: "snowGateGateOpen_IntimidateThreat", text: "Continue" }
-                        ]
-                    },
-                        snowGateGateOpen_IntimidateThreat: {
+                        snowGate0332: {
                             title: "Ralof",
-                            header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. Just let me be."`,
+                            header: "I’m the gatekeeper to the whole country of Earthrim. So it is my business. Now, who are you!",
                             options: [
-                                { id: "whiteRockStreets", text: "Enter Earthrim." }
+                                { id: "snowGate03321", text: "We are adventurers wishing to gain entry into Earthrim for more adventures." },
+                                { id: "snowGate03321", text: "We are simple travelers. Earthrim is our next destination." },
+                                { id: "snowGate03321", text: "We are seeking the finest mead and getting shit-faced." },
+                                { id: "snowGate03322", text: "We are criminals seeking riches and bitches!" },
                             ]
                         },
-                    snowGateIntimidateThreatFailed: {
-                        title: "Ralof",
-                        header: "Ha! You think I'm scared of you! Go ahead and try your luck. If you dare!",
-                        options: [
-                            { id: "snowGateCombat_IntimidateThreatFailed", text: "I dare! (Roll for initiative)" }
-                        ]
-                    },
-                        snowGateCombat_IntimidateThreatFailed: {
-                            title: "Ralof",
-                            header: "Ralof draws his sword. (Hostile — Combat starts)",
-                            options: [
-                                { id: "goodbye", text: "Roll for initiative.", goBack: true }
-                            ]
-                        },
-                    snowGatePersuasionMirrorSuccess: {
-                        title: "Ralof",
-                        header: `You're right. I should be better if I am going to be in charge of the gate into the country. Thank you.` + $newPara + `"Let me get the gate open for you."`,
-                        options: [
-                            { id: "snowGateGateOpen_PersuasionMirror", text: "Continue" }
-                        ]
-                    },
-                        snowGateGateOpen_PersuasionMirror: {
-                            title: "Ralof",
-                            header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                            options: [
-                                { id: "whiteRockStreets", text: "Enter Earthrim." }
-                            ]
-                        },
-                    snowGatePersuasionMirrorFailed: {
-                        title: "Ralof",
-                        header: "No, I won't calm down. In fact, I just remembered that it costs 10 gold pieces to enter the country. For each of you!",
-                        options: [
-                            { id: "snowGateTollDemand_PersuasionMirrorFailed", text: "Continue" }
-                        ]
-                    },
-                    snowGateDeceptionOfficerSuccess: {
-                        title: "Ralof",
-                        header: "Oh! By the gods! Sir! I am so sorry. I didn't recognize... uh... I'll get the gate open right away.",
-                        options: [
-                            { id: "snowGateGateOpen_DeceptionOfficer", text: "Continue" }
-                        ]
-                    },
-                        snowGateGateOpen_DeceptionOfficer: {
-                            title: "Ralof",
-                            header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in, sir! Uh... Welcome home."`,
-                            options: [
-                                { id: "whiteRockStreets", text: "Enter Earthrim." }
-                            ]
-                        },
-                    snowGateDeceptionOfficerFailed: {
-                        title: "Ralof",
-                        header: "Nice try! I could report you and have you arrested for trying to deceive a guard of the realm, but instead I'll let you pay 10 gold to allow you all through. And that's 10 gold each person.",
-                        options: [
-                            { id: "snowGateTollDemand_DeceptionOfficerFailed", text: "Continue" }
-                        ]
-                    },
-        //#endregion
-                //erfsffdafdfdfdsfs
-
-                
-
-
-                //#region Branch: Who Are You
-                    snowGate04: {
-                        title: "Ralof",
-                        header: "I'm Ralof. Gatekeeper of Earthrim. And judging by your answer, you're not the one I thought you were. Not very nice it seems either.",
-                        options: [
-                            { id: "snowGateAcceptApology", text: "My apologies." },
-                            { id: "snowGateCourtesyJoke", text: "I don’t get paid to be nice." }
-                        ]
-                    },
-                        snowGateAcceptApology: {
-                            title: "Ralof",
-                            header: "I accept your apology. Now tell me, who are you?",
-                            options: [
-                                { id: "snowGateIdentityQuestion", text: "Continue" }
-                            ]
-                        },
-                        snowGateIdentityQuestion: {
-                            title: "Ralof",
-                            header: "Well, you don't have to be so insulting about it. Then if you're not who I am expecting, who are you all?",
-                            options: [
-                                { id: "snowGateIdentityAdventurers", text: "We are adventurers wishing to gain entry into Earthrim for more adventures." },
-                                { id: "snowGateIdentityNoneOfBusiness", text: "None of your business." }
-                            ]
-                        },
-                            snowGateIdentityAdventurers: {
+                            snowGate03321: {
                                 title: "Ralof",
-                                header: `Ah! Adventurers are always welcome here. Plenty of adventuring in this realm.` + $newPara + `"Here, let me get the gate for you."`,
+                                header: "Opening line for fallback (optional when using earthrimSequence).",
+                                earthrimSequence: [
+                                    "Was that so hard. Geez people like you all mess with me and it gets on my nerves.",
+                                    "(Ralof proceeds to open the gate. The gate opens)",
+                                    "Get out of my sights and annoy someone else in Earthrim."
+                                ],
                                 options: [
-                                    { id: "snowGateGateOpen_Adventurers", text: "Continue" }
+                                    { id: "goodbye", text: "End", goBack: true }
                                 ]
                             },
-                                snowGateGateOpen_Adventurers: {
+                            snowGate03322: {
+                                title: "Ralof",
+                                header: "Then I’ll make sure you don’t set one foot in our country!(roll initiative)",
+                                options: [
+                                    { id: "goodbye", text: "End", goBack: true }
+                                ]
+                            },
+                //#endregion
+                //#region snowGate04 branch
+                snowGate04: {
+                    title: "Ralof",
+                    header: "I’m Ralof. Gatekeeper of Earthrim. And judging by your answer, you’re not the one I thought you were. Not very nice it seems either.",
+                    options: [
+                        { id: "snowGate041", text: "My apologies." },
+                        { id: "snowGate042", text: "I don’t get paid to be nice." },
+                        { id: "snowGate043", text: "Nice to meet you, Ralof." },
+                    ]
+                },
+                    snowGate041: {
+                        title: "Ralof",
+                        header: "I accept your apology. Now tell me, who are you?",
+                        options: [
+                            { id: "snowGate0411", text: "We are adventurers wishing to gain entry into Earthrim for more adventures." },
+                            { id: "snowGate0412", text: "We are simple travelers making our way through the realm. Earthrim is our next destination." },
+                            { id: "snowGate0413", text: "We are seeking the finest mead and getting shit-faced." },
+                            { id: "snowGate0414", text: "We are criminals seeking riches and bitches!" }
+                        ]
+                    },
+                        snowGate0411: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0412: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0413: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "As long as you don't cause trouble, travelers are welcome to the mead of the Earthrim people. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0414: {
+                            title: "Ralof",
+                            header: "Dialogue here (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "Then I'll make sure you don't set one foot in our country!",
+                                "(roll initiative)"
+                            ],
+                            options: [
+                                { id: "goodbye", text: "Roll initiative", goBack: true }
+                            ]
+                        },
+
+                    snowGate042: {
+                        title: "Ralof",
+                        header: "But it is a common courtesy. Especially from one who controls whether you can come into Earthrim or not.",
+                        options: [
+                            { id: "snowGate041", text: "My apologies." },
+                            { id: "snowGate0421", text: "That costs extra." },
+                            { id: "snowGate0422", text: "If you want nice, bring me a mug of ale and suck- (you really should stop talking)" }
+                        ]
+                    },
+                        snowGate0421: {
+                            title: "Ralof",
+                            header: "Very well then! It's 10 gold if you want entry into Earthrim. Oh! And that's 10 gold for each of you!",
+                            options: [
+                                { id: "snowGate04211", text: "Fine! Here's your gold…(asshole) \n (Pay 10 gp)" },
+                                { id: "snowGate04221", text: "I'm not paying you anything!" }
+                            ]
+                        },
+                            snowGate04211: {
+                                title: "Ralof",
+                                header: "That's more like it. Go on in before I change my mind.",
+                                options: [
+                                    { id: "goodbye", text: "End", goBack: true }
+                                ]
+                            },
+                            snowGate04221: {
+                                title: "Ralof",
+                                header: "Then you better turn around and go back to where you came from.",
+                                options: [
+                                    { id: "snowGatePayGoldChangeMind", text: "(Talk to Ralof again)" },
+                                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                                ]
+                            },
+                        snowGate0422: {
+                            title: "Ralof",
+                            header: "Dialogue here (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "How dare you! You wretched, disgusting, foul mouthed, bastard. Try that speech with the gods when I deliver you to them!",
+                                "(roll initiative)"
+                            ],
+                            options: [
+                                { id: "goodbye", text: "Roll initiative", goBack: true }
+                            ]
+                        },
+
+                    snowGate043: {
+                        title: "Ralof",
+                        header: "Uh. What? Is this some kind of joke?",
+                        options: [
+                            { id: "snowGate0431", text: "Not at all" },
+                            { id: "snowGate0432", text: "You bet it is!" }
+                        ]
+                    },
+                        snowGate0431: {
+                            title: "Ralof",
+                            header: "Whatever it is you're playing at, it's not funny. State your purpose for entry into Earthrim.",
+                            options: [
+                                { id: "snowGate04311", text: "To serve the realm and the people" },
+                                { id: "snowGate04312", text: "For glory and riches!" },
+                                { id: "snowGate04313", text: "To enjoy your mead to the point we can't stand the next day." },
+                                { id: "snowGate04314", text: "To bring destruction and death!" },
+                                { id: "snowGate04315", text: "We are simply travelers making our way through the realm." }
+                            ]
+                        },
+                            snowGate04311: {
+                                title: "Ralof",
+                                header: "Opening line for fallback (optional when using earthrimSequence).",
+                                earthrimSequence: [
+                                    "You have a strange way of showing it. Alright you can enter though if your words get you all into trouble, that's your problem to deal with.",
+                                    "(Ralof proceeds to open the gate. The gate opens.)",
+                                    "Go on now."
+                                ],
+                                options: [
+                                    { id: "goodbye", text: "End", goBack: true }
+                                ]
+                            },
+                            snowGate04312: {
+                                title: "Ralof",
+                                header: "Yeah, you look the type. Couple of greedy assholes looking to fill their pockets. Well then, if you want entry, it's going to cost you. 10 gold each of you.",
+                                options: [
+                                    { id: "snowGate043121", text: "Fine! Here's your gold…(asshole) \n (Pay 10 gp)" },
+                                    { id: "snowGate043122", text: "I'm not paying you anything!" }
+                                ]
+                            },
+                            snowGate04313: {
+                                title: "Ralof",
+                                header: "Of course. Couple of assholes who want to take Earthrim for granted and be a nuisance to the good people. Fine you want in, it'll be 10 gold. For each of you.",
+                                options: [
+                                    { id: "snowGate043121", text: "Fine! Here's your gold…(asshole) \n (Pay 10 gp)" },
+                                    { id: "snowGate043122", text: "I'm not paying you anything!" }
+                                ]
+                            },
+                                snowGate043121: {
                                     title: "Ralof",
-                                    header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
+                                    header: "That's more like it. Go on in before I change my mind.",
                                     options: [
-                                        { id: "whiteRockStreets", text: "Enter Earthrim." }
+                                        { id: "goodbye", text: "End", goBack: true }
                                     ]
                                 },
-                            snowGateIdentityNoneOfBusiness: {
+                                snowGate043122: {
+                                    title: "Ralof",
+                                    header: "Then you better turn around and go back to where you came from.",
+                                    options: [
+                                        { id: "snowGatePayGoldChangeMind", text: "(Talk to Ralof again)" },
+                                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                                    ]
+                                },
+                            snowGate04314: {
                                 title: "Ralof",
-                                header: "I'm the gatekeeper to the whole country of Earthrim. So it is my business. Now, who are you!",
+                                header: "Dialogue here (optional when using earthrimSequence).",
+                                earthrimSequence: [
+                                    "You dare to bring harm to my people. Then I shall put you down!",
+                                    "(Ralof draws his sword. Roll initiative)"
+                                ],
                                 options: [
-                                    { id: "snowGateBusinessQuestion_NoneOfBusiness", text: "Continue" }
+                                    { id: "goodbye", text: "Roll initiative", goBack: true }
+                                ]
+                            },
+                            snowGate04315: {
+                                title: "Ralof",
+                                header: "Opening line for fallback (optional when using earthrimSequence).",
+                                earthrimSequence: [
+                                    "Fine. Travel the lands and try not to get yourselves killed.",
+                                    "(Ralof proceeds to open the gate. The gate opens.)",
+                                    "Go on now."
+                                ],
+                                options: [
+                                    { id: "goodbye", text: "End", goBack: true }
                                 ]
                             },
 
-                        snowGateCourtesyJoke: {
+                        snowGate0432: {
                             title: "Ralof",
-                            header: "Uh. What? Is this some kind of joke?",
+                            header: "I don't find it funny. You better state your purpose for entry into Earthrim before I decide to lock the gate permanently.",
                             options: [
-                                { id: "snowGateBusinessQuestion_CourtesyJoke", text: "Continue" }
+                                { id: "snowGate04321", text: "Shagging your mother (really? That's the choice you went with)" },
+                                { id: "snowGate04322", text: "Riches and bitches!" },
+                                { id: "snowGate04322", text: "Get shitfaced with your wondrous mead!" },
+                                { id: "snowGate04323", text: "We are servants of the great lord, Asmodeus. We will spread his word and his will throughout this land!" }
+                            ]
+                        },
+                            snowGate04321: {
+                                title: "Ralof",
+                                header: "Dialogue here (optional when using earthrimSequence).",
+                                earthrimSequence: [
+                                    "You dare say such things to me. The Gods will understand when I send you to them!",
+                                    "(Ralof draws his sword. Roll initiative)"
+                                ],
+                                options: [
+                                    { id: "goodbye", text: "Roll initiative", goBack: true }
+                                ]
+                            },
+                            snowGate04322: {
+                                title: "Ralof",
+                                header: "Yeah, you look the type. Couple of greedy assholes looking to fill their pockets. Well then, if you want entry, it's going to cost you. 10 gold each of you.",
+                                options: [
+                                    { id: "snowGate043221", text: "Fine! Here's your gold…(asshole) \n (Pay 10 gp)" },
+                                    { id: "snowGate043222", text: "I'm not paying you anything!" }
+                                ]
+                            },
+                                snowGate043221: {
+                                    title: "Ralof",
+                                    header: "That's more like it. Go on in before I change my mind.",
+                                    options: [
+                                        { id: "goodbye", text: "End", goBack: true }
+                                    ]
+                                },
+                                snowGate043222: {
+                                    title: "Ralof",
+                                    header: "Then you better turn around and go back to where you came from.",
+                                    options: [
+                                        { id: "snowGatePayGoldChangeMind", text: "(Talk to Ralof again)" },
+                                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                                    ]
+                                },
+                            snowGate04323: {
+                                title: "Ralof",
+                                header: "Dialogue here (optional when using earthrimSequence).",
+                                earthrimSequence: [
+                                    "You dare to bring harm to my people. Then I shall put you down!",
+                                    "(Ralof draws his sword. Roll initiative)"
+                                ],
+                                options: [
+                                    { id: "goodbye", text: "Roll initiative", goBack: true }
+                                ]
+                            },
+                //#endregion
+                //#region snowGate05 branch
+                snowGate05: {
+                    title: "Ralof",
+                    header: "The Stonemoure. The people to the northwest. If you have no idea what I'm talking about I must have you mistaken.",
+                    options: [
+                        { id: "snowGate051", text: "It's alright." },
+                        { id: "snowGate052", text: "Man you're stupid." },
+                        { id: "snowGate053", text: "Who are the Stonemoure?" }
+                    ]
+                },
+                    snowGate051: {
+                        title: "Ralof",
+                        header: "Sorry about that. Anyways, who are you all? What's your business coming to Earthrim?",
+                        options: [
+                            { id: "snowGate0511", text: "To serve the realm and the people" },
+                            { id: "snowGate0512", text: "For glory and riches!" },
+                            { id: "snowGate0513", text: "To bring destruction and death!" },
+                            { id: "snowGate0514", text: "We are simply travelers making our way through the realm." },
+                            { id: "snowGate0515", text: "To drink mead and party" }
+                        ]
+                    },
+                        snowGate0511: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. And a noble one at that too. Earthrim could certainly use people like you. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0512: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0513: {
+                            title: "Ralof",
+                            header: "Dialogue here (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "You dare to bring harm to my people. Then I shall put you down!",
+                                "(Ralof draws his sword. Roll initiative)"
+                            ],
+                            options: [
+                                { id: "goodbye", text: "Roll initiative", goBack: true }
+                            ]
+                        },
+                        snowGate0514: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0515: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+
+                    snowGate052: {
+                        title: "Ralof",
+                        header: "Oh I'm stupid, am I? Well then, if you want entry into Earthrim, it'll be 10 gold for each of you.",
+                        options: [
+                            { id: "snowGate0521", text: "Fine! Here's your gold…(asshole) \n (Pay 10 gp)" },
+                            { id: "snowGate0522", text: "I'm not paying you anything!" }
+                        ]
+                    },
+                        snowGate0521: {
+                            title: "Ralof",
+                            header: "That's more like it. Go on in before I change my mind.",
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0522: {
+                            title: "Ralof",
+                            header: "Then you better turn around and go back to where you came from.",
+                            options: [
+                                { id: "snowGatePayGoldChangeMind", text: "(Talk to Ralof again)" },
+                                { id: "goodbye", text: "Goodbye.", goBack: true }
+                            ]
+                        },
+
+                    snowGate053: {
+                        title: "Ralof",
+                        header: "",
+                        earthrimSequence: [
+                            "The Stonemoure are the tribe who rule the northwest of Earthrim. Their rivals are the Frostmoure to the southeast.",
+                            "They're the tribe that rules the southwest. Both sides have been at each other's throats since I can remember.",
+                        ],
+                        options: [
+                            { id: "snowGate0531", text: "We're just simply traveling through the land." },
+                            { id: "snowGate0532", text: "What's the conflict about?" },
+                            { id: "snowGate0533", text: "I'm done hearing about Stonemoure and Frostmoure." }
+                        ]
+                    },
+                        snowGate0531: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "Ah, well you ought to be careful traveling through Earthrim regardless.",
+                                "Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0532: {
+                            title: "Ralof",
+                            header: "Dialogue here (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "From what I heard it was something with their previous leaders having a feud that resulted in their deaths.",
+                                "Or one of them was framed and the other was imprisoned. I don't really remember and honestly I don't think they do anymore."
+                            ],
+                            options: [
+                                { id: "snowGate05321", text: "How would I get to Stonemoure?" },
+                                { id: "snowGate05322", text: "How would I get to Frostmoure?" },
+                                { id: "snowGate0533", text: "I would like to go forth into Earthrim." }
+                            ]
+                        },
+                            snowGate05321: {
+                                title: "Ralof",
+                                header: "Make your way to White Rock then take the path to the west. It will eventually take you to Stonemoure.",
+                                options: [
+                                    { id: "snowGate0533", text: "Thank you. I would like to go forth into Earthrim." }
+                                ]
+                            },
+                            snowGate05322: {
+                                title: "Ralof",
+                                header: "Make your way to White Rock then take the path to the east. It will eventually take you to Frostmoure.",
+                                options: [
+                                    { id: "snowGate0533", text: "Thank you. I would like to go forth into Earthrim." }
+                                ]
+                            },
+                        snowGate0533: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "Of course. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
                             ]
                         },
                 //#endregion
+                //#region snowGate06 branch
+                snowGate06: {
+                    title: "Ralof",
+                    header: "Dialogue here (optional when using earthrimSequence).",
+                    earthrimSequence: [
+                        "(Ralof draws his sword.)",
+                        "You better choose your next words very carefully."
+                    ],
+                    options: [
+                        { id: "snowGate061", text: "Woah! It was a joke!" },
+                        { id: "snowGate062", text: "Did I stutter…" },
+                        {
+                            id: "snowGate0623",
+                            text: "Vicious Mockery roll (spell required)",
+                            check: {
+                                prompt: "Roll for Vicious Mockery...",
+                                successId: "snowGate0623SUCCESS",
+                                failureId: "snowGate0623FAIL"
+                            }
+                        },
+                        { id: "snowGate065", text: "(Roll for initiative)" }
+                    ]
+                },
+                    snowGate061: {
+                        title: "Ralof",
+                        header: "You certainly like to play with fire. Tell me your reason for wanting entry into Earthrim?",
+                        options: [
+                            { id: "snowGate0611", text: "To serve the realm and the people" },
+                            { id: "snowGate0612", text: "For glory and riches!" },
+                            { id: "snowGate0613", text: "To bring destruction and death!" },
+                            { id: "snowGate0614", text: "We are simply travelers making our way through the realm." },
+                            { id: "snowGate0615", text: "To drink mead and party" }
+                        ]
+                    },
+                        snowGate0611: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. Though you certainly like to poke the bear. A word of warning, that kind of humor will get you killed. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0612: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0613: {
+                            title: "Ralof",
+                            header: "Dialogue here (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "You dare to bring harm to my people. Then I shall put you down!",
+                                "(Ralof draws his sword. Roll initiative)"
+                            ],
+                            options: [
+                                { id: "goodbye", text: "Roll initiative", goBack: true }
+                            ]
+                        },
+                        snowGate0614: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0615: {
+                            title: "Ralof",
+                            header: "Opening line for fallback (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's good enough of a reason for me. Let me get the gate open for you.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on in. The winds of Earthrim welcome you home."
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
 
-        
-
-        //#region Branch: Confirm Ambush
-            snowGateConfirmAmbush: {
-                title: "Ralof",
-                header: "Glad you made it out of there alive.",
-                earthrimSequence: [
-                    "Glad you made it out of there alive. Earthrim has enough trouble without the Frostmoure and Stonemoure at each other’s throats if you ask me. ",
-                    "Anyways, there hasn’t been any sighting of the Stonemoure today so you should be good to go. Let me open the gate for you.",
-                    "(Ralof proceeds to open the gate. The gate opens.)",
-                    "Go on in. The winds of Earthrim welcome you home."
-                ],
-                options: [
-                    { id: "snowGateLoreIntro_ConfirmAmbush", text: "Continue" }
-                ]
-            },
-        //#endregion
-
-        //#region Branch: What Ambush
-            snowGateWhatAmbush: {
-                title: "Ralof",
-                header: "The Stonemoure. The people to the northwest. If you have no idea what I'm talking about I must have you mistaken.",
-                options: [
-                    { id: "snowGateThreatMild", text: "You better choose your next words very carefully." },
-                    { id: "snowGateLoreIntro_WhatAmbush", text: "Who are the Stonemoure?" },
-                    { id: "snowGateBusinessQuestion_WhatAmbush", text: "We're just simply traveling through the land." }
-                ]
-            },
-                snowGateThreatMild: {
-                    title: "Ralof",
-                    header: `Ok! Ok! No need to get all grouchy with me. Just making sure you're better off today.` + $newPara + `"Anyways, there hasn't been any sighting of the Stonemoure today so you should be good to go. Let me open the gate for you."`,
-                    options: [
-                        { id: "snowGateGateOpen_ThreatMild", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_ThreatMild: {
+                    snowGate062: {
                         title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
+                        header: "Oh you son of a…give me one reason why I shouldn't crush you right now!?",
                         options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
+                            { id: "snowGate0621", text: "Again, did I stutter…" },
+                            {
+                                id: "snowGate0622",
+                                text: "The King sent me to Earthrim. (Deception)",
+                                check: {
+                                    prompt: "Roll for deception...",
+                                    successId: "snowGate0622SUCCESS",
+                                    failureId: "snowGate0622FAIL"
+                                }
+                            },
+                            {
+                                id: "snowGate0623b",
+                                text: "I could either kill you or let you live and give you a chance to grow some balls. (Intimidate)",
+                                check: {
+                                    prompt: "Roll for intimidation...",
+                                    successId: "snowGate0623SUCCESS",
+                                    failureId: "snowGate0623FAIL"
+                                }
+                            }
                         ]
                     },
-        //#endregion
-
-        //#region Branch: Get Out Of Way
-            snowGateGetOutOfWay: {
-                title: "Ralof",
-                earthrimSequence: [
-                    "Did I stutter?",
-                    "Ralof draws his sword. (Threatened)"
-                ],
-                options: [
-                    { id: "snowGateGetOutOfWayJoke", text: "Woah! It was a joke!" },
-                    {
-                        id: "snowGateViciousMockeryCheck",
-                        text: "Vicious Mockery (spell required)",
-                        check: {
-                            prompt: "Roll for Vicious Mockery...",
-                            successId: "snowGateViciousMockerySuccess",
-                            failureId: "snowGateViciousMockeryFailed"
-                        }
-                    },
-                    {
-                        id: "snowGateDeceptionKing",
-                        text: "The King sent me to Earthrim. (Deception)",
-                        check: {
-                            prompt: "Roll for Deception...",
-                            successId: "snowGateDeceptionKingSuccess",
-                            failureId: "snowGateDeceptionKingFailed"
-                        }
-                    },
-                    {
-                        id: "snowGateIntimidateGrowBalls",
-                        text: "I could either kill you or let you live and give you a chance to grow some balls. (Intimidation)",
-                        check: {
-                            prompt: "Roll for Intimidation...",
-                            successId: "snowGateIntimidateGrowBallsSuccess",
-                            failureId: "snowGateCombat_ThatsIt"
-                        }
-                    },
-                    { id: "snowGateCombat_ThatsIt", text: "That's it! Get ready to meet the gods! (Roll for initiative)" }
-                ]
-            },
-                snowGateCombat_ThatsIt: {
-                    title: "Ralof",
-                    header: "Ralof draws his sword. (Hostile — Combat starts)",
-                    options: [
-                        { id: "goodbye", text: "Roll for initiative.", goBack: true }
-                    ]
-                },
-                snowGateGetOutOfWayJoke: {
-                    title: "Ralof",
-                    header: `Ok! Ok! No need to get all grouchy with me. Just making sure you're better off today.` + $newPara + `"Anyways, there hasn't been any sighting of the Stonemoure today so you should be good to go. Let me open the gate for you."`,
-                    options: [
-                        { id: "snowGateGateOpen_JokeAccepted", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_JokeAccepted: {
+                        snowGate0621: {
+                            title: "Ralof",
+                            header: "Dialogue here (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "That's it! Get ready to meet the Gods!",
+                                "(roll initiative)"
+                            ],
+                            options: [
+                                { id: "goodbye", text: "Roll initiative", goBack: true }
+                            ]
+                        },
+                        snowGate0622SUCCESS: {
+                            title: "Ralof",
+                            header: "Dialogue here (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "Alright. Be lucky that the king likes you enough that I can't just outright kill you today. You're lucky this time.",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on now!"
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0622FAIL: {
+                            title: "Ralof",
+                            header: "Ha! You think you're the first person to try and say they have the King's blessing? Tell you what, you want in? It'll cost you 10 gold, for each of you!",
+                            options: [
+                                { id: "snowGate0622F1", text: "Fine! Here's your gold…(asshole) \n (Pay 10 gp)" },
+                                { id: "snowGate0622F2", text: "I'm not paying you anything!" }
+                            ]
+                        },
+                            snowGate0622F1: {
+                                title: "Ralof",
+                                header: "That's more like it. Go on in before I change my mind.",
+                                options: [
+                                    { id: "goodbye", text: "End", goBack: true }
+                                ]
+                            },
+                            snowGate0622F2: {
+                                title: "Ralof",
+                                header: "Then you better turn around and go back to where you came from.",
+                                options: [
+                                    { id: "snowGatePayGoldChangeMind", text: "(Talk to Ralof again)" },
+                                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                                ]
+                            },
+                        snowGate0623SUCCESS: {
+                            title: "Ralof",
+                            header: "Dialogue here (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "Ok! Ok! Save that for monsters you find in these lands. I'll open the gate, just leave me alone!",
+                                "(Ralof proceeds to open the gate. The gate opens.)",
+                                "Go on now!"
+                            ],
+                            options: [
+                                { id: "goodbye", text: "End", goBack: true }
+                            ]
+                        },
+                        snowGate0623FAIL: {
+                            title: "Ralof",
+                            header: "Dialogue here (optional when using earthrimSequence).",
+                            earthrimSequence: [
+                                "You think that scares me! Let my blade send you to the Gods!",
+                                "(roll initiative)"
+                            ],
+                            options: [
+                                { id: "goodbye", text: "Roll initiative", goBack: true }
+                            ]
+                        },
+                    snowGate065: {
                         title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
+                        header: "Dialogue here (optional when using earthrimSequence).",
+                        earthrimSequence: [
+                            "(Ralof draws his sword. Roll initiative)"
+                        ],
                         options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
+                            { id: "goodbye", text: "Roll initiative", goBack: true }
                         ]
                     },
-                snowGateViciousMockerySuccess: {
-                    title: "Ralof",
-                    header: "Ok! Ok! Save that for monsters you find in these lands. I'll open the gate, just leave me alone!",
-                    options: [
-                        { id: "snowGateGateOpen_ViciousMockery", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_ViciousMockery: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on now!"`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateViciousMockeryFailed: {
-                    title: "Ralof",
-                    header: "You think that scares me! Let my blade send you to the gods!",
-                    options: [
-                        { id: "snowGateCombat_ViciousMockeryFailed", text: "Roll for initiative." }
-                    ]
-                },
-                    snowGateCombat_ViciousMockeryFailed: {
-                        title: "Ralof",
-                        header: "Ralof draws his sword. (Hostile — Combat starts)",
-                        options: [
-                            { id: "goodbye", text: "Roll for initiative.", goBack: true }
-                        ]
-                    },
-                snowGateDeceptionKingSuccess: {
-                    title: "Ralof",
-                    header: `Alright. Be lucky that the king likes you enough that I can't just outright kill you today. You're lucky this time.` + $newPara + `"Go on now!"`,
-                    options: [
-                        { id: "snowGateGateOpen_DeceptionKing", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_DeceptionKing: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on now!"`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateDeceptionKingFailed: {
-                    title: "Ralof",
-                    header: "Ha! You think you're the first person to try and say they have the King's blessing? Tell you what, you want in? It'll cost you 10 gold, for each of you!",
-                    options: [
-                        { id: "snowGateTollDemand_DeceptionKingFailed", text: "Continue" }
-                    ]
-                },
-                snowGateIntimidateGrowBallsSuccess: {
-                    title: "Ralof",
-                    header: "Alright, alright! Gods, calm down. I'll open the gate.",
-                    options: [
-                        { id: "snowGateGateOpen_IntimidateGrowBalls", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_IntimidateGrowBalls: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on now!"`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-        //#endregion
-
-        //#region Lore Intro copies (Mead Sympathy / Confirm Ambush / What Ambush)
-            snowGateLoreIntro_MeadSympathy: {
-                title: "Ralof",
-                header: "The Stonemoure. The people to the northwest. Their rivals are the Frostmoure to the southeast.",
-                options: [
-                    { id: "snowGateLoreConflict_MeadSympathy", text: "What's the conflict about?" },
-                    { id: "snowGateDirectionsStonemoure_MeadSympathy", text: "How would I get to Stonemoure?" },
-                    { id: "snowGateDirectionsFrostmoure_MeadSympathy", text: "How would I get to Frostmoure?" },
-                    { id: "snowGateGateOpen_LoreDirect_MeadSympathy", text: "I would like to go forth into Earthrim." },
-                    { id: "snowGateBusinessQuestion_LoreDone_MeadSympathy", text: "I'm done hearing about Stonemoure and Frostmoure." }
-                ]
-            },
-                snowGateLoreConflict_MeadSympathy: {
-                    title: "Ralof",
-                    header: "From what I heard it was something with their previous leaders having a feud that resulted in their deaths. Or one of them was framed and the other was imprisoned. I don't really remember and honestly I don't think they do anymore.",
-                    options: [
-                        { id: "snowGateLoreIntro_MeadSympathy", text: "Ask something else." },
-                        { id: "snowGateGateOpen_LoreConflictDone_MeadSympathy", text: "I would like to go forth into Earthrim." }
-                    ]
-                },
-                    snowGateGateOpen_LoreConflictDone_MeadSympathy: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateDirectionsStonemoure_MeadSympathy: {
-                    title: "Ralof",
-                    header: `Make your way to White Rock then take the path to the west. It will eventually take you to Stonemoure.` + $newPara + `"Thank you. I would like to go forth into Earthrim."`,
-                    options: [
-                        { id: "snowGateGateOpen_DirectionsStonemoure_MeadSympathy", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_DirectionsStonemoure_MeadSympathy: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateDirectionsFrostmoure_MeadSympathy: {
-                    title: "Ralof",
-                    header: `Make your way to White Rock then take the path to the east. It will eventually take you to Frostmoure.` + $newPara + `"Thank you. I would like to go forth into Earthrim."`,
-                    options: [
-                        { id: "snowGateGateOpen_DirectionsFrostmoure_MeadSympathy", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_DirectionsFrostmoure_MeadSympathy: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateGateOpen_LoreDirect_MeadSympathy: {
-                    title: "Ralof",
-                    header: `Of course. Let me get the gate open for you.` + $newPara + `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                    options: [
-                        { id: "whiteRockStreets", text: "Enter Earthrim." }
-                    ]
-                },
-
-            snowGateLoreIntro_ConfirmAmbush: {
-                title: "Ralof",
-                header: "The Stonemoure. The people to the northwest. Their rivals are the Frostmoure to the southeast.",
-                options: [
-                    { id: "snowGateLoreConflict_ConfirmAmbush", text: "What's the conflict about?" },
-                    { id: "snowGateDirectionsStonemoure_ConfirmAmbush", text: "How would I get to Stonemoure?" },
-                    { id: "snowGateDirectionsFrostmoure_ConfirmAmbush", text: "How would I get to Frostmoure?" },
-                    { id: "snowGateGateOpen_LoreDirect_ConfirmAmbush", text: "I would like to go forth into Earthrim." },
-                    { id: "snowGateBusinessQuestion_LoreDone_ConfirmAmbush", text: "I'm done hearing about Stonemoure and Frostmoure." }
-                ]
-            },
-                snowGateLoreConflict_ConfirmAmbush: {
-                    title: "Ralof",
-                    header: "From what I heard it was something with their previous leaders having a feud that resulted in their deaths. Or one of them was framed and the other was imprisoned. I don't really remember and honestly I don't think they do anymore.",
-                    options: [
-                        { id: "snowGateLoreIntro_ConfirmAmbush", text: "Ask something else." },
-                        { id: "snowGateGateOpen_LoreConflictDone_ConfirmAmbush", text: "I would like to go forth into Earthrim." }
-                    ]
-                },
-                    snowGateGateOpen_LoreConflictDone_ConfirmAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateDirectionsStonemoure_ConfirmAmbush: {
-                    title: "Ralof",
-                    header: `Make your way to White Rock then take the path to the west. It will eventually take you to Stonemoure.` + $newPara + `"Thank you. I would like to go forth into Earthrim."`,
-                    options: [
-                        { id: "snowGateGateOpen_DirectionsStonemoure_ConfirmAmbush", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_DirectionsStonemoure_ConfirmAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateDirectionsFrostmoure_ConfirmAmbush: {
-                    title: "Ralof",
-                    header: `Make your way to White Rock then take the path to the east. It will eventually take you to Frostmoure.` + $newPara + `"Thank you. I would like to go forth into Earthrim."`,
-                    options: [
-                        { id: "snowGateGateOpen_DirectionsFrostmoure_ConfirmAmbush", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_DirectionsFrostmoure_ConfirmAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateGateOpen_LoreDirect_ConfirmAmbush: {
-                    title: "Ralof",
-                    header: `Of course. Let me get the gate open for you.` + $newPara + `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                    options: [
-                        { id: "whiteRockStreets", text: "Enter Earthrim." }
-                    ]
-                },
-
-            snowGateLoreIntro_WhatAmbush: {
-                title: "Ralof",
-                header: "The Stonemoure. The people to the northwest. Their rivals are the Frostmoure to the southeast.",
-                options: [
-                    { id: "snowGateLoreConflict_WhatAmbush", text: "What's the conflict about?" },
-                    { id: "snowGateDirectionsStonemoure_WhatAmbush", text: "How would I get to Stonemoure?" },
-                    { id: "snowGateDirectionsFrostmoure_WhatAmbush", text: "How would I get to Frostmoure?" },
-                    { id: "snowGateGateOpen_LoreDirect_WhatAmbush", text: "I would like to go forth into Earthrim." },
-                    { id: "snowGateBusinessQuestion_LoreDone_WhatAmbush", text: "I'm done hearing about Stonemoure and Frostmoure." }
-                ]
-            },
-                snowGateLoreConflict_WhatAmbush: {
-                    title: "Ralof",
-                    header: "From what I heard it was something with their previous leaders having a feud that resulted in their deaths. Or one of them was framed and the other was imprisoned. I don't really remember and honestly I don't think they do anymore.",
-                    options: [
-                        { id: "snowGateLoreIntro_WhatAmbush", text: "Ask something else." },
-                        { id: "snowGateGateOpen_LoreConflictDone_WhatAmbush", text: "I would like to go forth into Earthrim." }
-                    ]
-                },
-                    snowGateGateOpen_LoreConflictDone_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateDirectionsStonemoure_WhatAmbush: {
-                    title: "Ralof",
-                    header: `Make your way to White Rock then take the path to the west. It will eventually take you to Stonemoure.` + $newPara + `"Thank you. I would like to go forth into Earthrim."`,
-                    options: [
-                        { id: "snowGateGateOpen_DirectionsStonemoure_WhatAmbush", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_DirectionsStonemoure_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateDirectionsFrostmoure_WhatAmbush: {
-                    title: "Ralof",
-                    header: `Make your way to White Rock then take the path to the east. It will eventually take you to Frostmoure.` + $newPara + `"Thank you. I would like to go forth into Earthrim."`,
-                    options: [
-                        { id: "snowGateGateOpen_DirectionsFrostmoure_WhatAmbush", text: "Continue" }
-                    ]
-                },
-                    snowGateGateOpen_DirectionsFrostmoure_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [
-                            { id: "whiteRockStreets", text: "Enter Earthrim." }
-                        ]
-                    },
-                snowGateGateOpen_LoreDirect_WhatAmbush: {
-                    title: "Ralof",
-                    header: `Of course. Let me get the gate open for you.` + $newPara + `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                    options: [
-                        { id: "whiteRockStreets", text: "Enter Earthrim." }
-                    ]
-                },
-        //#endregion
-
-        //#region Business Question copies (7 origins)
-        // Shared pattern for each _X: ServeRealm / GloryRiches / Travelers / Destruction / Mead
-        // ---- CourtesyJoke ----
-            snowGateBusinessQuestion_CourtesyJoke: {
-                title: "Ralof",
-                header: "State your business in Earthrim.",
-                options: [
-                    { id: "snowGateBusinessServeRealm_CourtesyJoke", text: "To serve the realm and the people." },
-                    { id: "snowGateBusinessGloryRiches_CourtesyJoke", text: "For glory and riches!" },
-                    { id: "snowGateBusinessTravelers_CourtesyJoke", text: "We are simply travelers making our way through the realm." },
-                    { id: "snowGateBusinessDestruction_CourtesyJoke", text: "To bring destruction and death!" },
-                    { id: "snowGateBusinessMead_CourtesyJoke", text: "To drink mead and party." }
-                ]
-            },
-                snowGateBusinessServeRealm_CourtesyJoke: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. And a noble one at that too. Earthrim could certainly use people like you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessServeRealm_CourtesyJoke", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessServeRealm_CourtesyJoke: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessGloryRiches_CourtesyJoke: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessGloryRiches_CourtesyJoke", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessGloryRiches_CourtesyJoke: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessTravelers_CourtesyJoke: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessTravelers_CourtesyJoke", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessTravelers_CourtesyJoke: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessDestruction_CourtesyJoke: {
-                    title: "Ralof",
-                    header: "You dare to bring harm to my people. Then I shall put you down!",
-                    options: [ { id: "snowGateCombat_BusinessDestruction_CourtesyJoke", text: "Roll for initiative." } ]
-                },
-                    snowGateCombat_BusinessDestruction_CourtesyJoke: {
-                        title: "Ralof",
-                        header: "Ralof draws his sword. (Hostile — Combat starts)",
-                        options: [ { id: "goodbye", text: "Roll for initiative.", goBack: true } ]
-                    },
-                snowGateBusinessMead_CourtesyJoke: {
-                    title: "Ralof",
-                    header: "As long as you don't cause trouble, travelers are welcome to the mead of the Earthrim people. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessMead_CourtesyJoke", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessMead_CourtesyJoke: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-
-        // ---- NoneOfBusiness ----
-            snowGateBusinessQuestion_NoneOfBusiness: {
-                title: "Ralof",
-                header: "State your business in Earthrim.",
-                options: [
-                    { id: "snowGateBusinessServeRealm_NoneOfBusiness", text: "To serve the realm and the people." },
-                    { id: "snowGateBusinessGloryRiches_NoneOfBusiness", text: "For glory and riches!" },
-                    { id: "snowGateBusinessTravelers_NoneOfBusiness", text: "We are simply travelers making our way through the realm." },
-                    { id: "snowGateBusinessDestruction_NoneOfBusiness", text: "To bring destruction and death!" },
-                    { id: "snowGateBusinessMead_NoneOfBusiness", text: "To drink mead and party." }
-                ]
-            },
-                snowGateBusinessServeRealm_NoneOfBusiness: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. And a noble one at that too. Earthrim could certainly use people like you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessServeRealm_NoneOfBusiness", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessServeRealm_NoneOfBusiness: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessGloryRiches_NoneOfBusiness: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessGloryRiches_NoneOfBusiness", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessGloryRiches_NoneOfBusiness: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessTravelers_NoneOfBusiness: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessTravelers_NoneOfBusiness", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessTravelers_NoneOfBusiness: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessDestruction_NoneOfBusiness: {
-                    title: "Ralof",
-                    header: "You dare to bring harm to my people. Then I shall put you down!",
-                    options: [ { id: "snowGateCombat_BusinessDestruction_NoneOfBusiness", text: "Roll for initiative." } ]
-                },
-                    snowGateCombat_BusinessDestruction_NoneOfBusiness: {
-                        title: "Ralof",
-                        header: "Ralof draws his sword. (Hostile — Combat starts)",
-                        options: [ { id: "goodbye", text: "Roll for initiative.", goBack: true } ]
-                    },
-                snowGateBusinessMead_NoneOfBusiness: {
-                    title: "Ralof",
-                    header: "As long as you don't cause trouble, travelers are welcome to the mead of the Earthrim people. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessMead_NoneOfBusiness", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessMead_NoneOfBusiness: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-
-        // ---- GetActTogether ----
-            snowGateBusinessQuestion_GetActTogether: {
-                title: "Ralof",
-                header: "State your business in Earthrim.",
-                options: [
-                    { id: "snowGateBusinessServeRealm_GetActTogether", text: "To serve the realm and the people." },
-                    { id: "snowGateBusinessGloryRiches_GetActTogether", text: "For glory and riches!" },
-                    { id: "snowGateBusinessTravelers_GetActTogether", text: "We are simply travelers making our way through the realm." },
-                    { id: "snowGateBusinessDestruction_GetActTogether", text: "To bring destruction and death!" },
-                    { id: "snowGateBusinessMead_GetActTogether", text: "To drink mead and party." }
-                ]
-            },
-                snowGateBusinessServeRealm_GetActTogether: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. And a noble one at that too. Earthrim could certainly use people like you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessServeRealm_GetActTogether", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessServeRealm_GetActTogether: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessGloryRiches_GetActTogether: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessGloryRiches_GetActTogether", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessGloryRiches_GetActTogether: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessTravelers_GetActTogether: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessTravelers_GetActTogether", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessTravelers_GetActTogether: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessDestruction_GetActTogether: {
-                    title: "Ralof",
-                    header: "You dare to bring harm to my people. Then I shall put you down!",
-                    options: [ { id: "snowGateCombat_BusinessDestruction_GetActTogether", text: "Roll for initiative." } ]
-                },
-                    snowGateCombat_BusinessDestruction_GetActTogether: {
-                        title: "Ralof",
-                        header: "Ralof draws his sword. (Hostile — Combat starts)",
-                        options: [ { id: "goodbye", text: "Roll for initiative.", goBack: true } ]
-                    },
-                snowGateBusinessMead_GetActTogether: {
-                    title: "Ralof",
-                    header: "As long as you don't cause trouble, travelers are welcome to the mead of the Earthrim people. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessMead_GetActTogether", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessMead_GetActTogether: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-
-        // ---- WhatAmbush ----
-            snowGateBusinessQuestion_WhatAmbush: {
-                title: "Ralof",
-                header: "State your business in Earthrim.",
-                options: [
-                    { id: "snowGateBusinessServeRealm_WhatAmbush", text: "To serve the realm and the people." },
-                    { id: "snowGateBusinessGloryRiches_WhatAmbush", text: "For glory and riches!" },
-                    { id: "snowGateBusinessTravelers_WhatAmbush", text: "We are simply travelers making our way through the realm." },
-                    { id: "snowGateBusinessDestruction_WhatAmbush", text: "To bring destruction and death!" },
-                    { id: "snowGateBusinessMead_WhatAmbush", text: "To drink mead and party." }
-                ]
-            },
-                snowGateBusinessServeRealm_WhatAmbush: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. And a noble one at that too. Earthrim could certainly use people like you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessServeRealm_WhatAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessServeRealm_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessGloryRiches_WhatAmbush: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessGloryRiches_WhatAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessGloryRiches_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessTravelers_WhatAmbush: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessTravelers_WhatAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessTravelers_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessDestruction_WhatAmbush: {
-                    title: "Ralof",
-                    header: "You dare to bring harm to my people. Then I shall put you down!",
-                    options: [ { id: "snowGateCombat_BusinessDestruction_WhatAmbush", text: "Roll for initiative." } ]
-                },
-                    snowGateCombat_BusinessDestruction_WhatAmbush: {
-                        title: "Ralof",
-                        header: "Ralof draws his sword. (Hostile — Combat starts)",
-                        options: [ { id: "goodbye", text: "Roll for initiative.", goBack: true } ]
-                    },
-                snowGateBusinessMead_WhatAmbush: {
-                    title: "Ralof",
-                    header: "As long as you don't cause trouble, travelers are welcome to the mead of the Earthrim people. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessMead_WhatAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessMead_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-
-        // ---- LoreDone: MeadSympathy ----
-            snowGateBusinessQuestion_LoreDone_MeadSympathy: {
-                title: "Ralof",
-                header: "State your business in Earthrim.",
-                options: [
-                    { id: "snowGateBusinessServeRealm_LoreDone_MeadSympathy", text: "To serve the realm and the people." },
-                    { id: "snowGateBusinessGloryRiches_LoreDone_MeadSympathy", text: "For glory and riches!" },
-                    { id: "snowGateBusinessTravelers_LoreDone_MeadSympathy", text: "We are simply travelers making our way through the realm." },
-                    { id: "snowGateBusinessDestruction_LoreDone_MeadSympathy", text: "To bring destruction and death!" },
-                    { id: "snowGateBusinessMead_LoreDone_MeadSympathy", text: "To drink mead and party." }
-                ]
-            },
-                snowGateBusinessServeRealm_LoreDone_MeadSympathy: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. And a noble one at that too. Earthrim could certainly use people like you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessServeRealm_LoreDone_MeadSympathy", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessServeRealm_LoreDone_MeadSympathy: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessGloryRiches_LoreDone_MeadSympathy: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessGloryRiches_LoreDone_MeadSympathy", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessGloryRiches_LoreDone_MeadSympathy: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessTravelers_LoreDone_MeadSympathy: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessTravelers_LoreDone_MeadSympathy", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessTravelers_LoreDone_MeadSympathy: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessDestruction_LoreDone_MeadSympathy: {
-                    title: "Ralof",
-                    header: "You dare to bring harm to my people. Then I shall put you down!",
-                    options: [ { id: "snowGateCombat_BusinessDestruction_LoreDone_MeadSympathy", text: "Roll for initiative." } ]
-                },
-                    snowGateCombat_BusinessDestruction_LoreDone_MeadSympathy: {
-                        title: "Ralof",
-                        header: "Ralof draws his sword. (Hostile — Combat starts)",
-                        options: [ { id: "goodbye", text: "Roll for initiative.", goBack: true } ]
-                    },
-                snowGateBusinessMead_LoreDone_MeadSympathy: {
-                    title: "Ralof",
-                    header: "As long as you don't cause trouble, travelers are welcome to the mead of the Earthrim people. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessMead_LoreDone_MeadSympathy", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessMead_LoreDone_MeadSympathy: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-
-        // ---- LoreDone: ConfirmAmbush ----
-            snowGateBusinessQuestion_LoreDone_ConfirmAmbush: {
-                title: "Ralof",
-                header: "State your business in Earthrim.",
-                options: [
-                    { id: "snowGateBusinessServeRealm_LoreDone_ConfirmAmbush", text: "To serve the realm and the people." },
-                    { id: "snowGateBusinessGloryRiches_LoreDone_ConfirmAmbush", text: "For glory and riches!" },
-                    { id: "snowGateBusinessTravelers_LoreDone_ConfirmAmbush", text: "We are simply travelers making our way through the realm." },
-                    { id: "snowGateBusinessDestruction_LoreDone_ConfirmAmbush", text: "To bring destruction and death!" },
-                    { id: "snowGateBusinessMead_LoreDone_ConfirmAmbush", text: "To drink mead and party." }
-                ]
-            },
-                snowGateBusinessServeRealm_LoreDone_ConfirmAmbush: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. And a noble one at that too. Earthrim could certainly use people like you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessServeRealm_LoreDone_ConfirmAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessServeRealm_LoreDone_ConfirmAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessGloryRiches_LoreDone_ConfirmAmbush: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessGloryRiches_LoreDone_ConfirmAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessGloryRiches_LoreDone_ConfirmAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessTravelers_LoreDone_ConfirmAmbush: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessTravelers_LoreDone_ConfirmAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessTravelers_LoreDone_ConfirmAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessDestruction_LoreDone_ConfirmAmbush: {
-                    title: "Ralof",
-                    header: "You dare to bring harm to my people. Then I shall put you down!",
-                    options: [ { id: "snowGateCombat_BusinessDestruction_LoreDone_ConfirmAmbush", text: "Roll for initiative." } ]
-                },
-                    snowGateCombat_BusinessDestruction_LoreDone_ConfirmAmbush: {
-                        title: "Ralof",
-                        header: "Ralof draws his sword. (Hostile — Combat starts)",
-                        options: [ { id: "goodbye", text: "Roll for initiative.", goBack: true } ]
-                    },
-                snowGateBusinessMead_LoreDone_ConfirmAmbush: {
-                    title: "Ralof",
-                    header: "As long as you don't cause trouble, travelers are welcome to the mead of the Earthrim people. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessMead_LoreDone_ConfirmAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessMead_LoreDone_ConfirmAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-
-        // ---- LoreDone: WhatAmbush ----
-            snowGateBusinessQuestion_LoreDone_WhatAmbush: {
-                title: "Ralof",
-                header: "State your business in Earthrim.",
-                options: [
-                    { id: "snowGateBusinessServeRealm_LoreDone_WhatAmbush", text: "To serve the realm and the people." },
-                    { id: "snowGateBusinessGloryRiches_LoreDone_WhatAmbush", text: "For glory and riches!" },
-                    { id: "snowGateBusinessTravelers_LoreDone_WhatAmbush", text: "We are simply travelers making our way through the realm." },
-                    { id: "snowGateBusinessDestruction_LoreDone_WhatAmbush", text: "To bring destruction and death!" },
-                    { id: "snowGateBusinessMead_LoreDone_WhatAmbush", text: "To drink mead and party." }
-                ]
-            },
-                snowGateBusinessServeRealm_LoreDone_WhatAmbush: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. And a noble one at that too. Earthrim could certainly use people like you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessServeRealm_LoreDone_WhatAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessServeRealm_LoreDone_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessGloryRiches_LoreDone_WhatAmbush: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Earthrim has many adventures with glory and riches awaiting you. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessGloryRiches_LoreDone_WhatAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessGloryRiches_LoreDone_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessTravelers_LoreDone_WhatAmbush: {
-                    title: "Ralof",
-                    header: "That's good enough of a reason for me. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessTravelers_LoreDone_WhatAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessTravelers_LoreDone_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-                snowGateBusinessDestruction_LoreDone_WhatAmbush: {
-                    title: "Ralof",
-                    header: "You dare to bring harm to my people. Then I shall put you down!",
-                    options: [ { id: "snowGateCombat_BusinessDestruction_LoreDone_WhatAmbush", text: "Roll for initiative." } ]
-                },
-                    snowGateCombat_BusinessDestruction_LoreDone_WhatAmbush: {
-                        title: "Ralof",
-                        header: "Ralof draws his sword. (Hostile — Combat starts)",
-                        options: [ { id: "goodbye", text: "Roll for initiative.", goBack: true } ]
-                    },
-                snowGateBusinessMead_LoreDone_WhatAmbush: {
-                    title: "Ralof",
-                    header: "As long as you don't cause trouble, travelers are welcome to the mead of the Earthrim people. Let me get the gate open for you.",
-                    options: [ { id: "snowGateGateOpen_BusinessMead_LoreDone_WhatAmbush", text: "Continue" } ]
-                },
-                    snowGateGateOpen_BusinessMead_LoreDone_WhatAmbush: {
-                        title: "Ralof",
-                        header: `Ralof proceeds to open the gate. The gate opens.` + $newPara + `"Go on in. The winds of Earthrim welcome you home."`,
-                        options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                    },
-        //#endregion
-
-        //#region Toll Demand copies (4 origins)
-        // ---- PersuasionCalmFailed ----
-            snowGateTollDemand_PersuasionCalmFailed: {
-                title: "Ralof",
-                header: "Very well then! It's 10 gold if you want entry into Earthrim. And that's 10 gold for each of you!",
-                options: [
-                    { id: "snowGateTollPay_PersuasionCalmFailed", text: "Fine! Here's your gold... (asshole)" },
-                    { id: "snowGateTollRefuse_PersuasionCalmFailed", text: "I'm not paying you anything!" }
-                ]
-            },
-                snowGateTollPay_PersuasionCalmFailed: {
-                    title: "Ralof",
-                    header: `That's more like it. Go on in before I change my mind.` + $newPara + `Ralof proceeds to open the gate. The gate opens.`,
-                    options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                },
-                snowGateTollRefuse_PersuasionCalmFailed: {
-                    title: "Ralof",
-                    header: "Then you better turn around and go back to where you came from.",
-                    options: [
-                        { id: "snowGateTollDemandAgain_PersuasionCalmFailed", text: "Approach the gate again." },
-                        { id: "goodbye", text: "Walk away.", goBack: true }
-                    ]
-                },
-                    snowGateTollDemandAgain_PersuasionCalmFailed: {
-                        title: "Ralof",
-                        header: "Back again, eh! Are you gonna pay this time?",
-                        options: [
-                            { id: "snowGateTollPay_PersuasionCalmFailed", text: "Fine! Here's your gold... (asshole)" },
-                            { id: "goodbye", text: "I'm not paying you anything!", goBack: true }
-                        ]
-                    },
-
-        // ---- PersuasionMirrorFailed ----
-            snowGateTollDemand_PersuasionMirrorFailed: {
-                title: "Ralof",
-                header: "Very well then! It's 10 gold if you want entry into Earthrim. And that's 10 gold for each of you!",
-                options: [
-                    { id: "snowGateTollPay_PersuasionMirrorFailed", text: "Fine! Here's your gold... (asshole)" },
-                    { id: "snowGateTollRefuse_PersuasionMirrorFailed", text: "I'm not paying you anything!" }
-                ]
-            },
-                snowGateTollPay_PersuasionMirrorFailed: {
-                    title: "Ralof",
-                    header: `That's more like it. Go on in before I change my mind.` + $newPara + `Ralof proceeds to open the gate. The gate opens.`,
-                    options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                },
-                snowGateTollRefuse_PersuasionMirrorFailed: {
-                    title: "Ralof",
-                    header: "Then you better turn around and go back to where you came from.",
-                    options: [
-                        { id: "snowGateTollDemandAgain_PersuasionMirrorFailed", text: "Approach the gate again." },
-                        { id: "goodbye", text: "Walk away.", goBack: true }
-                    ]
-                },
-                    snowGateTollDemandAgain_PersuasionMirrorFailed: {
-                        title: "Ralof",
-                        header: "Back again, eh! Are you gonna pay this time?",
-                        options: [
-                            { id: "snowGateTollPay_PersuasionMirrorFailed", text: "Fine! Here's your gold... (asshole)" },
-                            { id: "goodbye", text: "I'm not paying you anything!", goBack: true }
-                        ]
-                    },
-
-        // ---- DeceptionOfficerFailed ----
-            snowGateTollDemand_DeceptionOfficerFailed: {
-                title: "Ralof",
-                header: "Very well then! It's 10 gold if you want entry into Earthrim. And that's 10 gold for each of you!",
-                options: [
-                    { id: "snowGateTollPay_DeceptionOfficerFailed", text: "Fine! Here's your gold... (asshole)" },
-                    { id: "snowGateTollRefuse_DeceptionOfficerFailed", text: "I'm not paying you anything!" }
-                ]
-            },
-                snowGateTollPay_DeceptionOfficerFailed: {
-                    title: "Ralof",
-                    header: `That's more like it. Go on in before I change my mind.` + $newPara + `Ralof proceeds to open the gate. The gate opens.`,
-                    options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                },
-                snowGateTollRefuse_DeceptionOfficerFailed: {
-                    title: "Ralof",
-                    header: "Then you better turn around and go back to where you came from.",
-                    options: [
-                        { id: "snowGateTollDemandAgain_DeceptionOfficerFailed", text: "Approach the gate again." },
-                        { id: "goodbye", text: "Walk away.", goBack: true }
-                    ]
-                },
-                    snowGateTollDemandAgain_DeceptionOfficerFailed: {
-                        title: "Ralof",
-                        header: "Back again, eh! Are you gonna pay this time?",
-                        options: [
-                            { id: "snowGateTollPay_DeceptionOfficerFailed", text: "Fine! Here's your gold... (asshole)" },
-                            { id: "goodbye", text: "I'm not paying you anything!", goBack: true }
-                        ]
-                    },
-
-        // ---- DeceptionKingFailed ----
-            snowGateTollDemand_DeceptionKingFailed: {
-                title: "Ralof",
-                header: "Very well then! It's 10 gold if you want entry into Earthrim. And that's 10 gold for each of you!",
-                options: [
-                    { id: "snowGateTollPay_DeceptionKingFailed", text: "Fine! Here's your gold... (asshole)" },
-                    { id: "snowGateTollRefuse_DeceptionKingFailed", text: "I'm not paying you anything!" }
-                ]
-            },
-                snowGateTollPay_DeceptionKingFailed: {
-                    title: "Ralof",
-                    header: `That's more like it. Go on in before I change my mind.` + $newPara + `Ralof proceeds to open the gate. The gate opens.`,
-                    options: [ { id: "whiteRockStreets", text: "Enter Earthrim." } ]
-                },
-                snowGateTollRefuse_DeceptionKingFailed: {
-                    title: "Ralof",
-                    header: "Then you better turn around and go back to where you came from.",
-                    options: [
-                        { id: "snowGateTollDemandAgain_DeceptionKingFailed", text: "Approach the gate again." },
-                        { id: "goodbye", text: "Walk away.", goBack: true }
-                    ]
-                },
-                    snowGateTollDemandAgain_DeceptionKingFailed: {
-                        title: "Ralof",
-                        header: "Back again, eh! Are you gonna pay this time?",
-                        options: [
-                            { id: "snowGateTollPay_DeceptionKingFailed", text: "Fine! Here's your gold... (asshole)" },
-                            { id: "goodbye", text: "I'm not paying you anything!", goBack: true }
-                        ]
-                    },
+                
     //#endregion
 
     //#region Pay Gold Conversation after refusing beforehand
