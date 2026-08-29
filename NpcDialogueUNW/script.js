@@ -16,6 +16,8 @@ let currentRumorKey = null;
 let stagedDialogueState = null;
 let currentOptionsContext = null;
 let rumorReturnContext = null;
+let trainingReturnContext = null;
+let directionsReturnContext = null;
 
 $("document").ready(() => renderDialogue("initial"));
 
@@ -50,6 +52,62 @@ function returnToPreviousOptionsFromRumor() {
     const context = rumorReturnContext;
     rumorReturnContext = null;
     currentRumorKey = null;
+    stagedDialogueState = null;
+
+    if (context && context.dialogue) {
+        npcName.empty();
+        header.empty();
+        options.empty();
+
+        hideEarthrimNextButton();
+        npcName.append(context.dialogue.title);
+        header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + context.headerText);
+        renderOptionsList(context.dialogue.options || []);
+        setCurrentOptionsContext(context.key, context.dialogue, context.headerText);
+        return;
+    }
+
+    const previousKey = history[history.length - 1];
+    if (previousKey) {
+        renderDialogue(previousKey);
+    }
+}
+
+function returnToPreviousOptionsFromTraining() {
+    if (history[history.length - 1] === "requestTraining") {
+        history.pop();
+    }
+
+    const context = trainingReturnContext;
+    trainingReturnContext = null;
+    stagedDialogueState = null;
+
+    if (context && context.dialogue) {
+        npcName.empty();
+        header.empty();
+        options.empty();
+
+        hideEarthrimNextButton();
+        npcName.append(context.dialogue.title);
+        header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + context.headerText);
+        renderOptionsList(context.dialogue.options || []);
+        setCurrentOptionsContext(context.key, context.dialogue, context.headerText);
+        return;
+    }
+
+    const previousKey = history[history.length - 1];
+    if (previousKey) {
+        renderDialogue(previousKey);
+    }
+}
+
+function returnToPreviousOptionsFromDirections() {
+    if (history[history.length - 1] === "townGuardDirections") {
+        history.pop();
+    }
+
+    const context = directionsReturnContext;
+    directionsReturnContext = null;
     stagedDialogueState = null;
 
     if (context && context.dialogue) {
@@ -133,39 +191,69 @@ function renderCheckPrompt(option) {
 }
 
 function isTownguardDirectionsOption(option) {
-    const optionText = (option.text || "").toLowerCase();
     const optionId = (option.id || "").toLowerCase();
-    const currentDialogue = currentOptionsContext ? currentOptionsContext.dialogue : null;
-    const title = currentDialogue && typeof currentDialogue.title === "string"
-        ? currentDialogue.title.toLowerCase()
-        : "";
-
-    if (!title.includes("town guard")) {
-        return false;
-    }
-
-    return optionId.includes("direction") || optionText.includes("direction");
+    const optionText = (option.text || "").toLowerCase();
+    return optionId === "townguarddirections" || optionText.includes("give me directions");
 }
 
 function renderTownguardDirectionsPlaceholder(option) {
-    const returnDialogueKey = history[history.length - 1] || (currentOptionsContext && currentOptionsContext.key);
-    const placeholderText = option.directionsText || "Request in progress...";
+    const previousKey = history[history.length - 1];
+    const placeholderText = option.directionsText || "Asking directions...";
+
+    if (currentOptionsContext && currentOptionsContext.key === previousKey) {
+        directionsReturnContext = { ...currentOptionsContext };
+    } else {
+        directionsReturnContext = null;
+    }
+
+    if (history.length === 0 || history[history.length - 1] !== "townGuardDirections") {
+        history.push("townGuardDirections");
+    }
+
+    stagedDialogueState = null;
 
     hideCheckResultButtons();
     options.empty();
     header.empty();
     npcName.empty();
 
-    npcName.append("Town Guard");
+    npcName.append((currentOptionsContext && currentOptionsContext.dialogue && currentOptionsContext.dialogue.title) || "Town Guard");
     header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + placeholderText);
 
-    showEarthrimNextButton(() => {
-        if (returnDialogueKey && dialogueOptions[returnDialogueKey]) {
-            renderDialogue(returnDialogueKey, { replaceCurrent: true });
-        } else {
-            goBack();
-        }
-    });
+    showEarthrimNextButton(() => returnToPreviousOptionsFromDirections());
+}
+
+function isRequestTrainingOption(option) {
+    const optionId = (option.id || "").toLowerCase();
+    const optionText = (option.text || "").toLowerCase();
+    return optionId === "requesttraining" || optionText === "request training";
+}
+
+function renderRequestTrainingPlaceholder(option) {
+    const previousKey = history[history.length - 1];
+    const placeholderText = option.trainingText || "Requesting training...";
+
+    if (currentOptionsContext && currentOptionsContext.key === previousKey) {
+        trainingReturnContext = { ...currentOptionsContext };
+    } else {
+        trainingReturnContext = null;
+    }
+
+    if (history.length === 0 || history[history.length - 1] !== "requestTraining") {
+        history.push("requestTraining");
+    }
+
+    stagedDialogueState = null;
+
+    npcName.empty();
+    header.empty();
+    options.empty();
+    hideCheckResultButtons();
+
+    npcName.append((currentOptionsContext && currentOptionsContext.dialogue && currentOptionsContext.dialogue.title) || "Trainer");
+    header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + placeholderText);
+
+    showEarthrimNextButton(() => returnToPreviousOptionsFromTraining());
 }
 
 function isLocationContextNode(key) {
@@ -227,6 +315,8 @@ function renderOptionsList(optionsList) {
 
         if (isTownguardDirectionsOption(option)) {
             btn.addEventListener("click", () => renderTownguardDirectionsPlaceholder(option));
+        } else if (isRequestTrainingOption(option)) {
+            btn.addEventListener("click", () => renderRequestTrainingPlaceholder(option));
         } else if (option.goBack) {
             if (option.id === "goodbye") {
                 btn.addEventListener("click", () => redirectFromGoodbye(option));
