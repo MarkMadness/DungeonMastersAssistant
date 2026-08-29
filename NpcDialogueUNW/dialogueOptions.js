@@ -2977,6 +2977,7 @@ const dialogueOptions = {
             { id: "whiteRock_OrinBarkheart_N0", text: "Orin Barkheart (Druid Trainer) 🌙" },
             { id: "whiteRock_SunMei_N0", text: "Sun Mei (Monk Trainer) 🌙" },
             { id: "whiteRock_VesperaNightingale_N0", text: "Vespera Nightingale (Bard Trainer) 🌙" },
+            { id: "whiteRock_ThaliorDawnbringer_D0", text: "Thalior Dawnbringer (Paladin Trainer) ☀️" },
         ]
     },
         //#region Jarl Alrik Stonebrow
@@ -3082,6 +3083,17 @@ const dialogueOptions = {
                 { id: "goodbye", text: "Goodbye.", goBack: true }
             ]
         },
+        //#region Thalior Dawnbringer
+        whiteRock_ThaliorDawnbringer_D0: {
+            title: "Thalior Dawnbringer",
+            header: "A paladin's oath is not sworn once — it's kept every day. Have you come to understand the difference?",
+            options: [
+                { id: "requestTraining", text: "Request Training" },
+                { id: "rumors", text: "Rumors" },
+                { id: "goodbye", text: "Goodbye.", goBack: true }
+            ]
+        },
+        //#endregion
 
     //#endregion
 
@@ -3463,6 +3475,7 @@ const dialogueOptions = {
             { id: "whiteRock_Garka_D0", text: "Garka ☀️" },
             { id: "whiteRock_AldousPell_D0", text: "Aldous Pell ☀️" },
             { id: "whiteRock_Syra_D0", text: "Syra ☀️" },
+            { id: "whiteRock_PipOfTheFountain_D0", text: "Pip of the Fountain ☀️" },
         ]
     },
         //#region Brave Sir Boros
@@ -3535,6 +3548,17 @@ const dialogueOptions = {
         whiteRock_Syra_D0: {
             title: "Syra",
             header: "The Wanderer's Satchel. Take a look - I promise there's more here than it seems.",
+            options: [
+                { id: "rumors", text: "Rumors" },
+                { id: "goodbye", text: "Goodbye.", goBack: true }
+            ]
+        },
+        //#endregion
+
+        //#region Pip of the Fountain
+        whiteRock_PipOfTheFountain_D0: {
+            title: "Pip of the Fountain",
+            header: "Hear ye, hear ye! And also, hello! You look like someone who could use some news. Everyone does, really.",
             options: [
                 { id: "rumors", text: "Rumors" },
                 { id: "goodbye", text: "Goodbye.", goBack: true }
