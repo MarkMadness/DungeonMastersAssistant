@@ -138,17 +138,42 @@ earthrimNpcTemplateSkillCheckIntimidateFailed: {
 
 
 
-snowGate04: {
-    title: "Ralof",
-    header: "Opening line for fallback (optional when using earthrimSequence).",
+whiteRock_npcname_0: {
+    title: "npcname",
+    header: "Dialogue Line (optional when using earthrimSequence).",
     earthrimSequence: [
         "Stage 1 line goes here.",
         "Stage 2 line goes here.",
         "Final stage line that leads into options."
     ],
     options: [
-        { id: "snowGate04", text: "" },
-        { id: "snowGate04", text: "" },
-        { id: "snowGate04", text: "" },
+        { id: "whiteRock_npcname_01", text: "" },
+        { id: "whiteRock_npcname_02", text: "" },
+        { id: "whiteRock_npcname_03", text: "" },
+    ]
+},
+
+
+whiteRock_Greg_0: {
+    title: "Greg",
+    header: "Test opening line.",
+    earthrimSequence: [
+        "Ah! Hello, adventurers! You made it! Welcome to White Rock!",
+        "Earthrim has no shortage of adventure and White Rock serves wonderfully as a home away from home.",
+        "What can I do for you?"
+    ],
+    options: [
+        { id: "whiteRockGregTestBranch", text: "Test branch option" },
+        {
+            id: "whiteRockGregIntimidateCheck",
+            text: "Intimidate",
+            check: {
+                prompt: "Roll for intimidation...",
+                successId: "whiteRockGregIntimidateSuccess",
+                failureId: "whiteRockGregIntimidateFailed"
+            }
+        },
+        { id: "rumors", text: "Rumors" },
+        { id: "goodbye", text: "Goodbye.", goBack: true }
     ]
 },

@@ -56,12 +56,12 @@ body {
 #npcName{
     font-size: 38pt;
     font-weight: bold;
-    margin-top: 60px;;
+    margin-top: 20px;;
 }
 
 #header {
     font-size: 25pt;
-    height: 400px;
+    height: 350px;
     overflow: auto;
     margin:auto;
     width: 90%;
@@ -150,7 +150,7 @@ body {
         overflow: hidden;
     }
     
-    #options button:before {
+    /* #options button:before {
         content: '';
         position: absolute;
         top: 0;
@@ -163,11 +163,11 @@ body {
     
     #options button:hover:before {
         left: 100%;
-    }
+    } */
     
     #options button:hover {
         background: linear-gradient(145deg, #e2d5c4, #d4c7b6);
-        transform: translateY(-2px);
+        /* transform: translateY(-2px); */
         box-shadow: 0 6px 12px #654b37;
         border-color: #654b37;
     }

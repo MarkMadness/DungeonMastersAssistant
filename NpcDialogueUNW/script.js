@@ -132,6 +132,42 @@ function renderCheckPrompt(option) {
     showCheckResultButtons(checkConfig);
 }
 
+function isTownguardDirectionsOption(option) {
+    const optionText = (option.text || "").toLowerCase();
+    const optionId = (option.id || "").toLowerCase();
+    const currentDialogue = currentOptionsContext ? currentOptionsContext.dialogue : null;
+    const title = currentDialogue && typeof currentDialogue.title === "string"
+        ? currentDialogue.title.toLowerCase()
+        : "";
+
+    if (!title.includes("town guard")) {
+        return false;
+    }
+
+    return optionId.includes("direction") || optionText.includes("direction");
+}
+
+function renderTownguardDirectionsPlaceholder(option) {
+    const returnDialogueKey = history[history.length - 1] || (currentOptionsContext && currentOptionsContext.key);
+    const placeholderText = option.directionsText || "Request in progress...";
+
+    hideCheckResultButtons();
+    options.empty();
+    header.empty();
+    npcName.empty();
+
+    npcName.append("Town Guard");
+    header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + placeholderText);
+
+    showEarthrimNextButton(() => {
+        if (returnDialogueKey && dialogueOptions[returnDialogueKey]) {
+            renderDialogue(returnDialogueKey, { replaceCurrent: true });
+        } else {
+            goBack();
+        }
+    });
+}
+
 function isLocationContextNode(key) {
     const dialogue = dialogueOptions[key];
     if (!dialogue || typeof dialogue.header !== "string") {
@@ -189,7 +225,9 @@ function renderOptionsList(optionsList) {
         btn.textContent = option.text;
         btn.setAttribute("id", option.id);
 
-        if (option.goBack) {
+        if (isTownguardDirectionsOption(option)) {
+            btn.addEventListener("click", () => renderTownguardDirectionsPlaceholder(option));
+        } else if (option.goBack) {
             if (option.id === "goodbye") {
                 btn.addEventListener("click", () => redirectFromGoodbye(option));
             } else {

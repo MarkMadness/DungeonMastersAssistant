@@ -1822,7 +1822,16 @@ const dialogueOptions = {
         header: "You are in Earthrim. Where are you?",
         options: [
             { id: "locationTheSnowGate", text: "The Snow Gate" },
-            { id: "locationWhiteRock", text: "White Rock" }
+            { id: "locationWhiteRock", text: "White Rock" },
+        ]
+    },
+    earthrimTownGuard: {
+        title: "Town Guard",
+        header: "How can I help you?",
+        options: [
+            { id: "earthrimTownGuardDirections", text: "Can you give me directions?", goBack: true },
+            { id: "rumors", text: "Rumors" },
+            { id: "goodbye", text: "Goodbye.", goBack: true }
         ]
     },
     //#region The Snow Gate
@@ -2870,26 +2879,60 @@ const dialogueOptions = {
         header: "You are in White Rock. Which location are you in?",
         options: [
             { id: "whiteRockStreets", text: "Streets" },
-            { id: "silverStagInn", text: "The Silver Stag Inn" }
+            // Major Locations
+            { id: "whiteRockWhiteKeep", text: "White Keep" },
+            { id: "whiteRockStables", text: "Stables" },
+            { id: "whiteRockCarriageLodge", text: "Carriage Lodge" },
+            { id: "whiteRockSilverStagInn", text: "The Silver Stag Inn" },
+            { id: "whiteRockTempleOfDawnfire", text: "Temple of Dawnfire" },
+            { id: "whiteRockRangersLodge", text: "Ranger's Lodge" },
+            { id: "whiteRockScholarsArchive", text: "Scholar's Archive" },
+            { id: "whiteRockBarracks", text: "Barracks" },
+            { id: "whiteRockTownSquare", text: "Town Square" },
+            { id: "whiteRockGildedKnuckle", text: "The Gilded Knuckle" },
+            { id: "whiteRockCrackedAnvil", text: "The Cracked Anvil" },
+            { id: "whiteRockBloodHuntersHut", text: "BloodHunter's Hut" },
+            { id: "whiteRockMonksGazebo", text: "Monk's Gazebo" },
+            { id: "whiteRockGardens", text: "Gardens" },
+            // Shops
+            { id: "whiteRockAdventurersTrinkets", text: "Adventurer's Trinkets" },
+            { id: "whiteRockDizzyNeedle", text: "Dizzy Needle" },
+            { id: "whiteRockGeneralGoodsStore", text: "General Goods Store" },
+            { id: "whiteRockSpellsAndBottles", text: "Spells & Bottles" },
+            { id: "whiteRockCarvedRoot", text: "The Carved Root" },
+            { id: "whiteRockThornsideApothecary", text: "Thornside Apothecary" },
+            { id: "whiteRockBrassGear", text: "The Brass Gear" },
+            { id: "whiteRockPlateauPawnAndTrade", text: "Plateau Pawn & Trade" },
+            { id: "whiteRockStonecloakLeatherworks", text: "Stonecloak Leatherworks" },
+            { id: "whiteRockCandleAndCask", text: "The Candle & Cask" },
+            // Houses
+            { id: "whiteRockHouse01", text: "House 1" },
+            { id: "whiteRockHouse02", text: "House 2" },
+            { id: "whiteRockHouse03", text: "House 3" },
+            { id: "whiteRockHouse04", text: "House 4" },
+            { id: "whiteRockHouse05", text: "House 5" },
+            { id: "whiteRockHouse06", text: "House 6" },
+            { id: "whiteRockHouse07", text: "House 7" },
+            { id: "whiteRockHouse08", text: "House 8" },
+            { id: "whiteRockHouse09", text: "House 9" },
+            { id: "whiteRockHouse10", text: "House 10" },
+            { id: "whiteRockHouse11", text: "House 11" },
+            { id: "whiteRockHouse12", text: "House 12" },
+            { id: "whiteRockHouse13", text: "House 13" },
+            { id: "whiteRockHouse14", text: "House 14" },
+            { id: "whiteRockHouse15", text: "House 15" },
+            { id: "whiteRockHouse16", text: "House 16" }
         ]   
     },
+    //#region White Rock Streets
         whiteRockStreets: {
             header: "You are in the Streets of White Rock. Who are you talking to?",
             options: [
-                { id: "whiteRockTownGuard", text: "Town Guard" },
-                { id: "whiteRockGreg", text: "Greg" },
+                { id: "earthrimTownGuard", text: "Town Guard" },
+                { id: "whiteRock_Greg_0", text: "Greg" },
             ]
         },
-            whiteRockTownGuard: {
-                title: "Town Guard",
-                header: "How can I help you?",
-                options: [
-                    { id: "whiteRockTownguardDirections", text: "Can you give me directions?" },
-                    { id: "rumors", text: "Rumors" },
-                    { id: "goodbye", text: "Goodbye.", goBack: true }
-                ]
-            },
-            whiteRockGreg: {
+            whiteRock_Greg_0: {
                 title: "Greg",
                 header: "Test opening line.",
                 earthrimSequence: [
@@ -2898,51 +2941,450 @@ const dialogueOptions = {
                     "What can I do for you?"
                 ],
                 options: [
-                    { id: "whiteRockGregTestBranch", text: "Test branch option" },
-                    {
-                        id: "whiteRockGregIntimidateCheck",
-                        text: "Intimidate",
-                        check: {
-                            prompt: "Roll for intimidation...",
-                            successId: "whiteRockGregIntimidateSuccess",
-                            failureId: "whiteRockGregIntimidateFailed"
-                        }
-                    },
+                    { id: "whiteRock_Greg_01", text: "We've arrived in White Rock like you requested." },
                     { id: "rumors", text: "Rumors" },
                     { id: "goodbye", text: "Goodbye.", goBack: true }
                 ]
             },
-            whiteRockGregTestBranch: {
-                title: "Greg",
-                header: "[TEST BRANCH] You selected the test branch. Use this to verify option navigation works after staged Earthrim dialogue.",
-                options: [
-                    { id: "whiteRockGreg", text: "Back to Greg" },
-                    { id: "goodbye", text: "Goodbye.", goBack: true }
-                ]
-            },
-            whiteRockGregIntimidateSuccess: {
-                title: "Greg",
-                earthrimSequence: [
-                    "Woah, easy now. No need for threats.",
-                    "Alright, alright. I will tell you what I know."
-                ],
-                options: [
-                    { id: "whiteRockGreg", text: "Back to Greg" },
-                    { id: "goodbye", text: "Goodbye.", goBack: true }
-                ]
-            },
-            whiteRockGregIntimidateFailed: {
-                title: "Greg",
-                earthrimSequence: [
-                    "Nice try. I have seen scarier stares from angry geese.",
-                    "If you are done posturing, we can talk properly."
-                ],
-                options: [
-                    { id: "whiteRockGreg", text: "Back to Greg" },
-                    { id: "goodbye", text: "Goodbye.", goBack: true }
-                ]
-            },
+                whiteRock_Greg_01: {
+                    title: "Greg",
+                    header: "Dialogue Line (optional when using earthrimSequence).",
+                    earthrimSequence: [
+                        "And you made it! It warms my heart that you arrived.",
+                        "And now that you're here, it's time to get down to business. I have a new quest for you from the King himself.",
+                        "Bring me back three Earthrim Quest Completion Tokens and I will reward you handsomely.", 
+                        "You can find these tokens by completing quests in Earthrim.",
+                        "I wish you luck adventurers. It was great to see you again. I hope to see you again soon."
+                    ],
+                    options: [
+                        { id: "rumors", text: "Rumors" },
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+            
     //#endregion
+    //#region White Keep
+    whiteRockWhiteKeep: {
+        header: "You are in the White Keep. Who are you talking to?",
+        options: [
+            { id: "earthrimTownGuard", text: "Town Guard" },
+            { id: "whiteRock_Jarl_0", text: "Jarl Alrik Stonebrow" },
+            { id: "whiteRock_CalanthaSunleaf_N0", text: "Calantha Sunleaf (Cleric Trainer) 🌙" },
+            { id: "whiteRock_NyxDarkveil_N0", text: "Nyx Darkveil (Warlock Trainer) 🌙" },
+            { id: "whiteRock_DariusFireblood_N0", text: "Darius Fireblood (Sorcerer Trainer) 🌙" },
+            { id: "whiteRock_EldrinNightshade_N0", text: "Eldrin Nightshade (Wizard Trainer) 🌙" },
+            { id: "whiteRock_Pava_N0", text: "Archivist Pava 🌙" },
+            { id: "whiteRock_OrinBarkheart_N0", text: "Orin Barkheart (Druid Trainer) 🌙" },
+            { id: "whiteRock_SunMei_N0", text: "Sun Mei (Monk Trainer) 🌙" },
+        ]
+    },
+        //#region Jarl Alrik Stonebrow
+        whiteRock_Jarl_0: {
+            title: "Jarl Alrik Stonebrow",
+            header: "White Rock has stood through worse than a quiet season. Speak your business, traveler. I don't often have the luxury of idle conversation.",
+            options: [
+                { id: "whiteRock_Jarl_01", text: "Quest" },
+                { id: "rumors", text: "Rumors" },
+                { id: "goodbye", text: "Goodbye.", goBack: true }
+            ]
+        },
+        //#endregion
+    //#endregion
+
+    //#region Stables
+    whiteRockStables: {
+        header: "You are at the Stables. Who are you talking to?",
+        options: [
+            { id: "earthrimTownGuard", text: "Town Guard" },
+            { id: "whiteRock_Wrek_0", text: "Wrek the Stablemaster" },
+        ]
+    },
+    //#endregion
+
+    //#region The Silver Stag Inn
+    silverStagInn: {
+        header: "You are in the Silver Stag Inn. Who are you talking to?",
+        options: [
+            { id: "earthrimTownGuard", text: "Town Guard" },
+            { id: "whiteRock_MiraCallowen_0", text: "Mira Callowen" },
+            { id: "whiteRock_AldricBrome_D0", text: "Aldric Brome ☀️" },
+            { id: "whiteRock_FenwickLarks_0", text: "Fenwick Larks" },
+            { id: "whiteRock_DollaVine_D0", text: "Dolla Vine ☀️" },
+            { id: "whiteRock_Rowan_0", text: "Rowan" },
+        ]
+    },
+    //#endregion
+
+    //#region Temple of Dawnfire
+     whiteRockTempleOfDawnfire: {
+        header: "You are in the Temple of Dawnfire. Who are you talking to?",
+        options: [
+            { id: "whiteRock_BrotherTalan_0", text: "Brother Talan" },
+            { id: "whiteRock_SisterAuna_0", text: "Sister Auna" },
+            { id: "whiteRock_NoviceBrek_0", text: "Novice Brek" },
+            { id: "whiteRock_CalanthaSunleaf_D0", text: "Calantha Sunleaf (Cleric Trainer) ☀️" },
+            { id: "whiteRock_NyxDarkveil_D0", text: "Nyx Darkveil (Warlock Trainer) ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region Ranger's Lodge
+   whiteRockRangersLodge: {
+        header: "You are in the Ranger's Lodge. Who are you talking to?",
+        options: [
+            { id: "whiteRock_EliraWindshot_0", text: "Elira Windshot" },
+            { id: "whiteRock_GrettaTheGrim_0", text: "Gretta the Grim" },
+            { id: "whiteRock_SornIreback_0", text: "Sorn Ireback" },
+            { id: "whiteRock_PellThornwick_0", text: "Pell Thornwick" },
+            { id: "whiteRock_DavenQuarrel_0", text: "Daven Quarrel" },
+            { id: "whiteRock_KendraWildfoot_0", text: "Kendra Wildfoot (Ranger Trainer)" },
+            { id: "whiteRock_BranAshfoot_D0", text: "Bran Ashfoot ☀️" },
+            { id: "whiteRock_YulaOfTheNorthernPeaks_D0", text: "Yula of the Northern Peaks ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region Scholar's Archive
+    whiteRockScholarsArchive: {
+        header: "You are in the Scholar's Archive. Who are you talking to?",
+        options: [
+            { id: "whiteRock_Renn_0", text: "Old Scribe Renn" },
+            { id: "whiteRock_Pava_D0", text: "Archivist Pava ☀️" },
+            { id: "whiteRock_DariusFireblood_D0", text: "Darius Fireblood (Sorcerer Trainer) ☀️" },
+            { id: "whiteRock_EldrinNightshade_D0", text: "Eldrin Nightshade (Wizard Trainer) ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region Barracks
+    whiteRockBarracks: {
+        header: "You are in the Barracks. Who are you talking to?",
+        options: [
+            { id: "earthrimTownGuard", text: "Town Guard" },
+            { id: "whiteRock_SergeantDorva_0", text: "Sergeant Dorva" },
+            { id: "whiteRock_CaptainTharic_0", text: "Captain Tharic" },
+        ]
+    },
+    //#endregion
+
+    //#region Town Square
+    whiteRockTownSquare: {
+        header: "You are in the Town Square. Who are you talking to?",
+        options: [
+            { id: "earthrimTownGuard", text: "Town Guard" },
+            { id: "whiteRock_Boros_0", text: "Brave Sir Boros" },
+            { id: "whiteRock_TomasGreel_D0", text: "Tomas Greel ☀️" },
+            { id: "whiteRock_OswinCopperkettle_D0", text: "Oswin Copperkettle ☀️" },
+            { id: "whiteRock_NessaFelt_D0", text: "Nessa Felt ☀️" },
+            { id: "whiteRock_Garka_D0", text: "Garka ☀️" },
+            { id: "whiteRock_AldousPell_D0", text: "Aldous Pell ☀️" },
+            { id: "whiteRock_Syra_D0", text: "Syra ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region The Gilded Knuckle
+    whiteRockGildedKnuckle: {
+        header: "You are in the Gilded Knuckle. Who are you talking to?",
+        options: [
+            { id: "whiteRock_Zevran_0", text: "Zevran 'Silvermask' (Rogue Trainer)" },
+            { id: "whiteRock_Donn_0", text: "Donn" },
+        ]
+    },
+    //#endregion
+
+    //#region The Cracked Anvil
+    whiteRockCrackedAnvil: {
+        header: "You are in the Cracked Anvil. Who are you talking to?",
+        options: [
+            { id: "whiteRock_Garrik_0", text: "Garrik 'the Stubborn'" },
+            { id: "whiteRock_LennaAshforge_D0", text: "Lenna Ashforge ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region BloodHunter's Hut
+    whiteRockBloodHuntersHut: {
+        header: "You are at the BloodHunter's Hut. Who are you talking to?",
+        options: [
+            { id: "whiteRock_IskanderVorn_0", text: "Iskander Vorn (Blood Hunter Trainer)" },
+        ]
+    },
+    //#endregion
+
+    //#region Monk's Gazebo
+    whiteRockMonksGazebo: {
+        header: "You are at the Monk's Gazebo. Who are you talking to?",
+        options: [
+            { id: "whiteRock_SunMei_D0", text: "Sun Mei (Monk Trainer) ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region Gardens
+    whiteRockGardens: {
+        header: "You are in the Gardens. Who are you talking to?",
+        options: [
+            { id: "whiteRock_OrinBarkheart_D0", text: "Orin Barkheart (Druid Trainer) ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region Adventurer's Trinkets
+    whiteRockAdventurersTrinkets: {
+        header: "You are in Adventurer's Trinkets. Who are you talking to?",
+        options: [
+            { id: "whiteRock_Prynn_D0", text: "Prynn ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region Dizzy Needle
+    whiteRockDizzyNeedle: {
+        header: "You are in the Dizzy Needle. Who are you talking to?",
+        options: [
+            { id: "whiteRock_MirraSilkhand_D0", text: "Mirra Silkhand ☀️" },
+            { id: "whiteRock_Sable_D0", text: "Sable ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region General Goods Store
+    whiteRockGeneralGoodsStore: {
+        header: "You are in the General Goods Store. Who are you talking to?",
+        options: [
+            { id: "whiteRock_BeldOrvyn_D0", text: "Beld Orvyn ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region Spells & Bottles
+    whiteRockSpellsAndBottles: {
+        header: "You are in Spells & Bottles. Who are you talking to?",
+        options: [
+            { id: "whiteRock_VaelaInkwhisper_D0", text: "Vaela Inkwhisper ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region The Carved Root
+    whiteRockCarvedRoot: {
+        header: "You are in the Carved Root. Who are you talking to?",
+        options: [
+            { id: "whiteRock_DwenAshbark_D0", text: "Dwen Ashbark ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region Thornside Apothecary
+    whiteRockThornsideApothecary: {
+        header: "You are in Thornside Apothecary. Who are you talking to?",
+        options: [
+            { id: "whiteRock_MabisOrvell_D0", text: "Mabis Orvell ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region The Brass Gear
+    whiteRockBrassGear: {
+        header: "You are in the Brass Gear. Who are you talking to?",
+        options: [
+            { id: "whiteRock_AelaQuickfuse_0", text: "Aela Quickfuse (Artificer Trainer)" },
+        ]
+    },
+    //#endregion
+
+    //#region Plateau Pawn & Trade
+    whiteRockPlateauPawnAndTrade: {
+        header: "You are in Plateau Pawn & Trade. Who are you talking to?",
+        options: [
+            { id: "whiteRock_SevDaltris_D0", text: "Sev Daltris ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region Stonecloak Leatherworks
+    whiteRockStonecloakLeatherworks: {
+        header: "You are in Stonecloak Leatherworks. Who are you talking to?",
+        options: [
+            { id: "whiteRock_Jossa_D0", text: "Jossa ☀️" },
+        ]
+    },
+    //#endregion
+
+    //#region The Candle & Cask
+    whiteRockCandleAndCask: {
+        header: "You are in the Candle & Cask. Who are you talking to?",
+        options: [
+            { id: "whiteRock_PettaMorley_0", text: "Petta Morley" },
+        ]
+    },
+    //#endregion
+
+    //#region House 1
+    whiteRockHouse01: {
+        header: "You are at House 1. Who are you talking to?",
+        options: [
+            { id: "whiteRock_BranAshfoot_N0", text: "Bran Ashfoot 🌙" },
+        ]
+    },
+    //#endregion
+
+    //#region House 2
+    whiteRockHouse02: {
+        header: "You are at House 2. Who are you talking to?",
+        options: [
+            { id: "whiteRock_VaelaInkwhisper_N0", text: "Vaela Inkwhisper 🌙" },
+        ]
+    },
+    //#endregion
+
+    //#region House 3
+    whiteRockHouse03: {
+        header: "You are at House 3. Who are you talking to?",
+        options: [
+            { id: "whiteRock_DollaVine_N0", text: "Dolla Vine 🌙" },
+        ]
+    },
+    //#endregion
+
+    //#region House 4
+    whiteRockHouse04: {
+        header: "You are at House 4. Who are you talking to?",
+        options: [
+            { id: "whiteRock_AldousPell_N0", text: "Aldous Pell 🌙" },
+        ]
+    },
+    //#endregion
+
+    //#region House 5
+    whiteRockHouse05: {
+        header: "You are at House 5. Who are you talking to?",
+        options: [
+            { id: "whiteRock_Prynn_N0", text: "Prynn 🌙" },
+        ]
+    },
+    //#endregion
+
+    //#region House 6
+    whiteRockHouse06: {
+        header: "You are at House 6. Who are you talking to?",
+        options: [
+            { id: "whiteRock_Syra_N0", text: "Syra 🌙" },
+        ]
+    },
+    //#endregion
+
+    //#region House 7
+    whiteRockHouse07: {
+        header: "You are at House 7. Who are you talking to?",
+        options: [
+            { id: "whiteRock_OswinCopperkettle_N0", text: "Oswin Copperkettle 🌙" },
+            { id: "whiteRock_WillaCopperkettle_0", text: "Willa Copperkettle" },
+            { id: "whiteRock_PipCopperkettleJr_0", text: "Pip Copperkettle Jr." },
+        ]
+    },
+    //#endregion
+
+    //#region House 8
+    whiteRockHouse08: {
+        header: "You are at House 8. Who are you talking to?",
+        options: [
+            { id: "whiteRock_BeldOrvyn_N0", text: "Beld Orvyn 🌙" },
+            { id: "whiteRock_TanaOrvyn_0", text: "Tana Orvyn" },
+            { id: "whiteRock_MaretOrvyn_0", text: "Maret Orvyn" },
+            { id: "whiteRock_CassOrvyn_0", text: "Cass Orvyn" },
+        ]
+    },
+    //#endregion
+
+    //#region House 9
+    whiteRockHouse09: {
+        header: "You are at House 9. Who are you talking to?",
+        options: [
+            { id: "whiteRock_TomasGreel_N0", text: "Tomas Greel 🌙" },
+            { id: "whiteRock_EddaGreel_0", text: "Edda Greel" },
+            { id: "whiteRock_FerrisGreel_0", text: "Ferris Greel" },
+            { id: "whiteRock_LilyGreel_0", text: "Lily Greel" },
+        ]
+    },
+    //#endregion
+
+    //#region House 10
+    whiteRockHouse10: {
+        header: "You are at House 10. Who are you talking to?",
+        options: [
+            { id: "whiteRock_AldricBrome_N0", text: "Aldric Brome 🌙" },
+            { id: "whiteRock_SeraBrome_0", text: "Sera Brome" },
+            { id: "whiteRock_FenBrome_0", text: "Fen Brome" },
+            { id: "whiteRock_TalBrome_0", text: "Tal Brome" },
+        ]
+    },
+    //#endregion
+
+    //#region House 11
+    whiteRockHouse11: {
+        header: "You are at House 11. Who are you talking to?",
+        options: [
+            { id: "whiteRock_Jossa_N0", text: "Jossa 🌙" },
+            { id: "whiteRock_DwenAshbark_N0", text: "Dwen Ashbark 🌙" },
+        ]
+    },
+    //#endregion
+
+    //#region House 12
+    whiteRockHouse12: {
+        header: "You are at House 12. Who are you talking to?",
+        options: [
+            { id: "whiteRock_MabisOrvell_N0", text: "Mabis Orvell 🌙" },
+            { id: "whiteRock_LennaAshforge_N0", text: "Lenna Ashforge 🌙" },
+        ]
+    },
+    //#endregion
+
+    //#region House 13
+    whiteRockHouse13: {
+        header: "You are at House 13. Who are you talking to?",
+        options: [
+            { id: "whiteRock_Garka_N0", text: "Garka 🌙" },
+            { id: "whiteRock_Rok_0", text: "Rok" },
+            { id: "whiteRock_Keva_0", text: "Keva" },
+            { id: "whiteRock_Bram_0", text: "Bram" },
+        ]
+    },
+    //#endregion
+
+    //#region House 14
+    whiteRockHouse14: {
+        header: "You are at House 14. Who are you talking to?",
+        options: [
+            { id: "whiteRock_MirraSilkhand_N0", text: "Mirra Silkhand 🌙" },
+            { id: "whiteRock_Sable_N0", text: "Sable 🌙" },
+        ]
+    },
+    //#endregion
+
+    //#region House 15
+    whiteRockHouse15: {
+        header: "You are at House 15. Who are you talking to?",
+        options: [
+            { id: "whiteRock_NessaFelt_N0", text: "Nessa Felt 🌙" },
+            { id: "whiteRock_UncleCroft_0", text: "Uncle Croft" },
+            { id: "whiteRock_BrinFelt_0", text: "Brin Felt" },
+        ]
+    },
+    //#endregion
+
+    //#region House 16
+    whiteRockHouse16: {
+        header: "You are at House 16. Who are you talking to?",
+        options: [
+            { id: "whiteRock_SevDaltris_N0", text: "Sev Daltris 🌙" },
+            { id: "whiteRock_YulaOfTheNorthernPeaks_N0", text: "Yula of the Northern Peaks 🌙" },
+        ]
+    },
+    //#endregion
+
 
 //#endregion
 }
@@ -2972,12 +3414,12 @@ const rumorDialogueOptions = {
     22: "A caravan guard swears an owlbear tore through their supply tent overnight and took nothing but the salted meat, leaving everything else untouched.",
     23: "Someone spotted a shape moving low and fast through the reeds by the river of Mudvein. Too big for an otter, too quiet for anything that should move that fast.",
     24: "A hunter of the Ranger's Guild claimed he tracked a set of prints that vanished mid-stride, like whatever made them stepped sideways out of the world.",
-    25: "Word is a manticore's been spotted circling nearby cliffs — nobody's lost anyone yet, but the shepherds have started grazing closer to town.",
-    26: "",
-    27: "",
-    28: "",
-    29: "",
-    30: "",
+    25: "Word is a manticore's been spotted circling nearby cliffs. Nobody's lost anyone yet, but the shepherds have started grazing closer to town.",
+    26: "A friend of mine found a giant spider's web spanning an entire ravine once. Big enough to catch more than insects from the size of it.",
+    27: "There's talk of strange lights bobbing over the nearby marsh to the southeast at night, drawing in anyone foolish enough to follow. The old folk call it a will-o'-the-wisp and tell you to look away.",
+    28: "Keep your eyes out for gargoyles. They like to perch on rooftops and swoop down on travelers.",
+    29: "A group of travelers reported a stretch of road where the trees seemed to lean the wrong way, like something enormous had pushed through recently. No tracks, no broken branches.",
+    30: "A merchant lost half his cargo to what he swears was a gelatinous ooze that squeezed under his cellar door and dissolved everything it touched by morning.",
     31: "",
     32: "",
     33: "",
