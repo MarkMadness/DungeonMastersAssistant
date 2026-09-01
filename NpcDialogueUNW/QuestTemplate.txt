@@ -154,8 +154,8 @@ whiteRock_npcname_0: {
 },
 
 
-whiteRock_Greg_0: {
-    title: "Greg",
+whiteRock_Boros_01: {
+    title: "Boros",
     header: "Test opening line.",
     earthrimSequence: [
         "Ah! Hello, adventurers! You made it! Welcome to White Rock!",
@@ -163,17 +163,7 @@ whiteRock_Greg_0: {
         "What can I do for you?"
     ],
     options: [
-        { id: "whiteRockGregTestBranch", text: "Test branch option" },
-        {
-            id: "whiteRockGregIntimidateCheck",
-            text: "Intimidate",
-            check: {
-                prompt: "Roll for intimidation...",
-                successId: "whiteRockGregIntimidateSuccess",
-                failureId: "whiteRockGregIntimidateFailed"
-            }
-        },
-        { id: "rumors", text: "Rumors" },
+        { id: "whiteRock_Boros_01", text: "" },
         { id: "goodbye", text: "Goodbye.", goBack: true }
     ]
 },

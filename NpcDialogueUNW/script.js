@@ -18,6 +18,8 @@ let currentOptionsContext = null;
 let rumorReturnContext = null;
 let trainingReturnContext = null;
 let directionsReturnContext = null;
+let shoppingReturnContext = null;
+let questReturnContext = null;
 
 $("document").ready(() => renderDialogue("initial"));
 
@@ -108,6 +110,62 @@ function returnToPreviousOptionsFromDirections() {
 
     const context = directionsReturnContext;
     directionsReturnContext = null;
+    stagedDialogueState = null;
+
+    if (context && context.dialogue) {
+        npcName.empty();
+        header.empty();
+        options.empty();
+
+        hideEarthrimNextButton();
+        npcName.append(context.dialogue.title);
+        header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + context.headerText);
+        renderOptionsList(context.dialogue.options || []);
+        setCurrentOptionsContext(context.key, context.dialogue, context.headerText);
+        return;
+    }
+
+    const previousKey = history[history.length - 1];
+    if (previousKey) {
+        renderDialogue(previousKey);
+    }
+}
+
+function returnToPreviousOptionsFromShopping() {
+    if (history[history.length - 1] === "shopping") {
+        history.pop();
+    }
+
+    const context = shoppingReturnContext;
+    shoppingReturnContext = null;
+    stagedDialogueState = null;
+
+    if (context && context.dialogue) {
+        npcName.empty();
+        header.empty();
+        options.empty();
+
+        hideEarthrimNextButton();
+        npcName.append(context.dialogue.title);
+        header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + context.headerText);
+        renderOptionsList(context.dialogue.options || []);
+        setCurrentOptionsContext(context.key, context.dialogue, context.headerText);
+        return;
+    }
+
+    const previousKey = history[history.length - 1];
+    if (previousKey) {
+        renderDialogue(previousKey);
+    }
+}
+
+function returnToPreviousOptionsFromQuest() {
+    if (history[history.length - 1] === "quest") {
+        history.pop();
+    }
+
+    const context = questReturnContext;
+    questReturnContext = null;
     stagedDialogueState = null;
 
     if (context && context.dialogue) {
@@ -256,6 +314,70 @@ function renderRequestTrainingPlaceholder(option) {
     showEarthrimNextButton(() => returnToPreviousOptionsFromTraining());
 }
 
+function isShoppingOption(option) {
+    const optionId = (option.id || "").toLowerCase();
+    return optionId === "shopping";
+}
+
+function renderShoppingPlaceholder(option) {
+    const previousKey = history[history.length - 1];
+    const placeholderText = option.shoppingText || "Shopping...";
+
+    if (currentOptionsContext && currentOptionsContext.key === previousKey) {
+        shoppingReturnContext = { ...currentOptionsContext };
+    } else {
+        shoppingReturnContext = null;
+    }
+
+    if (history.length === 0 || history[history.length - 1] !== "shopping") {
+        history.push("shopping");
+    }
+
+    stagedDialogueState = null;
+
+    npcName.empty();
+    header.empty();
+    options.empty();
+    hideCheckResultButtons();
+
+    npcName.append((currentOptionsContext && currentOptionsContext.dialogue && currentOptionsContext.dialogue.title) || "Merchant");
+    header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + placeholderText);
+
+    showEarthrimNextButton(() => returnToPreviousOptionsFromShopping());
+}
+
+function isQuestOption(option) {
+    const optionId = (option.id || "").toLowerCase();
+    return optionId === "quest";
+}
+
+function renderQuestPlaceholder(option) {
+    const previousKey = history[history.length - 1];
+    const placeholderText = option.questText || "Quest details coming soon...";
+
+    if (currentOptionsContext && currentOptionsContext.key === previousKey) {
+        questReturnContext = { ...currentOptionsContext };
+    } else {
+        questReturnContext = null;
+    }
+
+    if (history.length === 0 || history[history.length - 1] !== "quest") {
+        history.push("quest");
+    }
+
+    stagedDialogueState = null;
+
+    npcName.empty();
+    header.empty();
+    options.empty();
+    hideCheckResultButtons();
+
+    npcName.append((currentOptionsContext && currentOptionsContext.dialogue && currentOptionsContext.dialogue.title) || "Quest Giver");
+    header.append("&nbsp;&nbsp;&nbsp;&nbsp;" + placeholderText);
+
+    showEarthrimNextButton(() => returnToPreviousOptionsFromQuest());
+}
+
 function isLocationContextNode(key) {
     const dialogue = dialogueOptions[key];
     if (!dialogue || typeof dialogue.header !== "string") {
@@ -317,6 +439,10 @@ function renderOptionsList(optionsList) {
             btn.addEventListener("click", () => renderTownguardDirectionsPlaceholder(option));
         } else if (isRequestTrainingOption(option)) {
             btn.addEventListener("click", () => renderRequestTrainingPlaceholder(option));
+        } else if (isShoppingOption(option)) {
+            btn.addEventListener("click", () => renderShoppingPlaceholder(option));
+        } else if (isQuestOption(option)) {
+            btn.addEventListener("click", () => renderQuestPlaceholder(option));
         } else if (option.goBack) {
             if (option.id === "goodbye") {
                 btn.addEventListener("click", () => redirectFromGoodbye(option));
@@ -480,6 +606,10 @@ function goHome() {
     stagedDialogueState = null;
     currentOptionsContext = null;
     rumorReturnContext = null;
+    trainingReturnContext = null;
+    directionsReturnContext = null;
+    shoppingReturnContext = null;
+    questReturnContext = null;
     history = []; // Clear history when going home
 }
 

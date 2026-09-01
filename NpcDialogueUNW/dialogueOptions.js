@@ -1822,6 +1822,7 @@ const dialogueOptions = {
         header: "You are in Earthrim. Where are you?",
         options: [
             { id: "locationTheSnowGate", text: "The Snow Gate" },
+            { id: "locationCrossroadsBrewers", text: "Crossroads Brewers" },
             { id: "locationWhiteRock", text: "White Rock" },
         ]
     },
@@ -2874,6 +2875,41 @@ const dialogueOptions = {
 
 //#endregion
 
+    //#region Crossroads Brewers
+    locationCrossroadsBrewers: {
+        header: "You are at Crossroads Brewers, a lonely brewery at the meeting of two empty roads. Who are you talking to?",
+        options: [
+            { id: "crossroadsBrewers_Brugg_0", text: "Brugg Stonevat" },
+        ]
+    },
+        //#region Brugg Stonevat
+        crossroadsBrewers_Brugg_0: {
+            title: "Brugg Stonevat",
+            header: "Don't get many travelers out this far. Good. Means the last batch has time to breathe. What can I pour you?",
+            options: [
+                { id: "shopping", text: "Shopping..." },
+                { id: "crossroadsBrewers_Brugg_01", text: "Tell me about this place." },
+                { id: "rumors", text: "Rumors" },
+                { id: "goodbye", text: "Goodbye.", goBack: true }
+            ]
+        },
+            crossroadsBrewers_Brugg_01: {
+                title: "Brugg Stonevat",
+                header: "Dialogue Line (optional when using earthrimSequence).",
+                earthrimSequence: [
+                    "Built this place myself, stone by stone. Nobody else wanted a brewery this far from anywhere - said the water was wrong, the roads were worse, and no one would ever find it.",
+                    "They weren't wrong about the roads. But the water's perfect, and the ones who matter always find it eventually.",
+                    "Crossroads Brewers. Middle of nowhere by design. A brew's got no business being rushed, and neither do the people who come looking for it."
+                ],
+                options: [
+                    { id: "shopping", text: "Shopping..." },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+        //#endregion
+    //#endregion
+
     //#region White Rock
     locationWhiteRock: {
         header: "You are in White Rock. Which location are you in?",
@@ -2882,7 +2918,6 @@ const dialogueOptions = {
             // Major Locations
             { id: "whiteRockWhiteKeep", text: "White Keep" },
             { id: "whiteRockStables", text: "Stables" },
-            { id: "whiteRockCarriageLodge", text: "Carriage Lodge" },
             { id: "whiteRockSilverStagInn", text: "The Silver Stag Inn" },
             { id: "whiteRockTempleOfDawnfire", text: "Temple of Dawnfire" },
             { id: "whiteRockRangersLodge", text: "Ranger's Lodge" },
@@ -2924,1534 +2959,1742 @@ const dialogueOptions = {
             { id: "whiteRockHouse16", text: "House 16" }
         ]   
     },
-    //#region White Rock Streets
-        whiteRockStreets: {
-            header: "You are in the Streets of White Rock. Who are you talking to?",
-            options: [
-                { id: "earthrimTownGuard", text: "Town Guard" },
-                { id: "whiteRock_Greg_0", text: "Greg" },
-            ]
-        },
-            whiteRock_Greg_0: {
-                title: "Greg",
-                header: "Test opening line.",
-                earthrimSequence: [
-                    "Ah! Hello, adventurers! You made it! Welcome to White Rock!",
-                    "Earthrim has no shortage of adventure and White Rock serves wonderfully as a home away from home.",
-                    "What can I do for you?"
-                ],
+        //#region White Rock Streets
+            whiteRockStreets: {
+                header: "You are in the Streets of White Rock. Who are you talking to?",
                 options: [
-                    { id: "whiteRock_Greg_01", text: "We've arrived in White Rock like you requested." },
-                    { id: "rumors", text: "Rumors" },
-                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                    { id: "earthrimTownGuard", text: "Town Guard" },
+                    { id: "whiteRock_Greg_0", text: "Greg" },
                 ]
             },
-                whiteRock_Greg_01: {
+                whiteRock_Greg_0: {
                     title: "Greg",
-                    header: "Dialogue Line (optional when using earthrimSequence).",
+                    header: "Test opening line.",
                     earthrimSequence: [
-                        "And you made it! It warms my heart that you arrived.",
-                        "And now that you're here, it's time to get down to business. I have a new quest for you from the King himself.",
-                        "Bring me back three Earthrim Quest Completion Tokens and I will reward you handsomely.", 
-                        "You can find these tokens by completing quests in Earthrim.",
-                        "I wish you luck adventurers. It was great to see you again. I hope to see you again soon."
+                        "Ah! Hello, adventurers! You made it! Welcome to White Rock!",
+                        "Earthrim has no shortage of adventure and White Rock serves wonderfully as a home away from home.",
+                        "What can I do for you?"
                     ],
                     options: [
+                        { id: "whiteRock_Greg_01", text: "We've arrived in White Rock like you requested." },
                         { id: "rumors", text: "Rumors" },
                         { id: "goodbye", text: "Goodbye.", goBack: true }
                     ]
                 },
+                    whiteRock_Greg_01: {
+                        title: "Greg",
+                        header: "Dialogue Line (optional when using earthrimSequence).",
+                        earthrimSequence: [
+                            "And you made it! It warms my heart that you arrived.",
+                            "And now that you're here, it's time to get down to business. I have a new quest for you from the King himself.",
+                            "Bring me back three Earthrim Quest Completion Tokens and I will reward you handsomely.", 
+                            "You can find these tokens by completing quests in Earthrim.",
+                            "I wish you luck adventurers. It was great to see you again. I hope to see you again soon."
+                        ],
+                        options: [
+                            { id: "rumors", text: "Rumors" },
+                            { id: "goodbye", text: "Goodbye.", goBack: true }
+                        ]
+                    },
+                
+        //#endregion
+
+        //#region White Keep
+        whiteRockWhiteKeep: {
+            header: "You are in the White Keep. Who are you talking to?",
+            options: [
+                { id: "earthrimTownGuard", text: "Town Guard" },
+                { id: "whiteRock_Jarl_0", text: "Jarl Alrik Stonebrow" },
+                { id: "whiteRock_CalanthaSunleaf_N0", text: "Calantha Sunleaf (Cleric Trainer) 🌙" },
+                { id: "whiteRock_NyxDarkveil_N0", text: "Nyx Darkveil (Warlock Trainer) 🌙" },
+                { id: "whiteRock_DariusFireblood_N0", text: "Darius Fireblood (Sorcerer Trainer) 🌙" },
+                { id: "whiteRock_EldrinNightshade_N0", text: "Eldrin Nightshade (Wizard Trainer) 🌙" },
+                { id: "whiteRock_Pava_N0", text: "Archivist Pava 🌙" },
+                { id: "whiteRock_OrinBarkheart_N0", text: "Orin Barkheart (Druid Trainer) 🌙" },
+                { id: "whiteRock_SunMei_N0", text: "Sun Mei (Monk Trainer) 🌙" },
+                { id: "whiteRock_VesperaNightingale_N0", text: "Vespera Nightingale (Bard Trainer) 🌙" },
+                { id: "whiteRock_ThaliorDawnbringer_D0", text: "Thalior Dawnbringer (Paladin Trainer) ☀️" },
+            ]
+        },
+            //#region Jarl Alrik Stonebrow
+            whiteRock_Jarl_0: {
+                title: "Jarl Alrik Stonebrow",
+                header: "White Rock has stood through worse than a quiet season. Speak your business, traveler. I don't often have the luxury of idle conversation.",
+                options: [
+                    { id: "whiteRock_Jarl_01", text: "Quest" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                whiteRock_Jarl_01: {
+                    title: "Jarl Alrik Stonebrow",
+                    header: "Quest details coming soon...Watcher in the Dark, The Bandit's Reach",
+                    options: [
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+            //#endregion
+            //#region Calantha Sunleaf
+            whiteRock_CalanthaSunleaf_N0: {
+                title: "Calantha Sunleaf",
+                header: "Faith and discipline both take practice. If you've come seeking one, I hope you've the patience for both.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Nyx Darkveil
+            whiteRock_NyxDarkveil_N0: {
+                title: "Nyx Darkveil",
+                header: "Every bargain has a price. Mine included. What is it you're after?",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Darius Fireblood
+            whiteRock_DariusFireblood_N0: {
+                title: "Darius Fireblood",
+                header: "Power finds those who reach for it and burns the rest. Which are you, I wonder?",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Eldrin Nightshade
+            whiteRock_EldrinNightshade_N0: {
+                title: "Eldrin Nightshade",
+                header: "Mm. A visitor. Give me a moment - or don't, and I'll simply notice you eventually.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Archivist Pava
+            whiteRock_Pava_N0: {
+                title: "Archivist Pava",
+                header: "Everything has a place. If Renn sent you back here confused, I promise it's not contagious.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Orin Barkheart
+            whiteRock_OrinBarkheart_N0: {
+                title: "Orin Barkheart",
+                header: "The land remembers longer than any of us. Sit a while, if you've the patience to listen to it.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Sun Mei
+            whiteRock_SunMei_N0: {
+                title: "Sun Mei",
+                header: "Stillness first. Then conversation. You've caught me between the two - lucky for you.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+                //#region Vespera Nightingale
+                whiteRock_VesperaNightingale_N0: {
+                title: "Vespera Nightingale",
+                header: "Every song is a story someone was afraid to just say plainly. Care to hear one, or would you rather make one of your own?",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "whiteRock_VesperaNightingale_RequestSong", text: "Request a Song" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                //#endregion
+            //#region Thalior Dawnbringer
+            whiteRock_ThaliorDawnbringer_D0: {
+                title: "Thalior Dawnbringer",
+                header: "A paladin's oath is not sworn once — it's kept every day. Have you come to understand the difference?",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+        //#endregion
+
+        //#region Stables
+        whiteRockStables: {
+            header: "You are at the Stables. Who are you talking to?",
+            options: [
+                { id: "earthrimTownGuard", text: "Town Guard" },
+                { id: "whiteRock_Wrek_0", text: "Wrek the Stablemaster" },
+            ]
+        },
+            //#region Wrek
+            whiteRock_Wrek_0: {
+                title: "Wrek",
+                header: "Stables are stables. Don't mind the animals - they've got their quirks, same as anybody. Need a mount, or just passing through?",
+                options: [
+                    // { id: "whiteRock_Wrek_01", text: "Quest" },
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                whiteRock_Wrek_01: {
+                    title: "Wrek",
+                    header: "Quest details coming soon...",
+                    options: [
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+            //#endregion
+        //#endregion
+
+        //#region The Silver Stag Inn
+        whiteRockSilverStagInn: {
+            header: "You are in the Silver Stag Inn. Who are you talking to?",
+            options: [
+                { id: "earthrimTownGuard", text: "Town Guard" },
+                { id: "whiteRock_MiraCallowen_0", text: "Mira Callowen" },
+                { id: "whiteRock_AldricBrome_D0", text: "Aldric Brome ☀️" },
+                { id: "whiteRock_FenwickLarks_0", text: "Fenwick Larks" },
+                { id: "whiteRock_DollaVine_D0", text: "Dolla Vine ☀️" },
+                { id: "whiteRock_Rowan_0", text: "Rowan" },
+                { id: "whiteRock_VesperaNightingale_D0", text: "Vespera Nightingale (Bard Trainer) ☀️" },
+            ]
+        },
+            //#region Mira Callowen
+            whiteRock_MiraCallowen_0: {
+                title: "Mira Callowen",
+                header: "Welcome to the Silver Stag. Drink, room, or information - I deal in all three, though the last one costs the most.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Aldric Brome
+            whiteRock_AldricBrome_D0: {
+                title: "Aldric Brome",
+                header: "Evening. Or morning, depending how your night's gone. What'll it be?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Fenwick Larks
+            whiteRock_FenwickLarks_0: {
+                title: "Fenwick Larks",
+                header: "Ah, an audience! Don't suppose you'd care to cover my tab in exchange for a request?",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Dolla Vine
+            whiteRock_DollaVine_D0: {
+                title: "Dolla Vine",
+                header: "Busy night. Grab a seat if you can find one - I'll be around.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Rowan
+            whiteRock_Rowan_0: {
+                title: "Rowan",
+                header: "Need something carried, fetched, or delivered? I do odd jobs. Cheap, too - well, cheap-ish.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Vespera Nightingale
+            whiteRock_VesperaNightingale_D0: {
+                title: "Vespera Nightingale",
+                header: "Every song is a story someone was afraid to just say plainly. Care to hear one, or would you rather make one of your own?",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "whiteRock_VesperaNightingale_RequestSong", text: "Request a Song" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+                //#region Vespera Nightingale - Request a Song
+                whiteRock_VesperaNightingale_RequestSong: {
+                    title: "Vespera Nightingale",
+                    header: "What would you like me to sing?",
+                    options: [
+                        { id: "whiteRock_VesperaNightingale_Song1", text: "The Dragonborn Comes" },
+                        { id: "whiteRock_VesperaNightingale_Song2", text: "Ragnar the Red" },
+                        { id: "whiteRock_VesperaNightingale_Song3", text: "Age of Oppression" },
+                        { id: "whiteRock_VesperaNightingale_Song4", text: "Age of Aggression" },
+                        { id: "whiteRock_VesperaNightingale_Song5", text: "Tale of the Tongues" },
+                        { id: "whiteRock_VesperaNightingale_Song6", text: "The Blood of the Nord" },
+                        { id: "goodbye", text: "Never mind.", goBack: true }
+                    ]
+                },
+                    whiteRock_VesperaNightingale_Song1: {
+                        title: "Vespera Nightingale",
+                        header: "Playing...",
+                        options: [
+                            { id: "goodbye", text: "Goodbye.", goBack: true }
+                        ]
+                    },
+                    whiteRock_VesperaNightingale_Song2: {
+                        title: "Vespera Nightingale",
+                        header: "Playing...",
+                        options: [
+                            { id: "goodbye", text: "Goodbye.", goBack: true }
+                        ]
+                    },
+                    whiteRock_VesperaNightingale_Song3: {
+                        title: "Vespera Nightingale",
+                        header: "Playing...",
+                        options: [
+                            { id: "goodbye", text: "Goodbye.", goBack: true }
+                        ]
+                    },
+                    whiteRock_VesperaNightingale_Song4: {
+                        title: "Vespera Nightingale",
+                        header: "Playing...",
+                        options: [
+                            { id: "goodbye", text: "Goodbye.", goBack: true }
+                        ]
+                    },
+                    whiteRock_VesperaNightingale_Song5: {
+                        title: "Vespera Nightingale",
+                        header: "Playing...",
+                        options: [
+                            { id: "goodbye", text: "Goodbye.", goBack: true }
+                        ]
+                    },
+                    whiteRock_VesperaNightingale_Song6: {
+                        title: "Vespera Nightingale",
+                        header: "Playing...",
+                        options: [
+                            { id: "goodbye", text: "Goodbye.", goBack: true }
+                        ]
+                    },
+                //#endregion
+        //#endregion
+
+        //#region Temple of Dawnfire
+        whiteRockTempleOfDawnfire: {
+            header: "You are in the Temple of Dawnfire. Who are you talking to?",
+            options: [
+                { id: "whiteRock_BrotherTalan_0", text: "Brother Talan" },
+                { id: "whiteRock_SisterAuna_0", text: "Sister Auna" },
+                { id: "whiteRock_NoviceBrek_0", text: "Novice Brek" },
+                { id: "whiteRock_CalanthaSunleaf_D0", text: "Calantha Sunleaf (Cleric Trainer) ☀️" },
+                { id: "whiteRock_NyxDarkveil_D0", text: "Nyx Darkveil (Warlock Trainer) ☀️" },
+            ]
+        },
+            //#region Brother Talan
+            whiteRock_BrotherTalan_0: {
+                title: "Brother Talan",
+                header: "Dawnfire's light finds you, traveler. Forgive me, I find it easier to restart than to lose my place. What brings you to the temple?",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Sister Auna
+            whiteRock_SisterAuna_0: {
+                title: "Sister Auna",
+                header: "If you're hurt, sit. If you're not, you're welcome regardless.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Novice Brek
+            whiteRock_NoviceBrek_0: {
+                title: "Novice Brek",
+                header: "Oh! Sorry - didn't hear you come in. Is there, um, something I can help with? I'm still new, but I'll try.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Calantha Sunleaf
+            whiteRock_CalanthaSunleaf_D0: {
+                title: "Calantha Sunleaf",
+                header: "Faith and discipline both take practice. If you've come seeking one, I hope you've the patience for both.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Nyx Darkveil
+            whiteRock_NyxDarkveil_D0: {
+                title: "Nyx Darkveil",
+                header: "Every bargain has a price. Mine included. What is it you're after?",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Ranger's Lodge
+        whiteRockRangersLodge: {
+            header: "You are in the Ranger's Lodge. Who are you talking to?",
+            options: [
+                { id: "whiteRock_EliraWindshot_0", text: "Elira Windshot" },
+                { id: "whiteRock_GrettaTheGrim_0", text: "Gretta the Grim" },
+                { id: "whiteRock_SornIreback_0", text: "Sorn Ireback" },
+                { id: "whiteRock_PellThornwick_0", text: "Pell Thornwick" },
+                { id: "whiteRock_DavenQuarrel_0", text: "Daven Quarrel" },
+                { id: "whiteRock_KendraWildfoot_0", text: "Kendra Wildfoot (Ranger Trainer)" },
+                { id: "whiteRock_BranAshfoot_D0", text: "Bran Ashfoot ☀️" },
+                { id: "whiteRock_YulaOfTheNorthernPeaks_D0", text: "Yula of the Northern Peaks ☀️" },
+            ]
+        },
+            //#region Elira Windshot
+            whiteRock_EliraWindshot_0: {
+                title: "Elira Windshot",
+                header: "You've the look of someone who wants something. Speak plain - we don't stand on ceremony here.",
+                options: [
+                    { id: "whiteRock_EliraWindshot_01", text: "Quest" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                whiteRock_EliraWindshot_01: {
+                    title: "Elira Windshot",
+                    header: "Quest details coming soon...Blood and Pelts",
+                    options: [
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+            //#endregion
+
+            //#region Gretta the Grim
+            whiteRock_GrettaTheGrim_0: {
+                title: "Gretta the Grim",
+                header: "Come to trade stories, or just to gawk at the trophies? Either's fine. Mind the bear head. It's watching.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Sorn Ireback
+            whiteRock_SornIreback_0: {
+                title: "Sorn Ireback",
+                header: "Hah! New face. Sit, eat, don't take the seat at the head of the table - that one's earned.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Pell Thornwick
+            whiteRock_PellThornwick_0: {
+                title: "Pell Thornwick",
+                header: "Oh - hi! I'm still an apprentice here, so I probably can't help with much, but I can point you toward someone who can!",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Daven Quarrel
+            whiteRock_DavenQuarrel_0: {
+                title: "Daven Quarrel",
+                header: "Caught me between trips. Don't get comfortable expecting that twice.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Kendra Wildfoot
+            whiteRock_KendraWildfoot_0: {
+                title: "Kendra Wildfoot",
+                header: "Looking to learn the bow, or just admiring the trophies like everyone else?",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Bran Ashfoot
+            whiteRock_BranAshfoot_D0: {
+                title: "Bran Ashfoot",
+                header: "Lodge business, or are you here to marvel at my collection? Either's a fine reason to stop by.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Yula of the Northern Peaks
+            whiteRock_YulaOfTheNorthernPeaks_D0: {
+                title: "Yula of the Northern Peaks",
+                header: "The peaks taught me not to trust quiet moments. What do you need?",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Scholar's Archive
+        whiteRockScholarsArchive: {
+            header: "You are in the Scholar's Archive. Who are you talking to?",
+            options: [
+                { id: "whiteRock_Renn_0", text: "Old Scribe Renn" },
+                { id: "whiteRock_Pava_D0", text: "Archivist Pava ☀️" },
+                { id: "whiteRock_DariusFireblood_D0", text: "Darius Fireblood (Sorcerer Trainer) ☀️" },
+                { id: "whiteRock_EldrinNightshade_D0", text: "Eldrin Nightshade (Wizard Trainer) ☀️" },
+            ]
+        },
+            //#region Old Scribe Renn
+            whiteRock_Renn_0: {
+                title: "Old Scribe Renn",
+                header: "Ah. Another one arrives right on schedule. Isn't that curious. What can this old archive do for you?",
+                options: [
+                    { id: "whiteRock_Renn_01", text: "Quest" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                whiteRock_Renn_01: {
+                    title: "Old Scribe Renn",
+                    header: "Quest details coming soon...Dwarven Legacy",
+                    options: [
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+            //#endregion
+
+            //#region Archivist Pava
+            whiteRock_Pava_D0: {
+                title: "Archivist Pava",
+                header: "Everything has a place. If Renn sent you back here confused, I promise it's not contagious.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Darius Fireblood
+            whiteRock_DariusFireblood_D0: {
+                title: "Darius Fireblood",
+                header: "Power finds those who reach for it and burns the rest. Which are you, I wonder?",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Eldrin Nightshade
+            whiteRock_EldrinNightshade_D0: {
+                title: "Eldrin Nightshade",
+                header: "Mm. A visitor. Give me a moment - or don't, and I'll simply notice you eventually.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Barracks
+        whiteRockBarracks: {
+            header: "You are in the Barracks. Who are you talking to?",
+            options: [
+                { id: "earthrimTownGuard", text: "Town Guard" },
+                { id: "whiteRock_SergeantDorva_0", text: "Sergeant Dorva" },
+                { id: "whiteRock_CaptainTharic_0", text: "Captain Tharic" },
+            ]
+        },
+            //#region Sergeant Dorva
+            whiteRock_SergeantDorva_0: {
+                title: "Sergeant Dorva",
+                header: "If you're here to enlist, talk to the Captain. If you're here to cause trouble, don't.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Captain Tharic
+            whiteRock_CaptainTharic_0: {
+                title: "Captain Tharic",
+                header: "State your business. We run tight here, and I don't have patience for wasted time.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Town Square
+        whiteRockTownSquare: {
+            header: "You are in the Town Square. Who are you talking to?",
+            options: [
+                { id: "earthrimTownGuard", text: "Town Guard" },
+                { id: "whiteRock_Boros_0", text: "Brave Sir Boros" },
+                { id: "whiteRock_TomasGreel_D0", text: "Tomas Greel ☀️" },
+                { id: "whiteRock_OswinCopperkettle_D0", text: "Oswin Copperkettle ☀️" },
+                { id: "whiteRock_NessaFelt_D0", text: "Nessa Felt ☀️" },
+                { id: "whiteRock_Garka_D0", text: "Garka ☀️" },
+                { id: "whiteRock_AldousPell_D0", text: "Aldous Pell ☀️" },
+                { id: "whiteRock_Syra_D0", text: "Syra ☀️" },
+                { id: "whiteRock_PipOfTheFountain_D0", text: "Pip of the Fountain ☀️" },
+            ]
+        },
+            //#region Brave Sir Boros
+            whiteRock_Boros_0: {
+                title: "Brave Sir Boros",
+                header: "Hello there, Adventurers. Been a while since I had last seen you all back in Star'Teng Zone.",
+                earthrimSequence: [
+                    "Hello there, Adventurers. Been a while since I had last seen you all back in Star'Teng Zone.",
+                    "It's a good thing you arrived here in White Rock. I have a few things to discuss with you.",
+                ],
+                options: [
+                    { id: "whiteRock_Boros_01", text: "What's the important thing?" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                whiteRock_Boros_01: {
+                    title: "Brave Sir Boros",
+                    header: "I'm gathering brave volunteers to join my expedition down south. In the castle of Arnfell, a great evil has taken root in its walls.",
+                    earthrimSequence: [
+                        "I'm gathering brave volunteers to join my expedition down south. In the castle of Arnfell, a great evil has taken root in its walls.",
+                        "A vampire lord raised an army of the undead and claimed the castle as his own. The King only got word of it recently before any devestation could be brought upon Earthrim.",
+                        "The King has commanded me to deal with the threat and though I believe in the might of the Earthrim guard, I can't help but feel as though this will require more than just the guard.",
+                    ],
+                    options: [
+                        { id: "whiteRock_Boros_011", text: "How can I help?" },
+                        { id: "whiteRock_Boros_012", text: "What's in it for us?" },
+                        { id: "whiteRock_Boros_013", text: "Nah, I don't feel like it." },
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+                    whiteRock_Boros_011: {
+                        title: "Brave Sir Boros",
+                        header: "I need you to gather your party and meet me on the road south of White Rock. Then we will begin our campaign against the vampire lord.",
+                        options: [
+                            { id: "goodbye", text: "End.", goBack: true }
+                        ]
+                    },
+                    whiteRock_Boros_012: {
+                        title: "Boros",
+                        header: "There will be plenty of coin given to those who join the expedition. And any treasure Arnfell might have will be yours to claim.",
+                        options: [
+                            { id: "whiteRock_Boros_0121", text: "I will join you!" },
+                            { id: "whiteRock_Boros_013", text: "Nah, I don't feel like it." },
+                            { id: "goodbye", text: "Goodbye.", goBack: true }
+                        ]
+                    },
+                        whiteRock_Boros_0121: {
+                            title: "Boros",
+                            header: "Excellent! I knew I could count on you! Gather your party and meet me on the road south of White Rock. Then we will begin our campaign against the vampire lord.",
+                            options: [
+                                { id: "goodbye", text: "End.", goBack: true }
+                            ]
+                        },
+                    whiteRock_Boros_013: {
+                        title: "Boros",
+                        header: "I understand. This is not a task for everyone. If you change your mind, you know where to find me.",
+                        options: [
+                            { id: "goodbye", text: "End.", goBack: true }
+                        ]
+                    },
+            //#endregion
+
+            //#region Tomas Greel
+            whiteRock_TomasGreel_D0: {
+                title: "Tomas Greel",
+                header: "Freshest in the plaza, straight off the farm this morning! Buying, or just looking?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Oswin Copperkettle
+            whiteRock_OswinCopperkettle_D0: {
+                title: "Oswin Copperkettle",
+                header: "Care to test your luck? The Tumbling Die never disappoints - well, not the house, anyway.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Nessa Felt
+            whiteRock_NessaFelt_D0: {
+                title: "Nessa Felt",
+                header: "Something catch your eye? Bright Baubles has a little bit of everything, if you look close enough.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Garka
+            whiteRock_Garka_D0: {
+                title: "Garka",
+                header: "Hot food, fair price, no complaints - well, none I'll listen to. What'll it be?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Aldous Pell
+            whiteRock_AldousPell_D0: {
+                title: "Aldous Pell",
+                header: "Maps, ink, whatever you need to find your way. I've never traveled far myself, but the travelers tell me plenty.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Syra
+            whiteRock_Syra_D0: {
+                title: "Syra",
+                header: "The Wanderer's Satchel. Take a look - I promise there's more here than it seems.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Pip of the Fountain
+            whiteRock_PipOfTheFountain_D0: {
+                title: "Pip of the Fountain",
+                header: "Hear ye, hear ye! And also, hello! You look like someone who could use some news. Everyone does, really.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region The Gilded Knuckle
+        whiteRockGildedKnuckle: {
+            header: "You are in the Gilded Knuckle. Who are you talking to?",
+            options: [
+                { id: "whiteRock_Zevran_0", text: "Zevran 'Silvermask' (Rogue Trainer)" },
+                { id: "whiteRock_Donn_0", text: "Donn" },
+            ]
+        },
+            //#region Zevran 'Silvermask'
+            whiteRock_Zevran_0: {
+                title: "Zevran 'Silvermask'",
+                header: "Looking for a drink, a fight, or the sort of business that doesn't get written down? I can arrange any of the three.",
+                options: [
+                    // { id: "whiteRock_Zevran_01", text: "Quest" },
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                whiteRock_Zevran_01: {
+                    title: "Zevran 'Silvermask'",
+                    header: "Quest details coming soon...",
+                    options: [
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+            //#endregion
+
+            //#region Donn
+            whiteRock_Donn_0: {
+                title: "Donn",
+                header: "Drink's the only thing I sell up here. Anything else, you'd best already know who to ask.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region The Cracked Anvil
+        whiteRockCrackedAnvil: {
+            header: "You are in the Cracked Anvil. Who are you talking to?",
+            options: [
+                { id: "whiteRock_Garrik_0", text: "Garrik 'the Stubborn'" },
+                { id: "whiteRock_LennaAshforge_D0", text: "Lenna Ashforge ☀️" },
+            ]
+        },
+            //#region Garrik 'the Stubborn'
+            whiteRock_Garrik_0: {
+                title: "Garrik 'the Stubborn'",
+                header: "Best steel in White Rock, and I'll not hear otherwise. Need a blade, or just here to watch sparks fly?",
+                options: [
+                    { id: "whiteRock_Garrik_01", text: "Quest" },
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                whiteRock_Garrik_01: {
+                    title: "Garrik 'the Stubborn'",
+                    header: "Quest details coming soon...Stelnigan Cavern",
+                    options: [
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+            //#endregion
+
+            //#region Lenna Ashforge
+            whiteRock_LennaAshforge_D0: {
+                title: "Lenna Ashforge",
+                header: "He won't stop for customers, so that's my job. What are you after?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region BloodHunter's Hut
+        whiteRockBloodHuntersHut: {
+            header: "You are at the BloodHunter's Hut. Who are you talking to?",
+            options: [
+                { id: "whiteRock_IskanderVorn_0", text: "Iskander Vorn (Blood Hunter Trainer)" },
+            ]
+        },
+            //#region Iskander Vorn
+            whiteRock_IskanderVorn_0: {
+                title: "Iskander Vorn",
+                header: "Blood Hunters don't get many visitors who aren't already bleeding. You're either brave or lost. Which is it?",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Monk's Gazebo
+        whiteRockMonksGazebo: {
+            header: "You are at the Monk's Gazebo. Who are you talking to?",
+            options: [
+                { id: "whiteRock_SunMei_D0", text: "Sun Mei (Monk Trainer) ☀️" },
+            ]
+        },
+            //#region Sun Mei
+            whiteRock_SunMei_D0: {
+                title: "Sun Mei",
+                header: "Stillness first. Then conversation. You've caught me between the two - lucky for you.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Gardens
+        whiteRockGardens: {
+            header: "You are in the Gardens. Who are you talking to?",
+            options: [
+                { id: "whiteRock_OrinBarkheart_D0", text: "Orin Barkheart (Druid Trainer) ☀️" },
+            ]
+        },
+            //#region Orin Barkheart
+            whiteRock_OrinBarkheart_D0: {
+                title: "Orin Barkheart",
+                header: "The land remembers longer than any of us. Sit a while, if you've the patience to listen to it.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Adventurer's Trinkets
+        whiteRockAdventurersTrinkets: {
+            header: "You are in Adventurer's Trinkets. Who are you talking to?",
+            options: [
+                { id: "whiteRock_Prynn_D0", text: "Prynn ☀️" },
+            ]
+        },
+            //#region Prynn
+            whiteRock_Prynn_D0: {
+                title: "Prynn",
+                header: "Adventurer's Trinkets - if it fits in a pack and might save your life, I probably stock it. What do you need?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Dizzy Needle
+        whiteRockDizzyNeedle: {
+            header: "You are in the Dizzy Needle. Who are you talking to?",
+            options: [
+                { id: "whiteRock_MirraSilkhand_D0", text: "Mirra Silkhand ☀️" },
+                { id: "whiteRock_Sable_D0", text: "Sable ☀️" },
+            ]
+        },
+            //#region Mirra Silkhand
+            whiteRock_MirraSilkhand_D0: {
+                title: "Mirra Silkhand",
+                header: "Mm. We can do better than that. Commission, alteration, or ready-to-wear?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Sable
+            whiteRock_Sable_D0: {
+                title: "Sable",
+                header: "Simple job, I can help. Anything complicated, you'll want Mirra. She's particular about those.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region General Goods Store
+        whiteRockGeneralGoodsStore: {
+            header: "You are in the General Goods Store. Who are you talking to?",
+            options: [
+                { id: "whiteRock_BeldOrvyn_D0", text: "Beld Orvyn ☀️" },
+            ]
+        },
+            //#region Beld Orvyn
+            whiteRock_BeldOrvyn_D0: {
+                title: "Beld Orvyn",
+                header: "Everything's labeled, everything's priced fair. Let me know if something's out of place - I'll know before you tell me, probably.",
+                options: [
+                    // { id: "whiteRock_BeldOrvyn_01", text: "Quest" },
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                whiteRock_BeldOrvyn_01: {
+                    title: "Beld Orvyn",
+                    header: "Quest details coming soon...",
+                    options: [
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+            //#endregion
+        //#endregion
+
+        //#region Spells & Bottles
+        whiteRockSpellsAndBottles: {
+            header: "You are in Spells & Bottles. Who are you talking to?",
+            options: [
+                { id: "whiteRock_VaelaInkwhisper_D0", text: "Vaela Inkwhisper ☀️" },
+            ]
+        },
+            //#region Vaela Inkwhisper
+            whiteRock_VaelaInkwhisper_D0: {
+                title: "Vaela Inkwhisper",
+                header: "Mm - hold that thought. Or don't, I'm listening. Sort of. What do you need?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region The Carved Root
+        whiteRockCarvedRoot: {
+            header: "You are in the Carved Root. Who are you talking to?",
+            options: [
+                { id: "whiteRock_DwenAshbark_D0", text: "Dwen Ashbark ☀️" },
+            ]
+        },
+            //#region Dwen Ashbark
+            whiteRock_DwenAshbark_D0: {
+                title: "Dwen Ashbark",
+                header: "...Looking for a bow, or just admiring the work?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Thornside Apothecary
+        whiteRockThornsideApothecary: {
+            header: "You are in Thornside Apothecary. Who are you talking to?",
+            options: [
+                { id: "whiteRock_MabisOrvell_D0", text: "Mabis Orvell ☀️" },
+            ]
+        },
+            //#region Mabis Orvell
+            whiteRock_MabisOrvell_D0: {
+                title: "Mabis Orvell",
+                header: "Ingredients only here, dear - no finished potions. What are you working on? I like to know what my herbs are for.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region The Brass Gear
+        whiteRockBrassGear: {
+            header: "You are in the Brass Gear. Who are you talking to?",
+            options: [
+                { id: "whiteRock_AelaQuickfuse_0", text: "Aela Quickfuse (Artificer Trainer)" },
+            ]
+        },
+            //#region Aela Quickfuse
+            whiteRock_AelaQuickfuse_0: {
+                title: "Aela Quickfuse",
+                header: "Don't mind that - it's fine. Probably. Shop's up here, workshop's in back if you're serious about the craft.",
+                options: [
+                    { id: "requestTraining", text: "Request Training" },
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region Plateau Pawn & Trade
+        whiteRockPlateauPawnAndTrade: {
+            header: "You are in Plateau Pawn & Trade. Who are you talking to?",
+            options: [
+                { id: "whiteRock_SevDaltris_D0", text: "Sev Daltris ☀️" },
+            ]
+        },
+            //#region Sev Daltris
+            whiteRock_SevDaltris_D0: {
+                title: "Sev Daltris",
+                header: "Buying, selling, or just looking? I ask very few questions either way.",
+                options: [
+                    // { id: "whiteRock_SevDaltris_01", text: "Quest" },
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+                whiteRock_SevDaltris_01: {
+                    title: "Sev Daltris",
+                    header: "Quest details coming soon...",
+                    options: [
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+            //#endregion
+        //#endregion
+
+        //#region Stonecloak Leatherworks
+        whiteRockStonecloakLeatherworks: {
+            header: "You are in Stonecloak Leatherworks. Who are you talking to?",
+            options: [
+                { id: "whiteRock_Jossa_D0", text: "Jossa ☀️" },
+            ]
+        },
+            //#region Jossa
+            whiteRock_Jossa_D0: {
+                title: "Jossa",
+                header: "Light armor, custom fit, repairs - if it's leather, I can probably help. You've the look of a hunter. Am I wrong?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region The Candle & Cask
+        whiteRockCandleAndCask: {
+            header: "You are in the Candle & Cask. Who are you talking to?",
+            options: [
+                { id: "whiteRock_PettaMorley_0", text: "Petta Morley" },
+            ]
+        },
+            //#region Petta Morley
+            whiteRock_PettaMorley_0: {
+                title: "Petta Morley",
+                header: "Try the jam. Everyone tries the jam. It's sort of the rule here.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 1
+        whiteRockHouse01: {
+            header: "You are at House 1. Who are you talking to?",
+            options: [
+                { id: "whiteRock_BranAshfoot_N0", text: "Bran Ashfoot 🌙" },
+            ]
+        },
+
+            //#region Bran Ashfoot
+            whiteRock_BranAshfoot_N0: {
+                title: "Bran Ashfoot",
+                header: "Lodge business, or are you here to marvel at my collection? Either's a fine reason to stop by.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 2
+        whiteRockHouse02: {
+            header: "You are at House 2. Who are you talking to?",
+            options: [
+                { id: "whiteRock_VaelaInkwhisper_N0", text: "Vaela Inkwhisper 🌙" },
+            ]
+        },
+
+            //#region Vaela Inkwhisper
+            whiteRock_VaelaInkwhisper_N0: {
+                title: "Vaela Inkwhisper",
+                header: "Mm - hold that thought. Or don't, I'm listening. Sort of. What do you need?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 3
+        whiteRockHouse03: {
+            header: "You are at House 3. Who are you talking to?",
+            options: [
+                { id: "whiteRock_DollaVine_N0", text: "Dolla Vine 🌙" },
+            ]
+        },
+
+            //#region Dolla Vine
+            whiteRock_DollaVine_N0: {
+                title: "Dolla Vine",
+                header: "Busy night. Grab a seat if you can find one - I'll be around.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 4
+        whiteRockHouse04: {
+            header: "You are at House 4. Who are you talking to?",
+            options: [
+                { id: "whiteRock_AldousPell_N0", text: "Aldous Pell 🌙" },
+            ]
+        },
+
+            //#region Aldous Pell
+            whiteRock_AldousPell_N0: {
+                title: "Aldous Pell",
+                header: "Maps, ink, whatever you need to find your way. I've never traveled far myself, but the travelers tell me plenty.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 5
+        whiteRockHouse05: {
+            header: "You are at House 5. Who are you talking to?",
+            options: [
+                { id: "whiteRock_Prynn_N0", text: "Prynn 🌙" },
+            ]
+        },
+
+            //#region Prynn
+            whiteRock_Prynn_N0: {
+                title: "Prynn",
+                header: "Adventurer's Trinkets - if it fits in a pack and might save your life, I probably stock it. What do you need?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 6
+        whiteRockHouse06: {
+            header: "You are at House 6. Who are you talking to?",
+            options: [
+                { id: "whiteRock_Syra_N0", text: "Syra 🌙" },
+            ]
+        },
+
+            //#region Syra
+            whiteRock_Syra_N0: {
+                title: "Syra",
+                header: "The Wanderer's Satchel. Take a look - I promise there's more here than it seems.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 7
+        whiteRockHouse07: {
+            header: "You are at House 7. Who are you talking to?",
+            options: [
+                { id: "whiteRock_OswinCopperkettle_N0", text: "Oswin Copperkettle 🌙" },
+                { id: "whiteRock_WillaCopperkettle_0", text: "Willa Copperkettle" },
+                { id: "whiteRock_PipCopperkettleJr_0", text: "Pip Copperkettle Jr." },
+            ]
+        },
+
+            //#region Oswin Copperkettle
+            whiteRock_OswinCopperkettle_N0: {
+                title: "Oswin Copperkettle",
+                header: "Care to test your luck? The Tumbling Die never disappoints - well, not the house, anyway.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Willa Copperkettle
+            whiteRock_WillaCopperkettle_0: {
+                title: "Willa Copperkettle",
+                header: "Oh, hello! If you're after Oswin, he's usually at the stall. If you're after good tailoring, well, I'm right here.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Pip Copperkettle Jr.
+            whiteRock_PipCopperkettleJr_0: {
+                title: "Pip Copperkettle Jr.",
+                header: "Wanna play Three-Dragon Ante? Dad taught me. I'm really good.",
+                options: [
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 8
+        whiteRockHouse08: {
+            header: "You are at House 8. Who are you talking to?",
+            options: [
+                { id: "whiteRock_BeldOrvyn_N0", text: "Beld Orvyn 🌙" },
+                { id: "whiteRock_TanaOrvyn_0", text: "Tana Orvyn" },
+                { id: "whiteRock_MaretOrvyn_0", text: "Maret Orvyn" },
+                { id: "whiteRock_CassOrvyn_0", text: "Cass Orvyn" },
+            ]
+        },
+
+            //#region Beld Orvyn
+            whiteRock_BeldOrvyn_N0: {
+                title: "Beld Orvyn",
+                header: "Everything's labeled, everything's priced fair. Let me know if something's out of place - I'll know before you tell me, probably.",
+                options: [
+                    // { id: "whiteRock_BeldOrvyn_01", text: "Quest" },
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Tana Orvyn
+            whiteRock_TanaOrvyn_0: {
+                title: "Tana Orvyn",
+                header: "If it's about the shop, Beld's the one to ask. If it's about the numbers behind the shop, that's me.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Maret Orvyn
+            whiteRock_MaretOrvyn_0: {
+                title: "Maret Orvyn",
+                header: "I'm helping with inventory. Dad says I'm good at it. I am good at it.",
+                options: [
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Cass Orvyn
+            whiteRock_CassOrvyn_0: {
+                title: "Cass Orvyn",
+                header: "...You can't see me.",
+                options: [
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 9
+        whiteRockHouse09: {
+            header: "You are at House 9. Who are you talking to?",
+            options: [
+                { id: "whiteRock_TomasGreel_N0", text: "Tomas Greel 🌙" },
+                { id: "whiteRock_EddaGreel_0", text: "Edda Greel" },
+                { id: "whiteRock_FerrisGreel_0", text: "Ferris Greel" },
+                { id: "whiteRock_LilyGreel_0", text: "Lily Greel" },
+            ]
+        },
+
+            //#region Tomas Greel
+            whiteRock_TomasGreel_N0: {
+                title: "Tomas Greel",
+                header: "Freshest in the plaza, straight off the farm this morning! Buying, or just looking?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Edda Greel
+            whiteRock_EddaGreel_0: {
+                title: "Edda Greel",
+                header: "If you're after produce, Tomas has the stall. I just make sure there's something to sell in the first place.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Ferris Greel
+            whiteRock_FerrisGreel_0: {
+                title: "Ferris Greel",
+                header: "Don't tell my dad I'm not at the stall right now. What do you want?",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Lily Greel
+            whiteRock_LilyGreel_0: {
+                title: "Lily Greel",
+                header: "I'm going to be a knight. Not a produce seller. A knight.",
+                options: [
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 10
+        whiteRockHouse10: {
+            header: "You are at House 10. Who are you talking to?",
+            options: [
+                { id: "whiteRock_AldricBrome_N0", text: "Aldric Brome 🌙" },
+                { id: "whiteRock_SeraBrome_0", text: "Sera Brome" },
+                { id: "whiteRock_FenBrome_0", text: "Fen Brome" },
+                { id: "whiteRock_TalBrome_0", text: "Tal Brome" },
+            ]
+        },
+
+            //#region Aldric Brome
+            whiteRock_AldricBrome_N0: {
+                title: "Aldric Brome",
+                header: "Evening. Or morning, depending how your night's gone. What'll it be?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Sera Brome
+            whiteRock_SeraBrome_0: {
+                title: "Sera Brome",
+                header: "Don't mind the noise, it's practically the house's natural state. Come in, come in!",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Fen Brome
+            whiteRock_FenBrome_0: {
+                title: "Fen Brome",
+                header: "Are you a real adventurer? Tal doesn't believe you're a real adventurer.",
+                options: [
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Tal Brome
+            whiteRock_TalBrome_0: {
+                title: "Tal Brome",
+                header: "Fen says you're an adventurer. I don't believe it.",
+                options: [
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 11
+        whiteRockHouse11: {
+            header: "You are at House 11. Who are you talking to?",
+            options: [
+                { id: "whiteRock_Jossa_N0", text: "Jossa 🌙" },
+                { id: "whiteRock_DwenAshbark_N0", text: "Dwen Ashbark 🌙" },
+            ]
+        },
+
+            //#region Jossa
+            whiteRock_Jossa_N0: {
+                title: "Jossa",
+                header: "Light armor, custom fit, repairs - if it's leather, I can probably help. You've the look of a hunter. Am I wrong?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Dwen Ashbark
+            whiteRock_DwenAshbark_N0: {
+                title: "Dwen Ashbark",
+                header: "...Looking for a bow, or just admiring the work?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 12
+        whiteRockHouse12: {
+            header: "You are at House 12. Who are you talking to?",
+            options: [
+                { id: "whiteRock_MabisOrvell_N0", text: "Mabis Orvell 🌙" },
+                { id: "whiteRock_LennaAshforge_N0", text: "Lenna Ashforge 🌙" },
+            ]
+        },
+
+            //#region Mabis Orvell
+            whiteRock_MabisOrvell_N0: {
+                title: "Mabis Orvell",
+                header: "Ingredients only here, dear - no finished potions. What are you working on? I like to know what my herbs are for.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Lenna Ashforge
+            whiteRock_LennaAshforge_N0: {
+                title: "Lenna Ashforge",
+                header: "He won't stop for customers, so that's my job. What are you after?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 13
+        whiteRockHouse13: {
+            header: "You are at House 13. Who are you talking to?",
+            options: [
+                { id: "whiteRock_Garka_N0", text: "Garka 🌙" },
+                { id: "whiteRock_Rok_0", text: "Rok" },
+                { id: "whiteRock_Keva_0", text: "Keva" },
+                { id: "whiteRock_Bram_0", text: "Bram" },
+            ]
+        },
+
+            //#region Garka
+            whiteRock_Garka_N0: {
+                title: "Garka",
+                header: "Hot food, fair price, no complaints - well, none I'll listen to. What'll it be?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Rok
+            whiteRock_Rok_0: {
+                title: "Rok",
+                header: "Don't get many visitors here. Something I can help with?",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Keva
+            whiteRock_Keva_0: {
+                title: "Keva",
+                header: "...Hi.",
+                options: [
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Bram
+            whiteRock_Bram_0: {
+                title: "Bram",
+                header: "Do you know my Aunt Garka? She's the best. Are you as strong as her?",
+                options: [
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 14
+        whiteRockHouse14: {
+            header: "You are at House 14. Who are you talking to?",
+            options: [
+                { id: "whiteRock_MirraSilkhand_N0", text: "Mirra Silkhand 🌙" },
+                { id: "whiteRock_Sable_N0", text: "Sable 🌙" },
+            ]
+        },
+
+            //#region Mirra Silkhand
+            whiteRock_MirraSilkhand_N0: {
+                title: "Mirra Silkhand",
+                header: "Mm. We can do better than that. Commission, alteration, or ready-to-wear?",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Sable
+            whiteRock_Sable_N0: {
+                title: "Sable",
+                header: "Simple job, I can help. Anything complicated, you'll want Mirra. She's particular about those.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 15
+        whiteRockHouse15: {
+            header: "You are at House 15. Who are you talking to?",
+            options: [
+                { id: "whiteRock_NessaFelt_N0", text: "Nessa Felt 🌙" },
+                { id: "whiteRock_UncleCroft_0", text: "Uncle Croft" },
+                { id: "whiteRock_BrinFelt_0", text: "Brin Felt" },
+            ]
+        },
+
+            //#region Nessa Felt
+            whiteRock_NessaFelt_N0: {
+                title: "Nessa Felt",
+                header: "Something catch your eye? Bright Baubles has a little bit of everything, if you look close enough.",
+                options: [
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Uncle Croft
+            whiteRock_UncleCroft_0: {
+                title: "Uncle Croft",
+                header: "Well now! Don't believe we've met. Sit a spell, I've got stories older than the Keep itself.",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Brin Felt
+            whiteRock_BrinFelt_0: {
+                title: "Brin Felt",
+                header: "Someday I'm opening a bakery. Dolla says she'll help. You're not gonna tell me it's a silly plan, are you?",
+                options: [
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+
+        //#region House 16
+        whiteRockHouse16: {
+            header: "You are at House 16. Who are you talking to?",
+            options: [
+                { id: "whiteRock_SevDaltris_N0", text: "Sev Daltris 🌙" },
+                { id: "whiteRock_YulaOfTheNorthernPeaks_N0", text: "Yula of the Northern Peaks 🌙" },
+            ]
+        },
+
+            //#region Sev Daltris
+            whiteRock_SevDaltris_N0: {
+                title: "Sev Daltris",
+                header: "Buying, selling, or just looking? I ask very few questions either way.",
+                options: [
+                    // { id: "whiteRock_SevDaltris_01", text: "Quest" },
+                    { id: "shopping", text: "Shop" },
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+
+            //#region Yula of the Northern Peaks
+            whiteRock_YulaOfTheNorthernPeaks_N0: {
+                title: "Yula of the Northern Peaks",
+                header: "The peaks taught me not to trust quiet moments. What do you need?",
+                options: [
+                    { id: "rumors", text: "Rumors" },
+                    { id: "goodbye", text: "Goodbye.", goBack: true }
+                ]
+            },
+            //#endregion
+        //#endregion
+    //#endregion
             
-    //#endregion
-    //#region White Keep
-    whiteRockWhiteKeep: {
-        header: "You are in the White Keep. Who are you talking to?",
-        options: [
-            { id: "earthrimTownGuard", text: "Town Guard" },
-            { id: "whiteRock_Jarl_0", text: "Jarl Alrik Stonebrow" },
-            { id: "whiteRock_CalanthaSunleaf_N0", text: "Calantha Sunleaf (Cleric Trainer) 🌙" },
-            { id: "whiteRock_NyxDarkveil_N0", text: "Nyx Darkveil (Warlock Trainer) 🌙" },
-            { id: "whiteRock_DariusFireblood_N0", text: "Darius Fireblood (Sorcerer Trainer) 🌙" },
-            { id: "whiteRock_EldrinNightshade_N0", text: "Eldrin Nightshade (Wizard Trainer) 🌙" },
-            { id: "whiteRock_Pava_N0", text: "Archivist Pava 🌙" },
-            { id: "whiteRock_OrinBarkheart_N0", text: "Orin Barkheart (Druid Trainer) 🌙" },
-            { id: "whiteRock_SunMei_N0", text: "Sun Mei (Monk Trainer) 🌙" },
-            { id: "whiteRock_VesperaNightingale_N0", text: "Vespera Nightingale (Bard Trainer) 🌙" },
-            { id: "whiteRock_ThaliorDawnbringer_D0", text: "Thalior Dawnbringer (Paladin Trainer) ☀️" },
-        ]
-    },
-        //#region Jarl Alrik Stonebrow
-        whiteRock_Jarl_0: {
-            title: "Jarl Alrik Stonebrow",
-            header: "White Rock has stood through worse than a quiet season. Speak your business, traveler. I don't often have the luxury of idle conversation.",
-            options: [
-                { id: "whiteRock_Jarl_01", text: "Quest" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-        //#region Calantha Sunleaf
-        whiteRock_CalanthaSunleaf_N0: {
-            title: "Calantha Sunleaf",
-            header: "Faith and discipline both take practice. If you've come seeking one, I hope you've the patience for both.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Nyx Darkveil
-        whiteRock_NyxDarkveil_N0: {
-            title: "Nyx Darkveil",
-            header: "Every bargain has a price. Mine included. What is it you're after?",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Darius Fireblood
-        whiteRock_DariusFireblood_N0: {
-            title: "Darius Fireblood",
-            header: "Power finds those who reach for it and burns the rest. Which are you, I wonder?",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Eldrin Nightshade
-        whiteRock_EldrinNightshade_N0: {
-            title: "Eldrin Nightshade",
-            header: "Mm. A visitor. Give me a moment - or don't, and I'll simply notice you eventually.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Archivist Pava
-        whiteRock_Pava_N0: {
-            title: "Archivist Pava",
-            header: "Everything has a place. If Renn sent you back here confused, I promise it's not contagious.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Orin Barkheart
-        whiteRock_OrinBarkheart_N0: {
-            title: "Orin Barkheart",
-            header: "The land remembers longer than any of us. Sit a while, if you've the patience to listen to it.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Sun Mei
-        whiteRock_SunMei_N0: {
-            title: "Sun Mei",
-            header: "Stillness first. Then conversation. You've caught me between the two - lucky for you.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-            whiteRock_VesperaNightingale_N0: {
-            title: "Vespera Nightingale",
-            header: "Every song is a story someone was afraid to just say plainly. Care to hear one, or would you rather make one of your own?",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#region Thalior Dawnbringer
-        whiteRock_ThaliorDawnbringer_D0: {
-            title: "Thalior Dawnbringer",
-            header: "A paladin's oath is not sworn once — it's kept every day. Have you come to understand the difference?",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-    //#endregion
-
-    //#region Stables
-    whiteRockStables: {
-        header: "You are at the Stables. Who are you talking to?",
-        options: [
-            { id: "earthrimTownGuard", text: "Town Guard" },
-            { id: "whiteRock_Wrek_0", text: "Wrek the Stablemaster" },
-        ]
-    },
-        //#region Wrek
-        whiteRock_Wrek_0: {
-            title: "Wrek",
-            header: "Stables are stables. Don't mind the animals - they've got their quirks, same as anybody. Need a mount, or just passing through?",
-            options: [
-                { id: "whiteRock_Wrek_01", text: "Quest" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region The Silver Stag Inn
-    silverStagInn: {
-        header: "You are in the Silver Stag Inn. Who are you talking to?",
-        options: [
-            { id: "earthrimTownGuard", text: "Town Guard" },
-            { id: "whiteRock_MiraCallowen_0", text: "Mira Callowen" },
-            { id: "whiteRock_AldricBrome_D0", text: "Aldric Brome ☀️" },
-            { id: "whiteRock_FenwickLarks_0", text: "Fenwick Larks" },
-            { id: "whiteRock_DollaVine_D0", text: "Dolla Vine ☀️" },
-            { id: "whiteRock_Rowan_0", text: "Rowan" },
-            { id: "whiteRock_VesperaNightingale_D0", text: "Vespera Nightingale (Bard Trainer) ☀️" },
-        ]
-    },
-        //#region Mira Callowen
-        whiteRock_MiraCallowen_0: {
-            title: "Mira Callowen",
-            header: "Welcome to the Silver Stag. Drink, room, or information - I deal in all three, though the last one costs the most.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Aldric Brome
-        whiteRock_AldricBrome_D0: {
-            title: "Aldric Brome",
-            header: "Evening. Or morning, depending how your night's gone. What'll it be?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Fenwick Larks
-        whiteRock_FenwickLarks_0: {
-            title: "Fenwick Larks",
-            header: "Ah, an audience! Don't suppose you'd care to cover my tab in exchange for a request?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Dolla Vine
-        whiteRock_DollaVine_D0: {
-            title: "Dolla Vine",
-            header: "Busy night. Grab a seat if you can find one - I'll be around.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Rowan
-        whiteRock_Rowan_0: {
-            title: "Rowan",
-            header: "Need something carried, fetched, or delivered? I do odd jobs. Cheap, too - well, cheap-ish.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Vespera Nightingale
-        whiteRock_VesperaNightingale_D0: {
-            title: "Vespera Nightingale",
-            header: "Every song is a story someone was afraid to just say plainly. Care to hear one, or would you rather make one of your own?",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Temple of Dawnfire
-     whiteRockTempleOfDawnfire: {
-        header: "You are in the Temple of Dawnfire. Who are you talking to?",
-        options: [
-            { id: "whiteRock_BrotherTalan_0", text: "Brother Talan" },
-            { id: "whiteRock_SisterAuna_0", text: "Sister Auna" },
-            { id: "whiteRock_NoviceBrek_0", text: "Novice Brek" },
-            { id: "whiteRock_CalanthaSunleaf_D0", text: "Calantha Sunleaf (Cleric Trainer) ☀️" },
-            { id: "whiteRock_NyxDarkveil_D0", text: "Nyx Darkveil (Warlock Trainer) ☀️" },
-        ]
-    },
-        //#region Brother Talan
-        whiteRock_BrotherTalan_0: {
-            title: "Brother Talan",
-            header: "Dawnfire's light finds you, traveler. Forgive me, I find it easier to restart than to lose my place. What brings you to the temple?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Sister Auna
-        whiteRock_SisterAuna_0: {
-            title: "Sister Auna",
-            header: "If you're hurt, sit. If you're not, you're welcome regardless.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Novice Brek
-        whiteRock_NoviceBrek_0: {
-            title: "Novice Brek",
-            header: "Oh! Sorry - didn't hear you come in. Is there, um, something I can help with? I'm still new, but I'll try.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Calantha Sunleaf
-        whiteRock_CalanthaSunleaf_D0: {
-            title: "Calantha Sunleaf",
-            header: "Faith and discipline both take practice. If you've come seeking one, I hope you've the patience for both.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Nyx Darkveil
-        whiteRock_NyxDarkveil_D0: {
-            title: "Nyx Darkveil",
-            header: "Every bargain has a price. Mine included. What is it you're after?",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Ranger's Lodge
-   whiteRockRangersLodge: {
-        header: "You are in the Ranger's Lodge. Who are you talking to?",
-        options: [
-            { id: "whiteRock_EliraWindshot_0", text: "Elira Windshot" },
-            { id: "whiteRock_GrettaTheGrim_0", text: "Gretta the Grim" },
-            { id: "whiteRock_SornIreback_0", text: "Sorn Ireback" },
-            { id: "whiteRock_PellThornwick_0", text: "Pell Thornwick" },
-            { id: "whiteRock_DavenQuarrel_0", text: "Daven Quarrel" },
-            { id: "whiteRock_KendraWildfoot_0", text: "Kendra Wildfoot (Ranger Trainer)" },
-            { id: "whiteRock_BranAshfoot_D0", text: "Bran Ashfoot ☀️" },
-            { id: "whiteRock_YulaOfTheNorthernPeaks_D0", text: "Yula of the Northern Peaks ☀️" },
-        ]
-    },
-        //#region Elira Windshot
-        whiteRock_EliraWindshot_0: {
-            title: "Elira Windshot",
-            header: "You've the look of someone who wants something. Speak plain - we don't stand on ceremony here.",
-            options: [
-                { id: "whiteRock_EliraWindshot_01", text: "Quest" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Gretta the Grim
-        whiteRock_GrettaTheGrim_0: {
-            title: "Gretta the Grim",
-            header: "Come to trade stories, or just to gawk at the trophies? Either's fine. Mind the bear head. It's watching.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Sorn Ireback
-        whiteRock_SornIreback_0: {
-            title: "Sorn Ireback",
-            header: "Hah! New face. Sit, eat, don't take the seat at the head of the table - that one's earned.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Pell Thornwick
-        whiteRock_PellThornwick_0: {
-            title: "Pell Thornwick",
-            header: "Oh - hi! I'm still an apprentice here, so I probably can't help with much, but I can point you toward someone who can!",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Daven Quarrel
-        whiteRock_DavenQuarrel_0: {
-            title: "Daven Quarrel",
-            header: "Caught me between trips. Don't get comfortable expecting that twice.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Kendra Wildfoot
-        whiteRock_KendraWildfoot_0: {
-            title: "Kendra Wildfoot",
-            header: "Looking to learn the bow, or just admiring the trophies like everyone else?",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Bran Ashfoot
-        whiteRock_BranAshfoot_D0: {
-            title: "Bran Ashfoot",
-            header: "Lodge business, or are you here to marvel at my collection? Either's a fine reason to stop by.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Yula of the Northern Peaks
-        whiteRock_YulaOfTheNorthernPeaks_D0: {
-            title: "Yula of the Northern Peaks",
-            header: "The peaks taught me not to trust quiet moments. What do you need?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Scholar's Archive
-    whiteRockScholarsArchive: {
-        header: "You are in the Scholar's Archive. Who are you talking to?",
-        options: [
-            { id: "whiteRock_Renn_0", text: "Old Scribe Renn" },
-            { id: "whiteRock_Pava_D0", text: "Archivist Pava ☀️" },
-            { id: "whiteRock_DariusFireblood_D0", text: "Darius Fireblood (Sorcerer Trainer) ☀️" },
-            { id: "whiteRock_EldrinNightshade_D0", text: "Eldrin Nightshade (Wizard Trainer) ☀️" },
-        ]
-    },
-        //#region Old Scribe Renn
-        whiteRock_Renn_0: {
-            title: "Old Scribe Renn",
-            header: "Ah. Another one arrives right on schedule. Isn't that curious. What can this old archive do for you?",
-            options: [
-                { id: "whiteRock_Renn_01", text: "Quest" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Archivist Pava
-        whiteRock_Pava_D0: {
-            title: "Archivist Pava",
-            header: "Everything has a place. If Renn sent you back here confused, I promise it's not contagious.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Darius Fireblood
-        whiteRock_DariusFireblood_D0: {
-            title: "Darius Fireblood",
-            header: "Power finds those who reach for it and burns the rest. Which are you, I wonder?",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Eldrin Nightshade
-        whiteRock_EldrinNightshade_D0: {
-            title: "Eldrin Nightshade",
-            header: "Mm. A visitor. Give me a moment - or don't, and I'll simply notice you eventually.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Barracks
-    whiteRockBarracks: {
-        header: "You are in the Barracks. Who are you talking to?",
-        options: [
-            { id: "earthrimTownGuard", text: "Town Guard" },
-            { id: "whiteRock_SergeantDorva_0", text: "Sergeant Dorva" },
-            { id: "whiteRock_CaptainTharic_0", text: "Captain Tharic" },
-        ]
-    },
-        //#region Sergeant Dorva
-        whiteRock_SergeantDorva_0: {
-            title: "Sergeant Dorva",
-            header: "If you're here to enlist, talk to the Captain. If you're here to cause trouble, don't.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Captain Tharic
-        whiteRock_CaptainTharic_0: {
-            title: "Captain Tharic",
-            header: "State your business. We run tight here, and I don't have patience for wasted time.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Town Square
-    whiteRockTownSquare: {
-        header: "You are in the Town Square. Who are you talking to?",
-        options: [
-            { id: "earthrimTownGuard", text: "Town Guard" },
-            { id: "whiteRock_Boros_0", text: "Brave Sir Boros" },
-            { id: "whiteRock_TomasGreel_D0", text: "Tomas Greel ☀️" },
-            { id: "whiteRock_OswinCopperkettle_D0", text: "Oswin Copperkettle ☀️" },
-            { id: "whiteRock_NessaFelt_D0", text: "Nessa Felt ☀️" },
-            { id: "whiteRock_Garka_D0", text: "Garka ☀️" },
-            { id: "whiteRock_AldousPell_D0", text: "Aldous Pell ☀️" },
-            { id: "whiteRock_Syra_D0", text: "Syra ☀️" },
-            { id: "whiteRock_PipOfTheFountain_D0", text: "Pip of the Fountain ☀️" },
-        ]
-    },
-        //#region Brave Sir Boros
-        whiteRock_Boros_0: {
-            title: "Brave Sir Boros",
-            header: "Ho there! Sir Boros, at your service - defender of White Rock, scourge of villainy, and occasionally available for hire!",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Tomas Greel
-        whiteRock_TomasGreel_D0: {
-            title: "Tomas Greel",
-            header: "Freshest in the plaza, straight off the farm this morning! Buying, or just looking?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Oswin Copperkettle
-        whiteRock_OswinCopperkettle_D0: {
-            title: "Oswin Copperkettle",
-            header: "Care to test your luck? The Tumbling Die never disappoints - well, not the house, anyway.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Nessa Felt
-        whiteRock_NessaFelt_D0: {
-            title: "Nessa Felt",
-            header: "Something catch your eye? Bright Baubles has a little bit of everything, if you look close enough.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Garka
-        whiteRock_Garka_D0: {
-            title: "Garka",
-            header: "Hot food, fair price, no complaints - well, none I'll listen to. What'll it be?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Aldous Pell
-        whiteRock_AldousPell_D0: {
-            title: "Aldous Pell",
-            header: "Maps, ink, whatever you need to find your way. I've never traveled far myself, but the travelers tell me plenty.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Syra
-        whiteRock_Syra_D0: {
-            title: "Syra",
-            header: "The Wanderer's Satchel. Take a look - I promise there's more here than it seems.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Pip of the Fountain
-        whiteRock_PipOfTheFountain_D0: {
-            title: "Pip of the Fountain",
-            header: "Hear ye, hear ye! And also, hello! You look like someone who could use some news. Everyone does, really.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region The Gilded Knuckle
-    whiteRockGildedKnuckle: {
-        header: "You are in the Gilded Knuckle. Who are you talking to?",
-        options: [
-            { id: "whiteRock_Zevran_0", text: "Zevran 'Silvermask' (Rogue Trainer)" },
-            { id: "whiteRock_Donn_0", text: "Donn" },
-        ]
-    },
-        //#region Zevran 'Silvermask'
-        whiteRock_Zevran_0: {
-            title: "Zevran 'Silvermask'",
-            header: "Looking for a drink, a fight, or the sort of business that doesn't get written down? I can arrange any of the three.",
-            options: [
-                { id: "whiteRock_Zevran_01", text: "Quest" },
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Donn
-        whiteRock_Donn_0: {
-            title: "Donn",
-            header: "Drink's the only thing I sell up here. Anything else, you'd best already know who to ask.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region The Cracked Anvil
-    whiteRockCrackedAnvil: {
-        header: "You are in the Cracked Anvil. Who are you talking to?",
-        options: [
-            { id: "whiteRock_Garrik_0", text: "Garrik 'the Stubborn'" },
-            { id: "whiteRock_LennaAshforge_D0", text: "Lenna Ashforge ☀️" },
-        ]
-    },
-        //#region Garrik 'the Stubborn'
-        whiteRock_Garrik_0: {
-            title: "Garrik 'the Stubborn'",
-            header: "Best steel in White Rock, and I'll not hear otherwise. Need a blade, or just here to watch sparks fly?",
-            options: [
-                { id: "whiteRock_Garrik_01", text: "Quest" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Lenna Ashforge
-        whiteRock_LennaAshforge_D0: {
-            title: "Lenna Ashforge",
-            header: "He won't stop for customers, so that's my job. What are you after?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region BloodHunter's Hut
-    whiteRockBloodHuntersHut: {
-        header: "You are at the BloodHunter's Hut. Who are you talking to?",
-        options: [
-            { id: "whiteRock_IskanderVorn_0", text: "Iskander Vorn (Blood Hunter Trainer)" },
-        ]
-    },
-        //#region Iskander Vorn
-        whiteRock_IskanderVorn_0: {
-            title: "Iskander Vorn",
-            header: "Blood Hunters don't get many visitors who aren't already bleeding. You're either brave or lost. Which is it?",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Monk's Gazebo
-    whiteRockMonksGazebo: {
-        header: "You are at the Monk's Gazebo. Who are you talking to?",
-        options: [
-            { id: "whiteRock_SunMei_D0", text: "Sun Mei (Monk Trainer) ☀️" },
-        ]
-    },
-        //#region Sun Mei
-        whiteRock_SunMei_D0: {
-            title: "Sun Mei",
-            header: "Stillness first. Then conversation. You've caught me between the two - lucky for you.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Gardens
-    whiteRockGardens: {
-        header: "You are in the Gardens. Who are you talking to?",
-        options: [
-            { id: "whiteRock_OrinBarkheart_D0", text: "Orin Barkheart (Druid Trainer) ☀️" },
-        ]
-    },
-        //#region Orin Barkheart
-        whiteRock_OrinBarkheart_D0: {
-            title: "Orin Barkheart",
-            header: "The land remembers longer than any of us. Sit a while, if you've the patience to listen to it.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Adventurer's Trinkets
-    whiteRockAdventurersTrinkets: {
-        header: "You are in Adventurer's Trinkets. Who are you talking to?",
-        options: [
-            { id: "whiteRock_Prynn_D0", text: "Prynn ☀️" },
-        ]
-    },
-        //#region Prynn
-        whiteRock_Prynn_D0: {
-            title: "Prynn",
-            header: "Adventurer's Trinkets - if it fits in a pack and might save your life, I probably stock it. What do you need?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Dizzy Needle
-    whiteRockDizzyNeedle: {
-        header: "You are in the Dizzy Needle. Who are you talking to?",
-        options: [
-            { id: "whiteRock_MirraSilkhand_D0", text: "Mirra Silkhand ☀️" },
-            { id: "whiteRock_Sable_D0", text: "Sable ☀️" },
-        ]
-    },
-        //#region Mirra Silkhand
-        whiteRock_MirraSilkhand_D0: {
-            title: "Mirra Silkhand",
-            header: "Mm. We can do better than that. Commission, alteration, or ready-to-wear?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Sable
-        whiteRock_Sable_D0: {
-            title: "Sable",
-            header: "Simple job, I can help. Anything complicated, you'll want Mirra. She's particular about those.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region General Goods Store
-    whiteRockGeneralGoodsStore: {
-        header: "You are in the General Goods Store. Who are you talking to?",
-        options: [
-            { id: "whiteRock_BeldOrvyn_D0", text: "Beld Orvyn ☀️" },
-        ]
-    },
-        //#region Beld Orvyn
-        whiteRock_BeldOrvyn_D0: {
-            title: "Beld Orvyn",
-            header: "Everything's labeled, everything's priced fair. Let me know if something's out of place - I'll know before you tell me, probably.",
-            options: [
-                { id: "whiteRock_BeldOrvyn_01", text: "Quest" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Spells & Bottles
-    whiteRockSpellsAndBottles: {
-        header: "You are in Spells & Bottles. Who are you talking to?",
-        options: [
-            { id: "whiteRock_VaelaInkwhisper_D0", text: "Vaela Inkwhisper ☀️" },
-        ]
-    },
-        //#region Vaela Inkwhisper
-        whiteRock_VaelaInkwhisper_D0: {
-            title: "Vaela Inkwhisper",
-            header: "Mm - hold that thought. Or don't, I'm listening. Sort of. What do you need?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region The Carved Root
-    whiteRockCarvedRoot: {
-        header: "You are in the Carved Root. Who are you talking to?",
-        options: [
-            { id: "whiteRock_DwenAshbark_D0", text: "Dwen Ashbark ☀️" },
-        ]
-    },
-        //#region Dwen Ashbark
-        whiteRock_DwenAshbark_D0: {
-            title: "Dwen Ashbark",
-            header: "...Looking for a bow, or just admiring the work?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Thornside Apothecary
-    whiteRockThornsideApothecary: {
-        header: "You are in Thornside Apothecary. Who are you talking to?",
-        options: [
-            { id: "whiteRock_MabisOrvell_D0", text: "Mabis Orvell ☀️" },
-        ]
-    },
-        //#region Mabis Orvell
-        whiteRock_MabisOrvell_D0: {
-            title: "Mabis Orvell",
-            header: "Ingredients only here, dear - no finished potions. What are you working on? I like to know what my herbs are for.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region The Brass Gear
-    whiteRockBrassGear: {
-        header: "You are in the Brass Gear. Who are you talking to?",
-        options: [
-            { id: "whiteRock_AelaQuickfuse_0", text: "Aela Quickfuse (Artificer Trainer)" },
-        ]
-    },
-        //#region Aela Quickfuse
-        whiteRock_AelaQuickfuse_0: {
-            title: "Aela Quickfuse",
-            header: "Don't mind that - it's fine. Probably. Shop's up here, workshop's in back if you're serious about the craft.",
-            options: [
-                { id: "requestTraining", text: "Request Training" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Plateau Pawn & Trade
-    whiteRockPlateauPawnAndTrade: {
-        header: "You are in Plateau Pawn & Trade. Who are you talking to?",
-        options: [
-            { id: "whiteRock_SevDaltris_D0", text: "Sev Daltris ☀️" },
-        ]
-    },
-        //#region Sev Daltris
-        whiteRock_SevDaltris_D0: {
-            title: "Sev Daltris",
-            header: "Buying, selling, or just looking? I ask very few questions either way.",
-            options: [
-                { id: "whiteRock_SevDaltris_01", text: "Quest" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region Stonecloak Leatherworks
-    whiteRockStonecloakLeatherworks: {
-        header: "You are in Stonecloak Leatherworks. Who are you talking to?",
-        options: [
-            { id: "whiteRock_Jossa_D0", text: "Jossa ☀️" },
-        ]
-    },
-        //#region Jossa
-        whiteRock_Jossa_D0: {
-            title: "Jossa",
-            header: "Light armor, custom fit, repairs - if it's leather, I can probably help. You've the look of a hunter. Am I wrong?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region The Candle & Cask
-    whiteRockCandleAndCask: {
-        header: "You are in the Candle & Cask. Who are you talking to?",
-        options: [
-            { id: "whiteRock_PettaMorley_0", text: "Petta Morley" },
-        ]
-    },
-        //#region Petta Morley
-        whiteRock_PettaMorley_0: {
-            title: "Petta Morley",
-            header: "Try the jam. Everyone tries the jam. It's sort of the rule here.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 1
-    whiteRockHouse01: {
-        header: "You are at House 1. Who are you talking to?",
-        options: [
-            { id: "whiteRock_BranAshfoot_N0", text: "Bran Ashfoot 🌙" },
-        ]
-    },
-
-        //#region Bran Ashfoot
-        whiteRock_BranAshfoot_N0: {
-            title: "Bran Ashfoot",
-            header: "Lodge business, or are you here to marvel at my collection? Either's a fine reason to stop by.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 2
-    whiteRockHouse02: {
-        header: "You are at House 2. Who are you talking to?",
-        options: [
-            { id: "whiteRock_VaelaInkwhisper_N0", text: "Vaela Inkwhisper 🌙" },
-        ]
-    },
-
-        //#region Vaela Inkwhisper
-        whiteRock_VaelaInkwhisper_N0: {
-            title: "Vaela Inkwhisper",
-            header: "Mm - hold that thought. Or don't, I'm listening. Sort of. What do you need?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 3
-    whiteRockHouse03: {
-        header: "You are at House 3. Who are you talking to?",
-        options: [
-            { id: "whiteRock_DollaVine_N0", text: "Dolla Vine 🌙" },
-        ]
-    },
-
-        //#region Dolla Vine
-        whiteRock_DollaVine_N0: {
-            title: "Dolla Vine",
-            header: "Busy night. Grab a seat if you can find one - I'll be around.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 4
-    whiteRockHouse04: {
-        header: "You are at House 4. Who are you talking to?",
-        options: [
-            { id: "whiteRock_AldousPell_N0", text: "Aldous Pell 🌙" },
-        ]
-    },
-
-        //#region Aldous Pell
-        whiteRock_AldousPell_N0: {
-            title: "Aldous Pell",
-            header: "Maps, ink, whatever you need to find your way. I've never traveled far myself, but the travelers tell me plenty.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 5
-    whiteRockHouse05: {
-        header: "You are at House 5. Who are you talking to?",
-        options: [
-            { id: "whiteRock_Prynn_N0", text: "Prynn 🌙" },
-        ]
-    },
-
-        //#region Prynn
-        whiteRock_Prynn_N0: {
-            title: "Prynn",
-            header: "Adventurer's Trinkets - if it fits in a pack and might save your life, I probably stock it. What do you need?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 6
-    whiteRockHouse06: {
-        header: "You are at House 6. Who are you talking to?",
-        options: [
-            { id: "whiteRock_Syra_N0", text: "Syra 🌙" },
-        ]
-    },
-
-        //#region Syra
-        whiteRock_Syra_N0: {
-            title: "Syra",
-            header: "The Wanderer's Satchel. Take a look - I promise there's more here than it seems.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 7
-    whiteRockHouse07: {
-        header: "You are at House 7. Who are you talking to?",
-        options: [
-            { id: "whiteRock_OswinCopperkettle_N0", text: "Oswin Copperkettle 🌙" },
-            { id: "whiteRock_WillaCopperkettle_0", text: "Willa Copperkettle" },
-            { id: "whiteRock_PipCopperkettleJr_0", text: "Pip Copperkettle Jr." },
-        ]
-    },
-
-        //#region Oswin Copperkettle
-        whiteRock_OswinCopperkettle_N0: {
-            title: "Oswin Copperkettle",
-            header: "Care to test your luck? The Tumbling Die never disappoints - well, not the house, anyway.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Willa Copperkettle
-        whiteRock_WillaCopperkettle_0: {
-            title: "Willa Copperkettle",
-            header: "Oh, hello! If you're after Oswin, he's usually at the stall. If you're after good tailoring, well, I'm right here.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Pip Copperkettle Jr.
-        whiteRock_PipCopperkettleJr_0: {
-            title: "Pip Copperkettle Jr.",
-            header: "Wanna play Three-Dragon Ante? Dad taught me. I'm really good.",
-            options: [
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 8
-    whiteRockHouse08: {
-        header: "You are at House 8. Who are you talking to?",
-        options: [
-            { id: "whiteRock_BeldOrvyn_N0", text: "Beld Orvyn 🌙" },
-            { id: "whiteRock_TanaOrvyn_0", text: "Tana Orvyn" },
-            { id: "whiteRock_MaretOrvyn_0", text: "Maret Orvyn" },
-            { id: "whiteRock_CassOrvyn_0", text: "Cass Orvyn" },
-        ]
-    },
-
-        //#region Beld Orvyn
-        whiteRock_BeldOrvyn_N0: {
-            title: "Beld Orvyn",
-            header: "Everything's labeled, everything's priced fair. Let me know if something's out of place - I'll know before you tell me, probably.",
-            options: [
-                { id: "whiteRock_BeldOrvyn_01", text: "Quest" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Tana Orvyn
-        whiteRock_TanaOrvyn_0: {
-            title: "Tana Orvyn",
-            header: "If it's about the shop, Beld's the one to ask. If it's about the numbers behind the shop, that's me.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Maret Orvyn
-        whiteRock_MaretOrvyn_0: {
-            title: "Maret Orvyn",
-            header: "I'm helping with inventory. Dad says I'm good at it. I am good at it.",
-            options: [
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Cass Orvyn
-        whiteRock_CassOrvyn_0: {
-            title: "Cass Orvyn",
-            header: "...You can't see me.",
-            options: [
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 9
-    whiteRockHouse09: {
-        header: "You are at House 9. Who are you talking to?",
-        options: [
-            { id: "whiteRock_TomasGreel_N0", text: "Tomas Greel 🌙" },
-            { id: "whiteRock_EddaGreel_0", text: "Edda Greel" },
-            { id: "whiteRock_FerrisGreel_0", text: "Ferris Greel" },
-            { id: "whiteRock_LilyGreel_0", text: "Lily Greel" },
-        ]
-    },
-
-        //#region Tomas Greel
-        whiteRock_TomasGreel_N0: {
-            title: "Tomas Greel",
-            header: "Freshest in the plaza, straight off the farm this morning! Buying, or just looking?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Edda Greel
-        whiteRock_EddaGreel_0: {
-            title: "Edda Greel",
-            header: "If you're after produce, Tomas has the stall. I just make sure there's something to sell in the first place.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Ferris Greel
-        whiteRock_FerrisGreel_0: {
-            title: "Ferris Greel",
-            header: "Don't tell my dad I'm not at the stall right now. What do you want?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Lily Greel
-        whiteRock_LilyGreel_0: {
-            title: "Lily Greel",
-            header: "I'm going to be a knight. Not a produce seller. A knight.",
-            options: [
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 10
-    whiteRockHouse10: {
-        header: "You are at House 10. Who are you talking to?",
-        options: [
-            { id: "whiteRock_AldricBrome_N0", text: "Aldric Brome 🌙" },
-            { id: "whiteRock_SeraBrome_0", text: "Sera Brome" },
-            { id: "whiteRock_FenBrome_0", text: "Fen Brome" },
-            { id: "whiteRock_TalBrome_0", text: "Tal Brome" },
-        ]
-    },
-
-        //#region Aldric Brome
-        whiteRock_AldricBrome_N0: {
-            title: "Aldric Brome",
-            header: "Evening. Or morning, depending how your night's gone. What'll it be?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Sera Brome
-        whiteRock_SeraBrome_0: {
-            title: "Sera Brome",
-            header: "Don't mind the noise, it's practically the house's natural state. Come in, come in!",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Fen Brome
-        whiteRock_FenBrome_0: {
-            title: "Fen Brome",
-            header: "Are you a real adventurer? Tal doesn't believe you're a real adventurer.",
-            options: [
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Tal Brome
-        whiteRock_TalBrome_0: {
-            title: "Tal Brome",
-            header: "Fen says you're an adventurer. I don't believe it.",
-            options: [
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 11
-    whiteRockHouse11: {
-        header: "You are at House 11. Who are you talking to?",
-        options: [
-            { id: "whiteRock_Jossa_N0", text: "Jossa 🌙" },
-            { id: "whiteRock_DwenAshbark_N0", text: "Dwen Ashbark 🌙" },
-        ]
-    },
-
-        //#region Jossa
-        whiteRock_Jossa_N0: {
-            title: "Jossa",
-            header: "Light armor, custom fit, repairs - if it's leather, I can probably help. You've the look of a hunter. Am I wrong?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Dwen Ashbark
-        whiteRock_DwenAshbark_N0: {
-            title: "Dwen Ashbark",
-            header: "...Looking for a bow, or just admiring the work?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 12
-    whiteRockHouse12: {
-        header: "You are at House 12. Who are you talking to?",
-        options: [
-            { id: "whiteRock_MabisOrvell_N0", text: "Mabis Orvell 🌙" },
-            { id: "whiteRock_LennaAshforge_N0", text: "Lenna Ashforge 🌙" },
-        ]
-    },
-
-        //#region Mabis Orvell
-        whiteRock_MabisOrvell_N0: {
-            title: "Mabis Orvell",
-            header: "Ingredients only here, dear - no finished potions. What are you working on? I like to know what my herbs are for.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Lenna Ashforge
-        whiteRock_LennaAshforge_N0: {
-            title: "Lenna Ashforge",
-            header: "He won't stop for customers, so that's my job. What are you after?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 13
-    whiteRockHouse13: {
-        header: "You are at House 13. Who are you talking to?",
-        options: [
-            { id: "whiteRock_Garka_N0", text: "Garka 🌙" },
-            { id: "whiteRock_Rok_0", text: "Rok" },
-            { id: "whiteRock_Keva_0", text: "Keva" },
-            { id: "whiteRock_Bram_0", text: "Bram" },
-        ]
-    },
-
-        //#region Garka
-        whiteRock_Garka_N0: {
-            title: "Garka",
-            header: "Hot food, fair price, no complaints - well, none I'll listen to. What'll it be?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Rok
-        whiteRock_Rok_0: {
-            title: "Rok",
-            header: "Don't get many visitors here. Something I can help with?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Keva
-        whiteRock_Keva_0: {
-            title: "Keva",
-            header: "...Hi.",
-            options: [
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Bram
-        whiteRock_Bram_0: {
-            title: "Bram",
-            header: "Do you know my Aunt Garka? She's the best. Are you as strong as her?",
-            options: [
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 14
-    whiteRockHouse14: {
-        header: "You are at House 14. Who are you talking to?",
-        options: [
-            { id: "whiteRock_MirraSilkhand_N0", text: "Mirra Silkhand 🌙" },
-            { id: "whiteRock_Sable_N0", text: "Sable 🌙" },
-        ]
-    },
-
-        //#region Mirra Silkhand
-        whiteRock_MirraSilkhand_N0: {
-            title: "Mirra Silkhand",
-            header: "Mm. We can do better than that. Commission, alteration, or ready-to-wear?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Sable
-        whiteRock_Sable_N0: {
-            title: "Sable",
-            header: "Simple job, I can help. Anything complicated, you'll want Mirra. She's particular about those.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 15
-    whiteRockHouse15: {
-        header: "You are at House 15. Who are you talking to?",
-        options: [
-            { id: "whiteRock_NessaFelt_N0", text: "Nessa Felt 🌙" },
-            { id: "whiteRock_UncleCroft_0", text: "Uncle Croft" },
-            { id: "whiteRock_BrinFelt_0", text: "Brin Felt" },
-        ]
-    },
-
-        //#region Nessa Felt
-        whiteRock_NessaFelt_N0: {
-            title: "Nessa Felt",
-            header: "Something catch your eye? Bright Baubles has a little bit of everything, if you look close enough.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Uncle Croft
-        whiteRock_UncleCroft_0: {
-            title: "Uncle Croft",
-            header: "Well now! Don't believe we've met. Sit a spell, I've got stories older than the Keep itself.",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Brin Felt
-        whiteRock_BrinFelt_0: {
-            title: "Brin Felt",
-            header: "Someday I'm opening a bakery. Dolla says she'll help. You're not gonna tell me it's a silly plan, are you?",
-            options: [
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-    //#region House 16
-    whiteRockHouse16: {
-        header: "You are at House 16. Who are you talking to?",
-        options: [
-            { id: "whiteRock_SevDaltris_N0", text: "Sev Daltris 🌙" },
-            { id: "whiteRock_YulaOfTheNorthernPeaks_N0", text: "Yula of the Northern Peaks 🌙" },
-        ]
-    },
-
-        //#region Sev Daltris
-        whiteRock_SevDaltris_N0: {
-            title: "Sev Daltris",
-            header: "Buying, selling, or just looking? I ask very few questions either way.",
-            options: [
-                { id: "whiteRock_SevDaltris_01", text: "Quest" },
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-
-        //#region Yula of the Northern Peaks
-        whiteRock_YulaOfTheNorthernPeaks_N0: {
-            title: "Yula of the Northern Peaks",
-            header: "The peaks taught me not to trust quiet moments. What do you need?",
-            options: [
-                { id: "rumors", text: "Rumors" },
-                { id: "goodbye", text: "Goodbye.", goBack: true }
-            ]
-        },
-        //#endregion
-    //#endregion
-
-
-//#endregion
 }
 
 const rumorDialogueOptions = {
@@ -4485,24 +4728,15 @@ const rumorDialogueOptions = {
     28: "Keep your eyes out for gargoyles. They like to perch on rooftops and swoop down on travelers.",
     29: "A group of travelers reported a stretch of road where the trees seemed to lean the wrong way, like something enormous had pushed through recently. No tracks, no broken branches.",
     30: "A merchant lost half his cargo to what he swears was a gelatinous ooze that squeezed under his cellar door and dissolved everything it touched by morning.",
-    31: "",
-    32: "",
-    33: "",
-    34: "",
-    35: "",
-    36: "",
-    37: "",
-    38: "",
-    39: "",
-    40: "",
-    41: "",
-    42: "",
-    43: "",
-    44: "",
-    45: "",
-    46: "",
-    47: "",
-    48: "",
-    49: "",
-    50: ""
+    31: "They say that demons and devils are not the same thing. I don't really care. So long as they die in the end I sleep soundly at night.",
+    32: "I heard there is a dungeon in Arezoth where a bad guy has settled. I wonder if anyone has taken care of him yet.",
+    33: "There is a palace in the eastern mountain range of the Epic Lands. I hear it is where the greatest of adventurers go to earn the most powerful loot.",
+    34: "What is it? Dragons?",
+    35: "Travelers say dragon sightings are most common in the north west mountain range of Earthrim. Haven't been there myself to confirm.",
+    36: "Two unrelated families both had children born on the same stormy night, both marked with an identical birthmark. Nobody's sure what, if anything, it means.",
+    37: "Someone pointed out that the last three strangers to cause trouble in town all shared the same first name. The locals have started treating it as a bad omen.",
+    38: "I heard from a stranger once that illithid can be found in the deepest parts of the Underdark. Certainly don't plan to go down there anytime.",
+    39: "If you're heading out during sundown, carry something that burns bright. Most things that hunt at night don't like fire and the ones that do are worse news anyway.",
+    40: "Iron works better than steel against certain fey. An old ranger trick, but it's saved more than one traveler's skin out past the hedgerows.",
+    41: "A fortune teller once told me that I will be wearing red shoes the day I meet my true love."
 }
