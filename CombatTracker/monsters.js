@@ -4,121 +4,121 @@
 
 // YOUR EXISTING DATA
 const monstersLocal = [
-    { // templateMonster
-        ID: 0,
-        ProfileType: "Monster",
-        Name: "template",
-        Type: "Size type, alignment",
-        Source: "Monster Manual",
-        HitPoints: 1,
-        HitPointsRoll: "#d# + #",
-        ArmorClass: [10, "natural armor"],
-        Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 10,
-        Constitution: 10,
-        Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: ["Strength +5", "Dexterity +5", "Constitution +5", "Intelligence +5", "Wisdom +5", "Charisma +5"],
-        Skills: ["Athletics +5", "Acrobatics +5", "Sleight of Hand +5", "Stealth +5", "Arcana +5", "History +5", "Investigation +5", 
-            "Nature +5", "Religion +5", "Animal Handling +5", "Insight +5", "Medicine +5", "Persuasion +5", "Deception +5", 
-            "Intimidation +5", "Performance +5", "Survival +5"],
-        DamageVulnerabilities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-            "Bludgeoning", "Piercing", "Slashing"],
-        DamageResistances: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-            "Bludgeoning", "Piercing", "Slashing", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
-        DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-            "Bludgeoning", "Piercing", "Slashing", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
-        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened", "Grappled", "Incapacitated", "Invisible", "Paralyzed", 
-            "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
-        Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Tremorsense 60 ft.", "Passive Perception 10"],
-        Languages: ["Common", "Draconic", "Elvish", "Dwarvish", "Infernal", "Celestial", "Giant", "Gnomish", "Halfling", "Orc", 
-            "Sylvan", "Abyssal", "Undercommon", "Deep Speech", "Primordial", "Goblin", "Gnoll", "Celestial", "Elvish", "Thieves' Cant", 
-            "Giant", "Draconic", "Aquan", "Ignan", "Terran", "Auran", "Celestial", "Sylvan", "Telepathy 120 ft."],
-        Challenge: [1, 200],
-        ExtraRewards: "",
-        Traits: [
-            {
-                Title: "Trait One",
-                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-                Title: "Trait Two",
-                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-                Title: "Trait Three",
-                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-        ],
-        Actions: [
-            {
-                Title: "Multiattack",
-                Desc: "The creature makes two attacks: one with its 'Action Two' and one with its 'Action Three'."
-            },
-            {
-                Title: "Action Two",
-                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 5) slashing damage."
-            },
-            {
-                Title: "Action Three (Recharge 5-6)",
-                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (2d8 + 5) piercing damage. " +
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-        ],
-        Reactions: [
-            {
-                Title: "Reaction One",
-                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-        ],
-        LegendaryActions: [
-            {
-                Title: "Attack",
-                Desc: "The creature makes one 'Action Two' attack."
-            },
-            {
-                Title: "Big Attack (Costs 2 Actions)",
-                Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-        ],
-        LairActions: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of 11 or higher, the [template] " +
-                "takes a lair action to cause one of the following effects. It can't use the same effect two rounds in a row. ",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-                "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        ],
-        Description: "Description here"
-    },
+    // { // templateMonster
+    //     ID: 0,
+    //     ProfileType: "Monster",
+    //     Name: "template",
+    //     Type: "Size type, alignment",
+    //     Source: "Monster Manual",
+    //     HitPoints: 1,
+    //     HitPointsRoll: "#d# + #",
+    //     ArmorClass: [10, "natural armor"],
+    //     Speed: ["30 ft."],
+    //     Strength: 10,
+    //     Dexterity: 10,
+    //     Constitution: 10,
+    //     Intelligence: 10,
+    //     Wisdom: 10,
+    //     Charisma: 10,
+    //     SavingThrows: ["Strength +5", "Dexterity +5", "Constitution +5", "Intelligence +5", "Wisdom +5", "Charisma +5"],
+    //     Skills: ["Athletics +5", "Acrobatics +5", "Sleight of Hand +5", "Stealth +5", "Arcana +5", "History +5", "Investigation +5", 
+    //         "Nature +5", "Religion +5", "Animal Handling +5", "Insight +5", "Medicine +5", "Persuasion +5", "Deception +5", 
+    //         "Intimidation +5", "Perception +5", "Performance +5", "Survival +5"],
+    //     DamageVulnerabilities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+    //         "Bludgeoning", "Piercing", "Slashing"],
+    //     DamageResistances: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+    //         "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+    //     DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+    //         "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+    //     ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Invisible", "Paralyzed", 
+    //         "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
+    //     Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Tremorsense 60 ft.", "Passive Perception 10"],
+    //     Languages: ["All", "Common", "Draconic", "Elvish", "Dwarvish", "Infernal", "Celestial", "Giant", "Gnomish", "Halfling", "Orc", 
+    //         "Sylvan", "Abyssal", "Undercommon", "Deep Speech", "Primordial", "Goblin", "Gnoll", "Celestial", "Elvish", "Thieves' Cant", 
+    //         "Giant", "Draconic", "Aquan", "Ignan", "Terran", "Auran", "Celestial", "Sylvan", "Telepathy 120 ft."],
+    //     Challenge: [1, 200],
+    //     ExtraRewards: "",
+    //     Traits: [
+    //         {
+    //             Title: "Trait One",
+    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    //         },
+    //         {
+    //             Title: "Trait Two",
+    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    //         },
+    //         {
+    //             Title: "Trait Three",
+    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    //         }
+    //     ],
+    //     Actions: [
+    //         {
+    //             Title: "Multiattack",
+    //             Desc: "The creature makes two attacks: one with its 'Action Two' and one with its 'Action Three'."
+    //         },
+    //         {
+    //             Title: "Action Two",
+    //             Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 5) slashing damage."
+    //         },
+    //         {
+    //             Title: "Action Three (Recharge 5-6)",
+    //             Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (2d8 + 5) piercing damage. " +
+    //             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    //         }
+    //     ],
+    //     Reactions: [
+    //         {
+    //             Title: "Reaction One",
+    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    //         }
+    //     ],
+    //     LegendaryActions: [
+    //         {
+    //             Title: "Attack",
+    //             Desc: "The creature makes one 'Action Two' attack."
+    //         },
+    //         {
+    //             Title: "Big Attack (Costs 2 Actions)",
+    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    //         }
+    //     ],
+    //     LairActions: [
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    //         "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of 11 or higher, the [template] " +
+    //             "takes a lair action to cause one of the following effects. It can't use the same effect two rounds in a row. ",
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
+    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
+    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
+    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    //     ],
+    //     Description: "Description here"
+    // },
     {
         ID: 1,
         ProfileType: "Monster",
@@ -242,11 +242,11 @@ const monstersLocal = [
         LairActions: ["When fighting inside its lair, an aboleth can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the aboleth takes a lair action to cause one of the following effects:", "The aboleth casts phantasmal force (no components required) on any number of creatures it can see within 60 feet of it. While maintaining concentration on this effect, the aboleth can't take other lair actions. If a target succeeds on the saving throw or if the effect ends for it, the target is immune to the aboleth's phantasmal force lair action for the next 24 hours, although such a creature can choose to be affected.", " Pools of water within 90 feet of the aboleth surge outward in a grasping tide. Any creature on the ground within 20 feet of such a pool must succeed on a DC 14 Strength saving throw or be pulled up to 20 feet into the water and knocked prone. The aboleth can't use this lair action again until it has used a different one.", "Water in the aboleth's lair magically becomes a conduit for the creature's rage. The aboleth can target any number of creatures it can see in such water within 90 feet of it. A target must succeed on a DC 14 Wisdom saving throw or take 7 (2d6) psychic damage. The aboleth can't use this lair action again until it has used a different one."],
         Description: "Description here"
     },
-    {
+    { // Deva
         ID: 3,
         ProfileType: "Monster",
         Name: "Deva",
-        Type: "Medium Celestial, lawful good",
+        Type: "Medium celestial, lawful good",
         Source: "Monster Manual",
         HitPoints: 136,
         HitPointsRoll: "16d8 + 64",
@@ -305,84 +305,93 @@ const monstersLocal = [
         LairActions: [],
         Description: "Description here"
     },
-    {
+    { // Planetar
         ID: 5,
         ProfileType: "Monster",
         Name: "Planetar",
-        Type: "Size type, alignment",
+        Type: "Large celestial, lawful good ",
         Source: "Monster Manual",
         HitPoints: 200,
         HitPointsRoll: "16d10 + 112",
-        ArmorClass: [10, "natural armor"],
+        ArmorClass: [19, "natural armor"],
         Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 10,
-        Constitution: 10,
-        Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [1, 200],
+        Strength: 24,
+        Dexterity: 20,
+        Constitution: 24,
+        Intelligence: 19,
+        Wisdom: 22,
+        Charisma: 25,
+        SavingThrows: ["Constitution +12", "Wisdom +11", "Charisma +12"],
+        Skills: ["Perception +11"],
+        DamageResistances: ["Radiant", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+        DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+            "Bludgeoning", "Piercing", "Slashing", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+        ConditionImmunities: ["Charmed", "Exhaustion, Frightened"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 21"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [16, 15000],
         ExtraRewards: "1 Pearl (1d10 = 4-10)",
         Traits: [
             {
-                Title: "",
-                Desc: ""
+                Title: "Angelic Weapons",
+                Desc: "The planetar's weapon attacks are magical. When the planetar hits with any weapon, the weapon deals an extra 5d8 radiant damage (included in the attack)."
+            },
+            {
+                Title: "Divine Awareness",
+                Desc: "The planetar knows if it hears a lie."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The planetar's spellcasting ability is Charisma (spell save DC 20). The planetar can innately cast the following spells, requiring no material components: At will: detect evil and good, invisiblity (self only) 3/day each: blade barrier, dispel evil and good, flame strike, raise dead 1/day each: commune, control weather, insect plague"
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The planetar has advantage on saving throws against spells and other magical effects."
             }
         ],
         Actions: [
             {
-                Title: "",
-                Desc: ""
-            }
-        ],
-        Reactions: [
+                Title: "Multiattack",
+                Desc: "The planetar makes two melee attacks."
+            },
             {
-                Title: "",
-                Desc: ""
-            }
-        ],
-        LegendaryActions: [
+                Title: "Greatsword",
+                Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 21 (4d6 + 7) slashing damage plus 22 (5d8) radiant damage. "
+            },
             {
-                Title: "",
-                Desc: ""
+                Title: "Healing Touch (4/day).",
+                Desc: "The planetar touches another creature. The target magically regains 30 (6d8 + 3) hit points and is freed from any curse, disease, poison, blindness, or deafness."
             }
         ],
+        Reactions: [],
+        LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Planetars are muscular and hairless and have opalescent green skin and white-feathered wings. They tower over most humanoids, brandishing immense swords with grace. Sometimes sent to aid powerful mortals on important tasks for good, planetars are especially fond of missions that involve battling fiends"
     },
-    {
+    { // Solar
         ID: 6,
         ProfileType: "Monster",
         Name: "Solar",
-        Type: "Size type, alignment",
+        Type: "Large celestial, lawful good ",
         Source: "Monster Manual",
         HitPoints: 243,
         HitPointsRoll: "18d10 + 144",
-        ArmorClass: [10, "natural armor"],
+        ArmorClass: [21, "natural armor"],
         Speed: ["30 ft."],
-        Strength: 8,
-        Dexterity: 10,
-        Constitution: 10,
-        Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [1, 200],
+        Strength: 26,
+        Dexterity: 22,
+        Constitution: 26,
+        Intelligence: 25,
+        Wisdom: 25,
+        Charisma: 30,
+        SavingThrows: ["Intelligence +11", "Wisdom +14", "Charisma +17"],
+        Skills: ["Perception +14"],
+        DamageResistances: ["Radiant", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+        DamageImmunities: ["Necrotic", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 24"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [21, 33000],
         ExtraRewards: "1 Diamond",
         Traits: [
             {
@@ -23248,10 +23257,41 @@ const uniqueLocal = [
 ];
 
 const playersLocal = [
-    { // templatePlayer
-        ID: 1000000,
+    // { // templatePlayer
+    //     ID: 1000000,
+    //     ProfileType: "Player",
+    //     Name: "CharacterName (RealLifeName)",
+    //     Type: "Medium humanoid(), alignment",
+    //     Source: "Player's Handbook",
+    //     HitPoints: 1,
+    //     HitPointsRoll: "",
+    //     ArmorClass: [10, "natural armor"],
+    //     Speed: ["30 ft."],
+    //     Strength: 10,
+    //     Dexterity: 10,
+    //     Constitution: 10,
+    //     Intelligence: 10,
+    //     Wisdom: 10,
+    //     Charisma: 10,
+    //     SavingThrows: [],
+    //     Skills: [],
+    //     DamageVulnerabilities: [],
+    //     DamageResistances: [],
+    //     DamageImmunities: [],
+    //     ConditionImmunities: [],
+    //     Senses: [],
+    //     Languages: [],
+    //     Challenge: [1, 200],
+    //     Traits: [],
+    //     Actions: [],
+    //     Reactions: [],
+    //     LegendaryActions: [],
+    //     Description: "Description here"
+    // },
+    { // Adam
+        ID: 1000001,
         ProfileType: "Player",
-        Name: "RealLifeName (CharacterName)",
+        Name: "CharacterName (Adam)",
         Type: "Medium humanoid(), alignment",
         Source: "Player's Handbook",
         HitPoints: 1,
@@ -23279,10 +23319,165 @@ const playersLocal = [
         LegendaryActions: [],
         Description: "Description here"
     },
-    {
-        ID: 1000001,
+    { // Vincent
+        ID: 1000002,
         ProfileType: "Player",
-        Name: "Adam (CharacterName)",
+        Name: "CharacterName (Vincent)",
+        Type: "Medium humanoid(), alignment",
+        Source: "Player's Handbook",
+        HitPoints: 1,
+        HitPointsRoll: "",
+        ArmorClass: [10, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: [],
+        Languages: [],
+        Challenge: [1, 200],
+        Traits: [],
+        Actions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        Description: "Description here"
+    },
+    { // Austin Yingling
+        ID: 1000003,
+        ProfileType: "Player",
+        Name: "CharacterName (Austin Yingling)",
+        Type: "Medium humanoid(), alignment",
+        Source: "Player's Handbook",
+        HitPoints: 1,
+        HitPointsRoll: "",
+        ArmorClass: [10, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: [],
+        Languages: [],
+        Challenge: [1, 200],
+        Traits: [],
+        Actions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        Description: "Description here"
+    },
+    { // Austin Dwiggins
+        ID: 1000004,
+        ProfileType: "Player",
+        Name: "CharacterName (Austin Dwiggins)",
+        Type: "Medium humanoid(), alignment",
+        Source: "Player's Handbook",
+        HitPoints: 1,
+        HitPointsRoll: "",
+        ArmorClass: [10, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: [],
+        Languages: [],
+        Challenge: [1, 200],
+        Traits: [],
+        Actions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        Description: "Description here"
+    },
+    { // Solomon
+        ID: 1000005,
+        ProfileType: "Player",
+        Name: "Freman (Solomon)",
+        Type: "Medium humanoid(), alignment",
+        Source: "Player's Handbook",
+        HitPoints: 1,
+        HitPointsRoll: "",
+        ArmorClass: [10, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: [],
+        Languages: [],
+        Challenge: [1, 200],
+        Traits: [],
+        Actions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        Description: "Description here"
+    },
+    { // Kevin
+        ID: 1000006,
+        ProfileType: "Player",
+        Name: "John (Kevin)",
+        Type: "Medium humanoid(), alignment",
+        Source: "Player's Handbook",
+        HitPoints: 1,
+        HitPointsRoll: "",
+        ArmorClass: [10, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: [],
+        Languages: [],
+        Challenge: [1, 200],
+        Traits: [],
+        Actions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        Description: "Description here"
+    },
+    { // Jonah
+        ID: 1000007,
+        ProfileType: "Player",
+        Name: "Rooking (Jonah)",
         Type: "Medium humanoid(), alignment",
         Source: "Player's Handbook",
         HitPoints: 1,

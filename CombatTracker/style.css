@@ -60,9 +60,83 @@ body{
     }
 
     #search-container{
+        position: relative;
+        width: 80%;
+        margin-top: 6px;
+        margin-bottom: 6px;
         margin-left: auto;
         margin-right: auto;
     }
+
+        #search-container #library-search{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #search-actions{
+            margin-top: 6px;
+            display: flex;
+            gap: 6px;
+        }
+
+        #search-actions button{
+            flex: 1;
+            font-size: 10pt;
+            padding: 4px 6px;
+        }
+
+        #filter-modal{
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            width: 100%;
+            z-index: 20;
+        }
+
+        #filter-modal.open{
+            display: block;
+        }
+
+        #filter-modal-content{
+            background-color: rgb(255, 246, 220);
+            border: 1px solid rgb(139, 113, 58);
+            box-shadow: 0 4px 8px rgba(0,0,0,.25);
+            border-radius: 4px;
+            padding: 8px;
+            max-height: 180px;
+            overflow-y: auto;
+        }
+
+        #filter-modal-title{
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        #filter-options{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .filter-bulk-actions{
+            display: flex;
+            gap: 6px;
+            margin-bottom: 6px;
+        }
+
+        .filter-bulk-actions button{
+            flex: 1;
+            font-size: 9pt;
+            padding: 3px 6px;
+        }
+
+        .filter-option{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 10pt;
+        }
     
         input{
             font-size: 14pt;
@@ -243,6 +317,114 @@ body{
     .close-container{
         margin-left: 90px;
     }
+
+#roll-init-modal-content{
+    background-color: #fefefe;
+    margin: 4vh auto;
+    border: 1px solid #888;
+    width: 50vw;
+    height: 80%;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.roll-init-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.roll-init-close{
+    font-size: 20pt;
+    line-height: 1;
+    padding: 2px 10px;
+}
+
+#roll-init-columns{
+    display: flex;
+    gap: 14px;
+    flex: 1;
+    min-height: 0;
+}
+
+.roll-init-column{
+    border: 1px solid #b5b5b5;
+    background-color: #fafafa;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.roll-init-players-column{
+    width: 40%;
+}
+
+.roll-init-npc-column{
+    width: 60%;
+}
+
+.roll-init-list{
+    overflow-y: auto;
+    margin-top: 6px;
+    padding-right: 4px;
+}
+
+.roll-init-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 4px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.roll-init-name{
+    font-size: 12pt;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.roll-init-input{
+    width: 88px;
+    font-size: 12pt;
+}
+
+.roll-init-controls{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.roll-init-arrow{
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    font-size: 12pt;
+    line-height: 1;
+}
+
+.roll-init-empty{
+    color: #666;
+    font-style: italic;
+}
+
+.roll-init-footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#set-initiatives-btn{
+    font-size: 12pt;
+    padding: 6px 12px;
+}
 
         .close {
             color: #aaa;

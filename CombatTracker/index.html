@@ -11,6 +11,8 @@
     <div id="toolbar">
         <div id="toolbar-top">
             <button type="button" onclick="clearCombatOrder()">Clear Board</button>
+            <button id="roll-initiatives-btn" type="button">Roll Initiatives</button>
+            <button type="button" onclick="reassignInitiativesByGroup()">Re-Assign Initiatives</button>
         </div>
         <div id="toolbar-bottom">
             <button type="button" onclick="removeAllMonsters()">Remove All Monsters</button>
@@ -35,7 +37,17 @@
                     </div>
                 </div>
                 <div id='search-container'>
-                    <input type="text" placeholder="search...">
+                    <input id="library-search" type="text" placeholder="search...">
+                    <div id="search-actions">
+                        <button id="clear-search-btn" type="button" onclick="clearLibrarySearch()">Clear</button>
+                        <button id="filters-btn" type="button" onclick="toggleFilterModal()">Filters</button>
+                    </div>
+                    <div id="filter-modal" aria-hidden="true">
+                        <div id="filter-modal-content">
+                            <p id="filter-modal-title">Filter Types</p>
+                            <div id="filter-options"></div>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <!-- <div>
@@ -85,14 +97,6 @@
                             <p id="profile-hitpoints" class="text-md">Hit Points</p>
                             <p id="profile-speed" class="text-md">Speed</p>
                             <table id="profile-attributes">
-                                <!-- <tr>
-                                    <td>STR</td>
-                                    <td>DEX</td>
-                                    <td>CON</td>
-                                    <td>INT</td>
-                                    <td>WIS</td>
-                                    <td>CHA</td>
-                                </tr> -->
                                 <tr>
                                     <td id="profile-str" class="text-sm">STR +10</td>
                                     <td id="profile-dex" class="text-sm">DEX +10</td>
@@ -175,6 +179,29 @@
             <div class="close-container">
                 <div class="checkmark">&#10004;</div>
                 <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for rolling initiatives in bulk -->
+    <div id="rollInitModal" class="modal">
+        <div id="roll-init-modal-content">
+            <div class="roll-init-header">
+                <h2>Roll Initiatives</h2>
+                <button id="roll-init-close-btn" type="button" class="roll-init-close">&times;</button>
+            </div>
+            <div id="roll-init-columns">
+                <div class="roll-init-column roll-init-players-column">
+                    <h3>Players</h3>
+                    <div id="roll-init-player-list" class="roll-init-list"></div>
+                </div>
+                <div class="roll-init-column roll-init-npc-column">
+                    <h3>Monsters and Unique</h3>
+                    <div id="roll-init-npc-list" class="roll-init-list"></div>
+                </div>
+            </div>
+            <div class="roll-init-footer">
+                <button type="button" id="set-initiatives-btn">Set Initiative</button>
             </div>
         </div>
     </div>

@@ -17,10 +17,185 @@ var combatOrder = [];
 var currentHP = 0;
 var idName = 'monster';
 var idCount = 0;
+var currentLibraryType = 'monsters';
+var typeFilterState = {
+    monsters: {},
+    unique: {},
+    players: {}
+};
+var typeFilterInitialized = {
+    monsters: false,
+    unique: false,
+    players: false
+};
 
 $(document).ready(function() {
     $("#profile-content").hide();
+
+    $("#library-search").on("input", function() {
+        populateLibrary(currentLibraryType);
+    });
+
+    $(document).on("click", function(event) {
+        let modal = document.getElementById("filter-modal");
+        let button = document.getElementById("filters-btn");
+
+        if (!modal || !button) {
+            return;
+        }
+
+        let clickedInsideModal = modal.contains(event.target);
+        let clickedFilterButton = button.contains(event.target);
+
+        if (!clickedInsideModal && !clickedFilterButton) {
+            modal.classList.remove("open");
+            modal.setAttribute("aria-hidden", "true");
+        }
+    });
+
+    $("#roll-initiatives-btn").on("click", openRollInitiativesModal);
+    $("#roll-init-close-btn").on("click", closeRollInitiativesModal);
+    $("#set-initiatives-btn").on("click", setInitiativesFromModal);
+    $("#rollInitModal").on("click", handleRollInitModalBackgroundClick);
 });
+
+function getFilterTypeLabel(typeText) {
+    if (typeof typeText !== "string" || typeText.trim() === "") {
+        return "Unknown";
+    }
+
+    let baseLabel = typeText.split(",")[0].trim();
+    baseLabel = baseLabel.replace(/^(tiny|small|medium|large|huge|gargantuan)\s+/i, "").trim();
+
+    if (!baseLabel || /^size\s*type$/i.test(baseLabel) || /^type$/i.test(baseLabel)) {
+        return "Unknown";
+    }
+
+    return baseLabel;
+}
+
+function getLibraryTypeMap(libraryType) {
+    let typeMap = {};
+    let creatureArray = DB[libraryType] || [];
+
+    for (let i = 0; i < creatureArray.length; i++) {
+        let label = getFilterTypeLabel(creatureArray[i].Type);
+        if (label === "Unknown") {
+            continue;
+        }
+
+        let key = label.toLowerCase();
+
+        if (typeMap[key] === undefined) {
+            typeMap[key] = label;
+        }
+    }
+
+    return typeMap;
+}
+
+function ensureLibraryFiltersInitialized(libraryType) {
+    let typeMap = getLibraryTypeMap(libraryType);
+    let filterState = typeFilterState[libraryType];
+
+    if (!filterState) {
+        return;
+    }
+
+    if (!typeFilterInitialized[libraryType]) {
+        Object.keys(typeMap).forEach(function(typeKey) {
+            filterState[typeKey] = true;
+        });
+        typeFilterInitialized[libraryType] = true;
+        return;
+    }
+
+    Object.keys(typeMap).forEach(function(typeKey) {
+        if (filterState[typeKey] === undefined) {
+            filterState[typeKey] = true;
+        }
+    });
+}
+
+function renderFilterOptions(libraryType) {
+    ensureLibraryFiltersInitialized(libraryType);
+
+    let typeMap = getLibraryTypeMap(libraryType);
+    let filterState = typeFilterState[libraryType] || {};
+    let container = document.getElementById("filter-options");
+
+    if (!container) {
+        return;
+    }
+
+    container.innerHTML = "";
+
+    let typeKeys = Object.keys(typeMap).sort(function(a, b) {
+        return typeMap[a].localeCompare(typeMap[b]);
+    });
+
+    let bulkActions = document.createElement("div");
+    bulkActions.classList.add("filter-bulk-actions");
+
+    let selectAllBtn = document.createElement("button");
+    selectAllBtn.type = "button";
+    selectAllBtn.textContent = "Select All";
+    selectAllBtn.addEventListener("click", function() {
+        for (let i = 0; i < typeKeys.length; i++) {
+            filterState[typeKeys[i]] = true;
+        }
+        populateLibrary(currentLibraryType);
+    });
+
+    let selectNoneBtn = document.createElement("button");
+    selectNoneBtn.type = "button";
+    selectNoneBtn.textContent = "Select None";
+    selectNoneBtn.addEventListener("click", function() {
+        for (let i = 0; i < typeKeys.length; i++) {
+            filterState[typeKeys[i]] = false;
+        }
+        populateLibrary(currentLibraryType);
+    });
+
+    bulkActions.appendChild(selectAllBtn);
+    bulkActions.appendChild(selectNoneBtn);
+    container.appendChild(bulkActions);
+
+    for (let i = 0; i < typeKeys.length; i++) {
+        let typeKey = typeKeys[i];
+        let wrapper = document.createElement("label");
+        wrapper.classList.add("filter-option");
+
+        let checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.checked = filterState[typeKey] !== false;
+        checkbox.addEventListener("change", function() {
+            filterState[typeKey] = checkbox.checked;
+            populateLibrary(currentLibraryType);
+        });
+
+        let text = document.createElement("span");
+        text.textContent = typeMap[typeKey];
+
+        wrapper.appendChild(checkbox);
+        wrapper.appendChild(text);
+        container.appendChild(wrapper);
+    }
+}
+
+function toggleFilterModal() {
+    let modal = document.getElementById("filter-modal");
+    if (!modal) {
+        return;
+    }
+
+    let isOpen = modal.classList.toggle("open");
+    modal.setAttribute("aria-hidden", isOpen ? "false" : "true");
+
+    if (isOpen) {
+        renderFilterOptions(currentLibraryType);
+    }
+}
 
 function removeAllMonsters() {
     let toRemove = [];
@@ -62,23 +237,51 @@ function removeAllPlayers() {
 }
 
 function populateLibrary(libraryType = 'monsters') {
+    currentLibraryType = libraryType;
+    ensureLibraryFiltersInitialized(libraryType);
+
     // console.log('libraryType = ' + libraryType);
     let monsterArray = DB[libraryType];
+    let filterState = typeFilterState[libraryType] || {};
+    let searchInput = document.getElementById("library-search");
+    let searchText = searchInput ? searchInput.value.trim().toLowerCase() : "";
+
+    monsterArray = monsterArray.filter(creature => {
+        let typeKey = getFilterTypeLabel(creature.Type).toLowerCase();
+        return filterState[typeKey] !== false;
+    });
+
+    if (searchText) {
+        monsterArray = monsterArray.filter(creature => creature.Name.toLowerCase().includes(searchText));
+    }
+
     // console.log("monsterArray = " + JSON.stringify(monsterArray));
     document.getElementById("library-list").innerHTML = "";
 
     for (let x=0;x<monsterArray.length;x++) {
         let list = document.getElementById("library-list");
         let li = document.createElement("li");
-        let div = document.createElement("div");
         li.classList.add("monster-profile");
-        let onclickName = "addToCombat('" + monsterArray[x].Name + "', '" + libraryType + "')";
-        li.setAttribute("onclick", onclickName);
+        li.addEventListener("click", function() {
+            addToCombat(monsterArray[x].Name, libraryType);
+        });
         let text = document.createTextNode(monsterArray[x].Name);
         li.appendChild(text);
         list.appendChild(li);
     }
+
+    renderFilterOptions(libraryType);
     // console.log("populateLibrary() worked!!!");
+}
+
+function clearLibrarySearch() {
+    let searchInput = document.getElementById("library-search");
+    if (!searchInput) {
+        return;
+    }
+
+    searchInput.value = "";
+    populateLibrary(currentLibraryType);
 }
 
 // Will need to rework the logic for the parent forin loop
@@ -813,12 +1016,248 @@ function clearCombatOrder(){
     combatOrder = [];
     $('#combat-table').empty().html(
         `<tr>
+            <th style="width: 50px">Tier</th>
             <th style="width: 50px">#</th>
             <th style="width: 275px">Name</th>
             <th style="width: 75px">HP</th>
             <th style="width: 75px">AC</th>
             <th style="width: 50px">X</th>
         </tr>`);
+}
+
+function handleRollInitModalBackgroundClick(event) {
+    if (event.target && event.target.id === "rollInitModal") {
+        closeRollInitiativesModal();
+    }
+}
+
+function getCreatureLibraryByProfileType(profileType) {
+    if (profileType === "Monster") {
+        return monstersLocal;
+    }
+
+    if (profileType === "Unique") {
+        return uniqueLocal;
+    }
+
+    if (profileType === "Player") {
+        return playersLocal;
+    }
+
+    return [];
+}
+
+function getBaseCreatureName(creatureName) {
+    return String(creatureName || "").replace(/\s+\d+$/, "").trim();
+}
+
+function rerollAllInitiativesInCombatOrder() {
+    for (let i = 0; i < combatOrder.length; i++) {
+        let creature = combatOrder[i];
+        let creatureName = getBaseCreatureName(creature[2]);
+        let creatureLibrary = getCreatureLibraryByProfileType(creature[7]);
+        let currentInit = Number(creature[1]) || 0;
+        let dexModifier = 0;
+
+        let sourceCreature = creatureLibrary.find(function(entry) {
+            return entry.Name === creatureName;
+        });
+
+        if (sourceCreature) {
+            let dexterity = Number(sourceCreature.Dexterity) || 10;
+            dexModifier = Math.floor((dexterity - 10) / 2);
+        }
+
+        let newInit = Math.floor((Math.random() * 20) + 1) + dexModifier;
+        let attempts = 0;
+
+        while (newInit === currentInit && attempts < 10) {
+            newInit = Math.floor((Math.random() * 20) + 1) + dexModifier;
+            attempts++;
+        }
+
+        creature[1] = newInit;
+    }
+}
+
+function createRollInitRow(creature) {
+    let row = document.createElement("div");
+    row.classList.add("roll-init-row");
+
+    let name = document.createElement("span");
+    name.classList.add("roll-init-name");
+    name.textContent = creature[2];
+
+    let input = document.createElement("input");
+    input.type = "number";
+    input.step = "1";
+    input.classList.add("roll-init-input");
+    input.value = Number(creature[1]) || 0;
+    input.setAttribute("data-row-id", creature[0]);
+
+    let controls = document.createElement("div");
+    controls.classList.add("roll-init-controls");
+
+    let arrowUp = document.createElement("button");
+    arrowUp.type = "button";
+    arrowUp.classList.add("roll-init-arrow", "roll-init-arrow-up");
+    arrowUp.textContent = "+";
+    arrowUp.addEventListener("click", function() {
+        let current = parseInt(input.value, 10);
+        if (Number.isNaN(current)) {
+            current = 0;
+        }
+        input.value = current + 1;
+    });
+
+    let arrowDown = document.createElement("button");
+    arrowDown.type = "button";
+    arrowDown.classList.add("roll-init-arrow", "roll-init-arrow-down");
+    arrowDown.textContent = "-";
+    arrowDown.addEventListener("click", function() {
+        let current = parseInt(input.value, 10);
+        if (Number.isNaN(current)) {
+            current = 0;
+        }
+        input.value = current - 1;
+    });
+
+    controls.appendChild(input);
+    controls.appendChild(arrowUp);
+    controls.appendChild(arrowDown);
+
+    row.appendChild(name);
+    row.appendChild(controls);
+    return row;
+}
+
+function openRollInitiativesModal() {
+    let modal = document.getElementById("rollInitModal");
+    let playerList = document.getElementById("roll-init-player-list");
+    let npcList = document.getElementById("roll-init-npc-list");
+
+    if (!modal || !playerList || !npcList) {
+        return;
+    }
+
+    rerollAllInitiativesInCombatOrder();
+
+    playerList.innerHTML = "";
+    npcList.innerHTML = "";
+
+    for (let i = 0; i < combatOrder.length; i++) {
+        let creature = combatOrder[i];
+        let row = createRollInitRow(creature);
+
+        if (creature[7] === "Player") {
+            playerList.appendChild(row);
+        } else {
+            npcList.appendChild(row);
+        }
+    }
+
+    if (playerList.children.length === 0) {
+        playerList.innerHTML = '<p class="roll-init-empty">No players in combat.</p>';
+    }
+
+    if (npcList.children.length === 0) {
+        npcList.innerHTML = '<p class="roll-init-empty">No monsters or unique entries in combat.</p>';
+    }
+
+    modal.style.display = "block";
+}
+
+function closeRollInitiativesModal() {
+    let modal = document.getElementById("rollInitModal");
+    if (!modal) {
+        return;
+    }
+
+    modal.style.display = "none";
+}
+
+function setInitiativesFromModal() {
+    let inputs = document.querySelectorAll("#rollInitModal .roll-init-input");
+    let initById = {};
+
+    for (let i = 0; i < inputs.length; i++) {
+        let rowId = inputs[i].getAttribute("data-row-id");
+        let parsedInit = parseInt(inputs[i].value, 10);
+
+        if (!rowId || Number.isNaN(parsedInit)) {
+            continue;
+        }
+
+        initById[rowId] = parsedInit;
+    }
+
+    for (let i = 0; i < combatOrder.length; i++) {
+        let rowId = combatOrder[i][0];
+        if (Object.prototype.hasOwnProperty.call(initById, rowId)) {
+            combatOrder[i][1] = initById[rowId];
+        }
+    }
+
+    reloadCombatOrder(combatOrder, false);
+    closeRollInitiativesModal();
+}
+
+function parseNameNumberSuffix(creatureName) {
+    let match = String(creatureName || "").trim().match(/^(.*)\s+(\d+)$/);
+    if (!match) {
+        return null;
+    }
+
+    return {
+        baseName: match[1].trim(),
+        suffixNumber: parseInt(match[2], 10)
+    };
+}
+
+function reassignInitiativesByGroup() {
+    let groups = {};
+
+    for (let i = 0; i < combatOrder.length; i++) {
+        let creature = combatOrder[i];
+        let parsed = parseNameNumberSuffix(creature[2]);
+
+        if (!parsed) {
+            continue;
+        }
+
+        let groupKey = `${creature[7]}::${parsed.baseName.toLowerCase()}`;
+        if (!groups[groupKey]) {
+            groups[groupKey] = [];
+        }
+
+        groups[groupKey].push({
+            index: i,
+            suffixNumber: parsed.suffixNumber,
+            initiative: Number(creature[1]) || 0
+        });
+    }
+
+    Object.keys(groups).forEach(function(groupKey) {
+        let members = groups[groupKey];
+
+        if (members.length < 2) {
+            return;
+        }
+
+        let sortedBySuffix = members.slice().sort(function(a, b) {
+            return a.suffixNumber - b.suffixNumber;
+        });
+
+        let initiativesDescending = members
+            .map(function(member) { return member.initiative; })
+            .sort(function(a, b) { return b - a; });
+
+        for (let x = 0; x < sortedBySuffix.length; x++) {
+            combatOrder[sortedBySuffix[x].index][1] = initiativesDescending[x];
+        }
+    });
+
+    reloadCombatOrder(combatOrder, false);
 }
 
 function duplicateNamesCheck(newCreature){
