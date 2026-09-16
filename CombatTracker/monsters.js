@@ -103,20 +103,16 @@ const monstersLocal = [
     //         }
     //     ],
     //     LairActions: [
-    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    //         "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of 11 or higher, the [template] " +
-    //             "takes a lair action to cause one of the following effects. It can't use the same effect two rounds in a row. ",
-    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    //         "Lorem ipsum dolor sit amet",
+    //         "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of ",
+    //         "Lorem ipsum dolor sit amet",
+    //         "Lorem ipsum dolor sit amet"
+    //     ],
+    //     RegionalEffects: [
+    //         "Lorem ipsum dolor sit amet",
+    //         "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of ",
+    //         "Lorem ipsum dolor sit amet",
+    //         "Lorem ipsum dolor sit amet"
     //     ],
     //     Description: "Description here"
     // },
@@ -23531,7 +23527,7 @@ const monstersLocal = [
         ID: 441,
         ProfileType: "Monster",
         Name: "Chitine",
-        Type: "Small monstrosity, chaotic",
+        Type: "Small monstrosity, chaotic evil",
         Source: "Volo's Guide to Monsters",
         HitPoints: 18,
         HitPointsRoll: "4d6 + 4",
@@ -23644,7 +23640,7 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 10 (3d6) poison damage."
             },
             {
-                Title: "Web",
+                Title: "Web (Recharge 5-6)",
                 Desc: "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one Large or smaller creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 11 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; 5 hit points; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
             }
         ],
@@ -24103,11 +24099,11 @@ const monstersLocal = [
             },
             {
                 Title: "Imprison Soul",
-                Desc: "The devourer chooses a living humanoid with 0 hit points that it can see within 30 feet of it. That creature is teleported inside the devourer's ribcage and imprisoned there. A creature imprisoned in this manner has disadvantage on death saving throws. If it dies while imprisoned, the devourer regains 25 hit points, immediately recharges Soul Rend, and gains an additional action on its next turn."
+                Desc: "The devourer chooses a living humanoid with 0 hit points that it can see within 30 feet of it. That creature is teleported inside the devourer's ribcage and imprisoned there. A creature imprisoned in this manner has disadvantage on death saving throws. If it dies while imprisoned, the devourer regains 25 hit points, immediately recharges Soul Rend, and gains an additional action on its next turn. Additionally, at the start of its next turn, the devourer regurgitates the slain creature as a bonus action, and the creature becomes an undead. If the victim had 2 or fewer Hit Dice, it becomes a zombie. If it had 3 to 5 Hit Dice, it becomes a ghoul. Otherwise, it becomes a wight. A devourer can imprison only one creature at a time."
             },
             {
                 Title: "Soul Rend (Recharge 6)",
-                Desc: "The devourer creates a vortex of life-draining energy in a 20-foot radius centered on itself. Each humanoid in that area must make a DC 18 Constitution saving throw, taking 44 (8d10) necrotic damage on a failed save, or half as much damage on a successful one. Increase the damage by 10 for each living humanoid with 0 hit points in that area."
+                Desc: "The Devourer creates a vortex of life-draining energy in a 20-foot radius centered on itself. Each humanoid in that area must make a DC 18 Constitution saving throw, taking 44 (8d10) necrotic damage on a failed save, or half as much damage on a successful one. Increase the damage by 10 for each living humanoid with 0 hit points in that area."
             }
         ],
         Reactions: [],
@@ -24292,7 +24288,7 @@ const monstersLocal = [
         Source: "Volo's Guide to Monsters",
         HitPoints: 30,
         HitPointsRoll: "4d12 + 4",
-        ArmorClass: [11, "natural armor"],
+        ArmorClass: [13, "natural armor"],
         Speed: ["10 ft.", "fly 80 ft."],
         Strength: 15,
         Dexterity: 13,
@@ -24610,10 +24606,19 @@ const monstersLocal = [
             },
             {
                 Title: "Spellcasting",
-                Desc: "The firenewt is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest."
+                Desc: "The firenewt is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest.  It knows the following warlock spells: Cantrips (at will):.fire bolt, guidance, light, mage hand, prestidigitation 1st-2nd level (22nd-level slots): burning hands,flaming sphere, hellish rebuke, scorching ray"
+            },
+            {
+                Title: "lmix's Blessing",
+                Desc: "When the firenewt reduces an enemy to 0 hit points, the firenewt gains 5 temporary hit points."
             }
         ],
-        Actions: [],
+        Actions: [
+            {
+                Title: "Morningstar",
+                Desc: " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage. "
+            }
+        ],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
@@ -24639,20 +24644,20 @@ const monstersLocal = [
         Skills: [],
         DamageVulnerabilities: [],
         DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: ["Blindsight 30 ft.", "Passive Perception 10"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Tremorsense 60 ft.", "Passive Perception 10"],
         Languages: [],
         Challenge: [3, 700],
         ExtraRewards: "",
         Traits: [
             {
                 Title: "Antimagic Shell",
-                Desc: "The flail snail has advantage on saving throws against spells, and any spell attack made against the snail has disadvantage. If the snail succeeds on its saving throw against a spell, or a spell attack misses it, an effect might occur, as described below. If the spell targets only the snail, it has no effect on the snail and is reflected back at the caster, using the spell slot level, spell save DC, attack bonus, and spellcasting ability of the caster. If the spell targets an area, the snail is unaffected by the spell."
+                Desc: "The snail has advantage on saving throws against spells, and any creature making a spell attack against the snail has disadvantage on the attack roll. If the snail succeeds on its saving throw against a spell or a spell attack misses it, an additional effect might occur, as determined by rolling a d6: 7-2. If the spell affects an area or has multiple targets, it fails and has no effect. If the spell targets only the snail, it has no effect on the snail and is reflected back at the caster, using the spell slot level, spell save DC, attack bonus, and spellcasting ability of the caster. 3-4. No additional effect. 5-6. The snail's shell converts some of the spell's energy into a burst of destructive force. Each creature within 30 feet of the snail must make a DC 15 Constitution saving throw, taking 1d6 force damage per level of the spell on a failed save, or half as much damage on a successful one."
             },
             {
                 Title: "Flail Tentacles",
-                Desc: "The flail snail has five flail tentacles. Whenever the snail takes 10 damage or more on a single turn, one of its tentacles dies. If even one tentacle remains, the snail regrows all dead ones within 1d4 days. If all its tentacles die, the snail retracts into its shell, gaining total cover, and it begins wailing, a sound that can be heard for 600 feet, stopping only when it dies 5d6 minutes later. Healing magic that restores limbs, such as the regenerate spell, can halt this dying process."
+                Desc: "The flail snail has five flail tentacles. Whenever the snail takes 10 damage or more on a single turn, one of its tentacles dies. If even one tentacle remains, the snail regrows all dead ones within ld4 days. If all its tentacles die, the snail retracts into its shell, gaining total cover, and it begins wailing, a sound that can be heard for 600 feet, stopping only when it dies 5d6 minutes later. Healing magic that restores limbs, such as the regenerate spell, can halt this dying process."
             }
         ],
         Actions: [
@@ -24730,10 +24735,6 @@ const monstersLocal = [
             {
                 Title: "Tongue",
                 Desc: "The froghemoth targets one Medium or smaller creature that it can see within 20 feet of it. The target must make a DC 18 Strength saving throw. On a failed save, the target is pulled into an unoccupied space within 5 feet of the froghemoth, and the froghemoth can make a bite attack against it as a bonus action."
-            },
-            {
-                Title: "Tentacle",
-                Desc: "Melee Weapon Attack: +10 to hit, reach 20 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage, and the target is grappled (escape DC 16) if it is a Huge or smaller creature."
             }
         ],
         Reactions: [],
@@ -24745,7 +24746,7 @@ const monstersLocal = [
         ID: 465,
         ProfileType: "Monster",
         Name: "Cloud Giant Smiling One",
-        Type: "Huge giant (cloud giant), chaotic neutral",
+        Type: "Huge giant, chaotic neutral",
         Source: "Volo's Guide to Monsters",
         HitPoints: 262,
         HitPointsRoll: "21d12 + 126",
@@ -24808,7 +24809,7 @@ const monstersLocal = [
         ID: 466,
         ProfileType: "Monster",
         Name: "Fire Giant Dreadnought",
-        Type: "Huge giant (fire giant), lawful evil",
+        Type: "Huge giant, lawful evil",
         Source: "Volo's Guide to Monsters",
         HitPoints: 187,
         HitPointsRoll: "15d12 + 90",
@@ -24863,7 +24864,7 @@ const monstersLocal = [
         ID: 467,
         ProfileType: "Monster",
         Name: "Frost Giant Everlasting One",
-        Type: "Huge giant (frost giant), chaotic evil",
+        Type: "Huge giant, chaotic evil",
         Source: "Volo's Guide to Monsters",
         HitPoints: 189,
         HitPointsRoll: "14d12 + 98",
@@ -24896,7 +24897,7 @@ const monstersLocal = [
             },
             {
                 Title: "Vaprak's Rage (Recharges after a Short or Long Rest)",
-                Desc: "As a bonus action, the giant can enter a rage at the start of its turn. The rage lasts for 1 minute or until the giant is incapacitated. While raging, the giant has advantage on Strength checks and Strength saving throws; when it makes a melee weapon attack, the giant gains a +4 bonus to the damage roll; and the giant has resistance to bludgeoning, piercing, and slashing damage."
+                Desc: "As a bonus action, the giant can enter a rage at the start of its turn. The rage lasts for l minute or until the giant is incapacitated. While raging, the giant gains the following benefits: * The giant has advantage on Strength checks and Strength saving throws * When it makes a melee weapon attack, the giant gains a +4 bonus to the damage roll. * The giant has resistance to bludgeoning, piercing, and slashing damage."
             }
         ],
         Actions: [
@@ -24922,7 +24923,7 @@ const monstersLocal = [
         ID: 468,
         ProfileType: "Monster",
         Name: "Mouth of Grolantor",
-        Type: "Huge giant (hill giant), chaotic evil",
+        Type: "Huge giant, chaotic evil",
         Source: "Volo's Guide to Monsters",
         HitPoints: 105,
         HitPointsRoll: "10d12 + 40",
@@ -24969,7 +24970,7 @@ const monstersLocal = [
         ID: 469,
         ProfileType: "Monster",
         Name: "Stone Giant Dreamwalker",
-        Type: "Huge giant (stone giant), chaotic neutral",
+        Type: "Huge giant, chaotic neutral",
         Source: "Volo's Guide to Monsters",
         HitPoints: 161,
         HitPointsRoll: "14d12 + 70",
@@ -25024,7 +25025,7 @@ const monstersLocal = [
         ID: 470,
         ProfileType: "Monster",
         Name: "Storm Giant Quintessent",
-        Type: "Huge giant (storm giant), chaotic good",
+        Type: "Huge giant, chaotic good",
         Source: "Volo's Guide to Monsters",
         HitPoints: 230,
         HitPointsRoll: "20d12 + 100",
@@ -25166,7 +25167,7 @@ const monstersLocal = [
         Dexterity: 10,
         Constitution: 19,
         Intelligence: 11,
-        Wisdom: 11,
+        Wisdom: 13,
         Charisma: 12,
         SavingThrows: ["Constitution +8", "Wisdom +5"],
         Skills: ["Intimidation +5", "Perception +5"],
@@ -25377,15 +25378,66 @@ const monstersLocal = [
         LairActions: [],
         Description: "Description here"
     },
-    { // Grung Elite Warrior
+    { // Grung
         ID: 476,
+        ProfileType: "Monster",
+        Name: "Grung",
+        Type: "Small humanoid (grung), lawful evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 11,
+        HitPointsRoll: "2d6 + 4",
+        ArmorClass: [12],
+        Speed: ["25 ft.", "climb 25 ft."],
+        Strength: 7,
+        Dexterity: 14,
+        Constitution: 15,
+        Intelligence: 10,
+        Wisdom: 11,
+        Charisma: 10,
+        SavingThrows: ["Dexterity +4"],
+        Skills: ["Athletics +2", "Perception +2", "Stealth +4", "Survival +2"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Passive Perception 12"],
+        Languages: ["Grung"],
+        Challenge: [.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Amphibious",
+                Desc: "The grung can breathe air and water."
+            },
+            {
+                Title: "Poisonous Skin",
+                Desc: "Any creature that grapples the grung or otherwise comes into direct contact with the grung's skin must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with the grung can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            },
+            {
+                Title: "Standing Leap",
+                Desc: "The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Grung Elite Warrior
+        ID: 477,
         ProfileType: "Monster",
         Name: "Grung Elite Warrior",
         Type: "Small humanoid (grung), lawful evil",
         Source: "Volo's Guide to Monsters",
         HitPoints: 49,
         HitPointsRoll: "9d6 + 18",
-        ArmorClass: [14, "shield"],
+        ArmorClass: [13],
         Speed: ["25 ft.", "climb 25 ft."],
         Strength: 7,
         Dexterity: 16,
@@ -25415,20 +25467,20 @@ const monstersLocal = [
             {
                 Title: "Standing Leap",
                 Desc: "The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
-            },
-            {
-                Title: "Water Dependency",
-                Desc: "The grung can survive up to 1 day outside water, after which it gains one level of exhaustion at the end of each subsequent day. It can remove a level of exhaustion by spending 1 hour in water."
             }
         ],
         Actions: [
             {
-                Title: "Multiattack",
-                Desc: "The grung makes two attacks with its spear."
+                Title: "Dagger",
+                Desc: " Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage."
             },
             {
-                Title: "Spear",
-                Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute."
+                Title: "Shortbow",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage."
+            },
+            {
+                Title: "Mesmerizing Chirr (Recharge 6)",
+                Desc: "The grung makes a chirring noise to which grungs are immune. Each humanoid or beast that is within 15 feet of the grung and able to hear it must succeed on a DC 12 Wisdom saving throw or be stunned until the end of the grung's next turn."
             }
         ],
         Reactions: [],
@@ -25437,28 +25489,28 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Grung Wildling
-        ID: 477,
+        ID: 478,
         ProfileType: "Monster",
         Name: "Grung Wildling",
         Type: "Small humanoid (grung), lawful evil",
         Source: "Volo's Guide to Monsters",
         HitPoints: 27,
-        HitPointsRoll: "6d6 + 6",
-        ArmorClass: [13],
+        HitPointsRoll: "5d6 + 10",
+        ArmorClass: [13, "16 with barkskin"],
         Speed: ["25 ft.", "climb 25 ft."],
         Strength: 7,
-        Dexterity: 14,
-        Constitution: 13,
+        Dexterity: 16,
+        Constitution: 15,
         Intelligence: 10,
-        Wisdom: 11,
-        Charisma: 10,
-        SavingThrows: ["Dexterity +4"],
-        Skills: ["Athletics +2", "Perception +2", "Stealth +4", "Survival +2"],
+        Wisdom: 15,
+        Charisma: 11,
+        SavingThrows: ["Dexterity +5"],
+        Skills: ["Athletics +2", "Perception +4", "Stealth +5", "Survival +4"],
         DamageVulnerabilities: [],
         DamageResistances: [],
         DamageImmunities: ["Poison"],
         ConditionImmunities: ["Poisoned"],
-        Senses: ["Passive Perception 12"],
+        Senses: ["Passive Perception 14"],
         Languages: ["Grung"],
         Challenge: [1, 200],
         ExtraRewards: "",
@@ -25472,18 +25524,22 @@ const monstersLocal = [
                 Desc: "Any creature that grapples the grung or otherwise comes into direct contact with the grung's skin must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with the grung can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             },
             {
-                Title: "Standing Leap",
-                Desc: "The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
+                Title: "Spellcasting",
+                Desc: "The grung is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It knows the following ranger spells: 1st level (4 slots): cure wounds, jump 2nd level (3 slots): barkskin, spike growth 3rd level (2 slots}: plant growth"
             },
             {
-                Title: "Water Dependency",
-                Desc: "The grung can survive up to 1 day outside water, after which it gains one level of exhaustion at the end of each subsequent day. It can remove a level of exhaustion by spending 1 hour in water."
+                Title: "Standing Leap",
+                Desc: "The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."            
             }
         ],
         Actions: [
             {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage."
+            },
+            {
                 Title: "Shortbow",
-                Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute."
+                Desc: "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage."
             }
         ],
         Reactions: [],
@@ -25492,7 +25548,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Guard Drake
-        ID: 478,
+        ID: 479,
         ProfileType: "Monster",
         Name: "Guard Drake",
         Type: "Medium dragon, unaligned",
@@ -25514,7 +25570,7 @@ const monstersLocal = [
         DamageImmunities: [],
         ConditionImmunities: [],
         Senses: ["Darkvision 60 ft.", "Passive Perception 12"],
-        Languages: [],
+        Languages: ["understands Draconic but can't speak"],
         Challenge: [2, 450],
         ExtraRewards: "",
         Traits: [],
@@ -25538,13 +25594,13 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Annis Hag
-        ID: 479,
+        ID: 480,
         ProfileType: "Monster",
         Name: "Annis Hag",
         Type: "Large fey, chaotic evil",
         Source: "Volo's Guide to Monsters",
-        HitPoints: 90,
-        HitPointsRoll: "12d10 + 24",
+        HitPoints: 75,
+        HitPointsRoll: "10d10 + 20",
         ArmorClass: [17, "natural armor"],
         Speed: ["40 ft."],
         Strength: 21,
@@ -25553,17 +25609,22 @@ const monstersLocal = [
         Intelligence: 13,
         Wisdom: 14,
         Charisma: 15,
-        SavingThrows: [],
-        Skills: ["Deception +6", "Perception +6"],
+        SavingThrows: ["Constitution +5"],
+        Skills: ["Deception +5", "Perception +5"],
         DamageVulnerabilities: [],
-        DamageResistances: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks"],
         DamageImmunities: [],
         ConditionImmunities: [],
-        Senses: ["Darkvision 60 ft.", "Passive Perception 16"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 15"],
         Languages: ["Common", "Giant", "Sylvan"],
         Challenge: [6, 2300],
         ExtraRewards: "",
-        Traits: [],
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The hag's innate spellcasting ability is Charisma (spell save DC 13). She can innately cast the following spells: 3/day each: disguise self (including the form of a Medium humanoid), fog cloud "
+            }
+        ],
         Actions: [
             {
                 Title: "Multiattack",
@@ -25588,7 +25649,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Bheur Hag
-        ID: 480,
+        ID: 481,
         ProfileType: "Monster",
         Name: "Bheur Hag",
         Type: "Medium fey, chaotic evil",
@@ -25596,18 +25657,18 @@ const monstersLocal = [
         HitPoints: 91,
         HitPointsRoll: "14d8 + 28",
         ArmorClass: [17, "natural armor"],
-        Speed: ["30 ft.", "climb 30 ft."],
+        Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 16,
         Constitution: 14,
         Intelligence: 12,
         Wisdom: 13,
         Charisma: 16,
-        SavingThrows: ["Dexterity +6", "Wisdom +4"],
-        Skills: ["Deception +6", "Perception +4", "Stealth +6"],
+        SavingThrows: ["Wisdom +4"],
+        Skills: ["Nature +4", "Perception +4", "Stealth +6", "Survival +4"],
         DamageVulnerabilities: [],
-        DamageResistances: ["Cold"],
-        DamageImmunities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Cold"],
         ConditionImmunities: [],
         Senses: ["Darkvision 60 ft.", "Passive Perception 14"],
         Languages: ["Auran", "Common", "Giant"],
@@ -25615,22 +25676,26 @@ const monstersLocal = [
         ExtraRewards: "",
         Traits: [
             {
-                Title: "Horrific Appearance",
-                Desc: "Any humanoid that starts its turn within 30 feet of the hag and can see the hag's true form must make a DC 13 Wisdom saving throw. On a failed save, the creature is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours."
+                Title: "Graystaff Magic",
+                Desc: "The hag carries a graystaff, a length of gray wood that is a focus for her inner power. She can ride the staff as if it were a broom of flying. While holding the staff, she can cast additional spells with her Innate Spellcasting trait (these spells are marked with an asterisk). If the staff is lost or destroyed, the hag must craft another, which takes a year and a day. Only a bheur hag can use a graystaff."
+            },
+            {
+                Title: "Ice Walk",
+                Desc: "The hag can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost her extra movement."
             },
             {
                 Title: "Innate Spellcasting",
-                Desc: "The hag's innate spellcasting ability is Charisma (spell save DC 14). She can innately cast the following spells, requiring no material components: At will: hold person, ray of frost. 3/day each: ice storm, wall of ice. 1/day each: cone of cold, control weather."
+                Desc: "The hag's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). She can innately cast the following spells, requiring no material components: At will: hold person, ray of frost 3/day each: cone of cold,* ice storm,* wall of ice 1/day each: control weather"
             }
         ],
         Actions: [
             {
-                Title: "Claws",
-                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 10 (2d8 + 1) bludgeoning damage plus 3 (1d6) cold damage."
             },
             {
                 Title: "Maddening Feast",
-                Desc: "The hag targets one creature she can see within 60 feet of her. The target must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. While frightened, the target is also incapacitated. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+                Desc: "The hag feasts on the corpse of one enemy within 5 feet of her that died within the past minute. Each creature of the hag's choice that is within 60 feet of her and able to see her must succeed on a DC 15 Wisdom saving throw or be frightened of her for 1 minute. While frightened in this way, a creature is incapacitated, can't understand what others say, can't read, and speaks only in gibberish; the OM controls the creature's movement, which is erratic. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Maddening Feast for the next 24 hours."
             }
         ],
         Reactions: [],
@@ -25639,7 +25704,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Hobgoblin Devastator
-        ID: 481,
+        ID: 482,
         ProfileType: "Monster",
         Name: "Hobgoblin Devastator",
         Type: "Medium humanoid (goblinoid), lawful evil",
@@ -25648,36 +25713,40 @@ const monstersLocal = [
         HitPointsRoll: "10d8",
         ArmorClass: [13, "studded leather"],
         Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 14,
-        Constitution: 10,
-        Intelligence: 13,
-        Wisdom: 10,
+        Strength: 13,
+        Dexterity: 12,
+        Constitution: 14,
+        Intelligence: 16,
+        Wisdom: 13,
         Charisma: 11,
-        SavingThrows: [],
+        SavingThrows: ["Arcana +5 "],
         Skills: [],
         DamageVulnerabilities: [],
         DamageResistances: [],
         DamageImmunities: [],
         ConditionImmunities: [],
-        Senses: ["Darkvision 60 ft.", "Passive Perception 10"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
         Languages: ["Common", "Goblin"],
         Challenge: [4, 1100],
         ExtraRewards: "",
         Traits: [
             {
                 Title: "Arcane Advantage",
-                Desc: "Once per turn, the hobgoblin can deal an extra 10 (3d6) damage to a creature it hits with a spell attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated."
+                Desc: "Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a damaging spell attack if that target is within 5 feet of an ally of the hobgoblin and that ally isn't incapacitated."
+            },
+            {
+                Title: "Army Arcana",
+                Desc: "When the hobgoblin casts a spell that causes damage or that forces other creatures to make a saving throw, it can choose itself and any number of allies to be immune to the damage caused by the spell and to succeed on the required saving throw."
             },
             {
                 Title: "Spellcasting",
-                Desc: "The hobgoblin is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It has the following wizard spells prepared: Cantrips (at will): acid splash, fire bolt, ray of frost, shocking grasp. 1st level (4 slots): fog cloud, magic missile, thunderwave. 2nd level (3 slots): gust of wind, misty step, scorching ray. 3rd level (3 slots): fireball, fly, lightning bolt. 4th level (1 slot): ice storm."
+                Desc: "The hobgoblin is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It has the following wizard spells prepared: Cantrips (at will): acid splash, fire bolt, ray of frost, shocking grasp 1st level (4 slots): fog cloud, magic missile, thunderwave 2nd level (3 slots): gust of wind, Melf's acid arrow, scorching ray 3rd level (3 slots): Fireball, fly, lightning bolt 4th level (l slot): ice storm "
             }
         ],
         Actions: [
             {
                 Title: "Quarterstaff",
-                Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage."
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage, or 5 (1d8 + 1) bludgeoning damage if used with two hands."
             }
         ],
         Reactions: [],
@@ -25686,7 +25755,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Hobgoblin Iron Shadow
-        ID: 482,
+        ID: 483,
         ProfileType: "Monster",
         Name: "Hobgoblin Iron Shadow",
         Type: "Medium humanoid (goblinoid), lawful evil",
@@ -25745,35 +25814,39 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Ki-rin
-        ID: 483,
+        ID: 484,
         ProfileType: "Monster",
         Name: "Ki-rin",
         Type: "Huge celestial, lawful good",
         Source: "Volo's Guide to Monsters",
-        HitPoints: 123,
-        HitPointsRoll: "13d12 + 39",
+        HitPoints: 152,
+        HitPointsRoll: "16d12 + 48",
         ArmorClass: [20, "natural armor"],
-        Speed: ["60 ft.", "fly 120 ft."],
+        Speed: ["60 ft.", "fly 120 ft. (hover)"],
         Strength: 21,
         Dexterity: 16,
         Constitution: 16,
         Intelligence: 19,
         Wisdom: 20,
-        Charisma: 23,
+        Charisma: 20,
         SavingThrows: ["Dexterity +8", "Constitution +8", "Wisdom +10", "Charisma +11"],
-        Skills: ["Insight +10", "Perception +10"],
+        Skills: ["Perception +9", "Insight +9", "Religion +8"],
         DamageVulnerabilities: [],
-        DamageResistances: ["Radiant"],
-        DamageImmunities: ["Lightning", "Thunder"],
-        ConditionImmunities: ["Charmed", "Frightened"],
-        Senses: ["Truesight 120 ft.", "Passive Perception 20"],
-        Languages: ["Celestial", "Common", "Draconic", "Giant", "Telepathy 120 ft."],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["blindsight 30 ft.", "darkvision 120 ft.", "passive Perception 19"],
+        Languages: ["all", "telepathy 120 ft."],
         Challenge: [12, 8400],
         ExtraRewards: "",
         Traits: [
             {
                 Title: "Innate Spellcasting",
-                Desc: "The ki-rin's innate spellcasting ability is Charisma (spell save DC 19). It can innately cast the following spells, requiring no material components: At will: detect evil and good, detect magic, detect thoughts, light. 3/day each: command, cure wounds, daylight, dispel evil and good, dispel magic, lesser restoration, remove curse, sanctuary, zone of truth. 1/day each: commune, control weather, creation, greater restoration, heroes' feast, holy aura, holy word, true resurrection."
+                Desc: "The ki-rin's innate spellcasting ability is Charisma (spell save DC 17). The ki-rin can innately cast the following spells, requiring no material components: At will: gaseous form, major image (6th-level version), wind walk 1/day: create food and water"
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If the ki-rin fails a saving throw, it can choose to succeed instead."
             },
             {
                 Title: "Magic Resistance",
@@ -25782,46 +25855,53 @@ const monstersLocal = [
             {
                 Title: "Magic Weapons",
                 Desc: "The ki-rin's weapon attacks are magical."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The ki-rin is a 18th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). It has the following cleric spells prepared: Cantrips (at will): light, mending, sacred flame, spare the dying, thaumaturgy 1st level (4 slots): command, cure wounds, detect e11il and good, protection from evil and good, sanctuary 2nd level (3 slots): calm emotions, lesser restoration, silence 3rd level (3 slots): dispel magic, remove curse, sending 4th level (3 slots): banishment.freedom of movement, guardian of faith 5th level (3 slots): greater restoration, mass cure wounds, scrying 6th level (1 slot): heroes'feast, true seeing 7th level (1 slot): etherealness, plane shift 8th level (1 slot): control weather 9th level (1 slot): true resurrection"
             }
         ],
         Actions: [
             {
                 Title: "Multiattack",
-                Desc: "The ki-rin makes three attacks: one with its bite and two with its hooves."
+                Desc: "The ki-rin makes three attacks: two with its hooves and one with its horn. "
             },
             {
-                Title: "Bite",
-                Desc: "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) piercing damage plus 11 (2d10) radiant damage."
+                Title: "Hoof",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 10 (2d4 + 5) bludgeoning damage."
             },
             {
-                Title: "Hooves",
-                Desc: "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage plus 9 (2d8) radiant damage."
-            },
-            {
-                Title: "Breath of Lightning (Recharge 5-6)",
-                Desc: "The ki-rin exhales lightning in a 60-foot line that is 10 feet wide. Each creature in that area must make a DC 18 Dexterity saving throw, taking 36 (8d8) lightning damage on a failed save, or half as much damage on a successful one."
+                Title: "Horn",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage."
             }
         ],
         Reactions: [],
         LegendaryActions: [
             {
-                Title: "Hooves",
-                Desc: "The ki-rin makes one attack with its hooves."
-            },
-            {
                 Title: "Detect",
-                Desc: "The ki-rin makes a Wisdom (Perception) check."
+                Desc: "The ki-rin makes a Wisdom (Perception) check or a Wisdom (Insight) check."
             },
             {
-                Title: "Celestial Passage (Costs 2 Actions)",
-                Desc: "The ki-rin magically teleports to an unoccupied space it can see within 120 feet of it."
+                Title: "Smite",
+                Desc: "The ki-rin makes a hoof attack or casts sacred flame"
+            },
+            {
+                Title: "Move",
+                Desc: "The ki-rin moves up to its half speed without provoking opportunity attacks."
             }
         ],
         LairActions: [],
+        RegionalEffects: [
+            "Water flows pure within 3 miles of a ki-rin's lair. Any purposeful corruption of the water lasts for no longer than 3 minutes.",
+            "Animals, plants, and good creatures within 3 miles of the ki-rin's lair gain vigor as they evolve toward an idealized form. Such creatures are rarely aggressive toward others that aren't normally prey. Evil creatures can't tolerate the holy atmosphere within the same distance, and usually choose to live much farther from the domain of a ki-rin.",
+            "Curses, diseases, and poisons affecting good-aligned creatures are suppressed when those creatures are within 3 miles of the lair.",
+            "A ki-rin can cast control weather while it is within 3 miles of its lair. The spell's point of origin is always the point outdoors closest to the center of its lair. The ki-rin doesn't need to maintain a clear path to the sky or to concentrate for the change in weather to persist.",
+            "Within 3 miles of the lair, winds buoy non-evil creatures that fall due to no act of the ki-rin or its allies. Such creatures descend at a rate of 60 feet per round and take no falling damage."
+        ],
         Description: "Description here"
     },
     { // Kobold Dragonshield
-        ID: 484,
+        ID: 485,
         ProfileType: "Monster",
         Name: "Kobold Dragonshield",
         Type: "Small humanoid (kobold), lawful evil",
@@ -25876,7 +25956,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Kobold Inventor
-        ID: 485,
+        ID: 486,
         ProfileType: "Monster",
         Name: "Kobold Inventor",
         Type: "Small humanoid (kobold), lawful evil",
@@ -25931,7 +26011,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Kobold Scale Sorcerer
-        ID: 486,
+        ID: 487,
         ProfileType: "Monster",
         Name: "Kobold Scale Sorcerer",
         Type: "Small humanoid (kobold), lawful evil",
@@ -25986,7 +26066,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Korred
-        ID: 487,
+        ID: 488,
         ProfileType: "Monster",
         Name: "Korred",
         Type: "Small fey, chaotic neutral",
@@ -26049,7 +26129,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Leucrotta
-        ID: 488,
+        ID: 489,
         ProfileType: "Monster",
         Name: "Leucrotta",
         Type: "Large monstrosity, chaotic evil",
@@ -26112,7 +26192,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Meenlock
-        ID: 489,
+        ID: 490,
         ProfileType: "Monster",
         Name: "Meenlock",
         Type: "Small fey, neutral evil",
@@ -26159,7 +26239,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Alhoon
-        ID: 490,
+        ID: 491,
         ProfileType: "Monster",
         Name: "Alhoon",
         Type: "Medium undead, any evil alignment",
@@ -26214,7 +26294,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Elder Brain
-        ID: 491,
+        ID: 492,
         ProfileType: "Monster",
         Name: "Elder Brain",
         Type: "Large aberration, lawful evil",
@@ -26281,7 +26361,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Ulitharid
-        ID: 492,
+        ID: 493,
         ProfileType: "Monster",
         Name: "Ulitharid",
         Type: "Large aberration, lawful evil",
@@ -26344,7 +26424,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Mindwitness
-        ID: 493,
+        ID: 494,
         ProfileType: "Monster",
         Name: "Mindwitness",
         Type: "Large aberration, lawful evil",
@@ -26399,7 +26479,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Morkoth
-        ID: 494,
+        ID: 495,
         ProfileType: "Monster",
         Name: "Morkoth",
         Type: "Medium aberration, chaotic evil",
@@ -26468,7 +26548,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Neogi Hatchling
-        ID: 495,
+        ID: 496,
         ProfileType: "Monster",
         Name: "Neogi Hatchling",
         Type: "Tiny aberration, lawful evil",
@@ -26515,7 +26595,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Neogi
-        ID: 496,
+        ID: 497,
         ProfileType: "Monster",
         Name: "Neogi",
         Type: "Small aberration, lawful evil",
@@ -26574,7 +26654,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Neogi Master
-        ID: 497,
+        ID: 498,
         ProfileType: "Monster",
         Name: "Neogi Master",
         Type: "Medium aberration, lawful evil",
@@ -26637,7 +26717,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Neothelid
-        ID: 498,
+        ID: 499,
         ProfileType: "Monster",
         Name: "Neothelid",
         Type: "Gargantuan aberration, chaotic evil",
@@ -26692,7 +26772,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Nilbog
-        ID: 499,
+        ID: 500,
         ProfileType: "Monster",
         Name: "Nilbog",
         Type: "Small humanoid (goblinoid), chaotic evil",
@@ -26752,7 +26832,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Orc Blade of Ilneval
-        ID: 500,
+        ID: 501,
         ProfileType: "Monster",
         Name: "Orc Blade of Ilneval",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -26811,7 +26891,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Orc Claw of Luthic
-        ID: 501,
+        ID: 502,
         ProfileType: "Monster",
         Name: "Orc Claw of Luthic",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -26862,7 +26942,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Orc Hand of Yurtrus
-        ID: 502,
+        ID: 503,
         ProfileType: "Monster",
         Name: "Orc Hand of Yurtrus",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -26909,7 +26989,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Orc Nurtured One of Yurtrus
-        ID: 503,
+        ID: 504,
         ProfileType: "Monster",
         Name: "Orc Nurtured One of Yurtrus",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -26964,7 +27044,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Orc Red Fang of Shargaas
-        ID: 504,
+        ID: 505,
         ProfileType: "Monster",
         Name: "Orc Red Fang of Shargaas",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -27031,7 +27111,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Tanarukk
-        ID: 505,
+        ID: 506,
         ProfileType: "Monster",
         Name: "Tanarukk",
         Type: "Medium fiend (demon, orc), chaotic evil",
@@ -27091,7 +27171,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Quickling
-        ID: 506,
+        ID: 507,
         ProfileType: "Monster",
         Name: "Quickling",
         Type: "Tiny fey, chaotic evil",
@@ -27142,7 +27222,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Redcap
-        ID: 507,
+        ID: 508,
         ProfileType: "Monster",
         Name: "Redcap",
         Type: "Small fey, chaotic evil",
@@ -27197,7 +27277,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Sea Spawn
-        ID: 508,
+        ID: 509,
         ProfileType: "Monster",
         Name: "Sea Spawn",
         Type: "Medium humanoid, neutral evil",
@@ -27256,7 +27336,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Shadow Mastiff
-        ID: 509,
+        ID: 510,
         ProfileType: "Monster",
         Name: "Shadow Mastiff",
         Type: "Medium monstrosity, neutral evil",
@@ -27311,7 +27391,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Slithering Tracker
-        ID: 510,
+        ID: 511,
         ProfileType: "Monster",
         Name: "Slithering Tracker",
         Type: "Medium ooze, chaotic evil",
@@ -27382,7 +27462,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Spawn of Kyuss
-        ID: 511,
+        ID: 512,
         ProfileType: "Monster",
         Name: "Spawn of Kyuss",
         Type: "Medium undead, chaotic evil",
@@ -27437,7 +27517,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Tlincalli
-        ID: 512,
+        ID: 513,
         ProfileType: "Monster",
         Name: "Tlincalli",
         Type: "Large monstrosity, chaotic evil",
@@ -27492,7 +27572,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Trapper
-        ID: 513,
+        ID: 514,
         ProfileType: "Monster",
         Name: "Trapper",
         Type: "Large monstrosity, unaligned",
@@ -27543,7 +27623,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Vargouille
-        ID: 514,
+        ID: 515,
         ProfileType: "Monster",
         Name: "Vargouille",
         Type: "Tiny fiend, chaotic evil",
@@ -27594,7 +27674,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Vegepygmy
-        ID: 515,
+        ID: 516,
         ProfileType: "Monster",
         Name: "Vegepygmy",
         Type: "Small plant, neutral",
@@ -27645,7 +27725,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Vegepygmy Chief
-        ID: 516,
+        ID: 517,
         ProfileType: "Monster",
         Name: "Vegepygmy Chief",
         Type: "Small plant, neutral",
@@ -27704,7 +27784,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Thorny
-        ID: 517,
+        ID: 518,
         ProfileType: "Monster",
         Name: "Thorny",
         Type: "Medium plant, neutral",
@@ -27755,7 +27835,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Wood Woad
-        ID: 518,
+        ID: 519,
         ProfileType: "Monster",
         Name: "Wood Woad",
         Type: "Medium plant, neutral",
@@ -27818,7 +27898,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Xvart
-        ID: 519,
+        ID: 520,
         ProfileType: "Monster",
         Name: "Xvart",
         Type: "Small humanoid (xvart), chaotic evil",
@@ -27869,7 +27949,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Xvart Warlock of Raxivort
-        ID: 520,
+        ID: 521,
         ProfileType: "Monster",
         Name: "Xvart Warlock of Raxivort",
         Type: "Small humanoid (xvart), chaotic evil",
@@ -27924,7 +28004,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Yeth Hound
-        ID: 521,
+        ID: 522,
         ProfileType: "Monster",
         Name: "Yeth Hound",
         Type: "Medium fey, chaotic evil",
@@ -27979,7 +28059,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Yuan-ti Anathema
-        ID: 522,
+        ID: 523,
         ProfileType: "Monster",
         Name: "Yuan-ti Anathema",
         Type: "Huge monstrosity (shapechanger, yuan-ti), neutral evil",
@@ -28050,7 +28130,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Yuan-ti Broodguard
-        ID: 523,
+        ID: 524,
         ProfileType: "Monster",
         Name: "Yuan-ti Broodguard",
         Type: "Medium humanoid (yuan-ti), neutral evil",
@@ -28101,7 +28181,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Yuan-ti Mind Whisperer
-        ID: 524,
+        ID: 525,
         ProfileType: "Monster",
         Name: "Yuan-ti Mind Whisperer",
         Type: "Medium humanoid (yuan-ti, shapechanger), neutral evil",
@@ -28164,7 +28244,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Yuan-ti Nightmare Speaker
-        ID: 525,
+        ID: 526,
         ProfileType: "Monster",
         Name: "Yuan-ti Nightmare Speaker",
         Type: "Medium humanoid (yuan-ti, shapechanger), neutral evil",
@@ -28227,7 +28307,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Yuan-ti Pit Master
-        ID: 526,
+        ID: 527,
         ProfileType: "Monster",
         Name: "Yuan-ti Pit Master",
         Type: "Medium humanoid (yuan-ti, shapechanger), neutral evil",
@@ -28290,7 +28370,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Aurochs
-        ID: 527,
+        ID: 528,
         ProfileType: "Monster",
         Name: "Aurochs",
         Type: "Large beast, unaligned",
@@ -28337,7 +28417,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Cow
-        ID: 528,
+        ID: 529,
         ProfileType: "Monster",
         Name: "Cow",
         Type: "Large beast, unaligned",
@@ -28380,7 +28460,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Dolphin
-        ID: 529,
+        ID: 530,
         ProfileType: "Monster",
         Name: "Dolphin",
         Type: "Medium beast, unaligned",
@@ -28427,7 +28507,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Swarm of Rot Grubs
-        ID: 530,
+        ID: 531,
         ProfileType: "Monster",
         Name: "Swarm of Rot Grubs",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -28470,7 +28550,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Abjurer
-        ID: 531,
+        ID: 532,
         ProfileType: "Monster",
         Name: "Abjurer",
         Type: "Medium humanoid (any race), any alignment",
@@ -28517,7 +28597,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Apprentice Wizard
-        ID: 532,
+        ID: 533,
         ProfileType: "Monster",
         Name: "Apprentice Wizard",
         Type: "Medium humanoid (any race), any alignment",
@@ -28560,7 +28640,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Archdruid
-        ID: 533,
+        ID: 534,
         ProfileType: "Monster",
         Name: "Archdruid",
         Type: "Medium humanoid (any race), any alignment",
@@ -28607,7 +28687,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Archer
-        ID: 534,
+        ID: 535,
         ProfileType: "Monster",
         Name: "Archer",
         Type: "Medium humanoid (any race), any alignment",
@@ -28657,7 +28737,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Bard
-        ID: 535,
+        ID: 536,
         ProfileType: "Monster",
         Name: "Bard",
         Type: "Medium humanoid (any race), any alignment",
@@ -28708,7 +28788,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Blackguard
-        ID: 536,
+        ID: 537,
         ProfileType: "Monster",
         Name: "Blackguard",
         Type: "Medium humanoid (any race), any non-good alignment",
@@ -28775,7 +28855,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Champion
-        ID: 537,
+        ID: 538,
         ProfileType: "Monster",
         Name: "Champion",
         Type: "Medium humanoid (any race), any alignment",
@@ -28830,7 +28910,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Conjurer
-        ID: 538,
+        ID: 539,
         ProfileType: "Monster",
         Name: "Conjurer",
         Type: "Medium humanoid (any race), any alignment",
@@ -28877,7 +28957,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Diviner
-        ID: 539,
+        ID: 540,
         ProfileType: "Monster",
         Name: "Diviner",
         Type: "Medium humanoid (any race), any alignment",
@@ -28924,7 +29004,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Enchanter
-        ID: 540,
+        ID: 541,
         ProfileType: "Monster",
         Name: "Enchanter",
         Type: "Medium humanoid (any race), any alignment",
@@ -28975,7 +29055,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Evoker
-        ID: 541,
+        ID: 542,
         ProfileType: "Monster",
         Name: "Evoker",
         Type: "Medium humanoid (any race), any alignment",
@@ -29022,7 +29102,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Illusionist
-        ID: 542,
+        ID: 543,
         ProfileType: "Monster",
         Name: "Illusionist",
         Type: "Medium humanoid (any race), any alignment",
@@ -29069,7 +29149,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Kraken Priest
-        ID: 543,
+        ID: 544,
         ProfileType: "Monster",
         Name: "Kraken Priest",
         Type: "Medium humanoid (any race), any evil alignment",
@@ -29120,7 +29200,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Martial Arts Adept
-        ID: 544,
+        ID: 545,
         ProfileType: "Monster",
         Name: "Martial Arts Adept",
         Type: "Medium humanoid (any race), any alignment",
@@ -29179,7 +29259,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Master Thief
-        ID: 545,
+        ID: 546,
         ProfileType: "Monster",
         Name: "Master Thief",
         Type: "Medium humanoid (any race), any non-lawful alignment",
@@ -29243,7 +29323,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Necromancer
-        ID: 546,
+        ID: 547,
         ProfileType: "Monster",
         Name: "Necromancer",
         Type: "Medium humanoid (any race), any alignment",
@@ -29290,7 +29370,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Swashbuckler
-        ID: 547,
+        ID: 548,
         ProfileType: "Monster",
         Name: "Swashbuckler",
         Type: "Medium humanoid (any race), any non-lawful alignment",
@@ -29345,7 +29425,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Transmuter
-        ID: 548,
+        ID: 549,
         ProfileType: "Monster",
         Name: "Transmuter",
         Type: "Medium humanoid (any race), any alignment",
@@ -29392,7 +29472,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // War Priest
-        ID: 549,
+        ID: 550,
         ProfileType: "Monster",
         Name: "War Priest",
         Type: "Medium humanoid (any race), any alignment",
@@ -29444,7 +29524,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Warlock of the Archfey
-        ID: 550,
+        ID: 551,
         ProfileType: "Monster",
         Name: "Warlock of the Archfey",
         Type: "Medium humanoid (any race), any alignment",
@@ -29496,7 +29576,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Warlock of the Fiend
-        ID: 551,
+        ID: 552,
         ProfileType: "Monster",
         Name: "Warlock of the Fiend",
         Type: "Medium humanoid (any race), any alignment",
@@ -29547,7 +29627,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Warlock of the Great Old One
-        ID: 552,
+        ID: 553,
         ProfileType: "Monster",
         Name: "Warlock of the Great Old One",
         Type: "Medium humanoid (any race), any alignment",
@@ -29598,7 +29678,7 @@ const monstersLocal = [
         Description: "Description here"
     },
     { // Warlord
-        ID: 553,
+        ID: 554,
         ProfileType: "Monster",
         Name: "Warlord",
         Type: "Medium humanoid (any race), any alignment",
