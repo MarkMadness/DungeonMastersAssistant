@@ -25908,9 +25908,9 @@ const monstersLocal = [
         Source: "Volo's Guide to Monsters",
         HitPoints: 44,
         HitPointsRoll: "8d6 + 16",
-        ArmorClass: [15, "scale mail, shield"],
+        ArmorClass: [15, "leather, shield"],
         Speed: ["20 ft."],
-        Strength: 14,
+        Strength: 12,
         Dexterity: 15,
         Constitution: 14,
         Intelligence: 8,
@@ -25919,7 +25919,7 @@ const monstersLocal = [
         SavingThrows: [],
         Skills: ["Perception +1"],
         DamageVulnerabilities: [],
-        DamageResistances: [],
+        DamageResistances: ["see Dragon's Resistance below"],
         DamageImmunities: [],
         ConditionImmunities: [],
         Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
@@ -25929,7 +25929,11 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Dragon's Resistance",
-                Desc: "The kobold has resistance to one type of damage based on the color of dragon that invested it with power: acid (black or copper), cold (white or silver), fire (brass, gold, or red), lightning (blue or bronze), or poison (green)."
+                Desc: "The kobold has resistance to a type of damage based on the color of dragon that invested it with power (choose or roll a d1O): 1- 2, acid (black); 3- 4, cold (white); 5-6, fire (red); 7-8, lightning (blue); 9-10, poison (green)."
+            },
+            {
+                Title: "Heart of the Dragon",
+                Desc: "If the kobold is frightened or paralyzed by an effect that allows a saving throw, it can repeat the save at the start of its turn to end the effect on itself and all kobolds within 30 feet of it. Any kobold that benefits from this trait (including the dragonshield) has advantage on its next attack roll"
             },
             {
                 Title: "Pack Tactics",
@@ -25972,12 +25976,12 @@ const monstersLocal = [
         Wisdom: 7,
         Charisma: 8,
         SavingThrows: [],
-        Skills: ["Perception +2"],
+        Skills: ["Perception +0"],
         DamageVulnerabilities: [],
         DamageResistances: [],
         DamageImmunities: [],
         ConditionImmunities: [],
-        Senses: ["Darkvision 60 ft.", "Passive Perception 12"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 10"],
         Languages: ["Common", "Draconic"],
         Challenge: [0.25, 50],
         ExtraRewards: "",
@@ -26002,7 +26006,22 @@ const monstersLocal = [
             },
             {
                 Title: "Weapon Invention",
-                Desc: "The kobold uses one of the following options (roll a d8 or choose one); the kobold can use each one no more than once per day: 1. Acid. The kobold hurls a flask of acid. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: 7 (2d6) acid damage. 2. Alchemist's Fire. The kobold throws a flask of alchemist's fire. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: 2 (1d4) fire damage at the start of each of the target's turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames. 3. Basket of Centipedes. The kobold throws a small basket into a 5-foot-square space within 20 feet of it. A swarm of insects (centipedes) with 11 hit points emerges from the basket and rolls initiative. At the end of each of the swarm's turns, there's a 50 percent chance that the swarm disperses. 4. Green Slime Pot. The kobold throws a clay pot full of green slime at the target, and it breaks open on impact. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: The target is covered in a patch of green slime. Miss: A patch of green slime covers a randomly determined 5-foot-square section of wall or floor within 5 feet of the target. 5. Rot Grub Pot. The kobold throws a clay pot into a 5-foot-square space within 20 feet of it, and it breaks open on impact. A swarm of rot grubs emerges from the shattered pot and remains a hazard in that square. 6. Scorpion on a Stick. The kobold makes a melee attack with a scorpion tied to the end of a 5-foot-long pole. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one. 7. Skunk in a Cage. The kobold releases a skunk into an unoccupied space within 5 feet of it. The skunk has a walking speed of 20 feet, AC 10, 1 hit point, and no effective attacks. It rolls initiative and, on its turn, uses its action to spray musk at a random creature within 5 feet of it. The target must make a DC 9 Constitution saving throw. On a failed save, the target retches and can't take actions for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that doesn't need to breathe or is immune to poison automatically succeeds on the saving throw. Once the skunk has sprayed its musk, it can't do so again until it finishes a short or long rest. 8. Wasp Nest in a Bag. The kobold throws a small bag into a 5-foot-square space within 20 feet of it. A swarm of insects (wasps) with 11 hit points emerges from the bag and rolls initiative. At the end of each of the swarm's turns, there's a 50 percent chance that the swarm disperses."
+                Desc: "The kobold uses one of the following options (roll a d8 or choose one); the kobold can use each one no more than once per day: 1. Acid. The kobold hurls a flask of acid." + 
+                " Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: 7 (2d6) acid damage. 2. Alchemist's Fire. The kobold throws a flask of alchemist's fire. Ranged Weapon Attack:" + 
+                " +4 to hit, range 5/20 ft., one target. Hit: 2 (1d4) fire damage at the start of each of the target's turns. A creature can end this damage by using its action to make a DC 10 Dexterity" + 
+                " check to extinguish the flames. 3. Basket of Centipedes. The kobold throws a small basket into a 5-foot-square space within 20 feet of it. A swarm of insects (centipedes) with 11 hit" + 
+                " points emerges from the basket and rolls initiative. At the end of each of the swarm's turns, there's a 50 percent chance that the swarm disperses. 4. Green Slime Pot. The kobold" + 
+                " throws a clay pot full of green slime at the target, and it breaks open on impact. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: The target is covered in a" + 
+                " patch of green slime (see chapter 5 of the Dungeon Master's Guide). Miss: A patch of green slime covers a randomly determined 5-foot-square section of wall or floor within 5" + 
+                " feet of the target. 5. Rot Grub Pot. The kobold throws a clay pot into a 5-foot square space within 20 feet of it, and it breaks open on impact. A swarm of rot grubs (see appendix A)" + 
+                " emerges from the shattered pot and remains a hazard in that square. 6. Scorpion on a Stick. The kobold makes a melee attack with a scorpion tied to the end of a 5-foot-long pole." + 
+                " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (ld8) poison damage on a failed" + 
+                " save, or half as much damage on a successful one. 7. Skunk in a Cage. The kobold releases a skunk into an unoccupied space within 5 feet ofit. The skunk has a walking speed of 20" + 
+                " feet, AC 10, 1 hit point, and no effective attacks. It rolls initiative and, on its turn, uses its action to spray musk at a random creature within 5 feet of it. The target" + 
+                " must make a DC 9 Constitution saving throw. On a failed save, the target retches and can't take actions for 1 minute. The target can repeat the saving throw at the end of each" + 
+                " of its turns, ending the effect on itself on a success. A creature that doesn't need to breathe or is immune to poison automatically succeeds on the saving throw. Once the skunk" + 
+                " has sprayed its musk, it can't do so again until it finishes a short or long rest. 8. Wasp Nest in a Bag. The kobold throws a small bag into a 5-foot-square space within 20 feet" + 
+                " of it. A swarm of insects (wasps) with 11 hit points emerges from the bag and rolls initiative. At the end of each of the swarm's turns, there's a 50 percent chance that the swarm disperses."
             }
         ],
         Reactions: [],
