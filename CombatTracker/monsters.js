@@ -27171,6 +27171,2628 @@ const monstersLocal = [
         LairActions: [],
         Description: "Description here"
     },
+    { // Tanarukk
+        ID: 506,
+        ProfileType: "Monster",
+        Name: "Tanarukk",
+        Type: "Medium fiend (demon, orc), chaotic evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 95,
+        HitPointsRoll: "10d8 + 50",
+        ArmorClass: [14, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 13,
+        Constitution: 20,
+        Intelligence: 9,
+        Wisdom: 9,
+        Charisma: 9,
+        SavingThrows: [],
+        Skills: ["Intimidation +2", "Perception +2"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Fire", "Poison"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 12"],
+        Languages: ["Abyssal", "Common", "Orc"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Aggressive",
+                Desc: "As a bonus action, the tanarukk can move up to its speed toward a hostile creature that it can see."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The tanarukk has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The tanarukk makes two attacks: one with its bite and one with its greatsword."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+            },
+            {
+                Title: "Greatsword",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Unbridled Fury",
+                Desc: "In response to being hit by a melee attack, the tanarukk can make one melee weapon attack with advantage against the attacker."
+            }
+        ],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Quickling
+        ID: 507,
+        ProfileType: "Monster",
+        Name: "Quickling",
+        Type: "Tiny fey, chaotic evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 10,
+        HitPointsRoll: "3d4 + 3",
+        ArmorClass: [16, ""],
+        Speed: ["120 ft."],
+        Strength: 4,
+        Dexterity: 23,
+        Constitution: 13,
+        Intelligence: 10,
+        Wisdom: 12,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: ["Acrobatics +8", "Sleight of Hand +8", "Stealth +8", "Perception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 15"],
+        Languages: ["Common", "Sylvan"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Blurred Movement",
+                Desc: "Attack rolls against the quickling have disadvantage unless the quickling is incapacitated or restrained."
+            },
+            {
+                Title: "Evasion",
+                Desc: "If the quickling is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The quickling makes three dagger attacks."
+            },
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +8 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 8 (1d4 + 6) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Redcap
+        ID: 508,
+        ProfileType: "Monster",
+        Name: "Redcap",
+        Type: "Small fey, chaotic evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 45,
+        HitPointsRoll: "6d6 + 24",
+        ArmorClass: [13, "natural armor"],
+        Speed: ["25 ft."],
+        Strength: 18,
+        Dexterity: 13,
+        Constitution: 18,
+        Intelligence: 10,
+        Wisdom: 12,
+        Charisma: 9,
+        SavingThrows: [],
+        Skills: ["Athletics +6", "Perception +3"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 13"],
+        Languages: ["Common", "Sylvan"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Iron Boots",
+                Desc: "While moving, the redcap has disadvantage on Dexterity (Stealth) checks."
+            },
+            {
+                Title: "Outsize Strength",
+                Desc: "While grappling, the redcap is considered to be Medium. Also, wielding a heavy weapon doesn't impose disadvantage on its attack rolls."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The redcap makes three attacks with its wicked sickle."
+            },
+            {
+                Title: "Wicked Sickle",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage."
+            },
+            {
+                Title: "Ironbound Pursuit",
+                Desc: "The redcap moves up to its speed to a creature it can see and kicks with its iron boots. The target must succeed on a DC 14 Dexterity saving throw or take 20 (3d10 + 4) bludgeoning damage and be knocked prone."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Sea Spawn
+        ID: 509,
+        ProfileType: "Monster",
+        Name: "Sea Spawn",
+        Type: "Medium humanoid, neutral evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 32,
+        HitPointsRoll: "5d8 + 10",
+        ArmorClass: [11, "natural armor"],
+        Speed: ["20 ft.", "swim 30 ft."],
+        Strength: 15,
+        Dexterity: 8,
+        Constitution: 15,
+        Intelligence: 6,
+        Wisdom: 10,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 10"],
+        Languages: ["Aquan", "Common"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Limited Amphibiousness",
+                Desc: "The sea spawn can breathe air and water, but needs to be submerged in the sea at least once a day for 1 minute to avoid suffocating."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The sea spawn makes three attacks: two unarmed strikes and one with its Piscine Anatomy."
+            },
+            {
+                Title: "Unarmed Strike",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
+            },
+            {
+                Title: "Piscine Anatomy: Bite",
+                Desc: "(If the sea spawn has the appropriate anatomy): Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+            },
+            {
+                Title: "Piscine Anatomy: Poison Quills",
+                Desc: "(If the sea spawn has the appropriate anatomy): Poison Quills. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 3 (1d6) poison damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            },
+            {
+                Title: "Piscine Anatomy: Tentacle",
+                Desc: "(If the sea spawn has the appropriate anatomy): Tentacle. Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage, and the target is grappled (escape DC 12) if it is a Medium or smaller creature. Until this grapple ends, the sea spawn can't use this tentacle on another target."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Shadow Mastiff
+        ID: 510,
+        ProfileType: "Monster",
+        Name: "Shadow Mastiff",
+        Type: "Medium monstrosity, neutral evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 33,
+        HitPointsRoll: "6d8 + 6",
+        ArmorClass: [12, ""],
+        Speed: ["40 ft."],
+        Strength: 16,
+        Dexterity: 14,
+        Constitution: 13,
+        Intelligence: 5,
+        Wisdom: 12,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: ["Perception +3", "Stealth +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from nonmagical attacks while in dim light or darkness"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 13"],
+        Languages: [],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Ethereal Awareness",
+                Desc: "The shadow mastiff can see ethereal creatures and objects."
+            },
+            {
+                Title: "Keen Hearing and Smell",
+                Desc: "The shadow mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+            },
+            {
+                Title: "Shadow Blend",
+                Desc: "While in dim light or darkness, the shadow mastiff can use a bonus action to become invisible, along with anything it is wearing or carrying. The invisibility lasts until the shadow mastiff uses a bonus action to end it or until the shadow mastiff attacks, is in bright light, or is incapacitated."
+            },
+            {
+                Title: "Sunlight Weakness",
+                Desc: "While in bright light created by sunlight, the shadow mastiff has disadvantage on attack rolls, ability checks, and saving throws."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Slithering Tracker
+        ID: 511,
+        ProfileType: "Monster",
+        Name: "Slithering Tracker",
+        Type: "Medium ooze, chaotic evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 32,
+        HitPointsRoll: "5d8 + 10",
+        ArmorClass: [14, ""],
+        Speed: ["30 ft.", "climb 30 ft.", "swim 30 ft."],
+        Strength: 16,
+        Dexterity: 19,
+        Constitution: 15,
+        Intelligence: 10,
+        Wisdom: 14,
+        Charisma: 11,
+        SavingThrows: [],
+        Skills: ["Stealth +8"],
+        DamageVulnerabilities: ["Cold", "Fire"],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Blinded", "Deafened", "Exhaustion", "Grappled", "Paralyzed", "Petrified", "Prone", "Restrained", "Unconscious"],
+        Senses: ["Blindsight 120 ft.", "Passive Perception 12"],
+        Languages: ["Understands languages it knew in its previous form but can't speak"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Ambusher",
+                Desc: "In the first round of a combat, the slithering tracker has advantage on attack rolls against any creature it surprised."
+            },
+            {
+                Title: "Damage Transfer",
+                Desc: "While grappling a creature, the slithering tracker takes only half the damage dealt to it, and the creature it is grappling takes the other half."
+            },
+            {
+                Title: "False Appearance",
+                Desc: "While the slithering tracker remains motionless, it is indistinguishable from a puddle, unless an observer succeeds on a DC 18 Intelligence (Investigation) check."
+            },
+            {
+                Title: "Keen Tracker",
+                Desc: "The slithering tracker has advantage on Wisdom checks to track prey."
+            },
+            {
+                Title: "Liquid Form",
+                Desc: "The slithering tracker can enter an enemy's space and stop there. It can also move through a space as narrow as 1 inch wide without squeezing."
+            },
+            {
+                Title: "Spider Climb",
+                Desc: "The slithering tracker can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            },
+            {
+                Title: "Watery Stealth",
+                Desc: "While underwater, the slithering tracker has advantage on Dexterity (Stealth) checks made to hide, and it can take the Hide action as a bonus action."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) bludgeoning damage."
+            },
+            {
+                Title: "Life Leech",
+                Desc: "One Large or smaller creature that the slithering tracker can see within 5 feet of it must succeed on a DC 13 Dexterity saving throw or be grappled (escape DC 13). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. In addition, the grappled target takes 16 (3d10) necrotic damage at the start of each of its turns. The slithering tracker can grapple only one target at a time."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Spawn of Kyuss
+        ID: 512,
+        ProfileType: "Monster",
+        Name: "Spawn of Kyuss",
+        Type: "Medium undead, chaotic evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 76,
+        HitPointsRoll: "9d8 + 36",
+        ArmorClass: [10, ""],
+        Speed: ["30 ft."],
+        Strength: 16,
+        Dexterity: 11,
+        Constitution: 18,
+        Intelligence: 5,
+        Wisdom: 7,
+        Charisma: 3,
+        SavingThrows: ["Wisdom +1"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Exhaustion", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 8"],
+        Languages: ["Understands the languages it knew in life but can't speak"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Regeneration",
+                Desc: "The spawn of Kyuss regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or a body of running water. If the spawn takes acid, fire, or radiant damage, this trait doesn't function at the start of the spawn's next turn. The spawn is destroyed only if it starts its turn with 0 hit points and doesn't regenerate."
+            },
+            {
+                Title: "Worms",
+                Desc: "If the spawn of Kyuss is targeted by an effect that cures disease or removes a curse, all the worms infesting it wither away, and it loses its Burrowing Worm action."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The spawn of Kyuss makes two attacks with its claws and uses Burrowing Worm."
+            },
+            {
+                Title: "Burrowing Worm",
+                Desc: "A worm launches from the spawn of Kyuss at one humanoid that the spawn can see within 10 feet of it. The worm latches onto the target's skin unless the target succeeds on a DC 11 Dexterity saving throw. The worm is a Tiny undead with AC 6, 1 hit point, a 2 (-4) in every ability score, and a speed of 1 foot. While on the target's skin, the worm can be killed by normal means or scraped off using an action (the spawn can use this action to launch a scraped-off worm at a humanoid it can see within 10 feet of the worm). Otherwise, the worm burrows under the target's skin at the end of the target's next turn, dealing 1 piercing damage to it. At the end of each of its turns thereafter, the target takes 7 (2d6) necrotic damage per worm infesting it (maximum of 10d6). A worm-infested target dies if it drops to 0 hit points, then rises 10 minutes later as a spawn of Kyuss. If a worm-infested creature is targeted by an effect that cures disease or removes a curse, all the worms infesting it wither away."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 7 (2d6) necrotic damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Tlincalli
+        ID: 513,
+        ProfileType: "Monster",
+        Name: "Tlincalli",
+        Type: "Large monstrosity, neutral evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 85,
+        HitPointsRoll: "10d10 + 30",
+        ArmorClass: [15, "natural armor"],
+        Speed: ["40 ft."],
+        Strength: 16,
+        Dexterity: 13,
+        Constitution: 16,
+        Intelligence: 8,
+        Wisdom: 12,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: ["Perception +4", "Stealth +4", "Survival +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 13"],
+        Languages: ["Tlincalli"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The tlincalli makes two attacks: one with its longsword or spiked chain, and one with its sting."
+            },
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands."
+            },
+            {
+                Title: "Spiked Chain",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target is grappled (escape DC 11) if it is a Large or smaller creature. Until this grapple ends, the target is restrained, and the tlincalli can't use the spiked chain against another target."
+            },
+            {
+                Title: "Sting",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage plus 14 (4d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned for 1 minute. If it fails the saving throw by 5 or more, the target is also paralyzed while poisoned. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Trapper
+        ID: 514,
+        ProfileType: "Monster",
+        Name: "Trapper",
+        Type: "Large monstrosity, unaligned",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 85,
+        HitPointsRoll: "10d10 + 30",
+        ArmorClass: [13, "natural armor"],
+        Speed: ["10 ft.", "climb 10 ft."],
+        Strength: 17,
+        Dexterity: 10,
+        Constitution: 17,
+        Intelligence: 2,
+        Wisdom: 13,
+        Charisma: 4,
+        SavingThrows: [],
+        Skills: ["Stealth +2"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Blindsight 30 ft.", "Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: [],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "False Appearance",
+                Desc: "While the trapper is attached to a ceiling, floor, or wall and remains motionless, it is almost indistinguishable from an ordinary section of ceiling, floor, or wall. A creature that can see it and succeeds on a DC 20 Intelligence (Investigation) or Intelligence (Nature) check can discern its presence."
+            },
+            {
+                Title: "Spider Climb",
+                Desc: "The trapper can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Smother",
+                Desc: "One Large or smaller creature within 5 feet of the trapper must succeed on a DC 14 Dexterity saving throw or be grappled (escape DC 14). Until the grapple ends, the target takes 17 (4d6 + 3) bludgeoning damage plus 3 (1d6) acid damage at the start of each of its turns. While grappled in this way, the target is restrained, blinded, and at risk of suffocating. The trapper can smother only one creature at a time."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Vargouille
+        ID: 515,
+        ProfileType: "Monster",
+        Name: "Vargouille",
+        Type: "Tiny fiend, chaotic evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 13,
+        HitPointsRoll: "3d4 + 6",
+        ArmorClass: [12, ""],
+        Speed: ["5 ft.", "fly 40 ft."],
+        Strength: 6,
+        Dexterity: 14,
+        Constitution: 14,
+        Intelligence: 4,
+        Wisdom: 7,
+        Charisma: 2,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 8"],
+        Languages: ["Understands Abyssal, Infernal, and any languages it knew before becoming a vargouille but can't speak"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 10 (3d6) poison damage."
+            },
+            {
+                Title: "Kiss",
+                Desc: "The vargouille kisses one incapacitated humanoid within 5 feet of it. The target must succeed on a DC 12 Charisma saving throw or become cursed. The cursed target loses 1 point of Charisma after each hour, as its head takes on fiendish aspects. The curse doesn't advance while the target is in sunlight or the area of a daylight spell; don't count that time. When the cursed target's Charisma becomes 2, it dies, and its head tears from its body and becomes a new vargouille. Casting remove curse, greater restoration, or a similar spell on the target before the transformation is complete can end the curse. Doing so undoes the changes made to the target by the curse."
+            },
+            {
+                Title: "Stunning Shriek",
+                Desc: "The vargouille shrieks. Each humanoid and beast within 30 feet of the vargouille and able to hear it must succeed on a DC 12 Wisdom saving throw or be frightened until the end of the vargouille's next turn. While frightened in this way, a target is stunned. If a target's saving throw is successful or the effect ends for it, the target is immune to the Stunning Shriek of all vargouilles for 1 hour."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Vegepygmy
+        ID: 516,
+        ProfileType: "Monster",
+        Name: "Vegepygmy",
+        Type: "Small plant, neutral",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 9,
+        HitPointsRoll: "2d6 + 2",
+        ArmorClass: [13, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 7,
+        Dexterity: 14,
+        Constitution: 13,
+        Intelligence: 6,
+        Wisdom: 11,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: ["Perception +2", "Stealth +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Lightning", "Piercing"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 12"],
+        Languages: ["Vegepygmy"],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Plant Camouflage",
+                Desc: "The vegepygmy has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "The vegepygmy regains 3 hit points at the start of its turn. If it takes cold, fire, or necrotic damage, this trait doesn't function at the start of the vegepygmy's next turn. The vegepygmy dies only if it starts its turn with 0 hit points and doesn't regenerate."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+            },
+            {
+                Title: "Sling",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Vegepygmy Chief
+        ID: 517,
+        ProfileType: "Monster",
+        Name: "Vegepygmy Chief",
+        Type: "Small plant, neutral",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 33,
+        HitPointsRoll: "6d6 + 12",
+        ArmorClass: [14, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 14,
+        Dexterity: 14,
+        Constitution: 14,
+        Intelligence: 7,
+        Wisdom: 12,
+        Charisma: 9,
+        SavingThrows: [],
+        Skills: ["Perception +3", "Stealth +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Lightning", "Piercing"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 13"],
+        Languages: ["Vegepygmy"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Plant Camouflage",
+                Desc: "The vegepygmy has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "The vegepygmy regains 5 hit points at the start of its turn. If it takes cold, fire, or necrotic damage, this trait doesn't function at the start of the vegepygmy's next turn. The vegepygmy dies only if it starts its turn with 0 hit points and doesn't regenerate."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The vegepygmy makes two attacks with its claws or two melee attacks with its spear."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+            },
+            {
+                Title: "Spear",
+                Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack."
+            },
+            {
+                Title: "Spores (1/Day)",
+                Desc: "A 15-foot-radius cloud of toxic spores extends out from the vegepygmy. The spores spread around corners. Each creature in that area that isn't a plant must succeed on a DC 12 Constitution saving throw or be poisoned. While poisoned in this way, a target takes 9 (2d8) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Thorny
+        ID: 518,
+        ProfileType: "Monster",
+        Name: "Thorny",
+        Type: "Medium plant, neutral",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 27,
+        HitPointsRoll: "5d8 + 5",
+        ArmorClass: [14, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 13,
+        Dexterity: 12,
+        Constitution: 13,
+        Intelligence: 2,
+        Wisdom: 10,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: ["Perception +4", "Stealth +3"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Lightning", "Piercing"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 14"],
+        Languages: [],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Plant Camouflage",
+                Desc: "The thorny has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "The thorny regains 5 hit points at the start of its turn. If it takes cold, fire, or necrotic damage, this trait doesn't function at the start of the thorny's next turn. The thorny dies only if it starts its turn with 0 hit points and doesn't regenerate."
+            },
+            {
+                Title: "Thorny Body",
+                Desc: "At the start of its turn, the thorny deals 2 (1d4) piercing damage to any creature grappling it."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Wood Woad
+        ID: 519,
+        ProfileType: "Monster",
+        Name: "Wood Woad",
+        Type: "Medium plant, lawful neutral",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 75,
+        HitPointsRoll: "10d8 + 30",
+        ArmorClass: [18, "natural armor, shield"],
+        Speed: ["30 ft.", "climb 30 ft."],
+        Strength: 18,
+        Dexterity: 12,
+        Constitution: 16,
+        Intelligence: 10,
+        Wisdom: 13,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: ["Athletics +7", "Perception +4", "Stealth +4"],
+        DamageVulnerabilities: ["Fire"],
+        DamageResistances: ["Bludgeoning", "Piercing"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Frightened"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 14"],
+        Languages: ["Sylvan"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Club",
+                Desc: "In the wood woad's hand, its club is magical and deals 7 (3d4) extra damage (included in its attacks)."
+            },
+            {
+                Title: "Plant Camouflage",
+                Desc: "The wood woad has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "The wood woad regains 10 hit points at the start of its turn if it is in contact with the ground. If the wood woad takes fire damage, this trait doesn't function at the start of the wood woad's next turn. The wood woad dies only if it starts its turn with 0 hit points and doesn't regenerate."
+            },
+            {
+                Title: "Tree Stride",
+                Desc: "Once on each of its turns, the wood woad can use 10 feet of its movement to step magically into one living tree within 5 feet of it and emerge from a second living tree within 60 feet of it that it can see, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The wood woad makes two attacks with its club."
+            },
+            {
+                Title: "Club",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (4d4 + 4) bludgeoning damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Xvart
+        ID: 520,
+        ProfileType: "Monster",
+        Name: "Xvart",
+        Type: "Small humanoid (xvart), chaotic evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 7,
+        HitPointsRoll: "2d6",
+        ArmorClass: [13, "leather armor"],
+        Speed: ["30 ft."],
+        Strength: 8,
+        Dexterity: 14,
+        Constitution: 10,
+        Intelligence: 8,
+        Wisdom: 7,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: ["Stealth +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 30 ft.", "Passive Perception 8"],
+        Languages: ["Abyssal"],
+        Challenge: [0.125, 25],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Low Cunning",
+                Desc: "The xvart can take the Disengage action as a bonus action on each of its turns."
+            },
+            {
+                Title: "Overbearing Pack",
+                Desc: "The xvart has advantage on Strength (Athletics) checks to shove a creature if at least one of the xvart's allies is within 5 feet of the target and the ally isn't incapacitated."
+            },
+            {
+                Title: "Raxivort's Tongue",
+                Desc: "The xvart can communicate with ordinary bats and rats, as well as giant bats and giant rats."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Shortsword",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+            },
+            {
+                Title: "Sling",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Xvart Warlock of Raxivort
+        ID: 521,
+        ProfileType: "Monster",
+        Name: "Xvart Warlock of Raxivort",
+        Type: "Small humanoid (xvart), chaotic evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 22,
+        HitPointsRoll: "5d6 + 5",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 8,
+        Dexterity: 14,
+        Constitution: 12,
+        Intelligence: 8,
+        Wisdom: 11,
+        Charisma: 12,
+        SavingThrows: [],
+        Skills: ["Stealth +3"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 30 ft.", "Passive Perception 10"],
+        Languages: ["Abyssal"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The xvart's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components: At will: detect magic, mage armor (self only)."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The xvart is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save DC 11, +3 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): eldritch blast, mage hand, minor illusion, poison spray, prestidigitation; 1st-2nd level (2 2nd-level slots): burning hands, expeditious retreat, invisibility, scorching ray."
+            },
+            {
+                Title: "Low Cunning",
+                Desc: "The xvart can take the Disengage action as a bonus action on each of its turns."
+            },
+            {
+                Title: "Raxivort's Blessing",
+                Desc: "When the xvart reduces an enemy to 0 hit points, the xvart gains 4 temporary hit points."
+            },
+            {
+                Title: "Raxivort's Tongue",
+                Desc: "The xvart can communicate with ordinary bats and rats, as well as giant bats and giant rats."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Scimitar",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Yeth Hound
+        ID: 522,
+        ProfileType: "Monster",
+        Name: "Yeth Hound",
+        Type: "Large fey, neutral evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 51,
+        HitPointsRoll: "6d10 + 18",
+        ArmorClass: [14, "natural armor"],
+        Speed: ["40 ft.", "fly 40 ft. (hover)"],
+        Strength: 18,
+        Dexterity: 17,
+        Constitution: 16,
+        Intelligence: 5,
+        Wisdom: 12,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Bludgeoning, Piercing, and Slashing from nonmagical attacks not made with silvered weapons"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["Understands Common, Elvish, and Sylvan but can't speak"],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Keen Hearing and Smell",
+                Desc: "The yeth hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+            },
+            {
+                Title: "Sunlight Banishment",
+                Desc: "If the yeth hound starts its turn in sunlight, it is transported to the Ethereal Plane. While sunlight shines on the spot from which it vanished, the hound must remain in the Deep Ethereal. After sunset, it returns to the Border Ethereal at the same spot, whereupon it typically sets out to find its pack or its master. The hound is visible on the Material Plane while it is in the Border Ethereal, and vice versa, but it can't affect or be affected by anything on the other plane. Once it is adjacent to its master or a pack mate that is on the Material Plane, a yeth hound in the Border Ethereal can return to the Material Plane as an action."
+            },
+            {
+                Title: "Telepathic Bond",
+                Desc: "While the yeth hound is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically with each other."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage, plus 14 (4d6) psychic damage if the target is frightened."
+            },
+            {
+                Title: "Baleful Baying",
+                Desc: "The yeth hound bays magically. Every enemy within 300 feet of the hound that can hear it must succeed on a DC 13 Wisdom saving throw or be frightened until the end of the hound's next turn or until the hound is incapacitated. A frightened target that starts its turn within 30 feet of the hound must use all its movement on that turn to get as far from the hound as possible, must finish the move before taking an action, and must take the most direct route, even if hazards lie that way. A target that successfully saves is immune to the baying of all yeth hounds for the next 24 hours."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Yuan-ti Anathema
+        ID: 523,
+        ProfileType: "Monster",
+        Name: "Yuan-ti Anathema",
+        Type: "Huge monstrosity (shapechanger, yuan-ti), neutral evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 189,
+        HitPointsRoll: "18d12 + 72",
+        ArmorClass: [16, "natural armor"],
+        Speed: ["40 ft.", "climb 30 ft.", "swim 30 ft."],
+        Strength: 23,
+        Dexterity: 13,
+        Constitution: 19,
+        Intelligence: 19,
+        Wisdom: 17,
+        Charisma: 20,
+        SavingThrows: [],
+        Skills: ["Perception +7", "Stealth +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Fire", "Lightning"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Blindsight 30 ft.", "Darkvision 60 ft.", "Passive Perception 17"],
+        Languages: ["Abyssal", "Common", "Draconic"],
+        Challenge: [12, 8400],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting (Anathema Form Only)",
+                Desc: "The anathema's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components: At will: animal friendship (snakes only); 3/day each: darkness, entangle, fear, haste, suggestion, polymorph; 1/day: divine word."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The anathema has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Ophidiophobia Aura",
+                Desc: "Any creature of the anathema's choice, other than a snake or a yuan-ti, that starts its turn within 30 feet of the anathema and can see or hear it must succeed on a DC 17 Wisdom saving throw or become frightened of snakes and yuan-ti. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this aura for the next 24 hours."
+            },
+            {
+                Title: "Shapechanger",
+                Desc: "The anathema can use its action to polymorph into a Huge giant constrictor snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+            },
+            {
+                Title: "Six Heads",
+                Desc: "The anathema has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack (Anathema Form Only)",
+                Desc: "The anathema makes two claw attacks, one constrict attack, and one Flurry of Bites attack."
+            },
+            {
+                Title: "Claw (Anathema Form Only)",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+            },
+            {
+                Title: "Constrict",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 15 ft., one Large or smaller creature. Hit: 16 (3d6 + 6) bludgeoning damage plus 7 (2d6) acid damage, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained and takes 16 (3d6 + 6) bludgeoning damage plus 7 (2d6) acid damage at the start of each of its turns, and the anathema can't constrict another target."
+            },
+            {
+                Title: "Flurry of Bites",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 10 ft., one creature. Hit: 27 (6d6 + 6) piercing damage plus 14 (4d6) poison damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Yuan-ti Broodguard
+        ID: 524,
+        ProfileType: "Monster",
+        Name: "Yuan-ti Broodguard",
+        Type: "Medium humanoid (yuan-ti), neutral evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 45,
+        HitPointsRoll: "7d8 + 14",
+        ArmorClass: [14, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 15,
+        Dexterity: 14,
+        Constitution: 14,
+        Intelligence: 6,
+        Wisdom: 11,
+        Charisma: 4,
+        SavingThrows: ["Strength +4", "Dexterity +4", "Wisdom +2"],
+        Skills: ["Perception +2"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 12"],
+        Languages: ["Abyssal", "Common", "Draconic"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Mental Resistance",
+                Desc: "The broodguard has advantage on saving throws against being charmed, and magic can't paralyze it."
+            },
+            {
+                Title: "Reckless",
+                Desc: "At the start of its turn, the broodguard can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The broodguard makes three attacks: one with its bite and two with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Yuan-ti Mind Whisperer
+        ID: 525,
+        ProfileType: "Monster",
+        Name: "Yuan-ti Mind Whisperer",
+        Type: "Medium monstrosity (shapechanger, yuan-ti), neutral evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 71,
+        HitPointsRoll: "13d8 + 13",
+        ArmorClass: [14, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 16,
+        Dexterity: 14,
+        Constitution: 13,
+        Intelligence: 14,
+        Wisdom: 12,
+        Charisma: 16,
+        SavingThrows: ["Wisdom +4", "Charisma +5"],
+        Skills: ["Deception +5", "Stealth +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft. (penetrates magical darkness)", "Passive Perception 12"],
+        Languages: ["Abyssal", "Common", "Draconic"],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Shapechanger",
+                Desc: "The yuan-ti can use its action to polymorph into a Medium snake or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. If it dies, it stays in its current form."
+            },
+            {
+                Title: "Innate Spellcasting (Yuan-ti Form Only)",
+                Desc: "The yuan-ti's innate spellcasting ability is Charisma (spell save DC 13). The yuan-ti can innately cast the following spells, requiring no material components: At will: animal friendship (snakes only); 3/day: suggestion."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The yuan-ti has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Mind Fangs (2/Day)",
+                Desc: "The first time the yuan-ti hits with a melee attack on its turn, it can deal an extra 16 (3d10) psychic damage to the target."
+            },
+            {
+                Title: "Spellcasting (Yuan-ti Form Only)",
+                Desc: "The yuan-ti is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): eldritch blast (range 300 ft., +3 bonus to each damage roll), friends, message, minor illusion, poison spray, prestidigitation; 1st-3rd level (2 3rd-level slots): charm person, crown of madness, detect thoughts, expeditious retreat, fly, hypnotic pattern, illusory script."
+            },
+            {
+                Title: "Sseth's Blessing",
+                Desc: "When the yuan-ti reduces an enemy to 0 hit points, the yuan-ti gains 9 temporary hit points."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack (Yuan-ti Form Only)",
+                Desc: "The yuan-ti makes one bite attack and one scimitar attack."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 7 (2d6) poison damage."
+            },
+            {
+                Title: "Scimitar (Yuan-ti Form Only)",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Yuan-ti Nightmare Speaker
+        ID: 526,
+        ProfileType: "Monster",
+        Name: "Yuan-ti Nightmare Speaker",
+        Type: "Medium monstrosity (shapechanger, yuan-ti), neutral evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 71,
+        HitPointsRoll: "13d8 + 13",
+        ArmorClass: [14, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 16,
+        Dexterity: 14,
+        Constitution: 13,
+        Intelligence: 14,
+        Wisdom: 12,
+        Charisma: 16,
+        SavingThrows: ["Wisdom +3", "Charisma +5"],
+        Skills: ["Deception +5", "Stealth +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft. (penetrates magical darkness)", "Passive Perception 11"],
+        Languages: ["Abyssal", "Common", "Draconic"],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Shapechanger",
+                Desc: "The yuan-ti can use its action to polymorph into a Medium snake or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. If it dies, it stays in its current form."
+            },
+            {
+                Title: "Death Fangs (2/Day)",
+                Desc: "The first time the yuan-ti hits with a melee attack on its turn, it can deal an extra 16 (3d10) necrotic damage to the target."
+            },
+            {
+                Title: "Innate Spellcasting (Yuan-ti Form Only)",
+                Desc: "The yuan-ti's innate spellcasting ability is Charisma (spell save DC 13). The yuan-ti can innately cast the following spells, requiring no material components: At will: animal friendship (snakes only); 3/day: suggestion."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The yuan-ti has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Spellcasting (Yuan-ti Form Only)",
+                Desc: "The yuan-ti is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack (Yuan-ti Form Only)",
+                Desc: "The yuan-ti makes one constrict attack and one scimitar attack."
+            },
+            {
+                Title: "Constrict",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 14) if it is a Large or smaller creature. Until this grapple ends, the target is restrained, and the yuan-ti can't constrict another target."
+            },
+            {
+                Title: "Scimitar (Yuan-ti Form Only)",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+            },
+            {
+                Title: "Invoke Nightmare (Recharges after a Short or Long Rest)",
+                Desc: "The yuan-ti taps into the nightmares of a creature it can see within 60 feet of it and creates an illusory, immobile manifestation of the creature's deepest fears, visible only to that creature. The target must make a DC 13 Intelligence saving throw. On a failed save, the target takes 11 (2d10) psychic damage and is frightened of the manifestation, believing it to be real. The yuan-ti must concentrate to maintain the illusion (as if concentrating on a spell), which lasts for up to 1 minute and can't be harmed. The target can repeat the saving throw at the end of each of its turns, ending the illusion on a success, or taking 11 (2d10) psychic damage on a failure."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Yuan-ti Pit Master
+        ID: 527,
+        ProfileType: "Monster",
+        Name: "Yuan-ti Pit Master",
+        Type: "Medium monstrosity (shapechanger, yuan-ti), neutral evil",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 88,
+        HitPointsRoll: "16d8 + 16",
+        ArmorClass: [14, "natural armor"],
+        Speed: ["30 ft."],
+        Strength: 16,
+        Dexterity: 14,
+        Constitution: 13,
+        Intelligence: 14,
+        Wisdom: 12,
+        Charisma: 16,
+        SavingThrows: ["Wisdom +3", "Charisma +5"],
+        Skills: ["Deception +5", "Stealth +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft. (penetrates magical darkness)", "Passive Perception 11"],
+        Languages: ["Abyssal", "Common", "Draconic"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Shapechanger",
+                Desc: "The yuan-ti can use its action to polymorph into a Medium snake or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
+            },
+            {
+                Title: "Innate Spellcasting (Yuan-ti Form Only)",
+                Desc: "The yuan-ti's innate spellcasting ability is Charisma (spell save DC 13). The yuan-ti can innately cast the following spells, requiring no material components: At will: animal friendship (snakes only); 3/day: suggestion."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The yuan-ti has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Poison's Disciple (2/Day)",
+                Desc: "The first time the yuan-ti hits with a melee attack on its turn, it can deal an extra 16 (3d10) poison damage to the target."
+            },
+            {
+                Title: "Spellcasting (Yuan-ti Form Only)",
+                Desc: "The yuan-ti is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack (Yuan-ti Form Only)",
+                Desc: "The yuan-ti makes one constrict attack and one scimitar attack."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (ld4 + 3) piercing damage plus 7 (2d6) poison damage."
+            },
+            {
+                Title: "Merrshaulk's Slumber (1/Day).",
+                Desc: "The yuan-ti targets up to five creatures that it can see within 60 feet of it. Each target must succeed on a DC 13 Constitution saving throw or fall into a magical sleep and be unconscious for 10 minutes. A sleeping target awakens if it takes damage or if someone uses an action to shake or slap it awake. This magical sleep has no effect on a creature immune to being charmed."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Aurochs
+        ID: 528,
+        ProfileType: "Monster",
+        Name: "Aurochs",
+        Type: "Large beast, unaligned",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 38,
+        HitPointsRoll: "4d10 + 16",
+        ArmorClass: [11, "natural armor"],
+        Speed: ["50 ft."],
+        Strength: 20,
+        Dexterity: 10,
+        Constitution: 19,
+        Intelligence: 2,
+        Wisdom: 12,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: [],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Charge",
+                Desc: "If the aurochs moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Gore",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Cow
+        ID: 529,
+        ProfileType: "Monster",
+        Name: "Cow",
+        Type: "Large beast, unaligned",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 15,
+        HitPointsRoll: "2d10 + 4",
+        ArmorClass: [10],
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 10,
+        Constitution: 14,
+        Intelligence: 2,
+        Wisdom: 10,
+        Charisma: 4,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 10"],
+        Languages: [],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Charge",
+                Desc: "If the cow moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 (2d6) piercing damage."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Gore",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Dolphin
+        ID: 530,
+        ProfileType: "Monster",
+        Name: "Dolphin",
+        Type: "Medium beast, unaligned",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 11,
+        HitPointsRoll: "2d8 + 2",
+        ArmorClass: [12, "natural armor"],
+        Speed: ["0 ft.", "swim 60 ft."],
+        Strength: 14,
+        Dexterity: 13,
+        Constitution: 13,
+        Intelligence: 6,
+        Wisdom: 12,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: ["Perception +3"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Blindsight 60 ft.", "Passive Perception 13"],
+        Languages: [],
+        Challenge: [0.125, 25],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Charge",
+                Desc: "If the dolphin moves at least 30 feet straight toward a target and then hits it with a slam attack on the same turn, the target takes an extra 3 (1d6) bludgeoning damage."
+            },
+            {
+                Title: "Hold Breath",
+                Desc: "The dolphin can hold its breath for 20 minutes."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Swarm of Rot Grubs
+        ID: 531,
+        ProfileType: "Monster",
+        Name: "Swarm of Rot Grubs",
+        Type: "Medium swarm of Tiny beasts, unaligned",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 22,
+        HitPointsRoll: "5d8",
+        ArmorClass: [8],
+        Speed: ["5 ft.", "climb 5 ft."],
+        Strength: 2,
+        Dexterity: 7,
+        Constitution: 10,
+        Intelligence: 1,
+        Wisdom: 2,
+        Charisma: 1,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Piercing", "Slashing"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Frightened", "Grappled", "Paralyzed", "Petrified", "Prone", "Restrained"],
+        Senses: ["Blindsight 10 ft.", "Passive Perception 6"],
+        Languages: [],
+        Challenge: [0.5, 100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Swarm",
+                Desc: "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny maggot. The swarm can't regain hit points or gain temporary hit points."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bites",
+                Desc: "Melee Weapon Attack: +0 to hit, reach 0 ft., one creature in the swarm's space. Hit: The target is infested by 1d4 rot grubs. At the start of each of the target's turns, the target takes 1d6 piercing damage per rot grub infesting it. Applying fire to the bite wound before the end of the target's next turn deals 1 fire damage to the target and kills these rot grubs. After this time, these rot grubs are too far under the skin to be burned. If a target infested by rot grubs ends its turn with 0 hit points, it dies as the rot grubs burrow into its heart and kill it. Any effect that cures disease kills all rot grubs infesting the target."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Abjurer
+        ID: 532,
+        ProfileType: "Monster",
+        Name: "Abjurer",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 84,
+        HitPointsRoll: "8d8 + 26",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 14,
+        Intelligence: 18,
+        Wisdom: 12,
+        Charisma: 11,
+        SavingThrows: ["Intelligence +8", "Wisdom +5"],
+        Skills: ["Arcana +8", "History +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Any four languages"],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The abjurer is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). The abjurer has the following wizard spells prepared: Cantrips (at will): blade ward, dancing lights, mending, message, ray of frost; 1st level (4 slots): alarm, mage armor, magic missile, shield; 2nd level (3 slots): arcane lock, invisibility; 3rd level (3 slots): counterspell, dispel magic, fireball; 4th level (3 slots): banishment, stoneskin; 5th level (2 slots): cone of cold, wall of force; 6th level (1 slot): flesh to stone, globe of invulnerability; 7th level (1 slot): symbol, teleport."
+            },
+            {
+                Title: "Arcane Ward",
+                Desc: "The abjurer has a magical ward that has 30 hit points. Whenever the abjurer takes damage, the ward takes the damage instead. If the ward is reduced to 0 hit points, the abjurer takes any remaining damage. When the abjurer casts an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Apprentice Wizard
+        ID: 533,
+        ProfileType: "Monster",
+        Name: "Apprentice Wizard",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 9,
+        HitPointsRoll: "2d8",
+        ArmorClass: [10],
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 14,
+        Wisdom: 10,
+        Charisma: 11,
+        SavingThrows: [],
+        Skills: ["Arcana +4", "History +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 10"],
+        Languages: ["Any one language (usually Common)"],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The apprentice is a 1st-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It has the following wizard spells prepared: Cantrips (at will): fire bolt, mending, prestidigitation; 1st level (2 slots): burning hands, disguise self, shield."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Archdruid
+        ID: 534,
+        ProfileType: "Monster",
+        Name: "Archdruid",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 132,
+        HitPointsRoll: "24d8 + 24",
+        ArmorClass: [16, "hide armor, shield"],
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 14,
+        Constitution: 12,
+        Intelligence: 12,
+        Wisdom: 20,
+        Charisma: 11,
+        SavingThrows: ["Intelligence +5", "Wisdom +9"],
+        Skills: ["Medicine +9", "Nature +5", "Perception +9"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 19"],
+        Languages: ["Druidic", "Any two languages"],
+        Challenge: [12, 8400],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The archdruid is an 18th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). It has the following druid spells prepared: Cantrips (at will): druidcraft, mending, poison spray, produce flame; 1st level (4 slots): cure wounds, entangle, faerie fire, speak with animals; 2nd level (3 slots): animal messenger, beast sense, hold person; 3rd level (3 slots): conjure animals, meld into stone, water breathing; 4th level (3 slots): dominate beast, locate creature, stoneskin, wall of fire; 5th level (3 slots): commune with nature, mass cure wounds, tree stride; 6th level (1 slot): heal, heroes' feast, sunbeam; 7th level (1 slot): fire storm; 8th level (1 slot): animal shapes; 9th level (1 slot): foresight."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Scimitar",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+            },
+            {
+                Title: "Change Shape (2/Day)",
+                Desc: "The archdruid magically polymorphs into a beast or elemental with a challenge rating of 6 or less, and can remain in this form for up to 9 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action on its turn. While in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form. The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Archer
+        ID: 535,
+        ProfileType: "Monster",
+        Name: "Archer",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 75,
+        HitPointsRoll: "10d8 + 30",
+        ArmorClass: [16, "studded leather"],
+        Speed: ["30 ft."],
+        Strength: 11,
+        Dexterity: 18,
+        Constitution: 16,
+        Intelligence: 11,
+        Wisdom: 13,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: ["Acrobatics +6", "Perception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 15"],
+        Languages: ["Any one language (usually Common)"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Archer's Eye (3/Day)",
+                Desc: "As a bonus action, the archer can add 1d10 to its next attack or damage roll with a longbow or shortbow."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The archer makes two attacks with its longbow."
+            },
+            {
+                Title: "Shortsword",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+            },
+            {
+                Title: "Longbow",
+                Desc: "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Bard
+        ID: 536,
+        ProfileType: "Monster",
+        Name: "Bard",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 44,
+        HitPointsRoll: "8d8 + 8",
+        ArmorClass: [15, "chain shirt"],
+        Speed: ["30 ft."],
+        Strength: 11,
+        Dexterity: 14,
+        Constitution: 12,
+        Intelligence: 10,
+        Wisdom: 13,
+        Charisma: 14,
+        SavingThrows: ["Dexterity +4", "Wisdom +3"],
+        Skills: ["Acrobatics +4", "Perception +5", "Performance +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 15"],
+        Languages: ["Any two languages"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The bard is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It has the following bard spells prepared: Cantrips (at will): friends, mage hand, vicious mockery; 1st level (4 slots): charm person, healing word, heroism, sleep, thunderwave; 2nd level (3 slots): invisibility, shatter."
+            },
+            {
+                Title: "Song of Rest",
+                Desc: "The bard can perform a song while taking a short rest. Any ally who hears the song regains an extra 1d6 hit points if it spends any Hit Dice to regain hit points at the end of that rest. The bard can confer this benefit on itself as well."
+            },
+            {
+                Title: "Taunt (2/Day)",
+                Desc: "The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Shortsword",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+            },
+            {
+                Title: "Shortbow",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Blackguard
+        ID: 537,
+        ProfileType: "Monster",
+        Name: "Blackguard",
+        Type: "Medium humanoid (any race), any non-good alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 153,
+        HitPointsRoll: "18d8 + 72",
+        ArmorClass: [18, "plate"],
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 11,
+        Constitution: 18,
+        Intelligence: 11,
+        Wisdom: 14,
+        Charisma: 15,
+        SavingThrows: ["Wisdom +5", "Charisma +5"],
+        Skills: ["Athletics +7", "Deception +5", "Intimidation +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 12"],
+        Languages: ["Any one language (usually Common)"],
+        Challenge: [8, 3900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The blackguard is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It has the following paladin spells prepared: 1st level (4 slots): command, protection from evil and good, thunderous smite; 2nd level (3 slots): branding smite, find steed; 3rd level (2 slots): blinding smite, dispel magic."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The blackguard makes three attacks with its glaive or its shortbow."
+            },
+            {
+                Title: "Glaive",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) slashing damage."
+            },
+            {
+                Title: "Shortbow",
+                Desc: "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+            },
+            {
+                Title: "Dreadful Aspect (Recharges after a Short or Long Rest)",
+                Desc: "The blackguard exudes magical menace. Each enemy within 30 feet of the blackguard must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If a frightened target ends its turn more than 30 feet away from the blackguard, the target can repeat the saving throw, ending the effect on itself on a success."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Champion
+        ID: 538,
+        ProfileType: "Monster",
+        Name: "Champion",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 143,
+        HitPointsRoll: "22d8 + 44",
+        ArmorClass: [18, "plate"],
+        Speed: ["30 ft."],
+        Strength: 20,
+        Dexterity: 15,
+        Constitution: 14,
+        Intelligence: 10,
+        Wisdom: 14,
+        Charisma: 12,
+        SavingThrows: ["Strength +9", "Constitution +6"],
+        Skills: ["Athletics +9", "Intimidation +5", "Perception +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 16"],
+        Languages: ["Any one language (usually Common)"],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Indomitable (2/Day)",
+                Desc: "The champion rerolls a failed saving throw."
+            },
+            {
+                Title: "Second Wind (Recharges after a Short or Long Rest)",
+                Desc: "As a bonus action, the champion can regain 20 hit points."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The champion makes three attacks with its greatsword or its shortbow."
+            },
+            {
+                Title: "Greatsword",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage, plus 7 (2d6) slashing damage if the champion has more than half of its total hit points remaining."
+            },
+            {
+                Title: "Shortbow",
+                Desc: "Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage, plus 7 (2d6) piercing damage if the champion has more than half of its total hit points remaining."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Conjurer
+        ID: 539,
+        ProfileType: "Monster",
+        Name: "Conjurer",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 40,
+        HitPointsRoll: "9d8",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 11,
+        Intelligence: 17,
+        Wisdom: 12,
+        Charisma: 11,
+        SavingThrows: ["Intelligence +6", "Wisdom +4"],
+        Skills: ["Arcana +6", "History +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Any four languages"],
+        Challenge: [6, 2300],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The conjurer is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The conjurer has the following wizard spells prepared: Cantrips (at will): acid splash, mage hand, poison spray, prestidigitation; 1st level (4 slots): mage armor, magic missile, unseen servant; 2nd level (3 slots): cloud of daggers, misty step, web; 3rd level (3 slots): fireball, stinking cloud; 4th level (3 slots): Evard's black tentacles, stoneskin; 5th level (2 slots): cloudkill, conjure elemental."
+            },
+            {
+                Title: "Benign Transportation",
+                Desc: "As a bonus action, the conjurer teleports up to 30 feet to an unoccupied space that it can see. If it instead chooses a space within range that is occupied by a willing Small or Medium creature, they both teleport, swapping places. The conjurer can use this feature once between rests, and it recharges whenever the conjurer casts a conjuration spell of 1st level or higher."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Diviner
+        ID: 540,
+        ProfileType: "Monster",
+        Name: "Diviner",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 67,
+        HitPointsRoll: "15d8",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 11,
+        Intelligence: 18,
+        Wisdom: 12,
+        Charisma: 11,
+        SavingThrows: ["Intelligence +7", "Wisdom +4"],
+        Skills: ["Arcana +7", "History +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Any four languages"],
+        Challenge: [8, 3900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The diviner is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The diviner has the following wizard spells prepared: Cantrips (at will): fire bolt, light, mage hand, message, true strike; 1st level (4 slots): detect magic, feather fall, mage armor; 2nd level (3 slots): detect thoughts, locate object, scorching ray; 3rd level (3 slots): clairvoyance, fly, fireball; 4th level (3 slots): arcane eye, ice storm, stoneskin; 5th level (2 slots): Rary's telepathic bond, scrying; 6th level (1 slot): mass suggestion, true seeing; 7th level (1 slot): delayed blast fireball, teleport; 8th level (1 slot): maze."
+            },
+            {
+                Title: "Portent",
+                Desc: "When the diviner or a creature it can see makes an attack roll, a saving throw, or an ability check, the diviner can roll a d20 and choose to use this roll in place of the attack roll, saving throw, or ability check."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Enchanter
+        ID: 541,
+        ProfileType: "Monster",
+        Name: "Enchanter",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 40,
+        HitPointsRoll: "9d8",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 11,
+        Intelligence: 17,
+        Wisdom: 12,
+        Charisma: 11,
+        SavingThrows: ["Intelligence +6", "Wisdom +4"],
+        Skills: ["Arcana +6", "History +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Any four languages"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The enchanter is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The enchanter has the following wizard spells prepared: Cantrips (at will): friends, mage hand, mending, message; 1st level (4 slots): charm person, mage armor, magic missile; 2nd level (3 slots): hold person, invisibility, suggestion; 3rd level (3 slots): fireball, haste, tongues; 4th level (3 slots): dominate beast, stoneskin; 5th level (2 slots): hold monster."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Instinctive Charm",
+                Desc: "The enchanter tries to magically divert an attack made against it, provided that the attacker is within 30 feet of it and visible to it. The enchanter must decide to do so before the attack hits or misses. The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attacker targets the creature closest to it, other than the enchanter or itself. If multiple creatures are closest, the attacker chooses which one to target."
+            }
+        ],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Evoker
+        ID: 542,
+        ProfileType: "Monster",
+        Name: "Evoker",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 66,
+        HitPointsRoll: "12d8 + 12",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 12,
+        Intelligence: 17,
+        Wisdom: 12,
+        Charisma: 11,
+        SavingThrows: ["Intelligence +7", "Wisdom +5"],
+        Skills: ["Arcana +7", "History +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Any four languages"],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The evoker is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The evoker has the following wizard spells prepared: Cantrips (at will): fire bolt, light, mage hand, message, prestidigitation; 1st level (4 slots): burning hands, mage armor, magic missile, shield; 2nd level (3 slots): mirror image, misty step, scorching ray; 3rd level (3 slots): fireball, lightning bolt, sending; 4th level (3 slots): dimension door, ice storm, stoneskin; 5th level (2 slots): cone of cold, wall of fire; 6th level (1 slot): chain lightning, disintegrate."
+            },
+            {
+                Title: "Sculpt Spells",
+                Desc: "When the evoker casts an evocation spell that affects other creatures that it can see, it can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Illusionist
+        ID: 543,
+        ProfileType: "Monster",
+        Name: "Illusionist",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 38,
+        HitPointsRoll: "7d8 + 7",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 13,
+        Intelligence: 16,
+        Wisdom: 11,
+        Charisma: 10,
+        SavingThrows: ["Intelligence +6", "Wisdom +3"],
+        Skills: ["Arcana +6", "Deception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 10"],
+        Languages: ["Any four languages"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The illusionist is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The illusionist has the following wizard spells prepared: Cantrips (at will): dancing lights, mage hand, minor illusion, poison spray; 1st level (4 slots): color spray, disguise self, mage armor, magic missile; 2nd level (3 slots): invisibility, mirror image, phantasmal force; 3rd level (3 slots): major image, phantom steed, sending; 4th level (1 slot): phantasmal killer."
+            },
+            {
+                Title: "Displacement",
+                Desc: "The illusionist projects an illusion that makes it appear to be standing in a place near its actual location, causing any creature that attacks it to have disadvantage on the attack roll. If an attack hits the illusionist, this trait is disrupted until the end of the illusionist's next turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Kraken Priest
+        ID: 544,
+        ProfileType: "Monster",
+        Name: "Kraken Priest",
+        Type: "Medium humanoid (any race), any evil alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 75,
+        HitPointsRoll: "10d8 + 30",
+        ArmorClass: [10],
+        Speed: ["30 ft.", "swim 30 ft."],
+        Strength: 12,
+        Dexterity: 10,
+        Constitution: 16,
+        Intelligence: 10,
+        Wisdom: 15,
+        Charisma: 14,
+        SavingThrows: [],
+        Skills: ["Perception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 15"],
+        Languages: ["Any two languages"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Amphibious",
+                Desc: "The priest can breathe air and water."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components: At will: command, create or destroy water; 3/day each: control water, darkness, water breathing, water walk; 1/day each: call lightning, Evard's black tentacles."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Thunderous Touch",
+                Desc: "Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: 27 (5d10) thunder damage."
+            },
+            {
+                Title: "Voice of the Kraken (Recharges after a Short or Long Rest)",
+                Desc: "A kraken speaks through the priest with a thunderous voice audible within 300 feet. Creatures of the priest's choice that can hear the kraken's words (which are spoken in Abyssal, Infernal, or Primordial) must succeed on a DC 14 Charisma saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Martial Arts Adept
+        ID: 545,
+        ProfileType: "Monster",
+        Name: "Martial Arts Adept",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 60,
+        HitPointsRoll: "11d8 + 11",
+        ArmorClass: [16],
+        Speed: ["40 ft."],
+        Strength: 11,
+        Dexterity: 17,
+        Constitution: 13,
+        Intelligence: 11,
+        Wisdom: 16,
+        Charisma: 10,
+        SavingThrows: ["Strength +3", "Dexterity +5"],
+        Skills: ["Acrobatics +5", "Athletics +3"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 13"],
+        Languages: ["Any one language (usually Common)"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Unarmored Defense",
+                Desc: "While the adept is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+            },
+            {
+                Title: "Unarmored Movement",
+                Desc: "While the adept is wearing no armor and wielding no shield, its walking speed increases by 10 feet."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The adept makes three unarmed strikes or three dart attacks."
+            },
+            {
+                Title: "Unarmed Strike",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage."
+            },
+            {
+                Title: "Dart",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+            },
+            {
+                Title: "Deflect Missile",
+                Desc: "The adept can use its reaction to deflect or catch the missile when hit by a ranged weapon attack. The damage it takes from the attack is reduced by 1d10 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Master Thief
+        ID: 546,
+        ProfileType: "Monster",
+        Name: "Master Thief",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 84,
+        HitPointsRoll: "13d8 + 26",
+        ArmorClass: [16, "studded leather"],
+        Speed: ["30 ft."],
+        Strength: 11,
+        Dexterity: 18,
+        Constitution: 14,
+        Intelligence: 11,
+        Wisdom: 11,
+        Charisma: 12,
+        SavingThrows: ["Dexterity +7", "Intelligence +3"],
+        Skills: ["Acrobatics +7", "Athletics +3", "Perception +3", "Sleight of Hand +7", "Stealth +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 13"],
+        Languages: ["Any one language (usually Common)", "Thieves' Cant"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Cunning Action",
+                Desc: "On each of its turns, the thief can use a bonus action to take the Dash, Disengage, or Hide action."
+            },
+            {
+                Title: "Evasion",
+                Desc: "If the thief is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the thief instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+            },
+            {
+                Title: "Sneak Attack (1/Turn)",
+                Desc: "The thief deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the thief that isn't incapacitated and the thief doesn't have disadvantage on the attack roll."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The thief makes three attacks with its shortsword."
+            },
+            {
+                Title: "Shortsword",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+            },
+            {
+                Title: "Light Crossbow",
+                Desc: "Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Uncanny Dodge",
+                Desc: "The thief halves the damage that it takes from an attack that hits it. The thief must be able to see the attacker."
+            }
+        ],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Necromancer
+        ID: 547,
+        ProfileType: "Monster",
+        Name: "Necromancer",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 66,
+        HitPointsRoll: "12d8 + 12",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 12,
+        Intelligence: 17,
+        Wisdom: 12,
+        Charisma: 11,
+        SavingThrows: ["Intelligence +7", "Wisdom +5"],
+        Skills: ["Arcana +7", "History +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Necrotic"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Any four languages"],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The necromancer is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The necromancer has the following wizard spells prepared: Cantrips (at will): chill touch, dancing lights, mage hand, mending; 1st level (4 slots): false life, mage armor, ray of sickness; 2nd level (3 slots): blindness/deafness, ray of enfeeblement, web; 3rd level (3 slots): animate dead, bestow curse, vampiric touch; 4th level (3 slots): blight, dimension door, stoneskin; 5th level (2 slots): Bigby's hand, cloudkill; 6th level (1 slot): circle of death."
+            },
+            {
+                Title: "Grim Harvest (1/Turn)",
+                Desc: "When necromancer kills a creature that is neither a construct nor undead with a spell of 1st level or higher, the necromancer regains hit points equal to twice the spell's level, or three times if it is a necromancy spell."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Withering Touch",
+                Desc: "Melee Spell Attack: +7 to hit, reach 5 ft., one creature. Hit: 5 (2d4) necrotic damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Swashbuckler
+        ID: 548,
+        ProfileType: "Monster",
+        Name: "Swashbuckler",
+        Type: "Medium humanoid (any race), any non-lawful alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 66,
+        HitPointsRoll: "12d8 + 12",
+        ArmorClass: [17, "leather armor"],
+        Speed: ["30 ft."],
+        Strength: 12,
+        Dexterity: 18,
+        Constitution: 12,
+        Intelligence: 14,
+        Wisdom: 11,
+        Charisma: 15,
+        SavingThrows: [],
+        Skills: ["Acrobatics +8", "Athletics +5", "Persuasion +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 10"],
+        Languages: ["Any one language (usually Common)"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Lightfooted",
+                Desc: "The swashbuckler can take the Dash or Disengage action as a bonus action on each of its turns."
+            },
+            {
+                Title: "Suave Defense",
+                Desc: "While the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The swashbuckler makes three attacks: one with a dagger and two with its rapier."
+            },
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage."
+            },
+            {
+                Title: "Rapier",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Transmuter
+        ID: 549,
+        ProfileType: "Monster",
+        Name: "Transmuter",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 40,
+        HitPointsRoll: "9d8",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 11,
+        Intelligence: 17,
+        Wisdom: 12,
+        Charisma: 11,
+        SavingThrows: ["Intelligence +6", "Wisdom +4"],
+        Skills: ["Arcana +6", "History +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Any four languages"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The transmuter is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The transmuter has the following wizard spells prepared: Cantrips (at will): acid splash, mage hand, mending, poison spray, prestidigitation; 1st level (4 slots): chromatic orb, mage armor, magic missile, thunderwave; 2nd level (3 slots): alter self, misty step, web; 3rd level (3 slots): blink, fireball, slow; 4th level (3 slots): polymorph, stoneskin; 5th level (2 slots): telekinesis, wall of stone."
+            },
+            {
+                Title: "Transmuter's Stone",
+                Desc: "The transmuter carries a magic stone it crafted that grants its bearer one of the following effects: Darkvision out to a range of 60 feet; an extra 10 feet of speed while the bearer is unencumbered; proficiency with Constitution saving throws; resistance to acid, cold, fire, lightning, or thunder damage (transmuter's choice whenever the transmuter chooses this benefit). If the transmuter has the stone and casts a transmutation spell of 1st level or higher, it can change the effect of the stone."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // War Priest
+        ID: 550,
+        ProfileType: "Monster",
+        Name: "War Priest",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 117,
+        HitPointsRoll: "18d8 + 36",
+        ArmorClass: [18, "plate"],
+        Speed: ["30 ft."],
+        Strength: 16,
+        Dexterity: 10,
+        Constitution: 14,
+        Intelligence: 11,
+        Wisdom: 17,
+        Charisma: 13,
+        SavingThrows: ["Constitution +6", "Wisdom +7"],
+        Skills: ["Intimidation +5", "Religion +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 13"],
+        Languages: ["Any two languages"],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The priest is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). It has the following cleric spells prepared: Cantrips (at will): light, mending, sacred flame, spare the dying; 1st level (4 slots): divine favor, guiding bolt, healing word, shield of faith; 2nd level (3 slots): lesser restoration, magic weapon, prayer of healing, silence, spiritual weapon; 3rd level (3 slots): beacon of hope, crusader's mantle, dispel magic, revivify, spirit guardians, water walk; 4th level (3 slots): banishment, freedom of movement, guardian of faith, stoneskin; 5th level (1 slot): flame strike, mass cure wounds, hold monster."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The priest makes two melee attacks."
+            },
+            {
+                Title: "Maul",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Guided Strike (Recharges after a Short or Long Rest)",
+                Desc: "The priest grants a +10 bonus to an attack roll made by itself or another creature within 30 feet of it. The priest can make this choice after the roll is made but before it hits or misses."
+            }
+        ],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Warlock of the Archfey
+        ID: 551,
+        ProfileType: "Monster",
+        Name: "Warlock of the Archfey",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 49,
+        HitPointsRoll: "11d8",
+        ArmorClass: [11, "14 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 13,
+        Constitution: 11,
+        Intelligence: 11,
+        Wisdom: 12,
+        Charisma: 18,
+        SavingThrows: ["Wisdom +3", "Charisma +6"],
+        Skills: ["Arcana +2", "Deception +6", "Nature +2", "Persuasion +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed"],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Any two languages (usually Sylvan)"],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components: At will: disguise self, mage armor (self only), silent image, speak with animals; 1/day: conjure fey."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The warlock is an 11th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): dancing lights, eldritch blast, friends, mage hand, minor illusion, prestidigitation, vicious mockery; 1st-5th level (3 5th-level slots): blink, charm person, dimension door, dominate beast, faerie fire, fear, hold monster, misty step, phantasmal force, seeming, sleep."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Misty Escape (Recharges after a Short or Long Rest)",
+                Desc: "In response to taking damage, the warlock turns invisible and teleports up to 60 feet to an unoccupied space it can see. It remains invisible until the start of its next turn or until it attacks, makes a damage roll, or casts a spell."
+            }
+        ],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Warlock of the Fiend
+        ID: 552,
+        ProfileType: "Monster",
+        Name: "Warlock of the Fiend",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 78,
+        HitPointsRoll: "12d8 + 24",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 14,
+        Constitution: 15,
+        Intelligence: 12,
+        Wisdom: 12,
+        Charisma: 18,
+        SavingThrows: ["Wisdom +4", "Charisma +7"],
+        Skills: ["Arcana +4", "Deception +7", "Persuasion +7", "Religion +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Slashing damage from nonmagical attacks not made with silvered weapons"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["Any two languages (usually Abyssal or Infernal)"],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components: At will: alter self, false life, levitate (self only), mage armor (self only), silent image; 1/day each: feeblemind, finger of death, plane shift."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The warlock is a 17th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): eldritch blast, fire bolt, friends, mage hand, minor illusion, prestidigitation, shocking grasp; 1st-5th level (4 5th-level slots): banishment, burning hands, flame strike, hellish rebuke, magic circle, scorching ray, scrying, stinking cloud, suggestion, wall of fire."
+            },
+            {
+                Title: "Dark One's Own Luck (Recharges after a Short or Long Rest)",
+                Desc: "When the warlock makes an ability check or saving throw, it can add a d10 to the roll. It can do so after seeing the initial roll but before any of the roll's effects occur."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Warlock of the Great Old One
+        ID: 553,
+        ProfileType: "Monster",
+        Name: "Warlock of the Great Old One",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 91,
+        HitPointsRoll: "14d8 + 28",
+        ArmorClass: [12, "15 with mage armor"],
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 15,
+        Intelligence: 12,
+        Wisdom: 12,
+        Charisma: 18,
+        SavingThrows: ["Wisdom +4", "Charisma +7"],
+        Skills: ["Arcana +4", "Deception +7", "History +4", "Persuasion +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["Any two languages (usually Common and Deep Speech)"],
+        Challenge: [6, 2300],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Awakened Mind",
+                Desc: "The warlock can communicate telepathically with any creature it can see within 30 feet of it. The creature doesn't need to share a language with the warlock to understand its telepathic utterances, but the warlock must be able to understand the creature to understand what it communicates telepathically."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components: At will: detect thoughts, levitate, mage armor (self only)."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The warlock is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): eldritch blast, mage hand, minor illusion, poison spray, prestidigitation; 1st-5th level (2 5th-level slots): armor of Agathys, arms of Hadar, crown of madness, detect thoughts, dominate person, hunger of Hadar, invisibility, phantasmal force, sending, vampiric touch."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
+    { // Warlord
+        ID: 554,
+        ProfileType: "Monster",
+        Name: "Warlord",
+        Type: "Medium humanoid (any race), any alignment",
+        Source: "Volo's Guide to Monsters",
+        HitPoints: 229,
+        HitPointsRoll: "17d8 + 153",
+        ArmorClass: [18, "plate"],
+        Speed: ["30 ft."],
+        Strength: 20,
+        Dexterity: 16,
+        Constitution: 20,
+        Intelligence: 12,
+        Wisdom: 12,
+        Charisma: 18,
+        SavingThrows: ["Strength +9", "Dexterity +7", "Constitution +9", "Wisdom +5"],
+        Skills: ["Athletics +9", "Intimidation +8", "Perception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 15"],
+        Languages: ["Any two languages"],
+        Challenge: [12, 8400],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Indomitable (3/Day)",
+                Desc: "The warlord can reroll a saving throw it fails. It must use the new roll."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The warlord makes two weapon attacks."
+            },
+            {
+                Title: "Greatsword",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
+            },
+            {
+                Title: "Longbow",
+                Desc: "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 9 (1d8 + 5) piercing damage."
+            },
+            {
+                Title: "Frighten Foe (Costs 2 Actions)",
+                Desc: "The warlord targets one enemy it can see within 30 feet of it. If the target can see and hear it, the target must succeed on a DC 16 Wisdom saving throw or be frightened until the end of warlord's next turn."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        Description: "Description here"
+    },
 ];
 
 const uniqueLocal = [
