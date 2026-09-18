@@ -28861,7 +28861,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Bards are gifted poets, storytellers, and entertainers who travel far and wide, but are commonly found in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, and wealthy patrons."
     },
     { // Blackguard
         ID: 537,
@@ -28916,7 +28916,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Blackguards are paladins who broke their sacred oaths and now indulge their own dark ambitions. They consort with fiends and undead, and they reject all goodly things from their former lives."
     },
     { // Champion
         ID: 538,
@@ -28957,15 +28957,15 @@ const monstersLocal = [
         Actions: [
             {
                 Title: "Multiattack",
-                Desc: "The champion makes three attacks with its greatsword or its shortbow."
+                Desc: "The champion makes three attacks with its greatsword or its crossbow."
             },
             {
                 Title: "Greatsword",
                 Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage, plus 7 (2d6) slashing damage if the champion has more than half of its total hit points remaining."
             },
             {
-                Title: "Shortbow",
-                Desc: "Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage, plus 7 (2d6) piercing damage if the champion has more than half of its total hit points remaining."
+                Title: "Light Crossbow",
+                Desc: " Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage, plus 7 (2d6) piercing damage if the champion has more than half of its total hit points remaining."
             }
         ],
         Reactions: [],
@@ -29796,84 +29796,84 @@ const monstersLocal = [
 ];
 
 const uniqueLocal = [
-    { // templateUnique
-        ID: 100000,
-        ProfileType: "Unique",
-        Name: "template name",
-        Type: "Size type, alignment",
-        TypeCategory: "Creature Type",
-        Source: "Monster Manual",
-        HitPoints: 1,
-        HitPointsRoll: "",
-        ArmorClass: [10, "natural armor"],
-        Speed: ["30 ft."],
-        Strength: 10,
-        Dexterity: 10,
-        Constitution: 10,
-        Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: [],
-        DamageImmunities: [],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [1, 200],
-        ExtraRewards: "",
-        Traits: [],
-        InnateSpellcasting: [
-            {
-                Description: "",
-                Cantrips: {
-                    Slots: "at will",
-                    Spells: [""]
-                },
-                Level1: {
-                    Slots: 4,
-                    Spells: [""]
-                },
-                Level2: {
-                    Slots: 3,
-                    Spells: [""]
-                },
-                Level3: {
-                    Slots: 3,
-                    Spells: [""]
-                },
-                Level4: {
-                    Slots: 3,
-                    Spells: [""]
-                },
-                Level5: {
-                    Slots: 2,
-                    Spells: [""]  
-                },
-                Level6: {
-                    Slots: 1,
-                    Spells: [""]  
-                },
-                Level7: {
-                    Slots: 1,
-                    Spells: [""]
-                },
-                Level8: {
-                    Slots: 1,
-                    Spells: [""]
-                },
-                Level9: {
-                    Slots: 1,
-                    Spells: [""]
-                }
-            }
-        ],
-        Actions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        Description: "Description here"
-    },
+    // { // templateUnique
+    //     ID: 100000,
+    //     ProfileType: "Unique",
+    //     Name: "template name",
+    //     Type: "Size type, alignment",
+    //     TypeCategory: "Creature Type",
+    //     Source: "Monster Manual",
+    //     HitPoints: 1,
+    //     HitPointsRoll: "",
+    //     ArmorClass: [10, "natural armor"],
+    //     Speed: ["30 ft."],
+    //     Strength: 10,
+    //     Dexterity: 10,
+    //     Constitution: 10,
+    //     Intelligence: 10,
+    //     Wisdom: 10,
+    //     Charisma: 10,
+    //     SavingThrows: [],
+    //     Skills: [],
+    //     DamageVulnerabilities: [],
+    //     DamageResistances: [],
+    //     DamageImmunities: [],
+    //     ConditionImmunities: [],
+    //     Senses: [],
+    //     Languages: [],
+    //     Challenge: [1, 200],
+    //     ExtraRewards: "",
+    //     Traits: [],
+    //     InnateSpellcasting: [
+    //         {
+    //             Description: "",
+    //             Cantrips: {
+    //                 Slots: "at will",
+    //                 Spells: [""]
+    //             },
+    //             Level1: {
+    //                 Slots: 4,
+    //                 Spells: [""]
+    //             },
+    //             Level2: {
+    //                 Slots: 3,
+    //                 Spells: [""]
+    //             },
+    //             Level3: {
+    //                 Slots: 3,
+    //                 Spells: [""]
+    //             },
+    //             Level4: {
+    //                 Slots: 3,
+    //                 Spells: [""]
+    //             },
+    //             Level5: {
+    //                 Slots: 2,
+    //                 Spells: [""]  
+    //             },
+    //             Level6: {
+    //                 Slots: 1,
+    //                 Spells: [""]  
+    //             },
+    //             Level7: {
+    //                 Slots: 1,
+    //                 Spells: [""]
+    //             },
+    //             Level8: {
+    //                 Slots: 1,
+    //                 Spells: [""]
+    //             },
+    //             Level9: {
+    //                 Slots: 1,
+    //                 Spells: [""]
+    //             }
+    //         }
+    //     ],
+    //     Actions: [],
+    //     Reactions: [],
+    //     LegendaryActions: [],
+    //     Description: "Description here"
+    // },
     {
         ID: 100001,
         ProfileType: "Unique",
