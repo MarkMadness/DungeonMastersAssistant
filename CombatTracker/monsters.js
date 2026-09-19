@@ -28971,7 +28971,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Champions are mighty warriors who honed their fighting skills in wars or gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers."
     },
     { // Conjurer
         ID: 539,
@@ -29005,8 +29005,8 @@ const monstersLocal = [
                 Desc: "The conjurer is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The conjurer has the following wizard spells prepared: Cantrips (at will): acid splash, mage hand, poison spray, prestidigitation; 1st level (4 slots): mage armor, magic missile, unseen servant; 2nd level (3 slots): cloud of daggers, misty step, web; 3rd level (3 slots): fireball, stinking cloud; 4th level (3 slots): Evard's black tentacles, stoneskin; 5th level (2 slots): cloudkill, conjure elemental."
             },
             {
-                Title: "Benign Transportation",
-                Desc: "As a bonus action, the conjurer teleports up to 30 feet to an unoccupied space that it can see. If it instead chooses a space within range that is occupied by a willing Small or Medium creature, they both teleport, swapping places. The conjurer can use this feature once between rests, and it recharges whenever the conjurer casts a conjuration spell of 1st level or higher."
+                Title: "Benign Transportation (Recharges after the Conjurer Casts a Conjuration Spell of 1st Level or Higher)",
+                Desc: "As a bonus action, the conjurer teleports up to 30 feet to an unoccupied space that it can see. lfit instead chooses a space within range that is occupied by a willing Small or Medium creature, they both teleport, swapping places."
             }
         ],
         Actions: [
@@ -29018,7 +29018,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Conjurers are specialist wizards who summon creatures from other planes and create materials out of thin air. Some conjurers use their magic to bolster armies or destroy enemies on battlefields, while others use summoned creatures to guard their lairs."
     },
     { // Diviner
         ID: 540,
@@ -29065,7 +29065,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Diviners are specialist wizards who know that knowledge is power. They might act aloof and mysterious, hinting at omens and secrets, or they might be know-italls, spilling secrets and insights to advance their own status or reputation."
     },
     { // Enchanter
         ID: 541,
@@ -29107,13 +29107,13 @@ const monstersLocal = [
         ],
         Reactions: [
             {
-                Title: "Instinctive Charm",
-                Desc: "The enchanter tries to magically divert an attack made against it, provided that the attacker is within 30 feet of it and visible to it. The enchanter must decide to do so before the attack hits or misses. The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attacker targets the creature closest to it, other than the enchanter or itself. If multiple creatures are closest, the attacker chooses which one to target."
+                Title: "Instinctive Charm (Recharges after the Enchanter Casts an Enchantment Spell of 1st Level or Higher)",
+                Desc: "The enchanter tries to magically divert an attack made against it, provided that the attacker is with in 30 feet of it and visible to it. The enchanter must decide to do so before the attack hits or misses. The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attacker targets the creature closest to it, other than the enchanter or itself. If multiple creatures are closest, the attacker chooses which one to target."
             }
         ],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Enchanters are specialist wizards who understand how to alter and control minds using magic. They might be personable and interesting, using magic to manipulate people only when banter and conventional persuasion fails, or they might be rude and demanding, using and relying on charmed, obedient minions."
     },
     { // Evoker
         ID: 542,
@@ -29144,11 +29144,11 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Spellcasting",
-                Desc: "The evoker is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The evoker has the following wizard spells prepared: Cantrips (at will): fire bolt, light, mage hand, message, prestidigitation; 1st level (4 slots): burning hands, mage armor, magic missile, shield; 2nd level (3 slots): mirror image, misty step, scorching ray; 3rd level (3 slots): fireball, lightning bolt, sending; 4th level (3 slots): dimension door, ice storm, stoneskin; 5th level (2 slots): cone of cold, wall of fire; 6th level (1 slot): chain lightning, disintegrate."
+                Desc: "The evoker is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The evoker has the following wizard spells prepared: Cantrips (at will):.fire bolt, light, prestidigitation, ray of frost 1st level (4 slots): burning hands, mage armor, magic missile 2nd level (3 slots): mirror image, misty step, shatter 3rd level (3 slots): counterspell, fireball, lightning bolt 4th level (3 slots): ice storm, stoneskin 5th level (2 slots): Bigby's hand, cone of cold 6th level (1 slot): chain lightning, wall of ice"
             },
             {
                 Title: "Sculpt Spells",
-                Desc: "When the evoker casts an evocation spell that affects other creatures that it can see, it can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+                Desc: "When the evoker casts an evocation spell that forces other creatures it can see, it can choose a number of them equal to 1 + the spell's level. These creatures automatically succeed on their saving throws against the spell. If a successful save means a chosen creature would take half damage from the spell, it instead takes no damage from it."
             }
         ],
         Actions: [
@@ -29160,7 +29160,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Evokers are specialist wizards who harness magical energy and elemental forces to destroy. Many tend to be hotheaded and aggressive. Others are cold and reserved, unleashing their power at just the right moment to exploit an opponent's weakness."
     },
     { // Illusionist
         ID: 543,
@@ -29177,9 +29177,9 @@ const monstersLocal = [
         Constitution: 13,
         Intelligence: 16,
         Wisdom: 11,
-        Charisma: 10,
-        SavingThrows: ["Intelligence +6", "Wisdom +3"],
-        Skills: ["Arcana +6", "Deception +4"],
+        Charisma: 12,
+        SavingThrows: ["Intelligence +5", "Wisdom +2"],
+        Skills: ["Arcana +5", "History +5"],
         DamageVulnerabilities: [],
         DamageResistances: [],
         DamageImmunities: [],
@@ -29191,23 +29191,23 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Spellcasting",
-                Desc: "The illusionist is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The illusionist has the following wizard spells prepared: Cantrips (at will): dancing lights, mage hand, minor illusion, poison spray; 1st level (4 slots): color spray, disguise self, mage armor, magic missile; 2nd level (3 slots): invisibility, mirror image, phantasmal force; 3rd level (3 slots): major image, phantom steed, sending; 4th level (1 slot): phantasmal killer."
+                Desc: "The illusionist is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). The illusionist has the following wizard spells prepared: Cantrips (at will): dancing lights, mage hand, minor illusion, poison spray 1st level (4 slots): color spray, disguise self, mage armor, magic missile 2nd level (3 slots): invisibility, mirror image, phantasmal force 3rd level (3 slots): major image, phantom steed 4th level (1 slot): phantasmal killer"
             },
             {
-                Title: "Displacement",
-                Desc: "The illusionist projects an illusion that makes it appear to be standing in a place near its actual location, causing any creature that attacks it to have disadvantage on the attack roll. If an attack hits the illusionist, this trait is disrupted until the end of the illusionist's next turn."
+                Title: "Displacement (Recharges after the l/lusionist Casts an Illusion Spell of 1st Level or Higher)",
+                Desc: "As a bonus action, the illusionist projects an illusion that makes the illusionist appear to be standing in a place a few inches from its actual location, causing any creature to have disadvantage on attack rolls against the illusionist. The effect ends if the illusionist takes damage, it is incapacitated, or its speed becomes 0."
             }
         ],
         Actions: [
             {
                 Title: "Quarterstaff",
-                Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
+                Desc: "Melee Weapon Attack: + 1 to hit, reach 5 ft., one target. Hit: 2 (ld6-1) bludgeoning damage, or 3 (1d8- 1) bludgeoning damage if used with two hands."
             }
         ],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Illusionists are specialist wizards who twist light, sound, shadow, and even minds to create false and quasi-real effects. They can be flamboyant and use their powers in spectacular and obvious ways, or quiet and subtle, using their magic to conceal the truth."
     },
     { // Kraken Priest
         ID: 544,
@@ -29242,7 +29242,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting",
-                Desc: "The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components: At will: command, create or destroy water; 3/day each: control water, darkness, water breathing, water walk; 1/day each: call lightning, Evard's black tentacles."
+                Desc: "The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components: At will: command, create or destroy water 3/day each: control water, darkness, water breathing, water walk 1 /day each: call lightning, Evard's black tentacles"
             }
         ],
         Actions: [
@@ -29258,7 +29258,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "A kraken can seem godlike to folk who have witnessed its fury. Those who mistake its might for divine power and those who seek to appease the monster through veneration are sometimes rewarded with power, to serve thereafter as kraken priests. The kraken can make itself dimly aware of a kraken priest's thoughts if the two are on the same plane of existence, and it can then push aside the priest's personality and control it. Kraken priests can thereby act as eyes and ears for their masters, and when the kraken has something to say, the priest becomes its mouthpiece. Every kraken priest undergoes a change in appearance that reflects the kraken's influence, although each one differs in how its reverence is displayed. One kraken priest might have ink-black eyes and a suckered tentacle for a tongue, while another has a featureless face and a body covered in eyes and mouths that dribble seawater. These horrific manifestations intensify when the kraken possesses its minion to utter its dire pronouncements."
     },
     { // Martial Arts Adept
         ID: 545,
@@ -29276,8 +29276,8 @@ const monstersLocal = [
         Intelligence: 11,
         Wisdom: 16,
         Charisma: 10,
-        SavingThrows: ["Strength +3", "Dexterity +5"],
-        Skills: ["Acrobatics +5", "Athletics +3"],
+        SavingThrows: [],
+        Skills: ["Acrobatics +5", "Insight +5", "Stealth +5"],
         DamageVulnerabilities: [],
         DamageResistances: [],
         DamageImmunities: [],
@@ -29290,10 +29290,6 @@ const monstersLocal = [
             {
                 Title: "Unarmored Defense",
                 Desc: "While the adept is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
-            },
-            {
-                Title: "Unarmored Movement",
-                Desc: "While the adept is wearing no armor and wielding no shield, its walking speed increases by 10 feet."
             }
         ],
         Actions: [
@@ -29303,21 +29299,22 @@ const monstersLocal = [
             },
             {
                 Title: "Unarmed Strike",
-                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage."
+                Desc: "Me/ee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (ld8 + 3) bludgeoning damage. If the target is a creature, the adept can choose one of the following additional effects: • The target must succeed on a DC 13 Strength saving throw or drop one item it is holding (adept's choice). • The target must succeed on a DC 13 Dexterity saving throw or be knocked prone. • The target must succeed on a DC 13 Constitution saving throw or be stunned until the end of the adept's next turn."
             },
             {
                 Title: "Dart",
                 Desc: "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
-            },
-            {
-                Title: "Deflect Missile",
-                Desc: "The adept can use its reaction to deflect or catch the missile when hit by a ranged weapon attack. The damage it takes from the attack is reduced by 1d10 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free."
             }
         ],
-        Reactions: [],
+        Reactions: [
+            {
+                Title: "Deflect Missile",
+                Desc: "In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by 1d1O + 3. If the damage is reduced to O, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free."
+            }
+        ],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Martial arts adepts are disciplined monks with extensive training in hand-to-hand combat. Some protect monasteries; others travel the world seeking enlightenment or new forms of combat to master. A few become bodyguards, trading their combat prowess and loyalty for food and lodging."
     },
     { // Master Thief
         ID: 546,
@@ -29381,7 +29378,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Master thieves are known for perpetrating daring heists. They tend to develop a reputation and a cult of personality. A master thief might 'retire' from hands-on work to run a thieves' guild, spearhead some covert enterprise, or enjoy a quiet life of luxury."
     },
     { // Necromancer
         ID: 547,
@@ -29412,7 +29409,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Spellcasting",
-                Desc: "The necromancer is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The necromancer has the following wizard spells prepared: Cantrips (at will): chill touch, dancing lights, mage hand, mending; 1st level (4 slots): false life, mage armor, ray of sickness; 2nd level (3 slots): blindness/deafness, ray of enfeeblement, web; 3rd level (3 slots): animate dead, bestow curse, vampiric touch; 4th level (3 slots): blight, dimension door, stoneskin; 5th level (2 slots): Bigby's hand, cloudkill; 6th level (1 slot): circle of death."
+                Desc: "The necromancer is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The necromancer has the following wizard spells prepared: Cantrips (at will): chill touch, dancing lights, mage hand, mending 1st level (4 slots):false life, mage armor, ray of sickness 2nd level (3 slots): blindness/deafness, ray of enfeeblement, web 3rd level (3 slots): animate dead, bestow curse, vampiric touch 4th level (3 slots): blight, dimension door, stoneskin 5th level (2 slots): Bigby's hand, cloudkill 6th level (1 slot): circle of death"
             },
             {
                 Title: "Grim Harvest (1/Turn)",
@@ -29428,7 +29425,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Necromancers are specialist wizards who study the interaction of life, death, and undeath. Some like to dig up corpses to create undead slaves. A few use their powers for good, becoming hunters of the undead and risking their lives to save others."
     },
     { // Swashbuckler
         ID: 548,
@@ -29483,7 +29480,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Swashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoreity, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long."
     },
     { // Transmuter
         ID: 549,
@@ -29514,11 +29511,11 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Spellcasting",
-                Desc: "The transmuter is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The transmuter has the following wizard spells prepared: Cantrips (at will): acid splash, mage hand, mending, poison spray, prestidigitation; 1st level (4 slots): chromatic orb, mage armor, magic missile, thunderwave; 2nd level (3 slots): alter self, misty step, web; 3rd level (3 slots): blink, fireball, slow; 4th level (3 slots): polymorph, stoneskin; 5th level (2 slots): telekinesis, wall of stone."
+                Desc: "The transmuter is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The transmuter has the following wizard spells prepared: Cantrips (at will): light, mending, prestidigitation, ray of frost l st level (4 slots): chromatic orb, expeditious retreat, magearmor 2nd level (3 slots): alter self, hold person, knock 3rd level (3 slots): blink, fireball, slow 4th level (3 slots): polymorph, stoneskin 5th level (1 slot): telekinesis"
             },
             {
                 Title: "Transmuter's Stone",
-                Desc: "The transmuter carries a magic stone it crafted that grants its bearer one of the following effects: Darkvision out to a range of 60 feet; an extra 10 feet of speed while the bearer is unencumbered; proficiency with Constitution saving throws; resistance to acid, cold, fire, lightning, or thunder damage (transmuter's choice whenever the transmuter chooses this benefit). If the transmuter has the stone and casts a transmutation spell of 1st level or higher, it can change the effect of the stone."
+                Desc: "The transmuter carries a magic stone it crafted that grants its bearer one of the following effects: • Darkvision out to a range of 60 feet • An extra 10 feet of speed while the bearer is unencumbered • Proficiency with Constitution saving throws • Resistance to acid, cold, fire, lightning, or thunder damage (transmuter's choice whenever the transmuter chooses this benefit) If the transmuter has the stone and casts a transmutation spell of 1st level or higher, it can change the effect of the stone."
             }
         ],
         Actions: [
@@ -29530,7 +29527,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Transmuters are specialist wizards who embrace change, rail against the status quo, and view magical transmutation as a path to riches, enlightenment, or apotheosis."
     },
     { // War Priest
         ID: 550,
@@ -29582,7 +29579,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "War priests worship deities of war and combat. They plan tactics, lead soldiers into battle, confront enemy spellcasters, and tend to casualties. A war priest might command an army or serve as a warlord's right hand on the battlefield."
     },
     { // Warlock of the Archfey
         ID: 551,
@@ -29634,7 +29631,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Warlocks of the archfey gain their powers through magical pacts forged with lords of the Feywild. These warlocks commonly associate with lesser fey creatures such as boggles, quicklings, redcaps, satyrs, and sprites."
     },
     { // Warlock of the Fiend
         ID: 552,
@@ -29685,7 +29682,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Warlocks of the fiend gain their powers through magical pacts forged with archfiends of the Lower Planes. These warlocks often keep imps or quasits as companions, and they tend toward extremes of behavior: consorting with fiend-worshiping cultists or dedicating their lives to destroying fiendish cults."
     },
     { // Warlock of the Great Old One
         ID: 553,
@@ -29704,9 +29701,9 @@ const monstersLocal = [
         Wisdom: 12,
         Charisma: 18,
         SavingThrows: ["Wisdom +4", "Charisma +7"],
-        Skills: ["Arcana +4", "Deception +7", "History +4", "Persuasion +7"],
+        Skills: ["Arcana +4", "History +4"],
         DamageVulnerabilities: [],
-        DamageResistances: [],
+        DamageResistances: ["Psychic"],
         DamageImmunities: [],
         ConditionImmunities: [],
         Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
@@ -29715,16 +29712,16 @@ const monstersLocal = [
         ExtraRewards: "",
         Traits: [
             {
-                Title: "Awakened Mind",
-                Desc: "The warlock can communicate telepathically with any creature it can see within 30 feet of it. The creature doesn't need to share a language with the warlock to understand its telepathic utterances, but the warlock must be able to understand the creature to understand what it communicates telepathically."
-            },
-            {
                 Title: "Innate Spellcasting",
-                Desc: "The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components: At will: detect thoughts, levitate, mage armor (self only)."
+                Desc: "The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components: At will: detect magic.jump, le11itate, mage armor (self only), speak with dead 1/day each: arcane gate, true seeing"
             },
             {
                 Title: "Spellcasting",
-                Desc: "The warlock is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): eldritch blast, mage hand, minor illusion, poison spray, prestidigitation; 1st-5th level (2 5th-level slots): armor of Agathys, arms of Hadar, crown of madness, detect thoughts, dominate person, hunger of Hadar, invisibility, phantasmal force, sending, vampiric touch."
+                Desc: "The warlock is a 14th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): chill touch, eldritch blast, guidance, mage hand, minor illusion, prestidigitation, shocking grasp 1st-5th level (3 5th-level slots): armor of Agathys, arms of Hadar, crown of madness, clairvoyance, contact other plane, detect thoughts, dimension door, dissonant whispers, dominate beast, telekinesis, vampiric touch"
+            },
+            {
+                Title: "Awakened Mind",
+                Desc: "At the start of each of the warlock's turns, each creature of its choice within 5 feet of it must succeed on a DC 15 Wisdom saving throw or take 10 (3d6) psychic damage, provided that the warlock isn't incapacitated."
             }
         ],
         Actions: [
@@ -29736,7 +29733,7 @@ const monstersLocal = [
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Warlocks of the Great Old One gain their powers through magical pacts forged with eldritch entities from strange and distant realms of existence. Some of these warlocks associate with cultists devoted to these entities, as well as aberrations that share their goals, yet other warlocks of the Great Old One are experts at rooting out the insanity and wickedness inspired by bizarre beings from beyond the stars."
     },
     { // Warlord
         ID: 554,
@@ -29745,17 +29742,17 @@ const monstersLocal = [
         Type: "Medium humanoid (any race), any alignment",
         Source: "Volo's Guide to Monsters",
         HitPoints: 229,
-        HitPointsRoll: "17d8 + 153",
+        HitPointsRoll: "27d8 + 108",
         ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 20,
         Dexterity: 16,
-        Constitution: 20,
+        Constitution: 18,
         Intelligence: 12,
         Wisdom: 12,
         Charisma: 18,
-        SavingThrows: ["Strength +9", "Dexterity +7", "Constitution +9", "Wisdom +5"],
-        Skills: ["Athletics +9", "Intimidation +8", "Perception +5"],
+        SavingThrows: ["Strength +9", "Dexterity +7", "Constitution +8"],
+        Skills: ["Athletics +9", "Intimidation +8", "Perception +5", "Persuasion +8"],
         DamageVulnerabilities: [],
         DamageResistances: [],
         DamageImmunities: [],
@@ -29768,6 +29765,10 @@ const monstersLocal = [
             {
                 Title: "Indomitable (3/Day)",
                 Desc: "The warlord can reroll a saving throw it fails. It must use the new roll."
+            },
+            {
+                Title: "Survivor",
+                Desc: "The warlord regains 10 hit points at the start of its turn if it has at least l hit point but fewer hit points than half its hit point maximum."
             }
         ],
         Actions: [
@@ -29777,21 +29778,30 @@ const monstersLocal = [
             },
             {
                 Title: "Greatsword",
-                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
+                Desc: " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
             },
             {
-                Title: "Longbow",
-                Desc: "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 9 (1d8 + 5) piercing damage."
+                Title: "Shortbow",
+                Desc: "Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Weapon Attack",
+                Desc: "The warlord makes a weapon attack."
+            },
+            {
+                Title: "Command Ally",
+                Desc: "The warlord targets one ally it can see within 30 feet of it. If the target can see and hear the warlord, the target can make one weapon attack as a reaction and gains advantage on the attack roll."
             },
             {
                 Title: "Frighten Foe (Costs 2 Actions)",
                 Desc: "The warlord targets one enemy it can see within 30 feet of it. If the target can see and hear it, the target must succeed on a DC 16 Wisdom saving throw or be frightened until the end of warlord's next turn."
             }
         ],
-        Reactions: [],
-        LegendaryActions: [],
         LairActions: [],
-        Description: "Description here"
+        Description: "Warlords are legendary battlefield commanders whose names are spoken with awe. After a string of decisive victories, a warlord could easily take on the role of monarch or general and attract followers willing to die for his or her banner."
     },
 ];
 
