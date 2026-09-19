@@ -29856,6 +29856,171 @@ const monstersLocal = [
         RegionalEffects: [],
         Description: "Description here"
     },
+    { // Astral Dreadnought
+        ID: 556,
+        ProfileType: "Monster",
+        Name: "Astral Dreadnought",
+        Type: "Gargantuan monstrosity (titan), unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Gargantuan",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [20, "natural armor"],
+        HitPoints: 297,
+        HitPointsRoll: "17d20 + 119",
+        Speed: ["15 ft.", "fly 80 ft. (hover)"],
+        Strength: 28,
+        Dexterity: 7,
+        Constitution: 25,
+        Intelligence: 5,
+        Wisdom: 14,
+        Charisma: 18,
+        SavingThrows: ["Dexterity +5", "Wisdom +9"],
+        Skills: ["Perception +9"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned", "Prone", "Stunned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 19"],
+        Languages: [],
+        Challenge: [21, 33000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Antimagic Cone",
+                Desc: "The astral dreadnought's opened eye creates an area of antimagic, as in the antimagic field spell, in a 150-foot cone. At the start of each of its turns, the dreadnought decides which way the cone faces. The cone doesn't function while the dreadnought's eye is closed or while the dreadnought is blinded."
+            },
+            {
+                Title: "Astral Entity",
+                Desc: "The astral dreadnought can't leave the Astral Plane, nor can it be banished or otherwise transported out of the Astral Plane."
+            },
+            {
+                Title: "Demiplanar Donjon",
+                Desc: "Any creature or object that the astral dreadnought swallows is transported to a demiplane that can be entered by no other means except a wish spell or this creature's Donjon Visit ability. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles a stone cave roughly 1,000 feet in diameter with a ceiling 100 feet high. Like a stomach, it contains the remains of the dreadnought's past meals. The dreadnought can't be harmed from within the demiplane. If the dreadnought dies, the demiplane disappears, and everything inside it appears around the corpse. The demiplane is otherwise indestructible."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If the astral dreadnought fails a saving throw, it can choose to succeed instead."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "An astral dreadnought's weapon attacks are magical."
+            },
+            {
+                Title: "Sever Silver Cord",
+                Desc: "If the astral dreadnought scores a critical hit against a creature traveling through the Astral Plane by means of the astral projection spell, the dreadnought can cut the target's silver cord instead of dealing damage."
+            },
+            {
+                Title: "Titanic Nature",
+                Desc: "Although it eats and sleeps if it so desires, an astral dreadnought doesn't require air, food, drink, or sleep."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The astral dreadnought makes three attacks: one with its bite and two with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 36 (5d10 + 9) piercing damage. If the target is a creature of Huge size or smaller and this damage reduces it to 0 hit points or it is incapacitated, the astral dreadnought swallows it. The swallowed target, along with everything it is wearing and carrying, appears in an unoccupied space on the floor of the astral dreadnought's Demiplanar Donjon."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 19 (3d6 + 9) slashing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Claw",
+                Desc: "The astral dreadnought makes one claw attack."
+            },
+            {
+                Title: "Donjon Visit (Costs 2 Actions)",
+                Desc: "One creature that is Huge or smaller that the astral dreadnought can see within 60 feet of it must succeed on a DC 19 Charisma saving throw or be magically teleported to an unoccupied space on the floor of the astral dreadnought's Demiplanar Donjon. At the end of the target's next turn, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+            },
+            {
+                Title: "Psychic Projection (Costs 3 Actions)",
+                Desc: "Each creature within 60 feet of the astral dreadnought must make a DC 19 Wisdom saving throw, taking 15 (2d10 + 4) psychic damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Astral dreadnoughts are enormous, terrifying monstrosities that haunt the silvery void of the Astral Plane. As large as an ancient red dragon, a dreadnought is covered from head to tail in layers of thick, spiked plates. Two gnarled limbs end in razor-sharp pincer claws, while a single enormous eye dominates its head; constellations seem to swirl within the depths of that starry eye. Its serpentine, armored tail trails behind it through the silvery void. Astral dreadnoughts are silent creatures that communicate in no known way and normally exist as solitary hunters. They are remorseless and indiscriminate predators, using their teeth and claws to tear apart anything they encounter while instinctively positioning themselves so that as many opponents as possible remain within the antimagic gaze of their eye. Anything they swallow is transported into a unique demiplane resembling a vast stone cavern containing the remains of countless past meals and dead planar travelers. Astral dreadnoughts were created by Tharizdun, the Chained God, to devour planar travelers seeking portals from the Astral Plane to the Outer Planes. They cannot leave the Astral Plane and do not require air, food, drink, or sleep."
+    },
+    { // Balhannoth
+        ID: 557,
+        ProfileType: "Monster",
+        Name: "Balhannoth",
+        Type: "Large aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [17, "natural armor"],
+        HitPoints: 114,
+        HitPointsRoll: "12d10 + 48",
+        Speed: ["25 ft.", "climb 25 ft."],
+        Strength: 17,
+        Dexterity: 8,
+        Constitution: 18,
+        Intelligence: 6,
+        Wisdom: 15,
+        Charisma: 8,
+        SavingThrows: ["Constitution +8"],
+        Skills: ["Perception +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Blinded"],
+        Senses: ["Blindsight 500 ft. (blind beyond this radius)", "Passive Perception 16"],
+        Languages: ["Understands Deep Speech", "Telepathy 1 mile"],
+        Challenge: [11, 7200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Legendary Resistance (2/Day)",
+                Desc: "If the balhannoth fails a saving throw, it can choose to succeed instead."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The balhannoth makes a bite attack and up to two tentacle attacks, or it makes up to four tentacle attacks."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 25 (4d10 + 3) piercing damage."
+            },
+            {
+                Title: "Tentacle",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15) and is moved up to 5 feet toward the balhannoth. Until this grapple ends, the target is restrained, and the balhannoth can't use this tentacle against other targets. The balhannoth has four tentacles."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Bite Attack",
+                Desc: "The balhannoth makes one bite attack against one creature it has grappled."
+            },
+            {
+                Title: "Teleport",
+                Desc: "The balhannoth magically teleports, along with any equipment it is wearing or carrying and any creatures it has grappled, up to 60 feet to an unoccupied space it can see."
+            },
+            {
+                Title: "Vanish",
+                Desc: "The balhannoth magically becomes invisible for up to 10 minutes or until immediately after it makes an attack roll."
+            }
+        ],
+        RegionalEffects: [
+            "Creatures within 1 mile of the balhannoth's lair experience a sensation of being close to whatever they desire most. The sensation grows stronger the closer the creatures come to the balhannoth's lair.",
+            "The balhannoth can sense the strongest desires of any humanoid within 1 mile of it and learns whether those desires involve a place: a safe location to rest, a temple, home, or somewhere else."
+        ],
+        LairActions: [
+            "The balhannoth warps reality around it in an area up to 500 feet square. After 10 minutes, the terrain in the area reshapes to assume the appearance of a location sought by one intelligent creature whose mind the balhannoth has read (see Regional Effects below). The transformation affects nonliving material only and can't create anything with moving parts or magical properties. Any object created in this area is, upon close inspection, revealed as a fake. Books are filled with empty pages, golden items are obvious counterfeits, and so on. The transformation lasts until the balhannoth dies or uses this lair action again.",
+            "The balhannoth targets one creature within 500 feet of it. The target must succeed on a DC 16 Wisdom saving throw or the target, along with whatever it is wearing and carrying, teleports to an unoccupied space of the balhannoth's choice within 60 feet of it.",
+            "The balhannoth targets one creature within 500 feet of it. The target must succeed on a DC 16 Wisdom saving throw or the balhannoth becomes invisible to that creature for 1 minute. This effect ends if the balhannoth attacks the target."
+        ],
+        Description: "Native to the Shadowfell, the balhannoth is a vicious, predatory aberration that makes its lair appear inviting to travelers before springing its trap. It is a large, powerful creature equipped with a dangerous bite and four tentacles, which it uses to seize and restrain its prey. Its extraordinary blindsight allows it to perceive creatures at great distances despite being blind beyond that range. Balhannoths are masters of deception through reality warping: they sense the desires of nearby creatures and reshape their surroundings to resemble places those creatures desperately wish to find, though the imitations always contain subtle flaws and inconsistencies. They thrive on fear and despair, taking pleasure in the terror of their victims before teleporting away to feed. In the Shadowfell, they typically establish lairs near places inhabited by their prey, such as well-traveled roads and paths. Drow and other Underdark inhabitants sometimes capture balhannoths and use them as guardians for passages, slave pens, and other strategic locations."
+    },
 ];
 
 const uniqueLocal = [
