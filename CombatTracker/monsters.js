@@ -30021,6 +30021,1479 @@ const monstersLocal = [
         ],
         Description: "Native to the Shadowfell, the balhannoth is a vicious, predatory aberration that makes its lair appear inviting to travelers before springing its trap. It is a large, powerful creature equipped with a dangerous bite and four tentacles, which it uses to seize and restrain its prey. Its extraordinary blindsight allows it to perceive creatures at great distances despite being blind beyond that range. Balhannoths are masters of deception through reality warping: they sense the desires of nearby creatures and reshape their surroundings to resemble places those creatures desperately wish to find, though the imitations always contain subtle flaws and inconsistencies. They thrive on fear and despair, taking pleasure in the terror of their victims before teleporting away to feed. In the Shadowfell, they typically establish lairs near places inhabited by their prey, such as well-traveled roads and paths. Drow and other Underdark inhabitants sometimes capture balhannoths and use them as guardians for passages, slave pens, and other strategic locations."
     },
+    { // Berbalang
+        ID: 558,
+        ProfileType: "Monster",
+        Name: "Berbalang",
+        Type: "Medium aberration, neutral evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [14, "natural armor"],
+        HitPoints: 38,
+        HitPointsRoll: "11d8 - 11",
+        Speed: ["30 ft.", "fly 40 ft."],
+        Strength: 9,
+        Dexterity: 16,
+        Constitution: 9,
+        Intelligence: 17,
+        Wisdom: 11,
+        Charisma: 10,
+        SavingThrows: ["Dexterity +5", "Intelligence +5"],
+        Skills: ["Arcana +5", "History +5", "Insight +2", "Perception +2", "Religion +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Truesight 120 ft.", "Passive Perception 12"],
+        Languages: ["All, but rarely speaks"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spectral Duplicate (Recharges after a Short or Long Rest)",
+                Desc: "As a bonus action, the berbalang creates one spectral duplicate of itself in an unoccupied space it can see within 60 feet of it. While the duplicate exists, the berbalang is unconscious. A berbalang can have only one duplicate at a time. The duplicate disappears when it or the berbalang drops to 0 hit points or when the berbalang dismisses it (no action required). The duplicate has the same statistics and knowledge as the berbalang, and everything experienced by the duplicate is known by the berbalang. All damage dealt by the duplicate's attacks is psychic damage."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The berbalang's innate spellcasting ability is Intelligence (spell save DC 13). The berbalang can innately cast the following spells, requiring no material components: At will: speak with dead; 1/day: plane shift (self only)."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The berbalang makes two attacks: one with its bite and one with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Berbalangs are strange aberrations that creep across the petrified remains of dead gods drifting through the Astral Plane. They have a gaunt, unsettling humanoid appearance and are obsessed with gathering secrets from the dead, often calling forth the spirits of deceased creatures and recording the information they reveal on bones. A berbalang can also create a spectral duplicate of itself to spy on other planes. While its duplicate gathers information, the berbalang's physical body becomes completely unconscious. Berbalangs are valued as sources of obscure information by powerful planar travelers, while githyanki sometimes cooperate with them as spies and watchers."
+    },
+    { // Boneclaw
+        ID: 559,
+        ProfileType: "Monster",
+        Name: "Boneclaw",
+        Type: "Large undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 127,
+        HitPointsRoll: "17d10 + 34",
+        Speed: ["40 ft."],
+        Strength: 19,
+        Dexterity: 16,
+        Constitution: 15,
+        Intelligence: 13,
+        Wisdom: 15,
+        Charisma: 9,
+        SavingThrows: ["Dexterity +7", "Constitution +6", "Wisdom +6"],
+        Skills: ["Perception +6", "Stealth +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Necrotic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 16"],
+        Languages: ["Common", "The main language of its master"],
+        Challenge: [12, 8400],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Rejuvenation",
+                Desc: "While its master lives, a destroyed boneclaw gains a new body in 1d10 hours, with all its hit points. The new body appears within 1 mile of the boneclaw's master."
+            },
+            {
+                Title: "Shadow Stealth",
+                Desc: "While in dim light or darkness, the boneclaw can take the Hide action as a bonus action."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The boneclaw makes two claw attacks."
+            },
+            {
+                Title: "Piercing Claw",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 20 (3d10 + 4) piercing damage. If the target is a creature, the boneclaw can pull the target up to 10 feet toward itself, and the target is grappled (escape DC 14). The boneclaw has two claws. While a claw grapples a target, the claw can attack only that target."
+            },
+            {
+                Title: "Shadow Jump",
+                Desc: "If the boneclaw is in dim light or darkness, each creature of the boneclaw's choice within 5 feet of it must succeed on a DC 14 Constitution saving throw or take 34 (5d12 + 2) necrotic damage. The boneclaw then magically teleports up to 60 feet to an unoccupied space it can see. It can bring one creature it's grappling, teleporting that creature to an unoccupied space it can see within 5 feet of its destination. The destination spaces of this teleportation must be in dim light or darkness."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Deadly Reach",
+                Desc: "In response to a visible enemy moving into its reach, the boneclaw makes one claw attack against that enemy. If the attack hits, the boneclaw can make a second claw attack against the target."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A boneclaw is the hideous result of a failed attempt to become a lich. Its body is an emaciated undead form with unnaturally long, skeletal limbs that allow it to attack and drag victims from surprising distances. Boneclaws delight in murder and horrific pain, often hiding like spiders in darkness before impaling victims with their claws. The soul of a failed lich becomes bound to a humanoid master with a particularly hate-filled heart, enslaving the boneclaw to that master's wishes. A boneclaw cannot be permanently destroyed while its master lives, and it reforms hours after its body is destroyed. If its master genuinely abandons evil or finds redemption, the boneclaw is permanently destroyed."
+    },
+    { // Cadaver Collector
+        ID: 560,
+        ProfileType: "Monster",
+        Name: "Cadaver Collector",
+        Type: "Large construct, lawful evil",
+        TypeCategory: "Construct",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [17, "natural armor"],
+        HitPoints: 189,
+        HitPointsRoll: "18d10 + 90",
+        Speed: ["30 ft."],
+        Strength: 21,
+        Dexterity: 14,
+        Constitution: 20,
+        Intelligence: 5,
+        Wisdom: 11,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Necrotic", "Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't adamantine"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Understands all languages but can't speak"],
+        Challenge: [14, 11500],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance",
+                Desc: "The cadaver collector has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Summon Specters (Recharges after a Short or Long Rest)",
+                Desc: "As a bonus action, the cadaver collector calls up the enslaved spirits of those it has slain; 1d6 specters (without Sunlight Sensitivity) arise in unoccupied spaces within 15 feet of the cadaver collector. The specters act right after the cadaver collector on the same initiative count and fight until they're destroyed. They disappear when the cadaver collector is destroyed."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The cadaver collector makes two slam attacks."
+            },
+            {
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage plus 16 (3d10) necrotic damage."
+            },
+            {
+                Title: "Paralyzing Breath (Recharge 5-6)",
+                Desc: "The cadaver collector releases paralyzing gas in a 30-foot cone. Each creature in that area must make a successful DC 18 Constitution saving throw or be paralyzed for 1 minute. A paralyzed creature repeats the saving throw at the end of each of its turns, ending the effect on itself with a success."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Cadaver collectors are enormous ancient war machines from Acheron, built to gather the dead for conquering armies. Their hulking metal bodies are covered in the armor and weapons of fallen warriors, with corpses impaled upon the lances and blades embedded in their shells. They are drawn to battlefields and can be summoned by necromancers, hobgoblin generals, and other warlords. The spirits of the dead accumulated by a collector can be summoned as specters to fight alongside it, while its paralyzing breath allows it to immobilize additional victims for collection."
+    },
+    { // Choker
+        ID: 561,
+        ProfileType: "Monster",
+        Name: "Choker",
+        Type: "Small aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Small",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 13,
+        HitPointsRoll: "3d6 + 3",
+        Speed: ["30 ft."],
+        Strength: 16,
+        Dexterity: 14,
+        Constitution: 13,
+        Intelligence: 4,
+        Wisdom: 12,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: ["Stealth +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["Deep Speech"],
+        Challenge: [1, 100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Aberrant Quickness (Recharges after a Short or Long Rest)",
+                Desc: "The choker can take an extra action on its turn."
+            },
+            {
+                Title: "Boneless",
+                Desc: "The choker can move through and occupy a space as narrow as 4 inches wide without squeezing."
+            },
+            {
+                Title: "Spider Climb",
+                Desc: "The choker can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The choker makes two tentacle attacks."
+            },
+            {
+                Title: "Tentacle",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 3 (1d6) piercing damage. If the target is a Large or smaller creature, it is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the choker can't use this tentacle on another target. The choker has two tentacles. If this attack is a critical hit, the target also can't breathe or speak until the grapple ends."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Chokers are small subterranean aberrations with rubbery bodies, flexible cartilage instead of bones, and unnaturally long arms ending in starfish-shaped hands. They hide inside narrow cracks and fissures, using their ability to squeeze through spaces only a few inches wide to remain concealed from their prey. A choker commonly leaves the corpse of a previous victim outside its hiding place to lure curious creatures close enough to seize. Once it attacks, its long tentacles wrap around a victim's throat and pin the creature against the cavern wall."
+    },
+    { // Bronze Scout
+        ID: 562,
+        ProfileType: "Monster",
+        Name: "Bronze Scout",
+        Type: "Medium construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [13],
+        HitPoints: 18,
+        HitPointsRoll: "4d8",
+        Speed: ["30 ft.", "burrow 30 ft."],
+        Strength: 10,
+        Dexterity: 16,
+        Constitution: 11,
+        Intelligence: 3,
+        Wisdom: 14,
+        Charisma: 1,
+        SavingThrows: [],
+        Skills: ["Perception +6", "Stealth +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't adamantine"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 16"],
+        Languages: ["Understands one language of its creator but can't speak"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Earth Armor",
+                Desc: "The bronze scout doesn't provoke opportunity attacks when it burrows."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The bronze scout has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) lightning damage."
+            },
+            {
+                Title: "Lightning Flare (Recharges after a Short or Long Rest)",
+                Desc: "Each creature in contact with the ground within 15 feet of the bronze scout must make a DC 13 Dexterity saving throw, taking 14 (4d6) lightning damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A bronze scout is a segmented, wormlike clockwork construct that normally remains mostly buried underground. Its telescoping eyestalks allow it to observe enemies while keeping its body concealed beneath the earth. When discovered, it uses its burrowing ability to retreat and can discharge a powerful electrical flare through the ground to discourage pursuit."
+    },
+    { // Iron Cobra
+        ID: 563,
+        ProfileType: "Monster",
+        Name: "Iron Cobra",
+        Type: "Medium construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [13],
+        HitPoints: 45,
+        HitPointsRoll: "7d8 + 14",
+        Speed: ["30 ft."],
+        Strength: 12,
+        Dexterity: 16,
+        Constitution: 14,
+        Intelligence: 3,
+        Wisdom: 10,
+        Charisma: 1,
+        SavingThrows: [],
+        Skills: ["Stealth +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't adamantine"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Understands one language of its creator but can't speak"],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance",
+                Desc: "The iron cobra has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or suffer one random poison effect: 1. Poison Damage: The target takes 13 (3d8) poison damage. 2. Confusion: On its next turn, the target must use its action to make one weapon attack against a random creature it can see within 30 feet of it, using whatever weapon it has in hand and moving beforehand if necessary to get in range. If it's holding no weapon, it makes an unarmed strike. If no creature is visible within 30 feet, it takes the Dash action, moving toward the nearest creature. 3. Paralysis: The target is paralyzed until the end of its next turn."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "An iron cobra is a clockwork construct shaped like a metallic serpent. Gnomish artificers build these constructs with poisonous bites and often load them with alchemical compounds designed to produce different debilitating effects. Depending on the poison delivered, an iron cobra can inflict additional poison damage, cloud a victim's judgment into attacking an unexpected target, or temporarily paralyze its prey."
+    },
+    { // Oaken Bolter
+        ID: 564,
+        ProfileType: "Monster",
+        Name: "Oaken Bolter",
+        Type: "Medium construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 58,
+        HitPointsRoll: "9d8 + 18",
+        Speed: ["30 ft."],
+        Strength: 12,
+        Dexterity: 18,
+        Constitution: 15,
+        Intelligence: 3,
+        Wisdom: 10,
+        Charisma: 1,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't adamantine"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Understands one language of its creator but can't speak"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance",
+                Desc: "The oaken bolter has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The oaken bolter makes two lancing bolt attacks or one lancing bolt attack and one harpoon attack."
+            },
+            {
+                Title: "Lancing Bolt",
+                Desc: "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 100/400 ft., one target. Hit: 15 (2d10 + 4) piercing damage."
+            },
+            {
+                Title: "Harpoon",
+                Desc: "Ranged Weapon Attack: +7 to hit, range 50/200 ft., one target. Hit: 9 (1d10 + 4) piercing damage, and the target is grappled (escape DC 12). While grappled in this way, a creature's speed isn't reduced, but it can move only in directions that bring it closer to the oaken bolter. A creature takes 5 (1d10) slashing damage if it escapes from the grapple or if it tries and fails. As a bonus action, the oaken bolter can pull a creature grappled by it 20 feet closer. The oaken bolter can grapple only one creature at a time."
+            },
+            {
+                Title: "Explosive Bolt (Recharge 5-6)",
+                Desc: "The oaken bolter launches an explosive charge at a point within 120 feet. Each creature within 20 feet of that point must make a DC 15 Dexterity saving throw, taking 17 (5d6) fire damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "An oaken bolter is a massive clockwork ballista designed to strike targets from long distances. Its wooden and mechanical construction houses several specialized weapons: heavy bolts for piercing targets, harpoons for dragging enemies toward the construct, and explosive charges for blasting groups of creatures. Oaken bolters are typically employed alongside other clockworks, allowing them to pull enemies into range of more melee-oriented constructs or traps."
+    },
+    { // Stone Defender
+        ID: 565,
+        ProfileType: "Monster",
+        Name: "Stone Defender",
+        Type: "Medium construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 52,
+        HitPointsRoll: "7d8 + 21",
+        Speed: ["30 ft."],
+        Strength: 19,
+        Dexterity: 10,
+        Constitution: 17,
+        Intelligence: 3,
+        Wisdom: 10,
+        Charisma: 1,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't adamantine"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Understands one language of its creator but can't speak"],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "False Appearance",
+                Desc: "While the stone defender remains motionless against an uneven earthen or stone surface, it is indistinguishable from that surface."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The stone defender has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage, and if the target is Large or smaller, it is knocked prone."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Intercept Attack",
+                Desc: "In response to another creature within 5 feet of it being hit by an attack roll, the stone defender gives that creature a +5 bonus to its AC against that attack, potentially causing a miss. To use this ability, the stone defender must be able to see the creature and the attacker."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Stone defenders are heavily armored clockwork constructs made from thick plates of stone riveted together. Their stony bodies allow them to conceal themselves against uneven earthen or stone surfaces, making them capable of ambushing enemies when necessary. Their primary purpose, however, is protection: they serve as bodyguards for gnomes and other clockworks, interposing themselves between their allies and incoming attacks."
+    },
+    { // Corpse Flower
+        ID: 566,
+        ProfileType: "Monster",
+        Name: "Corpse Flower",
+        Type: "Large plant, chaotic evil",
+        TypeCategory: "Plant",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [12],
+        HitPoints: 127,
+        HitPointsRoll: "15d10 + 45",
+        Speed: ["20 ft.", "climb 20 ft."],
+        Strength: 14,
+        Dexterity: 14,
+        Constitution: 16,
+        Intelligence: 7,
+        Wisdom: 15,
+        Charisma: 3,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Blinded", "Deafened"],
+        Senses: ["Blindsight 120 ft. (blind beyond this radius)", "Passive Perception 12"],
+        Languages: [],
+        Challenge: [8, 3900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Corpses",
+                Desc: "When first encountered, a corpse flower contains the corpses of 1d6 + 3 humanoids. A corpse flower can hold the remains of up to nine dead humanoids. These remains have total cover against attacks and other effects outside the corpse flower. If the corpse flower dies, the corpses within it can be pulled free. While it has at least one humanoid corpse in its body, the corpse flower can use a bonus action to do one of the following: - The corpse flower digests one humanoid corpse in its body and instantly regains 11 (2d10) hit points. Nothing of the digested body remains. Any equipment on the corpse is expelled from the corpse flower in its space. - The corpse flower animates one dead humanoid in its body, turning it into a zombie. The zombie appears in an unoccupied space within 5 feet of the corpse flower and acts immediately after it in the initiative order. The zombie acts as an ally of the corpse flower but isn't under its control, and the flower's stench clings to it (see the Stench of Death trait)."
+            },
+            {
+                Title: "Spider Climb",
+                Desc: "The corpse flower can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            },
+            {
+                Title: "Stench of Death",
+                Desc: "Each creature that starts its turn within 10 feet of the corpse flower or one of its zombies must make a DC 14 Constitution saving throw, unless the creature is a construct or undead. On a failed save, the creature is incapacitated until the end of the turn. Creatures that are immune to poison damage or the poisoned condition automatically succeed on this saving throw. On a successful save, the creature is immune to the stench of all corpse flowers for 24 hours."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The corpse flower makes three tentacle attacks."
+            },
+            {
+                Title: "Tentacle",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage, and the target must succeed on a DC 14 Constitution saving throw or take 14 (4d6) poison damage."
+            },
+            {
+                Title: "Harvest the Dead",
+                Desc: "The corpse flower grabs one unsecured dead humanoid within 10 feet of it and stuffs the corpse into itself, along with any equipment the corpse is wearing or carrying. The remains can be used with the Corpses trait."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A corpse flower can sprout atop the grave of an evil necromancer or the remains of powerful undead. It grows into an enormous, mobile plant that tears itself from the earth and scavenges humanoid corpses from battlefields and graveyards. Its fibrous tentacles stuff bodies into its mass, where the corpses can be digested for nourishment or animated as zombies. The flower's body gives off a powerful stench of decay that can incapacitate nearby living creatures. It is a malevolent plant that despises the living and feeds on the dead."
+    },
+    { // Deathlock
+        ID: 567,
+        ProfileType: "Monster",
+        Name: "Deathlock",
+        Type: "Medium undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [12, "15 with mage armor"],
+        HitPoints: 36,
+        HitPointsRoll: "8d8",
+        Speed: ["30 ft."],
+        Strength: 11,
+        Dexterity: 15,
+        Constitution: 10,
+        Intelligence: 14,
+        Wisdom: 12,
+        Charisma: 16,
+        SavingThrows: ["Intelligence +4", "Charisma +5"],
+        Skills: ["Arcana +4", "History +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Necrotic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Exhaustion", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["The languages it knew in life"],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The deathlock's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components: At will: detect magic, disguise self, mage armor."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The deathlock is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): chill touch, eldritch blast, mage hand; 1st-3rd level (2 3rd-level slots): arms of Hadar, dispel magic, hold person, hunger of Hadar, invisibility, spider climb."
+            },
+            {
+                Title: "Turn Resistance",
+                Desc: "The deathlock has advantage on saving throws against any effect that turns undead."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Deathly Claw",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) necrotic damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A deathlock is an undead warlock created when a warlock fails to fulfill a pact with an evil patron and rises from death bound to continue serving that patron. Its former ambitions and goals are overwhelmed by an obsessive need to carry out its master's wishes. Deathlocks retain some of their former magical abilities and appear as sinister undead spellcasters, using necromantic and warlock magic to pursue the interests of their otherworldly masters. Powerful necromancers can also create deathlocks and bind them to their service."
+    },
+    { // Deathlock Mastermind
+        ID: 568,
+        ProfileType: "Monster",
+        Name: "Deathlock Mastermind",
+        Type: "Medium undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [13, "16 with mage armor"],
+        HitPoints: 110,
+        HitPointsRoll: "20d8 + 20",
+        Speed: ["30 ft."],
+        Strength: 11,
+        Dexterity: 16,
+        Constitution: 12,
+        Intelligence: 15,
+        Wisdom: 12,
+        Charisma: 17,
+        SavingThrows: ["Intelligence +5", "Charisma +6"],
+        Skills: ["Arcana +5", "History +5", "Perception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Necrotic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Exhaustion", "Poisoned"],
+        Senses: ["Darkvision 120 ft. (including magical darkness)", "Passive Perception 14"],
+        Languages: ["The languages it knew in life"],
+        Challenge: [8, 3900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The deathlock's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring no material components: At will: detect magic, disguise self, mage armor."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The deathlock is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): chill touch, mage hand, minor illusion, poison spray; 1st-5th level (2 5th-level slots): arms of Hadar, blight, counterspell, crown of madness, darkness, dimension door, dispel magic, fly, hold monster, invisibility."
+            },
+            {
+                Title: "Turn Resistance",
+                Desc: "The deathlock has advantage on saving throws against any effect that turns undead."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Deathly Claw",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) necrotic damage."
+            },
+            {
+                Title: "Grave Bolts",
+                Desc: "Ranged Spell Attack: +6 to hit, range 120 ft., one or two targets. Hit: 18 (4d8) necrotic damage. If the target is Large or smaller, it must succeed on a DC 16 Strength saving throw or become restrained as shadowy tendrils wrap around it for 1 minute. A restrained target can use its action to repeat the saving throw, ending the effect on itself on a success."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A deathlock mastermind is a more powerful and cunning form of deathlock that has developed the freedom and intelligence necessary to devise its own tactics. While all deathlocks remain bound to their patrons, masterminds recruit lesser creatures and orchestrate elaborate schemes in pursuit of their master's goals. They retain the appearance and necromantic nature of deathlocks while wielding considerably greater magical power, including spells capable of controlling, restraining, and devastating enemies from a distance."
+    },
+    { // Deathlock Wight
+        ID: 569,
+        ProfileType: "Monster",
+        Name: "Deathlock Wight",
+        Type: "Medium undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [12, "15 with mage armor"],
+        HitPoints: 37,
+        HitPointsRoll: "5d8 + 15",
+        Speed: ["30 ft."],
+        Strength: 11,
+        Dexterity: 14,
+        Constitution: 16,
+        Intelligence: 12,
+        Wisdom: 14,
+        Charisma: 16,
+        SavingThrows: ["Wisdom +4"],
+        Skills: ["Arcana +3", "Perception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Necrotic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Exhaustion", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 14"],
+        Languages: ["The languages it knew in life"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The wight's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no verbal or material components: At will: detect magic, disguise self, mage armor; 1/day each: fear, hold person, misty step."
+            },
+            {
+                Title: "Sunlight Sensitivity",
+                Desc: "While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The wight attacks twice with Grave Bolt."
+            },
+            {
+                Title: "Grave Bolt",
+                Desc: "Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 7 (1d8 + 3) necrotic damage."
+            },
+            {
+                Title: "Life Drain",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A deathlock wight is a deathlock stripped of much of the magical power it possessed in life, occupying a state between a warlock's undead punishment and the existence of a traditional wight. It retains the appearance of a sinister undead spellcaster and can wield grave bolts from a distance, while its life-draining touch can weaken and eventually kill living creatures. Deathlock wights retain the languages they knew in life and remain bound to the purposes imposed upon them by their patrons or creators."
+    },
+    { // Alkilith
+        ID: 570,
+        ProfileType: "Monster",
+        Name: "Alkilith",
+        Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [17, "natural armor"],
+        HitPoints: 157,
+        HitPointsRoll: "15d8 + 90",
+        Speed: ["40 ft."],
+        Strength: 12,
+        Dexterity: 19,
+        Constitution: 22,
+        Intelligence: 6,
+        Wisdom: 11,
+        Charisma: 7,
+        SavingThrows: ["Dexterity +8", "Constitution +10"],
+        Skills: ["Stealth +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Frightened", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 10"],
+        Languages: ["Understands Abyssal but can't speak"],
+        Challenge: [11, 7200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Amorphous",
+                Desc: "The alkilith can move through a space as narrow as 1 inch wide without squeezing."
+            },
+            {
+                Title: "False Appearance",
+                Desc: "While the alkilith is motionless, it is indistinguishable from an ordinary slime or fungus."
+            },
+            {
+                Title: "Foment Madness",
+                Desc: "Any creature that isn't a demon that starts its turn within 30 feet of the alkilith must succeed on a DC 18 Wisdom saving throw, or it hears a faint buzzing in its head for a moment and has disadvantage on its next attack roll, saving throw, or ability check. If the saving throw against Foment Madness fails by 5 or more, the creature is instead subjected to the confusion spell for 1 minute (no concentration required by the alkilith). While under the effect of that confusion, the creature is immune to Foment Madness."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The alkilith has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The alkilith makes three tentacle attacks."
+            },
+            {
+                Title: "Tentacle",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 18 (4d6 + 4) acid damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "An alkilith resembles a foul, dripping fungal growth that infests doorways, windows, and other portals. Its body stretches around openings and anchors itself with a sticky secretion, allowing it to masquerade as an ordinary slime or fungus. Wherever an alkilith takes root, it weakens the fabric of reality and gradually attunes the opening to the Abyss, eventually creating a portal through which other demons can invade. Alkiliths are spawned from cast-off pieces of Juiblex's hideous body and seek routes out of the Abyss despite being too dangerous for most cultists to summon."
+    },
+    { // Armanite
+        ID: 571,
+        ProfileType: "Monster",
+        Name: "Armanite",
+        Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 84,
+        HitPointsRoll: "8d10 + 40",
+        Speed: ["60 ft."],
+        Strength: 21,
+        Dexterity: 18,
+        Constitution: 21,
+        Intelligence: 8,
+        Wisdom: 12,
+        Charisma: 13,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 11"],
+        Languages: ["Abyssal", "Telepathy 120 ft."],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance",
+                Desc: "The armanite has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The armanite's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The armanite makes three attacks: one with its hooves, one with its claws, and one with its serrated tail."
+            },
+            {
+                Title: "Hooves",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (2d4 + 5) slashing damage."
+            },
+            {
+                Title: "Serrated Tail",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) slashing damage."
+            },
+            {
+                Title: "Lightning Lance (Recharge 5-6)",
+                Desc: "The armanite looses a bolt of lightning in a line 60 feet long and 10 feet wide. Each creature in the line must make a DC 15 Dexterity saving throw, taking 27 (6d8) lightning damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Armanites are savage demonic heavy cavalry that race across the blasted fields of the Abyss. They have powerful, muscular bodies equipped with sharp hooves, claws, and long serrated tails, giving them numerous ways to tear apart their enemies. Great herds of armanites serve in the armies of demon lords, where they lead charges and attack enemy flanks. Their bloodlust is so intense that they frequently fight among themselves when no other enemies are available."
+    },
+    { // Bulezau
+        ID: 572,
+        ProfileType: "Monster",
+        Name: "Bulezau",
+        Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [14, "natural armor"],
+        HitPoints: 52,
+        HitPointsRoll: "7d8 + 21",
+        Speed: ["40 ft."],
+        Strength: 15,
+        Dexterity: 14,
+        Constitution: 17,
+        Intelligence: 8,
+        Wisdom: 9,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Frightened", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 9"],
+        Languages: ["Abyssal", "Telepathy 60 ft."],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Rotting Presence",
+                Desc: "When any creature that isn't a demon starts its turn within 30 feet of one or more bulezaus, that creature must succeed on a DC 13 Constitution saving throw or take 1d6 necrotic damage plus 1 necrotic damage for each bulezau within 30 feet of it."
+            },
+            {
+                Title: "Standing Leap",
+                Desc: "The bulezau's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+            },
+            {
+                Title: "Sure-Footed",
+                Desc: "The bulezau has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Barbed Tail",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d12 + 2) piercing damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw against disease or become poisoned until the disease ends. While poisoned in this way, the target sports festering boils, coughs up flies, and sheds rotting skin, and the target must repeat the saving throw after every 24 hours that elapse. On a successful save, the disease ends. On a failed save, the target's hit point maximum is reduced by 4 (1d8). The target dies if its hit point maximum is reduced to 0."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Bulezaus are diseased manifestations of animalistic rage that embody the violence of nature. They are repulsive, goatlike demons plagued by crusted eyes, open sores crawling with maggots, and the stench of rotten meat. Bulezaus gather in the deep canyons and lofty crags of the Abyss and commonly serve as foot soldiers in demon lord armies. Their bloodlust drives them toward constant violence, whether against enemies or against each other."
+    },
+    { // Dybbuk
+        ID: 573,
+        ProfileType: "Monster",
+        Name: "Dybbuk",
+        Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [14],
+        HitPoints: 37,
+        HitPointsRoll: "5d8 + 15",
+        Speed: ["0 ft.", "40 ft. (hover)"],
+        Strength: 6,
+        Dexterity: 19,
+        Constitution: 16,
+        Intelligence: 16,
+        Wisdom: 15,
+        Charisma: 14,
+        SavingThrows: [],
+        Skills: ["Deception +6", "Intimidation +4", "Perception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Fire", "Lightning", "Thunder", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Grappled", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 14"],
+        Languages: ["Abyssal", "Common", "Telepathy 120 ft."],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Incorporeal Movement",
+                Desc: "The dybbuk can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The dybbuk's innate spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components: At will: dimension door; 3/day each: fear, phantasmal force."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The dybbuk has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Violate Corpse",
+                Desc: "The dybbuk can use a bonus action while it is possessing a corpse to make it do something unnatural, such as vomit blood, twist its head all the way around, or cause a quadruped to move as a biped. Any beast or humanoid that sees this behavior must succeed on a DC 12 Wisdom saving throw or become frightened of the dybbuk for 1 minute. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on a saving throw against this ability is immune to Violate Corpse for 24 hours."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Tendril",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) necrotic damage. If the target is a creature, its hit point maximum is also reduced by 3 (1d6). This reduction lasts until the target finishes a short or long rest. The target dies if this effect reduces its hit point maximum to 0."
+            },
+            {
+                Title: "Possess Corpse (Recharge 6)",
+                Desc: "The dybbuk disappears into an intact corpse it can see within 5 feet of it. The corpse must be Large or smaller and be that of a beast or a humanoid. The dybbuk is now effectively the possessed creature. Its type becomes undead, though it now looks alive, and it gains a number of temporary hit points equal to the corpse's hit point maximum in life. While possessing the corpse, the dybbuk retains its hit points, alignment, Intelligence, Wisdom, Charisma, telepathy, and immunity to poison damage, exhaustion, and being charmed and frightened. It otherwise uses the possessed target's game statistics, gaining access to its knowledge and proficiencies but not its class features, if any. The possession lasts until the temporary hit points are lost (at which point the body becomes a corpse once more) or the dybbuk ends its possession using a bonus action. When the possession ends, the dybbuk reappears in an unoccupied space within 5 feet of the corpse."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Dybbuks are translucent, flying demons resembling jellyfish with long trailing tendrils. Rather than remaining in their natural form, they usually possess corpses and give the bodies a semblance of life. A possessed corpse retains enough of its former appearance and knowledge to fool others temporarily, but the dybbuk inevitably reveals itself through grotesque behavior such as vomiting blood, contorting limbs, or otherwise violating the corpse it inhabits. Dybbuks delight in terrorizing mortals and indulging in the vices of their chosen hosts."
+    },
+    { // Maurezhi
+        ID: 574,
+        ProfileType: "Monster",
+        Name: "Maurezhi",
+        Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [15, "natural armor"],
+        HitPoints: 88,
+        HitPointsRoll: "16d8 + 16",
+        Speed: ["30 ft."],
+        Strength: 14,
+        Dexterity: 17,
+        Constitution: 12,
+        Intelligence: 11,
+        Wisdom: 12,
+        Charisma: 15,
+        SavingThrows: [],
+        Skills: ["Deception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Necrotic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 11"],
+        Languages: ["Abyssal", "Elvish", "Telepathy 120 ft."],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Assume Form",
+                Desc: "The maurezhi can assume the appearance of any Medium humanoid it has eaten. It remains in this form for 1d6 days, during which time the form gradually decays until, when the effect ends, the form sloughs from the demon's body."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The maurezhi has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The maurezhi makes two attacks: one with its bite and one with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) piercing damage. If the target is a humanoid, its Charisma score is reduced by 1d4. This reduction lasts until the target finishes a short or long rest. The target dies if this reduces its Charisma to 0. It rises 24 hours later as a ghoul, unless it has been revived or its corpse has been destroyed."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 12 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            },
+            {
+                Title: "Raise Ghoul (Recharge 5-6)",
+                Desc: "The maurezhi targets one dead ghoul or ghast it can see within 30 feet of it. The target rises with all its hit points and follows the maurezhi's commands."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Maurezhi are demons created by Doresain, the King of Ghouls, to lead packs of ghouls and ghasts in the Material Plane. They have a horrific, predatory appearance and can consume the corpse of a humanoid they have slain, taking on that creature's appearance for several days while the stolen form gradually decays. Their bites drain a victim's sense of self by reducing Charisma, and their claws can paralyze living creatures. Maurezhi embody the spreading hunger of the undead and can raise dead ghouls and ghasts to serve them."
+    },
+    { // Molydeus
+        ID: 575,
+        ProfileType: "Monster",
+        Name: "Molydeus",
+        Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [19, "natural armor"],
+        HitPoints: 216,
+        HitPointsRoll: "16d12 + 112",
+        Speed: ["40 ft."],
+        Strength: 28,
+        Dexterity: 22,
+        Constitution: 25,
+        Intelligence: 21,
+        Wisdom: 24,
+        Charisma: 24,
+        SavingThrows: ["Strength +16", "Constitution +14", "Wisdom +14", "Charisma +14"],
+        Skills: ["Perception +21"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened", "Poisoned", "Stunned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 31"],
+        Languages: ["Abyssal", "Telepathy 120 ft."],
+        Challenge: [21, 33000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The molydeus's innate spellcasting ability is Charisma (spell save DC 22). It can innately cast the following spells, requiring no material components: At will: dispel magic, polymorph, telekinesis, teleport; 3/day: lightning bolt; 1/day: imprisonment."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If the molydeus fails a saving throw, it can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The molydeus has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The molydeus's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The molydeus makes three attacks: one with its weapon, one with its wolf bite, and one with its snakebite."
+            },
+            {
+                Title: "Demonic Weapon",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) slashing damage. If the target has at least one head and the molydeus rolled a 20 on the attack roll, the target is decapitated and dies if it can't survive without that head. A target is immune to this effect if it takes none of the damage, has legendary actions, or is Huge or larger. Such a creature takes an extra 6d8 slashing damage from the hit."
+            },
+            {
+                Title: "Wolf Bite",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) piercing damage."
+            },
+            {
+                Title: "Snakebite",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one creature. Hit: 12 (1d6 + 9) piercing damage, and the target must succeed on a DC 22 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target transforms into a manes if this reduces its hit point maximum to 0. This transformation can be ended only by a wish spell."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "The molydeus makes one attack, either with its demonic weapon or with its snakebite."
+            },
+            {
+                Title: "Move",
+                Desc: "The molydeus moves without provoking opportunity attacks."
+            },
+            {
+                Title: "Cast a Spell",
+                Desc: "The molydeus casts one spell from its Innate Spellcasting trait."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Molydei are among the most ruthless and dangerous demons in the Abyss, standing roughly 12 feet tall with red-skinned humanoid bodies and two heads: one a slavering wolf and the other a serpent with dripping fangs. A demon lord creates a molydeus by remaking a particularly devoted or formidable demon through excruciating torment. Each molydeus serves a specific demon lord and acts as that master's enforcer, commander, guardian, and executioner. Its special weapon is fashioned from a portion of its demon lord's essence and remains mystically bound to the molydeus."
+    },
+    { // Nabassu
+        ID: 576,
+        ProfileType: "Monster",
+        Name: "Nabassu",
+        Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 190,
+        HitPointsRoll: "20d8 + 100",
+        Speed: ["40 ft.", "fly 60 ft."],
+        Strength: 22,
+        Dexterity: 14,
+        Constitution: 21,
+        Intelligence: 14,
+        Wisdom: 15,
+        Charisma: 17,
+        SavingThrows: ["Strength +11", "Dexterity +7"],
+        Skills: ["Perception +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 17"],
+        Languages: ["Abyssal", "Telepathy 120 ft."],
+        Challenge: [15, 13000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Demonic Shadows",
+                Desc: "The nabassu darkens the area around its body in a 10-foot radius. Nonmagical light can't illuminate this area of dim light."
+            },
+            {
+                Title: "Devour Soul",
+                Desc: "A nabassu can eat the soul of a creature it has killed within the last hour, provided that creature is neither a construct nor an undead. The devouring requires the nabassu to be within 5 feet of the corpse for at least 10 minutes, after which it gains a number of Hit Dice (d8s) equal to half the creature's number of Hit Dice. Roll those dice, and increase the nabassu's hit points by the numbers rolled. For every 4 Hit Dice the nabassu gains in this way, its attacks deal an extra 3 (1d6) damage on a hit. The nabassu retains these benefits for 6 days. A creature devoured by a nabassu can be restored to life only by a wish spell."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The nabassu has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The nabassu's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The nabassu uses its Soul-Stealing Gaze and makes two attacks: one with its claws and one with its bite."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 32 (4d12 + 6) piercing damage."
+            },
+            {
+                Title: "Soul-Stealing Gaze",
+                Desc: "The nabassu targets one creature it can see within 30 feet of it. If the target can see the nabassu and isn't a construct or an undead, it must succeed on a DC 16 Charisma saving throw or reduce its hit point maximum by 13 (2d12) and give the nabassu an equal number of temporary hit points. This reduction lasts until the target finishes a short or long rest. The target dies if its hit point maximum is reduced to 0, and if the target is a humanoid, it immediately rises as a ghoul under the nabassu's control."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Nabassus are insatiable soul-eating demons that prowl the multiverse in search of victims. They are hated and shunned by other demons because they consume souls, including the souls of fellow demons. A nabassu appears as a monstrous winged predator with a powerful, hungry physique and a grotesque visage suited to its predatory nature. When summoned to the Material Plane, a nabassu often attempts to break free from its summoner so it can devour the summoner's soul and begin hunting independently. Particularly powerful nabassus seek out the amulets of demon lords."
+    },
+    { // Rutterkin
+        ID: 577,
+        ProfileType: "Monster",
+        Name: "Rutterkin",
+        Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [12],
+        HitPoints: 37,
+        HitPointsRoll: "5d8 + 15",
+        Speed: ["20 ft."],
+        Strength: 14,
+        Dexterity: 15,
+        Constitution: 17,
+        Intelligence: 5,
+        Wisdom: 12,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Frightened", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 11"],
+        Languages: ["Understands Abyssal but can't speak"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Crippling Fear",
+                Desc: "When a creature that isn't a demon starts its turn within 30 feet of three or more rutterkins, it must make a DC 11 Wisdom saving throw. The creature has disadvantage on the save if it's within 30 feet of six or more rutterkins. On a successful save, the creature is immune to the Crippling Fear of all rutterkins for 24 hours. On a failed save, the creature becomes frightened of the rutterkins for 1 minute. While frightened in this way, the creature is restrained. At the end of each of the frightened creature's turns, it can repeat the saving throw, ending the effect on itself on a success."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw against disease or become poisoned. At the end of each long rest, the poisoned target can repeat the saving throw, ending the effect on itself on a success. If the target is reduced to 0 hit points while poisoned in this way, it dies and instantly transforms into a living abyssal wretch. The transformation of the body can be undone only by a wish spell."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Rutterkins are warped demons that roam the Abyss in mobs, constantly searching for intruders to surround and devour. Their twisted forms are unsettling even by demonic standards, and their greatest weapon is the terror they create when gathered in numbers. Groups of rutterkins emit a supernatural wave of fear that can leave victims frightened and restrained before the demons swarm them. Their bites carry a terrible Abyssal disease that can eventually transform a slain victim into an abyssal wretch."
+    },
+    { // Abyssal Wretch
+        ID: 578,
+        ProfileType: "Monster",
+        Name: "Abyssal Wretch",
+        Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [11],
+        HitPoints: 18,
+        HitPointsRoll: "4d8",
+        Speed: ["20 ft."],
+        Strength: 9,
+        Dexterity: 12,
+        Constitution: 11,
+        Intelligence: 5,
+        Wisdom: 8,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Frightened", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 9"],
+        Languages: ["Understands Abyssal but can't speak"],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Abyssal wretches are the lowest and most pitiful forms of demon, twisted remnants of creatures transformed by the corrupting influence of the Abyss. They are misshapen, savage creatures that exist in mindless mobs and follow more powerful demons. Rutterkins and sibriexes can create abyssal wretches from other creatures, making them a common consequence of demonic corruption."
+    },
+    { // Sibriex
+        ID: 579,
+        ProfileType: "Monster",
+        Name: "Sibriex",
+        Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [19, "natural armor"],
+        HitPoints: 150,
+        HitPointsRoll: "12d12 + 72",
+        Speed: ["0 ft.", "fly 20 ft. (hover)"],
+        Strength: 10,
+        Dexterity: 3,
+        Constitution: 23,
+        Intelligence: 25,
+        Wisdom: 24,
+        Charisma: 25,
+        SavingThrows: ["Intelligence +13", "Charisma +13"],
+        Skills: ["Arcana +13", "History +13", "Perception +13"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 23"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [18, 20000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Contamination",
+                Desc: "The sibriex emits an aura of corruption 30 feet in every direction. Plants that aren't creatures wither in the aura, and the ground in it is difficult terrain for other creatures. Any creature that starts its turn in the aura must succeed on a DC 20 Constitution saving throw or take 14 (4d6) poison damage. A creature that succeeds on the save is immune to this sibriex's Contamination for 24 hours."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The sibriex's innate spellcasting ability is Charisma (spell save DC 21). It can innately cast the following spells, requiring no material components: At will: charm person, command, dispel magic, hold monster; 3/day: feeblemind."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If the sibriex fails a saving throw, it can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The sibriex has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The sibriex uses Squirt Bile once and makes three attacks using its chain, bite, or both."
+            },
+            {
+                Title: "Chain",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 15 ft., one target. Hit: 20 (2d12 + 7) piercing damage."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d8) piercing damage plus 9 (2d8) acid damage."
+            },
+            {
+                Title: "Squirt Bile",
+                Desc: "The sibriex targets one creature it can see within 120 feet of it. The target must succeed on a DC 20 Dexterity saving throw or take 35 (10d6) acid damage."
+            },
+            {
+                Title: "Warp Creature",
+                Desc: "The sibriex targets up to three creatures it can see within 120 feet of it. Each target must make a DC 20 Constitution saving throw. On a successful save, a creature becomes immune to this sibriex's Warp Creature. On a failed save, the target is poisoned, which causes it to also gain 1 level of exhaustion. While poisoned in this way, the target must repeat the saving throw at the start of each of its turns. Three successful saves against the poison end it, and ending the poison removes any levels of exhaustion caused by it. Each failed save causes the target to suffer another level of exhaustion. Once the target reaches 6 levels of exhaustion, it dies and instantly transforms into a living abyssal wretch under the sibriex's control. The transformation of the body can be undone only by a wish spell."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Cast a Spell",
+                Desc: "The sibriex casts a spell."
+            },
+            {
+                Title: "Spray Bile",
+                Desc: "The sibriex uses Squirt Bile."
+            },
+            {
+                Title: "Warp (Costs 2 Actions)",
+                Desc: "The sibriex uses Warp Creature."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Sibriexes are ancient, grotesque demons thought to be as old as the Abyss itself. Their enormous bodies float above the ground while blood and bile cascade from them, polluting the landscape wherever the fluids fall. Sibriexes are keepers of forbidden lore, having spent eons gathering information from across the planes. They also serve as demonic flesh-shapers, using the power of the Abyss to twist creatures into horrific new forms and create rutterkins and abyssal wretches. Demon lords and other powerful beings sometimes seek their knowledge or their ability to graft new body parts, but sibriexes never provide such services freely."
+    },
+    { // Wastrilith
+        ID: 580,
+        ProfileType: "Monster",
+        Name: "Wastrilith",
+        Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 157,
+        HitPointsRoll: "15d10 + 75",
+        Speed: ["30 ft.", "swim 80 ft."],
+        Strength: 19,
+        Dexterity: 18,
+        Constitution: 21,
+        Intelligence: 19,
+        Wisdom: 12,
+        Charisma: 14,
+        SavingThrows: ["Strength +9", "Constitution +10"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 11"],
+        Languages: ["Abyssal", "Telepathy 120 ft."],
+        Challenge: [13, 10000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Amphibious",
+                Desc: "The wastrilith can breathe air and water."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The wastrilith has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Undertow",
+                Desc: "As a bonus action when the wastrilith is underwater, it can cause all water within 60 feet of it to be difficult terrain for other creatures until the start of its next turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The wastrilith uses Grasping Spout and makes three attacks: one with its bite and two with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 30 (4d12 + 4) piercing damage."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) slashing damage."
+            },
+            {
+                Title: "Corrupt Water",
+                Desc: "At the start of each of the wastrilith's turns, exposed water within 30 feet of it is befouled. Underwater, this effect lightly obscures the area until a current clears it away. Water in containers remains corrupted until it evaporates. A creature that consumes this foul water or swims in it must make a DC 18 Constitution saving throw. On a successful save, the creature is immune to the foul water for 24 hours. On a failed save, the creature takes 14 (4d6) poison damage and is poisoned for 1 minute. At the end of this time, the poisoned creature must repeat the saving throw. On a failure, the creature takes 18 (4d8) poison damage and is poisoned until it finishes a long rest. If another demon drinks the foul water as an action, it gains 11 (2d10) temporary hit points."
+            },
+            {
+                Title: "Grasping Spout",
+                Desc: "The wastrilith magically launches a spout of water at one creature it can see within 60 feet of it. The target must make a DC 17 Strength saving throw, and it has disadvantage if it's underwater. On a failed save, it takes 22 (4d8 + 4) acid damage and is pulled up to 60 feet toward the wastrilith. On a successful save, it takes half as much damage and isn't pulled."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Wastriliths are enormous aquatic demons that establish themselves as cruel lords of the deep in the waters of the Abyss and in other bodies of water contaminated by Abyssal influence. Their serpentine, powerful forms are built for swimming and hunting, with broad claws and a massive biting maw. A wastrilith corrupts the water around it, turning it into a poisonous extension of its own demonic essence. It can manipulate corrupted water to hinder creatures, drag victims toward itself, and contaminate those who drink or swim in it. Other demons can even gain temporary vitality by consuming the foul water."
+    },
+
+
+
+
+
+    { // World Agent
+        ID: 999,
+        ProfileType: "Monster",
+        Name: "World Agent",
+        Type: "Medium humanoid, neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [20, "Supernatural reflexes"],
+        HitPoints: 420,
+        HitPointsRoll: "40d8 + 240",
+        Speed: ["60 ft.", "fly 100 ft."],
+        Strength: 20,
+        Dexterity: 22,
+        Constitution: 22,
+        Intelligence: 16,
+        Wisdom: 18,
+        Charisma: 16,
+        SavingThrows: ["Dexterity +11", "Constitution +11", "Wisdom +9"],
+        Skills: ["Perception +9", "Insight +9", "Athletics +10", "Acrobatics +11"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Psychic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison", "Necrotic"],
+        ConditionImmunities: ["Charmed", "Frightened", "Paralyzed", "Poisoned", "Unconscious"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 19"],
+        Languages: ["All"],
+        Challenge: [17, 18000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Phase Movement",
+                Desc: "The World Agent can move through creatures and objects as if they were difficult terrain, ignoring movement penalties. It takes 5 (1d10) force damage if it ends its turn inside a solid object."
+            },
+            {
+                Title: "Wall Running",
+                Desc: "The World Agent can move along vertical surfaces and ceilings without needing to make checks or use magic. It must end its movement on a horizontal surface, or it will fall as normal."
+            },
+            {
+                Title: "Impossible Leap",
+                Desc: "The World Agent's standing long jump is up to 30 feet, and its high jump is up to 20 feet, with or without a running start. This movement ignores opportunity attacks."
+            },
+            {
+                Title: "Unstoppable Stride",
+                Desc: "When the World Agent moves within 5 feet of a closed nonmagical door, barrier, or window, it can choose to automatically destroy it. The object shatters, breaks, or swings open unless it is magically sealed or reinforced beyond 50 hit points."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The World Agent makes two Unarmed Strikes."
+            },
+            {
+                Title: "Unarmed Strike",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage. If the target is Large or smaller, they must succeed on a DC 18 Strength saving throw or be knocked prone."
+            },
+            {
+                Title: "Handgun Barrage",
+                Desc: "Ranged Weapon Attack: +11 to hit, range 60/180 ft., one target. The World Agent makes 7 handgun attacks (standard magazine size of a Glock 17). Each hit deals 10 (2d6 + 3) piercing damage. If at least 4 shots hit a single target, the target must succeed on a DC 18 Constitution saving throw or be staggered (movement halved, disadvantage on Dexterity saves) until the end of its next turn."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Bullet Time",
+                Desc: "The World Agent can use its reaction to halve the damage from a ranged weapon attack or automatically succeed on a Dexterity saving throw."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Glitch Dash",
+                Desc: "The World Agent can Dash. During this movement, it does not provoke opportunity attacks and can move through enemy spaces as if they were difficult terrain. If the Agent moves through a creature's space during this dash, that creature must succeed on a DC 18 Dexterity saving throw or be knocked prone by the shockwave of the passing force."
+            }
+        ],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "The World Agent makes one Unarmed Strike."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A man in a perfectly pressed black suit stands motionless in the center of the room—clean-cut hair, polished shoes, and mirrored sunglasses that somehow reflect your faces even in the low light. There's something wrong about him. He doesn't blink. He doesn't breathe. It's like he's waiting for the world to catch up to him. Without turning his head, he speaks in a calm, unfeeling voice that echoes in your skull more than your ears: \"Unauthorized entities detected. System anomaly in progress. Initiating correction protocol.\" His body twitches—not naturally, but like a puppet yanked by a string—and in a single frame, he's no longer standing; he's walking toward you, fast, smooth, unstoppable. Walls and obstacles don't matter; he moves through them like they aren't real. As he raises a black handgun—no glowing runes, no arcane sigils, just matte steel and deadly intent—it's clear: this isn't a person. This is the system's immune response."
+    },
+
 ];
 
 const uniqueLocal = [
