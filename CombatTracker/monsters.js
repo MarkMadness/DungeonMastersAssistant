@@ -31370,6 +31370,10 @@ const monstersLocal = [
                 Desc: "The wastrilith can breathe air and water."
             },
             {
+                Title: "Corrupt Water",
+                Desc: "At the start of each of the wastrilith's turns, exposed water within 30 feet of it is befouled. Underwater, this effect lightly obscures the area until a current clears it away. Water in containers remains corrupted until it evaporates. A creature that consumes this foul water or swims in it must make a DC 18 Constitution saving throw. On a successful save, the creature is immune to the foul water for 24 hours. On a failed save, the creature takes 14 (4d6) poison damage and is poisoned for 1 minute. At the end of this time, the poisonedcreature must repeat the saving throw. On a failure, the creature takes 18 (4d8) poison damage and is poisoned until it finishes a long rest. If another demon drinks the foul water as an action, it gains 11 (2d10) temporary hit points."
+            },
+            {
                 Title: "Magic Resistance",
                 Desc: "The wastrilith has advantage on saving throws against spells and other magical effects."
             },
@@ -31392,10 +31396,6 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) slashing damage."
             },
             {
-                Title: "Corrupt Water",
-                Desc: "At the start of each of the wastrilith's turns, exposed water within 30 feet of it is befouled. Underwater, this effect lightly obscures the area until a current clears it away. Water in containers remains corrupted until it evaporates. A creature that consumes this foul water or swims in it must make a DC 18 Constitution saving throw. On a successful save, the creature is immune to the foul water for 24 hours. On a failed save, the creature takes 14 (4d6) poison damage and is poisoned for 1 minute. At the end of this time, the poisoned creature must repeat the saving throw. On a failure, the creature takes 18 (4d8) poison damage and is poisoned until it finishes a long rest. If another demon drinks the foul water as an action, it gains 11 (2d10) temporary hit points."
-            },
-            {
                 Title: "Grasping Spout",
                 Desc: "The wastrilith magically launches a spout of water at one creature it can see within 60 feet of it. The target must make a DC 17 Strength saving throw, and it has disadvantage if it's underwater. On a failed save, it takes 22 (4d8 + 4) acid damage and is pulled up to 60 feet toward the wastrilith. On a successful save, it takes half as much damage and isn't pulled."
             }
@@ -31406,6 +31406,857 @@ const monstersLocal = [
         LairActions: [],
         Description: "Wastriliths are enormous aquatic demons that establish themselves as cruel lords of the deep in the waters of the Abyss and in other bodies of water contaminated by Abyssal influence. Their serpentine, powerful forms are built for swimming and hunting, with broad claws and a massive biting maw. A wastrilith corrupts the water around it, turning it into a poisonous extension of its own demonic essence. It can manipulate corrupted water to hinder creatures, drag victims toward itself, and contaminate those who drink or swim in it. Other demons can even gain temporary vitality by consuming the foul water."
     },
+    { // Derro
+        ID: 581,
+        ProfileType: "Monster",
+        Name: "Derro",
+        Type: "Small humanoid (derro), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [13, "leather armor"],
+        HitPoints: 13,
+        HitPointsRoll: "3d6 + 3",
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 14,
+        Constitution: 12,
+        Intelligence: 11,
+        Wisdom: 5,
+        Charisma: 9,
+        SavingThrows: [],
+        Skills: ["Stealth +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 7"],
+        Languages: ["Dwarvish", "Undercommon"],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance",
+                Desc: "The derro has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Sunlight Sensitivity",
+                Desc: "While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Hooked Spear",
+                Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage. If the target is Medium or smaller, the derro can choose to deal no damage and knock it prone."
+            },
+            {
+                Title: "Light Crossbow",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Derro are small, wild-haired, haggard, and shabbily dressed dwarfkin who dwell in the Underdark. They are fearful and vicious, often shuddering, cackling, spitting, and howling as they attack in groups. Their natural paranoia helps them survive the dangers of the subterranean world, while an unusually strong tendency toward sorcery allows some derro to become powerful savants and leaders."
+    },
+    { // Derro Savant
+        ID: 582,
+        ProfileType: "Monster",
+        Name: "Derro Savant",
+        Type: "Small humanoid (derro), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [13, "leather armor"],
+        HitPoints: 36,
+        HitPointsRoll: "8d6 + 8",
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 12,
+        Intelligence: 11,
+        Wisdom: 5,
+        Charisma: 14,
+        SavingThrows: [],
+        Skills: ["Stealth +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 7"],
+        Languages: ["Dwarvish", "Undercommon"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance",
+                Desc: "The derro savant has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The derro savant is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). The derro knows the following sorcerer spells: Cantrips (at will): acid splash, mage hand, message, prestidigitation, ray of frost; 1st level (4 slots): burning hands, chromatic orb, sleep; 2nd level (3 slots): invisibility, spider climb; 3rd level (2 slots): lightning bolt."
+            },
+            {
+                Title: "Sunlight Sensitivity",
+                Desc: "While in sunlight, the derro savant has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Derro savants are derro who develop an unusually strong talent for sorcery and become leaders among their people. The derro consider them specially blessed by their deity Diirinka and believe their strange behavior represents messages from that god. Like other derro, savants suffer from paranoia and madness, but their magical power gives them authority over their kin."
+    },
+    { // Black Abishai
+        ID: 583,
+        ProfileType: "Monster",
+        Name: "Black Abishai",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [15, "natural armor"],
+        HitPoints: 58,
+        HitPointsRoll: "9d8 + 18",
+        Speed: ["30 ft.", "fly 40 ft."],
+        Strength: 14,
+        Dexterity: 17,
+        Constitution: 14,
+        Intelligence: 13,
+        Wisdom: 16,
+        Charisma: 11,
+        SavingThrows: ["Dexterity +6", "Wisdom +6"],
+        Skills: ["Perception +6", "Stealth +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Acid", "Fire", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 16"],
+        Languages: ["Draconic", "Infernal", "Telepathy 120 ft."],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Devil's Sight",
+                Desc: "Magical darkness doesn't impede the abishai's darkvision."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The abishai has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The abishai's weapon attacks are magical."
+            },
+            {
+                Title: "Shadow Stealth",
+                Desc: "While in dim light or darkness, the abishai can take the Hide action as a bonus action."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The abishai makes three attacks: two with its scimitar and one with its bite."
+            },
+            {
+                Title: "Scimitar",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 9 (2d8) acid damage."
+            },
+            {
+                Title: "Creeping Darkness (Recharge 6)",
+                Desc: "The abishai casts darkness at a point within 120 feet of it, requiring no components. Wisdom is its spellcasting ability for this spell. While the spell persists, the abishai can move the area of darkness up to 60 feet as a bonus action."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Black abishais are expert assassins and infiltrators who weave shadows around themselves to conceal their presence. Their dark scales and ability to manipulate darkness allow them to approach targets unseen before striking with their scimitars and corrosive bites."
+    },
+    { // Blue Abishai
+        ID: 584,
+        ProfileType: "Monster",
+        Name: "Blue Abishai",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [19, "natural armor"],
+        HitPoints: 195,
+        HitPointsRoll: "26d8 + 78",
+        Speed: ["30 ft.", "fly 50 ft."],
+        Strength: 15,
+        Dexterity: 14,
+        Constitution: 17,
+        Intelligence: 22,
+        Wisdom: 23,
+        Charisma: 18,
+        SavingThrows: ["Intelligence +12", "Wisdom +12"],
+        Skills: ["Arcana +12"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Lightning", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 16"],
+        Languages: ["Draconic", "Infernal", "Telepathy 120 ft."],
+        Challenge: [17, 18000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Devil's Sight",
+                Desc: "Magical darkness doesn't impede the abishai's darkvision."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The abishai has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The abishai's weapon attacks are magical."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The abishai is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The abishai has the following wizard spells prepared: Cantrips (at will): friends, mage hand, message, minor illusion, shocking grasp; 1st level (4 slots): chromatic orb, disguise self, expeditious retreat, magic missile, charm person, thunderwave; 2nd level (3 slots): darkness, mirror image, misty step; 3rd level (3 slots): dispel magic, fear, lightning bolt; 4th level (3 slots): dimension door, greater invisibility, ice storm; 5th level (2 slots): cone of cold, wall of force; 6th level (1 slot): chain lightning; 7th level (1 slot): teleport."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The abishai makes two attacks: one with its quarterstaff and one with its bite."
+            },
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage if used with two hands."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d10 + 2) piercing damage plus 14 (4d6) lightning damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Blue abishais are the most cunning and learned of the abishais. They seek forgotten lore and lost relics, studying occult subjects from tomes and grimoires plundered across the multiverse. Their extensive magical knowledge makes them accomplished spellcasters who use destructive magic against Tiamat's enemies."
+    },
+    { // Green Abishai
+        ID: 585,
+        ProfileType: "Monster",
+        Name: "Green Abishai",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 187,
+        HitPointsRoll: "25d8 + 75",
+        Speed: ["30 ft.", "fly 40 ft."],
+        Strength: 12,
+        Dexterity: 17,
+        Constitution: 16,
+        Intelligence: 17,
+        Wisdom: 12,
+        Charisma: 19,
+        SavingThrows: ["Intelligence +8", "Charisma +9"],
+        Skills: ["Deception +9", "Insight +6", "Perception +6", "Persuasion +9"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 16"],
+        Languages: ["Draconic", "Infernal", "Telepathy 120 ft."],
+        Challenge: [15, 13000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Devil's Sight",
+                Desc: "Magical darkness doesn't impede the abishai's darkvision."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The abishai's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components: At will: alter self, major image; 3/day each: charm person, detect thoughts, fear; 1/day each: confusion, dominate person, mass suggestion."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The abishai has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The abishai's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The abishai makes two attacks, one with its claws and one with its longsword, or it casts one spell from its Innate Spellcasting trait and makes one claw attack."
+            },
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing damage if used with two hands."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or take 11 (2d10) poison damage and become poisoned for 1 minute. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Green abishais serve as envoys of Tiamat's armies and represent her interests throughout the Nine Hells and beyond. Their keen senses help them uncover secrets, while their diplomatic skills, deception, and magic allow them to manipulate even shrewd opponents."
+    },
+    { // Red Abishai
+        ID: 586,
+        ProfileType: "Monster",
+        Name: "Red Abishai",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [22, "natural armor"],
+        HitPoints: 255,
+        HitPointsRoll: "30d8 + 120",
+        Speed: ["30 ft.", "fly 50 ft."],
+        Strength: 23,
+        Dexterity: 16,
+        Constitution: 19,
+        Intelligence: 14,
+        Wisdom: 15,
+        Charisma: 19,
+        SavingThrows: ["Strength +12", "Constitution +10", "Wisdom +8"],
+        Skills: ["Intimidation +10", "Perception +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 18"],
+        Languages: ["Draconic", "Infernal", "Telepathy 120 ft."],
+        Challenge: [19, 22000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Devil's Sight",
+                Desc: "Magical darkness doesn't impede the abishai's darkvision."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The abishai has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The abishai's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The abishai can use its Frightful Presence. It also makes three attacks: one with its morningstar, one with its claw, and one with its bite."
+            },
+            {
+                Title: "Morningstar",
+                Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) piercing damage."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 22 (5d10 + 6) piercing damage plus 38 (7d10) fire damage."
+            },
+            {
+                Title: "Frightful Presence",
+                Desc: "Each creature of the abishai's choice that is within 120 feet and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened of it for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the abishai's Frightful Presence for the next 24 hours."
+            },
+            {
+                Title: "Incite Fanaticism",
+                Desc: "The abishai chooses up to four of its allies within 60 feet of it that can see it. For 1 minute, each of those allies makes attack rolls with advantage and can't be frightened."
+            },
+            {
+                Title: "Power of the Dragon Queen",
+                Desc: "The abishai targets one dragon it can see within 120 feet of it. The dragon must make a DC 18 Charisma saving throw. A chromatic dragon makes this save with disadvantage. On a successful save, the target is immune to the abishai's Power of the Dragon Queen for 1 hour. On a failed save, the target is charmed by the abishai for 1 hour. While charmed in this way, the target regards the abishai as a trusted friend to be heeded and protected. This effect ends if the abishai or its companions deal damage to the target."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Red abishais are the most powerful leaders among their kind, combining immense physical strength with an imposing presence. They lead other devils into battle and take command of troublesome cults to ensure obedience to Tiamat. Their authority can even be brought to bear against dragons, while their terrifying appearance inspires fanatical devotion among their allies."
+    },
+    { // White Abishai
+        ID: 587,
+        ProfileType: "Monster",
+        Name: "White Abishai",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [15, "natural armor"],
+        HitPoints: 68,
+        HitPointsRoll: "8d8 + 32",
+        Speed: ["30 ft.", "fly 40 ft."],
+        Strength: 16,
+        Dexterity: 11,
+        Constitution: 18,
+        Intelligence: 11,
+        Wisdom: 12,
+        Charisma: 13,
+        SavingThrows: ["Strength +6", "Constitution +7"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Cold", "Fire", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 11"],
+        Languages: ["Draconic", "Infernal", "Telepathy 120 ft."],
+        Challenge: [6, 2300],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Devil's Sight",
+                Desc: "Magical darkness doesn't impede the abishai's darkvision."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The abishai has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The abishai's weapon attacks are magical."
+            },
+            {
+                Title: "Reckless",
+                Desc: "At the start of its turn, the abishai can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The abishai makes two attacks: one with its longsword and one with its claw."
+            },
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) slashing damage."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) cold damage."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Vicious Reprisal",
+                Desc: "In response to taking damage, the abishai makes a bite attack against a random creature within 5 feet of it. If no creature is within reach, the abishai moves up to half its speed toward an enemy it can see, without provoking opportunity attacks."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "White abishais are the least of the abishai ranks, but they make up for their relative weakness with reckless fury. They fight without fear and serve Tiamat's armies as relentless front-line troops, becoming whirling engines of destruction in battle."
+    },
+    { // Amnizu
+        ID: 588,
+        ProfileType: "Monster",
+        Name: "Amnizu",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [21, "natural armor"],
+        HitPoints: 202,
+        HitPointsRoll: "27d8 + 81",
+        Speed: ["30 ft.", "fly 40 ft."],
+        Strength: 11,
+        Dexterity: 13,
+        Constitution: 16,
+        Intelligence: 20,
+        Wisdom: 12,
+        Charisma: 18,
+        SavingThrows: ["Dexterity +7", "Constitution +9", "Wisdom +7", "Charisma +10"],
+        Skills: ["Perception +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 17"],
+        Languages: ["Common", "Infernal", "Telepathy 1,000 ft."],
+        Challenge: [18, 20000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Devil's Sight",
+                Desc: "Magical darkness doesn't impede the amnizu's darkvision."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The amnizu's innate spellcasting ability is Intelligence (spell save 19, +11 to hit with spell attacks). The amnizu can innately cast the following spells, requiring no material components: At will: charm person, command; 3/day each: dominate person, fireball; 1/day each: dominate monster, feeblemind."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The amnizu has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The amnizu uses Poison Mind. It also makes two attacks: one with its whip and one with its Disruptive Touch."
+            },
+            {
+                Title: "Taskmaster Whip",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 10 (2d4 + 5) slashing damage plus 33 (6d10) force damage."
+            },
+            {
+                Title: "Disruptive Touch",
+                Desc: "Melee Spell Attack: +11 to hit, reach 5 ft., one target. Hit: 44 (8d10) necrotic damage."
+            },
+            {
+                Title: "Poison Mind",
+                Desc: "The amnizu targets one or two creatures that it can see within 60 feet of it. Each target must succeed on a DC 19 Wisdom saving throw or take 26 (4d12) necrotic damage and be blinded until the start of the amnizu's next turn."
+            },
+            {
+                Title: "Forgetfulness (Recharge 6)",
+                Desc: "The amnizu targets one creature it can see within 60 feet of it. That creature must succeed on a DC 18 Intelligence saving throw or become stunned for 1 minute. A stunned creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target is stunned for the full minute, it forgets everything it sensed, experienced, and learned during the last 5 hours."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Instinctive Charm",
+                Desc: "When a creature within 60 feet of the amnizu makes an attack roll against it, and another creature is within the attack's range, the attacker must make a DC 19 Wisdom saving throw. On a failed save, the attacker must target the creature that is closest to it, not including the amnizu or itself. If multiple creatures are closest, the attacker chooses which one to target. If the saving throw is successful, the attacker is immune to the amnizu's Instinctive Charm for 24 hours."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Amnizus lead infernal legions and command guardians at gateways throughout the Nine Hells. They are arrogant, bullying, and ruthless, but also highly intelligent tacticians whose loyalty is valued by the archdukes. Some amnizus guard the River Styx from fortified positions along its blighted banks, directing newly arrived lemures and organizing them into infernal legions."
+    },
+    { // Hellfire Engine
+        ID: 589,
+        ProfileType: "Monster",
+        Name: "Hellfire Engine",
+        Type: "Huge construct, lawful evil",
+        TypeCategory: "Construct",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 216,
+        HitPointsRoll: "16d12 + 112",
+        Speed: ["40 ft."],
+        Strength: 20,
+        Dexterity: 16,
+        Constitution: 24,
+        Intelligence: 2,
+        Wisdom: 10,
+        Charisma: 1,
+        SavingThrows: ["Dexterity +8", "Wisdom +5", "Charisma +0"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Psychic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Deafened", "Exhaustion", "Frightened", "Paralyzed", "Poisoned", "Unconscious"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 10"],
+        Languages: ["Understands Infernal but can't speak"],
+        Challenge: [16, 15000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Immutable Form",
+                Desc: "The hellfire engine is immune to any spell or effect that would alter its form."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The hellfire engine has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Flesh-Crushing Stride",
+                Desc: "The hellfire engine moves up to its speed in a straight line. During this move, it can enter Large or smaller creatures' spaces. A creature whose space the hellfire engine enters must make a DC 18 Dexterity saving throw. On a successful save, the creature is pushed 5 feet to the nearest space out of the hellfire engine's path. On a failed save, the creature falls prone and takes 28 (8d6) bludgeoning damage. If the hellfire engine remains in the prone creature's space, the creature is also restrained until it's no longer in the same space as the hellfire engine. While restrained in this way, the creature, or another creature within 5 feet of it, can make a DC 18 Strength check. On a success, the creature is shunted to an unoccupied space of its choice within 5 feet of the hellfire engine and is no longer restrained."
+            },
+            {
+                Title: "Hellfire Weapons",
+                Desc: "The hellfire engine uses one of the following options: Bonemelt Sprayer, Lightning Flail, or Thunder Cannon."
+            },
+            {
+                Title: "Bonemelt Sprayer",
+                Desc: "The hellfire engine spews acidic flame in a 60-foot cone. Each creature in the cone must make a DC 20 Dexterity saving throw, taking 11 (2d10) fire damage plus 18 (4d8) acid damage on a failed save, or half as much damage on a successful one. Creatures that fail the saving throw are drenched in burning acid and take 5 (1d10) fire damage plus 9 (2d8) acid damage at the end of their turns. An affected creature or another creature within 5 feet of it can take an action to scrape off the burning fuel."
+            },
+            {
+                Title: "Lightning Flail",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 15 ft., one creature. Hit: 18 (3d8 + 5) bludgeoning damage plus 22 (5d8) lightning damage. Up to three other creatures of the hellfire engine's choice that it can see within 30 feet of the target must each make a DC 20 Dexterity saving throw, taking 22 (5d8) lightning damage on a failed save, or half as much damage on a successful one."
+            },
+            {
+                Title: "Thunder Cannon",
+                Desc: "The hellfire engine targets a point within 120 feet of it that it can see. Each creature within 30 feet of that point must make a DC 20 Dexterity saving throw, taking 27 (5d10) bludgeoning damage plus 13 (2d12) thunder damage on a failed save, or half as much damage on a successful one. If the chosen option kills a creature, the creature's soul rises from the River Styx as a lemure in Avernus in 1d4 hours. If the creature isn't revived before then, only a wish spell or killing the lemure and casting true resurrection on the creature's original body can restore it to life. Constructs and devils are immune to this effect."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Hellfire engines are semiautonomous magical war machines designed to bring destruction to the battlefield. They take many forms, but all share the same purpose: mowing down enemies in waves. They are mechanical and magical hybrids held in reserve by devilish generals, although some escape and become driven by an overwhelming need to destroy. Mortal creatures killed by a hellfire engine face the additional horror of having their souls transformed into lemures in Avernus."
+    },
+    { // Merregon
+        ID: 590,
+        ProfileType: "Monster",
+        Name: "Merregon",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 45,
+        HitPointsRoll: "6d8 + 18",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 14,
+        Constitution: 17,
+        Intelligence: 6,
+        Wisdom: 12,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Frightened", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["Understands Infernal but can't speak", "Telepathy 120 ft."],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Devil's Sight",
+                Desc: "Magical darkness doesn't impede the merregon's darkvision."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The merregon has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The merregon makes two halberd attacks, or if an allied fiend of challenge rating 6 or higher is within 60 feet of it, the merregon makes three halberd attacks."
+            },
+            {
+                Title: "Halberd",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) slashing damage."
+            },
+            {
+                Title: "Heavy Crossbow",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 100/400 ft., one target. Hit: 7 (1d10 + 2) piercing damage."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Loyal Bodyguard",
+                Desc: "When another fiend within 5 feet of the merregon is hit by an attack, the merregon causes itself to be hit instead."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Merregons are the faceless foot soldiers of the Nine Hells, formed from the souls of fallen soldiers, mercenaries, and bodyguards who served evil without reservation. Every merregon wears a metal mask bolted to its head, with markings identifying its commander and the layer it serves. They possess no individuality and obey orders with absolute loyalty, forming the backbone of many devils' protective retinues."
+    },
+    { // Narzugon
+        ID: 591,
+        ProfileType: "Monster",
+        Name: "Narzugon",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [20, "plate armor, shield"],
+        HitPoints: 112,
+        HitPointsRoll: "15d8 + 45",
+        Speed: ["30 ft."],
+        Strength: 20,
+        Dexterity: 10,
+        Constitution: 17,
+        Intelligence: 16,
+        Wisdom: 14,
+        Charisma: 19,
+        SavingThrows: ["Dexterity +5", "Constitution +8", "Charisma +9"],
+        Skills: ["Perception +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Frightened", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 17"],
+        Languages: ["Common", "Infernal", "Telepathy 120 ft."],
+        Challenge: [13, 10000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Diabolical Sense",
+                Desc: "The narzugon has advantage on Wisdom (Perception) checks made to perceive good-aligned creatures."
+            },
+            {
+                Title: "Infernal Tack",
+                Desc: "The narzugon wears spurs that are part of infernal tack, which allow it to summon its nightmare companion."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The narzugon has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The narzugon uses its Infernal Command or Terrifying Command. It also makes three hellfire lance attacks."
+            },
+            {
+                Title: "Hellfire Lance",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 11 (1d12 + 5) piercing damage plus 16 (3d10) fire damage. If this damage kills a creature, the creature's soul rises from the River Styx as a lemure in Avernus in 1d4 hours. If the creature isn't revived before then, only a wish spell or killing the lemure and casting true resurrection on the creature's original body can restore it to life. Constructs and devils are immune to this effect."
+            },
+            {
+                Title: "Infernal Command",
+                Desc: "Each ally of the narzugon within 60 feet of it can't be charmed or frightened until the end of the narzugon's next turn."
+            },
+            {
+                Title: "Terrifying Command",
+                Desc: "Each creature that isn't a fiend within 60 feet of the narzugon that can hear it must succeed on a DC 17 Charisma saving throw or become frightened of it for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that makes a successful saving throw is immune to this narzugon's Terrifying Command for 24 hours."
+            },
+            {
+                Title: "Healing (1/Day)",
+                Desc: "The narzugon, or one creature it touches, regains up to 100 hit points."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Narzugons are fallen paladins who made deals with devils and carried their twisted sense of honor into the afterlife. They serve as champions and commanders of infernal legions, riding nightmare steeds and wielding hellfire lances. Their armor and weapons evoke horrific versions of knightly regalia, while their lances condemn slain mortals to rebirth as lemures unless powerful magic intervenes."
+    },
+    { // Nupperibo
+        ID: 592,
+        ProfileType: "Monster",
+        Name: "Nupperibo",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [13, "natural armor"],
+        HitPoints: 11,
+        HitPointsRoll: "2d8 + 2",
+        Speed: ["20 ft."],
+        Strength: 16,
+        Dexterity: 11,
+        Constitution: 13,
+        Intelligence: 3,
+        Wisdom: 8,
+        Charisma: 1,
+        SavingThrows: [],
+        Skills: ["Perception +1"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Blinded", "Charmed", "Frightened", "Poisoned"],
+        Senses: ["Blindsight 10 ft. (blind beyond this radius)", "Passive Perception 11"],
+        Languages: ["Understands Infernal but can't speak"],
+        Challenge: [0.5, 100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Cloud of Vermin",
+                Desc: "Any creature, other than a devil, that starts its turn within 20 feet of the nupperibo must make a DC 11 Constitution saving throw. A creature within the areas of two or more nupperibos makes the saving throw with disadvantage. On a failure, the creature takes 2 (1d4) piercing damage."
+            },
+            {
+                Title: "Hunger-Driven",
+                Desc: "In the Nine Hells, the nupperibos can flawlessly track any creature that has taken damage from any nupperibo's Cloud of Vermin within the previous 24 hours."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Nupperibos are pitiful devils formed from souls whose evil in life arose from carelessness and sloth. They are blind, bloated, and driven by an unending hunger, shuffling across the Nine Hells while surrounded by clouds of stinging insects and vermin. Though individually weak, they become dangerous when gathered into large throngs, and they obey telepathic commands from other devils without question."
+    },
+    { // Orthon
+        ID: 593,
+        ProfileType: "Monster",
+        Name: "Orthon",
+        Type: "Large fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [17, "half plate"],
+        HitPoints: 105,
+        HitPointsRoll: "10d10 + 50",
+        Speed: ["30 ft.", "climb 30 ft."],
+        Strength: 22,
+        Dexterity: 16,
+        Constitution: 21,
+        Intelligence: 15,
+        Wisdom: 15,
+        Charisma: 16,
+        SavingThrows: ["Dexterity +7", "Constitution +9", "Wisdom +6"],
+        Skills: ["Perception +10", "Stealth +11", "Survival +10"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Truesight 30 ft.", "Passive Perception 20"],
+        Languages: ["Common", "Infernal", "Telepathy 120 ft."],
+        Challenge: [10, 5900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance",
+                Desc: "The orthon has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Infernal Dagger",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 11 (2d4 + 6) slashing damage, and the target must make a DC 17 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one. On a failure, the target is also poisoned for 1 minute. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            },
+            {
+                Title: "Brass Crossbow",
+                Desc: "Ranged Weapon Attack: +7 to hit, range 100/400 ft., one target. Hit: 14 (2d10 + 3) piercing damage, plus one of the following effects: 1. Acid. The target must make a DC 17 Constitution saving throw, taking an additional 17 (5d6) acid damage on a failed save, or half as much damage on a successful one. 2. Blindness (1/Day). The target takes 5 (1d10) radiant damage. In addition, the target and all other creatures within 20 feet of it must each make a successful DC 17 Dexterity saving throw or be blinded until the end of the orthon's next turn. 3. Concussion. The target and each creature within 20 feet of it must make a DC 17 Constitution saving throw, taking 13 (2d12) thunder damage on a failed save, or half as much damage on a successful one. 4. Entanglement. The target must make a successful DC 17 Dexterity saving throw or be restrained for 1 hour by strands of sticky webbing. A restrained creature can escape by using an action to make a successful DC 17 Dexterity or Strength check. Any creature other than an orthon that touches the restrained creature must make a successful DC 17 Dexterity saving throw or become similarly restrained. 5. Paralysis (1/Day). The target takes 22 (4d10) lightning damage and must make a successful DC 17 Constitution saving throw or be paralyzed for 1 minute. The paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 6. Tracking. For the next 24 hours, the orthon knows the direction and distance to the target, as long as it's on the same plane of existence. If the target is on a different plane, the orthon knows which one, but not the exact location there."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Explosive Retribution",
+                Desc: "When it is reduced to 15 hit points or fewer, the orthon causes itself to explode. All other creatures within 30 feet of it must each make a DC 17 Dexterity saving throw, taking 9 (2d8) fire damage plus 9 (2d8) thunder damage on a failed save, or half as much damage on a successful one. This explosion destroys the orthon, its infernal dagger, and its brass crossbow."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Invisibility Field",
+                Desc: "The orthon can use a bonus action to become invisible. Any equipment the orthon wears or carries is also invisible as long as the equipment is on its person. This invisibility ends immediately after the orthon makes an attack roll or is hit by an attack."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Orthons are infernal bounty hunters sent by archdevils to track, capture, or destroy specific creatures across the multiverse. They are heavily armed hunters with keen senses and the ability to become invisible at will, allowing them to stalk prey before striking. Orthons value the challenge of the chase and one-on-one combat, and their travels throughout the Nine Hells make them exceptionally knowledgeable guides to its layers."
+    },
+
+
+
 
 
 
@@ -31497,85 +32348,7 @@ const monstersLocal = [
 ];
 
 const uniqueLocal = [
-    // { // templateUnique
-    //     ID: 100000,
-    //     ProfileType: "Unique",
-    //     Name: "template name",
-    //     Type: "Size type, alignment",
-    //     TypeCategory: "Creature Type",
-    //     Source: "Monster Manual",
-    //     HitPoints: 1,
-    //     HitPointsRoll: "",
-    //     ArmorClass: [10, "natural armor"],
-    //     Speed: ["30 ft."],
-    //     Strength: 10,
-    //     Dexterity: 10,
-    //     Constitution: 10,
-    //     Intelligence: 10,
-    //     Wisdom: 10,
-    //     Charisma: 10,
-    //     SavingThrows: [],
-    //     Skills: [],
-    //     DamageVulnerabilities: [],
-    //     DamageResistances: [],
-    //     DamageImmunities: [],
-    //     ConditionImmunities: [],
-    //     Senses: [],
-    //     Languages: [],
-    //     Challenge: [1, 200],
-    //     ExtraRewards: "",
-    //     Traits: [],
-    //     InnateSpellcasting: [
-    //         {
-    //             Description: "",
-    //             Cantrips: {
-    //                 Slots: "at will",
-    //                 Spells: [""]
-    //             },
-    //             Level1: {
-    //                 Slots: 4,
-    //                 Spells: [""]
-    //             },
-    //             Level2: {
-    //                 Slots: 3,
-    //                 Spells: [""]
-    //             },
-    //             Level3: {
-    //                 Slots: 3,
-    //                 Spells: [""]
-    //             },
-    //             Level4: {
-    //                 Slots: 3,
-    //                 Spells: [""]
-    //             },
-    //             Level5: {
-    //                 Slots: 2,
-    //                 Spells: [""]  
-    //             },
-    //             Level6: {
-    //                 Slots: 1,
-    //                 Spells: [""]  
-    //             },
-    //             Level7: {
-    //                 Slots: 1,
-    //                 Spells: [""]
-    //             },
-    //             Level8: {
-    //                 Slots: 1,
-    //                 Spells: [""]
-    //             },
-    //             Level9: {
-    //                 Slots: 1,
-    //                 Spells: [""]
-    //             }
-    //         }
-    //     ],
-    //     Actions: [],
-    //     Reactions: [],
-    //     LegendaryActions: [],
-    //     Description: "Description here"
-    // },
-    {
+    { // Omega
         ID: 100001,
         ProfileType: "Unique",
         Name: "Omega",
@@ -31715,40 +32488,1342 @@ const uniqueLocal = [
         ],
         Description: "Description here"
     },
+    { // Baphomet
+        ID: 100002,
+        ProfileType: "Unique",
+        Name: "Baphomet",
+        Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [22, "natural armor"],
+        HitPoints: 275,
+        HitPointsRoll: "19d12 + 152",
+        Speed: ["40 ft."],
+        Strength: 30,
+        Dexterity: 14,
+        Constitution: 26,
+        Intelligence: 18,
+        Wisdom: 24,
+        Charisma: 16,
+        SavingThrows: ["Dexterity +9", "Constitution +15", "Wisdom +14"],
+        Skills: ["Intimidation +17", "Perception +14"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 24"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [23, 50000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Charge",
+                Desc: "If Baphomet moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 16 (3d10) piercing damage. If the target is a creature, it must succeed on a DC 25 Strength saving throw or be pushed up to 10 feet away and knocked prone."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Baphomet's spellcasting ability is Charisma (spell save DC 18). He can innately cast the following spells, requiring no material components: At will: detect magic; 3/day each: dispel magic, dominate beast, hunter's mark, maze, wall of stone; 1/day: teleport."
+            },
+            {
+                Title: "Labyrinthine Recall",
+                Desc: "Baphomet can perfectly recall any path he has traveled, and he is immune to the maze spell."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Baphomet fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Baphomet has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Baphomet's weapon attacks are magical."
+            },
+            {
+                Title: "Reckless",
+                Desc: "At the start of his turn, Baphomet can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against him have advantage until the start of his next turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Baphomet makes three attacks: one with Heartcleaver, one with his bite, and one with his gore attack."
+            },
+            {
+                Title: "Heartcleaver",
+                Desc: "Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 21 (2d10 + 10) slashing damage."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 19 (2d8 + 10) piercing damage."
+            },
+            {
+                Title: "Gore",
+                Desc: "Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 17 (2d6 + 10) piercing damage."
+            },
+            {
+                Title: "Frightful Presence",
+                Desc: "Each creature of Baphomet's choice within 120 feet of him and aware of him must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. These later saves have disadvantage if Baphomet is within line of sight of the creature. If a creature succeeds on any of these saves or the effect ends on it, the creature is immune to Baphomet's Frightful Presence for the next 24 hours."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Heartcleaver Attack",
+                Desc: "Baphomet makes a melee attack with Heartcleaver."
+            },
+            {
+                Title: "Charge (Costs 2 Actions)",
+                Desc: "Baphomet moves up to his speed, then makes a gore attack."
+            }
+        ],
+        RegionalEffects: [
+            "Plant life within 1 mile of the lair grows thick and forms walls of trees, hedges, and other flora in the form of small mazes.",
+            "Beasts within 1 mile of the lair become frightened and disoriented, as though constantly under threat of being hunted, and might lash out or panic even when no visible threat is nearby.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 18 Wisdom saving throw or descend into a madness determined by the Madness of Baphomet table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
+            "If Baphomet dies, these effects fade over the course of 1d10 days."
+        ],
+        LairActions: [
+            "Baphomet seals one doorway or other entryway within the lair. The opening must be unoccupied. It is filled with solid stone for 1 minute or until Baphomet creates this effect again.",
+            "Baphomet chooses a room within the lair that is no larger in any dimension than 100 feet. Until the next initiative count 20, gravity is reversed within that room. Any creatures or objects in the room when this happens fall in the direction of the new pull of gravity, unless they have some means of remaining aloft. Baphomet can ignore the gravity reversal if he's in the room.",
+            "Baphomet casts mirage arcane, affecting a room within the lair that is no larger in any dimension than 100 feet. The effect ends on the next initiative count 20."
+        ],
+        Description: "Baphomet, the Prince of Beasts, appears as a gigantic black-furred minotaur standing 20 feet tall, with six iron horns and infernal light burning in his red eyes. Beneath his savage appearance is a cruel and cunning intellect devoted to destroying the restraints of civilization. He wields the enormous glaive Heartcleaver, though he often casts it aside to charge his enemies, gore them with his horns, and tear them apart with his teeth. His lair is the Lyktion, a palace hidden within the plane-spanning Endless Maze of the Abyss."
+    },
+    { // Demogorgon
+        ID: 100003,
+        ProfileType: "Unique",
+        Name: "Demogorgon",
+        Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [22, "natural armor"],
+        HitPoints: 406,
+        HitPointsRoll: "28d12 + 224",
+        Speed: ["50 ft.", "swim 50 ft."],
+        Strength: 29,
+        Dexterity: 14,
+        Constitution: 26,
+        Intelligence: 20,
+        Wisdom: 17,
+        Charisma: 25,
+        SavingThrows: ["Dexterity +10", "Constitution +16", "Wisdom +11", "Charisma +15"],
+        Skills: ["Insight +11", "Perception +19"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 29"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [26, 90000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Demogorgon's spellcasting ability is Charisma (spell save DC 23). Demogorgon can innately cast the following spells, requiring no material components: At will: detect magic, major image; 3/day each: dispel magic, fear, telekinesis; 1/day each: feeblemind, project image."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Demogorgon fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Demogorgon has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Demogorgon's weapon attacks are magical."
+            },
+            {
+                Title: "Two Heads",
+                Desc: "Demogorgon has advantage on saving throws against being blinded, deafened, stunned, or knocked unconscious."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Demogorgon makes two tentacle attacks."
+            },
+            {
+                Title: "Tentacle",
+                Desc: "Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 28 (3d12 + 9) bludgeoning damage. If the target is a creature, it must succeed on a DC 23 saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0."
+            },
+            {
+                Title: "Gaze",
+                Desc: "Demogorgon turns his magical gaze toward one creature that he can see within 120 feet of him. That target must make a DC 23 Wisdom saving throw. Unless the target is incapacitated, it can avert its eyes to avoid the gaze and to automatically succeed on the save. If the target does so, it can't see Demogorgon until the start of his next turn. If the target looks at him in the meantime, it must immediately make the save. If the target fails the save, the target suffers one of the following effects of Demogorgon's choice or at random: - Beguiling Gaze: The target is stunned until the start of Demogorgon's next turn or until Demogorgon is no longer within line of sight. - Hypnotic Gaze: The target is charmed by Demogorgon until the start of Demogorgon's next turn. Demogorgon chooses how the charmed target uses its actions, reactions, and movement. - Insanity Gaze: The target suffers the effect of the confusion spell without making a saving throw. The effect lasts until the start of Demogorgon's next turn, and Demogorgon doesn't need to concentrate on the spell."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Tail",
+                Desc: "Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) bludgeoning damage plus 11 (2d10) necrotic damage."
+            },
+            {
+                Title: "Maddening Gaze",
+                Desc: "Demogorgon uses his Gaze action, and must choose either the Beguiling Gaze or the Insanity Gaze effect."
+            }
+        ],
+        RegionalEffects: [
+            "The area within 6 miles of the lair becomes overpopulated with lizards, poisonous snakes, and other venomous beasts.",
+            "Beasts within 1 mile of the lair become violent and crazed, even creatures that are normally docile.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Demogorgon table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
+            "If Demogorgon dies, these effects fade over the course of 1d10 days."
+        ],
+        LairActions: [
+            "Demogorgon creates an illusory duplicate of himself, which appears in his own space and lasts until initiative count 20 of the next round. On his turn, Demogorgon can move the illusory duplicate a distance equal to his walking speed (no action required). The first time a creature or object interacts physically with Demogorgon, there is a 50 percent chance that the illusory duplicate is being affected instead, in which case the illusion disappears.",
+            "Demogorgon casts the darkness spell four times at its lowest level, targeting different areas with the spell. Demogorgon doesn't need to concentrate on the spells, which end on initiative count 20 of the next round."
+        ],
+        Description: "Demogorgon, the Prince of Demons, is a monstrous embodiment of chaos and madness. His body combines a saurian lower form with clawed, webbed feet, suckered tentacles sprouting from the shoulders of a great apelike torso, and two hideous simian heads named Aameul and Hathradiah. Each head possesses its own madness, and their gaze can overwhelm creatures with confusion, charm, or stunning terror. Demogorgon rules from Abysm, a palace of duality rising from and extending deep beneath the waters of the Gaping Maw."
+    },
+    { // Fraz-Urb'luu
+        ID: 100004,
+        ProfileType: "Unique",
+        Name: "Fraz-Urb'luu",
+        Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 337,
+        HitPointsRoll: "27d10 + 189",
+        Speed: ["40 ft.", "fly 40 ft."],
+        Strength: 29,
+        Dexterity: 12,
+        Constitution: 25,
+        Intelligence: 26,
+        Wisdom: 24,
+        Charisma: 26,
+        SavingThrows: ["Dexterity +8", "Constitution +14", "Intelligence +15", "Wisdom +14"],
+        Skills: ["Deception +15", "Perception +14", "Stealth +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 24"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [23, 50000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Fraz-Urb'luu's spellcasting ability is Charisma (spell save DC 23). Fraz-Urb'luu can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing his appearance), detect magic, dispel magic, phantasmal force; 3/day each: confusion, dream, mislead, programmed illusion, seeming; 1/day each: mirage arcane, modify memory, project image."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Fraz-Urb'luu fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Fraz-Urb'luu has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Fraz-Urb'luu's weapon attacks are magical."
+            },
+            {
+                Title: "Undetectable",
+                Desc: "Fraz-Urb'luu can't be targeted by divination magic, perceived through magical scrying sensors, or detected by abilities that sense demons or fiends."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Fraz-Urb'luu makes three attacks: one with his bite and two with his fists."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 19 (3d6 + 9) piercing damage."
+            },
+            {
+                Title: "Fist",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 22 (3d8 + 9) bludgeoning damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Tail",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) bludgeoning damage. If the target is a Large or smaller creature, it is also grappled (escape DC 24). The grappled target is also restrained. Fraz-Urb'luu can grapple only one creature with his tail at a time."
+            },
+            {
+                Title: "Phantasmal Killer (Costs 2 Actions)",
+                Desc: "Fraz-Urb'luu casts phantasmal killer, no concentration required."
+            }
+        ],
+        RegionalEffects: [
+            "Intelligent creatures within 1 mile of the lair frequently see hallucinations of long-dead friends and comrades that vanish after only a brief glimpse.",
+            "Roads and paths within 6 miles of the lair twist and turn back on themselves, making navigation in the area exceedingly difficult.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Fraz-Urb'luu table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
+            "If Fraz-Urb'luu dies, these effects fade over the course of 1d10 days."
+        ],
+        LairActions: [
+            "Fraz-Urb'luu causes up to five doors within the lair to become walls, and an equal number of doors to appear on walls where there previously were none.",
+            "Fraz-Urb'luu chooses one humanoid within the lair and instantly creates a simulacrum of that creature, as if created with the simulacrum spell. This simulacrum obeys Fraz-Urb'luu's commands and is destroyed on the next initiative count 20.",
+            "Fraz-Urb'luu creates a wave of anguish. Each creature he can see within the lair must succeed on a DC 23 Wisdom saving throw or take 33 (6d10) psychic damage."
+        ],
+        Description: "Fraz-Urb'luu, the Prince of Deception and Demon Lord of Illusions, is a master of lies who delights in manipulating mortals and demons alike. His true form resembles a great gargoyle about 12 feet tall, with a long muscular neck, smiling face, pointed ears, lank dark hair, and batlike wings. He can assume forms ranging from hideous to beautiful and often becomes so immersed in a role that he temporarily loses himself within it. His lair is the fortress-city of Zoragmelok in Hollow's Heart, where even the architecture reflects his talent for deception."
+    },
+    { // Graz'zt
+        ID: 100005,
+        ProfileType: "Unique",
+        Name: "Graz'zt",
+        Type: "Large fiend (demon, shapechanger), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [20, "natural armor"],
+        HitPoints: 346,
+        HitPointsRoll: "33d10 + 165",
+        Speed: ["40 ft."],
+        Strength: 22,
+        Dexterity: 15,
+        Constitution: 21,
+        Intelligence: 23,
+        Wisdom: 21,
+        Charisma: 26,
+        SavingThrows: ["Dexterity +9", "Constitution +12", "Wisdom +12"],
+        Skills: ["Deception +15", "Insight +12", "Perception +12", "Persuasion +15"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 22"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [24, 62000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Shapechanger",
+                Desc: "Graz'zt can use his action to polymorph into a form that resembles a Medium humanoid, or back into his true form. Aside from his size, his statistics are the same in each form. Any equipment he is wearing or carrying isn't transformed."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Graz'zt's spellcasting ability is Charisma (spell save DC 23). He can innately cast the following spells, requiring no material components: At will: charm person, crown of madness, detect magic, dispel magic, dissonant whispers; 3/day each: counterspell, darkness, dominate person, sanctuary, telekinesis, teleport; 1/day each: dominate monster, greater invisibility."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Graz'zt fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Graz'zt has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Graz'zt's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Graz'zt attacks twice with Wave of Sorrow."
+            },
+            {
+                Title: "Wave of Sorrow (Greatsword)",
+                Desc: "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 20 (4d6 + 6) slashing damage plus 10 (3d6) acid damage."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Graz'zt magically teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "Graz'zt attacks once with Wave of Sorrow."
+            },
+            {
+                Title: "Dance, My Puppet!",
+                Desc: "One creature charmed by Graz'zt that Graz'zt can see must use its reaction to move up to its speed as Graz'zt directs."
+            },
+            {
+                Title: "Sow Discord",
+                Desc: "Graz'zt casts crown of madness or dissonant whispers."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Graz'zt uses his Teleport action."
+            }
+        ],
+        RegionalEffects: [
+            "Flat surfaces within 1 mile of the lair that are made of stone or metal become highly reflective, as though polished to a shine. These surfaces become supernaturally mirrorlike.",
+            "Wild beasts within 6 miles of the lair break into frequent conflicts and coupling, mirroring the behavior that occurs during their mating seasons.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Graz'zt table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
+            "If Graz'zt dies, these effects fade over the course of 1d10 days."
+        ],
+        LairActions: [
+            "Graz'zt casts the command spell on every creature of his choice in the lair. He needn't see each one, but he must be aware that an individual is in the lair to target that creature. He issues the same command to all the targets.",
+            "Smooth surfaces within the lair become as reflective as a polished mirror. Until a different lair action is used, creatures within the lair have disadvantage on Dexterity (Stealth) checks made to hide."
+        ],
+        Description: "Graz'zt, the Dark Prince and Lord of Pleasure, stands nearly nine feet tall and possesses an unnaturally beautiful humanoid form. Six fingers adorn each hand and six toes each foot, while a subtle cruelty mars his otherwise perfect features. He can transform into whatever humanoid form best suits his desires. Graz'zt surrounds himself with luxury, beautiful servants, and decadent pleasure palaces, and wields the greatsword Angdrelve, also called Wave of Sorrow, whose blade can drip with acid at his command. His principal lair is the Argent Palace in Zelatar, within his Abyssal domain of Azzatar."
+    },
+    { // Juiblex
+        ID: 100006,
+        ProfileType: "Unique",
+        Name: "Juiblex",
+        Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 350,
+        HitPointsRoll: "28d12 + 168",
+        Speed: ["30 ft."],
+        Strength: 24,
+        Dexterity: 10,
+        Constitution: 23,
+        Intelligence: 20,
+        Wisdom: 20,
+        Charisma: 16,
+        SavingThrows: ["Dexterity +7", "Constitution +13", "Wisdom +12"],
+        Skills: ["Perception +12"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 22"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [23, 50000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Foul",
+                Desc: "Any creature, other than an ooze, that starts its turn within 10 feet of Juiblex must succeed on a DC 21 Constitution saving throw or be poisoned until the start of the creature's next turn."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Juiblex's spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). Juiblex can innately cast the following spells, requiring no material components: At will: acid splash (17th level), detect magic; 3/day each: blight, contagion, gaseous form."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Juiblex fails a saving throw, it can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Juiblex has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Juiblex's weapon attacks are magical."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "Juiblex regains 20 hit points at the start of its turn. If it takes fire or radiant damage, this trait doesn't function at the start of its next turn. Juiblex dies only if it starts its turn with 0 hit points and doesn't regenerate."
+            },
+            {
+                Title: "Spider Climb",
+                Desc: "Juiblex can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Juiblex makes three acid lash attacks."
+            },
+            {
+                Title: "Acid Lash",
+                Desc: "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 21 (4d6 + 7) acid damage. Any creature killed by this attack is drawn into Juiblex's body, and the corpse is obliterated after 1 minute."
+            },
+            {
+                Title: "Eject Slime (Recharge 5-6)",
+                Desc: "Juiblex spews out a corrosive slime, targeting one creature that it can see within 60 feet of it. The target must make a DC 21 Dexterity saving throw. On a failure, the target takes 55 (10d10) acid damage. Unless the target avoids taking any of this damage, any metal armor worn by the target takes a permanent -1 penalty to the AC it offers, and any metal weapon it is carrying or wearing takes a permanent -1 penalty to damage rolls. The penalty worsens each time a target is subjected to this effect. If the penalty on an object drops to -5, the object is destroyed."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Acid Splash",
+                Desc: "Juiblex casts acid splash."
+            },
+            {
+                Title: "Attack",
+                Desc: "Juiblex makes one acid lash attack."
+            },
+            {
+                Title: "Corrupting Touch (Costs 2 Actions)",
+                Desc: "Melee Weapon Attack: +14 to hit, reach 10 ft., one creature. Hit: 21 (4d6 + 7) poison damage, and the target is slimed. Until the slime is scraped off with an action, the target is poisoned, and any creature, other than an ooze, is poisoned while within 10 feet of the target."
+            }
+        ],
+        RegionalEffects: [
+            "Small bodies of water, such as ponds or wells, within 1 mile of the lair turn highly acidic, corroding any object that touches them.",
+            "Surfaces within 6 miles of the lair are frequently covered by a thin film of slime, which is slick and sticks to anything that touches it.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 18 Wisdom saving throw or descend into a madness determined by the Madness of Juiblex table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours."
+        ],
+        LairActions: [
+            "Juiblex slimes a square area of ground it can see within the lair. The area can be up to 10 feet on a side. The slime lasts for 1 hour or until it is burned away with fire. When the slime appears, each creature in that area must succeed on a DC 21 Strength saving throw or become restrained. When a creature enters the area for the first time on a turn or ends its turn there, that creature must make the same save. If the slime is set on fire, it burns away after 1 round. Any creature that starts its turn in the burning slime takes 22 (4d10) fire damage.",
+            "Juiblex slimes a square area of ground it can see within the lair. The area can be up to 10 feet on a side. The slime lasts for 1 hour or until it is burned away with fire. When the slime appears, each creature on it must succeed on a DC 21 Dexterity saving throw or fall prone and slide 10 feet in a random direction determined by a d8 roll. If the slime is set on fire, it burns away after 1 round. Any creature that starts its turn in the burning slime takes 22 (4d10) fire damage.",
+            "A green slime appears on a spot on the ceiling that Juiblex chooses within the lair. The slime disintegrates after 1 hour."
+        ],
+        Description: "Juiblex, the Faceless Lord and Oozing Hunger, is a horrifying mass of bubbling black and green slime with glaring red eyes that float and shift within its body. It can rise like a twenty-foot hill and lash out with dripping pseudopods, dragging victims into its bulk where they are obliterated. Those who willingly offer themselves to Juiblex are engulfed and transformed into vaguely humanoid, sentient oozes whose bodies become part of the demon lord. Juiblex dwells in the Slime Pits of Shedaklah, a bubbling morass of sludge, molds, and caustic oozes shared with Zuggtmoy."
+    },
+    { // Orcus
+        ID: 100007,
+        ProfileType: "Unique",
+        Name: "Orcus",
+        Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [17, "natural armor; 20 with the Wand of Orcus"],
+        HitPoints: 405,
+        HitPointsRoll: "30d12 + 210",
+        Speed: ["40 ft.", "fly 40 ft."],
+        Strength: 27,
+        Dexterity: 14,
+        Constitution: 25,
+        Intelligence: 20,
+        Wisdom: 20,
+        Charisma: 25,
+        SavingThrows: ["Dexterity +10", "Constitution +15", "Wisdom +13"],
+        Skills: ["Arcana +12", "Perception +12"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Necrotic", "Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 22"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [26, 90000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Wand of Orcus",
+                Desc: "The wand has 7 charges, and any of its properties that require a saving throw have a save DC of 18. While holding it, Orcus can use an action to cast animate dead, blight, or speak with dead. Alternatively, he can expend 1 or more of the wand's charges to cast one of the following spells from it: circle of death (1 charge), finger of death (1 charge), or power word kill (2 charges). The wand regains 1d4 + 3 charges daily at dawn. While holding the wand, Orcus can use an action to conjure undead creatures whose combined average hit points don't exceed 500. These undead magically rise up from the ground or otherwise form in unoccupied spaces within 300 feet of Orcus and obey his commands until they are destroyed or until he dismisses them as an action. Once this property of the wand is used, the property can't be used again until the next dawn."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Orcus's spellcasting ability is Charisma (spell save DC 23, +15 to hit with spell attacks). He can innately cast the following spells, requiring no material components: At will: chill touch (17th level), detect magic; 3/day each: create undead, dispel magic; 1/day: time stop."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Orcus fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Orcus has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Orcus's weapon attacks are magical."
+            },
+            {
+                Title: "Master of Undeath",
+                Desc: "When Orcus casts animate dead or create undead, he chooses the level at which the spell is cast, and the creatures created by the spells remain under his control indefinitely. Additionally, he can cast create undead even when it isn't night."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Orcus makes two Wand of Orcus attacks."
+            },
+            {
+                Title: "Wand of Orcus",
+                Desc: "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) bludgeoning damage plus 13 (2d12) necrotic damage."
+            },
+            {
+                Title: "Tail",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) piercing damage plus 9 (2d8) poison damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Tail",
+                Desc: "Orcus makes one tail attack."
+            },
+            {
+                Title: "A Taste of Undeath",
+                Desc: "Orcus casts chill touch (17th level)."
+            },
+            {
+                Title: "Creeping Death (Costs 2 Actions)",
+                Desc: "Orcus chooses a point on the ground that he can see within 100 feet of him. A cylinder of swirling necrotic energy 60 feet tall and with a 10-foot radius rises from that point and lasts until the end of Orcus's next turn. Creatures in that area have vulnerability to necrotic damage."
+            }
+        ],
+        RegionalEffects: [
+            "Dead beasts periodically animate as undead mockeries of their former selves. Skeletal and zombie versions of local wildlife are commonly seen in the area.",
+            "The air becomes filled with the stench of rotting flesh, and buzzing flies grow thick within the region, even when there is no carrion to be found.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Orcus table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
+            "If Orcus dies, these effects fade over the course of 1d10 days."
+        ],
+        LairActions: [
+            "Orcus's voice booms throughout the lair. His utterance causes one creature of his choice to be subjected to power word kill (save DC 23). Orcus needn't see the creature, but he must be aware that the individual is in the lair.",
+            "Orcus causes up to six corpses within the lair to rise as skeletons, zombies, or ghouls. These undead obey his telepathic commands, which can reach anywhere in the lair.",
+            "Orcus causes skeletal arms to rise from an area on the ground in a 20-foot square that he can see. They last until the next initiative count 20. Each creature in that area when the arms appear must succeed on a DC 23 Strength saving throw or be restrained until the arms disappear or until Orcus releases them (no action required)."
+        ],
+        Description: "Orcus, the Demon Prince of Undeath and Blood Lord, is a foul, corpulent creature with the lower torso of a goat and a humanoid upper body swollen with rot. Great bat wings sprout from his shoulders, while his head resembles a nearly fleshless goat skull with glowing eyes. He wields the legendary Wand of Orcus, an obsidian rod topped with a humanoid skull, and surrounds himself with undead servants. His lair is the fortress city of Naratyr on Thanatos, a cold and eerily quiet city dominated by a castle of bone, flesh, and woven hair."
+    },
+    { // Yeenoghu
+        ID: 100008,
+        ProfileType: "Unique",
+        Name: "Yeenoghu",
+        Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [20, "natural armor"],
+        HitPoints: 333,
+        HitPointsRoll: "23d12 + 184",
+        Speed: ["50 ft."],
+        Strength: 29,
+        Dexterity: 16,
+        Constitution: 23,
+        Intelligence: 15,
+        Wisdom: 24,
+        Charisma: 15,
+        SavingThrows: ["Dexterity +10", "Constitution +15", "Wisdom +14"],
+        Skills: ["Intimidation +9", "Perception +14"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 24"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [24, 62000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Yeenoghu's spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). He can innately cast the following spells, requiring no material components: At will: detect magic; 3/day each: dispel magic, fear, invisibility; 1/day: teleport."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Yeenoghu fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Yeenoghu has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Yeenoghu's weapon attacks are magical."
+            },
+            {
+                Title: "Rampage",
+                Desc: "When Yeenoghu reduces a creature to 0 hit points with a melee attack on his turn, Yeenoghu can take a bonus action to move up to half his speed and make a bite attack."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Yeenoghu makes three flail attacks. If an attack hits, he can cause it to create an additional effect of his choice or at random (each effect can be used only once per Multiattack): 1. The attack deals an extra 13 (2d12) bludgeoning damage. 2. The target must succeed on a DC 17 Constitution saving throw or be paralyzed until the start of Yeenoghu's next turn. 3. The target must succeed on a DC 17 Wisdom saving throw or be affected by the confusion spell until the start of Yeenoghu's next turn."
+            },
+            {
+                Title: "Flail",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 15 (1d12 + 9) bludgeoning damage."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 14 (1d10 + 9) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Charge",
+                Desc: "Yeenoghu moves up to his speed."
+            },
+            {
+                Title: "Swat Away",
+                Desc: "Yeenoghu makes a flail attack. If the attack hits, the target must succeed on a DC 24 Strength saving throw or be pushed 15 feet in a straight line away from Yeenoghu. If the saving throw fails by 5 or more, the target falls prone."
+            },
+            {
+                Title: "Savage (Costs 2 Actions)",
+                Desc: "Yeenoghu makes a bite attack against each creature within 10 feet of him."
+            }
+        ],
+        RegionalEffects: [
+            "Within 1 mile of the lair, large iron spikes grow out of the ground and stone surfaces. Yeenoghu impales the bodies of the slain on these spikes.",
+            "Predatory beasts within 6 miles of the lair become unusually savage, killing far more than what they need for food. Carcasses of prey are left to rot in an unnatural display of wasteful slaughter.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 17 Wisdom saving throw or descend into a madness determined by the Madness of Yeenoghu table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
+            "If Yeenoghu dies, these effects fade over the course of 1d10 days."
+        ],
+        LairActions: [
+            "Yeenoghu causes an iron spike, 5 feet tall and 1 inch in diameter, to burst from the ground at a point he can see within 100 feet of him. Any creature in the space where the spike emerges must make a DC 24 Dexterity saving throw. On a failed save, the creature takes 27 (6d8) piercing damage and is restrained by being impaled on the spike. A creature can use an action to remove itself or a creature it can reach from the spike, ending the restrained condition.",
+            "Each gnoll or hyena that Yeenoghu can see can use its reaction to move up to its speed.",
+            "Until the next initiative count 20, all gnolls and hyenas within the lair are enraged, causing them to have advantage on melee weapon attack rolls and causing attack rolls to have advantage against them."
+        ],
+        Description: "Yeenoghu, the Beast of Butchery and Gnoll Lord, appears as a fourteen-foot-tall, battle-scarred gnoll covered in matted fur and taut leathery hide. His face resembles a grinning predator's skull, and patchwork armor made from the shields and breastplates of fallen foes is lashed to his body with chains and decorated with flayed skins. He wields the triple-headed flail Butcher, though he is equally willing to tear prey apart with his claws and teeth. His lair, the Death Dells, is a barren hunting ground of hills and ravines populated by gnolls, hyenas, and ghouls."
+    },
+    { // Zuggtmoy
+        ID: 100009,
+        ProfileType: "Unique",
+        Name: "Zuggtmoy",
+        Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 304,
+        HitPointsRoll: "32d10 + 128",
+        Speed: ["30 ft."],
+        Strength: 22,
+        Dexterity: 15,
+        Constitution: 18,
+        Intelligence: 20,
+        Wisdom: 19,
+        Charisma: 24,
+        SavingThrows: ["Dexterity +9", "Constitution +11", "Wisdom +11"],
+        Skills: ["Perception +11"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning"],
+        DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 21"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [23, 50000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Zuggtmoy's spellcasting ability is Charisma (spell save DC 22). She can innately cast the following spells, requiring no material components: At will: detect magic, locate animals or plants, ray of sickness; 3/day each: dispel magic, ensnaring strike, entangle, plant growth; 1/day each: etherealness, teleport."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Zuggtmoy fails a saving throw, she can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Zuggtmoy has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Zuggtmoy's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Zuggtmoy makes three pseudopod attacks."
+            },
+            {
+                Title: "Pseudopod",
+                Desc: "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage plus 9 (2d8) poison damage."
+            },
+            {
+                Title: "Infestation Spores (3/Day)",
+                Desc: "Zuggtmoy releases spores that burst out in a cloud that fills a 20-foot-radius sphere centered on her, and it lingers for 1 minute. Any flesh-and-blood creature in the cloud when it appears, or that enters it later, must make a DC 19 Constitution saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy and also gains a random form of madness determined by rolling on the Madness of Zuggtmoy table that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a type of creature that can be (see the 'Myconids' entry in the Monster Manual)."
+            },
+            {
+                Title: "Mind Control Spores (Recharge 5-6)",
+                Desc: "Zuggtmoy releases spores that burst out in a cloud that fills a 20-foot-radius sphere centered on her, and it lingers for 1 minute. Humanoids and beasts in the cloud when it appears, or that enter it later, must make a DC 19 Wisdom saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the influence of Zuggtmoy for 24 hours. While infected in this way, the creature is charmed by her and can't be reinfected by these spores."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Protective Thrall",
+                Desc: "When Zuggtmoy is hit by an attack, one creature within 5 feet of Zuggtmoy that is charmed by her must use its reaction to be hit by the attack instead."
+            }
+        ],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "Zuggtmoy makes one pseudopod attack."
+            },
+            {
+                Title: "Exert Will",
+                Desc: "One creature charmed by Zuggtmoy that she can see must use its reaction to move up to its speed as she directs or to make a weapon attack against a target that she designates."
+            }
+        ],
+        RegionalEffects: [
+            "Molds and fungi grow on surfaces within 6 miles of the lair, even where they would normally find no purchase.",
+            "Plant life within 1 mile of the lair becomes infested with parasitic fungi, slowly mutating as it is overwhelmed.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 17 Wisdom saving throw or descend into a madness determined by the Madness of Zuggtmoy table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
+            "If Zuggtmoy dies, these effects fade over the course of 1d10 days."
+        ],
+        LairActions: [
+            "Zuggtmoy causes four gas spores or violet fungi to appear in unoccupied spaces that she chooses within the lair. They vanish after 1 hour.",
+            "Up to four plant creatures that are friendly to Zuggtmoy and that Zuggtmoy can see can use their reactions to move up to their speed and make one weapon attack.",
+            "Zuggtmoy uses either her Infestation Spores or her Mind Control Spores, centered on a mushroom or other fungus within her lair, instead of on herself."
+        ],
+        Description: "Zuggtmoy, the Demon Queen of Fungi and Lady of Rot and Decay, is an alien fungal entity that seeks to infect living creatures with spores and transform them into extensions of her will. She can mold her fungoid body into an approximation of humanoid form, including the skeletal-thin figure depicted in ancient art, draped in mycelia and lichen. Her cultists are often unknowingly infected, gradually becoming creatures in which flesh and fungus merge. Zuggtmoy's principal lair is a palace on Shedaklah made from enormous pale-yellow and rancid-brown mushrooms, surrounded by acidic puffballs and poisonous vapors."
+    },
+    { // Bael
+        ID: 100010,
+        ProfileType: "Unique",
+        Name: "Bael",
+        Type: "Large fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "plate"],
+        HitPoints: 189,
+        HitPointsRoll: "18d10 + 90",
+        Speed: ["30 ft."],
+        Strength: 24,
+        Dexterity: 17,
+        Constitution: 20,
+        Intelligence: 21,
+        Wisdom: 24,
+        Charisma: 24,
+        SavingThrows: ["Dexterity +9", "Constitution +11", "Intelligence +11", "Charisma +13"],
+        Skills: ["Intimidation +13", "Perception +13", "Persuasion +13"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 23"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [19, 22000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Dreadful",
+                Desc: "Bael can use a bonus action to appear dreadful until the start of his next turn. Each creature, other than a devil, that starts its turn within 10 feet of Bael must succeed on a DC 22 Wisdom saving throw or be frightened until the start of the creature's next turn."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Bael's innate spellcasting ability is Charisma (spell save DC 21, +13 to hit with spell attacks). He can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing his appearance), animate dead, charm person, detect magic, inflict wounds (as an 8th-level spell), invisibility (self only), major image; 3/day each: counterspell, dispel magic, fly, suggestion, wall of fire; 1/day each: dominate monster, symbol (stunning only)."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Bael fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Bael has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Bael's weapon attacks are magical."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "Bael regains 20 hit points at the start of his turn. If he takes cold or radiant damage, this trait doesn't function at the start of his next turn. Bael dies only if he starts his turn with 0 hit points and doesn't regenerate."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Bael makes two melee attacks."
+            },
+            {
+                Title: "Hellish Morningstar",
+                Desc: "Melee Weapon Attack: +13 to hit, reach 20 ft., one target. Hit: 16 (2d8 + 7) piercing damage plus 13 (3d8) necrotic damage."
+            },
+            {
+                Title: "Infernal Command",
+                Desc: "Each ally of Bael's within 60 feet of him can't be charmed or frightened until the end of his next turn."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Bael magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Attack (Costs 2 Actions)",
+                Desc: "Bael attacks once with his hellish morningstar."
+            },
+            {
+                Title: "Awaken Greed",
+                Desc: "Bael casts charm person or major image."
+            },
+            {
+                Title: "Infernal Command",
+                Desc: "Bael uses his Infernal Command action."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Bael uses his Teleport action."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Bael is a powerful archdevil and one of Mammon's most important vassals, known as the Bronze General. He is a tactical genius who commands sixty-six companies of barbed devils and has won fame through repeated victories in the Blood War. Bael is a large, bronze-skinned devil whose true appearance is unlike the toad, cat, or humanoid forms sometimes used to depict him. He prefers to make servants of defeated adversaries, sparing those who pledge their souls and service to him, while destroying demons he defeats."
+    },
+    { // Geryon
+        ID: 100011,
+        ProfileType: "Unique",
+        Name: "Geryon",
+        Type: "Huge fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [19, "natural armor"],
+        HitPoints: 300,
+        HitPointsRoll: "24d12 + 144",
+        Speed: ["30 ft.", "fly 50 ft."],
+        Strength: 29,
+        Dexterity: 17,
+        Constitution: 22,
+        Intelligence: 19,
+        Wisdom: 16,
+        Charisma: 23,
+        SavingThrows: ["Dexterity +10", "Constitution +13", "Wisdom +10", "Charisma +13"],
+        Skills: ["Deception +13", "Intimidation +13", "Perception +10"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Cold", "Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 20"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [22, 41000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Geryon's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing his appearance), detect magic, geas, ice storm, invisibility (self only), locate object, suggestion, wall of ice; 1/day each: divine word, symbol (pain only)."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Geryon fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Geryon has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Geryon's weapon attacks are magical."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "Geryon regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Geryon dies only if he starts his turn with 0 hit points and doesn't regenerate."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Geryon makes two attacks: one with his claws and one with his stinger."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 23 (4d6 + 9) slashing damage. If the target is Large or smaller, it is grappled (DC 24) and restrained until the grapple ends. Geryon can grapple one creature at a time. If the target is already grappled by Geryon, the target takes an extra 27 (6d8) slashing damage."
+            },
+            {
+                Title: "Stinger",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 20 ft., one creature. Hit: 14 (2d4 + 9) piercing damage, and the target must succeed on a DC 21 Constitution saving throw or take 13 (2d12) poison damage and become poisoned until it finishes a short or long rest. The target's hit point maximum is reduced by an amount equal to half the poison damage it takes. If its hit point maximum drops to 0, it dies. This reduction lasts until the poisoned condition is removed."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Geryon magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
+            },
+            {
+                Title: "Sound the Horn (1/Day)",
+                Desc: "Geryon blows his horn, which causes 5d4 minotaurs to appear in unoccupied spaces of his choice within 600 feet of him. The minotaurs roll initiative when they appear. They remain until they die or Geryon uses an action to dismiss any or all of them."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Infernal Glare",
+                Desc: "Geryon targets one creature he can see within 60 feet of him. If the target can see Geryon, the target must succeed on a DC 23 Wisdom saving throw or become frightened of Geryon until the end of its next turn."
+            },
+            {
+                Title: "Swift Sting (Costs 2 Actions)",
+                Desc: "Geryon attacks with his stinger."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Geryon uses his Teleport action."
+            }
+        ],
+        RegionalEffects: [
+            "Intelligent creatures within 1 mile of the lair frequently see shimmering portals leading to places they consider safe. Passing through a portal always deposits a traveler somewhere in Stygia.",
+            "Freezing strong winds howl around the area within 1 mile of the lair.",
+            "Howls and screams fill the air within 1 mile of the lair. Any creature that finishes a short or long rest in this area must succeed on a DC 21 Wisdom saving throw or derive no benefit from the rest. If Geryon dies, these effects fade over the course of 1d10 days."
+        ],
+        LairActions: [
+            "Geryon causes a blast of cold to burst from the ground at a point he can see within 120 feet of him. The cold fills a cube, 10 feet on each side, centered on that point. Each creature in that area must succeed on a DC 21 Constitution saving throw or take 28 (8d6) cold damage.",
+            "Geryon targets one creature he can see within 60 feet of him. The target must succeed on a DC 21 Wisdom saving throw or become restrained for 1 minute. The target can end the effect on itself if it deals any damage to one or more of its allies.",
+            "Geryon casts the banishment spell."
+        ],
+        Description: "Geryon is an enormous, bestial archdevil locked in an endless struggle with Levistus for control of Stygia. He is a ferocious hunter and relentless tracker, taking particular pleasure in tearing enemies apart with his claws and tasting their blood. Geryon currently resides in his ancient fortress, Coldsteel, where he commands ice devils and minotaur slaves and schemes to reclaim his standing in the infernal hierarchy."
+    },
+    { // Hutijin
+        ID: 100012,
+        ProfileType: "Unique",
+        Name: "Hutijin",
+        Type: "Large fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [19, "natural armor"],
+        HitPoints: 200,
+        HitPointsRoll: "16d10 + 112",
+        Speed: ["30 ft.", "fly 60 ft."],
+        Strength: 27,
+        Dexterity: 15,
+        Constitution: 25,
+        Intelligence: 23,
+        Wisdom: 19,
+        Charisma: 25,
+        SavingThrows: ["Dexterity +9", "Constitution +14", "Wisdom +11"],
+        Skills: ["Intimidation +14", "Perception +11"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 21"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [21, 33000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Infernal Despair",
+                Desc: "Each creature within 15 feet of Hutijin that isn't a devil makes saving throws with disadvantage."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Hutijin's innate spellcasting ability is Charisma (spell save DC 22). He can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing his appearance), animate dead, detect magic, hold monster, invisibility (self only), lightning bolt, suggestion, wall of fire; 3/day: dispel magic; 1/day each: heal, symbol (hopelessness only)."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Hutijin fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Hutijin has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Hutijin's weapon attacks are magical."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "Hutijin regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Hutijin dies only if he starts his turn with 0 hit points and doesn't regenerate."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Hutijin makes four attacks: one with his bite, one with his claw, one with his mace, and one with his tail."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) piercing damage. The target must succeed on a DC 22 Constitution saving throw or become poisoned. While poisoned in this way, the target can't regain hit points, and it takes 10 (3d6) poison damage at the start of each of its turns. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) slashing damage."
+            },
+            {
+                Title: "Mace",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) bludgeoning damage."
+            },
+            {
+                Title: "Tail",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) bludgeoning damage."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Hutijin magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Fearful Voice (Recharge 5-6)",
+                Desc: "In response to taking damage, Hutijin utters a dreadful word of power. Each creature within 30 feet of him that isn't a devil must succeed on a DC 22 Wisdom saving throw or become frightened of him for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that saves against this effect is immune to Hutijin's Fearful Voice for 24 hours."
+            }
+        ],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "Hutijin attacks once with his mace."
+            },
+            {
+                Title: "Lightning Storm (Costs 2 Actions)",
+                Desc: "Hutijin releases lightning in a 20-foot radius. All other creatures in that area must each make a DC 22 Dexterity saving throw, taking 18 (4d8) lightning damage on a failed save, or half as much damage on a successful one."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Hutijin uses his Teleport action."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Hutijin is a duke of Cania and a loyal servant of Mephistopheles who commands two companies of pit fiends. He is feared throughout the Nine Hells and despises mortals, often repaying those who summon him with death after first negotiating whatever bargain they seek. Hutijin is a massive, powerful devil whose strength and magical abilities make him one of the most formidable servants of Mephistopheles."
+    },
+    { // Moloch
+        ID: 100013,
+        ProfileType: "Unique",
+        Name: "Moloch",
+        Type: "Large fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [19, "natural armor"],
+        HitPoints: 253,
+        HitPointsRoll: "22d10 + 132",
+        Speed: ["30 ft."],
+        Strength: 26,
+        Dexterity: 19,
+        Constitution: 22,
+        Intelligence: 21,
+        Wisdom: 18,
+        Charisma: 23,
+        SavingThrows: ["Dexterity +11", "Constitution +13", "Wisdom +11", "Charisma +13"],
+        Skills: ["Deception +13", "Intimidation +13", "Perception +11"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 21"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [21, 33000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Moloch's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing his appearance), animate dead, burning hands (as a 7th-level spell), confusion, detect magic, fly, geas, major image, stinking cloud, suggestion, wall of fire; 1/day each: flame strike, symbol (stunning only)."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Moloch fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Moloch has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Moloch's weapon attacks are magical."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "Moloch regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Moloch dies only if he starts his turn with 0 hit points and doesn't regenerate."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Moloch makes three attacks: one with his bite, one with his claw, and one with his whip."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 26 (4d8 + 8) piercing damage."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) slashing damage."
+            },
+            {
+                Title: "Many-Tailed Whip",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 30 ft., one target. Hit: 13 (2d4 + 8) slashing damage plus 11 (2d10) lightning damage. If the target is a creature, it must succeed on a DC 24 Strength saving throw or be pulled up to 30 feet in a straight line toward Moloch."
+            },
+            {
+                Title: "Breath of Despair (Recharge 5-6)",
+                Desc: "Moloch exhales in a 30-foot cube. Each creature in that area must succeed on a DC 21 Wisdom saving throw or take 27 (5d10) psychic damage, drop whatever it is holding, and become frightened for 1 minute. While frightened in this way, a creature must take the Dash action and move away from Moloch by the safest available route on each of its turns, unless there is nowhere to move, in which case it needn't take the Dash action. If the creature ends its turn in a location where it doesn't have line of sight to Moloch, the creature can repeat the saving throw. On a success, the effect ends."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Moloch magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Stinking Cloud",
+                Desc: "Moloch casts stinking cloud."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Moloch uses his Teleport action."
+            },
+            {
+                Title: "Whip",
+                Desc: "Moloch makes one attack with his whip."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Moloch is an exiled archdevil who once ruled Malbolge before a failed conspiracy against Asmodeus stripped him of his station. He now wanders the planes seeking the power and resources needed to reclaim his former position. In the Nine Hells he is magically reduced to an imp, regaining his full power only after leaving the Hells, and he frequently bargains with mortals for the wealth and knowledge he needs to rebuild his strength."
+    },
+    { // Titivilus
+        ID: 100014,
+        ProfileType: "Unique",
+        Name: "Titivilus",
+        Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [20, "natural armor"],
+        HitPoints: 127,
+        HitPointsRoll: "17d8 + 51",
+        Speed: ["40 ft.", "fly 60 ft."],
+        Strength: 19,
+        Dexterity: 22,
+        Constitution: 17,
+        Intelligence: 24,
+        Wisdom: 22,
+        Charisma: 26,
+        SavingThrows: ["Dexterity +11", "Constitution +8", "Wisdom +11", "Charisma +13"],
+        Skills: ["Deception +13", "Insight +11", "Intimidation +13", "Persuasion +13"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 16"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [16, 15000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Titivilus's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components: At will: alter self, animate dead, bestow curse, confusion, major image, modify memory, nondetection, sending, suggestion; 3/day each: greater invisibility (self only), mislead; 1/day each: feeblemind, symbol (discord or sleep only)."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Titivilus fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Titivilus has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "Titivilus's weapon attacks are magical."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "Titivilus regains 10 hit points at the start of his turn. If he takes cold or radiant damage, this trait doesn't function at the start of his next turn. Titivilus dies only if he starts his turn with 0 hit points and doesn't regenerate."
+            },
+            {
+                Title: "Ventriloquism",
+                Desc: "Whenever Titivilus speaks, he can choose a point within 60 feet; his voice emanates from that point."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Titivilus makes one sword attack and uses his Frightful Word once."
+            },
+            {
+                Title: "Silver Sword",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 16 (3d10) necrotic damage. If the target is a creature, its hit point maximum is reduced by an amount equal to half the necrotic damage it takes."
+            },
+            {
+                Title: "Frightful Word",
+                Desc: "Titivilus targets one creature he can see within 10 feet of him. The target must succeed on a DC 21 Charisma saving throw or become frightened for 1 minute. While frightened in this way, the target must take the Dash action and move away from Titivilus by the safest available route on each of its turns, unless there is nowhere to move, in which case it needn't take the Dash action. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Titivilus magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
+            },
+            {
+                Title: "Twisting Words",
+                Desc: "Titivilus targets one creature he can see within 60 feet of him. The target must succeed on a DC 21 Charisma saving throw or become charmed by Titivilus for 1 minute. The charmed target can repeat the saving throw if Titivilus deals any damage to it. A creature that succeeds on the saving throw is immune to Titivilus's Twisting Words for 24 hours."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Assault (Costs 2 Actions)",
+                Desc: "Titivilus attacks with his silver sword or uses his Frightful Word."
+            },
+            {
+                Title: "Corrupting Guidance",
+                Desc: "Titivilus uses Twisting Words. Alternatively, he targets one creature charmed by him that is within 60 feet of him; that charmed target must make a DC 21 Charisma saving throw. On a failure, Titivilus decides how the target acts during its next turn."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Titivilus uses his Teleport action."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Titivilus is a cunning and calculating archdevil who has manipulated his way into becoming the primary advisor to Dispater. Physically less imposing than many archdevils, he compensates with extraordinary intelligence, charm, and political skill. He twists words and bargains to make victims believe he is their friend while secretly arranging events to increase his own influence and protect his position."
+    },
+    { // Zariel
+        ID: 100015,
+        ProfileType: "Unique",
+        Name: "Zariel",
+        Type: "Large fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [21, "natural armor"],
+        HitPoints: 580,
+        HitPointsRoll: "40d10 + 360",
+        Speed: ["50 ft.", "fly 150 ft."],
+        Strength: 27,
+        Dexterity: 24,
+        Constitution: 28,
+        Intelligence: 26,
+        Wisdom: 27,
+        Charisma: 30,
+        SavingThrows: ["Intelligence +16", "Wisdom +16", "Charisma +18"],
+        Skills: ["Intimidation +18", "Perception +16"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Radiant", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
+        DamageImmunities: ["Necrotic", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 26"],
+        Languages: ["All", "Telepathy 120 ft."],
+        Challenge: [26, 90000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Devil's Sight",
+                Desc: "Magical darkness doesn't impede Zariel's darkvision."
+            },
+            {
+                Title: "Fiery Weapons",
+                Desc: "Zariel's weapon attacks are magical. When she hits with any weapon, the weapon deals an extra 36 (8d8) fire damage (included in the weapon attacks below)."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Zariel's innate spellcasting ability is Charisma (spell save DC 26). She can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing her appearance), detect evil and good, fireball, invisibility (self only), wall of fire; 3/day each: blade barrier, dispel evil and good, finger of death."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Zariel fails a saving throw, she can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Zariel has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "Zariel regains 20 hit points at the start of her turn. If she takes radiant damage, this trait doesn't function at the start of her next turn. Zariel dies only if she starts her turn with 0 hit points and doesn't regenerate."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Zariel attacks twice with her longsword or with her javelins. She can substitute Horrid Touch for one of these attacks."
+            },
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) slashing damage, or 19 (2d10 + 8) slashing damage if used with two hands, plus 36 (8d8) fire damage."
+            },
+            {
+                Title: "Javelin",
+                Desc: "Melee or Ranged Weapon Attack: +16 to hit, range 30/120 ft., one target. Hit: 15 (2d6 + 8) piercing damage plus 36 (8d8) fire damage."
+            },
+            {
+                Title: "Horrid Touch (Recharge 5-6)",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 44 (8d10) necrotic damage, and the target is poisoned for 1 minute. While poisoned in this way, the target is also blinded and deafened. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Zariel magically teleports, along with any equipment she is wearing and carrying, up to 120 feet to an unoccupied space she can see."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Immolating Gaze (Costs 2 Actions)",
+                Desc: "Zariel turns her magical gaze toward one creature she can see within 120 feet of her and commands it to combust. The target must succeed on a DC 26 Wisdom saving throw or take 22 (4d10) fire damage."
+            },
+            {
+                Title: "Teleport",
+                Desc: "Zariel uses her Teleport action."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Zariel rules Avernus, the first layer of the Nine Hells. Once a mighty angel charged with watching the tides of the Blood War, she fell from grace after succumbing to the corruption of the Hells and has since reclaimed her position as archdevil of Avernus. Zariel is a towering, immensely powerful warrior with tremendous wings and a martial presence befitting the commander of the infernal armies. She seeks the souls of great warriors and binds them through eternal bargains, honing their abilities so that they can eventually serve her in the Blood War."
+    },
 ];
 
 const playersLocal = [
-    // { // templatePlayer
-    //     ID: 1000000,
-    //     ProfileType: "Player",
-    //     Name: "CharacterName (RealLifeName)",
-    //     Type: "Medium humanoid(), alignment",
-    //     Source: "Player's Handbook",
-    //     HitPoints: 1,
-    //     HitPointsRoll: "",
-    //     ArmorClass: [10, "natural armor"],
-    //     Speed: ["30 ft."],
-    //     Strength: 10,
-    //     Dexterity: 10,
-    //     Constitution: 10,
-    //     Intelligence: 10,
-    //     Wisdom: 10,
-    //     Charisma: 10,
-    //     SavingThrows: [],
-    //     Skills: [],
-    //     DamageVulnerabilities: [],
-    //     DamageResistances: [],
-    //     DamageImmunities: [],
-    //     ConditionImmunities: [],
-    //     Senses: [],
-    //     Languages: [],
-    //     Challenge: [1, 200],
-    //     Traits: [],
-    //     Actions: [],
-    //     Reactions: [],
-    //     LegendaryActions: [],
-    //     Description: "Description here"
-    // },
     { // Adam
         ID: 1000001,
         ProfileType: "Player",
