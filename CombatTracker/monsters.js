@@ -4,119 +4,7 @@
 
 // YOUR EXISTING DATA
 const monstersLocal = [
-    // { // templateMonster
-    //     ID: 0,
-    //     ProfileType: "Monster",
-    //     Name: "template",
-    //     Type: "Size type, alignment",
-    //     TypeCategory: "Creature Type",
-    //     Source: "Monster Manual",
-    //     HitPoints: 1,
-    //     HitPointsRoll: "#d# + #",
-    //     ArmorClass: [10, "natural armor"],
-    //     Speed: ["30 ft."],
-    //     Strength: 10,
-    //     Dexterity: 10,
-    //     Constitution: 10,
-    //     Intelligence: 10,
-    //     Wisdom: 10,
-    //     Charisma: 10,
-    //     SavingThrows: ["Strength +5", "Dexterity +5", "Constitution +5", "Intelligence +5", "Wisdom +5", "Charisma +5"],
-    //     Skills: ["Athletics +5", "Acrobatics +5", "Sleight of Hand +5", "Stealth +5", "Arcana +5", "History +5", "Investigation +5", 
-    //         "Nature +5", "Religion +5", "Animal Handling +5", "Insight +5", "Medicine +5", "Persuasion +5", "Deception +5", 
-    //         "Intimidation +5", "Perception +5", "Performance +5", "Survival +5"],
-    //     DamageVulnerabilities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-    //         "Bludgeoning", "Piercing", "Slashing"],
-    //     DamageResistances: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-    //         "Bludgeoning, Piercing, and Slashing from non magical weapons"],
-    //     DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-    //         "Bludgeoning, Piercing, and Slashing from non magical weapons"],
-    //     ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Invisible", "Paralyzed", 
-    //         "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
-    //     Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Tremorsense 60 ft.", "Passive Perception 10"],
-    //     Languages: ["All", "Common", "Draconic", "Elvish", "Dwarvish", "Infernal", "Celestial", "Giant", "Gnomish", "Halfling", "Orc", 
-    //         "Sylvan", "Abyssal", "Undercommon", "Deep Speech", "Primordial", "Goblin", "Gnoll", "Celestial", "Elvish", "Thieves' Cant", 
-    //         "Giant", "Draconic", "Aquan", "Ignan", "Terran", "Auran", "Celestial", "Sylvan", "Telepathy 120 ft."],
-    //     Challenge: [1, 200],
-    //     ExtraRewards: "",
-    //     Traits: [
-    //         {
-    //             Title: "Trait One",
-    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    //         },
-    //         {
-    //             Title: "Trait Two",
-    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    //         },
-    //         {
-    //             Title: "Trait Three",
-    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    //         }
-    //     ],
-    //     Actions: [
-    //         {
-    //             Title: "Multiattack",
-    //             Desc: "The creature makes two attacks: one with its 'Action Two' and one with its 'Action Three'."
-    //         },
-    //         {
-    //             Title: "Action Two",
-    //             Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 5) slashing damage."
-    //         },
-    //         {
-    //             Title: "Action Three (Recharge 5-6)",
-    //             Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (2d8 + 5) piercing damage. " +
-    //             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    //         }
-    //     ],
-    //     Reactions: [
-    //         {
-    //             Title: "Reaction One",
-    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    //         }
-    //     ],
-    //     LegendaryActions: [
-    //         {
-    //             Title: "Attack",
-    //             Desc: "The creature makes one 'Action Two' attack."
-    //         },
-    //         {
-    //             Title: "Big Attack (Costs 2 Actions)",
-    //             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna " +
-    //             "aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
-    //             "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-    //             "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    //         }
-    //     ],
-    //     LairActions: [
-    //         "Lorem ipsum dolor sit amet",
-    //         "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of ",
-    //         "Lorem ipsum dolor sit amet",
-    //         "Lorem ipsum dolor sit amet"
-    //     ],
-    //     RegionalEffects: [
-    //         "Lorem ipsum dolor sit amet",
-    //         "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of ",
-    //         "Lorem ipsum dolor sit amet",
-    //         "Lorem ipsum dolor sit amet"
-    //     ],
-    //     Description: "Description here"
-    // },
-    {
+    { // Aarakocra
         ID: 1,
         ProfileType: "Monster",
         Name: "Aarakocra",
@@ -31010,87 +30898,87 @@ const monstersLocal = [
         Description: "Maurezhi are demons created by Doresain, the King of Ghouls, to lead packs of ghouls and ghasts in the Material Plane. They have a horrific, predatory appearance and can consume the corpse of a humanoid they have slain, taking on that creature's appearance for several days while the stolen form gradually decays. Their bites drain a victim's sense of self by reducing Charisma, and their claws can paralyze living creatures. Maurezhi embody the spreading hunger of the undead and can raise dead ghouls and ghasts to serve them."
     },
     { // Molydeus
-        ID: 575,
-        ProfileType: "Monster",
-        Name: "Molydeus",
-        Type: "Huge fiend (demon), chaotic evil",
-        TypeCategory: "Fiend",
-        Size: "Huge",
-        Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: [19, "natural armor"],
-        HitPoints: 216,
-        HitPointsRoll: "16d12 + 112",
-        Speed: ["40 ft."],
-        Strength: 28,
-        Dexterity: 22,
-        Constitution: 25,
-        Intelligence: 21,
-        Wisdom: 24,
-        Charisma: 24,
-        SavingThrows: ["Strength +16", "Constitution +14", "Wisdom +14", "Charisma +14"],
-        Skills: ["Perception +21"],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
-        DamageImmunities: ["Poison"],
-        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened", "Poisoned", "Stunned"],
-        Senses: ["Truesight 120 ft.", "Passive Perception 31"],
-        Languages: ["Abyssal", "Telepathy 120 ft."],
-        Challenge: [21, 33000],
-        ExtraRewards: "",
-        Traits: [
-            {
-                Title: "Innate Spellcasting",
-                Desc: "The molydeus's innate spellcasting ability is Charisma (spell save DC 22). It can innately cast the following spells, requiring no material components: At will: dispel magic, polymorph, telekinesis, teleport; 3/day: lightning bolt; 1/day: imprisonment."
-            },
-            {
-                Title: "Legendary Resistance (3/Day)",
-                Desc: "If the molydeus fails a saving throw, it can choose to succeed instead."
-            },
-            {
-                Title: "Magic Resistance",
-                Desc: "The molydeus has advantage on saving throws against spells and other magical effects."
-            },
-            {
-                Title: "Magic Weapons",
-                Desc: "The molydeus's weapon attacks are magical."
-            }
-        ],
-        Actions: [
-            {
-                Title: "Multiattack",
-                Desc: "The molydeus makes three attacks: one with its weapon, one with its wolf bite, and one with its snakebite."
-            },
-            {
-                Title: "Demonic Weapon",
-                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) slashing damage. If the target has at least one head and the molydeus rolled a 20 on the attack roll, the target is decapitated and dies if it can't survive without that head. A target is immune to this effect if it takes none of the damage, has legendary actions, or is Huge or larger. Such a creature takes an extra 6d8 slashing damage from the hit."
-            },
-            {
-                Title: "Wolf Bite",
-                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) piercing damage."
-            },
-            {
-                Title: "Snakebite",
-                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one creature. Hit: 12 (1d6 + 9) piercing damage, and the target must succeed on a DC 22 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target transforms into a manes if this reduces its hit point maximum to 0. This transformation can be ended only by a wish spell."
-            }
-        ],
-        Reactions: [],
-        LegendaryActions: [
-            {
-                Title: "Attack",
-                Desc: "The molydeus makes one attack, either with its demonic weapon or with its snakebite."
-            },
-            {
-                Title: "Move",
-                Desc: "The molydeus moves without provoking opportunity attacks."
-            },
-            {
-                Title: "Cast a Spell",
-                Desc: "The molydeus casts one spell from its Innate Spellcasting trait."
-            }
-        ],
-        RegionalEffects: [],
-        LairActions: [],
-        Description: "Molydei are among the most ruthless and dangerous demons in the Abyss, standing roughly 12 feet tall with red-skinned humanoid bodies and two heads: one a slavering wolf and the other a serpent with dripping fangs. A demon lord creates a molydeus by remaking a particularly devoted or formidable demon through excruciating torment. Each molydeus serves a specific demon lord and acts as that master's enforcer, commander, guardian, and executioner. Its special weapon is fashioned from a portion of its demon lord's essence and remains mystically bound to the molydeus."
+       ID: 575,
+       ProfileType: "Monster",
+       Name: "Molydeus",
+       Type: "Huge fiend (demon), chaotic evil",
+       TypeCategory: "Fiend",
+       Size: "Huge",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [19, "natural armor"],
+       HitPoints: 216,
+       HitPointsRoll: "16d12 + 112",
+       Speed: ["40 ft."],
+       Strength: 28,
+       Dexterity: 22,
+       Constitution: 25,
+       Intelligence: 21,
+       Wisdom: 24,
+       Charisma: 24,
+       SavingThrows: ["Strength +16", "Constitution +14", "Wisdom +14", "Charisma +14"],
+       Skills: ["Perception +21"],
+       DamageVulnerabilities: [],
+       DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+       DamageImmunities: ["Poison"],
+       ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened", "Poisoned", "Stunned"],
+       Senses: ["Truesight 120 ft.", "Passive Perception 31"],
+       Languages: ["Abyssal", "Telepathy 120 ft."],
+       Challenge: [21, 33000],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Innate Spellcasting",
+               Desc: "The molydeus's innate spellcasting ability is Charisma (spell save DC 22). It can innately cast the following spells, requiring no material components: At will: dispel magic, polymorph, telekinesis, teleport; 3/day: lightning bolt; 1/day: imprisonment."
+           },
+           {
+               Title: "Legendary Resistance (3/Day)",
+               Desc: "If the molydeus fails a saving throw, it can choose to succeed instead."
+           },
+           {
+               Title: "Magic Resistance",
+               Desc: "The molydeus has advantage on saving throws against spells and other magical effects."
+           },
+           {
+               Title: "Magic Weapons",
+               Desc: "The molydeus's weapon attacks are magical."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The molydeus makes three attacks: one with its weapon, one with its wolf bite, and one with its snakebite."
+           },
+           {
+               Title: "Demonic Weapon",
+               Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) slashing damage. If the target has at least one head and the molydeus rolled a 20 on the attack roll, the target is decapitated and dies if it can't survive without that head. A target is immune to this effect if it takes none of the damage, has legendary actions, or is Huge or larger. Such a creature takes an extra 6d8 slashing damage from the hit."
+           },
+           {
+               Title: "Wolf Bite",
+               Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) piercing damage."
+           },
+           {
+               Title: "Snakebite",
+               Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one creature. Hit: 12 (1d6 + 9) piercing damage, and the target must succeed on a DC 22 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target transforms into a manes if this reduces its hit point maximum to 0. This transformation can be ended only by a wish spell."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [
+           {
+               Title: "Attack",
+               Desc: "The molydeus makes one attack, either with its demonic weapon or with its snakebite."
+           },
+           {
+               Title: "Move",
+               Desc: "The molydeus moves without provoking opportunity attacks."
+           },
+           {
+               Title: "Cast a Spell",
+               Desc: "The molydeus casts one spell from its Innate Spellcasting trait."
+           }
+       ],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Molydei are among the most ruthless and dangerous demons in the Abyss, standing roughly 12 feet tall with red-skinned humanoid bodies and two heads: one a slavering wolf and the other a serpent with dripping fangs. A demon lord creates a molydeus by remaking a particularly devoted or formidable demon through excruciating torment. Each molydeus serves a specific demon lord and acts as that master's enforcer, commander, guardian, and executioner. Its special weapon is fashioned from a portion of its demon lord's essence and remains mystically bound to the molydeus."
     },
     { // Nabassu
         ID: 576,
@@ -32254,6 +32142,1046 @@ const monstersLocal = [
         LairActions: [],
         Description: "Orthons are infernal bounty hunters sent by archdevils to track, capture, or destroy specific creatures across the multiverse. They are heavily armed hunters with keen senses and the ability to become invisible at will, allowing them to stalk prey before striking. Orthons value the challenge of the chase and one-on-one combat, and their travels throughout the Nine Hells make them exceptionally knowledgeable guides to its layers."
     },
+    { // Drow Arachnomancer
+       ID: 594,
+       ProfileType: "Monster",
+       Name: "Drow Arachnomancer",
+       Type: "Medium humanoid (elf), chaotic evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [15, "studded leather"],
+       HitPoints: 162,
+       HitPointsRoll: "25d8 + 50",
+       Speed: ["30 ft.", "climb 30 ft."],
+       Strength: 11,
+       Dexterity: 17,
+       Constitution: 14,
+       Intelligence: 19,
+       Wisdom: 14,
+       Charisma: 16,
+       SavingThrows: ["Constitution +7", "Intelligence +9", "Charisma +8"],
+       Skills: ["Arcana +9", "Nature +9", "Perception +7", "Stealth +8"],
+       DamageVulnerabilities: [],
+       DamageResistances: ["Poison"],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Blindsight 10 ft.", "Darkvision 120 ft.", "Passive Perception 17"],
+       Languages: ["Elvish", "Undercommon", "Can speak with spiders"],
+       Challenge: [13, 10000],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Fey Ancestry",
+               Desc: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+           },
+           {
+               Title: "Innate Spellcasting",
+               Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: dancing lights; 1/day each: darkness, faerie fire, levitate (self only)."
+           },
+           {
+               Title: "Spellcasting",
+               Desc: "The drow is a 16th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): chill touch, eldritch blast, mage hand, poison spray; 1st-5th level (3 5th-level slots): conjure animals (spiders only), crown of madness, dimension door, dispel magic, fear, fly, giant insect, hold monster, insect plague, invisibility, vampiric touch, web, witch bolt; 1/day each: dominate monster, etherealness, eyebite."
+           },
+           {
+               Title: "Spider Climb",
+               Desc: "The drow can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           },
+           {
+               Title: "Web Walker",
+               Desc: "The drow ignores movement restrictions caused by webbing."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The drow makes two poisonous touch attacks or two bite attacks. The first of these attacks that hits each round deals an extra 26 (4d12) poison damage to the target."
+           },
+           {
+               Title: "Poisonous Touch (Humanoid Form Only)",
+               Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 28 (8d6) poison damage."
+           },
+           {
+               Title: "Bite (Giant Spider Form Only)",
+               Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 26 (4d12) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
+           },
+           {
+               Title: "Web (Giant Spider Form Only; Recharge 5-6)",
+               Desc: "Ranged Weapon Attack: +8 to hit, range 30/60 ft., one target. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 15 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, piercing, and slashing damage)."
+           }
+       ],
+       BonusActions: [
+           {
+               Title: "Change Shape",
+               Desc: "The drow can use a bonus action to magically polymorph into a giant spider, remaining in that form for up to 1 hour. It can revert to its true form as a bonus action. Its statistics, other than its size, are the same in each form. It can speak and cast spells while in giant spider form. Any equipment it is wearing or carrying in humanoid form melds into the giant spider form. It can't activate, use, wield, or otherwise benefit from any of its equipment. It reverts to its humanoid form if it dies."
+           },
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Drow spellcasters who devote themselves wholly to Lolth can become arachnomancers, offering body and soul to the Spider Queen. Their bodies and magic become connected to the spiders of the Demonweb Pits, allowing them to wield powerful spider-themed magic. An arachnomancer can magically assume the form of a giant spider while retaining its ability to speak and cast spells."
+   },
+   { // Drow Favored Consort
+       ID: 595,
+       ProfileType: "Monster",
+       Name: "Drow Favored Consort",
+       Type: "Medium humanoid (elf), neutral evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [15, "18 with mage armor"],
+       HitPoints: 225,
+       HitPointsRoll: "30d8 + 90",
+       Speed: ["30 ft."],
+       Strength: 15,
+       Dexterity: 20,
+       Constitution: 16,
+       Intelligence: 18,
+       Wisdom: 15,
+       Charisma: 18,
+       SavingThrows: ["Dexterity +11", "Constitution +9", "Charisma +10"],
+       Skills: ["Acrobatics +11", "Athletics +8", "Perception +8", "Stealth +11"],
+       DamageVulnerabilities: [],
+       DamageResistances: [],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 18"],
+       Languages: ["Elvish", "Undercommon"],
+       Challenge: [18, 20000],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Fey Ancestry",
+               Desc: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+           },
+           {
+               Title: "Innate Spellcasting",
+               Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 18). It can innately cast the following spells, requiring no material components: At will: dancing lights; 1/day each: darkness, faerie fire, levitate (self only)."
+           },
+           {
+               Title: "Spellcasting",
+               Desc: "The drow is an 11th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). It has the following wizard spells prepared: Cantrips (at will): mage hand, message, poison spray, shocking grasp; 1st level (4 slots): burning hands, mage armor, magic missile, shield; 2nd level (3 slots): gust of wind, invisibility, misty step, shatter; 3rd level (3 slots): counterspell, fireball, haste; 4th level (3 slots): dimension door, Otiluke's resilient sphere; 5th level (2 slots): cone of cold; 6th level (1 slot): chain lightning."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           },
+           {
+               Title: "War Magic",
+               Desc: "When the drow uses its action to cast a spell, it can make one weapon attack as a bonus action."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The drow makes three scimitar attacks."
+           },
+           {
+               Title: "Scimitar",
+               Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) slashing damage plus 18 (4d8) poison damage. In addition, the target has disadvantage on the next saving throw it makes against a spell the drow casts before the end of the drow's next turn."
+           },
+           {
+               Title: "Hand Crossbow",
+               Desc: "Ranged Weapon Attack: +11 to hit, range 30/120 ft., one target. Hit: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target regains consciousness if it takes damage or if another creature takes an action to shake it."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Favored consorts are drow chosen by Lolth's priestesses for their beauty, companionship, and sometimes their magical abilities. Most serve primarily for pleasure or breeding, but a particularly capable consort may gain influence by providing useful counsel. Their position is precarious, since a priestess's favor can change without warning."
+   },
+   { // Drow House Captain
+       ID: 596,
+       ProfileType: "Monster",
+       Name: "Drow House Captain",
+       Type: "Medium humanoid (elf), neutral evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [16, "chain mail"],
+       HitPoints: 162,
+       HitPointsRoll: "25d8 + 50",
+       Speed: ["30 ft."],
+       Strength: 14,
+       Dexterity: 19,
+       Constitution: 15,
+       Intelligence: 12,
+       Wisdom: 14,
+       Charisma: 13,
+       SavingThrows: ["Dexterity +8", "Constitution +6", "Wisdom +6"],
+       Skills: ["Perception +6", "Stealth +8"],
+       DamageVulnerabilities: [],
+       DamageResistances: [],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 16"],
+       Languages: ["Elvish", "Undercommon"],
+       Challenge: [9, 5000],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Battle Command",
+               Desc: "As a bonus action, the drow targets one ally it can see within 30 feet of it. If the target can see or hear the drow, the target can use its reaction to make one melee attack or to take the Dodge or Hide action."
+           },
+           {
+               Title: "Fey Ancestry",
+               Desc: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+           },
+           {
+               Title: "Innate Spellcasting",
+               Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components: At will: dancing lights; 1/day each: darkness, faerie fire, levitate (self only)."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The drow makes three attacks: two with its scimitar and one with its whip or its hand crossbow."
+           },
+           {
+               Title: "Scimitar",
+               Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage plus 14 (4d6) poison damage."
+           },
+           {
+               Title: "Whip",
+               Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) slashing damage. If the target is an ally, it has advantage on attack rolls until the end of its next turn."
+           },
+           {
+               Title: "Hand Crossbow",
+               Desc: "Ranged Weapon Attack: +8 to hit, range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target regains consciousness if it takes damage or if another creature takes an action to shake it."
+           }
+       ],
+       Reactions: [
+           {
+               Title: "Parry",
+               Desc: "The drow adds 3 to its AC against one melee attack that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon."
+           }
+       ],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Each drow noble house entrusts its military forces to a house captain, normally the matriarch's first or second son. The captain commands the drow and slaves that form the family's army and has studied strategy and tactics extensively. House captains are battlefield leaders who combine martial skill with the ability to direct their allies."
+   },
+   { // Drow Inquisitor
+       ID: 597,
+       ProfileType: "Monster",
+       Name: "Drow Inquisitor",
+       Type: "Medium humanoid (elf), neutral evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [16, "breastplate"],
+       HitPoints: 143,
+       HitPointsRoll: "22d8 + 44",
+       Speed: ["30 ft."],
+       Strength: 11,
+       Dexterity: 15,
+       Constitution: 14,
+       Intelligence: 16,
+       Wisdom: 21,
+       Charisma: 20,
+       SavingThrows: ["Constitution +7", "Wisdom +10", "Charisma +10"],
+       Skills: ["Insight +10", "Perception +10", "Religion +8", "Stealth +7"],
+       DamageVulnerabilities: [],
+       DamageResistances: [],
+       DamageImmunities: [],
+       ConditionImmunities: ["Frightened"],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 20"],
+       Languages: ["Elvish", "Undercommon"],
+       Challenge: [14, 11500],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Discern Lie",
+               Desc: "The drow knows when she hears a creature speak a lie in a language she knows."
+           },
+           {
+               Title: "Fey Ancestry",
+               Desc: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+           },
+           {
+               Title: "Innate Spellcasting",
+               Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 18). She can innately cast the following spells, requiring no material components: At will: dancing lights, detect magic; 1/day each: clairvoyance, darkness, detect thoughts, dispel magic, faerie fire, levitate (self only), suggestion."
+           },
+           {
+               Title: "Magic Resistance",
+               Desc: "The drow has advantage on saving throws against spells and other magical effects."
+           },
+           {
+               Title: "Spellcasting",
+               Desc: "The drow is a 12th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). She has the following cleric spells prepared: Cantrips (at will): guidance, message, poison spray, resistance, thaumaturgy; 1st level (4 slots): bane, cure wounds, inflict wounds; 2nd level (3 slots): blindness/deafness, silence, spiritual weapon; 3rd level (3 slots): bestow curse, dispel magic, magic circle; 4th level (3 slots): banishment, divination, freedom of movement; 5th level (2 slots): contagion, dispel evil and good, insect plague; 6th level (1 slot): harm, true seeing."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The drow makes three death lance attacks."
+           },
+           {
+               Title: "Death Lance",
+               Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) piercing damage plus 18 (4d8) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage it takes. This reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Drow inquisitors are priestesses entrusted with rooting out treachery and disloyalty within drow society. Their authority is surpassed only by the matrons of the noble houses. They use interrogation, torture, divine magic, and their ability to recognize lies to hunt down those who threaten the established hierarchy."
+   },
+   { // Drow Matron Mother
+       ID: 598,
+       ProfileType: "Monster",
+       Name: "Drow Matron Mother",
+       Type: "Medium humanoid (elf), neutral evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [17, "half plate"],
+       HitPoints: 262,
+       HitPointsRoll: "35d8 + 105",
+       Speed: ["30 ft."],
+       Strength: 12,
+       Dexterity: 18,
+       Constitution: 16,
+       Intelligence: 17,
+       Wisdom: 21,
+       Charisma: 22,
+       SavingThrows: ["Constitution +9", "Wisdom +11", "Charisma +12"],
+       Skills: ["Insight +11", "Perception +11", "Religion +9", "Stealth +10"],
+       DamageVulnerabilities: [],
+       DamageResistances: [],
+       DamageImmunities: [],
+       ConditionImmunities: ["Charmed", "Frightened", "Poisoned"],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 21"],
+       Languages: ["Elvish", "Undercommon"],
+       Challenge: [20, 25000],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Fey Ancestry",
+               Desc: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+           },
+           {
+               Title: "Innate Spellcasting",
+               Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 20). She can innately cast the following spells, requiring no material components: At will: dancing lights, detect magic; 1/day each: clairvoyance, darkness, detect thoughts, dispel magic, faerie fire, levitate (self only), suggestion."
+           },
+           {
+               Title: "Lolth's Fickle Favor",
+               Desc: "As a bonus action, the matron can bestow the Spider Queen's blessing on one ally she can see within 30 feet of her. The ally takes 7 (2d6) psychic damage but has advantage on the next attack roll it makes until the end of its next turn."
+           },
+           {
+               Title: "Magic Resistance",
+               Desc: "The drow has advantage on saving throws against spells and other magical effects."
+           },
+           {
+               Title: "Spellcasting",
+               Desc: "The drow is a 20th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 19, +11 to hit with spell attacks). The drow has the following cleric spells prepared: Cantrips (at will): guidance, mending, resistance, sacred flame, thaumaturgy; 1st level (4 slots): bane, command, cure wounds, guiding bolt; 2nd level (3 slots): hold person, silence, spiritual weapon; 3rd level (3 slots): bestow curse, clairvoyance, dispel magic, spirit guardians; 4th level (3 slots): banishment, death ward, freedom of movement, guardian of faith; 5th level (3 slots): contagion, flame strike, geas, mass cure wounds; 6th level (2 slots): blade barrier, harm; 7th level (2 slots): divine word, plane shift; 8th level (1 slot): holy aura; 9th level (1 slot): gate."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The matron mother makes two demon staff attacks or three tentacle rod attacks."
+           },
+           {
+               Title: "Demon Staff",
+               Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage if used with two hands, plus 14 (4d6) psychic damage. In addition, the target must succeed on a DC 19 Wisdom saving throw or become frightened of the drow for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+           },
+           {
+               Title: "Tentacle Rod",
+               Desc: "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 3 (1d6) bludgeoning damage. If the target is hit three times by the rod on one turn, the target must succeed on a DC 15 Constitution saving throw or suffer the following effects for 1 minute: the target's speed is halved, it has disadvantage on Dexterity saving throws, and it can't use reactions. Moreover, on each of its turns, it can take either an action or a bonus action, but not both. At the end of each of its turns, it can repeat the saving throw, ending the effect on itself on a success."
+           },
+           {
+               Title: "Summon Servant (1/Day)",
+               Desc: "The drow magically summons a retriever or a yochlol. The summoned creature appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [
+           {
+               Title: "Demon Staff",
+               Desc: "The drow makes one attack with her demon staff."
+           },
+           {
+               Title: "Compel Demon (Costs 2 Actions)",
+               Desc: "An allied demon within 30 feet of the drow uses its reaction to make one attack against a target of the drow's choice that she can see."
+           },
+           {
+               Title: "Cast a Spell (Costs 1-3 Actions)",
+               Desc: "The drow expends a spell slot to cast a 1st-, 2nd-, or 3rd-level spell that she has prepared. Doing so costs 1 legendary action per level of the spell."
+           }
+       ],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "At the head of each drow noble house sits a matron mother, a powerful priestess of Lolth who must simultaneously carry out the Spider Queen's will and advance the interests of her family. Matron mothers sit at the center of intricate webs of drow, demons, spiders, and slaves. Their power depends upon maintaining Lolth's favor, which the Spider Queen can grant or withdraw capriciously."
+   },
+   { // Drow Shadowblade
+       ID: 599,
+       ProfileType: "Monster",
+       Name: "Drow Shadowblade",
+       Type: "Medium humanoid (elf), neutral evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [17, "studded leather"],
+       HitPoints: 150,
+       HitPointsRoll: "20d8 + 60",
+       Speed: ["30 ft."],
+       Strength: 14,
+       Dexterity: 21,
+       Constitution: 16,
+       Intelligence: 12,
+       Wisdom: 14,
+       Charisma: 13,
+       SavingThrows: ["Dexterity +9", "Constitution +7", "Wisdom +6"],
+       Skills: ["Perception +6", "Stealth +9"],
+       DamageVulnerabilities: [],
+       DamageResistances: [],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 16"],
+       Languages: ["Elvish", "Undercommon"],
+       Challenge: [11, 7200],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Fey Ancestry",
+               Desc: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+           },
+           {
+               Title: "Innate Spellcasting",
+               Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components: At will: dancing lights; 1/day each: darkness, faerie fire, levitate (self only)."
+           },
+           {
+               Title: "Shadow Step",
+               Desc: "While in dim light or darkness, the drow can teleport as a bonus action up to 60 feet to an unoccupied space it can see that is also in dim light or darkness. It then has advantage on the first melee attack it makes before the end of the turn."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The drow makes two attacks with its shadow sword. If either attack hits and the target is within 10 feet of a 5-foot cube of darkness created by the shadow sword on a previous turn, the drow can dismiss that darkness and cause the target to take 21 (6d6) necrotic damage. The drow can dismiss darkness in this way no more than once per turn."
+           },
+           {
+               Title: "Shadow Sword",
+               Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) piercing damage plus 10 (3d6) necrotic damage and 10 (3d6) poison damage. The drow can then fill an unoccupied 5-foot cube within 5 feet of the target with magical darkness, which remains for 1 minute."
+           },
+           {
+               Title: "Hand Crossbow",
+               Desc: "Ranged Weapon Attack: +9 to hit, range 30/120 ft., one target. Hit: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target regains consciousness if it takes damage or if another creature takes an action to shake it."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Drow shadowblades are ruthless killers who move unseen through the Underdark. Noble houses employ them to eliminate rivals, protect important locations, hunt thieves, and carry out other deadly assignments. Their shadow magic comes from a fiendish ritual that prevents a slain lesser demon from reforming in the Abyss, infusing the drow with the demon's shadow power."
+   },
+   { // Duergar Despot
+       ID: 600,
+       ProfileType: "Monster",
+       Name: "Duergar Despot",
+       Type: "Medium humanoid (dwarf), lawful evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [21, "natural armor"],
+       HitPoints: 119,
+       HitPointsRoll: "14d8 + 56",
+       Speed: ["25 ft."],
+       Strength: 20,
+       Dexterity: 5,
+       Constitution: 19,
+       Intelligence: 15,
+       Wisdom: 14,
+       Charisma: 13,
+       SavingThrows: ["Constitution +8", "Wisdom +6"],
+       Skills: [],
+       DamageVulnerabilities: [],
+       DamageResistances: [],
+       DamageImmunities: ["Poison"],
+       ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Poisoned"],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 12"],
+       Languages: ["Dwarvish", "Undercommon"],
+       Challenge: [12, 8400],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Innate Spellcasting (Psionics)",
+               Desc: "The duergar despot's innate spellcasting ability is Intelligence (spell save DC 12). It can cast the following spells, requiring no components: At will: mage hand, minor illusion; 1/day each: counterspell, misty step, stinking cloud."
+           },
+           {
+               Title: "Magic Resistance",
+               Desc: "The duergar has advantage on saving throws against spells and other magical effects."
+           },
+           {
+               Title: "Psychic Engine",
+               Desc: "When the duergar despot suffers a critical hit or is reduced to 0 hit points, psychic energy erupts from its frame to deal 14 (4d6) psychic damage to each creature within 5 feet of it."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the duergar despot has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The despot makes two iron fist attacks and two stomping foot attacks. It can replace up to four of these attacks with uses of its Flame Jet."
+           },
+           {
+               Title: "Iron Fist",
+               Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage. If the target is a Large or smaller creature, it must make a successful DC 17 Strength saving throw or be thrown up to 30 feet away in a straight line. The target lands prone and then takes 10 (3d6) bludgeoning damage."
+           },
+           {
+               Title: "Stomping Foot",
+               Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage, or 18 (3d8 + 5) to a prone target."
+           },
+           {
+               Title: "Flame Jet",
+               Desc: "The duergar spews flames in a line 100 feet long and 5 feet wide. Each creature in the line must make a DC 16 Dexterity saving throw, taking 18 (4d8) fire damage on a failed save, or half as much damage on a successful one."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Duergar despots replace parts of their bodies with mechanical devices controlled through their psionic abilities. The resulting constructs of flesh, metal, and machinery give these tyrants immense physical power. Their mechanical modifications are weapons as much as symbols of authority."
+   },
+   { // Duergar Hammerer
+       ID: 601,
+       ProfileType: "Monster",
+       Name: "Duergar Hammerer",
+       Type: "Medium construct, lawful evil",
+       TypeCategory: "Construct",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [17, "natural armor"],
+       HitPoints: 33,
+       HitPointsRoll: "6d8 + 6",
+       Speed: ["20 ft."],
+       Strength: 17,
+       Dexterity: 7,
+       Constitution: 12,
+       Intelligence: 5,
+       Wisdom: 5,
+       Charisma: 5,
+       SavingThrows: [],
+       Skills: [],
+       DamageVulnerabilities: [],
+       DamageResistances: [],
+       DamageImmunities: ["Poison"],
+       ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+       Senses: ["Darkvision 60 ft.", "Passive Perception 7"],
+       Languages: ["Understands Dwarvish but can't speak"],
+       Challenge: [2, 450],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Engine of Pain",
+               Desc: "Once per turn, a creature that attacks the hammerer can target the duergar trapped in it. The attacker has disadvantage on the attack roll. On a hit, the attack deals an extra 5 (1d10) damage to the hammerer, and the hammerer can respond by using its Multiattack with its reaction."
+           },
+           {
+               Title: "Siege Monster",
+               Desc: "The hammerer deals double damage to objects and structures."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The hammerer makes two attacks: one with its claw and one with its hammer."
+           },
+           {
+               Title: "Claw",
+               Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage."
+           },
+           {
+               Title: "Hammer",
+               Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "A duergar hammerer is a digging machine with a duergar strapped inside it, often as punishment for failing to meet expectations. The machine converts the captive's pain into energy, allowing the hammerer to dig tunnels and smash apart obstacles or intruders."
+   },
+   { // Duergar Kavalrachni
+       ID: 602,
+       ProfileType: "Monster",
+       Name: "Duergar Kavalrachni",
+       Type: "Medium humanoid (dwarf), lawful evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [16, "scale mail, shield"],
+       HitPoints: 26,
+       HitPointsRoll: "4d8 + 8",
+       Speed: ["25 ft."],
+       Strength: 14,
+       Dexterity: 11,
+       Constitution: 14,
+       Intelligence: 11,
+       Wisdom: 10,
+       Charisma: 9,
+       SavingThrows: [],
+       Skills: [],
+       DamageVulnerabilities: [],
+       DamageResistances: ["Poison"],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 10"],
+       Languages: ["Dwarvish", "Undercommon"],
+       Challenge: [2, 450],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Cavalry Training",
+               Desc: "When the duergar hits a target with a melee attack while mounted on a female steeder, the steeder can make one melee attack against the same target as a reaction."
+           },
+           {
+               Title: "Duergar Resilience",
+               Desc: "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The duergar makes two war pick attacks."
+           },
+           {
+               Title: "War Pick",
+               Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage plus 5 (2d4) poison damage."
+           },
+           {
+               Title: "Heavy Crossbow",
+               Desc: "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage."
+           },
+           {
+               Title: "Shared Invisibility (Recharges after a Short or Long Rest)",
+               Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it. While the invisible duergar is mounted on a female steeder, the steeder is invisible as well. The invisibility ends early on the steeder immediately after it attacks."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Duergar kavalrachni are cavalry trained to fight while mounted on female steeders. They use their mounts and psionic abilities to strike quickly and disappear, making them effective scouts and raiders in the Underdark."
+   },
+   { // Duergar Mind Master
+       ID: 603,
+       ProfileType: "Monster",
+       Name: "Duergar Mind Master",
+       Type: "Medium humanoid (dwarf), lawful evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [14, "leather armor"],
+       HitPoints: 39,
+       HitPointsRoll: "6d8 + 12",
+       Speed: ["25 ft."],
+       Strength: 11,
+       Dexterity: 17,
+       Constitution: 14,
+       Intelligence: 15,
+       Wisdom: 10,
+       Charisma: 12,
+       SavingThrows: ["Wisdom +2"],
+       Skills: ["Perception +2", "Stealth +5"],
+       DamageVulnerabilities: [],
+       DamageResistances: ["Poison"],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Darkvision 120 ft.", "Truesight 30 ft.", "Passive Perception 12"],
+       Languages: ["Dwarvish", "Undercommon"],
+       Challenge: [2, 450],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Duergar Resilience",
+               Desc: "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The duergar makes two melee attacks. It can replace one of those attacks with a use of Mind Mastery."
+           },
+           {
+               Title: "Mind-Poison Dagger",
+               Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage and 10 (3d6) psychic damage, or 1 piercing damage and 14 (4d6) psychic damage while reduced."
+           },
+           {
+               Title: "Invisibility (Recharge 4-6)",
+               Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Reduce, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+           },
+           {
+               Title: "Mind Mastery",
+               Desc: "The duergar targets one creature it can see within 60 feet of it. The target must succeed on a DC 12 Intelligence saving throw, or the duergar causes it to use its reaction either to make one weapon attack against another creature the duergar can see or to move up to 10 feet in a direction of the duergar's choice. Creatures that can't be charmed are immune to this effect."
+           },
+           {
+               Title: "Reduce (Recharges after a Short or Long Rest)",
+               Desc: "For 1 minute, the duergar magically decreases in size, along with anything it is wearing or carrying. While reduced, the duergar is Tiny, reduces its weapon damage to 1, and makes attacks, checks, and saving throws with disadvantage if they use Strength. It gains a +5 bonus to all Dexterity (Stealth) checks and a +5 bonus to its AC. It can also take a bonus action on each of its turns to take the Hide action."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Duergar mind masters are feared spies who operate inside and beyond duergar strongholds. Their psionic talents allow them to see through illusions, manipulate the actions of others, become invisible, and shrink themselves to miniature size for infiltration."
+   },
+   { // Duergar Screamer
+       ID: 604,
+       ProfileType: "Monster",
+       Name: "Duergar Screamer",
+       Type: "Medium construct, lawful evil",
+       TypeCategory: "Construct",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [15, "natural armor"],
+       HitPoints: 38,
+       HitPointsRoll: "7d8 + 7",
+       Speed: ["20 ft."],
+       Strength: 18,
+       Dexterity: 7,
+       Constitution: 12,
+       Intelligence: 5,
+       Wisdom: 5,
+       Charisma: 5,
+       SavingThrows: [],
+       Skills: [],
+       DamageVulnerabilities: [],
+       DamageResistances: [],
+       DamageImmunities: ["Poison"],
+       ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+       Senses: ["Darkvision 60 ft.", "Passive Perception 7"],
+       Languages: ["Understands Dwarvish but can't speak"],
+       Challenge: [3, 700],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Engine of Pain",
+               Desc: "Once per turn, a creature that attacks the screamer can target the duergar trapped in it. The attacker has disadvantage on the attack roll. On a hit, the attack deals an extra 11 (2d10) damage to the screamer, and the screamer can respond by using its Multiattack with its reaction."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The screamer makes one drill attack and uses its Sonic Scream."
+           },
+           {
+               Title: "Drill",
+               Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) piercing damage."
+           },
+           {
+               Title: "Sonic Scream",
+               Desc: "The screamer emits destructive energy in a 15-foot cube. Each creature in that area must succeed on a DC 11 Strength saving throw or take 7 (2d6) thunder damage and be knocked prone."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "A duergar screamer is a construct that uses sonic energy to grind rock into dust. Duergar accused of spreading gossip or plotting against their superiors can be imprisoned inside these devices, where their pain is converted into the psionic energy that powers the machine."
+   },
+   { // Duergar Soulblade
+       ID: 605,
+       ProfileType: "Monster",
+       Name: "Duergar Soulblade",
+       Type: "Medium humanoid (dwarf), lawful evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [14, "leather armor"],
+       HitPoints: 18,
+       HitPointsRoll: "4d8",
+       Speed: ["25 ft."],
+       Strength: 11,
+       Dexterity: 16,
+       Constitution: 10,
+       Intelligence: 11,
+       Wisdom: 10,
+       Charisma: 12,
+       SavingThrows: [],
+       Skills: [],
+       DamageVulnerabilities: [],
+       DamageResistances: ["Poison"],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 10"],
+       Languages: ["Dwarvish", "Undercommon"],
+       Challenge: [1, 200],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Duergar Resilience",
+               Desc: "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+           },
+           {
+               Title: "Create Soulblade",
+               Desc: "As a bonus action, the duergar can create a shortsword-sized, visible blade of psionic energy. The weapon appears in the duergar's hand and vanishes if it leaves the duergar's grip, or if the duergar dies or is incapacitated."
+           },
+           {
+               Title: "Innate Spellcasting (Psionics)",
+               Desc: "The duergar's innate spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It can innately cast the following spells, requiring no components: At will: blade ward, true strike; 3/day each: jump, hunter's mark."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Soulblade",
+               Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) force damage, or 10 (2d6 + 3) force damage while enlarged. If the soulblade has advantage on the attack roll, the attack deals an extra 3 (1d6) force damage."
+           },
+           {
+               Title: "Enlarge (Recharges after a Short or Long Rest)",
+               Desc: "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+           },
+           {
+               Title: "Invisibility (Recharges after a Short or Long Rest)",
+               Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Duergar soulblades are warriors who have mastered the use of psionics to manifest blades of psychic energy. They combine this supernatural weapon with the ability to grow larger and disappear from sight, making them dangerous skirmishers."
+   },
+   { // Duergar Stone Guard
+       ID: 606,
+       ProfileType: "Monster",
+       Name: "Duergar Stone Guard",
+       Type: "Medium humanoid (dwarf), lawful evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [18, "chain mail, shield"],
+       HitPoints: 39,
+       HitPointsRoll: "6d8 + 12",
+       Speed: ["25 ft."],
+       Strength: 18,
+       Dexterity: 11,
+       Constitution: 14,
+       Intelligence: 11,
+       Wisdom: 10,
+       Charisma: 9,
+       SavingThrows: [],
+       Skills: [],
+       DamageVulnerabilities: [],
+       DamageResistances: ["Poison"],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 10"],
+       Languages: ["Dwarvish", "Undercommon"],
+       Challenge: [2, 450],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Duergar Resilience",
+               Desc: "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+           },
+           {
+               Title: "Phalanx Formation",
+               Desc: "The duergar has advantage on attack rolls and Dexterity saving throws while standing within 5 feet of a duergar ally wielding a shield."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "King's Knife (Shortsword)",
+               Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 11 (2d6 + 4) piercing damage while enlarged."
+           },
+           {
+               Title: "Javelin",
+               Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 11 (2d6 + 4) piercing damage while enlarged."
+           },
+           {
+               Title: "Enlarge (Recharges after a Short or Long Rest)",
+               Desc: "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+           },
+           {
+               Title: "Invisibility (Recharges after a Short or Long Rest)",
+               Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Duergar stone guards are elite troops deployed in small numbers to strengthen ordinary war bands or organized into strike forces for specialized missions. Their heavy armor, shields, and disciplined formations make them particularly effective when fighting alongside other duergar."
+   },
+   { // Duergar Warlord
+       ID: 607,
+       ProfileType: "Monster",
+       Name: "Duergar Warlord",
+       Type: "Medium humanoid (dwarf), lawful evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [20, "plate mail, shield"],
+       HitPoints: 75,
+       HitPointsRoll: "10d8 + 30",
+       Speed: ["25 ft."],
+       Strength: 18,
+       Dexterity: 11,
+       Constitution: 17,
+       Intelligence: 12,
+       Wisdom: 12,
+       Charisma: 14,
+       SavingThrows: [],
+       Skills: [],
+       DamageVulnerabilities: [],
+       DamageResistances: ["Poison"],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 11"],
+       Languages: ["Dwarvish", "Undercommon"],
+       Challenge: [6, 2300],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Duergar Resilience",
+               Desc: "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The duergar makes three hammer or javelin attacks and uses Call to Attack, or Enlarge if it is available."
+           },
+           {
+               Title: "Psychic-Attuned Hammer",
+               Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage, or 15 (2d10 + 4) bludgeoning damage while enlarged, plus 5 (1d10) psychic damage."
+           },
+           {
+               Title: "Javelin",
+               Desc: "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 11 (2d6 + 4) piercing damage while enlarged."
+           },
+           {
+               Title: "Call to Attack",
+               Desc: "Up to three allied duergar within 120 feet of this duergar that can hear it can each use their reaction to make one weapon attack."
+           },
+           {
+               Title: "Enlarge (Recharges after a Short or Long Rest)",
+               Desc: "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+           },
+           {
+               Title: "Invisibility (Recharge 4-6)",
+               Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+           }
+       ],
+       BonusActions: [],
+       Reactions: [
+           {
+               Title: "Scouring Instruction",
+               Desc: "When an ally that the duergar can see makes a d20 roll, the duergar can roll a d6 and the ally can add the number rolled to the d20 roll by taking 3 (1d6) psychic damage. A creature immune to psychic damage can't be affected by Scouring Instruction."
+           }
+       ],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "A duergar warlord is a cunning, inspiring, and cruel battlefield leader. Skilled warriors who command other duergar, warlords use psionic energy to compel their troops to fight harder and coordinate their attacks."
+   },
+   { // Duergar Xarrorn
+       ID: 608,
+       ProfileType: "Monster",
+       Name: "Duergar Xarrorn",
+       Type: "Medium humanoid (dwarf), lawful evil",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Mordenkainen's Tome of Foes",
+       ArmorClass: [18, "plate mail"],
+       HitPoints: 26,
+       HitPointsRoll: "4d8 + 8",
+       Speed: ["25 ft."],
+       Strength: 16,
+       Dexterity: 11,
+       Constitution: 14,
+       Intelligence: 11,
+       Wisdom: 10,
+       Charisma: 9,
+       SavingThrows: [],
+       Skills: [],
+       DamageVulnerabilities: [],
+       DamageResistances: ["Poison"],
+       DamageImmunities: [],
+       ConditionImmunities: [],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 10"],
+       Languages: ["Dwarvish", "Undercommon"],
+       Challenge: [2, 450],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Duergar Resilience",
+               Desc: "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+           },
+           {
+               Title: "Sunlight Sensitivity",
+               Desc: "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Fire Lance",
+               Desc: "Melee Weapon Attack: +5 to hit (with disadvantage if the target is within 5 feet of the duergar), reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage plus 3 (1d6) fire damage, or 16 (2d12 + 3) piercing damage plus 3 (1d6) fire damage while enlarged."
+           },
+           {
+               Title: "Fire Spray (Recharge 5-6)",
+               Desc: "From its fire lance, the duergar shoots a 15-foot cone of fire or a line of fire 30 feet long and 5 feet wide. Each creature in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one."
+           },
+           {
+               Title: "Enlarge (Recharges after a Short or Long Rest)",
+               Desc: "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+           },
+           {
+               Title: "Invisibility (Recharges after a Short or Long Rest)",
+               Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+           }
+       ],
+       Reactions: [],
+       LegendaryActions: [],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "Duergar xarrorn are specialists who construct weapons using a combination of alchemy and psionics. Their signature fire lances can strike at reach and unleash blasts of flame, making the xarrorn dangerous specialists on the battlefield."
+   },
 
 
 
@@ -32262,88 +33190,97 @@ const monstersLocal = [
 
 
 
-    { // World Agent
-        ID: 999,
-        ProfileType: "Monster",
-        Name: "World Agent",
-        Type: "Medium humanoid, neutral",
-        TypeCategory: "Humanoid",
-        Size: "Medium",
-        Source: "Homebrew",
-        ArmorClass: [20, "Supernatural reflexes"],
-        HitPoints: 420,
-        HitPointsRoll: "40d8 + 240",
-        Speed: ["60 ft.", "fly 100 ft."],
-        Strength: 20,
-        Dexterity: 22,
-        Constitution: 22,
-        Intelligence: 16,
-        Wisdom: 18,
-        Charisma: 16,
-        SavingThrows: ["Dexterity +11", "Constitution +11", "Wisdom +9"],
-        Skills: ["Perception +9", "Insight +9", "Athletics +10", "Acrobatics +11"],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Psychic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
-        DamageImmunities: ["Poison", "Necrotic"],
-        ConditionImmunities: ["Charmed", "Frightened", "Paralyzed", "Poisoned", "Unconscious"],
-        Senses: ["Darkvision 120 ft.", "Passive Perception 19"],
-        Languages: ["All"],
-        Challenge: [17, 18000],
-        ExtraRewards: "",
-        Traits: [
-            {
-                Title: "Phase Movement",
-                Desc: "The World Agent can move through creatures and objects as if they were difficult terrain, ignoring movement penalties. It takes 5 (1d10) force damage if it ends its turn inside a solid object."
-            },
-            {
-                Title: "Wall Running",
-                Desc: "The World Agent can move along vertical surfaces and ceilings without needing to make checks or use magic. It must end its movement on a horizontal surface, or it will fall as normal."
-            },
-            {
-                Title: "Impossible Leap",
-                Desc: "The World Agent's standing long jump is up to 30 feet, and its high jump is up to 20 feet, with or without a running start. This movement ignores opportunity attacks."
-            },
-            {
-                Title: "Unstoppable Stride",
-                Desc: "When the World Agent moves within 5 feet of a closed nonmagical door, barrier, or window, it can choose to automatically destroy it. The object shatters, breaks, or swings open unless it is magically sealed or reinforced beyond 50 hit points."
-            }
-        ],
-        Actions: [
-            {
-                Title: "Multiattack",
-                Desc: "The World Agent makes two Unarmed Strikes."
-            },
-            {
-                Title: "Unarmed Strike",
-                Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage. If the target is Large or smaller, they must succeed on a DC 18 Strength saving throw or be knocked prone."
-            },
-            {
-                Title: "Handgun Barrage",
-                Desc: "Ranged Weapon Attack: +11 to hit, range 60/180 ft., one target. The World Agent makes 7 handgun attacks (standard magazine size of a Glock 17). Each hit deals 10 (2d6 + 3) piercing damage. If at least 4 shots hit a single target, the target must succeed on a DC 18 Constitution saving throw or be staggered (movement halved, disadvantage on Dexterity saves) until the end of its next turn."
-            }
-        ],
-        Reactions: [
-            {
-                Title: "Bullet Time",
-                Desc: "The World Agent can use its reaction to halve the damage from a ranged weapon attack or automatically succeed on a Dexterity saving throw."
-            }
-        ],
-        BonusActions: [
-            {
-                Title: "Glitch Dash",
-                Desc: "The World Agent can Dash. During this movement, it does not provoke opportunity attacks and can move through enemy spaces as if they were difficult terrain. If the Agent moves through a creature's space during this dash, that creature must succeed on a DC 18 Dexterity saving throw or be knocked prone by the shockwave of the passing force."
-            }
-        ],
-        LegendaryActions: [
-            {
-                Title: "Attack",
-                Desc: "The World Agent makes one Unarmed Strike."
-            }
-        ],
-        RegionalEffects: [],
-        LairActions: [],
-        Description: "A man in a perfectly pressed black suit stands motionless in the center of the room—clean-cut hair, polished shoes, and mirrored sunglasses that somehow reflect your faces even in the low light. There's something wrong about him. He doesn't blink. He doesn't breathe. It's like he's waiting for the world to catch up to him. Without turning his head, he speaks in a calm, unfeeling voice that echoes in your skull more than your ears: \"Unauthorized entities detected. System anomaly in progress. Initiating correction protocol.\" His body twitches—not naturally, but like a puppet yanked by a string—and in a single frame, he's no longer standing; he's walking toward you, fast, smooth, unstoppable. Walls and obstacles don't matter; he moves through them like they aren't real. As he raises a black handgun—no glowing runes, no arcane sigils, just matte steel and deadly intent—it's clear: this isn't a person. This is the system's immune response."
-    },
+
+
+
+
+
+
+
+
+   { // World Agent
+       ID: 999,
+       ProfileType: "Monster",
+       Name: "World Agent",
+       Type: "Medium humanoid, neutral",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Homebrew",
+       ArmorClass: [20, "Supernatural reflexes"],
+       HitPoints: 420,
+       HitPointsRoll: "40d8 + 240",
+       Speed: ["60 ft.", "fly 100 ft."],
+       Strength: 20,
+       Dexterity: 22,
+       Constitution: 22,
+       Intelligence: 16,
+       Wisdom: 18,
+       Charisma: 16,
+       SavingThrows: ["Dexterity +11", "Constitution +11", "Wisdom +9"],
+       Skills: ["Perception +9", "Insight +9", "Athletics +10", "Acrobatics +11"],
+       DamageVulnerabilities: [],
+       DamageResistances: ["Psychic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+       DamageImmunities: ["Poison", "Necrotic"],
+       ConditionImmunities: ["Charmed", "Frightened", "Paralyzed", "Poisoned", "Unconscious"],
+       Senses: ["Darkvision 120 ft.", "Passive Perception 19"],
+       Languages: ["All"],
+       Challenge: [17, 18000],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Phase Movement",
+               Desc: "The World Agent can move through creatures and objects as if they were difficult terrain, ignoring movement penalties. It takes 5 (1d10) force damage if it ends its turn inside a solid object."
+           },
+           {
+               Title: "Wall Running",
+               Desc: "The World Agent can move along vertical surfaces and ceilings without needing to make checks or use magic. It must end its movement on a horizontal surface, or it will fall as normal."
+           },
+           {
+               Title: "Impossible Leap",
+               Desc: "The World Agent's standing long jump is up to 30 feet, and its high jump is up to 20 feet, with or without a running start. This movement ignores opportunity attacks."
+           },
+           {
+               Title: "Unstoppable Stride",
+               Desc: "When the World Agent moves within 5 feet of a closed nonmagical door, barrier, or window, it can choose to automatically destroy it. The object shatters, breaks, or swings open unless it is magically sealed or reinforced beyond 50 hit points."
+           }
+       ],
+       Actions: [
+           {
+               Title: "Multiattack",
+               Desc: "The World Agent makes two Unarmed Strikes."
+           },
+           {
+               Title: "Unarmed Strike",
+               Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage. If the target is Large or smaller, they must succeed on a DC 18 Strength saving throw or be knocked prone."
+           },
+           {
+               Title: "Handgun Barrage",
+               Desc: "Ranged Weapon Attack: +11 to hit, range 60/180 ft., one target. The World Agent makes 7 handgun attacks (standard magazine size of a Glock 17). Each hit deals 10 (2d6 + 3) piercing damage. If at least 4 shots hit a single target, the target must succeed on a DC 18 Constitution saving throw or be staggered (movement halved, disadvantage on Dexterity saves) until the end of its next turn."
+           }
+       ],
+       Reactions: [
+           {
+               Title: "Bullet Time",
+               Desc: "The World Agent can use its reaction to halve the damage from a ranged weapon attack or automatically succeed on a Dexterity saving throw."
+           }
+       ],
+       BonusActions: [
+           {
+               Title: "Glitch Dash",
+               Desc: "The World Agent can Dash. During this movement, it does not provoke opportunity attacks and can move through enemy spaces as if they were difficult terrain. If the Agent moves through a creature's space during this dash, that creature must succeed on a DC 18 Dexterity saving throw or be knocked prone by the shockwave of the passing force."
+           }
+       ],
+       LegendaryActions: [
+           {
+               Title: "Attack",
+               Desc: "The World Agent makes one Unarmed Strike."
+           }
+       ],
+       RegionalEffects: [],
+       LairActions: [],
+       Description: "A man in a perfectly pressed black suit stands motionless in the center of the room—clean-cut hair, polished shoes, and mirrored sunglasses that somehow reflect your faces even in the low light. There's something wrong about him. He doesn't blink. He doesn't breathe. It's like he's waiting for the world to catch up to him. Without turning his head, he speaks in a calm, unfeeling voice that echoes in your skull more than your ears: \"Unauthorized entities detected. System anomaly in progress. Initiating correction protocol.\" His body twitches—not naturally, but like a puppet yanked by a string—and in a single frame, he's no longer standing; he's walking toward you, fast, smooth, unstoppable. Walls and obstacles don't matter; he moves through them like they aren't real. As he raises a black handgun—no glowing runes, no arcane sigils, just matte steel and deadly intent—it's clear: this isn't a person. This is the system's immune response."
+   },
+
 
 ];
 
@@ -33241,585 +34178,6 @@ const uniqueLocal = [
             "Zuggtmoy uses either her Infestation Spores or her Mind Control Spores, centered on a mushroom or other fungus within her lair, instead of on herself."
         ],
         Description: "Zuggtmoy, the Demon Queen of Fungi and Lady of Rot and Decay, is an alien fungal entity that seeks to infect living creatures with spores and transform them into extensions of her will. She can mold her fungoid body into an approximation of humanoid form, including the skeletal-thin figure depicted in ancient art, draped in mycelia and lichen. Her cultists are often unknowingly infected, gradually becoming creatures in which flesh and fungus merge. Zuggtmoy's principal lair is a palace on Shedaklah made from enormous pale-yellow and rancid-brown mushrooms, surrounded by acidic puffballs and poisonous vapors."
-    },
-    { // Bael
-        ID: 100010,
-        ProfileType: "Unique",
-        Name: "Bael",
-        Type: "Large fiend (devil), lawful evil",
-        TypeCategory: "Fiend",
-        Size: "Large",
-        Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: [18, "plate"],
-        HitPoints: 189,
-        HitPointsRoll: "18d10 + 90",
-        Speed: ["30 ft."],
-        Strength: 24,
-        Dexterity: 17,
-        Constitution: 20,
-        Intelligence: 21,
-        Wisdom: 24,
-        Charisma: 24,
-        SavingThrows: ["Dexterity +9", "Constitution +11", "Intelligence +11", "Charisma +13"],
-        Skills: ["Intimidation +13", "Perception +13", "Persuasion +13"],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
-        DamageImmunities: ["Fire", "Poison"],
-        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
-        Senses: ["Truesight 120 ft.", "Passive Perception 23"],
-        Languages: ["All", "Telepathy 120 ft."],
-        Challenge: [19, 22000],
-        ExtraRewards: "",
-        Traits: [
-            {
-                Title: "Dreadful",
-                Desc: "Bael can use a bonus action to appear dreadful until the start of his next turn. Each creature, other than a devil, that starts its turn within 10 feet of Bael must succeed on a DC 22 Wisdom saving throw or be frightened until the start of the creature's next turn."
-            },
-            {
-                Title: "Innate Spellcasting",
-                Desc: "Bael's innate spellcasting ability is Charisma (spell save DC 21, +13 to hit with spell attacks). He can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing his appearance), animate dead, charm person, detect magic, inflict wounds (as an 8th-level spell), invisibility (self only), major image; 3/day each: counterspell, dispel magic, fly, suggestion, wall of fire; 1/day each: dominate monster, symbol (stunning only)."
-            },
-            {
-                Title: "Legendary Resistance (3/Day)",
-                Desc: "If Bael fails a saving throw, he can choose to succeed instead."
-            },
-            {
-                Title: "Magic Resistance",
-                Desc: "Bael has advantage on saving throws against spells and other magical effects."
-            },
-            {
-                Title: "Magic Weapons",
-                Desc: "Bael's weapon attacks are magical."
-            },
-            {
-                Title: "Regeneration",
-                Desc: "Bael regains 20 hit points at the start of his turn. If he takes cold or radiant damage, this trait doesn't function at the start of his next turn. Bael dies only if he starts his turn with 0 hit points and doesn't regenerate."
-            }
-        ],
-        Actions: [
-            {
-                Title: "Multiattack",
-                Desc: "Bael makes two melee attacks."
-            },
-            {
-                Title: "Hellish Morningstar",
-                Desc: "Melee Weapon Attack: +13 to hit, reach 20 ft., one target. Hit: 16 (2d8 + 7) piercing damage plus 13 (3d8) necrotic damage."
-            },
-            {
-                Title: "Infernal Command",
-                Desc: "Each ally of Bael's within 60 feet of him can't be charmed or frightened until the end of his next turn."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Bael magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
-            }
-        ],
-        Reactions: [],
-        LegendaryActions: [
-            {
-                Title: "Attack (Costs 2 Actions)",
-                Desc: "Bael attacks once with his hellish morningstar."
-            },
-            {
-                Title: "Awaken Greed",
-                Desc: "Bael casts charm person or major image."
-            },
-            {
-                Title: "Infernal Command",
-                Desc: "Bael uses his Infernal Command action."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Bael uses his Teleport action."
-            }
-        ],
-        RegionalEffects: [],
-        LairActions: [],
-        Description: "Bael is a powerful archdevil and one of Mammon's most important vassals, known as the Bronze General. He is a tactical genius who commands sixty-six companies of barbed devils and has won fame through repeated victories in the Blood War. Bael is a large, bronze-skinned devil whose true appearance is unlike the toad, cat, or humanoid forms sometimes used to depict him. He prefers to make servants of defeated adversaries, sparing those who pledge their souls and service to him, while destroying demons he defeats."
-    },
-    { // Geryon
-        ID: 100011,
-        ProfileType: "Unique",
-        Name: "Geryon",
-        Type: "Huge fiend (devil), lawful evil",
-        TypeCategory: "Fiend",
-        Size: "Huge",
-        Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: [19, "natural armor"],
-        HitPoints: 300,
-        HitPointsRoll: "24d12 + 144",
-        Speed: ["30 ft.", "fly 50 ft."],
-        Strength: 29,
-        Dexterity: 17,
-        Constitution: 22,
-        Intelligence: 19,
-        Wisdom: 16,
-        Charisma: 23,
-        SavingThrows: ["Dexterity +10", "Constitution +13", "Wisdom +10", "Charisma +13"],
-        Skills: ["Deception +13", "Intimidation +13", "Perception +10"],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
-        DamageImmunities: ["Cold", "Fire", "Poison"],
-        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
-        Senses: ["Truesight 120 ft.", "Passive Perception 20"],
-        Languages: ["All", "Telepathy 120 ft."],
-        Challenge: [22, 41000],
-        ExtraRewards: "",
-        Traits: [
-            {
-                Title: "Innate Spellcasting",
-                Desc: "Geryon's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing his appearance), detect magic, geas, ice storm, invisibility (self only), locate object, suggestion, wall of ice; 1/day each: divine word, symbol (pain only)."
-            },
-            {
-                Title: "Legendary Resistance (3/Day)",
-                Desc: "If Geryon fails a saving throw, he can choose to succeed instead."
-            },
-            {
-                Title: "Magic Resistance",
-                Desc: "Geryon has advantage on saving throws against spells and other magical effects."
-            },
-            {
-                Title: "Magic Weapons",
-                Desc: "Geryon's weapon attacks are magical."
-            },
-            {
-                Title: "Regeneration",
-                Desc: "Geryon regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Geryon dies only if he starts his turn with 0 hit points and doesn't regenerate."
-            }
-        ],
-        Actions: [
-            {
-                Title: "Multiattack",
-                Desc: "Geryon makes two attacks: one with his claws and one with his stinger."
-            },
-            {
-                Title: "Claws",
-                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 23 (4d6 + 9) slashing damage. If the target is Large or smaller, it is grappled (DC 24) and restrained until the grapple ends. Geryon can grapple one creature at a time. If the target is already grappled by Geryon, the target takes an extra 27 (6d8) slashing damage."
-            },
-            {
-                Title: "Stinger",
-                Desc: "Melee Weapon Attack: +16 to hit, reach 20 ft., one creature. Hit: 14 (2d4 + 9) piercing damage, and the target must succeed on a DC 21 Constitution saving throw or take 13 (2d12) poison damage and become poisoned until it finishes a short or long rest. The target's hit point maximum is reduced by an amount equal to half the poison damage it takes. If its hit point maximum drops to 0, it dies. This reduction lasts until the poisoned condition is removed."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Geryon magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
-            },
-            {
-                Title: "Sound the Horn (1/Day)",
-                Desc: "Geryon blows his horn, which causes 5d4 minotaurs to appear in unoccupied spaces of his choice within 600 feet of him. The minotaurs roll initiative when they appear. They remain until they die or Geryon uses an action to dismiss any or all of them."
-            }
-        ],
-        Reactions: [],
-        LegendaryActions: [
-            {
-                Title: "Infernal Glare",
-                Desc: "Geryon targets one creature he can see within 60 feet of him. If the target can see Geryon, the target must succeed on a DC 23 Wisdom saving throw or become frightened of Geryon until the end of its next turn."
-            },
-            {
-                Title: "Swift Sting (Costs 2 Actions)",
-                Desc: "Geryon attacks with his stinger."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Geryon uses his Teleport action."
-            }
-        ],
-        RegionalEffects: [
-            "Intelligent creatures within 1 mile of the lair frequently see shimmering portals leading to places they consider safe. Passing through a portal always deposits a traveler somewhere in Stygia.",
-            "Freezing strong winds howl around the area within 1 mile of the lair.",
-            "Howls and screams fill the air within 1 mile of the lair. Any creature that finishes a short or long rest in this area must succeed on a DC 21 Wisdom saving throw or derive no benefit from the rest. If Geryon dies, these effects fade over the course of 1d10 days."
-        ],
-        LairActions: [
-            "Geryon causes a blast of cold to burst from the ground at a point he can see within 120 feet of him. The cold fills a cube, 10 feet on each side, centered on that point. Each creature in that area must succeed on a DC 21 Constitution saving throw or take 28 (8d6) cold damage.",
-            "Geryon targets one creature he can see within 60 feet of him. The target must succeed on a DC 21 Wisdom saving throw or become restrained for 1 minute. The target can end the effect on itself if it deals any damage to one or more of its allies.",
-            "Geryon casts the banishment spell."
-        ],
-        Description: "Geryon is an enormous, bestial archdevil locked in an endless struggle with Levistus for control of Stygia. He is a ferocious hunter and relentless tracker, taking particular pleasure in tearing enemies apart with his claws and tasting their blood. Geryon currently resides in his ancient fortress, Coldsteel, where he commands ice devils and minotaur slaves and schemes to reclaim his standing in the infernal hierarchy."
-    },
-    { // Hutijin
-        ID: 100012,
-        ProfileType: "Unique",
-        Name: "Hutijin",
-        Type: "Large fiend (devil), lawful evil",
-        TypeCategory: "Fiend",
-        Size: "Large",
-        Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: [19, "natural armor"],
-        HitPoints: 200,
-        HitPointsRoll: "16d10 + 112",
-        Speed: ["30 ft.", "fly 60 ft."],
-        Strength: 27,
-        Dexterity: 15,
-        Constitution: 25,
-        Intelligence: 23,
-        Wisdom: 19,
-        Charisma: 25,
-        SavingThrows: ["Dexterity +9", "Constitution +14", "Wisdom +11"],
-        Skills: ["Intimidation +14", "Perception +11"],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
-        DamageImmunities: ["Fire", "Poison"],
-        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
-        Senses: ["Truesight 120 ft.", "Passive Perception 21"],
-        Languages: ["All", "Telepathy 120 ft."],
-        Challenge: [21, 33000],
-        ExtraRewards: "",
-        Traits: [
-            {
-                Title: "Infernal Despair",
-                Desc: "Each creature within 15 feet of Hutijin that isn't a devil makes saving throws with disadvantage."
-            },
-            {
-                Title: "Innate Spellcasting",
-                Desc: "Hutijin's innate spellcasting ability is Charisma (spell save DC 22). He can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing his appearance), animate dead, detect magic, hold monster, invisibility (self only), lightning bolt, suggestion, wall of fire; 3/day: dispel magic; 1/day each: heal, symbol (hopelessness only)."
-            },
-            {
-                Title: "Legendary Resistance (3/Day)",
-                Desc: "If Hutijin fails a saving throw, he can choose to succeed instead."
-            },
-            {
-                Title: "Magic Resistance",
-                Desc: "Hutijin has advantage on saving throws against spells and other magical effects."
-            },
-            {
-                Title: "Magic Weapons",
-                Desc: "Hutijin's weapon attacks are magical."
-            },
-            {
-                Title: "Regeneration",
-                Desc: "Hutijin regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Hutijin dies only if he starts his turn with 0 hit points and doesn't regenerate."
-            }
-        ],
-        Actions: [
-            {
-                Title: "Multiattack",
-                Desc: "Hutijin makes four attacks: one with his bite, one with his claw, one with his mace, and one with his tail."
-            },
-            {
-                Title: "Bite",
-                Desc: "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) piercing damage. The target must succeed on a DC 22 Constitution saving throw or become poisoned. While poisoned in this way, the target can't regain hit points, and it takes 10 (3d6) poison damage at the start of each of its turns. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-            },
-            {
-                Title: "Claw",
-                Desc: "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) slashing damage."
-            },
-            {
-                Title: "Mace",
-                Desc: "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) bludgeoning damage."
-            },
-            {
-                Title: "Tail",
-                Desc: "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) bludgeoning damage."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Hutijin magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
-            }
-        ],
-        Reactions: [
-            {
-                Title: "Fearful Voice (Recharge 5-6)",
-                Desc: "In response to taking damage, Hutijin utters a dreadful word of power. Each creature within 30 feet of him that isn't a devil must succeed on a DC 22 Wisdom saving throw or become frightened of him for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that saves against this effect is immune to Hutijin's Fearful Voice for 24 hours."
-            }
-        ],
-        LegendaryActions: [
-            {
-                Title: "Attack",
-                Desc: "Hutijin attacks once with his mace."
-            },
-            {
-                Title: "Lightning Storm (Costs 2 Actions)",
-                Desc: "Hutijin releases lightning in a 20-foot radius. All other creatures in that area must each make a DC 22 Dexterity saving throw, taking 18 (4d8) lightning damage on a failed save, or half as much damage on a successful one."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Hutijin uses his Teleport action."
-            }
-        ],
-        RegionalEffects: [],
-        LairActions: [],
-        Description: "Hutijin is a duke of Cania and a loyal servant of Mephistopheles who commands two companies of pit fiends. He is feared throughout the Nine Hells and despises mortals, often repaying those who summon him with death after first negotiating whatever bargain they seek. Hutijin is a massive, powerful devil whose strength and magical abilities make him one of the most formidable servants of Mephistopheles."
-    },
-    { // Moloch
-        ID: 100013,
-        ProfileType: "Unique",
-        Name: "Moloch",
-        Type: "Large fiend (devil), lawful evil",
-        TypeCategory: "Fiend",
-        Size: "Large",
-        Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: [19, "natural armor"],
-        HitPoints: 253,
-        HitPointsRoll: "22d10 + 132",
-        Speed: ["30 ft."],
-        Strength: 26,
-        Dexterity: 19,
-        Constitution: 22,
-        Intelligence: 21,
-        Wisdom: 18,
-        Charisma: 23,
-        SavingThrows: ["Dexterity +11", "Constitution +13", "Wisdom +11", "Charisma +13"],
-        Skills: ["Deception +13", "Intimidation +13", "Perception +11"],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
-        DamageImmunities: ["Fire", "Poison"],
-        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
-        Senses: ["Darkvision 120 ft.", "Passive Perception 21"],
-        Languages: ["All", "Telepathy 120 ft."],
-        Challenge: [21, 33000],
-        ExtraRewards: "",
-        Traits: [
-            {
-                Title: "Innate Spellcasting",
-                Desc: "Moloch's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing his appearance), animate dead, burning hands (as a 7th-level spell), confusion, detect magic, fly, geas, major image, stinking cloud, suggestion, wall of fire; 1/day each: flame strike, symbol (stunning only)."
-            },
-            {
-                Title: "Legendary Resistance (3/Day)",
-                Desc: "If Moloch fails a saving throw, he can choose to succeed instead."
-            },
-            {
-                Title: "Magic Resistance",
-                Desc: "Moloch has advantage on saving throws against spells and other magical effects."
-            },
-            {
-                Title: "Magic Weapons",
-                Desc: "Moloch's weapon attacks are magical."
-            },
-            {
-                Title: "Regeneration",
-                Desc: "Moloch regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Moloch dies only if he starts his turn with 0 hit points and doesn't regenerate."
-            }
-        ],
-        Actions: [
-            {
-                Title: "Multiattack",
-                Desc: "Moloch makes three attacks: one with his bite, one with his claw, and one with his whip."
-            },
-            {
-                Title: "Bite",
-                Desc: "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 26 (4d8 + 8) piercing damage."
-            },
-            {
-                Title: "Claw",
-                Desc: "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) slashing damage."
-            },
-            {
-                Title: "Many-Tailed Whip",
-                Desc: "Melee Weapon Attack: +15 to hit, reach 30 ft., one target. Hit: 13 (2d4 + 8) slashing damage plus 11 (2d10) lightning damage. If the target is a creature, it must succeed on a DC 24 Strength saving throw or be pulled up to 30 feet in a straight line toward Moloch."
-            },
-            {
-                Title: "Breath of Despair (Recharge 5-6)",
-                Desc: "Moloch exhales in a 30-foot cube. Each creature in that area must succeed on a DC 21 Wisdom saving throw or take 27 (5d10) psychic damage, drop whatever it is holding, and become frightened for 1 minute. While frightened in this way, a creature must take the Dash action and move away from Moloch by the safest available route on each of its turns, unless there is nowhere to move, in which case it needn't take the Dash action. If the creature ends its turn in a location where it doesn't have line of sight to Moloch, the creature can repeat the saving throw. On a success, the effect ends."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Moloch magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
-            }
-        ],
-        Reactions: [],
-        LegendaryActions: [
-            {
-                Title: "Stinking Cloud",
-                Desc: "Moloch casts stinking cloud."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Moloch uses his Teleport action."
-            },
-            {
-                Title: "Whip",
-                Desc: "Moloch makes one attack with his whip."
-            }
-        ],
-        RegionalEffects: [],
-        LairActions: [],
-        Description: "Moloch is an exiled archdevil who once ruled Malbolge before a failed conspiracy against Asmodeus stripped him of his station. He now wanders the planes seeking the power and resources needed to reclaim his former position. In the Nine Hells he is magically reduced to an imp, regaining his full power only after leaving the Hells, and he frequently bargains with mortals for the wealth and knowledge he needs to rebuild his strength."
-    },
-    { // Titivilus
-        ID: 100014,
-        ProfileType: "Unique",
-        Name: "Titivilus",
-        Type: "Medium fiend (devil), lawful evil",
-        TypeCategory: "Fiend",
-        Size: "Medium",
-        Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: [20, "natural armor"],
-        HitPoints: 127,
-        HitPointsRoll: "17d8 + 51",
-        Speed: ["40 ft.", "fly 60 ft."],
-        Strength: 19,
-        Dexterity: 22,
-        Constitution: 17,
-        Intelligence: 24,
-        Wisdom: 22,
-        Charisma: 26,
-        SavingThrows: ["Dexterity +11", "Constitution +8", "Wisdom +11", "Charisma +13"],
-        Skills: ["Deception +13", "Insight +11", "Intimidation +13", "Persuasion +13"],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
-        DamageImmunities: ["Fire", "Poison"],
-        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
-        Senses: ["Darkvision 120 ft.", "Passive Perception 16"],
-        Languages: ["All", "Telepathy 120 ft."],
-        Challenge: [16, 15000],
-        ExtraRewards: "",
-        Traits: [
-            {
-                Title: "Innate Spellcasting",
-                Desc: "Titivilus's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components: At will: alter self, animate dead, bestow curse, confusion, major image, modify memory, nondetection, sending, suggestion; 3/day each: greater invisibility (self only), mislead; 1/day each: feeblemind, symbol (discord or sleep only)."
-            },
-            {
-                Title: "Legendary Resistance (3/Day)",
-                Desc: "If Titivilus fails a saving throw, he can choose to succeed instead."
-            },
-            {
-                Title: "Magic Resistance",
-                Desc: "Titivilus has advantage on saving throws against spells and other magical effects."
-            },
-            {
-                Title: "Magic Weapons",
-                Desc: "Titivilus's weapon attacks are magical."
-            },
-            {
-                Title: "Regeneration",
-                Desc: "Titivilus regains 10 hit points at the start of his turn. If he takes cold or radiant damage, this trait doesn't function at the start of his next turn. Titivilus dies only if he starts his turn with 0 hit points and doesn't regenerate."
-            },
-            {
-                Title: "Ventriloquism",
-                Desc: "Whenever Titivilus speaks, he can choose a point within 60 feet; his voice emanates from that point."
-            }
-        ],
-        Actions: [
-            {
-                Title: "Multiattack",
-                Desc: "Titivilus makes one sword attack and uses his Frightful Word once."
-            },
-            {
-                Title: "Silver Sword",
-                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 16 (3d10) necrotic damage. If the target is a creature, its hit point maximum is reduced by an amount equal to half the necrotic damage it takes."
-            },
-            {
-                Title: "Frightful Word",
-                Desc: "Titivilus targets one creature he can see within 10 feet of him. The target must succeed on a DC 21 Charisma saving throw or become frightened for 1 minute. While frightened in this way, the target must take the Dash action and move away from Titivilus by the safest available route on each of its turns, unless there is nowhere to move, in which case it needn't take the Dash action. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Titivilus magically teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
-            },
-            {
-                Title: "Twisting Words",
-                Desc: "Titivilus targets one creature he can see within 60 feet of him. The target must succeed on a DC 21 Charisma saving throw or become charmed by Titivilus for 1 minute. The charmed target can repeat the saving throw if Titivilus deals any damage to it. A creature that succeeds on the saving throw is immune to Titivilus's Twisting Words for 24 hours."
-            }
-        ],
-        Reactions: [],
-        LegendaryActions: [
-            {
-                Title: "Assault (Costs 2 Actions)",
-                Desc: "Titivilus attacks with his silver sword or uses his Frightful Word."
-            },
-            {
-                Title: "Corrupting Guidance",
-                Desc: "Titivilus uses Twisting Words. Alternatively, he targets one creature charmed by him that is within 60 feet of him; that charmed target must make a DC 21 Charisma saving throw. On a failure, Titivilus decides how the target acts during its next turn."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Titivilus uses his Teleport action."
-            }
-        ],
-        RegionalEffects: [],
-        LairActions: [],
-        Description: "Titivilus is a cunning and calculating archdevil who has manipulated his way into becoming the primary advisor to Dispater. Physically less imposing than many archdevils, he compensates with extraordinary intelligence, charm, and political skill. He twists words and bargains to make victims believe he is their friend while secretly arranging events to increase his own influence and protect his position."
-    },
-    { // Zariel
-        ID: 100015,
-        ProfileType: "Unique",
-        Name: "Zariel",
-        Type: "Large fiend (devil), lawful evil",
-        TypeCategory: "Fiend",
-        Size: "Large",
-        Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: [21, "natural armor"],
-        HitPoints: 580,
-        HitPointsRoll: "40d10 + 360",
-        Speed: ["50 ft.", "fly 150 ft."],
-        Strength: 27,
-        Dexterity: 24,
-        Constitution: 28,
-        Intelligence: 26,
-        Wisdom: 27,
-        Charisma: 30,
-        SavingThrows: ["Intelligence +16", "Wisdom +16", "Charisma +18"],
-        Skills: ["Intimidation +18", "Perception +16"],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Cold", "Fire", "Radiant", "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"],
-        DamageImmunities: ["Necrotic", "Poison"],
-        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
-        Senses: ["Darkvision 120 ft.", "Passive Perception 26"],
-        Languages: ["All", "Telepathy 120 ft."],
-        Challenge: [26, 90000],
-        ExtraRewards: "",
-        Traits: [
-            {
-                Title: "Devil's Sight",
-                Desc: "Magical darkness doesn't impede Zariel's darkvision."
-            },
-            {
-                Title: "Fiery Weapons",
-                Desc: "Zariel's weapon attacks are magical. When she hits with any weapon, the weapon deals an extra 36 (8d8) fire damage (included in the weapon attacks below)."
-            },
-            {
-                Title: "Innate Spellcasting",
-                Desc: "Zariel's innate spellcasting ability is Charisma (spell save DC 26). She can innately cast the following spells, requiring no material components: At will: alter self (can become Medium when changing her appearance), detect evil and good, fireball, invisibility (self only), wall of fire; 3/day each: blade barrier, dispel evil and good, finger of death."
-            },
-            {
-                Title: "Legendary Resistance (3/Day)",
-                Desc: "If Zariel fails a saving throw, she can choose to succeed instead."
-            },
-            {
-                Title: "Magic Resistance",
-                Desc: "Zariel has advantage on saving throws against spells and other magical effects."
-            },
-            {
-                Title: "Regeneration",
-                Desc: "Zariel regains 20 hit points at the start of her turn. If she takes radiant damage, this trait doesn't function at the start of her next turn. Zariel dies only if she starts her turn with 0 hit points and doesn't regenerate."
-            }
-        ],
-        Actions: [
-            {
-                Title: "Multiattack",
-                Desc: "Zariel attacks twice with her longsword or with her javelins. She can substitute Horrid Touch for one of these attacks."
-            },
-            {
-                Title: "Longsword",
-                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) slashing damage, or 19 (2d10 + 8) slashing damage if used with two hands, plus 36 (8d8) fire damage."
-            },
-            {
-                Title: "Javelin",
-                Desc: "Melee or Ranged Weapon Attack: +16 to hit, range 30/120 ft., one target. Hit: 15 (2d6 + 8) piercing damage plus 36 (8d8) fire damage."
-            },
-            {
-                Title: "Horrid Touch (Recharge 5-6)",
-                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 44 (8d10) necrotic damage, and the target is poisoned for 1 minute. While poisoned in this way, the target is also blinded and deafened. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Zariel magically teleports, along with any equipment she is wearing and carrying, up to 120 feet to an unoccupied space she can see."
-            }
-        ],
-        Reactions: [],
-        LegendaryActions: [
-            {
-                Title: "Immolating Gaze (Costs 2 Actions)",
-                Desc: "Zariel turns her magical gaze toward one creature she can see within 120 feet of her and commands it to combust. The target must succeed on a DC 26 Wisdom saving throw or take 22 (4d10) fire damage."
-            },
-            {
-                Title: "Teleport",
-                Desc: "Zariel uses her Teleport action."
-            }
-        ],
-        RegionalEffects: [],
-        LairActions: [],
-        Description: "Zariel rules Avernus, the first layer of the Nine Hells. Once a mighty angel charged with watching the tides of the Blood War, she fell from grace after succumbing to the corruption of the Hells and has since reclaimed her position as archdevil of Avernus. Zariel is a towering, immensely powerful warrior with tremendous wings and a martial presence befitting the commander of the infernal armies. She seeks the souls of great warriors and binds them through eternal bargains, honing their abilities so that they can eventually serve her in the Blood War."
     },
 ];
 
