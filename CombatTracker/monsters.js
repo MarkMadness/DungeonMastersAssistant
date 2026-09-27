@@ -36495,7 +36495,803 @@ const monstersLocal = [
         RegionalEffects: [],
         Description: "Giff are 7-foot-tall, hippopotamus-headed humanoids dressed in colorful military uniforms. They are spacefaring mercenaries organized into strict military hierarchies and are renowned for their martial training, firearms, muskets, pistols, and love of explosives. Giff mercenary units serve together as regiments and place the reputation of the unit above the life of any individual member."
     },
-
+    { // Githyanki Gish
+        ID: 624,
+        ProfileType: "Monster",
+        Name: "Githyanki Gish",
+        Type: "Medium humanoid (gith), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [17, "half plate"],
+        HitPoints: 123,
+        HitPointsRoll: "19d8 + 38",
+        Speed: ["30 ft."],
+        Strength: 17,
+        Dexterity: 15,
+        Constitution: 14,
+        Intelligence: 16,
+        Wisdom: 15,
+        Charisma: 16,
+        SavingThrows: ["Constitution +6", "Intelligence +7", "Wisdom +6"],
+        Skills: ["Insight +6", "Perception +6", "Stealth +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 16"],
+        Languages: ["Gith"],
+        Challenge: [10, 5900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting (Psionics)",
+                Desc: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no components: <br><br>At will: mage hand (the hand is invisible); <br>3/day each: jump, misty step, nondetection (self only); <br>1/day each: plane shift, telekinesis."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The githyanki is an 8th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The githyanki has the following wizard spells prepared: <br><br>Cantrips (at will): blade ward, light, message, true strike; <br>1st level (4 slots): expeditious retreat, magic missile, sleep, thunderwave; <br>2nd level (3 slots): blur, invisibility, levitate; <br>3rd level (3 slots): counterspell, fireball, haste; <br>4th level (2 slots): dimension door."
+            },
+            {
+                Title: "War Magic",
+                Desc: "When the githyanki uses its action to cast a spell, it can make one weapon attack as a bonus action."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The githyanki makes two longsword attacks."
+            },
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands, plus 18 (4d8) psychic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Githyanki gish are warriors whose keen minds and psionic gifts allow them to master magic. They blend swordplay with spellcasting, making them dangerous opponents suited to assassination, raiding, and espionage."
+    },
+    { // Githyanki Kith'rak
+        ID: 625,
+        ProfileType: "Monster",
+        Name: "Githyanki Kith'rak",
+        Type: "Medium humanoid (gith), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "plate"],
+        HitPoints: 180,
+        HitPointsRoll: "24d8 + 72",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 16,
+        Constitution: 17,
+        Intelligence: 16,
+        Wisdom: 15,
+        Charisma: 17,
+        SavingThrows: ["Constitution +7", "Intelligence +7", "Wisdom +6"],
+        Skills: ["Intimidation +7", "Perception +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 16"],
+        Languages: ["Gith"],
+        Challenge: [12, 8400],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting (Psionics)",
+                Desc: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no components: At will: mage hand (the hand is invisible); 3/day each: blur, jump, misty step, nondetection (self only); 1/day each: plane shift, telekinesis."
+            },
+            {
+                Title: "Rally the Troops",
+                Desc: "As a bonus action, the githyanki can magically end the charmed and frightened conditions on itself and each creature of its choice that it can see within 30 feet of it."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The githyanki makes three greatsword attacks."
+            },
+            {
+                Title: "Greatsword",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 17 (5d6) psychic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Parry",
+                Desc: "The githyanki adds 4 to its AC against one melee attack that would hit it. To do so, the githyanki must see the attacker and be wielding a melee weapon."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Kith'raks are high-ranking githyanki champions who command groups of warriors. Their rank is earned through torturous training and psionic testing, and they are responsible for leading the sarths and maintaining discipline among their forces."
+    },
+    { // Githyanki Supreme Commander
+        ID: 626,
+        ProfileType: "Monster",
+        Name: "Githyanki Supreme Commander",
+        Type: "Medium humanoid (gith), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "plate"],
+        HitPoints: 187,
+        HitPointsRoll: "22d8 + 88",
+        Speed: ["30 ft."],
+        Strength: 19,
+        Dexterity: 17,
+        Constitution: 18,
+        Intelligence: 16,
+        Wisdom: 16,
+        Charisma: 18,
+        SavingThrows: ["Constitution +9", "Intelligence +8", "Wisdom +8"],
+        Skills: ["Insight +8", "Intimidation +9", "Perception +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 18"],
+        Languages: ["Gith"],
+        Challenge: [14, 11500],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting (Psionics)",
+                Desc: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components: At will: mage hand (the hand is invisible); 3/day each: jump, levitate (self only), misty step, nondetection (self only); 1/day each: Bigby's hand, mass suggestion, plane shift, telekinesis."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The githyanki makes two greatsword attacks."
+            },
+            {
+                Title: "Silver Greatsword",
+                Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage plus 17 (5d6) psychic damage. On a critical hit against a target in an astral body (as with the astral projection spell), the githyanki can cut the silvery cord that tethers the target to its material body, instead of dealing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Parry",
+                Desc: "The githyanki adds 5 to its AC against one melee attack that would hit it. To do so, the githyanki must see the attacker and be wielding a melee weapon."
+            }
+        ],
+        LegendaryActions: [
+            {
+                Title: "Attack (2 Actions)",
+                Desc: "The githyanki makes a greatsword attack."
+            },
+            {
+                Title: "Command Ally",
+                Desc: "The githyanki targets one ally it can see within 30 feet of it. If the target can see or hear the githyanki, the target can make one melee weapon attack using its reaction and has advantage on the attack roll."
+            },
+            {
+                Title: "Teleport",
+                Desc: "The githyanki magically teleports, along with any equipment it is wearing and carrying, to an unoccupied space it can see within 30 feet of it. It also becomes insubstantial until the start of its next turn. While insubstantial, it can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an object, it takes 16 (3d10) force damage and is moved to the nearest unoccupied space."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Supreme commanders lead the githyanki armies, each commanding ten kith'raks, who in turn lead the rest of their forces. Most supreme commanders ride red dragons into battle and serve as the highest-ranking military leaders beneath Vlaakith."
+    },
+    { // Githzerai Anarch
+        ID: 627,
+        ProfileType: "Monster",
+        Name: "Githzerai Anarch",
+        Type: "Medium humanoid (gith), lawful neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [20, ""],
+        HitPoints: 144,
+        HitPointsRoll: "17d8 + 68",
+        Speed: ["30 ft.", "fly 40 ft. (hover)"],
+        Strength: 16,
+        Dexterity: 21,
+        Constitution: 18,
+        Intelligence: 18,
+        Wisdom: 20,
+        Charisma: 14,
+        SavingThrows: ["Strength +8", "Dexterity +10", "Intelligence +9", "Wisdom +10"],
+        Skills: ["Arcana +9", "Insight +10", "Perception +10"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 20"],
+        Languages: ["Gith"],
+        Challenge: [16, 15000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting (Psionics)",
+                Desc: "The anarch's innate spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It can innately cast the following spells, requiring no components: At will: mage hand (the hand is invisible); 3/day each: feather fall, jump, see invisibility, shield, telekinesis; 1/day each: globe of invulnerability, plane shift, teleportation circle, wall of force."
+            },
+            {
+                Title: "Psychic Defense",
+                Desc: "While the anarch is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The anarch makes three unarmed strikes."
+            },
+            {
+                Title: "Unarmed Strike",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 18 (4d8) psychic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Strike",
+                Desc: "The anarch makes one unarmed strike."
+            },
+            {
+                Title: "Teleport",
+                Desc: "The anarch magically teleports, along with any equipment it is wearing and carrying, to an unoccupied space it can see within 30 feet of it."
+            },
+            {
+                Title: "Change Gravity (Costs 3 Actions)",
+                Desc: "The anarch casts the reverse gravity spell. The spell has the normal effect, except that the anarch can orient the area in any direction and creatures and objects fall toward the end of the area."
+            }
+        ],
+        RegionalEffects: [
+            "In Limbo, the anarch can spend 10 minutes stabilizing a 5-mile area centered on it, causing the unformed substance to take whatever inanimate form the anarch chooses. During that process, the anarch determines the shape and composition of the forms created.",
+            "The anarch stabilizes any object created in Limbo and brought to the Material Plane for as long as the anarch remains within 1 mile of it (no action required). If the anarch dies, these effects end after 1d6 rounds. All formed substance becomes a chaotic churn of energy and matter, unraveling into unformed substance that dissipates 1d6 rounds later."
+        ],
+        LairActions: [
+            "The anarch casts the creation spell (as a 9th-level spell) using the unformed substance of Limbo instead of shadow material. If used in Limbo, the object remains until the anarch's concentration is broken, regardless of its composition. If the anarch moves more than 120 feet from the object, its concentration breaks.",
+            "The anarch can magically move an object it can see within 150 feet of it by making a Wisdom check with advantage. The DC depends on the object's size: DC 5 for Tiny, DC 10 for Small, DC 15 for Medium, DC 20 for Large, and DC 25 for Huge or larger."
+        ],
+        Description: "Githzerai anarchs are the most powerful of the githzerai. They lead communities and maintain adamantine citadels beyond Limbo, using formidable psionic power to manipulate the unformed substance of their adopted plane. They are sages and mystics whose word is law among their followers."
+    },
+    { // Githzerai Enlightened
+        ID: 628,
+        ProfileType: "Monster",
+        Name: "Githzerai Enlightened",
+        Type: "Medium humanoid (gith), lawful neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, ""],
+        HitPoints: 112,
+        HitPointsRoll: "15d8 + 45",
+        Speed: ["30 ft."],
+        Strength: 14,
+        Dexterity: 19,
+        Constitution: 16,
+        Intelligence: 17,
+        Wisdom: 19,
+        Charisma: 13,
+        SavingThrows: ["Strength +6", "Dexterity +8", "Intelligence +7", "Wisdom +8"],
+        Skills: ["Arcana +7", "Insight +8", "Perception +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 18"],
+        Languages: ["Gith"],
+        Challenge: [10, 5900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting (Psionics)",
+                Desc: "The githzerai's innate spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components: At will: mage hand (the hand is invisible); 3/day each: blur, expeditious retreat, feather fall, jump, see invisibility, shield; 1/day each: haste, plane shift, teleport."
+            },
+            {
+                Title: "Psychic Defense",
+                Desc: "While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The githzerai makes three unarmed strikes."
+            },
+            {
+                Title: "Unarmed Strike",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 13 (3d8) psychic damage."
+            },
+            {
+                Title: "Temporal Strike (Recharge 6)",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 13 (2d8 + 4) bludgeoning damage plus 52 (8d12) psychic damage. The target must succeed on a DC 16 Wisdom saving throw or move 1 round forward in time. A target moved forward in time vanishes for the duration. When the effect ends, the target reappears in the space it left or in an unoccupied space nearest to that space if it's occupied."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Githzerai enlightened are monks who have completed another tier of training beyond the zerth. They spend long hours in meditation to transcend the limits of their forms and apprehend the nature of reality, mastering powerful psychic and temporal abilities."
+    },
+    { // Gray Render
+        ID: 629,
+        ProfileType: "Monster",
+        Name: "Gray Render",
+        Type: "Large monstrosity, chaotic neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [19, "natural armor"],
+        HitPoints: 189,
+        HitPointsRoll: "18d10 + 90",
+        Speed: ["30 ft."],
+        Strength: 19,
+        Dexterity: 13,
+        Constitution: 20,
+        Intelligence: 3,
+        Wisdom: 6,
+        Charisma: 8,
+        SavingThrows: ["Strength +8", "Constitution +9"],
+        Skills: ["Perception +2"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 12"],
+        Languages: [],
+        Challenge: [12, 8400],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The gray render makes three attacks: one with its bite and two with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) piercing damage. If the target is Medium or smaller, the target must succeed on a DC 16 Strength saving throw or be knocked prone."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) slashing damage, plus 7 (2d6) bludgeoning damage if the target is prone."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Bloody Rampage",
+                Desc: "When the gray render takes damage, it makes one attack with its claws against a random creature within its reach, other than its master."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Gray renders are enormous, hulking monstrosities driven by a strange need to bond with an intelligent creature and protect that master with their lives. They have great strength and savage appetites but little cunning. Once bonded, a render serves its master in all things, although its chaotic nature can make it an unpredictable companion outside battle."
+    },
+    { // Howler
+        ID: 630,
+        ProfileType: "Monster",
+        Name: "Howler",
+        Type: "Large fiend, chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 90,
+        HitPointsRoll: "12d10 + 24",
+        Speed: ["40 ft."],
+        Strength: 17,
+        Dexterity: 16,
+        Constitution: 15,
+        Intelligence: 5,
+        Wisdom: 20,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: ["Perception +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Frightened"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 15"],
+        Languages: ["Understands Abyssal but can't speak"],
+        Challenge: [8, 3900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Pack Tactics",
+                Desc: "A howler has advantage on attack rolls against a creature if at least one of the howler's allies is within 5 feet of the creature and the ally isn't incapacitated."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The howler makes two bite attacks."
+            },
+            {
+                Title: "Rending Bite",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage, plus 22 (4d10) psychic damage if the target is frightened. This attack ignores damage resistance."
+            },
+            {
+                Title: "Mind-Breaking Howl (Recharge 6)",
+                Desc: "The howler emits a keening howl in a 60-foot cone. Each creature in that area that isn't deafened must succeed on a DC 16 Wisdom saving throw or be frightened until the end of the howler's next turn. While a creature is frightened in this way, its speed is halved, and it is incapacitated. A target that successfully saves is immune to the Mind-Breaking Howl of all howlers for the next 24 hours."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Howlers are nightmare creatures native to Pandemonium. They are quadrupedal fiends whose keening howls can overwhelm the minds of their victims, leaving them frightened, slowed, and unable to act effectively. Fiends capture and train howlers as war hounds, using them in the Blood War and as guardians."
+    },
+    { // Young Kruthik
+        ID: 631,
+        ProfileType: "Monster",
+        Name: "Young Kruthik",
+        Type: "Small monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Small",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 9,
+        HitPointsRoll: "2d6 + 2",
+        Speed: ["30 ft.", "burrow 10 ft.", "climb 30 ft."],
+        Strength: 13,
+        Dexterity: 16,
+        Constitution: 13,
+        Intelligence: 4,
+        Wisdom: 10,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 30 ft.", "Tremorsense 60 ft.", "Passive Perception 10"],
+        Languages: ["Kruthik"],
+        Challenge: [0.125, 25],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Keen Smell",
+                Desc: "The kruthik has advantage on Wisdom (Perception) checks that rely on smell."
+            },
+            {
+                Title: "Pack Tactics",
+                Desc: "The kruthik has advantage on an attack roll against a creature if at least one of the kruthik's allies is within 5 feet of the creature and the ally isn't incapacitated."
+            },
+            {
+                Title: "Tunneler",
+                Desc: "The kruthik can burrow through solid rock at half its burrowing speed and leaves a 2 1/2-foot-diameter tunnel in its wake."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Stab",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Young kruthiks hatch from eggs and become large enough to hunt and defend themselves within about a month. They are smaller versions of the adult creatures and already possess the keen senses, tunneling ability, and pack-hunting behavior characteristic of the species."
+    },
+    { // Adult Kruthik
+        ID: 632,
+        ProfileType: "Monster",
+        Name: "Adult Kruthik",
+        Type: "Medium monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 39,
+        HitPointsRoll: "6d8 + 12",
+        Speed: ["40 ft.", "burrow 20 ft.", "climb 40 ft."],
+        Strength: 15,
+        Dexterity: 16,
+        Constitution: 15,
+        Intelligence: 7,
+        Wisdom: 12,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Tremorsense 60 ft.", "Passive Perception 11"],
+        Languages: ["Kruthik"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Keen Smell",
+                Desc: "The kruthik has advantage on Wisdom (Perception) checks that rely on smell."
+            },
+            {
+                Title: "Pack Tactics",
+                Desc: "The kruthik has advantage on an attack roll against a creature if at least one of the kruthik's allies is within 5 feet of the creature and the ally isn't incapacitated."
+            },
+            {
+                Title: "Tunneler",
+                Desc: "The kruthik can burrow through solid rock at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The kruthik makes two stab attacks or two spike attacks."
+            },
+            {
+                Title: "Stab",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+            },
+            {
+                Title: "Spike",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Adult kruthiks reach their full size after roughly six months of steady eating and have a natural life span of about seven years. Their legs grow spiky protrusions that allow them to fling dagger-sized spikes at enemies beyond the reach of their claws."
+    },
+    { // Kruthik Hive Lord
+        ID: 633,
+        ProfileType: "Monster",
+        Name: "Kruthik Hive Lord",
+        Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [20, "natural armor"],
+        HitPoints: 102,
+        HitPointsRoll: "12d10 + 36",
+        Speed: ["40 ft.", "burrow 20 ft.", "climb 40 ft."],
+        Strength: 19,
+        Dexterity: 16,
+        Constitution: 17,
+        Intelligence: 10,
+        Wisdom: 14,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Tremorsense 60 ft.", "Passive Perception 12"],
+        Languages: ["Kruthik"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Keen Smell",
+                Desc: "The kruthik has advantage on Wisdom (Perception) checks that rely on smell."
+            },
+            {
+                Title: "Pack Tactics",
+                Desc: "The kruthik has advantage on an attack roll against a creature if at least one of the kruthik's allies is within 5 feet of the creature and the ally isn't incapacitated."
+            },
+            {
+                Title: "Tunneler",
+                Desc: "The kruthik can burrow through solid rock at half its burrowing speed and leaves a 10-foot-diameter tunnel in its wake."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The kruthik makes two stab attacks or two spike attacks."
+            },
+            {
+                Title: "Stab",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) piercing damage."
+            },
+            {
+                Title: "Spike",
+                Desc: "Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+            },
+            {
+                Title: "Acid Spray (Recharge 5-6)",
+                Desc: "The kruthik sprays acid in a 15-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 22 (4d10) acid damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Each kruthik hive is ruled by a hive lord. When one dies, the surviving kruthiks abandon their lair and search for a new one. At a suitable location, the largest kruthik undergoes a metamorphosis, emerging weeks later as a larger and more intelligent hive lord capable of spraying digestive acid from its maw."
+    },
+    { // Marut
+        ID: 634,
+        ProfileType: "Monster",
+        Name: "Marut",
+        Type: "Large construct (inevitable), lawful neutral",
+        TypeCategory: "Construct",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [22, "natural armor"],
+        HitPoints: 432,
+        HitPointsRoll: "32d10 + 256",
+        Speed: ["40 ft.", "fly 30 ft. (hover)"],
+        Strength: 28,
+        Dexterity: 12,
+        Constitution: 26,
+        Intelligence: 19,
+        Wisdom: 15,
+        Charisma: 18,
+        SavingThrows: ["Intelligence +12", "Wisdom +10", "Charisma +12"],
+        Skills: ["Insight +10", "Intimidation +12", "Perception +10"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Thunder", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Frightened", "Paralyzed", "Poisoned", "Unconscious"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 20"],
+        Languages: ["All but rarely speaks"],
+        Challenge: [25, 75000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Immutable Form",
+                Desc: "The marut is immune to any spell or effect that would alter its form."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The marut's innate spellcasting ability is Intelligence (spell save DC 20). The marut can innately cast the following spell, requiring no material components: At will: plane shift (self only)."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If the marut fails a saving throw, it can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The marut has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The marut makes two slam attacks."
+            },
+            {
+                Title: "Unerring Slam",
+                Desc: "Melee Weapon Attack: automatic hit, reach 5 ft., one target. Hit: 60 force damage, and the target is pushed up to 5 feet away from the marut if it is Huge or smaller."
+            },
+            {
+                Title: "Blazing Edict (Recharge 5-6)",
+                Desc: "Arcane energy emanates from the marut's chest in a 60-foot cube. Every creature in that area takes 45 radiant damage. Each creature that takes any of this damage must succeed on a DC 20 Wisdom saving throw or be stunned until the end of the marut's next turn."
+            },
+            {
+                Title: "Justify",
+                Desc: "The marut targets up to two creatures it can see within 60 feet of it. Each target must succeed on a DC 20 Charisma saving throw or be teleported to a teleportation circle in the Hall of Concordance in Sigil. A target fails automatically if it is incapacitated. If either target is teleported in this way, the marut teleports with it. After teleporting in this way, the marut can't use this action again until it finishes a short or long rest."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Maruts are nearly unstoppable inevitables created to enforce contracts forged in the Hall of Concordance in Sigil. They are immense, imposing constructs whose purpose is to bring absolute order to agreements between planar beings. A marut follows the exact wording of a contract rather than its intended spirit and resorts to lethal force when the contract requires it, when it has been fully broken, or when the marut itself is attacked."
+    },
+    { // Meazel
+        ID: 635,
+        ProfileType: "Monster",
+        Name: "Meazel",
+        Type: "Medium humanoid (meazel), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [13, ""],
+        HitPoints: 35,
+        HitPointsRoll: "10d8 - 10",
+        Speed: ["30 ft."],
+        Strength: 8,
+        Dexterity: 17,
+        Constitution: 9,
+        Intelligence: 14,
+        Wisdom: 13,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: ["Perception +3", "Stealth +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 13"],
+        Languages: ["Common"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Shadow Stealth",
+                Desc: "While in dim light or darkness, the meazel can take the Hide action as a bonus action."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Garrote",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target of the meazel's size or smaller. Hit: 6 (1d6 + 3) bludgeoning damage, and the target is grappled (escape DC 13 with disadvantage). Until the grapple ends, the target takes 10 (2d6 + 3) bludgeoning damage at the start of each of the meazel's turns. The meazel can't make weapon attacks while grappling a creature in this way."
+            },
+            {
+                Title: "Shortsword",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, plus 3 (1d6) necrotic damage."
+            },
+            {
+                Title: "Shadow Teleport (Recharge 5-6)",
+                Desc: "The meazel, any equipment it is wearing or carrying, and any creature it is grappling teleport to an unoccupied space within 500 feet of it, provided that the starting space and the destination are in dim light or darkness. The destination must be a place the meazel has seen before, but it need not be within line of sight. If the destination space is occupied, the teleportation leads to the nearest unoccupied space. Any other creature the meazel teleports becomes cursed by shadow for 1 hour. Until this curse ends, every undead and every creature native to the Shadowfell within 300 feet of the cursed creature can sense it, which prevents that creature from hiding from them."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Meazels are hateful hermits transformed by the Shadowfell after abandoning their former lives. They loiter near crossings between the Shadowfell and Material Plane, ambushing travelers with their strangling cords and magical ability to move through shadows. Creatures transported by a meazel can be cursed with a magical beacon that draws undead, sorrowsworn, and other horrors toward them."
+    },
+    { // Nagpa
+        ID: 636,
+        ProfileType: "Monster",
+        Name: "Nagpa",
+        Type: "Medium humanoid (nagpa), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [19, "natural armor"],
+        HitPoints: 187,
+        HitPointsRoll: "34d8 + 34",
+        Speed: ["30 ft."],
+        Strength: 9,
+        Dexterity: 15,
+        Constitution: 12,
+        Intelligence: 23,
+        Wisdom: 18,
+        Charisma: 21,
+        SavingThrows: ["Intelligence +12", "Wisdom +10", "Charisma +11"],
+        Skills: ["Arcana +12", "Deception +11", "History +12", "Insight +10", "Perception +10"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Truesight 120 ft.", "Passive Perception 20"],
+        Languages: ["Common plus up to five other languages"],
+        Challenge: [17, 18000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Corruption",
+                Desc: "As a bonus action, the nagpa targets one creature it can see within 90 feet of it. The target must make a DC 20 Charisma saving throw. An evil creature makes the save with disadvantage. On a failed save, the target is charmed by the nagpa until the start of the nagpa's next turn. On a successful save, the target becomes immune to the nagpa's Corruption for the next 24 hours."
+            },
+            {
+                Title: "Paralysis (Recharge 6)",
+                Desc: "As a bonus action, the nagpa forces each creature within 30 feet of it to succeed on a DC 20 Wisdom saving throw or be paralyzed for 1 minute. A paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Undead and constructs are immune to this effect."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The nagpa is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). A nagpa has the following wizard spells prepared: Cantrips (at will): chill touch, fire bolt, mage hand, message, minor illusion; 1st level (4 slots): charm person, detect magic, protection from evil and good, witch bolt; 2nd level (3 slots): hold person, ray of enfeeblement, suggestion; 3rd level (3 slots): counterspell, fireball, fly; 4th level (3 slots): confusion, hallucinatory terrain, wall of fire; 5th level (2 slots): dominate person, dream, geas; 6th level (1 slot): circle of death, disintegrate; 7th level (1 slot): etherealness, prismatic spray; 8th level (1 slot): feeblemind."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Staff",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Nagpas are scabrous, bird-like humanoid wizards cursed long ago by the Raven Queen after meddling in a ritual intended to avert a war between the gods. The curse stripped away their beauty and left them dependent on the ruins of fallen civilizations for new lore and magical power. The surviving nagpas manipulate events from the shadows, engineering calamities so they can loot the resulting ruins for arcane knowledge and secrets."
+    },
 
 
 
