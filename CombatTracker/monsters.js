@@ -9,10 +9,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Aarakocra",
         Type: "Medium humanoid(aarakocra), neutral good",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 13,
         HitPointsRoll: "3d8",
-        ArmorClass: [12, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 14,
@@ -28,7 +30,7 @@ const monstersLocal = [
         ConditionImmunities: [],
         Senses: ["Passive Perception 15"],
         Languages: ["Auran"],
-        Challenge: [.25, 50],
+        Challenge: [0.25, 50],
         ExtraRewards: "",
         Traits: [
             {
@@ -46,20 +48,24 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage. "
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Aboleth
         ID: 2,
         ProfileType: "Monster",
         Name: "Aboleth",
         Type: "Large aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 135,
         HitPointsRoll: "18d10 + 36",
-        ArmorClass: [17, "natural armor"],
         Speed: ["10 ft.", "swim 40 ft."],
         Strength: 21,
         Dexterity: 9,
@@ -109,6 +115,7 @@ const monstersLocal = [
                 Desc: "The aboleth targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.#PWhenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -124,7 +131,13 @@ const monstersLocal = [
                 Desc: "One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes."
             }
         ],
-        LairActions: ["When fighting inside its lair, an aboleth can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the aboleth takes a lair action to cause one of the following effects:", "The aboleth casts phantasmal force (no components required) on any number of creatures it can see within 60 feet of it. While maintaining concentration on this effect, the aboleth can't take other lair actions. If a target succeeds on the saving throw or if the effect ends for it, the target is immune to the aboleth's phantasmal force lair action for the next 24 hours, although such a creature can choose to be affected.", " Pools of water within 90 feet of the aboleth surge outward in a grasping tide. Any creature on the ground within 20 feet of such a pool must succeed on a DC 14 Strength saving throw or be pulled up to 20 feet into the water and knocked prone. The aboleth can't use this lair action again until it has used a different one.", "Water in the aboleth's lair magically becomes a conduit for the creature's rage. The aboleth can target any number of creatures it can see in such water within 90 feet of it. A target must succeed on a DC 14 Wisdom saving throw or take 7 (2d6) psychic damage. The aboleth can't use this lair action again until it has used a different one."],
+        LairActions: [
+            "When fighting inside its lair, an aboleth can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the aboleth takes a lair action to cause one of the following effects:",
+            "The aboleth casts phantasmal force (no components required) on any number of creatures it can see within 60 feet of it. While maintaining concentration on this effect, the aboleth can't take other lair actions. If a target succeeds on the saving throw or if the effect ends for it, the target is immune to the aboleth's phantasmal force lair action for the next 24 hours, although such a creature can choose to be affected.",
+            " Pools of water within 90 feet of the aboleth surge outward in a grasping tide. Any creature on the ground within 20 feet of such a pool must succeed on a DC 14 Strength saving throw or be pulled up to 20 feet into the water and knocked prone. The aboleth can't use this lair action again until it has used a different one.",
+            "Water in the aboleth's lair magically becomes a conduit for the creature's rage. The aboleth can target any number of creatures it can see in such water within 90 feet of it. A target must succeed on a DC 14 Wisdom saving throw or take 7 (2d6) psychic damage. The aboleth can't use this lair action again until it has used a different one."
+        ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Deva
@@ -132,10 +145,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Deva",
         Type: "Medium celestial, lawful good",
+        TypeCategory: "Celestial",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 136,
         HitPointsRoll: "16d8 + 64",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "fly 90 ft."],
         Strength: 18,
         Dexterity: 18,
@@ -185,9 +200,11 @@ const monstersLocal = [
                 Desc: "The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).#PIn a new form, the deva retain s its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Planetar
@@ -195,10 +212,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Planetar",
         Type: "Large celestial, lawful good ",
+        TypeCategory: "Celestial",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 200,
         HitPointsRoll: "16d10 + 112",
-        ArmorClass: [19, "natural armor"],
         Speed: ["30 ft."],
         Strength: 24,
         Dexterity: 20,
@@ -208,9 +227,21 @@ const monstersLocal = [
         Charisma: 25,
         SavingThrows: ["Constitution +12", "Wisdom +11", "Charisma +12"],
         Skills: ["Perception +11"],
+        DamageVulnerabilities: [],
         DamageResistances: ["Radiant", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
-        DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-            "Bludgeoning", "Piercing", "Slashing", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+        DamageImmunities: [
+            "Acid",
+            "Cold",
+            "Fire",
+            "Force",
+            "Lightning",
+            "Necrotic",
+            "Poison",
+            "Psychic",
+            "Radiant",
+            "Thunder",
+            "Bludgeoning, Piercing, and Slashing from non magical weapons"
+        ],
         ConditionImmunities: ["Charmed", "Exhaustion, Frightened"],
         Senses: ["Truesight 120 ft.", "Passive Perception 21"],
         Languages: ["All", "Telepathy 120 ft."],
@@ -248,9 +279,11 @@ const monstersLocal = [
                 Desc: "The planetar touches another creature. The target magically regains 30 (6d8 + 3) hit points and is freed from any curse, disease, poison, blindness, or deafness."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Planetars are muscular and hairless and have opalescent green skin and white-feathered wings. They tower over most humanoids, brandishing immense swords with grace. Sometimes sent to aid powerful mortals on important tasks for good, planetars are especially fond of missions that involve battling fiends"
     },
     { // Solar
@@ -258,10 +291,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Solar",
         Type: "Large celestial, lawful good ",
+        TypeCategory: "Celestial",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [21, "natural armor"],
         HitPoints: 243,
         HitPointsRoll: "18d10 + 144",
-        ArmorClass: [21, "natural armor"],
         Speed: ["30 ft."],
         Strength: 26,
         Dexterity: 22,
@@ -271,6 +306,7 @@ const monstersLocal = [
         Charisma: 30,
         SavingThrows: ["Intelligence +11", "Wisdom +14", "Charisma +17"],
         Skills: ["Perception +14"],
+        DamageVulnerabilities: [],
         DamageResistances: ["Radiant", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
         DamageImmunities: ["Necrotic", "Poison"],
         ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
@@ -290,6 +326,7 @@ const monstersLocal = [
                 Desc: ""
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "",
@@ -303,17 +340,20 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Animated Armor
         ID: 7,
         ProfileType: "Monster",
         Name: "Animated Armor",
         Type: "Medium construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 33,
         HitPointsRoll: "6d8 + 6",
-        ArmorClass: [18, "natural armor"],
         Speed: ["25 ft."],
         Strength: 14,
         Dexterity: 11,
@@ -351,20 +391,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Flying Sword
         ID: 8,
         ProfileType: "Monster",
         Name: "Flying Sword",
         Type: "Small construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 17,
         HitPointsRoll: "5d8 - 5",
-        ArmorClass: [17, "natural armor"],
         Speed: ["0 ft.", "fly 50 ft. (hover)"],
         Strength: 12,
         Dexterity: 15,
@@ -398,20 +442,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Rug of Smothering
         ID: 9,
         ProfileType: "Monster",
         Name: "Rug of Smothering",
         Type: "Large construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 33,
         HitPointsRoll: "6d10",
-        ArmorClass: [12, "natural armor"],
         Speed: ["10 ft."],
         Strength: 17,
         Dexterity: 14,
@@ -449,20 +497,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. The rug attaches to the target. If the target is Medium or smaller, it is also grappled (escape DC 13) and restrained. Until this grapple ends, the rug can automatically hit the target with its Smother, and the rug can't make Smother attacks against other targets. The target, or a creature within 5 feet of it, can take an action to try to detach the rug, doing so with a successful DC 13 Strength check. On the rug's turn, if the target is still grappled and restrained, the target takes 7 (2d6) bludgeoning damage and must succeed on a DC 13 Constitution saving throw or begin suffocating."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Ankheg
         ID: 10,
         ProfileType: "Monster",
         Name: "Ankheg",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 39,
         HitPointsRoll: "6d10 + 6",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft.", "burrow 10 ft."],
         Strength: 17,
         Dexterity: 11,
@@ -491,20 +543,24 @@ const monstersLocal = [
                 Desc: "The ankheg spits acid in a line 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in the line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Azer
         ID: 11,
         ProfileType: "Monster",
         Name: "Azer",
         Type: "Medium elemental, lawful neutral",
+        TypeCategory: "Elemental",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 39,
         HitPointsRoll: "6d8 + 12",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft."],
         Strength: 17,
         Dexterity: 12,
@@ -546,20 +602,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage, or 7 (1d10 + 2) bludgeoning damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Banshee
         ID: 12,
         ProfileType: "Monster",
         Name: "Banshee",
         Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 58,
         HitPointsRoll: "13d8",
-        ArmorClass: [12, "natural armor"],
         Speed: ["0 ft.", "fly 40 ft. (hover)"],
         Strength: 1,
         Dexterity: 14,
@@ -601,20 +661,24 @@ const monstersLocal = [
                 Desc: "The banshee releases a mournful wail, provided that she isn't in sunlight. Each non-undead creature within 30 feet of her that can hear her must make a DC 13 Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 18 (4d8) psychic damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Basilisk
         ID: 13,
         ProfileType: "Monster",
         Name: "Basilisk",
         Type: "Medium monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 52,
         HitPointsRoll: "8d8 + 16",
-        ArmorClass: [15, "natural armor"],
         Speed: ["20 ft."],
         Strength: 16,
         Dexterity: 8,
@@ -644,20 +708,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d8 + 1) piercing damage plus 7 (2d6) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Behir
         ID: 14,
         ProfileType: "Monster",
         Name: "Behir",
         Type: "Huge monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 168,
         HitPointsRoll: "16d12 + 64",
-        ArmorClass: [17, "natural armor"],
         Speed: ["50 ft.", "climb 40 ft."],
         Strength: 23,
         Dexterity: 16,
@@ -698,20 +766,24 @@ const monstersLocal = [
                 Desc: "The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir's turns. A behir can have only one target swallowed at a time. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Beholder
         ID: 15,
         ProfileType: "Monster",
         Name: "Beholder",
         Type: "Large aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 180,
         HitPointsRoll: "19d10 + 76",
-        ArmorClass: [18, "natural armor"],
         Speed: ["0 ft.", "fly 20 ft. (hover)"],
         Strength: 10,
         Dexterity: 14,
@@ -745,6 +817,7 @@ const monstersLocal = [
                 Desc: "The beholder shoots three of the following eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:#P1. Charm Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the beholder for 1 hour, or until the beholder harms the creature.#P2. Paralyzing Ray. The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P3. Fear Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P4. Slowing Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute, and it takes a -2 penalty to AC and Dexterity saving throws. In addition, the creature can't use reactions. On its turn, it can use either an action or a bonus action, not both. It can't make more than one attack on its turn regardless of its abilities. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P5. Enervation Ray. The targeted creature must make a DC 16 Constitution saving throw, taking 36 (10d6) necrotic damage on a failed save, or half as much damage on a successful one.#P6. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's magic until the start of the beholder's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is instead moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.#P7. Sleep Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or if another creature takes an action to shake it awake. This ray has no effect on constructs and undead.#P8. Petrification Ray. The targeted creature must make a DC 16 Constitution saving throw. If the save fails by 5 or more, the creature is instantly petrified. On a failed save, a creature starts to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. If successful, the effect ends. If it fails, the creature is petrified until freed by the greater restoration spell or similar magic.#P9. Disintegration Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, it is disintegrated.#P10. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. A creature reduced to 0 hit points by this attack dies."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -753,17 +826,20 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Death Tyrant
         ID: 16,
         ProfileType: "Monster",
         Name: "Death Tyrant",
         Type: "Large undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 180,
         HitPointsRoll: "19d10 + 76",
-        ArmorClass: [19, "natural armor"],
         Speed: ["0 ft.", "fly 20 ft. (hover)"],
         Strength: 10,
         Dexterity: 14,
@@ -805,6 +881,7 @@ const monstersLocal = [
                 Desc: "The death tyrant shoots three of the following eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:#P1. Charm Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the death tyrant for 1 hour, or until the death tyrant harms the creature.#P2. Paralyzing Ray. The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P3. Fear Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P4. Withering Ray. The targeted creature must make a DC 16 Constitution saving throw, taking 45 (10d8) necrotic damage on a failed save, or half as much damage on a successful one.#P5. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the death tyrant moves it up to 30 feet in any direction. It is restrained by the ray's magic until the start of the death tyrant's next turn or until the death tyrant is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is instead moved up to 30 feet in any direction.#P6. Sleep Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or if another creature takes an action to shake it awake. This ray has no effect on constructs and undead.#P7. Petrification Ray. The targeted creature must make a DC 16 Constitution saving throw. If the save fails by 5 or more, the creature is instantly petrified. On a failed save, a creature starts to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success.#P8. Disintegration Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, it is disintegrated.#P9. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. A creature reduced to 0 hit points by this attack dies."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -813,17 +890,20 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Spectator
         ID: 17,
         ProfileType: "Monster",
         Name: "Spectator",
         Type: "Medium aberration, lawful neutral",
+        TypeCategory: "Aberration",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 39,
         HitPointsRoll: "6d8 + 12",
-        ArmorClass: [14, "natural armor"],
         Speed: ["0 ft.", "fly 30 ft. (hover)"],
         Strength: 8,
         Dexterity: 14,
@@ -856,6 +936,7 @@ const monstersLocal = [
                 Desc: "The spectator magically creates enough food and water to sustain itself for 24 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Spell Reflection.",
@@ -864,17 +945,20 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Needle Blight
         ID: 18,
         ProfileType: "Monster",
         Name: "Needle Blight",
         Type: "Medium plant, neutral evil",
+        TypeCategory: "Plant",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 22,
         HitPointsRoll: "5d8",
-        ArmorClass: [12, ""],
         Speed: ["20 ft."],
         Strength: 6,
         Dexterity: 15,
@@ -912,20 +996,24 @@ const monstersLocal = [
                 Desc: "The blight launches needles in a 15-foot cone. Each creature in that area must make a DC 10 Dexterity saving throw, taking 7 (2d6) piercing damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Twig Blight
         ID: 19,
         ProfileType: "Monster",
         Name: "Twig Blight",
         Type: "Small plant, neutral evil",
+        TypeCategory: "Plant",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 4,
         HitPointsRoll: "1d6 + 1",
-        ArmorClass: [13, "natural armor"],
         Speed: ["20 ft."],
         Strength: 6,
         Dexterity: 13,
@@ -955,20 +1043,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Vine Blight
         ID: 20,
         ProfileType: "Monster",
         Name: "Vine Blight",
         Type: "Medium plant, neutral evil",
+        TypeCategory: "Plant",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 26,
         HitPointsRoll: "4d8 + 8",
-        ArmorClass: [12, ""],
         Speed: ["10 ft."],
         Strength: 15,
         Dexterity: 8,
@@ -1002,20 +1094,24 @@ const monstersLocal = [
                 Desc: "The blight magically forces a creature it can see within 30 feet of it to succeed on a DC 12 Strength saving throw or be magically restrained by animated vines for 1 minute. The vines have AC 15 and 15 hit points. A creature, including the restrained creature, can take its action to break the vines by succeeding on a DC 12 Strength check or by dealing 15 damage to them. If the vines are destroyed, the effect ends and no other creature can be restrained by these vines."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Bugbear
         ID: 21,
         ProfileType: "Monster",
         Name: "Bugbear",
         Type: "Medium humanoid (goblinoid), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "hide armor, shield"],
         HitPoints: 27,
         HitPointsRoll: "5d8 + 5",
-        ArmorClass: [16, "hide armor, shield"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -1053,20 +1149,24 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 9 (2d6 + 2) piercing damage in melee, or 5 (1d6 + 2) piercing damage at range."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Bugbear Chief
         ID: 22,
         ProfileType: "Monster",
         Name: "Bugbear Chief",
         Type: "Medium humanoid (goblinoid), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "chain shirt, shield"],
         HitPoints: 65,
         HitPointsRoll: "10d8 + 20",
-        ArmorClass: [17, "chain shirt, shield"],
         Speed: ["30 ft."],
         Strength: 17,
         Dexterity: 15,
@@ -1104,20 +1204,24 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 10 (2d6 + 3) piercing damage in melee, or 6 (1d6 + 3) piercing damage at range."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Bulette
         ID: 23,
         ProfileType: "Monster",
         Name: "Bulette",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 94,
         HitPointsRoll: "9d10 + 45",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft.", "burrow 40 ft."],
         Strength: 19,
         Dexterity: 11,
@@ -1151,20 +1255,24 @@ const monstersLocal = [
                 Desc: "If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Dexterity saving throw or take 14 (3d6 + 4) bludgeoning damage and be knocked prone. On a successful save, the creature takes half the bludgeoning damage and isn't knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Bullywug
         ID: 24,
         ProfileType: "Monster",
         Name: "Bullywug",
         Type: "Medium humanoid (bullywug), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor, shield"],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [15, "natural armor, shield"],
         Speed: ["20 ft.", "swim 40 ft."],
         Strength: 12,
         Dexterity: 12,
@@ -1210,20 +1318,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Cambion
         ID: 25,
         ProfileType: "Monster",
         Name: "Cambion",
         Type: "Medium fiend, any evil alignment",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 82,
         HitPointsRoll: "11d8 + 33",
-        ArmorClass: [19, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -1269,20 +1381,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Carrion Crawler
         ID: 26,
         ProfileType: "Monster",
         Name: "Carrion Crawler",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 51,
         HitPointsRoll: "6d10 + 18",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 14,
         Dexterity: 13,
@@ -1315,20 +1431,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (2d6) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Centaur
         ID: 27,
         ProfileType: "Monster",
         Name: "Centaur",
         Type: "Large monstrosity, neutral good",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 45,
         HitPointsRoll: "6d10 + 12",
-        ArmorClass: [12, ""],
         Speed: ["50 ft."],
         Strength: 18,
         Dexterity: 14,
@@ -1370,20 +1490,24 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Chimera
         ID: 28,
         ProfileType: "Monster",
         Name: "Chimera",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 114,
         HitPointsRoll: "12d10 + 48",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft."],
         Strength: 19,
         Dexterity: 11,
@@ -1424,20 +1548,24 @@ const monstersLocal = [
                 Desc: "The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Chuul
         ID: 29,
         ProfileType: "Monster",
         Name: "Chuul",
         Type: "Large aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 93,
         HitPointsRoll: "11d10 + 33",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 19,
         Dexterity: 10,
@@ -1479,20 +1607,24 @@ const monstersLocal = [
                 Desc: "One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Cloaker
         ID: 30,
         ProfileType: "Monster",
         Name: "Cloaker",
         Type: "Large aberration, chaotic neutral",
+        TypeCategory: "Aberration",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14, ""],
         HitPoints: 78,
         HitPointsRoll: "12d10 + 12",
-        ArmorClass: [14, ""],
         Speed: ["10 ft.", "fly 40 ft."],
         Strength: 17,
         Dexterity: 15,
@@ -1546,20 +1678,24 @@ const monstersLocal = [
                 Desc: "The cloaker creates 1d4 flying, illusory duplicates of itself that last for 1 minute. The duplicates move with it and mimic its actions, shifting position so that it's impossible to know which cloaker is the real one. If the cloaker is on the Material Plane, the duplicates appear on the Ethereal Plane and vice versa. Any creature that can see the Ethereal Plane sees only the duplicates on it. Each time a creature targets the cloaker with an attack or a harmful spell while at least one duplicate is within 5 feet of the cloaker, roll a d20 to randomly determine whether the attack or spell instead targets one of the duplicates. A creature is unaffected by this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight. A duplicate has the cloaker's AC and uses its Dexterity saving throw modifier. If an attack or harmful spell targets and hits a duplicate, the duplicate is destroyed. A duplicate's speed is 0, and it otherwise has no traits of its own. If a spell affects an area including the cloaker's space, it destroys any duplicate in that area instead of affecting the cloaker."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Cockatrice
         ID: 31,
         ProfileType: "Monster",
         Name: "Cockatrice",
         Type: "Small monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 27,
         HitPointsRoll: "6d6 + 6",
-        ArmorClass: [11, ""],
         Speed: ["20 ft.", "fly 40 ft."],
         Strength: 6,
         Dexterity: 12,
@@ -1584,20 +1720,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours, after which time it is turned to stone permanently."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Couatl
         ID: 32,
         ProfileType: "Monster",
         Name: "Couatl",
         Type: "Medium celestial, lawful good",
+        TypeCategory: "Celestial",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 97,
         HitPointsRoll: "13d8 + 39",
-        ArmorClass: [19, "natural armor"],
         Speed: ["30 ft.", "fly 90 ft."],
         Strength: 16,
         Dexterity: 20,
@@ -1643,20 +1783,24 @@ const monstersLocal = [
                 Desc: "The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).#PIn a new form, the couatl retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Crawling Claw
         ID: 33,
         ProfileType: "Monster",
         Name: "Crawling Claw",
         Type: "Tiny undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 2,
         HitPointsRoll: "1d4",
-        ArmorClass: [12, ""],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 13,
         Dexterity: 14,
@@ -1681,20 +1825,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 1 piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Cyclops
         ID: 34,
         ProfileType: "Monster",
         Name: "Cyclops",
         Type: "Huge giant, chaotic neutral",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 138,
         HitPointsRoll: "12d12 + 60",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 22,
         Dexterity: 11,
@@ -1727,20 +1875,24 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 22 (4d8 + 6) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Darkmantle
         ID: 35,
         ProfileType: "Monster",
         Name: "Darkmantle",
         Type: "Small monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 22,
         HitPointsRoll: "5d6 + 5",
-        ArmorClass: [11, ""],
         Speed: ["10 ft.", "fly 30 ft."],
         Strength: 16,
         Dexterity: 12,
@@ -1778,20 +1930,24 @@ const monstersLocal = [
                 Desc: "A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Death Knight
         ID: 36,
         ProfileType: "Monster",
         Name: "Death Knight",
         Type: "Medium undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [20, "plate"],
         HitPoints: 180,
         HitPointsRoll: "19d8 + 95",
-        ArmorClass: [20, "plate"],
         Speed: ["30 ft."],
         Strength: 20,
         Dexterity: 11,
@@ -1837,6 +1993,7 @@ const monstersLocal = [
                 Desc: "The death knight hurls a magical, flaming orb of green fire at a point it can see within 120 feet of it. The orb explodes in a 20-foot-radius sphere on impact. Each creature in that area must make a DC 16 Dexterity saving throw, taking 45 (10d8) fire damage plus 18 (4d8) necrotic damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry.",
@@ -1845,17 +2002,20 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Demilich
         ID: 37,
         ProfileType: "Monster",
         Name: "Demilich",
         Type: "Tiny undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [20, "natural armor"],
         HitPoints: 80,
         HitPointsRoll: "23d4 + 23",
-        ArmorClass: [20, "natural armor"],
         Speed: ["0 ft.", "fly 30 ft. (hover)"],
         Strength: 1,
         Dexterity: 20,
@@ -1868,7 +2028,19 @@ const monstersLocal = [
         DamageVulnerabilities: [],
         DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from non magical weapons"],
         DamageImmunities: ["Necrotic", "Poison"],
-        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained"],
+        ConditionImmunities: [
+            "Blinded",
+            "Charmed",
+            "Deafened",
+            "Exhaustion",
+            "Frightened",
+            "Grappled",
+            "Paralyzed",
+            "Petrified",
+            "Poisoned",
+            "Prone",
+            "Restrained"
+        ],
         Senses: ["Truesight 60 ft. (blind beyond this radius)", "Passive Perception 23"],
         Languages: ["Understands the languages it knew in life but can't speak"],
         Challenge: [18, 20000],
@@ -1888,6 +2060,7 @@ const monstersLocal = [
             }
         ],
         Actions: [],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -1904,17 +2077,20 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Balor
         ID: 38,
         ProfileType: "Monster",
         Name: "Balor",
         Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 262,
         HitPointsRoll: "21d12 + 126",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft."],
         Strength: 26,
         Dexterity: 15,
@@ -1964,20 +2140,24 @@ const monstersLocal = [
                 Desc: "The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Barlgura
         ID: 39,
         ProfileType: "Monster",
         Name: "Barlgura",
         Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 68,
         HitPointsRoll: "8d10 + 24",
-        ArmorClass: [15, "natural armor"],
         Speed: ["40 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -2019,20 +2199,24 @@ const monstersLocal = [
                 Desc: "The barlgura jumps up to 30 feet by spending 10 feet of movement."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Chasme
         ID: 40,
         ProfileType: "Monster",
         Name: "Chasme",
         Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 52,
         HitPointsRoll: "7d10 + 14",
-        ArmorClass: [15, "natural armor"],
         Speed: ["15 ft.", "fly 30 ft."],
         Strength: 16,
         Dexterity: 15,
@@ -2066,20 +2250,24 @@ const monstersLocal = [
                 Desc: "The chasme emits a maddening buzz. Each creature within 30 feet of the chasme that can hear it and that isn't a demon must succeed on a DC 12 Constitution saving throw, or the creature can't take reactions, and it must roll a d8 to determine what it does during the current turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Dretch
         ID: 41,
         ProfileType: "Monster",
         Name: "Dretch",
         Type: "Small fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [11, "natural armor"],
         HitPoints: 18,
         HitPointsRoll: "4d6 + 4",
-        ArmorClass: [11, "natural armor"],
         Speed: ["20 ft."],
         Strength: 11,
         Dexterity: 11,
@@ -2116,20 +2304,24 @@ const monstersLocal = [
                 Desc: "A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target must use its action before it can do anything else on its turn, other than moving, to try to vomit. If the target does not vomit, it can't take actions on its turn."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Glabrezu
         ID: 42,
         ProfileType: "Monster",
         Name: "Glabrezu",
         Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 157,
         HitPointsRoll: "15d10 + 75",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft."],
         Strength: 20,
         Dexterity: 15,
@@ -2171,20 +2363,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Goristro
         ID: 43,
         ProfileType: "Monster",
         Name: "Goristro",
         Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 310,
         HitPointsRoll: "20d12 + 180",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft."],
         Strength: 22,
         Dexterity: 9,
@@ -2230,20 +2426,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one prone creature. Hit: 32 (6d6 + 11) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Hezrou
         ID: 44,
         ProfileType: "Monster",
         Name: "Hezrou",
         Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 136,
         HitPointsRoll: "13d10 + 65",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft."],
         Strength: 19,
         Dexterity: 17,
@@ -2285,20 +2485,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Manes
         ID: 45,
         ProfileType: "Monster",
         Name: "Manes",
         Type: "Small fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [9, ""],
         HitPoints: 9,
         HitPointsRoll: "2d6 + 2",
-        ArmorClass: [9, ""],
         Speed: ["20 ft."],
         Strength: 10,
         Dexterity: 9,
@@ -2323,20 +2527,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Marilith
         ID: 46,
         ProfileType: "Monster",
         Name: "Marilith",
         Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 189,
         HitPointsRoll: "18d10 + 90",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft."],
         Strength: 18,
         Dexterity: 20,
@@ -2386,20 +2594,24 @@ const monstersLocal = [
                 Desc: "The marilith's innate spellcasting ability is Wisdom (spell save DC 17). The marilith can innately cast the following spells, requiring no material components:#PAt will: astral projection (self only), telekinesis"
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Nalfeshnee
         ID: 47,
         ProfileType: "Monster",
         Name: "Nalfeshnee",
         Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 184,
         HitPointsRoll: "16d10 + 96",
-        ArmorClass: [18, "natural armor"],
         Speed: ["20 ft.", "fly 30 ft."],
         Strength: 21,
         Dexterity: 10,
@@ -2441,20 +2653,24 @@ const monstersLocal = [
                 Desc: "The nalfeshnee magically emits scintillating, multicolored light. Each creature within 15 feet of the nalfeshnee that can see the light must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Quasit
         ID: 48,
         ProfileType: "Monster",
         Name: "Quasit",
         Type: "Tiny fiend (demon, shapechanger), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 7,
         HitPointsRoll: "3d4",
-        ArmorClass: [13, ""],
         Speed: ["40 ft."],
         Strength: 5,
         Dexterity: 17,
@@ -2496,20 +2712,24 @@ const monstersLocal = [
                 Desc: "One creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Shadow Demon
         ID: 49,
         ProfileType: "Monster",
         Name: "Shadow Demon",
         Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 66,
         HitPointsRoll: "12d8 + 12",
-        ArmorClass: [13, ""],
         Speed: ["0 ft.", "fly 40 ft. (hover)"],
         Strength: 1,
         Dexterity: 17,
@@ -2555,20 +2775,24 @@ const monstersLocal = [
                 Desc: "The shadow demon's innate spellcasting ability is Charisma (spell save DC 13). The shadow demon can innately cast the following spells, requiring no material components:#PAt will: darkness, minor illusion#P1/day: mirror image (using shadow duplicates rather than mirror images)"
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Vrock
         ID: 50,
         ProfileType: "Monster",
         Name: "Vrock",
         Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 104,
         HitPointsRoll: "11d10 + 44",
-        ArmorClass: [15, "natural armor"],
         Speed: ["40 ft.", "fly 60 ft."],
         Strength: 17,
         Dexterity: 15,
@@ -2614,20 +2838,24 @@ const monstersLocal = [
                 Desc: "The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a demon must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Yochlol
         ID: 51,
         ProfileType: "Monster",
         Name: "Yochlol",
         Type: "Medium fiend (demon, shapechanger), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 136,
         HitPointsRoll: "16d8 + 64",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 15,
         Dexterity: 15,
@@ -2681,20 +2909,24 @@ const monstersLocal = [
                 Desc: "The yochlol moves up to its speed without provoking opportunity attacks. It can move into a Large or smaller creature's space during this movement. Whenever the yochlol enters a creature's space, that creature must make a DC 14 Dexterity saving throw. On a successful save, the creature can choose to be pushed 5 feet back or to the side of the yochlol. A creature that chooses not to be pushed suffers the consequences of a failed saving throw. On a failed save, the yochlol enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 10 (3d6) acid damage at the start of each of the yochlol's turns."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Barbed Devil
         ID: 52,
         ProfileType: "Monster",
         Name: "Barbed Devil",
         Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 110,
         HitPointsRoll: "13d8 + 52",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 17,
@@ -2744,20 +2976,24 @@ const monstersLocal = [
                 Desc: "Ranged Spell Attack: +5 to hit, range 150 ft., one target. Hit: 10 (3d6) fire damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Bearded Devil
         ID: 53,
         ProfileType: "Monster",
         Name: "Bearded Devil",
         Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 52,
         HitPointsRoll: "8d8 + 16",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 15,
@@ -2799,20 +3035,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Bone Devil
         ID: 54,
         ProfileType: "Monster",
         Name: "Bone Devil",
         Type: "Large fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 142,
         HitPointsRoll: "15d10 + 60",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "fly 40 ft."],
         Strength: 18,
         Dexterity: 16,
@@ -2854,20 +3094,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 13 (2d8 + 4) piercing damage, and the target must succeed on a DC 16 Constitution saving throw or take 21 (6d6) poison damage and become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Chain Devil
         ID: 55,
         ProfileType: "Monster",
         Name: "Chain Devil",
         Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 85,
         HitPointsRoll: "10d8 + 40",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -2913,20 +3157,24 @@ const monstersLocal = [
                 Desc: "The devil magically animates one to four chains it can see within 60 feet of it. Each animated chain occupies its own space, has AC 15, 20 hit points, resistance to piercing damage, and immunity to poison and psychic damage. On the devil's turn, it can command each animated chain it can see to fly up to 60 feet and hit one creature it can see. Melee Weapon Attack: +7 to hit, reach 5 ft. Hit: 7 (2d4 + 2) piercing damage, and the target is grappled (escape DC 14) if it isn't already grappled by another chain. The devil can command any number of animated chains this way, provided the chains are within 60 feet of the devil, but can't command a chain that's already grappling a creature."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Erinyes
         ID: 56,
         ProfileType: "Monster",
         Name: "Erinyes",
         Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 153,
         HitPointsRoll: "18d8 + 72",
-        ArmorClass: [18, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft."],
         Strength: 18,
         Dexterity: 16,
@@ -2968,6 +3216,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 13 (3d8) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry.",
@@ -2976,17 +3225,20 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Horned Devil
         ID: 57,
         ProfileType: "Monster",
         Name: "Horned Devil",
         Type: "Large fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 178,
         HitPointsRoll: "17d10 + 85",
-        ArmorClass: [18, "natural armor"],
         Speed: ["20 ft.", "fly 60 ft."],
         Strength: 22,
         Dexterity: 17,
@@ -3036,20 +3288,24 @@ const monstersLocal = [
                 Desc: "The devil magically casts fireball (7th-level version, save DC 15), using its innate spellcasting rather than a spell slot."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Ice Devil
         ID: 58,
         ProfileType: "Monster",
         Name: "Ice Devil",
         Type: "Large fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 180,
         HitPointsRoll: "19d10 + 76",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft."],
         Strength: 21,
         Dexterity: 14,
@@ -3103,20 +3359,24 @@ const monstersLocal = [
                 Desc: "The devil magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it, as in the wall of ice spell, using a save DC of 17."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Imp
         ID: 59,
         ProfileType: "Monster",
         Name: "Imp",
         Type: "Tiny fiend (devil, shapechanger), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 10,
         HitPointsRoll: "3d4 + 3",
-        ArmorClass: [13, ""],
         Speed: ["20 ft.", "fly 40 ft."],
         Strength: 6,
         Dexterity: 17,
@@ -3158,20 +3418,24 @@ const monstersLocal = [
                 Desc: "The imp magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Lemure
         ID: 60,
         ProfileType: "Monster",
         Name: "Lemure",
         Type: "Medium fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [7, ""],
         HitPoints: 13,
         HitPointsRoll: "3d8",
-        ArmorClass: [7, ""],
         Speed: ["15 ft."],
         Strength: 10,
         Dexterity: 5,
@@ -3201,20 +3465,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Pit Fiend
         ID: 61,
         ProfileType: "Monster",
         Name: "Pit Fiend",
         Type: "Large fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 300,
         HitPointsRoll: "24d10 + 168",
-        ArmorClass: [19, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft."],
         Strength: 26,
         Dexterity: 14,
@@ -3268,20 +3536,24 @@ const monstersLocal = [
                 Desc: "Ranged Spell Attack: +11 to hit, range 150 ft., one target. Hit: 24 (7d6) fire damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Spined Devil
         ID: 62,
         ProfileType: "Monster",
         Name: "Spined Devil",
         Type: "Small fiend (devil), lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 22,
         HitPointsRoll: "5d6 + 5",
-        ArmorClass: [13, ""],
         Speed: ["20 ft.", "fly 40 ft."],
         Strength: 10,
         Dexterity: 15,
@@ -3323,20 +3595,24 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 20/80 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Allosaurus
         ID: 63,
         ProfileType: "Monster",
         Name: "Allosaurus",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 51,
         HitPointsRoll: "6d10 + 18",
-        ArmorClass: [13, "natural armor"],
         Speed: ["60 ft."],
         Strength: 19,
         Dexterity: 13,
@@ -3374,20 +3650,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Ankylosaurus
         ID: 64,
         ProfileType: "Monster",
         Name: "Ankylosaurus",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 68,
         HitPointsRoll: "8d12 + 16",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 19,
         Dexterity: 11,
@@ -3412,20 +3692,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Plesiosaurus
         ID: 65,
         ProfileType: "Monster",
         Name: "Plesiosaurus",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 68,
         HitPointsRoll: "8d10 + 24",
-        ArmorClass: [13, "natural armor"],
         Speed: ["20 ft.", "swim 40 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -3455,20 +3739,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Triceratops
         ID: 66,
         ProfileType: "Monster",
         Name: "Triceratops",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 95,
         HitPointsRoll: "10d12 + 30",
-        ArmorClass: [13, "natural armor"],
         Speed: ["50 ft."],
         Strength: 22,
         Dexterity: 9,
@@ -3506,20 +3794,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one prone creature. Hit: 22 (3d10 + 6) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Pteranodon
         ID: 67,
         ProfileType: "Monster",
         Name: "Pteranodon",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 13,
         HitPointsRoll: "3d8",
-        ArmorClass: [13, ""],
         Speed: ["10 ft.", "fly 60 ft."],
         Strength: 12,
         Dexterity: 15,
@@ -3549,20 +3841,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Tyrannosaurus Rex
         ID: 68,
         ProfileType: "Monster",
         Name: "Tyrannosaurus Rex",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 136,
         HitPointsRoll: "13d12 + 52",
-        ArmorClass: [13, "natural armor"],
         Speed: ["50 ft."],
         Strength: 25,
         Dexterity: 10,
@@ -3595,20 +3891,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +10 to hit, reach 10 ft., one target not grappled by the tyrannosaurus. Hit: 20 (3d8 + 7) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Displacer Beast
         ID: 69,
         ProfileType: "Monster",
         Name: "Displacer Beast",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 85,
         HitPointsRoll: "10d10 + 30",
-        ArmorClass: [13, "natural armor"],
         Speed: ["40 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -3646,20 +3946,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 3 (1d6) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Doppelganger
         ID: 70,
         ProfileType: "Monster",
         Name: "Doppelganger",
         Type: "Medium monstrosity (shapechanger), neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14, ""],
         HitPoints: 52,
         HitPointsRoll: "8d8 + 16",
-        ArmorClass: [14, ""],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 18,
@@ -3705,9 +4009,11 @@ const monstersLocal = [
                 Desc: "The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult Blue Dracolich
@@ -3715,10 +4021,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult Blue Dracolich",
         Type: "Huge undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 225,
         HitPointsRoll: "18d12 + 108",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "burrow 30 ft.", "fly 80 ft."],
         Strength: 25,
         Dexterity: 10,
@@ -3772,6 +4080,7 @@ const monstersLocal = [
                 Desc: "The dracolich exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -3788,6 +4097,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Red Shadow Dragon
@@ -3795,10 +4105,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Red Shadow Dragon",
         Type: "Large dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual (Young Red Dragon base, shadow dragon reskin)",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 178,
         HitPointsRoll: "17d10 + 85",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "climb 40 ft.", "fly 80 ft."],
         Strength: 23,
         Dexterity: 10,
@@ -3848,9 +4160,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales shadowy fire in a 30-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 56 (16d6) necrotic damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead shadow rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient Black Dragon
@@ -3858,10 +4172,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient Black Dragon",
         Type: "Gargantuan dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [22, "natural armor"],
         HitPoints: 367,
         HitPointsRoll: "21d20 + 147",
-        ArmorClass: [22, "natural armor"],
         Speed: ["40 ft.", "swim 40 ft.", "fly 80 ft."],
         Strength: 27,
         Dexterity: 14,
@@ -3915,6 +4231,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales acid in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 67 (15d8) acid damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -3931,17 +4248,20 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Adult Black Dragon
         ID: 74,
         ProfileType: "Monster",
         Name: "Adult Black Dragon",
         Type: "Huge dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 195,
         HitPointsRoll: "17d12 + 85",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "swim 40 ft.", "fly 80 ft."],
         Strength: 23,
         Dexterity: 14,
@@ -3995,6 +4315,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -4011,17 +4332,20 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Young Black Dragon
         ID: 75,
         ProfileType: "Monster",
         Name: "Young Black Dragon",
         Type: "Large dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 127,
         HitPointsRoll: "15d10 + 45",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "swim 40 ft.", "fly 80 ft."],
         Strength: 19,
         Dexterity: 14,
@@ -4063,20 +4387,24 @@ const monstersLocal = [
                 Desc: "The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    {
+    { // Black Dragon Wyrmling
         ID: 76,
         ProfileType: "Monster",
         Name: "Black Dragon Wyrmling",
         Type: "Medium dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 33,
         HitPointsRoll: "6d8 + 6",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "swim 30 ft.", "fly 60 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -4114,9 +4442,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient Blue Dragon
@@ -4124,10 +4454,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient Blue Dragon",
         Type: "Gargantuan dragon, lawful evil",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [22, "natural armor"],
         HitPoints: 481,
         HitPointsRoll: "26d20 + 208",
-        ArmorClass: [22, "natural armor"],
         Speed: ["40 ft.", "burrow 30 ft.", "fly 80 ft."],
         Strength: 29,
         Dexterity: 10,
@@ -4177,6 +4509,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -4198,6 +4531,7 @@ const monstersLocal = [
             "A crack opens in the ground in a 15-foot radius at a point on the ground the dragon can see within 120 feet of it. The crack is 15 feet deep, and any Small or larger creature standing in the area must succeed on a DC 15 Dexterity saving throw or fall in, taking falling damage as appropriate for the depth.",
             "A wall of sand rises to form a solid wall up to 60 feet long, 20 feet high, and 5 feet thick, within 120 feet of the dragon. The wall lasts until the dragon uses this lair action again or until the dragon dies."
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult Blue Dragon
@@ -4205,10 +4539,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult Blue Dragon",
         Type: "Huge dragon, lawful evil",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 212,
         HitPointsRoll: "17d12 + 102",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "burrow 30 ft.", "fly 80 ft."],
         Strength: 25,
         Dexterity: 10,
@@ -4258,6 +4594,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -4274,6 +4611,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Blue Dragon
@@ -4281,10 +4619,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Blue Dragon",
         Type: "Large dragon, lawful evil",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 152,
         HitPointsRoll: "16d10 + 64",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "burrow 30 ft.", "fly 80 ft."],
         Strength: 21,
         Dexterity: 10,
@@ -4321,9 +4661,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Blue Dragon Wyrmling
@@ -4331,10 +4673,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Blue Dragon Wyrmling",
         Type: "Medium dragon, lawful evil",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 65,
         HitPointsRoll: "10d8 + 20",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "burrow 15 ft.", "fly 60 ft."],
         Strength: 19,
         Dexterity: 10,
@@ -4363,9 +4707,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales lightning in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient Green Dragon
@@ -4373,10 +4719,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient Green Dragon",
         Type: "Gargantuan dragon, lawful evil",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [21, "natural armor"],
         HitPoints: 385,
         HitPointsRoll: "22d20 + 154",
-        ArmorClass: [21, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 25,
         Dexterity: 12,
@@ -4430,6 +4778,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 77 (22d6) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -4451,6 +4800,7 @@ const monstersLocal = [
             "The dragon casts fog cloud, centered on a point within 120 feet of it, without providing material components. The spell lasts until initiative count 20 on the next round, when the fog dissipates. Alternatively, the dragon dismisses the fog early as part of taking this lair action to create a different effect.",
             "A pocket of caustic gas explodes in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. Each creature in that area must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage."
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult Green Dragon
@@ -4458,10 +4808,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult Green Dragon",
         Type: "Huge dragon, lawful evil",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 207,
         HitPointsRoll: "18d12 + 90",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 23,
         Dexterity: 12,
@@ -4515,6 +4867,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales poisonous gas in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 56 (16d6) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -4531,6 +4884,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Green Dragon
@@ -4538,10 +4892,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Green Dragon",
         Type: "Large dragon, lawful evil",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 136,
         HitPointsRoll: "16d10 + 48",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 19,
         Dexterity: 12,
@@ -4583,9 +4939,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Green Dragon Wyrmling
@@ -4593,10 +4951,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Green Dragon Wyrmling",
         Type: "Medium dragon, lawful evil",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 38,
         HitPointsRoll: "7d8 + 7",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft.", "swim 30 ft."],
         Strength: 15,
         Dexterity: 12,
@@ -4625,9 +4985,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 11 Constitution saving throw, taking 17 (5d6) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient Red Dragon
@@ -4635,10 +4997,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient Red Dragon",
         Type: "Gargantuan dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [22, "natural armor"],
         HitPoints: 546,
         HitPointsRoll: "28d20 + 252",
-        ArmorClass: [22, "natural armor"],
         Speed: ["40 ft.", "climb 40 ft.", "fly 80 ft."],
         Strength: 30,
         Dexterity: 10,
@@ -4688,6 +5052,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -4709,6 +5074,7 @@ const monstersLocal = [
             "A tremor shakes the lair in a 60-foot radius around the dragon. Each creature other than the dragon on the ground in that area must succeed on a DC 15 Dexterity saving throw or be knocked prone.",
             "Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners, and its area is heavily obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the start of its next turn."
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult Red Dragon
@@ -4716,10 +5082,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult Red Dragon",
         Type: "Huge dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 256,
         HitPointsRoll: "19d12 + 133",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "climb 40 ft.", "fly 80 ft."],
         Strength: 27,
         Dexterity: 10,
@@ -4769,6 +5137,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -4785,6 +5154,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Red Dragon
@@ -4792,10 +5162,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Red Dragon",
         Type: "Large dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 178,
         HitPointsRoll: "17d10 + 85",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "climb 40 ft.", "fly 80 ft."],
         Strength: 23,
         Dexterity: 10,
@@ -4832,9 +5204,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Red Dragon Wyrmling
@@ -4842,10 +5216,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Red Dragon Wyrmling",
         Type: "Medium dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 75,
         HitPointsRoll: "10d8 + 30",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft.", "fly 60 ft."],
         Strength: 19,
         Dexterity: 10,
@@ -4874,9 +5250,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient White Dragon
@@ -4884,10 +5262,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient White Dragon",
         Type: "Gargantuan dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [20, "natural armor"],
         HitPoints: 333,
         HitPointsRoll: "18d20 + 144",
-        ArmorClass: [20, "natural armor"],
         Speed: ["40 ft.", "burrow 30 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 26,
         Dexterity: 10,
@@ -4941,6 +5321,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 22 Dexterity saving throw, taking 72 (16d8) cold damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -4962,6 +5343,7 @@ const monstersLocal = [
             "Jagged icicles fall in a 20-foot-radius, 40-foot-high cylinder centered on a point within 120 feet of the dragon. The cylinder is centered on a point in the air, and the icicles fall to the ground. Each creature in the cylinder when it appears must make a DC 18 Dexterity saving throw, taking 18 (4d8) piercing damage on a failed save, or half as much damage on a successful one.",
             "The dragon causes the ground within 60 feet of it to become icy difficult terrain. The ice remains until initiative count 20 on the next round. Any creature that enters the icy area or starts its turn there must succeed on a DC 18 Dexterity saving throw or fall prone."
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult White Dragon
@@ -4969,10 +5351,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult White Dragon",
         Type: "Huge dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 200,
         HitPointsRoll: "16d12 + 96",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "burrow 30 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 22,
         Dexterity: 10,
@@ -5026,6 +5410,7 @@ const monstersLocal = [
                 Desc: "The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 19 Dexterity saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -5042,6 +5427,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young White Dragon
@@ -5049,10 +5435,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young White Dragon",
         Type: "Large dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 133,
         HitPointsRoll: "14d10 + 56",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft.", "burrow 25 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 18,
         Dexterity: 10,
@@ -5094,9 +5482,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // White Dragon Wyrmling
@@ -5104,10 +5494,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "White Dragon Wyrmling",
         Type: "Medium dragon, chaotic evil",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 32,
         HitPointsRoll: "5d8 + 10",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft.", "burrow 15 ft.", "fly 60 ft.", "swim 30 ft."],
         Strength: 14,
         Dexterity: 10,
@@ -5141,9 +5533,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales an icy blast in a 10-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient Brass Dragon
@@ -5151,10 +5545,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient Brass Dragon",
         Type: "Gargantuan dragon, chaotic good",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [20, "natural armor"],
         HitPoints: 297,
         HitPointsRoll: "17d20 + 119",
-        ArmorClass: [20, "natural armor"],
         Speed: ["40 ft.", "burrow 30 ft.", "fly 80 ft."],
         Strength: 27,
         Dexterity: 10,
@@ -5208,6 +5604,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -5224,6 +5621,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult Brass Dragon
@@ -5231,10 +5629,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult Brass Dragon",
         Type: "Huge dragon, chaotic good",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 172,
         HitPointsRoll: "15d12 + 75",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "burrow 30 ft.", "fly 80 ft."],
         Strength: 23,
         Dexterity: 10,
@@ -5288,6 +5688,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -5304,6 +5705,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Brass Dragon
@@ -5311,10 +5713,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Brass Dragon",
         Type: "Large dragon, chaotic good",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 110,
         HitPointsRoll: "13d10 + 39",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft.", "burrow 20 ft.", "fly 80 ft."],
         Strength: 19,
         Dexterity: 10,
@@ -5351,9 +5755,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 38 (11d6) fire damage on a failed save, or half as much damage on a successful one.#PSleep Breath. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 12 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Brass Dragon Wyrmling
@@ -5361,10 +5767,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Brass Dragon Wyrmling",
         Type: "Medium dragon, chaotic good",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 16,
         HitPointsRoll: "3d8 + 3",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft.", "burrow 15 ft.", "fly 50 ft."],
         Strength: 11,
         Dexterity: 10,
@@ -5393,9 +5801,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.#PSleep Breath. The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient Bronze Dragon
@@ -5403,10 +5813,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient Bronze Dragon",
         Type: "Gargantuan dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [22, "natural armor"],
         HitPoints: 444,
         HitPointsRoll: "24d20 + 192",
-        ArmorClass: [22, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 27,
         Dexterity: 10,
@@ -5464,6 +5876,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -5485,6 +5898,7 @@ const monstersLocal = [
             "A wave surges from a point the dragon can see within 120 feet of it and moves 30 feet in a direction the dragon designates, flowing around corners. Each creature in the wave's path must succeed on a DC 15 Strength saving throw or be pushed 20 feet, knocked prone, and be doused.",
             "The dragon casts fog cloud, without providing material components, centered on a point within 120 feet of it. The spell lasts until initiative count 20 on the next round."
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult Bronze Dragon
@@ -5492,10 +5906,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult Bronze Dragon",
         Type: "Huge dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 212,
         HitPointsRoll: "17d12 + 102",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 25,
         Dexterity: 10,
@@ -5553,6 +5969,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -5569,6 +5986,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Bronze Dragon
@@ -5576,10 +5994,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Bronze Dragon",
         Type: "Large dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 142,
         HitPointsRoll: "15d10 + 60",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 21,
         Dexterity: 10,
@@ -5621,9 +6041,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PLightning Breath. The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.#PRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw or be pushed 40 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 20 feet away but not knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Bronze Dragon Wyrmling
@@ -5631,10 +6053,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Bronze Dragon Wyrmling",
         Type: "Medium dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 32,
         HitPointsRoll: "5d8 + 10",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft.", "swim 30 ft."],
         Strength: 17,
         Dexterity: 10,
@@ -5663,9 +6087,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PLightning Breath. The dragon exhales lightning in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.#PRepulsion Breath. The dragon exhales repulsion energy in a 20-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw or be pushed 20 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 10 feet away but not knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient Copper Dragon
@@ -5673,10 +6099,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient Copper Dragon",
         Type: "Gargantuan dragon, chaotic good",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [21, "natural armor"],
         HitPoints: 350,
         HitPointsRoll: "20d20 + 140",
-        ArmorClass: [21, "natural armor"],
         Speed: ["40 ft.", "climb 40 ft.", "fly 80 ft."],
         Strength: 27,
         Dexterity: 12,
@@ -5730,6 +6158,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -5746,6 +6175,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult Copper Dragon
@@ -5753,10 +6183,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult Copper Dragon",
         Type: "Huge dragon, chaotic good",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 184,
         HitPointsRoll: "16d12 + 80",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft.", "climb 40 ft.", "fly 80 ft."],
         Strength: 23,
         Dexterity: 12,
@@ -5810,6 +6242,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -5826,6 +6259,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Copper Dragon
@@ -5833,10 +6267,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Copper Dragon",
         Type: "Large dragon, chaotic good",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 119,
         HitPointsRoll: "14d10 + 42",
-        ArmorClass: [16, "natural armor"],
         Speed: ["40 ft.", "climb 40 ft.", "fly 80 ft."],
         Strength: 19,
         Dexterity: 12,
@@ -5873,9 +6309,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PAcid Breath. The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 31 (7d8) acid damage on a failed save, or half as much damage on a successful one.#PSlowing Breath. The dragon exhales gas in a 20-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Copper Dragon Wyrmling
@@ -5883,10 +6321,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Copper Dragon Wyrmling",
         Type: "Medium dragon, chaotic good",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 22,
         HitPointsRoll: "4d8 + 4",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft.", "fly 60 ft."],
         Strength: 15,
         Dexterity: 12,
@@ -5915,9 +6355,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PAcid Breath. The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.#PSlowing Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient Gold Dragon
@@ -5925,10 +6367,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient Gold Dragon",
         Type: "Gargantuan dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [22, "natural armor"],
         HitPoints: 546,
         HitPointsRoll: "28d20 + 252",
-        ArmorClass: [22, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 30,
         Dexterity: 14,
@@ -5982,6 +6426,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -6003,6 +6448,7 @@ const monstersLocal = [
             "Sunlight sheds from a point the dragon can see within 60 feet of it, forming a sphere of bright light with a 30-foot radius. Each creature the dragon designates within that light must succeed on a DC 18 Constitution saving throw or be blinded until the light disappears at initiative count 20 on the next round.",
             "The dragon creates a tremor that shakes the ground within 60 feet of it. Each creature other than the dragon on the ground in that area must succeed on a DC 18 Dexterity saving throw or fall prone."
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult Gold Dragon
@@ -6010,10 +6456,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult Gold Dragon",
         Type: "Huge dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 256,
         HitPointsRoll: "19d12 + 133",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 27,
         Dexterity: 14,
@@ -6067,6 +6515,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -6083,6 +6532,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Gold Dragon
@@ -6090,10 +6540,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Gold Dragon",
         Type: "Large dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 178,
         HitPointsRoll: "17d10 + 85",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft.", "swim 40 ft."],
         Strength: 23,
         Dexterity: 14,
@@ -6130,9 +6582,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.#PWeakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gold Dragon Wyrmling
@@ -6140,10 +6594,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gold Dragon Wyrmling",
         Type: "Medium dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 60,
         HitPointsRoll: "8d8 + 24",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft.", "swim 30 ft."],
         Strength: 19,
         Dexterity: 14,
@@ -6172,9 +6628,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 17 (5d6) fire damage on a failed save, or half as much damage on a successful one.#PWeakening Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ancient Silver Dragon
@@ -6182,10 +6640,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ancient Silver Dragon",
         Type: "Gargantuan dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [22, "natural armor"],
         HitPoints: 487,
         HitPointsRoll: "25d20 + 225",
-        ArmorClass: [22, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft."],
         Strength: 30,
         Dexterity: 10,
@@ -6239,6 +6699,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -6255,6 +6716,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Adult Silver Dragon
@@ -6262,10 +6724,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Adult Silver Dragon",
         Type: "Huge dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 243,
         HitPointsRoll: "18d12 + 126",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft."],
         Strength: 27,
         Dexterity: 10,
@@ -6319,6 +6783,7 @@ const monstersLocal = [
                 Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -6335,6 +6800,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Silver Dragon
@@ -6342,10 +6808,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Silver Dragon",
         Type: "Large dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 168,
         HitPointsRoll: "16d10 + 80",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "fly 80 ft."],
         Strength: 23,
         Dexterity: 10,
@@ -6382,9 +6850,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PCold Breath. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.#PParalyzing Breath. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Silver Dragon Wyrmling
@@ -6392,10 +6862,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Silver Dragon Wyrmling",
         Type: "Medium dragon, lawful good",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 45,
         HitPointsRoll: "6d8 + 18",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft."],
         Strength: 19,
         Dexterity: 10,
@@ -6424,9 +6896,11 @@ const monstersLocal = [
                 Desc: "The dragon uses one of the following breath weapons.#PCold Breath. The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.#PParalyzing Breath. The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Dragon Turtle
@@ -6434,10 +6908,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Dragon Turtle",
         Type: "Gargantuan dragon, neutral",
+        TypeCategory: "Dragon",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [20, "natural armor"],
         HitPoints: 341,
         HitPointsRoll: "22d20 + 110",
-        ArmorClass: [20, "natural armor"],
         Speed: ["20 ft.", "swim 40 ft."],
         Strength: 25,
         Dexterity: 10,
@@ -6483,9 +6959,11 @@ const monstersLocal = [
                 Desc: "The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. A creature that fails the saving throw by 5 or more is also blinded for 1 minute. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Drider
@@ -6493,10 +6971,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Drider",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 123,
         HitPointsRoll: "13d10 + 52",
-        ArmorClass: [19, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 16,
         Dexterity: 16,
@@ -6550,9 +7030,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or take 9 (2d8) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Dryad
@@ -6560,10 +7042,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Dryad",
         Type: "Medium fey, neutral",
+        TypeCategory: "Fey",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, "16 with barkskin"],
         HitPoints: 22,
         HitPointsRoll: "5d8",
-        ArmorClass: [11, "16 with barkskin"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 12,
@@ -6609,9 +7093,11 @@ const monstersLocal = [
                 Desc: "The dryad targets one Humanoid or Beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can, and it is a willing target for the dryad's spells and other magical effects.#PEach time the dryad or the dryad's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.#PThe dryad can have no more than one humanoid and up to three beasts charmed at a time."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Duergar
@@ -6619,10 +7105,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Duergar",
         Type: "Medium humanoid (dwarf), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "scale mail, shield"],
         HitPoints: 26,
         HitPointsRoll: "4d8 + 8",
-        ArmorClass: [16, "scale mail, shield"],
         Speed: ["25 ft."],
         Strength: 14,
         Dexterity: 11,
@@ -6672,9 +7160,11 @@ const monstersLocal = [
                 Desc: "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration ends (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Air Elemental
@@ -6682,10 +7172,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Air Elemental",
         Type: "Large elemental, neutral",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, ""],
         HitPoints: 90,
         HitPointsRoll: "12d10 + 24",
-        ArmorClass: [15, ""],
         Speed: ["0 ft.", "fly 90 ft. (hover)"],
         Strength: 14,
         Dexterity: 20,
@@ -6723,9 +7215,11 @@ const monstersLocal = [
                 Desc: "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.#PIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Earth Elemental
@@ -6733,10 +7227,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Earth Elemental",
         Type: "Large elemental, neutral",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 126,
         HitPointsRoll: "12d10 + 60",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "burrow 30 ft."],
         Strength: 20,
         Dexterity: 8,
@@ -6774,9 +7270,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Fire Elemental
@@ -6784,10 +7282,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Fire Elemental",
         Type: "Large elemental, neutral",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 102,
         HitPointsRoll: "12d10 + 36",
-        ArmorClass: [13, ""],
         Speed: ["50 ft."],
         Strength: 10,
         Dexterity: 17,
@@ -6825,9 +7325,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Water Elemental
@@ -6835,10 +7337,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Water Elemental",
         Type: "Large elemental, neutral",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14, ""],
         HitPoints: 114,
         HitPointsRoll: "12d10 + 48",
-        ArmorClass: [14, ""],
         Speed: ["30 ft.", "swim 90 ft."],
         Strength: 18,
         Dexterity: 14,
@@ -6880,9 +7384,11 @@ const monstersLocal = [
                 Desc: "Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is engulfed. The engulfed target can't breathe unless it can breathe water, is restrained, and has advantage on saving throws against exhaustion and poison. If the target is engulfed and takes cold damage, it also takes 1 cold damage.#POn a success, the target takes half as much damage, and it isn't engulfed but is instead pushed out of the elemental's space."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Drow
@@ -6890,10 +7396,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Drow",
         Type: "Medium humanoid (elf), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "chain shirt"],
         HitPoints: 13,
         HitPointsRoll: "3d8",
-        ArmorClass: [15, "chain shirt"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 14,
@@ -6939,9 +7447,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Drow Elite Warrior
@@ -6949,10 +7459,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Drow Elite Warrior",
         Type: "Medium humanoid (elf), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [18, "studded leather, shield"],
         HitPoints: 71,
         HitPointsRoll: "11d8 + 22",
-        ArmorClass: [18, "studded leather, shield"],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 18,
@@ -6998,6 +7510,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +7 to hit, range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry.",
@@ -7006,6 +7519,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Drow Mage
@@ -7013,10 +7527,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Drow Mage",
         Type: "Medium humanoid (elf), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 45,
         HitPointsRoll: "10d8",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -7058,9 +7574,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Drow Priestess of Lolth
@@ -7068,10 +7586,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Drow Priestess of Lolth",
         Type: "Medium humanoid (elf), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "chain shirt"],
         HitPoints: 71,
         HitPointsRoll: "13d8 + 13",
-        ArmorClass: [16, "chain shirt"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 15,
@@ -7117,9 +7637,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 10 ft. (with the whip's serpent head), one target. Hit: 4 (1d4 + 2) slashing damage plus 10 (3d6) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Empyrean
@@ -7127,10 +7649,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Empyrean",
         Type: "Huge celestial (titan), chaotic good (75%) or neutral evil (25%)",
+        TypeCategory: "Celestial",
+        Size: "Huge",
         Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [22, "natural armor"],
         HitPoints: 313,
         HitPointsRoll: "19d12 + 190",
-        ArmorClass: [22, "natural armor"],
         Speed: ["50 ft.", "fly 50 ft.", "swim 50 ft."],
         Strength: 30,
         Dexterity: 21,
@@ -7176,6 +7700,7 @@ const monstersLocal = [
                 Desc: "Ranged Spell Attack: +15 to hit, range 600 ft., one target. Hit: 24 (7d6) damage of one of the following types (empyrean's choice): acid, cold, fire, force, lightning, radiant, or thunder."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -7192,6 +7717,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ettercap
@@ -7199,10 +7725,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ettercap",
         Type: "Medium monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 44,
         HitPointsRoll: "8d8 + 8",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 14,
         Dexterity: 15,
@@ -7252,9 +7780,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 11 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ettin
@@ -7262,10 +7792,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ettin",
         Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 85,
         HitPointsRoll: "10d10 + 30",
-        ArmorClass: [12, "natural armor"],
         Speed: ["40 ft."],
         Strength: 21,
         Dexterity: 8,
@@ -7307,20 +7839,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    { // Faerie Dragon (Young)
+    { // Faerie Dragon
         ID: 128,
         ProfileType: "Monster",
         Name: "Faerie Dragon",
         Type: "Tiny dragon, chaotic good",
+        TypeCategory: "Dragon",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 14,
         HitPointsRoll: "4d4 + 4",
-        ArmorClass: [15, "natural armor"],
         Speed: ["10 ft.", "fly 60 ft."],
         Strength: 3,
         Dexterity: 18,
@@ -7362,9 +7898,11 @@ const monstersLocal = [
                 Desc: "The dragon exhales euphoria gas in a 10-foot cone. Each creature in that area must succeed on a DC 10 Constitution saving throw or become affected for 1 minute. While affected, a creature doesn't take actions, becomes euphoric and talkative, and is incapable of dealing damage or understanding the danger to itself. The effect ends on a creature if it takes damage or if someone uses an action to shake it out of its stupor."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Flameskull
@@ -7372,10 +7910,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Flameskull",
         Type: "Tiny undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 40,
         HitPointsRoll: "9d4 + 18",
-        ArmorClass: [13, ""],
         Speed: ["0 ft.", "fly 40 ft. (hover)"],
         Strength: 1,
         Dexterity: 17,
@@ -7417,9 +7957,11 @@ const monstersLocal = [
                 Desc: "The flameskull is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). The flameskull has the following wizard spells prepared:#PCantrips (at will): mage hand, minor illusion, ray of frost#P1st level (4 slots): mage armor, magic missile, shield#P2nd level (3 slots): blur, flaming sphere, invisibility#P3rd level (2 slots): counterspell, fireball"
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Flumph
@@ -7427,10 +7969,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Flumph",
         Type: "Small aberration, lawful good",
+        TypeCategory: "Aberration",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 7,
         HitPointsRoll: "2d6",
-        ArmorClass: [12, ""],
         Speed: ["5 ft.", "fly 30 ft."],
         Strength: 6,
         Dexterity: 15,
@@ -7472,9 +8016,11 @@ const monstersLocal = [
                 Desc: "Each creature in a 15-foot cone originating from the flumph must succeed on a DC 10 Dexterity saving throw or be coated in a foul-smelling liquid. A coated creature exudes a horrible stench for 1d4 hours. The coated creature is poisoned as long as the stench lasts, and other creatures are poisoned while within 5 feet of the coated creature. A creature can remove the stench on itself by using a short rest to bathe in water, alcohol, or vinegar."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Fomorian
@@ -7482,10 +8028,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Fomorian",
         Type: "Huge giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 149,
         HitPointsRoll: "13d12 + 65",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 23,
         Dexterity: 10,
@@ -7522,9 +8070,11 @@ const monstersLocal = [
                 Desc: "With a stare, the fomorian uses Evil Eye, but on a failed save, the creature is also cursed with magical deformities. While deformed, the creature has its speed halved and has disadvantage on ability checks, saving throws, and attacks based on Strength or Dexterity. The transformed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gas Spore
@@ -7532,10 +8082,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gas Spore",
         Type: "Large plant, unaligned",
+        TypeCategory: "Plant",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [5, ""],
         HitPoints: 1,
         HitPointsRoll: "1d10 - 4",
-        ArmorClass: [5, ""],
         Speed: ["0 ft.", "fly 10 ft. (hover)"],
         Strength: 5,
         Dexterity: 1,
@@ -7569,9 +8121,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 poison damage, and the creature must succeed on a DC 10 Constitution saving throw or become infected with the disease described in the Death Burst trait."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Shrieker
@@ -7579,10 +8133,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Shrieker",
         Type: "Medium plant, unaligned",
+        TypeCategory: "Plant",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [5, ""],
         HitPoints: 13,
         HitPointsRoll: "3d8",
-        ArmorClass: [5, ""],
         Speed: ["0 ft."],
         Strength: 1,
         Dexterity: 1,
@@ -7612,9 +8168,11 @@ const monstersLocal = [
                 Desc: "When there is a bright light within 30 feet of it or a creature it can sense moves within 30 feet of it and isn't a gas spore or a shrieker, the shrieker emits a shriek audible within 300 feet of it. The shrieker continues to shriek every round on its turn until it is no longer within 30 feet of any light or moving creatures."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Violet Fungus
@@ -7622,10 +8180,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Violet Fungus",
         Type: "Medium plant, unaligned",
+        TypeCategory: "Plant",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [5, ""],
         HitPoints: 18,
         HitPointsRoll: "4d8",
-        ArmorClass: [5, ""],
         Speed: ["5 ft."],
         Strength: 3,
         Dexterity: 1,
@@ -7659,9 +8219,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 10 ft., one creature. Hit: 4 (1d8) necrotic damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Galeb Duhr
@@ -7669,10 +8231,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Galeb Duhr",
         Type: "Medium elemental, neutral",
+        TypeCategory: "Elemental",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 85,
         HitPointsRoll: "9d8 + 45",
-        ArmorClass: [16, "natural armor"],
         Speed: ["15 ft. (30 ft. when rolling, 60 ft. rolling downhill)"],
         Strength: 20,
         Dexterity: 14,
@@ -7710,9 +8274,11 @@ const monstersLocal = [
                 Desc: "The galeb duhr magically animates up to two boulders it can see within 60 feet of it. A boulder has statistics like those of a galeb duhr, except it has Intelligence 1 and Charisma 1, it can't be charmed or frightened, and it lacks this action option. A boulder remains animated as long as the galeb duhr maintains concentration, up to 1 minute (as if concentrating on a spell)."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gargoyle
@@ -7720,10 +8286,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gargoyle",
         Type: "Medium elemental, chaotic evil",
+        TypeCategory: "Elemental",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 52,
         HitPointsRoll: "7d8 + 21",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft."],
         Strength: 15,
         Dexterity: 11,
@@ -7761,9 +8329,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d6) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Dao
@@ -7771,10 +8341,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Dao",
         Type: "Large elemental, neutral evil",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 187,
         HitPointsRoll: "15d10 + 105",
-        ArmorClass: [18, "natural armor"],
         Speed: ["30 ft.", "burrow 30 ft.", "fly 30 ft."],
         Strength: 23,
         Dexterity: 12,
@@ -7824,9 +8396,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) bludgeoning damage. If the target is a Huge or smaller creature, it must succeed on a DC 18 Strength check or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Djinni
@@ -7834,10 +8408,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Djinni",
         Type: "Large elemental, chaotic good",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 161,
         HitPointsRoll: "17d10 + 68",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "fly 90 ft."],
         Strength: 21,
         Dexterity: 15,
@@ -7879,9 +8455,11 @@ const monstersLocal = [
                 Desc: "A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it. A creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind. "
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Efreeti
@@ -7889,10 +8467,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Efreeti",
         Type: "Large elemental, lawful evil",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 200,
         HitPointsRoll: "16d10 + 112",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft.", "fly 60 ft."],
         Strength: 22,
         Dexterity: 12,
@@ -7934,9 +8514,11 @@ const monstersLocal = [
                 Desc: "Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 17 (5d6) fire damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Marid
@@ -7944,10 +8526,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Marid",
         Type: "Large elemental, chaotic neutral",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 229,
         HitPointsRoll: "17d10 + 136",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft.", "swim 90 ft."],
         Strength: 22,
         Dexterity: 12,
@@ -7993,9 +8577,11 @@ const monstersLocal = [
                 Desc: "The marid magically shoots water in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw. On a failure, a target takes 21 (6d6) bludgeoning damage and, if it is Huge or smaller, is pushed up to 20 feet away from the marid and knocked prone. On a success, a target takes half the bludgeoning damage, but is neither pushed nor knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ghost
@@ -8003,10 +8589,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ghost",
         Type: "Medium undead, any alignment",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 45,
         HitPointsRoll: "10d8",
-        ArmorClass: [11, ""],
         Speed: ["0 ft.", "fly 40 ft. (hover)"],
         Strength: 7,
         Dexterity: 13,
@@ -8052,9 +8640,11 @@ const monstersLocal = [
                 Desc: "One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened, but otherwise uses the possessed target's statistics. It can't use its possessed target's reactions. The ghost can end the possession as a bonus action, whereupon it reappears in an unoccupied space within 5 feet of the body.#PThe target's body, if killed while possessed, dies, and the ghost must succeed on a DC 13 Charisma saving throw or take 3d6 psychic damage before reappearing within 5 feet of the corpse. If the target is or becomes immune to being charmed, it succeeds on its saving throw automatically, and the ghost is ejected from the target's body after failing to possess it.#POnce it successfully possesses a target, the ghost can't attempt to possess another creature for 24 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ghast
@@ -8062,10 +8652,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ghast",
         Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 36,
         HitPointsRoll: "8d8",
-        ArmorClass: [13, ""],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 17,
@@ -8103,9 +8695,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ghoul
@@ -8113,10 +8707,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ghoul",
         Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 22,
         HitPointsRoll: "5d8",
-        ArmorClass: [12, ""],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 15,
@@ -8145,9 +8741,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Cloud Giant
@@ -8155,10 +8753,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Cloud Giant",
         Type: "Huge giant, neutral (any alignment)",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 200,
         HitPointsRoll: "16d12 + 96",
-        ArmorClass: [14, "natural armor"],
         Speed: ["40 ft."],
         Strength: 27,
         Dexterity: 10,
@@ -8200,9 +8800,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Fire Giant
@@ -8210,10 +8812,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Fire Giant",
         Type: "Huge giant, lawful evil",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [18, "plate"],
         HitPoints: 162,
         HitPointsRoll: "13d12 + 78",
-        ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 25,
         Dexterity: 9,
@@ -8246,9 +8850,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Frost Giant
@@ -8256,10 +8862,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Frost Giant",
         Type: "Huge giant, neutral evil",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [15, "patchwork armor"],
         HitPoints: 138,
         HitPointsRoll: "12d12 + 60",
-        ArmorClass: [15, "patchwork armor"],
         Speed: ["40 ft."],
         Strength: 23,
         Dexterity: 9,
@@ -8292,9 +8900,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hill Giant
@@ -8302,10 +8912,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hill Giant",
         Type: "Huge giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 105,
         HitPointsRoll: "10d12 + 40",
-        ArmorClass: [13, "natural armor"],
         Speed: ["40 ft."],
         Strength: 21,
         Dexterity: 8,
@@ -8338,9 +8950,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Stone Giant
@@ -8348,10 +8962,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Stone Giant",
         Type: "Huge giant, neutral",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 126,
         HitPointsRoll: "11d12 + 55",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft."],
         Strength: 23,
         Dexterity: 15,
@@ -8389,6 +9005,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Rock Catching.",
@@ -8397,6 +9014,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Storm Giant
@@ -8404,10 +9022,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Storm Giant",
         Type: "Huge giant, chaotic good",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [16, "scale mail"],
         HitPoints: 230,
         HitPointsRoll: "20d12 + 100",
-        ArmorClass: [16, "scale mail"],
         Speed: ["50 ft.", "swim 50 ft."],
         Strength: 29,
         Dexterity: 14,
@@ -8453,9 +9073,11 @@ const monstersLocal = [
                 Desc: "The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gibbering Mouther
@@ -8463,10 +9085,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gibbering Mouther",
         Type: "Medium aberration, neutral",
+        TypeCategory: "Aberration",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [9, ""],
         HitPoints: 67,
         HitPointsRoll: "9d8 + 27",
-        ArmorClass: [9, ""],
         Speed: ["10 ft.", "swim 10 ft."],
         Strength: 10,
         Dexterity: 8,
@@ -8508,9 +9132,11 @@ const monstersLocal = [
                 Desc: "The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Githyanki Warrior
@@ -8518,10 +9144,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Githyanki Warrior",
         Type: "Medium humanoid (gith), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "half plate"],
         HitPoints: 49,
         HitPointsRoll: "9d8 + 9",
-        ArmorClass: [17, "half plate"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -8555,9 +9183,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage plus 7 (2d6) psychic damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Githyanki Knight
@@ -8565,10 +9195,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Githyanki Knight",
         Type: "Medium humanoid (gith), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [18, "plate"],
         HitPoints: 91,
         HitPointsRoll: "14d8 + 28",
-        ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -8602,9 +9234,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 10 (3d6) psychic damage. This is a magic weapon attack. On a critical hit against a target in an astral body (as with the astral projection spell), the githyanki can cut the silvery cord that tethers the target to its material body, instead of dealing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Githzerai Monk
@@ -8612,10 +9246,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Githzerai Monk",
         Type: "Medium humanoid (gith), lawful neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14, ""],
         HitPoints: 38,
         HitPointsRoll: "7d8 + 7",
-        ArmorClass: [14, ""],
         Speed: ["30 ft."],
         Strength: 12,
         Dexterity: 15,
@@ -8653,9 +9289,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage plus 9 (2d8) psychic damage. This is a magic weapon attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Githzerai Zerth
@@ -8663,10 +9301,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Githzerai Zerth",
         Type: "Medium humanoid (gith), lawful neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, ""],
         HitPoints: 84,
         HitPointsRoll: "13d8 + 26",
-        ArmorClass: [17, ""],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 18,
@@ -8704,9 +9344,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 13 (3d8) psychic damage. This is a magic weapon attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gnoll
@@ -8714,10 +9356,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gnoll",
         Type: "Medium humanoid (gnoll), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "hide armor, shield"],
         HitPoints: 22,
         HitPointsRoll: "5d8",
-        ArmorClass: [15, "hide armor, shield"],
         Speed: ["30 ft."],
         Strength: 14,
         Dexterity: 12,
@@ -8755,9 +9399,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gnoll Pack Lord
@@ -8765,10 +9411,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gnoll Pack Lord",
         Type: "Medium humanoid (gnoll), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "chain shirt"],
         HitPoints: 49,
         HitPointsRoll: "9d8 + 9",
-        ArmorClass: [15, "chain shirt"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -8814,9 +9462,11 @@ const monstersLocal = [
                 Desc: "One creature the gnoll can see within 30 feet of it can use its reaction to make a melee attack if it can hear the gnoll and has the Rampage trait."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gnoll Fang of Yeenoghu
@@ -8824,10 +9474,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gnoll Fang of Yeenoghu",
         Type: "Medium fiend (gnoll), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14, "hide armor"],
         HitPoints: 65,
         HitPointsRoll: "10d8 + 20",
-        ArmorClass: [14, "hide armor"],
         Speed: ["30 ft."],
         Strength: 17,
         Dexterity: 15,
@@ -8865,9 +9517,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Deep Gnome (Svirfneblin)
@@ -8875,10 +9529,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Deep Gnome (Svirfneblin)",
         Type: "Small humanoid (gnome), neutral good",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [15, "chain shirt"],
         HitPoints: 16,
         HitPointsRoll: "3d6 + 6",
-        ArmorClass: [15, "chain shirt"],
         Speed: ["20 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -8920,9 +9576,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Goblin
@@ -8930,10 +9588,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Goblin",
         Type: "Small humanoid (goblinoid), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [15, "leather armor, shield"],
         HitPoints: 7,
         HitPointsRoll: "2d6",
-        ArmorClass: [15, "leather armor, shield"],
         Speed: ["30 ft."],
         Strength: 8,
         Dexterity: 14,
@@ -8967,9 +9627,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Goblin Boss
@@ -8977,10 +9639,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Goblin Boss",
         Type: "Small humanoid (goblinoid), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [17, "chain shirt, shield"],
         HitPoints: 21,
         HitPointsRoll: "6d6",
-        ArmorClass: [17, "chain shirt, shield"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 14,
@@ -9018,6 +9682,7 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Redirect Attack.",
@@ -9026,6 +9691,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Clay Golem
@@ -9033,10 +9699,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Clay Golem",
         Type: "Large construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 133,
         HitPointsRoll: "14d10 + 56",
-        ArmorClass: [14, "natural armor"],
         Speed: ["20 ft."],
         Strength: 20,
         Dexterity: 9,
@@ -9090,9 +9758,11 @@ const monstersLocal = [
                 Desc: "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Flesh Golem
@@ -9100,10 +9770,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Flesh Golem",
         Type: "Medium construct, neutral",
+        TypeCategory: "Construct",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [9, ""],
         HitPoints: 93,
         HitPointsRoll: "11d8 + 44",
-        ArmorClass: [9, ""],
         Speed: ["30 ft."],
         Strength: 19,
         Dexterity: 9,
@@ -9157,9 +9829,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Iron Golem
@@ -9167,10 +9841,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Iron Golem",
         Type: "Large construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [20, "natural armor"],
         HitPoints: 210,
         HitPointsRoll: "20d10 + 100",
-        ArmorClass: [20, "natural armor"],
         Speed: ["30 ft."],
         Strength: 24,
         Dexterity: 9,
@@ -9224,9 +9900,11 @@ const monstersLocal = [
                 Desc: "The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Stone Golem
@@ -9234,10 +9912,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Stone Golem",
         Type: "Large construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 178,
         HitPointsRoll: "17d10 + 85",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft."],
         Strength: 22,
         Dexterity: 9,
@@ -9283,9 +9963,11 @@ const monstersLocal = [
                 Desc: "The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gorgon
@@ -9293,10 +9975,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gorgon",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 114,
         HitPointsRoll: "12d10 + 48",
-        ArmorClass: [19, "natural armor"],
         Speed: ["40 ft."],
         Strength: 20,
         Dexterity: 11,
@@ -9334,9 +10018,11 @@ const monstersLocal = [
                 Desc: "The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw. On a failed save, a target begins to turn to stone and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is petrified until freed by the greater restoration spell or other magic."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Grell
@@ -9344,10 +10030,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Grell",
         Type: "Medium aberration, neutral evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 55,
         HitPointsRoll: "10d8 + 10",
-        ArmorClass: [12, ""],
         Speed: ["10 ft.", "fly 30 ft. (hover)"],
         Strength: 15,
         Dexterity: 14,
@@ -9380,9 +10068,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (2d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Grick
@@ -9390,10 +10080,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Grick",
         Type: "Medium monstrosity, neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 27,
         HitPointsRoll: "6d8",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 14,
         Dexterity: 14,
@@ -9431,9 +10123,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Grick Alpha
@@ -9441,10 +10135,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Grick Alpha",
         Type: "Large monstrosity, neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 75,
         HitPointsRoll: "10d10 + 20",
-        ArmorClass: [18, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 18,
         Dexterity: 16,
@@ -9486,9 +10182,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Griffon
@@ -9496,10 +10194,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Griffon",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 59,
         HitPointsRoll: "7d10 + 21",
-        ArmorClass: [12, ""],
         Speed: ["30 ft.", "fly 80 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -9537,9 +10237,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Grimlock
@@ -9547,10 +10249,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Grimlock",
         Type: "Medium humanoid (grimlock), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [11, ""],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 12,
@@ -9588,9 +10292,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Green Hag
@@ -9598,10 +10304,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Green Hag",
         Type: "Medium fey, neutral evil",
+        TypeCategory: "Fey",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 82,
         HitPointsRoll: "11d8 + 33",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 12,
@@ -9647,9 +10355,11 @@ const monstersLocal = [
                 Desc: "The hag magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Night Hag
@@ -9657,10 +10367,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Night Hag",
         Type: "Medium fiend, neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 112,
         HitPointsRoll: "15d8 + 45",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -9706,9 +10418,11 @@ const monstersLocal = [
                 Desc: "While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane. A protection from evil and good spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Sea Hag
@@ -9716,10 +10430,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Sea Hag",
         Type: "Medium fey, chaotic evil",
+        TypeCategory: "Fey",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 52,
         HitPointsRoll: "7d8 + 21",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft.", "swim 40 ft."],
         Strength: 16,
         Dexterity: 13,
@@ -9761,9 +10477,11 @@ const monstersLocal = [
                 Desc: "The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies. The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Half-Red Dragon Veteran
@@ -9771,10 +10489,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Half-Red Dragon Veteran",
         Type: "Medium humanoid (human), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [18, "plate"],
         HitPoints: 65,
         HitPointsRoll: "10d8 + 20",
-        ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 13,
@@ -9815,6 +10535,7 @@ const monstersLocal = [
                 Desc: "The veteran exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry.",
@@ -9823,6 +10544,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Harpy
@@ -9830,10 +10552,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Harpy",
         Type: "Medium monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 38,
         HitPointsRoll: "7d8 + 7",
-        ArmorClass: [11, ""],
         Speed: ["20 ft.", "fly 40 ft."],
         Strength: 12,
         Dexterity: 13,
@@ -9870,9 +10594,11 @@ const monstersLocal = [
                 Desc: "The harpy sings a magical melody. Every humanoid and giant within 300 feet of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated. While charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. If the charmed target is more than 5 feet away from the harpy, the target can take the Dash action on its turn to move toward the harpy by the most direct route. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, a target can repeat the saving throw. A creature can also repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful, the effect ends on it. A target that successfully saves is immune to this harpy's song for the next 24 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hell Hound
@@ -9880,10 +10606,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hell Hound",
         Type: "Medium fiend, lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 45,
         HitPointsRoll: "7d8 + 14",
-        ArmorClass: [15, "natural armor"],
         Speed: ["50 ft."],
         Strength: 17,
         Dexterity: 12,
@@ -9921,9 +10649,11 @@ const monstersLocal = [
                 Desc: "The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Helmed Horror
@@ -9931,10 +10661,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Helmed Horror",
         Type: "Medium construct, neutral",
+        TypeCategory: "Construct",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [20, "plate, shield"],
         HitPoints: 60,
         HitPointsRoll: "8d8 + 24",
-        ArmorClass: [20, "plate, shield"],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -9972,9 +10704,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hippogriff
@@ -9982,10 +10716,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hippogriff",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 19,
         HitPointsRoll: "3d10 + 3",
-        ArmorClass: [11, ""],
         Speed: ["40 ft.", "fly 60 ft."],
         Strength: 17,
         Dexterity: 13,
@@ -10023,9 +10759,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hobgoblin
@@ -10033,10 +10771,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hobgoblin",
         Type: "Medium humanoid (goblinoid), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [18, "chain mail, shield"],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [18, "chain mail, shield"],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 12,
@@ -10070,9 +10810,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hobgoblin Captain
@@ -10080,10 +10822,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hobgoblin Captain",
         Type: "Medium humanoid (goblinoid), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "half plate"],
         HitPoints: 39,
         HitPointsRoll: "6d8 + 12",
-        ArmorClass: [17, "half plate"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -10125,9 +10869,11 @@ const monstersLocal = [
                 Desc: "For 1 minute, the hobgoblin can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the hobgoblin. A creature can benefit from only one Leadership die at a time. This effect ends if the hobgoblin is incapacitated."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hobgoblin Warlord
@@ -10135,10 +10881,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hobgoblin Warlord",
         Type: "Medium humanoid (goblinoid), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [20, "plate, shield"],
         HitPoints: 97,
         HitPointsRoll: "13d8 + 39",
-        ArmorClass: [20, "plate, shield"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -10184,6 +10932,7 @@ const monstersLocal = [
                 Desc: "For 1 minute, the hobgoblin can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the hobgoblin. A creature can benefit from only one Leadership die at a time. This effect ends if the hobgoblin is incapacitated."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry.",
@@ -10192,6 +10941,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Homunculus
@@ -10199,10 +10949,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Homunculus",
         Type: "Tiny construct, neutral",
+        TypeCategory: "Construct",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 5,
         HitPointsRoll: "2d4",
-        ArmorClass: [13, "natural armor"],
         Speed: ["20 ft.", "fly 40 ft."],
         Strength: 4,
         Dexterity: 15,
@@ -10232,9 +10984,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hook Horror
@@ -10242,10 +10996,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hook Horror",
         Type: "Large monstrosity, neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 75,
         HitPointsRoll: "10d10 + 20",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 18,
         Dexterity: 10,
@@ -10283,9 +11039,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hydra
@@ -10293,10 +11051,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hydra",
         Type: "Huge monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 172,
         HitPointsRoll: "15d12 + 75",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 20,
         Dexterity: 12,
@@ -10342,9 +11102,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Intellect Devourer
@@ -10352,10 +11114,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Intellect Devourer",
         Type: "Tiny aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 21,
         HitPointsRoll: "6d4 + 6",
-        ArmorClass: [12, ""],
         Speed: ["40 ft."],
         Strength: 6,
         Dexterity: 14,
@@ -10397,9 +11161,11 @@ const monstersLocal = [
                 Desc: "The intellect devourer initiates an Intelligence contest with an incapacitated humanoid within 5 feet of it. If it wins the contest, the intellect devourer magically consumes the target's brain, teleports into the target's skull, and takes control of the target's body. While inside a creature, the intellect devourer has total cover against attacks and other effects originating outside its host. The intellect devourer retains its Intelligence, Wisdom, and Charisma scores, as well as its understanding of Deep Speech, its telepathy, and its traits. It otherwise adopts the target's statistics. It knows everything the creature knew, including spells and languages. If the host body drops to 0 hit points, the intellect devourer must leave it. A protection from evil and good spell cast on the body drives the intellect devourer out. The intellect devourer is also forced out if the target regains its devoured brain by means of a wish. By spending 5 feet of its movement, the intellect devourer can voluntarily leave the body, teleporting to the nearest unoccupied space within 5 feet of it. The body then dies, unless its brain is restored within 1 round."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Invisible Stalker
@@ -10407,10 +11173,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Invisible Stalker",
         Type: "Medium elemental, neutral",
+        TypeCategory: "Elemental",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14, ""],
         HitPoints: 104,
         HitPointsRoll: "16d8 + 32",
-        ArmorClass: [14, ""],
         Speed: ["50 ft.", "fly 50 ft. (hover)"],
         Strength: 16,
         Dexterity: 19,
@@ -10448,9 +11216,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Jackalwere
@@ -10458,10 +11228,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Jackalwere",
         Type: "Medium humanoid (shapechanger), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 18,
         HitPointsRoll: "4d8",
-        ArmorClass: [12, ""],
         Speed: ["40 ft."],
         Strength: 11,
         Dexterity: 15,
@@ -10507,9 +11279,11 @@ const monstersLocal = [
                 Desc: "The jackalwere gazes at one creature it can see within 30 feet of it. The target must make a DC 10 Wisdom saving throw. On a failed save, the target succumbs to a magical slumber, falling unconscious for 10 minutes or until someone uses an action to shake the target awake. A creature that successfully saves against the effect is immune to this jackalwere's gaze for the next 24 hours. Undead and creatures immune to being charmed aren't affected by it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Kenku
@@ -10517,10 +11291,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kenku",
         Type: "Medium humanoid (kenku), chaotic neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 13,
         HitPointsRoll: "3d8",
-        ArmorClass: [13, ""],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 16,
@@ -10558,9 +11334,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Kenku are feathered humanoids that wander the world as vagabonds, driven by greed. They can perfectly imitate any sound they hear."
     },
     { // Winged Kobold
@@ -10568,10 +11346,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Winged Kobold",
         Type: "Small humanoid (kobold), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 7,
         HitPointsRoll: "3d6 - 3",
-        ArmorClass: [13, ""],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 7,
         Dexterity: 16,
@@ -10609,9 +11389,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, one target directly below the kobold. Hit: 6 (1d6 + 3) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Kobold
@@ -10619,10 +11401,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kobold",
         Type: "Small humanoid (kobold), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 5,
         HitPointsRoll: "2d6 - 2",
-        ArmorClass: [12, ""],
         Speed: ["30 ft."],
         Strength: 7,
         Dexterity: 15,
@@ -10660,9 +11444,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Kraken
@@ -10670,10 +11456,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kraken",
         Type: "Gargantuan monstrosity (titan), chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 472,
         HitPointsRoll: "27d20 + 189",
-        ArmorClass: [18, "natural armor"],
         Speed: ["20 ft.", "swim 60 ft."],
         Strength: 30,
         Dexterity: 11,
@@ -10727,6 +11515,7 @@ const monstersLocal = [
                 Desc: "The kraken magically creates three bolts of lightning, each of which can strike a target the kraken can see within 120 feet of it. A target must make a DC 23 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -10747,6 +11536,7 @@ const monstersLocal = [
             "Creatures in the water within 60 feet of the kraken have vulnerability to lightning damage until initiative count 20 on the next round.",
             "The water in the kraken's lair becomes electrically charged. All creatures within 120 feet of the kraken must succeed on a DC 23 Constitution saving throw, taking 10 (3d6) lightning damage on a failed save, or half as much damage on a successful one."
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Kuo-Toa
@@ -10754,10 +11544,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kuo-Toa",
         Type: "Medium humanoid (kuo-toa), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor, shield"],
         HitPoints: 18,
         HitPointsRoll: "4d8",
-        ArmorClass: [13, "natural armor, shield"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 13,
         Dexterity: 10,
@@ -10807,6 +11599,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +3 to hit, range 5/15 ft., one Large or smaller creature. Hit: The target is restrained. A creature can use its action to make a DC 10 Strength check to free itself or another creature in a net, ending the effect on a success. Dealing 5 slashing damage to the net (AC 10) frees the target without harming it and destroys the net."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Sticky Shield.",
@@ -10815,6 +11608,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Kuo-Toa Archpriest
@@ -10822,10 +11616,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kuo-Toa Archpriest",
         Type: "Medium humanoid (kuo-toa), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 97,
         HitPointsRoll: "13d8 + 39",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -10879,9 +11675,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Kuo-Toa Whip
@@ -10889,10 +11687,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kuo-Toa Whip",
         Type: "Medium humanoid (kuo-toa), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, "natural armor"],
         HitPoints: 65,
         HitPointsRoll: "10d8 + 20",
-        ArmorClass: [11, "natural armor"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 14,
         Dexterity: 10,
@@ -10946,9 +11746,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the kuo-toa can't use its pincer staff on another target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Lamia
@@ -10956,10 +11758,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Lamia",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 97,
         HitPointsRoll: "13d10 + 26",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 13,
@@ -11001,9 +11805,11 @@ const monstersLocal = [
                 Desc: "Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Lich
@@ -11011,10 +11817,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Lich",
         Type: "Medium undead, any evil alignment",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 135,
         HitPointsRoll: "18d8 + 54",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 16,
@@ -11056,6 +11864,7 @@ const monstersLocal = [
                 Desc: "Melee Spell Attack: +12 to hit, reach 5 ft., one creature. Hit: 10 (3d6) cold damage. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -11080,6 +11889,7 @@ const monstersLocal = [
             "The lich targets one creature it can see within 30 feet of it. A crackling cord of negative energy tethers the lich to the target. Whenever the lich takes damage, the target must make a DC 18 Constitution saving throw. On a failed save, the lich takes half the damage (rounded down), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until the lich or the target is no longer in the lich's lair.",
             "The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw, taking 52 (15d6) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear."
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Lizardfolk
@@ -11087,10 +11897,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Lizardfolk",
         Type: "Medium humanoid (lizardfolk), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor, shield"],
         HitPoints: 22,
         HitPointsRoll: "4d8 + 4",
-        ArmorClass: [15, "natural armor, shield"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 15,
         Dexterity: 10,
@@ -11136,9 +11948,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Lizardfolk Shaman
@@ -11146,10 +11960,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Lizardfolk Shaman",
         Type: "Medium humanoid (lizardfolk), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 27,
         HitPointsRoll: "5d8 + 5",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 15,
         Dexterity: 10,
@@ -11191,9 +12007,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Lizard King/Queen
@@ -11201,10 +12019,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Lizard King/Queen",
         Type: "Medium humanoid (lizardfolk), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor, shield"],
         HitPoints: 78,
         HitPointsRoll: "12d8 + 24",
-        ArmorClass: [15, "natural armor, shield"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 18,
         Dexterity: 10,
@@ -11246,9 +12066,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Werebear
@@ -11256,10 +12078,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Werebear",
         Type: "Medium humanoid (human, shapechanger), neutral good",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10, "in humanoid form, 11 (natural armor) in bear and hybrid form"],
         HitPoints: 135,
         HitPointsRoll: "18d8 + 54",
-        ArmorClass: [10, "in humanoid form, 11 (natural armor) in bear and hybrid form"],
         Speed: ["30 ft.", "40 ft., climb 30 ft. in bear or hybrid form"],
         Strength: 19,
         Dexterity: 10,
@@ -11305,9 +12129,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Wereboar
@@ -11315,10 +12141,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Wereboar",
         Type: "Medium humanoid (human, shapechanger), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10, ""],
         HitPoints: 78,
         HitPointsRoll: "12d8 + 24",
-        ArmorClass: [10, ""],
         Speed: ["30 ft.", "40 ft. in boar form"],
         Strength: 17,
         Dexterity: 10,
@@ -11364,9 +12192,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Wererat
@@ -11374,10 +12204,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Wererat",
         Type: "Medium humanoid (human, shapechanger), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 33,
         HitPointsRoll: "6d8 + 6",
-        ArmorClass: [12, ""],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 15,
@@ -11423,9 +12255,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Weretiger
@@ -11433,10 +12267,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Weretiger",
         Type: "Medium humanoid (human, shapechanger), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 120,
         HitPointsRoll: "16d8 + 48",
-        ArmorClass: [12, ""],
         Speed: ["30 ft.", "40 ft. in tiger form"],
         Strength: 17,
         Dexterity: 15,
@@ -11490,9 +12326,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Werewolf
@@ -11500,10 +12338,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Werewolf",
         Type: "Medium humanoid (human, shapechanger), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, "in humanoid form, 12 (natural armor) in wolf or hybrid form"],
         HitPoints: 58,
         HitPointsRoll: "9d8 + 18",
-        ArmorClass: [11, "in humanoid form, 12 (natural armor) in wolf or hybrid form"],
         Speed: ["30 ft.", "40 ft. in wolf form"],
         Strength: 15,
         Dexterity: 13,
@@ -11549,9 +12389,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Magmin
@@ -11559,10 +12401,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Magmin",
         Type: "Small elemental, chaotic neutral",
+        TypeCategory: "Elemental",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 9,
         HitPointsRoll: "2d6 + 2",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 7,
         Dexterity: 15,
@@ -11596,9 +12440,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the creature takes 3 (1d6) fire damage at the end of each of its turns."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Manticore
@@ -11606,10 +12452,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Manticore",
         Type: "Large monstrosity, lawful evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 68,
         HitPointsRoll: "8d10 + 24",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft.", "fly 50 ft."],
         Strength: 17,
         Dexterity: 16,
@@ -11651,9 +12499,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, range 100/200 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Medusa
@@ -11661,10 +12511,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Medusa",
         Type: "Medium monstrosity, lawful evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 127,
         HitPointsRoll: "17d8 + 51",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 15,
@@ -11706,9 +12558,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage plus 7 (2d6) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Dust Mephit
@@ -11716,10 +12570,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Dust Mephit",
         Type: "Small elemental, neutral evil",
+        TypeCategory: "Elemental",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 17,
         HitPointsRoll: "5d6",
-        ArmorClass: [12, ""],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 5,
         Dexterity: 14,
@@ -11757,9 +12613,11 @@ const monstersLocal = [
                 Desc: "The mephit exhales a 15-foot cone of dust. Each creature in that area must succeed on a DC 10 Constitution saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ice Mephit
@@ -11767,10 +12625,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ice Mephit",
         Type: "Small elemental, neutral evil",
+        TypeCategory: "Elemental",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 21,
         HitPointsRoll: "6d6",
-        ArmorClass: [11, ""],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 7,
         Dexterity: 13,
@@ -11812,9 +12672,11 @@ const monstersLocal = [
                 Desc: "The mephit exhales a 15-foot cone of cold air. Each creature in that area must make a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Magma Mephit
@@ -11822,10 +12684,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Magma Mephit",
         Type: "Small elemental, neutral evil",
+        TypeCategory: "Elemental",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 22,
         HitPointsRoll: "5d6 + 5",
-        ArmorClass: [11, ""],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 8,
         Dexterity: 12,
@@ -11867,9 +12731,11 @@ const monstersLocal = [
                 Desc: "The mephit exhales a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mud Mephit
@@ -11877,10 +12743,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mud Mephit",
         Type: "Small elemental, neutral evil",
+        TypeCategory: "Elemental",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 27,
         HitPointsRoll: "6d6 + 6",
-        ArmorClass: [11, ""],
         Speed: ["20 ft.", "fly 20 ft.", "swim 20 ft."],
         Strength: 8,
         Dexterity: 12,
@@ -11918,9 +12786,11 @@ const monstersLocal = [
                 Desc: "The mephit belches viscid mud onto one creature within 5 feet of it. If the target is Medium or smaller, it must succeed on a DC 11 Dexterity saving throw or be restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Smoke Mephit
@@ -11928,10 +12798,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Smoke Mephit",
         Type: "Small elemental, neutral evil",
+        TypeCategory: "Elemental",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 22,
         HitPointsRoll: "5d6 + 5",
-        ArmorClass: [12, ""],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 6,
         Dexterity: 14,
@@ -11969,9 +12841,11 @@ const monstersLocal = [
                 Desc: "The mephit exhales a 15-foot cone of smoldering ash. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded until the end of the mephit's next turn."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Steam Mephit
@@ -11979,10 +12853,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Steam Mephit",
         Type: "Small elemental, neutral evil",
+        TypeCategory: "Elemental",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [10, ""],
         HitPoints: 21,
         HitPointsRoll: "6d6",
-        ArmorClass: [10, ""],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 5,
         Dexterity: 11,
@@ -12020,9 +12896,11 @@ const monstersLocal = [
                 Desc: "The mephit exhales a 15-foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Merfolk
@@ -12030,10 +12908,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Merfolk",
         Type: "Medium humanoid (merfolk), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [11, ""],
         Speed: ["10 ft.", "swim 40 ft."],
         Strength: 10,
         Dexterity: 13,
@@ -12063,9 +12943,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Merrow
@@ -12073,10 +12955,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Merrow",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 45,
         HitPointsRoll: "6d10 + 12",
-        ArmorClass: [13, "natural armor"],
         Speed: ["10 ft.", "swim 40 ft."],
         Strength: 18,
         Dexterity: 10,
@@ -12118,9 +13002,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage. If the target is a Huge or smaller creature, it must succeed on a Strength contest against the merrow or be pulled up to 20 feet toward the merrow."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mimic
@@ -12128,10 +13014,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mimic",
         Type: "Medium monstrosity (shapechanger), neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 58,
         HitPointsRoll: "9d8 + 18",
-        ArmorClass: [12, "natural armor"],
         Speed: ["15 ft."],
         Strength: 17,
         Dexterity: 12,
@@ -12177,9 +13065,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mind Flayer
@@ -12187,10 +13077,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mind Flayer",
         Type: "Medium aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "breastplate"],
         HitPoints: 71,
         HitPointsRoll: "13d8 + 13",
-        ArmorClass: [15, "breastplate"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 12,
@@ -12232,9 +13124,11 @@ const monstersLocal = [
                 Desc: "The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Minotaur
@@ -12242,10 +13136,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Minotaur",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 76,
         HitPointsRoll: "9d10 + 27",
-        ArmorClass: [14, "natural armor"],
         Speed: ["40 ft."],
         Strength: 18,
         Dexterity: 11,
@@ -12287,9 +13183,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Monodrone
@@ -12297,10 +13195,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Monodrone",
         Type: "Medium construct, lawful neutral",
+        TypeCategory: "Construct",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 5,
         HitPointsRoll: "2d4",
-        ArmorClass: [12, ""],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 10,
         Dexterity: 13,
@@ -12338,9 +13238,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Duodrone
@@ -12348,10 +13250,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Duodrone",
         Type: "Medium construct, lawful neutral",
+        TypeCategory: "Construct",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 12,
         Dexterity: 11,
@@ -12393,9 +13297,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Tridrone
@@ -12403,10 +13309,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Tridrone",
         Type: "Medium construct, lawful neutral",
+        TypeCategory: "Construct",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 16,
         HitPointsRoll: "3d8 + 3",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 12,
         Dexterity: 13,
@@ -12448,9 +13356,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Quadrone
@@ -12458,10 +13368,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Quadrone",
         Type: "Medium construct, lawful neutral",
+        TypeCategory: "Construct",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 22,
         HitPointsRoll: "4d8 + 4",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 12,
         Dexterity: 14,
@@ -12503,9 +13415,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Pentadrone
@@ -12513,10 +13427,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Pentadrone",
         Type: "Large construct, lawful neutral",
+        TypeCategory: "Construct",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 32,
         HitPointsRoll: "5d10 + 5",
-        ArmorClass: [16, "natural armor"],
         Speed: ["40 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -12558,9 +13474,11 @@ const monstersLocal = [
                 Desc: "The pentadrone exhales a 30-foot cone of gas. Each creature in that area must succeed on a DC 11 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mummy
@@ -12568,10 +13486,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mummy",
         Type: "Medium undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, "natural armor"],
         HitPoints: 58,
         HitPointsRoll: "9d8 + 18",
-        ArmorClass: [11, "natural armor"],
         Speed: ["20 ft."],
         Strength: 16,
         Dexterity: 8,
@@ -12604,9 +13524,11 @@ const monstersLocal = [
                 Desc: "The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mummy Lord
@@ -12614,10 +13536,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mummy Lord",
         Type: "Medium undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 97,
         HitPointsRoll: "13d8 + 39",
-        ArmorClass: [17, "natural armor"],
         Speed: ["20 ft."],
         Strength: 18,
         Dexterity: 10,
@@ -12663,6 +13587,7 @@ const monstersLocal = [
                 Desc: "The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a DC 16 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -12691,6 +13616,7 @@ const monstersLocal = [
             "Each undead in the lair has advantage on saving throws against effects that turn undead until initiative count 20 on the next round.",
             "Until initiative count 20 on the next round, any non-undead creature that tries to cast a spell of 4th level or lower in the mummy lord's lair is wracked with pain. The creature can choose another action, but if it tries to cast the spell, it must make a DC 16 Constitution saving throw. On a failed save, it takes 1d6 necrotic damage per level of the spell, and the spell has no effect and is wasted."
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Myconid Sprout
@@ -12698,10 +13624,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Myconid Sprout",
         Type: "Small plant, lawful neutral",
+        TypeCategory: "Plant",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [10, ""],
         HitPoints: 7,
         HitPointsRoll: "2d6",
-        ArmorClass: [10, ""],
         Speed: ["10 ft."],
         Strength: 8,
         Dexterity: 10,
@@ -12739,9 +13667,11 @@ const monstersLocal = [
                 Desc: "A 10-foot radius of spores extends from the myconid. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren't undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Quaggoth Spore Servant
@@ -12749,10 +13679,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Quaggoth Spore Servant",
         Type: "Medium plant, unaligned",
+        TypeCategory: "Plant",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 45,
         HitPointsRoll: "6d8 + 18",
-        ArmorClass: [13, "natural armor"],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 17,
         Dexterity: 12,
@@ -12781,9 +13713,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Myconid Adult
@@ -12791,10 +13725,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Myconid Adult",
         Type: "Medium plant, lawful neutral",
+        TypeCategory: "Plant",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 22,
         HitPointsRoll: "4d8 + 4",
-        ArmorClass: [12, "natural armor"],
         Speed: ["20 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -12836,9 +13772,11 @@ const monstersLocal = [
                 Desc: "A 20-foot radius of spores extends from the myconid. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren't undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Myconid Sovereign
@@ -12846,10 +13784,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Myconid Sovereign",
         Type: "Large plant, lawful neutral",
+        TypeCategory: "Plant",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 60,
         HitPointsRoll: "8d10 + 16",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft."],
         Strength: 12,
         Dexterity: 10,
@@ -12903,9 +13843,11 @@ const monstersLocal = [
                 Desc: "A 30-foot radius of spores extends from the myconid. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren't undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Bone Naga
@@ -12913,10 +13855,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Bone Naga",
         Type: "Large undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 58,
         HitPointsRoll: "9d10 + 9",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 16,
@@ -12946,9 +13890,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 10 (2d6 + 3) piercing damage plus 10 (3d6) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Spirit Naga
@@ -12956,10 +13902,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Spirit Naga",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 75,
         HitPointsRoll: "10d10 + 20",
-        ArmorClass: [15, "natural armor"],
         Speed: ["40 ft."],
         Strength: 18,
         Dexterity: 17,
@@ -12993,9 +13941,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 7 (1d8 + 3) piercing damage plus 45 (10d8) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Guardian Naga
@@ -13003,10 +13953,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Guardian Naga",
         Type: "Large monstrosity, lawful good",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 127,
         HitPointsRoll: "15d10 + 45",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft."],
         Strength: 19,
         Dexterity: 18,
@@ -13044,9 +13996,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +8 to hit, range 15/30 ft., one creature. Hit: 45 (10d8) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Nightmare
@@ -13054,10 +14008,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Nightmare",
         Type: "Large fiend, neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 68,
         HitPointsRoll: "8d10 + 24",
-        ArmorClass: [13, "natural armor"],
         Speed: ["60 ft.", "fly 90 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -13095,9 +14051,11 @@ const monstersLocal = [
                 Desc: "A 15-foot-radius cloud of smoke extends from the nightmare. The area is heavily obscured. The nightmare can see through the smoke. The smoke lasts for 1 minute or until a strong wind disperses it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Nothic
@@ -13105,10 +14063,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Nothic",
         Type: "Medium aberration, neutral evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 45,
         HitPointsRoll: "6d8 + 18",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 14,
         Dexterity: 16,
@@ -13150,9 +14110,11 @@ const monstersLocal = [
                 Desc: "The nothic targets one creature it can see within 30 feet of it. The target must succeed on a DC 12 Constitution saving throw against this magic or take 10 (3d6) necrotic damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ogre
@@ -13160,10 +14122,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ogre",
         Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [11, "hide armor"],
         HitPoints: 59,
         HitPointsRoll: "7d10 + 21",
-        ArmorClass: [11, "hide armor"],
         Speed: ["40 ft."],
         Strength: 19,
         Dexterity: 8,
@@ -13192,9 +14156,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Half-Ogre
@@ -13202,10 +14168,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Half-Ogre",
         Type: "Large giant, any evil alignment",
+        TypeCategory: "Giant",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, "hide armor"],
         HitPoints: 30,
         HitPointsRoll: "4d10 + 8",
-        ArmorClass: [12, "hide armor"],
         Speed: ["30 ft."],
         Strength: 17,
         Dexterity: 10,
@@ -13234,9 +14202,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 8 (1d6 + 5) piercing damage, or 9 (1d8 + 5) piercing damage if used with two hands to make a melee attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Oni
@@ -13244,10 +14214,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Oni",
         Type: "Large giant, lawful evil",
+        TypeCategory: "Giant",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [16, "chain mail"],
         HitPoints: 110,
         HitPointsRoll: "13d10 + 39",
-        ArmorClass: [16, "chain mail"],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 19,
         Dexterity: 11,
@@ -13293,9 +14265,11 @@ const monstersLocal = [
                 Desc: "The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Black Pudding
@@ -13303,10 +14277,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Black Pudding",
         Type: "Large ooze, unaligned",
+        TypeCategory: "Ooze",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [7, ""],
         HitPoints: 85,
         HitPointsRoll: "10d10 + 30",
-        ArmorClass: [7, ""],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 16,
         Dexterity: 5,
@@ -13344,6 +14320,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Split.",
@@ -13352,6 +14329,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gelatinous Cube
@@ -13359,10 +14337,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gelatinous Cube",
         Type: "Large ooze, unaligned",
+        TypeCategory: "Ooze",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [6, ""],
         HitPoints: 84,
         HitPointsRoll: "8d10 + 40",
-        ArmorClass: [6, ""],
         Speed: ["15 ft."],
         Strength: 14,
         Dexterity: 3,
@@ -13400,9 +14380,11 @@ const monstersLocal = [
                 Desc: "The cube moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the cube enters a creature's space, the creature must make a DC 12 Dexterity saving throw. On a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw. On a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gray Ooze
@@ -13410,10 +14392,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gray Ooze",
         Type: "Medium ooze, unaligned",
+        TypeCategory: "Ooze",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [8, ""],
         HitPoints: 22,
         HitPointsRoll: "3d8 + 9",
-        ArmorClass: [8, ""],
         Speed: ["10 ft.", "climb 10 ft."],
         Strength: 12,
         Dexterity: 6,
@@ -13451,9 +14435,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ochre Jelly
@@ -13461,10 +14447,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ochre Jelly",
         Type: "Large ooze, unaligned",
+        TypeCategory: "Ooze",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [8, ""],
         HitPoints: 45,
         HitPointsRoll: "6d10 + 12",
-        ArmorClass: [8, ""],
         Speed: ["10 ft.", "climb 10 ft."],
         Strength: 15,
         Dexterity: 6,
@@ -13498,6 +14486,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage plus 3 (1d6) acid damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Split.",
@@ -13506,6 +14495,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Orc
@@ -13513,10 +14503,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Orc",
         Type: "Medium humanoid (orc), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "hide armor"],
         HitPoints: 15,
         HitPointsRoll: "2d8 + 6",
-        ArmorClass: [13, "hide armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 12,
@@ -13550,9 +14542,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Orc War Chief
@@ -13560,10 +14554,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Orc War Chief",
         Type: "Medium humanoid (orc), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "chain mail, shield"],
         HitPoints: 93,
         HitPointsRoll: "11d8 + 44",
-        ArmorClass: [16, "chain mail, shield"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 12,
@@ -13601,6 +14597,7 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry.",
@@ -13609,6 +14606,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Orc Eye of Gruumsh
@@ -13616,10 +14614,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Orc Eye of Gruumsh",
         Type: "Medium humanoid (orc), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "ring mail, shield"],
         HitPoints: 45,
         HitPointsRoll: "6d8 + 18",
-        ArmorClass: [16, "ring mail, shield"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 12,
@@ -13657,9 +14657,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (1d6 + 3 plus 1d8) piercing damage, or 12 (2d8 + 3) piercing damage if used with two hands to make a melee attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Orog
@@ -13667,10 +14669,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Orog",
         Type: "Medium humanoid (orc), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [18, "plate"],
         HitPoints: 42,
         HitPointsRoll: "5d8 + 20",
-        ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 12,
@@ -13708,9 +14712,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Otyugh
@@ -13718,10 +14724,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Otyugh",
         Type: "Large aberration, neutral",
+        TypeCategory: "Aberration",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 114,
         HitPointsRoll: "12d10 + 48",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 11,
@@ -13763,9 +14771,11 @@ const monstersLocal = [
                 Desc: "The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Strength saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Owlbear
@@ -13773,10 +14783,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Owlbear",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 59,
         HitPointsRoll: "7d10 + 21",
-        ArmorClass: [13, "natural armor"],
         Speed: ["40 ft."],
         Strength: 20,
         Dexterity: 12,
@@ -13814,9 +14826,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Pegasus
@@ -13824,10 +14838,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Pegasus",
         Type: "Large celestial, chaotic good",
+        TypeCategory: "Celestial",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 59,
         HitPointsRoll: "7d10 + 21",
-        ArmorClass: [12, ""],
         Speed: ["60 ft.", "fly 90 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -13857,9 +14873,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Peryton
@@ -13867,10 +14885,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Peryton",
         Type: "Medium monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 33,
         HitPointsRoll: "6d8 + 6",
-        ArmorClass: [13, "natural armor"],
         Speed: ["20 ft.", "fly 60 ft."],
         Strength: 16,
         Dexterity: 12,
@@ -13916,9 +14936,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Piercer
@@ -13926,10 +14948,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Piercer",
         Type: "Medium monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 22,
         HitPointsRoll: "3d8 + 9",
-        ArmorClass: [15, "natural armor"],
         Speed: ["5 ft.", "climb 5 ft."],
         Strength: 15,
         Dexterity: 11,
@@ -13963,9 +14987,11 @@ const monstersLocal = [
                 Desc: "The piercer drops from the ceiling onto a creature directly below it. The target must make a DC 15 Dexterity saving throw, taking 10 (3d6) bludgeoning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Pixie
@@ -13973,10 +14999,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Pixie",
         Type: "Tiny fey, neutral good",
+        TypeCategory: "Fey",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [15, ""],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [15, ""],
         Speed: ["10 ft.", "fly 30 ft."],
         Strength: 2,
         Dexterity: 20,
@@ -14014,9 +15042,11 @@ const monstersLocal = [
                 Desc: "The pixie magically turns invisible until its concentration ends (as if concentrating on a spell). Any equipment the pixie wears or carries is invisible with it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Pseudodragon
@@ -14024,10 +15054,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Pseudodragon",
         Type: "Tiny dragon, neutral good",
+        TypeCategory: "Dragon",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 7,
         HitPointsRoll: "2d4 + 2",
-        ArmorClass: [13, "natural armor"],
         Speed: ["15 ft.", "fly 60 ft."],
         Strength: 6,
         Dexterity: 15,
@@ -14069,9 +15101,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. If the saving throw fails by 5 or more, the target is unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Purple Worm
@@ -14079,10 +15113,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Purple Worm",
         Type: "Gargantuan monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 247,
         HitPointsRoll: "15d20 + 90",
-        ArmorClass: [18, "natural armor"],
         Speed: ["50 ft.", "burrow 30 ft."],
         Strength: 28,
         Dexterity: 7,
@@ -14115,9 +15151,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +9 to hit, reach 10 ft., one creature. Hit: 19 (3d6 + 9) piercing damage, and the target must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Quaggoth
@@ -14125,10 +15163,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Quaggoth",
         Type: "Medium humanoid (quaggoth), chaotic neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 45,
         HitPointsRoll: "6d8 + 18",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 17,
         Dexterity: 12,
@@ -14166,9 +15206,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Rakshasa
@@ -14176,10 +15218,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Rakshasa",
         Type: "Medium fiend, lawful evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 110,
         HitPointsRoll: "13d8 + 52",
-        ArmorClass: [16, "natural armor"],
         Speed: ["40 ft."],
         Strength: 14,
         Dexterity: 17,
@@ -14217,9 +15261,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage, and the target is cursed. The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is removed by the remove curse spell or similar magic."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Young Remorhaz
@@ -14227,10 +15273,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Young Remorhaz",
         Type: "Medium monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 93,
         HitPointsRoll: "11d8 + 44",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft.", "burrow 20 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -14260,1454 +15308,1562 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 20 (3d10 + 4) piercing damage plus 7 (2d6) fire damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Remorhaz
-            ID: 257,
-            ProfileType: "Monster",
-            Name: "Remorhaz",
-            Type: "Huge monstrosity, unaligned",
-            Source: "Monster Manual",
-            HitPoints: 195,
-            HitPointsRoll: "17d12 + 85",
-            ArmorClass: [17, "natural armor"],
-            Speed: ["30 ft.", "burrow 20 ft."],
-            Strength: 24,
-            Dexterity: 13,
-            Constitution: 21,
-            Intelligence: 4,
-            Wisdom: 10,
-            Charisma: 5,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: ["cold", "fire"],
-            ConditionImmunities: [],
-            Senses: ["darkvision 60 ft.", "tremorsense 60 ft.", "Passive Perception 10"],
-            Languages: [],
-            Challenge: [11, 7200],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Heated Body.",
-                    Desc: "A creature that touches the remorhaz or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 40 (6d10 + 7) piercing damage plus 10 (3d6) fire damage. If the target is a creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the remorhaz can't bite another target."
-                },
-                {
-                    Title: "Swallow.",
-                    Desc: "The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 257,
+        ProfileType: "Monster",
+        Name: "Remorhaz",
+        Type: "Huge monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Huge",
+        Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
+        HitPoints: 195,
+        HitPointsRoll: "17d12 + 85",
+        Speed: ["30 ft.", "burrow 20 ft."],
+        Strength: 24,
+        Dexterity: 13,
+        Constitution: 21,
+        Intelligence: 4,
+        Wisdom: 10,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["cold", "fire"],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "tremorsense 60 ft.", "Passive Perception 10"],
+        Languages: [],
+        Challenge: [11, 7200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Heated Body.",
+                Desc: "A creature that touches the remorhaz or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 40 (6d10 + 7) piercing damage plus 10 (3d6) fire damage. If the target is a creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the remorhaz can't bite another target."
+            },
+            {
+                Title: "Swallow.",
+                Desc: "The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Revenant
-            ID: 258,
-            ProfileType: "Monster",
-            Name: "Revenant",
-            Type: "Medium undead, neutral",
-            Source: "Monster Manual",
-            HitPoints: 136,
-            HitPointsRoll: "16d8 + 64",
-            ArmorClass: [13, ""],
-            Speed: ["30 ft."],
-            Strength: 18,
-            Dexterity: 16,
-            Constitution: 18,
-            Intelligence: 13,
-            Wisdom: 16,
-            Charisma: 18,
-            SavingThrows: ["Strength +7", "Constitution +7", "Wisdom +6", "Charisma +7"],
-            Skills: ["Perception +6"],
-            DamageVulnerabilities: [],
-            DamageResistances: ["necrotic", "psychic"],
-            DamageImmunities: ["poison"],
-            ConditionImmunities: ["charmed", "exhaustion", "frightened", "paralyzed", "poisoned"],
-            Senses: ["darkvision 60 ft.", "Passive Perception 16"],
-            Languages: ["the languages it knew in life"],
-            Challenge: [5, 1800],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Regeneration.",
-                    Desc: "The revenant regains 10 hit points at the start of its turn. If the revenant takes fire or radiant damage, this trait doesn't function at the start of the revenant's next turn. The revenant's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate."
-                },
-                {
-                    Title: "Rejuvenation.",
-                    Desc: "When the revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a wish spell can be used to force the soul to go to the afterlife and not return."
-                },
-                {
-                    Title: "Turn Immunity.",
-                    Desc: "The revenant is immune to effects that turn undead."
-                },
-                {
-                    Title: "Vengeful Tracker.",
-                    Desc: "The revenant knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the revenant are on different planes of existence. If the creature being tracked by the revenant dies, the revenant knows."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The revenant makes two fist attacks."
-                },
-                {
-                    Title: "Fist.",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a creature against which the revenant has sworn vengeance, the target takes an extra 14 (4d6) bludgeoning damage. Instead of dealing damage, the revenant can grapple the target (escape DC 14) provided the target is Large or smaller."
-                },
-                {
-                    Title: "Vengeful Glare.",
-                    Desc: "The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a DC 15 Wisdom saving throw. On a failure, the target is paralyzed until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is frightened of the revenant for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the frightened condition on itself on a success."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 258,
+        ProfileType: "Monster",
+        Name: "Revenant",
+        Type: "Medium undead, neutral",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [13, ""],
+        HitPoints: 136,
+        HitPointsRoll: "16d8 + 64",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 16,
+        Constitution: 18,
+        Intelligence: 13,
+        Wisdom: 16,
+        Charisma: 18,
+        SavingThrows: ["Strength +7", "Constitution +7", "Wisdom +6", "Charisma +7"],
+        Skills: ["Perception +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["necrotic", "psychic"],
+        DamageImmunities: ["poison"],
+        ConditionImmunities: ["charmed", "exhaustion", "frightened", "paralyzed", "poisoned"],
+        Senses: ["darkvision 60 ft.", "Passive Perception 16"],
+        Languages: ["the languages it knew in life"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Regeneration.",
+                Desc: "The revenant regains 10 hit points at the start of its turn. If the revenant takes fire or radiant damage, this trait doesn't function at the start of the revenant's next turn. The revenant's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate."
+            },
+            {
+                Title: "Rejuvenation.",
+                Desc: "When the revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a wish spell can be used to force the soul to go to the afterlife and not return."
+            },
+            {
+                Title: "Turn Immunity.",
+                Desc: "The revenant is immune to effects that turn undead."
+            },
+            {
+                Title: "Vengeful Tracker.",
+                Desc: "The revenant knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the revenant are on different planes of existence. If the creature being tracked by the revenant dies, the revenant knows."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The revenant makes two fist attacks."
+            },
+            {
+                Title: "Fist.",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a creature against which the revenant has sworn vengeance, the target takes an extra 14 (4d6) bludgeoning damage. Instead of dealing damage, the revenant can grapple the target (escape DC 14) provided the target is Large or smaller."
+            },
+            {
+                Title: "Vengeful Glare.",
+                Desc: "The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a DC 15 Wisdom saving throw. On a failure, the target is paralyzed until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is frightened of the revenant for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the frightened condition on itself on a success."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Roc
-            ID: 259,
-            ProfileType: "Monster",
-            Name: "Roc",
-            Type: "Gargantuan monstrosity, unaligned",
-            Source: "Monster Manual",
-            HitPoints: 248,
-            HitPointsRoll: "16d20 + 80",
-            ArmorClass: [15, "natural armor"],
-            Speed: ["20 ft.", "fly 120 ft."],
-            Strength: 28,
-            Dexterity: 10,
-            Constitution: 20,
-            Intelligence: 3,
-            Wisdom: 10,
-            Charisma: 9,
-            SavingThrows: ["Dexterity +4", "Constitution +9", "Wisdom +4", "Charisma +3"],
-            Skills: ["Perception +4"],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["Passive Perception 14"],
-            Languages: [],
-            Challenge: [11, 7200],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Keen Sight.",
-                    Desc: "The roc has advantage on Wisdom (Perception) checks that rely on sight."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The roc makes two attacks: one with its beak and one with its talons."
-                },
-                {
-                    Title: "Beak.",
-                    Desc: "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 27 (4d8 + 9) piercing damage."
-                },
-                {
-                    Title: "Talons.",
-                    Desc: "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 23 (4d6 + 9) slashing damage, and the target is grappled (escape DC 19). Until this grapple ends, the target is restrained, and the roc can't use its talons on another target."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 259,
+        ProfileType: "Monster",
+        Name: "Roc",
+        Type: "Gargantuan monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Gargantuan",
+        Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
+        HitPoints: 248,
+        HitPointsRoll: "16d20 + 80",
+        Speed: ["20 ft.", "fly 120 ft."],
+        Strength: 28,
+        Dexterity: 10,
+        Constitution: 20,
+        Intelligence: 3,
+        Wisdom: 10,
+        Charisma: 9,
+        SavingThrows: ["Dexterity +4", "Constitution +9", "Wisdom +4", "Charisma +3"],
+        Skills: ["Perception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 14"],
+        Languages: [],
+        Challenge: [11, 7200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Keen Sight.",
+                Desc: "The roc has advantage on Wisdom (Perception) checks that rely on sight."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The roc makes two attacks: one with its beak and one with its talons."
+            },
+            {
+                Title: "Beak.",
+                Desc: "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 27 (4d8 + 9) piercing damage."
+            },
+            {
+                Title: "Talons.",
+                Desc: "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 23 (4d6 + 9) slashing damage, and the target is grappled (escape DC 19). Until this grapple ends, the target is restrained, and the roc can't use its talons on another target."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Roper
-            ID: 260,
-            ProfileType: "Monster",
-            Name: "Roper",
-            Type: "Large monstrosity, neutral evil",
-            Source: "Monster Manual",
-            HitPoints: 93,
-            HitPointsRoll: "11d10 + 33",
-            ArmorClass: [20, "natural armor"],
-            Speed: ["10 ft.", "climb 10 ft."],
-            Strength: 18,
-            Dexterity: 8,
-            Constitution: 17,
-            Intelligence: 7,
-            Wisdom: 16,
-            Charisma: 6,
-            SavingThrows: [],
-            Skills: ["Perception +6", "Stealth +5"],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 120 ft.", "Passive Perception 16"],
-            Languages: [],
-            Challenge: [5, 1800],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "False Appearance.",
-                    Desc: "While the roper remains motionless, it is indistinguishable from a normal stalagmite or stalactite."
-                },
-                {
-                    Title: "Grasping Tendrils.",
-                    Desc: "The roper can have up to six tendrils at a time. Each tendril can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the roper, which can extrude a replacement tendril on its next turn. A roper can extrude a tendril while it has six tendrils by making a DC 15 Constitution check. On a success, it extrudes a replacement tendril, and on a failure, it can't extrude one until the start of its next turn. A roper can have no more than six tendrils at a time."
-                },
-                {
-                    Title: "Spider Climb.",
-                    Desc: "The roper can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The roper makes four attacks with its tendrils, uses Reel, and makes one attack with its bite."
-                },
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) piercing damage."
-                },
-                {
-                    Title: "Tendril.",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 50 ft., one creature. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 15). Until the grapple ends, the target is restrained and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target."
-                },
-                {
-                    Title: "Reel.",
-                    Desc: "The roper pulls each creature grappled by it up to 25 feet straight toward it."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 260,
+        ProfileType: "Monster",
+        Name: "Roper",
+        Type: "Large monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [20, "natural armor"],
+        HitPoints: 93,
+        HitPointsRoll: "11d10 + 33",
+        Speed: ["10 ft.", "climb 10 ft."],
+        Strength: 18,
+        Dexterity: 8,
+        Constitution: 17,
+        Intelligence: 7,
+        Wisdom: 16,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: ["Perception +6", "Stealth +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 120 ft.", "Passive Perception 16"],
+        Languages: [],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "False Appearance.",
+                Desc: "While the roper remains motionless, it is indistinguishable from a normal stalagmite or stalactite."
+            },
+            {
+                Title: "Grasping Tendrils.",
+                Desc: "The roper can have up to six tendrils at a time. Each tendril can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the roper, which can extrude a replacement tendril on its next turn. A roper can extrude a tendril while it has six tendrils by making a DC 15 Constitution check. On a success, it extrudes a replacement tendril, and on a failure, it can't extrude one until the start of its next turn. A roper can have no more than six tendrils at a time."
+            },
+            {
+                Title: "Spider Climb.",
+                Desc: "The roper can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The roper makes four attacks with its tendrils, uses Reel, and makes one attack with its bite."
+            },
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) piercing damage."
+            },
+            {
+                Title: "Tendril.",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 50 ft., one creature. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 15). Until the grapple ends, the target is restrained and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target."
+            },
+            {
+                Title: "Reel.",
+                Desc: "The roper pulls each creature grappled by it up to 25 feet straight toward it."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Rust Monster
-            ID: 261,
-            ProfileType: "Monster",
-            Name: "Rust Monster",
-            Type: "Medium monstrosity, unaligned",
-            Source: "Monster Manual",
-            HitPoints: 27,
-            HitPointsRoll: "5d8 + 5",
-            ArmorClass: [14, "natural armor"],
-            Speed: ["40 ft."],
-            Strength: 13,
-            Dexterity: 12,
-            Constitution: 13,
-            Intelligence: 2,
-            Wisdom: 13,
-            Charisma: 6,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 60 ft.", "Passive Perception 11"],
-            Languages: [],
-            Challenge: [0.5, 100],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Iron Scent.",
-                    Desc: "The rust monster can pinpoint, by scent, the location of ferrous metal within 30 feet of it."
-                },
-                {
-                    Title: "Rust Metal.",
-                    Desc: "Any nonmagical weapon made of metal that hits the rust monster corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the rust monster is destroyed after dealing damage."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Antennae.",
-                    Desc: "The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, that creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch. If the touched object is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object is a held metal weapon, it rusts as described in the Rust Metal trait."
-                },
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 261,
+        ProfileType: "Monster",
+        Name: "Rust Monster",
+        Type: "Medium monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
+        HitPoints: 27,
+        HitPointsRoll: "5d8 + 5",
+        Speed: ["40 ft."],
+        Strength: 13,
+        Dexterity: 12,
+        Constitution: 13,
+        Intelligence: 2,
+        Wisdom: 13,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "Passive Perception 11"],
+        Languages: [],
+        Challenge: [0.5, 100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Iron Scent.",
+                Desc: "The rust monster can pinpoint, by scent, the location of ferrous metal within 30 feet of it."
+            },
+            {
+                Title: "Rust Metal.",
+                Desc: "Any nonmagical weapon made of metal that hits the rust monster corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the rust monster is destroyed after dealing damage."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Antennae.",
+                Desc: "The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, that creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch. If the touched object is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object is a held metal weapon, it rusts as described in the Rust Metal trait."
+            },
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Sahuagin
-            ID: 262,
-            ProfileType: "Monster",
-            Name: "Sahuagin",
-            Type: "Medium humanoid (sahuagin), lawful evil",
-            Source: "Monster Manual",
-            HitPoints: 22,
-            HitPointsRoll: "4d8 + 4",
-            ArmorClass: [12, "natural armor"],
-            Speed: ["30 ft.", "swim 40 ft."],
-            Strength: 13,
-            Dexterity: 11,
-            Constitution: 12,
-            Intelligence: 12,
-            Wisdom: 13,
-            Charisma: 9,
-            SavingThrows: [],
-            Skills: ["Perception +5"],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 120 ft.", "Passive Perception 15"],
-            Languages: ["Sahuagin"],
-            Challenge: [0.5, 100],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Blood Frenzy.",
-                    Desc: "The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
-                },
-                {
-                    Title: "Limited Amphibiousness.",
-                    Desc: "The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
-                },
-                {
-                    Title: "Shark Telepathy.",
-                    Desc: "The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The sahuagin makes two melee attacks: one with its bite and one with its claws or spear."
-                },
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
-                },
-                {
-                    Title: "Claws.",
-                    Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage."
-                },
-                {
-                    Title: "Spear.",
-                    Desc: "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 262,
+        ProfileType: "Monster",
+        Name: "Sahuagin",
+        Type: "Medium humanoid (sahuagin), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
+        HitPoints: 22,
+        HitPointsRoll: "4d8 + 4",
+        Speed: ["30 ft.", "swim 40 ft."],
+        Strength: 13,
+        Dexterity: 11,
+        Constitution: 12,
+        Intelligence: 12,
+        Wisdom: 13,
+        Charisma: 9,
+        SavingThrows: [],
+        Skills: ["Perception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 120 ft.", "Passive Perception 15"],
+        Languages: ["Sahuagin"],
+        Challenge: [0.5, 100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Blood Frenzy.",
+                Desc: "The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+            },
+            {
+                Title: "Limited Amphibiousness.",
+                Desc: "The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+            },
+            {
+                Title: "Shark Telepathy.",
+                Desc: "The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The sahuagin makes two melee attacks: one with its bite and one with its claws or spear."
+            },
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+            },
+            {
+                Title: "Claws.",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage."
+            },
+            {
+                Title: "Spear.",
+                Desc: "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Sahuagin Priestess
-            ID: 263,
-            ProfileType: "Monster",
-            Name: "Sahuagin Priestess",
-            Type: "Medium humanoid (sahuagin), lawful evil",
-            Source: "Monster Manual",
-            HitPoints: 33,
-            HitPointsRoll: "6d8 + 6",
-            ArmorClass: [12, "natural armor"],
-            Speed: ["30 ft.", "swim 40 ft."],
-            Strength: 13,
-            Dexterity: 11,
-            Constitution: 12,
-            Intelligence: 12,
-            Wisdom: 14,
-            Charisma: 13,
-            SavingThrows: [],
-            Skills: ["Perception +6", "Religion +3"],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 120 ft.", "Passive Perception 16"],
-            Languages: ["Sahuagin"],
-            Challenge: [2, 450],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Blood Frenzy.",
-                    Desc: "The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
-                },
-                {
-                    Title: "Limited Amphibiousness.",
-                    Desc: "The sahuagin can breathe air and water, but she needs to be submerged at least once every 4 hours to avoid suffocating."
-                },
-                {
-                    Title: "Shark Telepathy.",
-                    Desc: "The sahuagin can magically command any shark within 120 feet of her, using a limited telepathy."
-                },
-                {
-                    Title: "Spellcasting.",
-                    Desc: "The sahuagin is a 6th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). She has the following cleric spells prepared: Cantrips (at will): guidance, thaumaturgy; 1st level (4 slots): bless, detect magic, guiding bolt; 2nd level (3 slots): hold person, spiritual weapon (trident); 3rd level (3 slots): mass healing word, tongues."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The sahuagin makes two attacks: one with her bite and one with her claws."
-                },
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
-                },
-                {
-                    Title: "Claws.",
-                    Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 263,
+        ProfileType: "Monster",
+        Name: "Sahuagin Priestess",
+        Type: "Medium humanoid (sahuagin), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
+        HitPoints: 33,
+        HitPointsRoll: "6d8 + 6",
+        Speed: ["30 ft.", "swim 40 ft."],
+        Strength: 13,
+        Dexterity: 11,
+        Constitution: 12,
+        Intelligence: 12,
+        Wisdom: 14,
+        Charisma: 13,
+        SavingThrows: [],
+        Skills: ["Perception +6", "Religion +3"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 120 ft.", "Passive Perception 16"],
+        Languages: ["Sahuagin"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Blood Frenzy.",
+                Desc: "The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+            },
+            {
+                Title: "Limited Amphibiousness.",
+                Desc: "The sahuagin can breathe air and water, but she needs to be submerged at least once every 4 hours to avoid suffocating."
+            },
+            {
+                Title: "Shark Telepathy.",
+                Desc: "The sahuagin can magically command any shark within 120 feet of her, using a limited telepathy."
+            },
+            {
+                Title: "Spellcasting.",
+                Desc: "The sahuagin is a 6th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). She has the following cleric spells prepared: Cantrips (at will): guidance, thaumaturgy; 1st level (4 slots): bless, detect magic, guiding bolt; 2nd level (3 slots): hold person, spiritual weapon (trident); 3rd level (3 slots): mass healing word, tongues."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The sahuagin makes two attacks: one with her bite and one with her claws."
+            },
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+            },
+            {
+                Title: "Claws.",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Sahuagin Baron
-            ID: 264,
-            ProfileType: "Monster",
-            Name: "Sahuagin Baron",
-            Type: "Large humanoid (sahuagin), lawful evil",
-            Source: "Monster Manual",
-            HitPoints: 76,
-            HitPointsRoll: "9d10 + 27",
-            ArmorClass: [16, "breastplate"],
-            Speed: ["30 ft.", "swim 50 ft."],
-            Strength: 19,
-            Dexterity: 15,
-            Constitution: 16,
-            Intelligence: 14,
-            Wisdom: 13,
-            Charisma: 17,
-            SavingThrows: [],
-            Skills: ["Perception +5"],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 120 ft.", "Passive Perception 15"],
-            Languages: ["Sahuagin"],
-            Challenge: [5, 1800],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Blood Frenzy.",
-                    Desc: "The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
-                },
-                {
-                    Title: "Limited Amphibiousness.",
-                    Desc: "The sahuagin can breathe air and water, but he needs to be submerged at least once every 4 hours to avoid suffocating."
-                },
-                {
-                    Title: "Shark Telepathy.",
-                    Desc: "The sahuagin can magically command any shark within 120 feet of him, using a limited telepathy."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The sahuagin makes three attacks: one with his bite and two with his claws or trident."
-                },
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) piercing damage."
-                },
-                {
-                    Title: "Claws.",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
-                },
-                {
-                    Title: "Trident.",
-                    Desc: "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 264,
+        ProfileType: "Monster",
+        Name: "Sahuagin Baron",
+        Type: "Large humanoid (sahuagin), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [16, "breastplate"],
+        HitPoints: 76,
+        HitPointsRoll: "9d10 + 27",
+        Speed: ["30 ft.", "swim 50 ft."],
+        Strength: 19,
+        Dexterity: 15,
+        Constitution: 16,
+        Intelligence: 14,
+        Wisdom: 13,
+        Charisma: 17,
+        SavingThrows: [],
+        Skills: ["Perception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 120 ft.", "Passive Perception 15"],
+        Languages: ["Sahuagin"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Blood Frenzy.",
+                Desc: "The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+            },
+            {
+                Title: "Limited Amphibiousness.",
+                Desc: "The sahuagin can breathe air and water, but he needs to be submerged at least once every 4 hours to avoid suffocating."
+            },
+            {
+                Title: "Shark Telepathy.",
+                Desc: "The sahuagin can magically command any shark within 120 feet of him, using a limited telepathy."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The sahuagin makes three attacks: one with his bite and two with his claws or trident."
+            },
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) piercing damage."
+            },
+            {
+                Title: "Claws.",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+            },
+            {
+                Title: "Trident.",
+                Desc: "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Fire Snake
-            ID: 265,
-            ProfileType: "Monster",
-            Name: "Fire Snake",
-            Type: "Medium elemental, neutral evil",
-            Source: "Monster Manual",
-            HitPoints: 22,
-            HitPointsRoll: "5d8",
-            ArmorClass: [14, "natural armor"],
-            Speed: ["30 ft."],
-            Strength: 12,
-            Dexterity: 14,
-            Constitution: 11,
-            Intelligence: 7,
-            Wisdom: 10,
-            Charisma: 8,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: ["cold"],
-            DamageResistances: ["bludgeoning, piercing, and slashing from nonmagical weapons"],
-            DamageImmunities: ["fire"],
-            ConditionImmunities: [],
-            Senses: ["darkvision 60 ft.", "Passive Perception 10"],
-            Languages: ["understands Ignan but can't speak"],
-            Challenge: [1, 200],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Heated Body.",
-                    Desc: "A creature that touches the snake or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The snake makes two attacks: one with its bite and one with its tail."
-                },
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 3 (1d6) fire damage."
-                },
-                {
-                    Title: "Tail.",
-                    Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage plus 3 (1d6) fire damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 265,
+        ProfileType: "Monster",
+        Name: "Fire Snake",
+        Type: "Medium elemental, neutral evil",
+        TypeCategory: "Elemental",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
+        HitPoints: 22,
+        HitPointsRoll: "5d8",
+        Speed: ["30 ft."],
+        Strength: 12,
+        Dexterity: 14,
+        Constitution: 11,
+        Intelligence: 7,
+        Wisdom: 10,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: ["cold"],
+        DamageResistances: ["bludgeoning, piercing, and slashing from nonmagical weapons"],
+        DamageImmunities: ["fire"],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["understands Ignan but can't speak"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Heated Body.",
+                Desc: "A creature that touches the snake or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The snake makes two attacks: one with its bite and one with its tail."
+            },
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 3 (1d6) fire damage."
+            },
+            {
+                Title: "Tail.",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage plus 3 (1d6) fire damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Salamander
-            ID: 266,
-            ProfileType: "Monster",
-            Name: "Salamander",
-            Type: "Large elemental, chaotic evil",
-            Source: "Monster Manual",
-            HitPoints: 90,
-            HitPointsRoll: "12d10 + 24",
-            ArmorClass: [15, "natural armor"],
-            Speed: ["30 ft."],
-            Strength: 18,
-            Dexterity: 14,
-            Constitution: 15,
-            Intelligence: 11,
-            Wisdom: 10,
-            Charisma: 12,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: ["cold"],
-            DamageResistances: ["bludgeoning, piercing, and slashing from nonmagical weapons"],
-            DamageImmunities: ["fire"],
-            ConditionImmunities: [],
-            Senses: ["darkvision 60 ft.", "Passive Perception 10"],
-            Languages: ["Ignan"],
-            Challenge: [5, 1800],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Heated Body.",
-                    Desc: "A creature that touches the salamander or hits it with a melee attack while within 5 feet of it takes 7 (2d6) fire damage."
-                },
-                {
-                    Title: "Heated Weapons.",
-                    Desc: "Any metal melee weapon the salamander wields deals an extra 3 (1d6) fire damage on a hit (included in the attacks)."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The salamander makes two attacks: one with its spear and one with its tail."
-                },
-                {
-                    Title: "Spear.",
-                    Desc: "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 3 (1d6) fire damage, or 13 (2d8 + 4) piercing damage plus 3 (1d6) fire damage if used with two hands to make a melee attack."
-                },
-                {
-                    Title: "Tail.",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 7 (2d6) fire damage. If the target is Large or smaller, it is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the salamander can't constrict another target."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 266,
+        ProfileType: "Monster",
+        Name: "Salamander",
+        Type: "Large elemental, chaotic evil",
+        TypeCategory: "Elemental",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
+        HitPoints: 90,
+        HitPointsRoll: "12d10 + 24",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 14,
+        Constitution: 15,
+        Intelligence: 11,
+        Wisdom: 10,
+        Charisma: 12,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: ["cold"],
+        DamageResistances: ["bludgeoning, piercing, and slashing from nonmagical weapons"],
+        DamageImmunities: ["fire"],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Ignan"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Heated Body.",
+                Desc: "A creature that touches the salamander or hits it with a melee attack while within 5 feet of it takes 7 (2d6) fire damage."
+            },
+            {
+                Title: "Heated Weapons.",
+                Desc: "Any metal melee weapon the salamander wields deals an extra 3 (1d6) fire damage on a hit (included in the attacks)."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The salamander makes two attacks: one with its spear and one with its tail."
+            },
+            {
+                Title: "Spear.",
+                Desc: "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 3 (1d6) fire damage, or 13 (2d8 + 4) piercing damage plus 3 (1d6) fire damage if used with two hands to make a melee attack."
+            },
+            {
+                Title: "Tail.",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 7 (2d6) fire damage. If the target is Large or smaller, it is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the salamander can't constrict another target."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Satyr
-            ID: 267,
-            ProfileType: "Monster",
-            Name: "Satyr",
-            Type: "Medium fey, chaotic neutral",
-            Source: "Monster Manual",
-            HitPoints: 31,
-            HitPointsRoll: "7d8",
-            ArmorClass: [14, "leather armor"],
-            Speed: ["40 ft."],
-            Strength: 12,
-            Dexterity: 16,
-            Constitution: 11,
-            Intelligence: 12,
-            Wisdom: 10,
-            Charisma: 14,
-            SavingThrows: [],
-            Skills: ["Perception +2", "Performance +6", "Stealth +5"],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["Passive Perception 12"],
-            Languages: ["Common", "Elvish", "Sylvan"],
-            Challenge: [0.5, 100],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Magic Resistance.",
-                    Desc: "The satyr has advantage on saving throws against spells and other magical effects."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Ram.",
-                    Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage."
-                },
-                {
-                    Title: "Shortsword.",
-                    Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
-                },
-                {
-                    Title: "Shortbow.",
-                    Desc: "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 267,
+        ProfileType: "Monster",
+        Name: "Satyr",
+        Type: "Medium fey, chaotic neutral",
+        TypeCategory: "Fey",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [14, "leather armor"],
+        HitPoints: 31,
+        HitPointsRoll: "7d8",
+        Speed: ["40 ft."],
+        Strength: 12,
+        Dexterity: 16,
+        Constitution: 11,
+        Intelligence: 12,
+        Wisdom: 10,
+        Charisma: 14,
+        SavingThrows: [],
+        Skills: ["Perception +2", "Performance +6", "Stealth +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 12"],
+        Languages: ["Common", "Elvish", "Sylvan"],
+        Challenge: [0.5, 100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance.",
+                Desc: "The satyr has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Ram.",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage."
+            },
+            {
+                Title: "Shortsword.",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+            },
+            {
+                Title: "Shortbow.",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Scarecrow
-            ID: 268,
-            ProfileType: "Monster",
-            Name: "Scarecrow",
-            Type: "Medium construct, chaotic evil",
-            Source: "Monster Manual",
-            HitPoints: 36,
-            HitPointsRoll: "8d8",
-            ArmorClass: [11, ""],
-            Speed: ["30 ft."],
-            Strength: 11,
-            Dexterity: 13,
-            Constitution: 11,
-            Intelligence: 10,
-            Wisdom: 10,
-            Charisma: 13,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: ["fire"],
-            DamageResistances: ["bludgeoning, piercing, and slashing from nonmagical attacks"],
-            DamageImmunities: ["poison"],
-            ConditionImmunities: ["charmed", "frightened", "poisoned", "unconscious"],
-            Senses: ["darkvision 60 ft.", "Passive Perception 10"],
-            Languages: ["Common"],
-            Challenge: [1, 200],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "False Appearance.",
-                    Desc: "While the scarecrow remains motionless, it is indistinguishable from an ordinary, inanimate scarecrow."
-                },
-                {
-                    Title: "Fear Aura.",
-                    Desc: "Any creature that starts its turn within 20 feet of the scarecrow and isn't a construct or undead must succeed on a DC 11 Wisdom saving throw or be frightened until the start of the creature's next turn. If a creature's saving throw is successful, the creature is immune to the scarecrow's Fear Aura for the next 24 hours."
-                },
-                {
-                    Title: "Magic Resistance.",
-                    Desc: "The scarecrow has advantage on saving throws against spells and other magical effects."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The scarecrow makes two attacks: one with its claw and one with its dread visage."
-                },
-                {
-                    Title: "Claw.",
-                    Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be restrained until the scarecrow's next turn."
-                },
-                {
-                    Title: "Dreadful Glare.",
-                    Desc: "The scarecrow targets one creature it can see within 30 feet of it. If the target can see the scarecrow, the target must succeed on a DC 11 Wisdom saving throw or be magically frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 268,
+        ProfileType: "Monster",
+        Name: "Scarecrow",
+        Type: "Medium construct, chaotic evil",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [11, ""],
+        HitPoints: 36,
+        HitPointsRoll: "8d8",
+        Speed: ["30 ft."],
+        Strength: 11,
+        Dexterity: 13,
+        Constitution: 11,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 13,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: ["fire"],
+        DamageResistances: ["bludgeoning, piercing, and slashing from nonmagical attacks"],
+        DamageImmunities: ["poison"],
+        ConditionImmunities: ["charmed", "frightened", "poisoned", "unconscious"],
+        Senses: ["darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Common"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "False Appearance.",
+                Desc: "While the scarecrow remains motionless, it is indistinguishable from an ordinary, inanimate scarecrow."
+            },
+            {
+                Title: "Fear Aura.",
+                Desc: "Any creature that starts its turn within 20 feet of the scarecrow and isn't a construct or undead must succeed on a DC 11 Wisdom saving throw or be frightened until the start of the creature's next turn. If a creature's saving throw is successful, the creature is immune to the scarecrow's Fear Aura for the next 24 hours."
+            },
+            {
+                Title: "Magic Resistance.",
+                Desc: "The scarecrow has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The scarecrow makes two attacks: one with its claw and one with its dread visage."
+            },
+            {
+                Title: "Claw.",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be restrained until the scarecrow's next turn."
+            },
+            {
+                Title: "Dreadful Glare.",
+                Desc: "The scarecrow targets one creature it can see within 30 feet of it. If the target can see the scarecrow, the target must succeed on a DC 11 Wisdom saving throw or be magically frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Shadow
-            ID: 269,
-            ProfileType: "Monster",
-            Name: "Shadow",
-            Type: "Medium undead, chaotic evil",
-            Source: "Monster Manual",
-            HitPoints: 16,
-            HitPointsRoll: "3d8 + 3",
-            ArmorClass: [12, ""],
-            Speed: ["40 ft."],
-            Strength: 6,
-            Dexterity: 14,
-            Constitution: 13,
-            Intelligence: 6,
-            Wisdom: 10,
-            Charisma: 8,
-            SavingThrows: [],
-            Skills: ["Stealth +4"],
-            DamageVulnerabilities: ["radiant"],
-            DamageResistances: ["acid", "cold", "fire", "lightning", "thunder", "bludgeoning, piercing, and slashing from nonmagical weapons"],
-            DamageImmunities: ["necrotic", "poison"],
-            ConditionImmunities: ["exhaustion", "frightened", "grappled", "paralyzed", "petrified", "poisoned", "prone", "restrained"],
-            Senses: ["darkvision 60 ft.", "Passive Perception 10"],
-            Languages: [],
-            Challenge: [0.5, 100],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Amorphous.",
-                    Desc: "The shadow can move through a space as narrow as 1 inch wide without squeezing."
-                },
-                {
-                    Title: "Shadow Stealth.",
-                    Desc: "While in dim light or darkness, the shadow can take the Hide action as a bonus action."
-                },
-                {
-                    Title: "Sunlight Weakness.",
-                    Desc: "While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Strength Drain.",
-                    Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 269,
+        ProfileType: "Monster",
+        Name: "Shadow",
+        Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [12, ""],
+        HitPoints: 16,
+        HitPointsRoll: "3d8 + 3",
+        Speed: ["40 ft."],
+        Strength: 6,
+        Dexterity: 14,
+        Constitution: 13,
+        Intelligence: 6,
+        Wisdom: 10,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: ["Stealth +4"],
+        DamageVulnerabilities: ["radiant"],
+        DamageResistances: ["acid", "cold", "fire", "lightning", "thunder", "bludgeoning, piercing, and slashing from nonmagical weapons"],
+        DamageImmunities: ["necrotic", "poison"],
+        ConditionImmunities: ["exhaustion", "frightened", "grappled", "paralyzed", "petrified", "poisoned", "prone", "restrained"],
+        Senses: ["darkvision 60 ft.", "Passive Perception 10"],
+        Languages: [],
+        Challenge: [0.5, 100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Amorphous.",
+                Desc: "The shadow can move through a space as narrow as 1 inch wide without squeezing."
+            },
+            {
+                Title: "Shadow Stealth.",
+                Desc: "While in dim light or darkness, the shadow can take the Hide action as a bonus action."
+            },
+            {
+                Title: "Sunlight Weakness.",
+                Desc: "While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Strength Drain.",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Shambling Mound
-            ID: 270,
-            ProfileType: "Monster",
-            Name: "Shambling Mound",
-            Type: "Large plant, unaligned",
-            Source: "Monster Manual",
-            HitPoints: 136,
-            HitPointsRoll: "16d10 + 48",
-            ArmorClass: [15, "natural armor"],
-            Speed: ["20 ft.", "swim 20 ft."],
-            Strength: 18,
-            Dexterity: 8,
-            Constitution: 16,
-            Intelligence: 5,
-            Wisdom: 10,
-            Charisma: 5,
-            SavingThrows: [],
-            Skills: ["Stealth +2"],
-            DamageVulnerabilities: [],
-            DamageResistances: ["cold", "fire"],
-            DamageImmunities: ["lightning"],
-            ConditionImmunities: ["blinded", "deafened", "exhaustion"],
-            Senses: ["blindsight 60 ft.", "Passive Perception 10"],
-            Languages: [],
-            Challenge: [5, 1800],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Lightning Absorption.",
-                    Desc: "Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it."
-                },
-                {
-                    Title: "Slam.",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
-                },
-                {
-                    Title: "Engulf.",
-                    Desc: "The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded and restrained, it has total cover against attacks and other effects outside the shambling mound, and it takes 13 (2d8 + 4) bludgeoning damage at the start of each of the mound's turns. When the shambling mound moves, the engulfed target moves with it. An engulfed creature can escape by taking an action to make a DC 14 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the mound."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 270,
+        ProfileType: "Monster",
+        Name: "Shambling Mound",
+        Type: "Large plant, unaligned",
+        TypeCategory: "Plant",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
+        HitPoints: 136,
+        HitPointsRoll: "16d10 + 48",
+        Speed: ["20 ft.", "swim 20 ft."],
+        Strength: 18,
+        Dexterity: 8,
+        Constitution: 16,
+        Intelligence: 5,
+        Wisdom: 10,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: ["Stealth +2"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["cold", "fire"],
+        DamageImmunities: ["lightning"],
+        ConditionImmunities: ["blinded", "deafened", "exhaustion"],
+        Senses: ["blindsight 60 ft.", "Passive Perception 10"],
+        Languages: [],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Lightning Absorption.",
+                Desc: "Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it."
+            },
+            {
+                Title: "Slam.",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+            },
+            {
+                Title: "Engulf.",
+                Desc: "The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded and restrained, it has total cover against attacks and other effects outside the shambling mound, and it takes 13 (2d8 + 4) bludgeoning damage at the start of each of the mound's turns. When the shambling mound moves, the engulfed target moves with it. An engulfed creature can escape by taking an action to make a DC 14 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the mound."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Shield Guardian
-            ID: 271,
-            ProfileType: "Monster",
-            Name: "Shield Guardian",
-            Type: "Large construct, unaligned",
-            Source: "Monster Manual",
-            HitPoints: 142,
-            HitPointsRoll: "15d10 + 60",
-            ArmorClass: [17, "natural armor"],
-            Speed: ["30 ft."],
-            Strength: 18,
-            Dexterity: 8,
-            Constitution: 18,
-            Intelligence: 7,
-            Wisdom: 10,
-            Charisma: 3,
-            SavingThrows: ["Dexterity +3"],
-            Skills: [],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: ["poison"],
-            ConditionImmunities: ["charmed", "exhaustion", "frightened", "paralyzed", "poisoned"],
-            Senses: ["blindsight 10 ft.", "darkvision 60 ft.", "Passive Perception 10"],
-            Languages: [],
-            Challenge: [7, 2900],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Bound.",
-                    Desc: "The shield guardian is magically bound to an amulet. As long as the guardian and its amulet are on the same plane of existence, the guardian knows the distance and direction to the amulet."
-                },
-                {
-                    Title: "Regeneration.",
-                    Desc: "The shield guardian regains 10 hit points at the start of its turn. If the guardian is reduced to 0 hit points, it is destroyed."
-                },
-                {
-                    Title: "Spell Storing.",
-                    Desc: "A spellcaster who wears the shield guardian's amulet can cause the guardian to store one spell of 4th level or lower. To do so, the wearer must cast the spell on the guardian. The spell has no effect, but is stored within the guardian. When commanded to do so by the wearer or when a situation arises that was predefined by the spellcaster, the guardian casts the stored spell with any parameters set by the original caster, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The shield guardian makes two fist attacks."
-                },
-                {
-                    Title: "Fist.",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
-                }
-            ],
-            Reactions: [
-                {
-                    Title: "Shield.",
-                    Desc: "When a creature makes an attack against the wearer of the shield guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet of the wearer."
-                }
-            ],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 271,
+        ProfileType: "Monster",
+        Name: "Shield Guardian",
+        Type: "Large construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
+        HitPoints: 142,
+        HitPointsRoll: "15d10 + 60",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 8,
+        Constitution: 18,
+        Intelligence: 7,
+        Wisdom: 10,
+        Charisma: 3,
+        SavingThrows: ["Dexterity +3"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["poison"],
+        ConditionImmunities: ["charmed", "exhaustion", "frightened", "paralyzed", "poisoned"],
+        Senses: ["blindsight 10 ft.", "darkvision 60 ft.", "Passive Perception 10"],
+        Languages: [],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Bound.",
+                Desc: "The shield guardian is magically bound to an amulet. As long as the guardian and its amulet are on the same plane of existence, the guardian knows the distance and direction to the amulet."
+            },
+            {
+                Title: "Regeneration.",
+                Desc: "The shield guardian regains 10 hit points at the start of its turn. If the guardian is reduced to 0 hit points, it is destroyed."
+            },
+            {
+                Title: "Spell Storing.",
+                Desc: "A spellcaster who wears the shield guardian's amulet can cause the guardian to store one spell of 4th level or lower. To do so, the wearer must cast the spell on the guardian. The spell has no effect, but is stored within the guardian. When commanded to do so by the wearer or when a situation arises that was predefined by the spellcaster, the guardian casts the stored spell with any parameters set by the original caster, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The shield guardian makes two fist attacks."
+            },
+            {
+                Title: "Fist.",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Shield.",
+                Desc: "When a creature makes an attack against the wearer of the shield guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet of the wearer."
+            }
+        ],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Skeleton
-            ID: 272,
-            ProfileType: "Monster",
-            Name: "Skeleton",
-            Type: "Medium undead, lawful evil",
-            Source: "Monster Manual",
-            HitPoints: 13,
-            HitPointsRoll: "2d8 + 4",
-            ArmorClass: [13, "armor scraps"],
-            Speed: ["30 ft."],
-            Strength: 10,
-            Dexterity: 14,
-            Constitution: 15,
-            Intelligence: 6,
-            Wisdom: 8,
-            Charisma: 5,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: ["bludgeoning"],
-            DamageResistances: [],
-            DamageImmunities: ["poison"],
-            ConditionImmunities: ["exhaustion", "poisoned"],
-            Senses: ["darkvision 60 ft.", "Passive Perception 9"],
-            Languages: ["understands all languages it knew in life but can't speak"],
-            Challenge: [0.25, 50],
-            ExtraRewards: "",
-            Traits: [],
-            Actions: [
-                {
-                    Title: "Shortsword.",
-                    Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
-                },
-                {
-                    Title: "Shortbow.",
-                    Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 272,
+        ProfileType: "Monster",
+        Name: "Skeleton",
+        Type: "Medium undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [13, "armor scraps"],
+        HitPoints: 13,
+        HitPointsRoll: "2d8 + 4",
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 14,
+        Constitution: 15,
+        Intelligence: 6,
+        Wisdom: 8,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: ["bludgeoning"],
+        DamageResistances: [],
+        DamageImmunities: ["poison"],
+        ConditionImmunities: ["exhaustion", "poisoned"],
+        Senses: ["darkvision 60 ft.", "Passive Perception 9"],
+        Languages: ["understands all languages it knew in life but can't speak"],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Shortsword.",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+            },
+            {
+                Title: "Shortbow.",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Minotaur Skeleton
-            ID: 273,
-            ProfileType: "Monster",
-            Name: "Minotaur Skeleton",
-            Type: "Large undead, lawful evil",
-            Source: "Monster Manual",
-            HitPoints: 67,
-            HitPointsRoll: "9d10 + 18",
-            ArmorClass: [12, "natural armor"],
-            Speed: ["40 ft."],
-            Strength: 18,
-            Dexterity: 11,
-            Constitution: 15,
-            Intelligence: 6,
-            Wisdom: 8,
-            Charisma: 5,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: ["bludgeoning"],
-            DamageResistances: [],
-            DamageImmunities: ["poison"],
-            ConditionImmunities: ["exhaustion", "poisoned"],
-            Senses: ["darkvision 60 ft.", "Passive Perception 9"],
-            Languages: [],
-            Challenge: [2, 450],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Charge.",
-                    Desc: "If the minotaur skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Greataxe.",
-                    Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage."
-                },
-                {
-                    Title: "Gore.",
-                    Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 273,
+        ProfileType: "Monster",
+        Name: "Minotaur Skeleton",
+        Type: "Large undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
+        HitPoints: 67,
+        HitPointsRoll: "9d10 + 18",
+        Speed: ["40 ft."],
+        Strength: 18,
+        Dexterity: 11,
+        Constitution: 15,
+        Intelligence: 6,
+        Wisdom: 8,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: ["bludgeoning"],
+        DamageResistances: [],
+        DamageImmunities: ["poison"],
+        ConditionImmunities: ["exhaustion", "poisoned"],
+        Senses: ["darkvision 60 ft.", "Passive Perception 9"],
+        Languages: [],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Charge.",
+                Desc: "If the minotaur skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Greataxe.",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage."
+            },
+            {
+                Title: "Gore.",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Warhorse Skeleton
-            ID: 274,
-            ProfileType: "Monster",
-            Name: "Warhorse Skeleton",
-            Type: "Large undead, lawful evil",
-            Source: "Monster Manual",
-            HitPoints: 22,
-            HitPointsRoll: "3d10 + 6",
-            ArmorClass: [13, "barding scraps"],
-            Speed: ["60 ft."],
-            Strength: 18,
-            Dexterity: 12,
-            Constitution: 15,
-            Intelligence: 2,
-            Wisdom: 8,
-            Charisma: 5,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: ["bludgeoning"],
-            DamageResistances: [],
-            DamageImmunities: ["poison"],
-            ConditionImmunities: ["exhaustion", "poisoned"],
-            Senses: ["darkvision 60 ft.", "Passive Perception 9"],
-            Languages: [],
-            Challenge: [0.5, 100],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Trampling Charge.",
-                    Desc: "If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Hooves.",
-                    Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 274,
+        ProfileType: "Monster",
+        Name: "Warhorse Skeleton",
+        Type: "Large undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [13, "barding scraps"],
+        HitPoints: 22,
+        HitPointsRoll: "3d10 + 6",
+        Speed: ["60 ft."],
+        Strength: 18,
+        Dexterity: 12,
+        Constitution: 15,
+        Intelligence: 2,
+        Wisdom: 8,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: ["bludgeoning"],
+        DamageResistances: [],
+        DamageImmunities: ["poison"],
+        ConditionImmunities: ["exhaustion", "poisoned"],
+        Senses: ["darkvision 60 ft.", "Passive Perception 9"],
+        Languages: [],
+        Challenge: [0.5, 100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Trampling Charge.",
+                Desc: "If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Hooves.",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Red Slaad
-            ID: 275,
-            ProfileType: "Monster",
-            Name: "Red Slaad",
-            Type: "Large aberration, chaotic neutral",
-            Source: "Monster Manual",
-            HitPoints: 93,
-            HitPointsRoll: "11d10 + 33",
-            ArmorClass: [14, "natural armor"],
-            Speed: ["30 ft."],
-            Strength: 16,
-            Dexterity: 12,
-            Constitution: 16,
-            Intelligence: 6,
-            Wisdom: 6,
-            Charisma: 7,
-            SavingThrows: [],
-            Skills: ["Perception +1"],
-            DamageVulnerabilities: [],
-            DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 60 ft.", "Passive Perception 11"],
-            Languages: ["Slaad", "telepathy 60 ft."],
-            Challenge: [5, 1800],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Magic Resistance.",
-                    Desc: "The slaad has advantage on saving throws against spells and other magical effects."
-                },
-                {
-                    Title: "Regeneration.",
-                    Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The slaad makes three attacks: one with its bite and two with its claws."
-                },
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) piercing damage."
-                },
-                {
-                    Title: "Claw.",
-                    Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage. If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be infected with a disease—a minuscule slaad egg."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 275,
+        ProfileType: "Monster",
+        Name: "Red Slaad",
+        Type: "Large aberration, chaotic neutral",
+        TypeCategory: "Aberration",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
+        HitPoints: 93,
+        HitPointsRoll: "11d10 + 33",
+        Speed: ["30 ft."],
+        Strength: 16,
+        Dexterity: 12,
+        Constitution: 16,
+        Intelligence: 6,
+        Wisdom: 6,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: ["Perception +1"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["Slaad", "telepathy 60 ft."],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance.",
+                Desc: "The slaad has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Regeneration.",
+                Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The slaad makes three attacks: one with its bite and two with its claws."
+            },
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) piercing damage."
+            },
+            {
+                Title: "Claw.",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage. If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be infected with a disease—a minuscule slaad egg."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Slaad Tadpole
-            ID: 276,
-            ProfileType: "Monster",
-            Name: "Slaad Tadpole",
-            Type: "Tiny aberration, chaotic neutral",
-            Source: "Monster Manual",
-            HitPoints: 10,
-            HitPointsRoll: "4d4",
-            ArmorClass: [12, ""],
-            Speed: ["30 ft."],
-            Strength: 7,
-            Dexterity: 15,
-            Constitution: 10,
-            Intelligence: 3,
-            Wisdom: 5,
-            Charisma: 3,
-            SavingThrows: [],
-            Skills: ["Stealth +4"],
-            DamageVulnerabilities: [],
-            DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 60 ft.", "Passive Perception 7"],
-            Languages: ["understands Slaad but can't speak"],
-            Challenge: [0.125, 25],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Magic Resistance.",
-                    Desc: "The slaad has advantage on saving throws against spells and other magical effects."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 276,
+        ProfileType: "Monster",
+        Name: "Slaad Tadpole",
+        Type: "Tiny aberration, chaotic neutral",
+        TypeCategory: "Aberration",
+        Size: "Tiny",
+        Source: "Monster Manual",
+        ArmorClass: [12, ""],
+        HitPoints: 10,
+        HitPointsRoll: "4d4",
+        Speed: ["30 ft."],
+        Strength: 7,
+        Dexterity: 15,
+        Constitution: 10,
+        Intelligence: 3,
+        Wisdom: 5,
+        Charisma: 3,
+        SavingThrows: [],
+        Skills: ["Stealth +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "Passive Perception 7"],
+        Languages: ["understands Slaad but can't speak"],
+        Challenge: [0.125, 25],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance.",
+                Desc: "The slaad has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Blue Slaad
-            ID: 277,
-            ProfileType: "Monster",
-            Name: "Blue Slaad",
-            Type: "Large aberration, chaotic neutral",
-            Source: "Monster Manual",
-            HitPoints: 123,
-            HitPointsRoll: "13d10 + 52",
-            ArmorClass: [15, "natural armor"],
-            Speed: ["30 ft."],
-            Strength: 20,
-            Dexterity: 15,
-            Constitution: 18,
-            Intelligence: 7,
-            Wisdom: 7,
-            Charisma: 9,
-            SavingThrows: [],
-            Skills: ["Perception +1"],
-            DamageVulnerabilities: [],
-            DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 60 ft.", "Passive Perception 11"],
-            Languages: ["Slaad", "telepathy 60 ft."],
-            Challenge: [7, 2900],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Magic Resistance.",
-                    Desc: "The slaad has advantage on saving throws against spells and other magical effects."
-                },
-                {
-                    Title: "Regeneration.",
-                    Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The slaad makes three attacks: one with its bite and two with its claws."
-                },
-                {
-                    Title: "Bite.",
-                    Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage."
-                },
-                {
-                    Title: "Claw.",
-                    Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage. If the target is a humanoid, it must succeed on a DC 15 Constitution saving throw or be infected with a disease called chaos phage. While infected, the target can't regain hit points, and its hit point maximum is reduced by 10 (3d6) every 24 hours. If the disease reduces the target's hit point maximum to 0, the target instantly transforms into a red slaad or, if it has the ability to cast spells of 3rd level or higher, a green slaad. Only a wish spell can reverse the transformation."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 277,
+        ProfileType: "Monster",
+        Name: "Blue Slaad",
+        Type: "Large aberration, chaotic neutral",
+        TypeCategory: "Aberration",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
+        HitPoints: 123,
+        HitPointsRoll: "13d10 + 52",
+        Speed: ["30 ft."],
+        Strength: 20,
+        Dexterity: 15,
+        Constitution: 18,
+        Intelligence: 7,
+        Wisdom: 7,
+        Charisma: 9,
+        SavingThrows: [],
+        Skills: ["Perception +1"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["Slaad", "telepathy 60 ft."],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance.",
+                Desc: "The slaad has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Regeneration.",
+                Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The slaad makes three attacks: one with its bite and two with its claws."
+            },
+            {
+                Title: "Bite.",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage."
+            },
+            {
+                Title: "Claw.",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage. If the target is a humanoid, it must succeed on a DC 15 Constitution saving throw or be infected with a disease called chaos phage. While infected, the target can't regain hit points, and its hit point maximum is reduced by 10 (3d6) every 24 hours. If the disease reduces the target's hit point maximum to 0, the target instantly transforms into a red slaad or, if it has the ability to cast spells of 3rd level or higher, a green slaad. Only a wish spell can reverse the transformation."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Green Slaad
-            ID: 278,
-            ProfileType: "Monster",
-            Name: "Green Slaad",
-            Type: "Large aberration, chaotic neutral",
-            Source: "Monster Manual",
-            HitPoints: 127,
-            HitPointsRoll: "15d10 + 45",
-            ArmorClass: [16, "natural armor"],
-            Speed: ["30 ft."],
-            Strength: 18,
-            Dexterity: 15,
-            Constitution: 16,
-            Intelligence: 11,
-            Wisdom: 8,
-            Charisma: 12,
-            SavingThrows: [],
-            Skills: ["Arcana +3", "Perception +2"],
-            DamageVulnerabilities: [],
-            DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["blindsight 30 ft.", "darkvision 60 ft.", "Passive Perception 12"],
-            Languages: ["Slaad", "telepathy 60 ft."],
-            Challenge: [8, 3900],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Shapechanger.",
-                    Desc: "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
-                },
-                {
-                    Title: "Innate Spellcasting.",
-                    Desc: "The slaad's innate spellcasting ability is Charisma (spell save DC 12). The slaad can innately cast the following spells, requiring no material components: At will: detect magic, detect thoughts, mage hand; 2/day each: fear, invisibility (self only); 1/day: fireball."
-                },
-                {
-                    Title: "Magic Resistance.",
-                    Desc: "The slaad has advantage on saving throws against spells and other magical effects."
-                },
-                {
-                    Title: "Regeneration.",
-                    Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The slaad makes three attacks: one with its bite and two with its claws or staff. Alternatively, it uses its Hurl Flame twice."
-                },
-                {
-                    Title: "Bite (Slaad Form Only).",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
-                },
-                {
-                    Title: "Claw (Slaad Form Only).",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
-                },
-                {
-                    Title: "Staff.",
-                    Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
-                },
-                {
-                    Title: "Hurl Flame.",
-                    Desc: "Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 10 (3d6) fire damage. The fire ignites flammable objects that aren't being worn or carried."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
-        },
+        ID: 278,
+        ProfileType: "Monster",
+        Name: "Green Slaad",
+        Type: "Large aberration, chaotic neutral",
+        TypeCategory: "Aberration",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 127,
+        HitPointsRoll: "15d10 + 45",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 15,
+        Constitution: 16,
+        Intelligence: 11,
+        Wisdom: 8,
+        Charisma: 12,
+        SavingThrows: [],
+        Skills: ["Arcana +3", "Perception +2"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["blindsight 30 ft.", "darkvision 60 ft.", "Passive Perception 12"],
+        Languages: ["Slaad", "telepathy 60 ft."],
+        Challenge: [8, 3900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Shapechanger.",
+                Desc: "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+            },
+            {
+                Title: "Innate Spellcasting.",
+                Desc: "The slaad's innate spellcasting ability is Charisma (spell save DC 12). The slaad can innately cast the following spells, requiring no material components: At will: detect magic, detect thoughts, mage hand; 2/day each: fear, invisibility (self only); 1/day: fireball."
+            },
+            {
+                Title: "Magic Resistance.",
+                Desc: "The slaad has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Regeneration.",
+                Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The slaad makes three attacks: one with its bite and two with its claws or staff. Alternatively, it uses its Hurl Flame twice."
+            },
+            {
+                Title: "Bite (Slaad Form Only).",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+            },
+            {
+                Title: "Claw (Slaad Form Only).",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+            },
+            {
+                Title: "Staff.",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+            },
+            {
+                Title: "Hurl Flame.",
+                Desc: "Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 10 (3d6) fire damage. The fire ignites flammable objects that aren't being worn or carried."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
+    },
     { // Gray Slaad
-            ID: 279,
-            ProfileType: "Monster",
-            Name: "Gray Slaad",
-            Type: "Medium aberration (shapechanger), chaotic neutral",
-            Source: "Monster Manual",
-            HitPoints: 127,
-            HitPointsRoll: "17d8 + 51",
-            ArmorClass: [18, "natural armor"],
-            Speed: ["30 ft."],
-            Strength: 17,
-            Dexterity: 17,
-            Constitution: 16,
-            Intelligence: 13,
-            Wisdom: 8,
-            Charisma: 14,
-            SavingThrows: [],
-            Skills: ["Arcana +5", "Perception +6"],
-            DamageVulnerabilities: [],
-            DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["blindsight 60 ft.", "darkvision 60 ft.", "Passive Perception 16"],
-            Languages: ["Slaad", "telepathy 60 ft."],
-            Challenge: [9, 5000],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Shapechanger.",
-                    Desc: "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
-                },
-                {
-                    Title: "Innate Spellcasting.",
-                    Desc: "The slaad's innate spellcasting ability is Charisma (spell save DC 14). The slaad can innately cast the following spells, requiring no material components: At will: detect magic, detect thoughts, mage hand; 2/day each: fear, invisibility (self only); 1/day: fireball."
-                },
-                {
-                    Title: "Magic Resistance.",
-                    Desc: "The slaad has advantage on saving throws against spells and other magical effects."
-                },
-                {
-                    Title: "Regeneration.",
-                    Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The slaad makes three attacks: one with its bite and two with its claws or greatsword."
-                },
-                {
-                    Title: "Bite (Slaad Form Only).",
-                    Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage plus 7 (2d6) necrotic damage."
-                },
-                {
-                    Title: "Claws (Slaad Form Only).",
-                    Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) necrotic damage."
-                },
-                {
-                    Title: "Greatsword.",
-                    Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) necrotic damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
+        ID: 279,
+        ProfileType: "Monster",
+        Name: "Gray Slaad",
+        Type: "Medium aberration (shapechanger), chaotic neutral",
+        TypeCategory: "Aberration",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 127,
+        HitPointsRoll: "17d8 + 51",
+        Speed: ["30 ft."],
+        Strength: 17,
+        Dexterity: 17,
+        Constitution: 16,
+        Intelligence: 13,
+        Wisdom: 8,
+        Charisma: 14,
+        SavingThrows: [],
+        Skills: ["Arcana +5", "Perception +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["blindsight 60 ft.", "darkvision 60 ft.", "Passive Perception 16"],
+        Languages: ["Slaad", "telepathy 60 ft."],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Shapechanger.",
+                Desc: "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+            },
+            {
+                Title: "Innate Spellcasting.",
+                Desc: "The slaad's innate spellcasting ability is Charisma (spell save DC 14). The slaad can innately cast the following spells, requiring no material components: At will: detect magic, detect thoughts, mage hand; 2/day each: fear, invisibility (self only); 1/day: fireball."
+            },
+            {
+                Title: "Magic Resistance.",
+                Desc: "The slaad has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Regeneration.",
+                Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The slaad makes three attacks: one with its bite and two with its claws or greatsword."
+            },
+            {
+                Title: "Bite (Slaad Form Only).",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage plus 7 (2d6) necrotic damage."
+            },
+            {
+                Title: "Claws (Slaad Form Only).",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) necrotic damage."
+            },
+            {
+                Title: "Greatsword.",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) necrotic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
     },
     { // Death Slaad
-            ID: 280,
-            ProfileType: "Monster",
-            Name: "Death Slaad",
-            Type: "Medium aberration (shapechanger), chaotic neutral",
-            Source: "Monster Manual",
-            HitPoints: 170,
-            HitPointsRoll: "20d8 + 80",
-            ArmorClass: [18, "natural armor"],
-            Speed: ["30 ft."],
-            Strength: 20,
-            Dexterity: 17,
-            Constitution: 19,
-            Intelligence: 15,
-            Wisdom: 10,
-            Charisma: 16,
-            SavingThrows: [],
-            Skills: ["Arcana +7", "Perception +4"],
-            DamageVulnerabilities: [],
-            DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["blindsight 60 ft.", "darkvision 60 ft.", "Passive Perception 14"],
-            Languages: ["Slaad", "telepathy 60 ft."],
-            Challenge: [10, 5900],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Shapechanger.",
-                    Desc: "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
-                },
-                {
-                    Title: "Innate Spellcasting.",
-                    Desc: "The slaad's innate spellcasting ability is Charisma (spell save DC 15). The slaad can innately cast the following spells, requiring no material components: At will: detect magic, detect thoughts, invisibility (self only), mage hand; 3/day each: fear, fireball, fly; 1/day: power word stun."
-                },
-                {
-                    Title: "Magic Resistance.",
-                    Desc: "The slaad has advantage on saving throws against spells and other magical effects."
-                },
-                {
-                    Title: "Regeneration.",
-                    Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The slaad makes three attacks: one with its bite and two with its claws or greatsword."
-                },
-                {
-                    Title: "Bite (Slaad Form Only).",
-                    Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage plus 7 (2d6) necrotic damage."
-                },
-                {
-                    Title: "Claws (Slaad Form Only).",
-                    Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) necrotic damage."
-                },
-                {
-                    Title: "Greatsword.",
-                    Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) necrotic damage."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
+        ID: 280,
+        ProfileType: "Monster",
+        Name: "Death Slaad",
+        Type: "Medium aberration (shapechanger), chaotic neutral",
+        TypeCategory: "Aberration",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
+        HitPoints: 170,
+        HitPointsRoll: "20d8 + 80",
+        Speed: ["30 ft."],
+        Strength: 20,
+        Dexterity: 17,
+        Constitution: 19,
+        Intelligence: 15,
+        Wisdom: 10,
+        Charisma: 16,
+        SavingThrows: [],
+        Skills: ["Arcana +7", "Perception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["acid", "cold", "fire", "lightning", "thunder"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["blindsight 60 ft.", "darkvision 60 ft.", "Passive Perception 14"],
+        Languages: ["Slaad", "telepathy 60 ft."],
+        Challenge: [10, 5900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Shapechanger.",
+                Desc: "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+            },
+            {
+                Title: "Innate Spellcasting.",
+                Desc: "The slaad's innate spellcasting ability is Charisma (spell save DC 15). The slaad can innately cast the following spells, requiring no material components: At will: detect magic, detect thoughts, invisibility (self only), mage hand; 3/day each: fear, fireball, fly; 1/day: power word stun."
+            },
+            {
+                Title: "Magic Resistance.",
+                Desc: "The slaad has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Regeneration.",
+                Desc: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The slaad makes three attacks: one with its bite and two with its claws or greatsword."
+            },
+            {
+                Title: "Bite (Slaad Form Only).",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage plus 7 (2d6) necrotic damage."
+            },
+            {
+                Title: "Claws (Slaad Form Only).",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) necrotic damage."
+            },
+            {
+                Title: "Greatsword.",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) necrotic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
     },
     { // Specter
-            ID: 281,
-            ProfileType: "Monster",
-            Name: "Specter",
-            Type: "Medium undead, chaotic evil",
-            Source: "Monster Manual",
-            HitPoints: 22,
-            HitPointsRoll: "5d8",
-            ArmorClass: [12, ""],
-            Speed: ["0 ft.", "fly 50 ft. (hover)"],
-            Strength: 1,
-            Dexterity: 14,
-            Constitution: 11,
-            Intelligence: 10,
-            Wisdom: 10,
-            Charisma: 11,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: [],
-            DamageResistances: ["acid", "cold", "fire", "lightning", "thunder", "bludgeoning, piercing, and slashing from nonmagical attacks"],
-            DamageImmunities: ["necrotic", "poison"],
-            ConditionImmunities: ["charmed", "exhaustion", "grappled", "paralyzed", "petrified", "poisoned", "prone", "restrained", "unconscious"],
-            Senses: ["darkvision 60 ft.", "Passive Perception 10"],
-            Languages: ["understands all languages it knew in life but can't speak"],
-            Challenge: [1, 200],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Incorporeal Movement.",
-                    Desc: "The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
-                },
-                {
-                    Title: "Sunlight Sensitivity.",
-                    Desc: "While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Life Drain.",
-                    Desc: "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
+        ID: 281,
+        ProfileType: "Monster",
+        Name: "Specter",
+        Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [12, ""],
+        HitPoints: 22,
+        HitPointsRoll: "5d8",
+        Speed: ["0 ft.", "fly 50 ft. (hover)"],
+        Strength: 1,
+        Dexterity: 14,
+        Constitution: 11,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 11,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["acid", "cold", "fire", "lightning", "thunder", "bludgeoning, piercing, and slashing from nonmagical attacks"],
+        DamageImmunities: ["necrotic", "poison"],
+        ConditionImmunities: ["charmed", "exhaustion", "grappled", "paralyzed", "petrified", "poisoned", "prone", "restrained", "unconscious"],
+        Senses: ["darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["understands all languages it knew in life but can't speak"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Incorporeal Movement.",
+                Desc: "The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+            },
+            {
+                Title: "Sunlight Sensitivity.",
+                Desc: "While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Life Drain.",
+                Desc: "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
     },
     { // Androsphinx
-            ID: 282,
-            ProfileType: "Monster",
-            Name: "Androsphinx",
-            Type: "Large monstrosity, lawful neutral",
-            Source: "Monster Manual",
-            HitPoints: 199,
-            HitPointsRoll: "19d10 + 95",
-            ArmorClass: [17, "natural armor"],
-            Speed: ["40 ft.", "fly 60 ft."],
-            Strength: 22,
-            Dexterity: 10,
-            Constitution: 20,
-            Intelligence: 16,
-            Wisdom: 18,
-            Charisma: 23,
-            SavingThrows: ["Dexterity +6", "Constitution +11", "Intelligence +9", "Wisdom +10"],
-            Skills: ["Perception +10", "Religion +9"],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: ["psychic"],
-            ConditionImmunities: ["charmed", "frightened"],
-            Senses: ["darkvision 60 ft.", "truesight 120 ft.", "Passive Perception 20"],
-            Languages: ["Common", "Sphinx"],
-            Challenge: [17, 18000],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Inscrutable.",
-                    Desc: "The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
-                },
-                {
-                    Title: "Magic Weapons.",
-                    Desc: "The sphinx's weapon attacks are magical."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Multiattack.",
-                    Desc: "The sphinx makes two claw attacks."
-                },
-                {
-                    Title: "Claw.",
-                    Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage."
-                },
-                {
-                    Title: "Roar.",
-                    Desc: "The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a saving throw. First Roar: Each creature that fails a DC 18 Wisdom saving throw is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Second Roar: Each creature that fails a DC 18 Wisdom saving throw is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Third Roar: Each creature makes a DC 18 Constitution saving throw. On a failed save, a creature takes 44 (8d10) thunder damage and is knocked prone. On a successful save, it takes half as much damage and isn't knocked prone."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
+        ID: 282,
+        ProfileType: "Monster",
+        Name: "Androsphinx",
+        Type: "Large monstrosity, lawful neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
+        Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
+        HitPoints: 199,
+        HitPointsRoll: "19d10 + 95",
+        Speed: ["40 ft.", "fly 60 ft."],
+        Strength: 22,
+        Dexterity: 10,
+        Constitution: 20,
+        Intelligence: 16,
+        Wisdom: 18,
+        Charisma: 23,
+        SavingThrows: ["Dexterity +6", "Constitution +11", "Intelligence +9", "Wisdom +10"],
+        Skills: ["Perception +10", "Religion +9"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["psychic"],
+        ConditionImmunities: ["charmed", "frightened"],
+        Senses: ["darkvision 60 ft.", "truesight 120 ft.", "Passive Perception 20"],
+        Languages: ["Common", "Sphinx"],
+        Challenge: [17, 18000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Inscrutable.",
+                Desc: "The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
+            },
+            {
+                Title: "Magic Weapons.",
+                Desc: "The sphinx's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack.",
+                Desc: "The sphinx makes two claw attacks."
+            },
+            {
+                Title: "Claw.",
+                Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage."
+            },
+            {
+                Title: "Roar.",
+                Desc: "The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a saving throw. First Roar: Each creature that fails a DC 18 Wisdom saving throw is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Second Roar: Each creature that fails a DC 18 Wisdom saving throw is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Third Roar: Each creature makes a DC 18 Constitution saving throw. On a failed save, a creature takes 44 (8d10) thunder damage and is knocked prone. On a successful save, it takes half as much damage and isn't knocked prone."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
     },
     { // Gynosphinx
         ID: 283,
         ProfileType: "Monster",
         Name: "Gynosphinx",
         Type: "Large monstrosity, lawful neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 136,
         HitPointsRoll: "16d10 + 48",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft.", "fly 60 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -15745,168 +16901,184 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Sprite
-            ID: 284,
-            ProfileType: "Monster",
-            Name: "Sprite",
-            Type: "Tiny fey, neutral good",
-            Source: "Monster Manual",
-            HitPoints: 2,
-            HitPointsRoll: "1d4",
-            ArmorClass: [15, "leather armor"],
-            Speed: ["10 ft.", "fly 40 ft."],
-            Strength: 3,
-            Dexterity: 18,
-            Constitution: 10,
-            Intelligence: 14,
-            Wisdom: 13,
-            Charisma: 11,
-            SavingThrows: [],
-            Skills: ["Perception +3", "Stealth +8"],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["Passive Perception 13"],
-            Languages: ["Common", "Elvish", "Sylvan"],
-            Challenge: [0.25, 50],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Heart Sight.",
-                    Desc: "The sprite touches a creature and magically knows the creature's current emotional state. If the target fails a DC 10 Charisma saving throw, the sprite also knows the creature's alignment. Celestials, fiends, and undead automatically fail the saving throw."
-                },
-                {
-                    Title: "Invisibility.",
-                    Desc: "The sprite magically turns invisible until it attacks or casts a spell, or until its concentration ends, as if concentrating on a spell. Any equipment the sprite wears or carries is invisible with it."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Longsword.",
-                    Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d8 - 2) slashing damage."
-                },
-                {
-                    Title: "Shortbow.",
-                    Desc: "Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is also knocked unconscious while poisoned in this way. The target wakes up if it takes damage or another creature takes an action to shake it awake."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
+        ID: 284,
+        ProfileType: "Monster",
+        Name: "Sprite",
+        Type: "Tiny fey, neutral good",
+        TypeCategory: "Fey",
+        Size: "Tiny",
+        Source: "Monster Manual",
+        ArmorClass: [15, "leather armor"],
+        HitPoints: 2,
+        HitPointsRoll: "1d4",
+        Speed: ["10 ft.", "fly 40 ft."],
+        Strength: 3,
+        Dexterity: 18,
+        Constitution: 10,
+        Intelligence: 14,
+        Wisdom: 13,
+        Charisma: 11,
+        SavingThrows: [],
+        Skills: ["Perception +3", "Stealth +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 13"],
+        Languages: ["Common", "Elvish", "Sylvan"],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Heart Sight.",
+                Desc: "The sprite touches a creature and magically knows the creature's current emotional state. If the target fails a DC 10 Charisma saving throw, the sprite also knows the creature's alignment. Celestials, fiends, and undead automatically fail the saving throw."
+            },
+            {
+                Title: "Invisibility.",
+                Desc: "The sprite magically turns invisible until it attacks or casts a spell, or until its concentration ends, as if concentrating on a spell. Any equipment the sprite wears or carries is invisible with it."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Longsword.",
+                Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d8 - 2) slashing damage."
+            },
+            {
+                Title: "Shortbow.",
+                Desc: "Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is also knocked unconscious while poisoned in this way. The target wakes up if it takes damage or another creature takes an action to shake it awake."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
     },
     { // Stirge
-            ID: 285,
-            ProfileType: "Monster",
-            Name: "Stirge",
-            Type: "Tiny beast, unaligned",
-            Source: "Monster Manual",
-            HitPoints: 2,
-            HitPointsRoll: "1d4",
-            ArmorClass: [14, ""],
-            Speed: ["10 ft.", "fly 40 ft."],
-            Strength: 4,
-            Dexterity: 16,
-            Constitution: 11,
-            Intelligence: 2,
-            Wisdom: 8,
-            Charisma: 6,
-            SavingThrows: [],
-            Skills: [],
-            DamageVulnerabilities: [],
-            DamageResistances: [],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 60 ft.", "Passive Perception 9"],
-            Languages: [],
-            Challenge: [0.125, 25],
-            ExtraRewards: "",
-            Traits: [],
-            Actions: [
-                {
-                    Title: "Blood Drain.",
-                    Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss. The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
+        ID: 285,
+        ProfileType: "Monster",
+        Name: "Stirge",
+        Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
+        Source: "Monster Manual",
+        ArmorClass: [14, ""],
+        HitPoints: 2,
+        HitPointsRoll: "1d4",
+        Speed: ["10 ft.", "fly 40 ft."],
+        Strength: 4,
+        Dexterity: 16,
+        Constitution: 11,
+        Intelligence: 2,
+        Wisdom: 8,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "Passive Perception 9"],
+        Languages: [],
+        Challenge: [0.125, 25],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Blood Drain.",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss. The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
     },
     { // Succubus/Incubus
-            ID: 286,
-            ProfileType: "Monster",
-            Name: "Succubus/Incubus",
-            Type: "Medium fiend (shapechanger), neutral evil",
-            Source: "Monster Manual",
-            HitPoints: 66,
-            HitPointsRoll: "12d8 + 12",
-            ArmorClass: [15, "natural armor"],
-            Speed: ["30 ft.", "fly 60 ft."],
-            Strength: 8,
-            Dexterity: 17,
-            Constitution: 13,
-            Intelligence: 15,
-            Wisdom: 12,
-            Charisma: 20,
-            SavingThrows: ["Dexterity +6", "Constitution +4", "Intelligence +5", "Wisdom +4", "Charisma +9"],
-            Skills: ["Deception +9", "Insight +4", "Perception +4", "Persuasion +9", "Stealth +6"],
-            DamageVulnerabilities: [],
-            DamageResistances: ["cold", "fire", "lightning", "poison", "bludgeoning, piercing, and slashing from nonmagical weapons"],
-            DamageImmunities: [],
-            ConditionImmunities: [],
-            Senses: ["darkvision 60 ft.", "Passive Perception 14"],
-            Languages: ["Abyssal", "Common", "Infernal", "telepathy 60 ft."],
-            Challenge: [4, 1100],
-            ExtraRewards: "",
-            Traits: [
-                {
-                    Title: "Telepathic Bond.",
-                    Desc: "The fiend ignores the range restriction on its telepathy when communicating with a creature it has charmed. The two don't even need to be on the same plane of existence."
-                },
-                {
-                    Title: "Shapechanger.",
-                    Desc: "The fiend can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
-                }
-            ],
-            Actions: [
-                {
-                    Title: "Claw (Fiend Form Only).",
-                    Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) slashing damage."
-                },
-                {
-                    Title: "Charm.",
-                    Desc: "One humanoid the fiend can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend's spoken commands. If the target suffers any harm from the fiend or another creature or receives a suicidal command from the fiend, the target can repeat the saving throw, ending the effect on itself on a success. If the target's saving throw is successful, or if the effect ends for it, the creature is immune to the fiend's Charm for the next 24 hours."
-                },
-                {
-                    Title: "Draining Kiss.",
-                    Desc: "The fiend kisses a creature charmed by it or a willing creature. The target must make a DC 15 Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
-                },
-                {
-                    Title: "Etherealness.",
-                    Desc: "The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa."
-                }
-            ],
-            Reactions: [],
-            LegendaryActions: [],
-            LairActions: [],
-            Description: "Description here"
+        ID: 286,
+        ProfileType: "Monster",
+        Name: "Succubus/Incubus",
+        Type: "Medium fiend (shapechanger), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
+        HitPoints: 66,
+        HitPointsRoll: "12d8 + 12",
+        Speed: ["30 ft.", "fly 60 ft."],
+        Strength: 8,
+        Dexterity: 17,
+        Constitution: 13,
+        Intelligence: 15,
+        Wisdom: 12,
+        Charisma: 20,
+        SavingThrows: ["Dexterity +6", "Constitution +4", "Intelligence +5", "Wisdom +4", "Charisma +9"],
+        Skills: ["Deception +9", "Insight +4", "Perception +4", "Persuasion +9", "Stealth +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["cold", "fire", "lightning", "poison", "bludgeoning, piercing, and slashing from nonmagical weapons"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "Passive Perception 14"],
+        Languages: ["Abyssal", "Common", "Infernal", "telepathy 60 ft."],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Telepathic Bond.",
+                Desc: "The fiend ignores the range restriction on its telepathy when communicating with a creature it has charmed. The two don't even need to be on the same plane of existence."
+            },
+            {
+                Title: "Shapechanger.",
+                Desc: "The fiend can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Claw (Fiend Form Only).",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) slashing damage."
+            },
+            {
+                Title: "Charm.",
+                Desc: "One humanoid the fiend can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend's spoken commands. If the target suffers any harm from the fiend or another creature or receives a suicidal command from the fiend, the target can repeat the saving throw, ending the effect on itself on a success. If the target's saving throw is successful, or if the effect ends for it, the creature is immune to the fiend's Charm for the next 24 hours."
+            },
+            {
+                Title: "Draining Kiss.",
+                Desc: "The fiend kisses a creature charmed by it or a willing creature. The target must make a DC 15 Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+            },
+            {
+                Title: "Etherealness.",
+                Desc: "The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here"
     },
     { // Tarrasque
         ID: 287,
         ProfileType: "Monster",
         Name: "Tarrasque",
         Type: "Gargantuan monstrosity (titan), unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Gargantuan",
         Source: "Monster Manual",
+        ArmorClass: [25, "natural armor"],
         HitPoints: 676,
         HitPointsRoll: "33d20 + 330",
-        ArmorClass: [25, "natural armor"],
         Speed: ["40 ft."],
         Strength: 30,
         Dexterity: 11,
@@ -15972,6 +17144,7 @@ const monstersLocal = [
                 Desc: "The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque's turns. If the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -15988,6 +17161,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Thri-kreen
@@ -15995,10 +17169,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Thri-kreen",
         Type: "Medium humanoid (thri-kreen), chaotic neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 33,
         HitPointsRoll: "6d8 + 6",
-        ArmorClass: [15, "natural armor"],
         Speed: ["40 ft."],
         Strength: 12,
         Dexterity: 15,
@@ -16040,9 +17216,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Treant
@@ -16050,10 +17228,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Treant",
         Type: "Huge plant, chaotic good",
+        TypeCategory: "Plant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 138,
         HitPointsRoll: "12d12 + 60",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft."],
         Strength: 23,
         Dexterity: 8,
@@ -16099,9 +17279,11 @@ const monstersLocal = [
                 Desc: "The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Troglodyte
@@ -16109,10 +17291,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Troglodyte",
         Type: "Medium humanoid (troglodyte), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, "natural armor"],
         HitPoints: 13,
         HitPointsRoll: "2d8 + 4",
-        ArmorClass: [11, "natural armor"],
         Speed: ["30 ft."],
         Strength: 14,
         Dexterity: 10,
@@ -16158,9 +17342,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Troll
@@ -16168,10 +17354,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Troll",
         Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 84,
         HitPointsRoll: "8d10 + 40",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -16213,9 +17401,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Umber Hulk
@@ -16223,10 +17413,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Umber Hulk",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 93,
         HitPointsRoll: "11d10 + 33",
-        ArmorClass: [18, "natural armor"],
         Speed: ["30 ft.", "burrow 20 ft."],
         Strength: 20,
         Dexterity: 13,
@@ -16268,9 +17460,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Unicorn
@@ -16278,10 +17472,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Unicorn",
         Type: "Large celestial, lawful good",
+        TypeCategory: "Celestial",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 67,
         HitPointsRoll: "9d10 + 18",
-        ArmorClass: [12, ""],
         Speed: ["50 ft."],
         Strength: 18,
         Dexterity: 14,
@@ -16335,6 +17531,7 @@ const monstersLocal = [
                 Desc: "The unicorn magically teleports itself and up to three willing creatures it can see within 5 feet of it, along with any equipment they are wearing or carrying, to a location the unicorn is familiar with, up to 1 mile away."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -16351,6 +17548,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Vampire
@@ -16358,10 +17556,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Vampire",
         Type: "Medium undead (shapechanger), lawful evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 144,
         HitPointsRoll: "17d8 + 68",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 18,
@@ -16423,6 +17623,7 @@ const monstersLocal = [
                 Desc: "The vampire magically calls 2d4 swarms of bats or rats, provided that the sun isn't up. While outdoors, the vampire can call 3d6 wolves instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -16439,6 +17640,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Vampire Spawn
@@ -16446,10 +17648,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Vampire Spawn",
         Type: "Medium undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 82,
         HitPointsRoll: "11d8 + 33",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 16,
@@ -16495,9 +17699,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the spawn, incapacitated, or restrained. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the spawn regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Water Weird
@@ -16505,10 +17711,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Water Weird",
         Type: "Large elemental, neutral",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 58,
         HitPointsRoll: "9d10 + 9",
-        ArmorClass: [13, ""],
         Speed: ["0 ft.", "swim 60 ft."],
         Strength: 17,
         Dexterity: 16,
@@ -16542,9 +17750,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 13 (3d6 + 3) bludgeoning damage. If the target is Large or smaller, it is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the water weird can't constrict another target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Wight
@@ -16552,10 +17762,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Wight",
         Type: "Medium undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14, "studded leather"],
         HitPoints: 45,
         HitPointsRoll: "6d8 + 18",
-        ArmorClass: [14, "studded leather"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -16601,9 +17813,11 @@ const monstersLocal = [
                 Desc: "The wight targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wight's control. The wight can have no more than twelve specters under its control at one time."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Will-o'-Wisp
@@ -16611,10 +17825,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Will-o'-Wisp",
         Type: "Tiny undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [19, ""],
         HitPoints: 22,
         HitPointsRoll: "9d4",
-        ArmorClass: [19, ""],
         Speed: ["0 ft.", "fly 50 ft. (hover)"],
         Strength: 1,
         Dexterity: 28,
@@ -16660,9 +17876,11 @@ const monstersLocal = [
                 Desc: "The will-o'-wisp and its light magically become invisible until it attacks or uses its Life Drain, or until its concentration ends (as if concentrating on a spell)."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Wraith
@@ -16670,10 +17888,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Wraith",
         Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, ""],
         HitPoints: 67,
         HitPointsRoll: "9d8 + 27",
-        ArmorClass: [13, ""],
         Speed: ["0 ft.", "fly 60 ft. (hover)"],
         Strength: 6,
         Dexterity: 16,
@@ -16711,9 +17931,11 @@ const monstersLocal = [
                 Desc: "The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Wyvern
@@ -16721,10 +17943,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Wyvern",
         Type: "Large dragon, unaligned",
+        TypeCategory: "Dragon",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 110,
         HitPointsRoll: "13d10 + 39",
-        ArmorClass: [13, "natural armor"],
         Speed: ["20 ft.", "fly 80 ft."],
         Strength: 19,
         Dexterity: 10,
@@ -16761,9 +17985,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage. The target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Xorn
@@ -16771,10 +17997,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Xorn",
         Type: "Medium elemental, neutral",
+        TypeCategory: "Elemental",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 73,
         HitPointsRoll: "7d8 + 42",
-        ArmorClass: [19, "natural armor"],
         Speed: ["20 ft.", "burrow 20 ft."],
         Strength: 17,
         Dexterity: 10,
@@ -16820,9 +18048,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yeti
@@ -16830,10 +18060,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yeti",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 51,
         HitPointsRoll: "6d10 + 18",
-        ArmorClass: [12, "natural armor"],
         Speed: ["40 ft.", "climb 40 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -16879,9 +18111,11 @@ const monstersLocal = [
                 Desc: "The yeti targets one creature it can see within 30 feet of it. If the target can see the yeti, the target must succeed on a DC 13 Constitution saving throw against this magic or take 10 (3d6) cold damage and then be paralyzed for 1 minute, unless it is immune to cold damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Abominable Yeti
@@ -16889,10 +18123,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Abominable Yeti",
         Type: "Huge monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 137,
         HitPointsRoll: "11d12 + 66",
-        ArmorClass: [15, "natural armor"],
         Speed: ["40 ft.", "climb 40 ft."],
         Strength: 24,
         Dexterity: 10,
@@ -16938,9 +18174,11 @@ const monstersLocal = [
                 Desc: "The abominable yeti targets one creature it can see within 30 feet of it. If the target can see the yeti, the target must succeed on a DC 18 Constitution saving throw against this magic or take 21 (6d6) cold damage and then be paralyzed for 1 minute, unless it is immune to cold damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yuan-ti Abomination
@@ -16948,10 +18186,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yuan-ti Abomination",
         Type: "Large monstrosity (shapechanger), neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 127,
         HitPointsRoll: "15d10 + 45",
-        ArmorClass: [15, "natural armor"],
         Speed: ["40 ft."],
         Strength: 19,
         Dexterity: 18,
@@ -17005,9 +18245,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 14 (4d6) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yuan-ti Malison
@@ -17015,10 +18257,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yuan-ti Malison",
         Type: "Medium monstrosity (shapechanger), neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, ""],
         HitPoints: 66,
         HitPointsRoll: "12d8 + 12",
-        ArmorClass: [12, ""],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -17072,9 +18316,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yuan-ti Pureblood
@@ -17082,10 +18328,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yuan-ti Pureblood",
         Type: "Medium humanoid (yuan-ti), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, ""],
         HitPoints: 40,
         HitPointsRoll: "9d8",
-        ArmorClass: [11, ""],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 12,
@@ -17123,9 +18371,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 7 (2d6) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Arcanaloth
@@ -17133,10 +18383,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Arcanaloth",
         Type: "Medium fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 104,
         HitPointsRoll: "16d8 + 32",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "fly 30 ft."],
         Strength: 17,
         Dexterity: 12,
@@ -17182,9 +18434,11 @@ const monstersLocal = [
                 Desc: "The arcanaloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mezzoloth
@@ -17192,10 +18446,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mezzoloth",
         Type: "Medium fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 75,
         HitPointsRoll: "10d8 + 30",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft."],
         Strength: 18,
         Dexterity: 11,
@@ -17245,9 +18501,11 @@ const monstersLocal = [
                 Desc: "The mezzoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Nycaloth
@@ -17255,10 +18513,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Nycaloth",
         Type: "Large fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 123,
         HitPointsRoll: "13d10 + 52",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft.", "fly 60 ft."],
         Strength: 20,
         Dexterity: 11,
@@ -17308,9 +18568,11 @@ const monstersLocal = [
                 Desc: "The nycaloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ultroloth
@@ -17318,10 +18580,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ultroloth",
         Type: "Medium fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [19, "natural armor"],
         HitPoints: 153,
         HitPointsRoll: "18d8 + 72",
-        ArmorClass: [19, "natural armor"],
         Speed: ["30 ft.", "fly 60 ft."],
         Strength: 16,
         Dexterity: 16,
@@ -17371,9 +18635,11 @@ const monstersLocal = [
                 Desc: "The ultroloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Zombie
@@ -17381,10 +18647,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Zombie",
         Type: "Medium undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [8, ""],
         HitPoints: 22,
         HitPointsRoll: "3d8 + 9",
-        ArmorClass: [8, ""],
         Speed: ["20 ft."],
         Strength: 13,
         Dexterity: 6,
@@ -17414,9 +18682,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ogre Zombie
@@ -17424,10 +18694,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ogre Zombie",
         Type: "Large undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [8, ""],
         HitPoints: 85,
         HitPointsRoll: "9d10 + 36",
-        ArmorClass: [8, ""],
         Speed: ["30 ft."],
         Strength: 19,
         Dexterity: 6,
@@ -17457,9 +18729,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Beholder Zombie
@@ -17467,10 +18741,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Beholder Zombie",
         Type: "Large undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 93,
         HitPointsRoll: "11d10 + 33",
-        ArmorClass: [15, "natural armor"],
         Speed: ["0 ft.", "fly 20 ft. (hover)"],
         Strength: 10,
         Dexterity: 8,
@@ -17504,9 +18780,11 @@ const monstersLocal = [
                 Desc: "The zombie uses a random magical eye ray, choosing a target that it can see within 60 feet of it. 1. Paralyzing Ray. The targeted creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 2. Fear Ray. The targeted creature must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 3. Enervation Ray. The targeted creature must make a DC 14 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one. 4. Disintegration Ray. If the target is a creature, it must succeed on a DC 14 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ape
@@ -17514,10 +18792,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ape",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 19,
         HitPointsRoll: "3d8 + 6",
-        ArmorClass: [12],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -17550,9 +18830,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Awakened Shrub
@@ -17560,10 +18842,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Awakened Shrub",
         Type: "Small plant, unaligned",
+        TypeCategory: "Plant",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [9],
         HitPoints: 10,
         HitPointsRoll: "3d6",
-        ArmorClass: [9],
         Speed: ["20 ft."],
         Strength: 3,
         Dexterity: 8,
@@ -17588,9 +18872,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Awakened Tree
@@ -17598,10 +18884,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Awakened Tree",
         Type: "Huge plant, unaligned",
+        TypeCategory: "Plant",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 59,
         HitPointsRoll: "7d12 + 14",
-        ArmorClass: [13, "natural armor"],
         Speed: ["20 ft."],
         Strength: 19,
         Dexterity: 6,
@@ -17631,9 +18919,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Axe Beak
@@ -17641,10 +18931,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Axe Beak",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 19,
         HitPointsRoll: "3d10 + 3",
-        ArmorClass: [11],
         Speed: ["50 ft."],
         Strength: 14,
         Dexterity: 12,
@@ -17669,9 +18961,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Baboon
@@ -17679,10 +18973,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Baboon",
         Type: "Small beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 3,
         HitPointsRoll: "1d6",
-        ArmorClass: [12],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 8,
         Dexterity: 14,
@@ -17712,9 +19008,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Badger
@@ -17722,10 +19020,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Badger",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 3,
         HitPointsRoll: "1d4 + 1",
-        ArmorClass: [10],
         Speed: ["20 ft.", "burrow 5 ft."],
         Strength: 4,
         Dexterity: 11,
@@ -17755,9 +19055,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Bat
@@ -17765,10 +19067,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Bat",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [12],
         Speed: ["5 ft.", "fly 30 ft."],
         Strength: 2,
         Dexterity: 15,
@@ -17798,9 +19102,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Black Bear
@@ -17808,10 +19114,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Black Bear",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, "natural armor"],
         HitPoints: 19,
         HitPointsRoll: "3d8 + 6",
-        ArmorClass: [11, "natural armor"],
         Speed: ["40 ft.", "climb 30 ft."],
         Strength: 15,
         Dexterity: 10,
@@ -17849,9 +19157,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Blink Dog
@@ -17859,10 +19169,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Blink Dog",
         Type: "Medium fey, lawful good",
+        TypeCategory: "Fey",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 22,
         HitPointsRoll: "4d8 + 4",
-        ArmorClass: [13],
         Speed: ["40 ft."],
         Strength: 12,
         Dexterity: 17,
@@ -17891,9 +19203,11 @@ const monstersLocal = [
                 Desc: "The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Blood Hawk
@@ -17901,10 +19215,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Blood Hawk",
         Type: "Small beast, neutral",
+        TypeCategory: "Beast",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 7,
         HitPointsRoll: "2d6",
-        ArmorClass: [12],
         Speed: ["10 ft.", "fly 60 ft."],
         Strength: 6,
         Dexterity: 14,
@@ -17938,9 +19254,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Boar
@@ -17948,10 +19266,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Boar",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [11],
         Speed: ["40 ft."],
         Strength: 13,
         Dexterity: 11,
@@ -17985,9 +19305,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Brown Bear
@@ -17995,10 +19317,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Brown Bear",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [11, "natural armor"],
         HitPoints: 34,
         HitPointsRoll: "4d10 + 12",
-        ArmorClass: [11, "natural armor"],
         Speed: ["40 ft.", "climb 30 ft."],
         Strength: 19,
         Dexterity: 10,
@@ -18036,9 +19360,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Camel
@@ -18046,10 +19372,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Camel",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [9],
         HitPoints: 15,
         HitPointsRoll: "2d10 + 4",
-        ArmorClass: [9],
         Speed: ["50 ft."],
         Strength: 16,
         Dexterity: 8,
@@ -18074,9 +19402,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Cat
@@ -18084,10 +19414,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Cat",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 2,
         HitPointsRoll: "1d4",
-        ArmorClass: [12],
         Speed: ["40 ft.", "climb 30 ft."],
         Strength: 3,
         Dexterity: 15,
@@ -18121,9 +19453,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Constrictor Snake
@@ -18131,10 +19465,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Constrictor Snake",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 13,
         HitPointsRoll: "2d10 + 2",
-        ArmorClass: [12],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -18163,9 +19499,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Crab
@@ -18173,10 +19511,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Crab",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 2,
         HitPointsRoll: "1d4",
-        ArmorClass: [11],
         Speed: ["20 ft.", "swim 20 ft."],
         Strength: 2,
         Dexterity: 11,
@@ -18201,9 +19541,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 (1d2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Crocodile
@@ -18211,10 +19553,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Crocodile",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 19,
         HitPointsRoll: "3d10 + 3",
-        ArmorClass: [12, "natural armor"],
         Speed: ["20 ft.", "swim 30 ft."],
         Strength: 15,
         Dexterity: 10,
@@ -18244,9 +19588,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Death Dog
@@ -18254,10 +19600,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Death Dog",
         Type: "Medium monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 39,
         HitPointsRoll: "6d8 + 12",
-        ArmorClass: [12],
         Speed: ["40 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -18291,9 +19639,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. The disease is cured after three successful saving throws."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Deer
@@ -18301,10 +19651,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Deer",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 4,
         HitPointsRoll: "1d8",
-        ArmorClass: [13],
         Speed: ["50 ft."],
         Strength: 11,
         Dexterity: 16,
@@ -18333,9 +19685,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Dire Wolf
@@ -18343,10 +19697,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Dire Wolf",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14],
         HitPoints: 37,
         HitPointsRoll: "5d10 + 10",
-        ArmorClass: [14],
         Speed: ["50 ft."],
         Strength: 17,
         Dexterity: 15,
@@ -18380,9 +19736,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Draft Horse
@@ -18390,10 +19748,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Draft Horse",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 19,
         HitPointsRoll: "3d10 + 3",
-        ArmorClass: [10],
         Speed: ["40 ft."],
         Strength: 18,
         Dexterity: 10,
@@ -18418,9 +19778,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Eagle
@@ -18428,10 +19790,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Eagle",
         Type: "Small beast, neutral good",
+        TypeCategory: "Beast",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 3,
         HitPointsRoll: "1d6",
-        ArmorClass: [12],
         Speed: ["10 ft.", "fly 60 ft."],
         Strength: 6,
         Dexterity: 15,
@@ -18461,9 +19825,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Elephant
@@ -18471,10 +19837,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Elephant",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 76,
         HitPointsRoll: "8d12 + 24",
-        ArmorClass: [12, "natural armor"],
         Speed: ["40 ft."],
         Strength: 22,
         Dexterity: 9,
@@ -18508,9 +19876,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one prone creature. Hit: 22 (3d10 + 5) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Elk
@@ -18518,10 +19888,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Elk",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 13,
         HitPointsRoll: "2d10 + 2",
-        ArmorClass: [10],
         Speed: ["50 ft."],
         Strength: 16,
         Dexterity: 10,
@@ -18555,9 +19927,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Flying Snake
@@ -18565,10 +19939,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Flying Snake",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [14],
         HitPoints: 5,
         HitPointsRoll: "2d4",
-        ArmorClass: [14],
         Speed: ["30 ft.", "fly 60 ft.", "swim 30 ft."],
         Strength: 4,
         Dexterity: 18,
@@ -18598,9 +19974,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 7 (2d6) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Frog
@@ -18608,10 +19986,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Frog",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [11],
         Speed: ["20 ft.", "swim 20 ft."],
         Strength: 1,
         Dexterity: 13,
@@ -18645,9 +20025,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target is grappled (escape DC 10). Until this grapple ends, the target is restrained, and the frog can't bite another target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Ape
@@ -18655,10 +20037,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Ape",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 157,
         HitPointsRoll: "15d12 + 60",
-        ArmorClass: [12],
         Speed: ["40 ft.", "climb 40 ft."],
         Strength: 23,
         Dexterity: 14,
@@ -18691,9 +20075,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +9 to hit, range 50/100 ft., one target. Hit: 30 (7d6 + 6) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Badger
@@ -18701,10 +20087,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Badger",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 13,
         HitPointsRoll: "2d8 + 4",
-        ArmorClass: [10],
         Speed: ["30 ft.", "burrow 10 ft."],
         Strength: 13,
         Dexterity: 10,
@@ -18742,9 +20130,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Bat
@@ -18752,10 +20142,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Bat",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 22,
         HitPointsRoll: "4d10",
-        ArmorClass: [13],
         Speed: ["10 ft.", "fly 60 ft."],
         Strength: 15,
         Dexterity: 16,
@@ -18789,9 +20181,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Boar
@@ -18799,10 +20193,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Boar",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 42,
         HitPointsRoll: "5d10 + 15",
-        ArmorClass: [12],
         Speed: ["40 ft."],
         Strength: 17,
         Dexterity: 10,
@@ -18836,9 +20232,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Centipede
@@ -18846,10 +20244,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Centipede",
         Type: "Small beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 4,
         HitPointsRoll: "1d6 + 1",
-        ArmorClass: [13],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 5,
         Dexterity: 14,
@@ -18874,9 +20274,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage and be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Constrictor Snake
@@ -18884,10 +20286,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Constrictor Snake",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 60,
         HitPointsRoll: "8d12 + 8",
-        ArmorClass: [12],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 19,
         Dexterity: 14,
@@ -18916,9 +20320,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one creature. Hit: 13 (2d8 + 4) bludgeoning damage, and the target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Crab
@@ -18926,10 +20332,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Crab",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 13,
         HitPointsRoll: "3d8",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 13,
         Dexterity: 15,
@@ -18959,9 +20367,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Crocodile
@@ -18969,10 +20379,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Crocodile",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 85,
         HitPointsRoll: "9d12 + 27",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft.", "swim 50 ft."],
         Strength: 21,
         Dexterity: 9,
@@ -19010,9 +20422,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one target not grappled by the crocodile. Hit: 14 (2d8 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Eagle
@@ -19020,10 +20434,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Eagle",
         Type: "Large beast, neutral good",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 26,
         HitPointsRoll: "4d10 + 4",
-        ArmorClass: [13],
         Speed: ["10 ft.", "fly 80 ft."],
         Strength: 16,
         Dexterity: 17,
@@ -19061,9 +20477,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Elk
@@ -19071,10 +20489,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Elk",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 42,
         HitPointsRoll: "5d12 + 10",
-        ArmorClass: [14, "natural armor"],
         Speed: ["60 ft."],
         Strength: 19,
         Dexterity: 16,
@@ -19108,9 +20528,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 22 (4d8 + 4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Fire Beetle
@@ -19118,10 +20540,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Fire Beetle",
         Type: "Small beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 4,
         HitPointsRoll: "1d6 + 1",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft."],
         Strength: 8,
         Dexterity: 10,
@@ -19151,9 +20575,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Frog
@@ -19161,10 +20587,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Frog",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 18,
         HitPointsRoll: "4d8",
-        ArmorClass: [11],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 12,
         Dexterity: 13,
@@ -19202,9 +20630,11 @@ const monstersLocal = [
                 Desc: "The frog makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, has total cover against attacks and other effects outside the frog, and takes 7 (2d6) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Goat
@@ -19212,10 +20642,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Goat",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 19,
         HitPointsRoll: "3d10 + 3",
-        ArmorClass: [11],
         Speed: ["40 ft."],
         Strength: 17,
         Dexterity: 11,
@@ -19249,9 +20681,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Hyena
@@ -19259,10 +20693,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Hyena",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 45,
         HitPointsRoll: "6d10 + 12",
-        ArmorClass: [12],
         Speed: ["50 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -19292,9 +20728,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Lizard
@@ -19302,10 +20740,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Lizard",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 19,
         HitPointsRoll: "3d10 + 3",
-        ArmorClass: [12, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 15,
         Dexterity: 12,
@@ -19330,20 +20770,24 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
-    { // Giant Lizard
+    { // Giant Octopus
         ID: 355,
         ProfileType: "Monster",
         Name: "Giant Octopus",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 52,
         HitPointsRoll: "8d10 + 8",
-        ArmorClass: [11],
         Speed: ["10 ft.", "swim 60 ft."],
         Strength: 17,
         Dexterity: 13,
@@ -19385,9 +20829,11 @@ const monstersLocal = [
                 Desc: "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the cloud. After releasing the ink, the octopus can use the Dash action as a bonus action."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Owl
@@ -19395,10 +20841,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Owl",
         Type: "Large beast, neutral",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 19,
         HitPointsRoll: "3d10 + 3",
-        ArmorClass: [12],
         Speed: ["5 ft.", "fly 60 ft."],
         Strength: 13,
         Dexterity: 15,
@@ -19432,9 +20880,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Poisonous Snake
@@ -19442,10 +20892,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Poisonous Snake",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14],
         HitPoints: 11,
         HitPointsRoll: "2d10",
-        ArmorClass: [14],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 19,
         Dexterity: 18,
@@ -19470,9 +20922,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Rat
@@ -19480,10 +20934,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Rat",
         Type: "Small beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 7,
         HitPointsRoll: "2d6",
-        ArmorClass: [12],
         Speed: ["30 ft."],
         Strength: 7,
         Dexterity: 15,
@@ -19517,9 +20973,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Scorpion
@@ -19527,10 +20985,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Scorpion",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 52,
         HitPointsRoll: "7d10 + 14",
-        ArmorClass: [15, "natural armor"],
         Speed: ["40 ft."],
         Strength: 15,
         Dexterity: 13,
@@ -19563,9 +21023,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Sea Horse
@@ -19573,10 +21035,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Sea Horse",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 16,
         HitPointsRoll: "3d10",
-        ArmorClass: [13, "natural armor"],
         Speed: ["0 ft.", "swim 40 ft."],
         Strength: 12,
         Dexterity: 15,
@@ -19610,9 +21074,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Shark
@@ -19620,10 +21086,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Shark",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 126,
         HitPointsRoll: "11d12 + 55",
-        ArmorClass: [13, "natural armor"],
         Speed: ["0 ft.", "swim 50 ft."],
         Strength: 23,
         Dexterity: 11,
@@ -19657,9 +21125,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 22 (3d10 + 6) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Spider
@@ -19667,10 +21137,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Spider",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 26,
         HitPointsRoll: "4d10 + 4",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 14,
         Dexterity: 16,
@@ -19712,9 +21184,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Toad
@@ -19722,10 +21196,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Toad",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 39,
         HitPointsRoll: "6d10 + 6",
-        ArmorClass: [11],
         Speed: ["20 ft.", "swim 40 ft."],
         Strength: 15,
         Dexterity: 13,
@@ -19763,9 +21239,11 @@ const monstersLocal = [
                 Desc: "The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, has total cover against attacks and other effects outside the toad, and takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Vulture
@@ -19773,10 +21251,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Vulture",
         Type: "Large beast, neutral evil",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 22,
         HitPointsRoll: "3d10 + 6",
-        ArmorClass: [10],
         Speed: ["10 ft.", "fly 60 ft."],
         Strength: 15,
         Dexterity: 10,
@@ -19818,9 +21298,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Wasp
@@ -19828,10 +21310,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Wasp",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 13,
         HitPointsRoll: "3d8",
-        ArmorClass: [12],
         Speed: ["10 ft.", "fly 50 ft."],
         Strength: 10,
         Dexterity: 14,
@@ -19856,9 +21340,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage plus 5 (2d4) poison damage. The target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Weasel
@@ -19866,10 +21352,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Weasel",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 9,
         HitPointsRoll: "2d8",
-        ArmorClass: [13],
         Speed: ["40 ft."],
         Strength: 11,
         Dexterity: 16,
@@ -19899,9 +21387,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Wolf Spider
@@ -19909,10 +21399,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Wolf Spider",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [13],
         Speed: ["40 ft.", "climb 40 ft."],
         Strength: 12,
         Dexterity: 16,
@@ -19950,9 +21442,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Goat
@@ -19960,10 +21454,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Goat",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 4,
         HitPointsRoll: "1d8",
-        ArmorClass: [10],
         Speed: ["40 ft."],
         Strength: 12,
         Dexterity: 10,
@@ -19997,9 +21493,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hawk
@@ -20007,10 +21505,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hawk",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [13],
         Speed: ["10 ft.", "60 ft. fly"],
         Strength: 5,
         Dexterity: 16,
@@ -20040,9 +21540,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hunter Shark
@@ -20050,10 +21552,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hunter Shark",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 45,
         HitPointsRoll: "6d10 + 12",
-        ArmorClass: [12],
         Speed: ["swim 40 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -20087,9 +21591,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hyena
@@ -20097,10 +21603,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hyena",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 5,
         HitPointsRoll: "1d8 + 1",
-        ArmorClass: [11],
         Speed: ["50 ft."],
         Strength: 11,
         Dexterity: 13,
@@ -20130,9 +21638,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Jackal
@@ -20140,10 +21650,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Jackal",
         Type: "Small beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 3,
         HitPointsRoll: "1d6",
-        ArmorClass: [12],
         Speed: ["40 ft."],
         Strength: 8,
         Dexterity: 15,
@@ -20177,9 +21689,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Killer Whale
@@ -20187,10 +21701,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Killer Whale",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 90,
         HitPointsRoll: "12d12 + 12",
-        ArmorClass: [12],
         Speed: ["swim 60 ft."],
         Strength: 19,
         Dexterity: 10,
@@ -20224,9 +21740,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Lion
@@ -20234,10 +21752,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Lion",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 26,
         HitPointsRoll: "4d10 + 4",
-        ArmorClass: [12],
         Speed: ["50 ft."],
         Strength: 17,
         Dexterity: 15,
@@ -20279,9 +21799,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Lizard
@@ -20289,10 +21811,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Lizard",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 2,
         HitPointsRoll: "1d4",
-        ArmorClass: [10],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 2,
         Dexterity: 11,
@@ -20317,9 +21841,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mammoth
@@ -20327,10 +21853,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mammoth",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 126,
         HitPointsRoll: "11d12 + 55",
-        ArmorClass: [13, "natural armor"],
         Speed: ["40 ft."],
         Strength: 24,
         Dexterity: 9,
@@ -20364,9 +21892,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one prone creature. Hit: 29 (4d10 + 7) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mastiff
@@ -20374,10 +21904,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mastiff",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 5,
         HitPointsRoll: "1d8 + 1",
-        ArmorClass: [12],
         Speed: ["40 ft."],
         Strength: 13,
         Dexterity: 14,
@@ -20407,9 +21939,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mule
@@ -20417,10 +21951,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mule",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [10],
         Speed: ["40 ft."],
         Strength: 14,
         Dexterity: 10,
@@ -20454,9 +21990,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Octopus
@@ -20464,10 +22002,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Octopus",
         Type: "Small beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Small",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 3,
         HitPointsRoll: "1d6",
-        ArmorClass: [12],
         Speed: ["5 ft.", "swim 30 ft."],
         Strength: 4,
         Dexterity: 15,
@@ -20501,9 +22041,11 @@ const monstersLocal = [
                 Desc: "A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use a bonus action to swim up to its swimming speed. The octopus can use this action once per short or long rest."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Owl
@@ -20511,10 +22053,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Owl",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [11],
         Speed: ["5 ft.", "fly 60 ft."],
         Strength: 3,
         Dexterity: 13,
@@ -20548,9 +22092,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Panther
@@ -20558,10 +22104,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Panther",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 13,
         HitPointsRoll: "3d8",
-        ArmorClass: [12],
         Speed: ["50 ft.", "climb 40 ft."],
         Strength: 14,
         Dexterity: 15,
@@ -20599,9 +22147,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Phase Spider
@@ -20609,10 +22159,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Phase Spider",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 32,
         HitPointsRoll: "5d10 + 5",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 15,
         Dexterity: 15,
@@ -20646,9 +22198,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Poisonous Snake
@@ -20656,10 +22210,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Poisonous Snake",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 2,
         HitPointsRoll: "1d4",
-        ArmorClass: [13],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 2,
         Dexterity: 16,
@@ -20684,9 +22240,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Polar Bear
@@ -20694,10 +22252,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Polar Bear",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 42,
         HitPointsRoll: "5d10 + 15",
-        ArmorClass: [12],
         Speed: ["40 ft.", "swim 30 ft."],
         Strength: 20,
         Dexterity: 10,
@@ -20735,9 +22295,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Pony
@@ -20745,10 +22307,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Pony",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [10],
         Speed: ["40 ft."],
         Strength: 15,
         Dexterity: 10,
@@ -20778,9 +22342,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (2d4 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Quipper
@@ -20788,10 +22354,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Quipper",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [13],
         Speed: ["swim 40 ft."],
         Strength: 2,
         Dexterity: 16,
@@ -20825,9 +22393,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Rat
@@ -20835,10 +22405,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Rat",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [10],
         Speed: ["20 ft."],
         Strength: 2,
         Dexterity: 11,
@@ -20868,9 +22440,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Raven
@@ -20878,10 +22452,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Raven",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [12],
         Speed: ["10 ft.", "fly 50 ft."],
         Strength: 2,
         Dexterity: 14,
@@ -20911,9 +22487,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Reef Shark
@@ -20921,10 +22499,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Reef Shark",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 22,
         HitPointsRoll: "4d8 + 4",
-        ArmorClass: [12],
         Speed: ["swim 40 ft."],
         Strength: 14,
         Dexterity: 13,
@@ -20954,9 +22534,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Rhinoceros
@@ -20964,10 +22546,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Rhinoceros",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 45,
         HitPointsRoll: "6d10 + 12",
-        ArmorClass: [11],
         Speed: ["40 ft."],
         Strength: 21,
         Dexterity: 8,
@@ -20997,9 +22581,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Riding Horse
@@ -21007,10 +22593,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Riding Horse",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 13,
         HitPointsRoll: "2d10 + 2",
-        ArmorClass: [10],
         Speed: ["60 ft."],
         Strength: 16,
         Dexterity: 10,
@@ -21035,9 +22623,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Sabre-Toothed Tiger
@@ -21045,10 +22635,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Sabre-Toothed Tiger",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 52,
         HitPointsRoll: "7d10 + 14",
-        ArmorClass: [12],
         Speed: ["40 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -21086,9 +22678,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Scorpion
@@ -21096,10 +22690,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Scorpion",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [11],
         Speed: ["10 ft."],
         Strength: 2,
         Dexterity: 11,
@@ -21124,9 +22720,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Sea Horse
@@ -21134,10 +22732,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Sea Horse",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [11],
         Speed: ["swim 20 ft."],
         Strength: 1,
         Dexterity: 12,
@@ -21162,9 +22762,11 @@ const monstersLocal = [
             }
         ],
         Actions: [],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Spider
@@ -21172,10 +22774,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Spider",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [12],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 2,
         Dexterity: 14,
@@ -21213,9 +22817,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 2 (1d4) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Bats
@@ -21223,10 +22829,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Bats",
         Type: "Medium swarm of Tiny beasts, unaligned",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 22,
         HitPointsRoll: "5d8",
-        ArmorClass: [12],
         Speed: ["0 ft.", "fly 30 ft."],
         Strength: 5,
         Dexterity: 15,
@@ -21260,9 +22868,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature in the swarm's space. Hit: 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Beetles
@@ -21270,10 +22880,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Beetles",
         Type: "Medium swarm of Tiny beasts, unaligned",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 22,
         HitPointsRoll: "5d8",
-        ArmorClass: [12],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 3,
         Dexterity: 13,
@@ -21303,9 +22915,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Centipedes
@@ -21313,10 +22927,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Centipedes",
         Type: "Medium swarm of Tiny beasts, unaligned",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 22,
         HitPointsRoll: "5d8",
-        ArmorClass: [12],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 3,
         Dexterity: 13,
@@ -21346,9 +22962,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Insects
@@ -21356,10 +22974,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Insects",
         Type: "Medium swarm of Tiny beasts, unaligned",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 22,
         HitPointsRoll: "5d8",
-        ArmorClass: [12],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 3,
         Dexterity: 13,
@@ -21389,9 +23009,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Poisonous Snakes
@@ -21399,10 +23021,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Poisonous Snakes",
         Type: "Medium swarm of Tiny beasts, unaligned",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [14],
         HitPoints: 36,
         HitPointsRoll: "8d8",
-        ArmorClass: [14],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 8,
         Dexterity: 18,
@@ -21432,9 +23056,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Quippers
@@ -21442,10 +23068,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Quippers",
         Type: "Medium swarm of Tiny beasts, unaligned",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 28,
         HitPointsRoll: "8d8 - 8",
-        ArmorClass: [13],
         Speed: ["swim 40 ft."],
         Strength: 13,
         Dexterity: 16,
@@ -21483,9 +23111,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Rats
@@ -21493,10 +23123,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Rats",
         Type: "Medium swarm of Tiny beasts, unaligned",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 24,
         HitPointsRoll: "7d8 - 7",
-        ArmorClass: [10],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 11,
@@ -21530,9 +23162,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 0 ft., one target. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Ravens
@@ -21540,10 +23174,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Ravens",
         Type: "Medium swarm of Tiny beasts, unaligned",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 24,
         HitPointsRoll: "7d8 - 7",
-        ArmorClass: [12],
         Speed: ["10 ft.", "fly 50 ft."],
         Strength: 6,
         Dexterity: 14,
@@ -21577,9 +23213,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Tiger
@@ -21587,10 +23225,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Tiger",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 37,
         HitPointsRoll: "5d10 + 10",
-        ArmorClass: [12],
         Speed: ["40 ft."],
         Strength: 17,
         Dexterity: 15,
@@ -21628,9 +23268,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Vulture
@@ -21638,10 +23280,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Vulture",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 5,
         HitPointsRoll: "1d8 + 1",
-        ArmorClass: [10],
         Speed: ["10 ft.", "fly 50 ft."],
         Strength: 7,
         Dexterity: 10,
@@ -21675,9 +23319,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Warhorse
@@ -21685,10 +23331,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Warhorse",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [11],
         HitPoints: 19,
         HitPointsRoll: "3d10 + 3",
-        ArmorClass: [11],
         Speed: ["60 ft."],
         Strength: 18,
         Dexterity: 12,
@@ -21718,9 +23366,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Weasel
@@ -21728,10 +23378,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Weasel",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 1,
         HitPointsRoll: "1d4 - 1",
-        ArmorClass: [13],
         Speed: ["30 ft."],
         Strength: 3,
         Dexterity: 16,
@@ -21761,9 +23413,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Winter Wolf
@@ -21771,10 +23425,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Winter Wolf",
         Type: "Large monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 75,
         HitPointsRoll: "10d10 + 20",
-        ArmorClass: [13, "natural armor"],
         Speed: ["50 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -21816,9 +23472,11 @@ const monstersLocal = [
                 Desc: "The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Wolf
@@ -21826,10 +23484,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Wolf",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [13],
         Speed: ["40 ft."],
         Strength: 12,
         Dexterity: 15,
@@ -21863,9 +23523,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Worg
@@ -21873,10 +23535,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Worg",
         Type: "Large monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Monster Manual",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 26,
         HitPointsRoll: "4d10 + 4",
-        ArmorClass: [13, "natural armor"],
         Speed: ["50 ft."],
         Strength: 16,
         Dexterity: 13,
@@ -21906,9 +23570,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Acolyte
@@ -21916,10 +23582,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Acolyte",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 9,
         HitPointsRoll: "2d8",
-        ArmorClass: [10],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -21949,9 +23617,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Archmage
@@ -21959,10 +23629,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Archmage",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 99,
         HitPointsRoll: "18d8 + 18",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 14,
@@ -21996,9 +23668,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Assassin
@@ -22006,10 +23680,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Assassin",
         Type: "Medium humanoid (any race), any non-good alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "studded leather"],
         HitPoints: 78,
         HitPointsRoll: "12d8 + 24",
-        ArmorClass: [15, "studded leather"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 16,
@@ -22055,9 +23731,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Bandit
@@ -22065,10 +23743,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Bandit",
         Type: "Medium humanoid (any race), any non-lawful alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "leather armor"],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [12, "leather armor"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 12,
@@ -22097,9 +23777,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Bandit Captain
@@ -22107,10 +23789,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Bandit Captain",
         Type: "Medium humanoid (any race), any non-lawful alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "studded leather"],
         HitPoints: 65,
         HitPointsRoll: "10d8 + 20",
-        ArmorClass: [15, "studded leather"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 16,
@@ -22143,6 +23827,7 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry",
@@ -22151,6 +23836,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Berserker
@@ -22158,10 +23844,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Berserker",
         Type: "Medium humanoid (any race), any chaotic alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "hide armor"],
         HitPoints: 67,
         HitPointsRoll: "9d8 + 27",
-        ArmorClass: [13, "hide armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 12,
@@ -22191,9 +23879,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Commoner
@@ -22201,10 +23891,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Commoner",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [10],
         HitPoints: 4,
         HitPointsRoll: "1d8",
-        ArmorClass: [10],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -22229,9 +23921,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Cultist
@@ -22239,10 +23933,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Cultist",
         Type: "Medium humanoid (any race), any non-good alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "leather armor"],
         HitPoints: 9,
         HitPointsRoll: "2d8",
-        ArmorClass: [12, "leather armor"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 12,
@@ -22272,9 +23968,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Cult Fanatic
@@ -22282,10 +23980,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Cult Fanatic",
         Type: "Medium humanoid (any race), any non-good alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "leather armor"],
         HitPoints: 33,
         HitPointsRoll: "6d8 + 6",
-        ArmorClass: [13, "leather armor"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 14,
@@ -22323,9 +24023,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Druid
@@ -22333,10 +24035,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Druid",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, "16 with barkskin"],
         HitPoints: 27,
         HitPointsRoll: "5d8 + 5",
-        ArmorClass: [11, "16 with barkskin"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 12,
@@ -22366,9 +24070,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage with shillelagh or if wielded with two hands."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gladiator
@@ -22376,10 +24082,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gladiator",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "studded leather, shield"],
         HitPoints: 112,
         HitPointsRoll: "15d8 + 45",
-        ArmorClass: [16, "studded leather, shield"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 15,
@@ -22429,9 +24137,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Guard
@@ -22439,10 +24149,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Guard",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [16, "chain shirt, shield"],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [16, "chain shirt, shield"],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 12,
@@ -22467,9 +24179,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Knight
@@ -22477,10 +24191,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Knight",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [18, "plate"],
         HitPoints: 52,
         HitPointsRoll: "8d8 + 16",
-        ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 11,
@@ -22522,6 +24238,7 @@ const monstersLocal = [
                 Desc: "For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry",
@@ -22530,6 +24247,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mage
@@ -22537,10 +24255,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mage",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 40,
         HitPointsRoll: "9d8",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -22570,9 +24290,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Noble
@@ -22580,10 +24302,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Noble",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [15, "breastplate"],
         HitPoints: 9,
         HitPointsRoll: "2d8",
-        ArmorClass: [15, "breastplate"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 12,
@@ -22613,6 +24337,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry",
@@ -22621,6 +24346,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Priest
@@ -22628,10 +24354,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Priest",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "chain shirt"],
         HitPoints: 27,
         HitPointsRoll: "5d8 + 5",
-        ArmorClass: [13, "chain shirt"],
         Speed: ["25 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -22665,9 +24393,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Scout
@@ -22675,10 +24405,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Scout",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [13, "leather armor"],
         HitPoints: 16,
         HitPointsRoll: "3d8 + 3",
-        ArmorClass: [13, "leather armor"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 14,
@@ -22716,9 +24448,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Spy
@@ -22726,10 +24460,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Spy",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12],
         HitPoints: 27,
         HitPointsRoll: "6d8",
-        ArmorClass: [12],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 15,
@@ -22771,9 +24507,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Thug
@@ -22781,10 +24519,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Thug",
         Type: "Medium humanoid (any race), any non-good alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [11, "leather armor"],
         HitPoints: 32,
         HitPointsRoll: "5d8 + 10",
-        ArmorClass: [11, "leather armor"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 11,
@@ -22822,9 +24562,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Tribal Warrior
@@ -22832,10 +24574,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Tribal Warrior",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [12, "hide armor"],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [12, "hide armor"],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 11,
@@ -22865,9 +24609,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Veteran
@@ -22875,10 +24621,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Veteran",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Monster Manual",
+        ArmorClass: [17, "splint"],
         HitPoints: 58,
         HitPointsRoll: "9d8 + 18",
-        ArmorClass: [17, "splint"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 13,
@@ -22915,9 +24663,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Banderhobb
@@ -22925,10 +24675,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Banderhobb",
         Type: "Large monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 84,
         HitPointsRoll: "8d10 + 40",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 20,
         Dexterity: 12,
@@ -22974,9 +24726,11 @@ const monstersLocal = [
                 Desc: "The banderhobb magically teleports up to 30 feet to an unoccupied space of dim light or darkness that it can see. Before or after teleporting, it can make a bite or tongue attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Barghest
@@ -22984,10 +24738,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Barghest",
         Type: "Large fiend (shapechanger), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 90,
         HitPointsRoll: "12d10 + 24",
-        ArmorClass: [17, "natural armor"],
         Speed: ["60 ft. (30 ft. in goblin form)"],
         Strength: 19,
         Dexterity: 15,
@@ -23033,9 +24789,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Death Kiss
@@ -23043,10 +24801,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Death Kiss",
         Type: "Large aberration, neutral evil",
+        TypeCategory: "Aberration",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 161,
         HitPointsRoll: "17d10 + 68",
-        ArmorClass: [16, "natural armor"],
         Speed: ["0 ft.", "fly 30 ft. (hover)"],
         Strength: 18,
         Dexterity: 14,
@@ -23084,9 +24844,11 @@ const monstersLocal = [
                 Desc: "One creature grappled by a tentacle of the death kiss must make a DC 16 Constitution saving throw. On a failed save, the target takes 22 (4d10) lightning damage, and the death kiss regains half as many hit points."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gauth
@@ -23094,10 +24856,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gauth",
         Type: "Medium aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 67,
         HitPointsRoll: "9d8 + 27",
-        ArmorClass: [15, "natural armor"],
         Speed: ["0 ft.", "fly 20 ft. (hover)"],
         Strength: 10,
         Dexterity: 14,
@@ -23135,9 +24899,11 @@ const monstersLocal = [
                 Desc: "The gauth shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it: 1. Devour Magic Ray. The targeted creature must succeed on a DC 14 Dexterity saving throw or have one of its magic items lose all magical properties until the start of the gauth's next turn. If the object is a charged item, it also loses 1d4 charges. Determine the affected item randomly, ignoring single-use items such as potions and scrolls. 2. Enervation Ray. The targeted creature must make a DC 14 Constitution saving throw, taking 18 (4d8) necrotic damage on a failed save, or half as much damage on a successful one. 3. Pushing Ray. The targeted creature must succeed on a DC 14 Strength saving throw or be pushed up to 15 feet directly away from the gauth and have its speed halved until the start of the gauth's next turn. 4. Fire Ray. The targeted creature must succeed on a DC 14 Dexterity saving throw or take 22 (4d10) fire damage. 5. Paralyzing Ray. The targeted creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 6. Sleep Ray. The targeted creature must succeed on a DC 14 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gazer
@@ -23145,10 +24911,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gazer",
         Type: "Tiny aberration, neutral evil",
+        TypeCategory: "Aberration",
+        Size: "Tiny",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, ""],
         HitPoints: 13,
         HitPointsRoll: "3d4 + 6",
-        ArmorClass: [13, ""],
         Speed: ["0 ft.", "fly 30 ft. (hover)"],
         Strength: 3,
         Dexterity: 17,
@@ -23186,9 +24954,11 @@ const monstersLocal = [
                 Desc: "The gazer shoots two of the following magical eye rays at random (reroll duplicates), choosing one or two targets it can see within 60 feet of it: 1. Dazing Ray. The targeted creature must succeed on a DC 12 Wisdom saving throw or be charmed until the start of the gazer's next turn. While the target is charmed in this way, its speed is halved, and it has disadvantage on attack rolls. 2. Fear Ray. The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened until the start of the gazer's next turn. 3. Frost Ray. The targeted creature must succeed on a DC 12 Dexterity saving throw or take 10 (3d6) cold damage. 4. Telekinetic Ray. If the target is a creature that is Medium or smaller, it must succeed on a DC 12 Strength saving throw or be moved up to 30 feet directly away from the gazer. If the target is an object weighing 10 pounds or less that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Bodak
@@ -23196,10 +24966,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Bodak",
         Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 58,
         HitPointsRoll: "9d8 + 18",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 16,
@@ -23241,9 +25013,11 @@ const monstersLocal = [
                 Desc: "One creature that the bodak can see within 60 feet of it must make a DC 13 Constitution saving throw, taking 22 (4d10) necrotic damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Boggle
@@ -23251,10 +25025,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Boggle",
         Type: "Small fey, chaotic neutral",
+        TypeCategory: "Fey",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, ""],
         HitPoints: 18,
         HitPointsRoll: "4d6 + 4",
-        ArmorClass: [14, ""],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 8,
         Dexterity: 18,
@@ -23296,9 +25072,11 @@ const monstersLocal = [
                 Desc: "The boggle creates a puddle of oil that is either slippery or sticky (boggle's choice). The puddle is 1 inch deep and covers the ground in the boggle's space. The puddle is difficult terrain for all creatures except boggles and lasts for 1 hour. If the oil is slippery, any creature that enters the puddle's area or starts its turn there must succeed on a DC 11 Dexterity saving throw or fall prone. If the oil is sticky, any creature that enters the puddle's area or starts its turn there must succeed on a DC 11 Strength saving throw or be restrained. On its turn, a creature can use an action to try to extricate itself from the sticky puddle, ending the effect and moving into the nearest safe unoccupied space with a successful DC 11 Strength check."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Catoblepas
@@ -23306,10 +25084,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Catoblepas",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 84,
         HitPointsRoll: "8d10 + 40",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 19,
         Dexterity: 12,
@@ -23347,9 +25127,11 @@ const monstersLocal = [
                 Desc: "The catoblepas targets a creature that it can see within 30 feet of it. The target must make a DC 16 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the target instead takes 64 necrotic damage. The target dies if reduced to 0 hit points by this ray."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Cave Fisher
@@ -23357,10 +25139,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Cave Fisher",
         Type: "Medium monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 58,
         HitPointsRoll: "9d8 + 18",
-        ArmorClass: [16, "natural armor"],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 16,
         Dexterity: 13,
@@ -23406,9 +25190,11 @@ const monstersLocal = [
                 Desc: "One creature grappled by the cave fisher's adhesive filament must make a DC 13 Strength saving throw, provided that the target weighs 200 pounds or less. On a failure, the target is pulled into an unoccupied space within 5 feet of the cave fisher, and the cave fisher makes a claw attack against it as a bonus action. Reeling up the target releases anyone else who was attached to the filament. Until the grapple ends on the target, the cave fisher can't extrude another filament."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Chitine
@@ -23416,10 +25202,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Chitine",
         Type: "Small monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "hide armor"],
         HitPoints: 18,
         HitPointsRoll: "4d6 + 4",
-        ArmorClass: [14, "hide armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 10,
         Dexterity: 14,
@@ -23465,9 +25253,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Choldrith
@@ -23475,10 +25265,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Choldrith",
         Type: "Medium monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "studded leather armor"],
         HitPoints: 66,
         HitPointsRoll: "12d8 + 12",
-        ArmorClass: [15, "studded leather armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 12,
         Dexterity: 16,
@@ -23532,9 +25324,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one Large or smaller creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 11 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; 5 hit points; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Cranium Rat
@@ -23542,10 +25336,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Cranium Rat",
         Type: "Tiny beast, lawful evil",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, ""],
         HitPoints: 2,
         HitPointsRoll: "1d4",
-        ArmorClass: [12, ""],
         Speed: ["30 ft."],
         Strength: 2,
         Dexterity: 14,
@@ -23579,9 +25375,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Cranium Rats
@@ -23589,10 +25387,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Cranium Rats",
         Type: "Medium swarm of Tiny beasts, lawful evil",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, ""],
         HitPoints: 36,
         HitPointsRoll: "8d8",
-        ArmorClass: [12, ""],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -23634,9 +25434,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 0 ft., one target in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Darkling
@@ -23644,10 +25446,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Darkling",
         Type: "Small fey, chaotic neutral",
+        TypeCategory: "Fey",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "leather armor"],
         HitPoints: 13,
         HitPointsRoll: "3d6 + 3",
-        ArmorClass: [14, "leather armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 16,
@@ -23681,9 +25485,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage. If the darkling has advantage on the attack roll, the attack deals an extra 7 (2d6) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Darkling Elder
@@ -23691,10 +25497,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Darkling Elder",
         Type: "Medium fey, chaotic neutral",
+        TypeCategory: "Fey",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "studded leather armor"],
         HitPoints: 27,
         HitPointsRoll: "5d8 + 5",
-        ArmorClass: [15, "studded leather armor"],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 17,
@@ -23732,9 +25540,11 @@ const monstersLocal = [
                 Desc: "The darkling elder casts darkness without any components. Wisdom is its spellcasting ability."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Deep Scion
@@ -23742,10 +25552,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Deep Scion",
         Type: "Medium humanoid (shapechanger), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [11],
         HitPoints: 67,
         HitPointsRoll: "9d8 + 27",
-        ArmorClass: [11],
         Speed: ["30 ft.", "20 ft. and swim 40 ft. in hybrid form"],
         Strength: 18,
         Dexterity: 13,
@@ -23795,9 +25607,11 @@ const monstersLocal = [
                 Desc: "The deep scion emits a terrible scream audible within 300 feet. Creatures within 30 feet of the deep scion must succeed on a DC 13 Wisdom saving throw or be stunned until the end of the deep scion's next turn. In water, the psychic screech also telepathically transmits the deep scion's memories of the last 24 hours to its master, regardless of distance, so long as it and its master are in the same body of water."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Babau
@@ -23805,10 +25619,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Babau",
         Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 82,
         HitPointsRoll: "11d8 + 33",
-        ArmorClass: [16, "natural armor"],
         Speed: ["40 ft."],
         Strength: 19,
         Dexterity: 16,
@@ -23850,9 +25666,11 @@ const monstersLocal = [
                 Desc: "The babau targets one creature that it can see within 20 feet of it. The target must make a DC 13 Constitution saving throw. On a failed save, the target deals only half damage with weapon attacks that use Strength for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Maw Demon
@@ -23860,10 +25678,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Maw Demon",
         Type: "Medium fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 33,
         HitPointsRoll: "6d8 + 6",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft."],
         Strength: 14,
         Dexterity: 8,
@@ -23893,9 +25713,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Shoosuva
@@ -23903,10 +25725,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Shoosuva",
         Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 110,
         HitPointsRoll: "13d10 + 39",
-        ArmorClass: [14, "natural armor"],
         Speed: ["40 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -23944,9 +25768,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 15 ft., one creature. Hit: 13 (2d8 + 4) piercing damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned, the target is also paralyzed."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Devourer
@@ -23954,10 +25780,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Devourer",
         Type: "Large fiend, chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 178,
         HitPointsRoll: "17d10 + 85",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft."],
         Strength: 20,
         Dexterity: 12,
@@ -23994,9 +25822,11 @@ const monstersLocal = [
                 Desc: "The Devourer creates a vortex of life-draining energy in a 20-foot radius centered on itself. Each humanoid in that area must make a DC 18 Constitution saving throw, taking 44 (8d10) necrotic damage on a failed save, or half as much damage on a successful one. Increase the damage by 10 for each living humanoid with 0 hit points in that area."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Dimetrodon
@@ -24004,10 +25834,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Dimetrodon",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 19,
         HitPointsRoll: "3d8 + 6",
-        ArmorClass: [12, "natural armor"],
         Speed: ["30 ft.", "swim 20 ft."],
         Strength: 14,
         Dexterity: 10,
@@ -24032,9 +25864,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Brontosaurus
@@ -24042,10 +25876,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Brontosaurus",
         Type: "Gargantuan beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Gargantuan",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 121,
         HitPointsRoll: "9d20 + 27",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 21,
         Dexterity: 9,
@@ -24074,9 +25910,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 20 ft., one target. Hit: 32 (6d8 + 5) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Deinonychus
@@ -24084,10 +25922,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Deinonychus",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 26,
         HitPointsRoll: "4d8 + 8",
-        ArmorClass: [13, "natural armor"],
         Speed: ["40 ft."],
         Strength: 15,
         Dexterity: 15,
@@ -24125,9 +25965,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hadrosaurus
@@ -24135,10 +25977,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hadrosaurus",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [11, "natural armor"],
         HitPoints: 19,
         HitPointsRoll: "3d10 + 3",
-        ArmorClass: [11, "natural armor"],
         Speed: ["40 ft."],
         Strength: 15,
         Dexterity: 10,
@@ -24163,9 +26007,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Quetzalcoatlus
@@ -24173,10 +26019,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Quetzalcoatlus",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 30,
         HitPointsRoll: "4d12 + 4",
-        ArmorClass: [13, "natural armor"],
         Speed: ["10 ft.", "fly 80 ft."],
         Strength: 15,
         Dexterity: 13,
@@ -24210,9 +26058,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 10 ft., one creature. Hit: 12 (3d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Stegosaurus
@@ -24220,10 +26070,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Stegosaurus",
         Type: "Huge beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 76,
         HitPointsRoll: "8d12 + 24",
-        ArmorClass: [13, "natural armor"],
         Speed: ["40 ft."],
         Strength: 20,
         Dexterity: 9,
@@ -24248,9 +26100,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 26 (6d6 + 5) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Velociraptor
@@ -24258,10 +26112,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Velociraptor",
         Type: "Tiny beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Tiny",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 10,
         HitPointsRoll: "3d4 + 3",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft."],
         Strength: 6,
         Dexterity: 14,
@@ -24299,9 +26155,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Draegloth
@@ -24309,10 +26167,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Draegloth",
         Type: "Large fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 123,
         HitPointsRoll: "13d10 + 52",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 20,
         Dexterity: 15,
@@ -24354,9 +26214,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Firenewt Warrior
@@ -24364,10 +26226,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Firenewt Warrior",
         Type: "Medium humanoid (firenewt), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "chain shirt, shield"],
         HitPoints: 22,
         HitPointsRoll: "4d8 + 4",
-        ArmorClass: [16, "chain shirt, shield"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 13,
@@ -24405,9 +26269,11 @@ const monstersLocal = [
                 Desc: "The firenewt spits fire at a creature within 10 feet of it. The creature must make a DC 11 Dexterity saving throw, taking 9 (2d8) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Giant Strider
@@ -24415,10 +26281,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Giant Strider",
         Type: "Large monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 22,
         HitPointsRoll: "3d10 + 6",
-        ArmorClass: [14, "natural armor"],
         Speed: ["50 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -24452,9 +26320,11 @@ const monstersLocal = [
                 Desc: "The giant strider hurls a gout of flame at a point it can see within 60 feet of it. Each creature in a 10-foot-radius sphere centered on that point must make a DC 12 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire spreads around corners, and it ignites flammable objects in that area that aren't being worn or carried."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Firenewt Warlock of Imix
@@ -24462,10 +26332,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Firenewt Warlock of Imix",
         Type: "Medium humanoid (firenewt), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [10, "13 with mage armor"],
         HitPoints: 33,
         HitPointsRoll: "6d8 + 6",
-        ArmorClass: [10, "13 with mage armor"],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 11,
@@ -24507,9 +26379,11 @@ const monstersLocal = [
                 Desc: " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage. "
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Flail Snail
@@ -24517,10 +26391,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Flail Snail",
         Type: "Large elemental, unaligned",
+        TypeCategory: "Elemental",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 52,
         HitPointsRoll: "5d10 + 25",
-        ArmorClass: [16, "natural armor"],
         Speed: ["10 ft."],
         Strength: 17,
         Dexterity: 5,
@@ -24566,9 +26442,11 @@ const monstersLocal = [
                 Desc: "The flail snail withdraws into its shell, gaining a +4 bonus to AC until it emerges. It can emerge from its shell as a bonus action on its turn."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Froghemoth
@@ -24576,10 +26454,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Froghemoth",
         Type: "Huge monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 184,
         HitPointsRoll: "16d12 + 80",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 23,
         Dexterity: 13,
@@ -24625,9 +26505,11 @@ const monstersLocal = [
                 Desc: "The froghemoth targets one Medium or smaller creature that it can see within 20 feet of it. The target must make a DC 18 Strength saving throw. On a failed save, the target is pulled into an unoccupied space within 5 feet of the froghemoth, and the froghemoth can make a bite attack against it as a bonus action."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Cloud Giant Smiling One
@@ -24635,10 +26517,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Cloud Giant Smiling One",
         Type: "Huge giant, chaotic neutral",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 262,
         HitPointsRoll: "21d12 + 126",
-        ArmorClass: [15, "natural armor"],
         Speed: ["40 ft."],
         Strength: 26,
         Dexterity: 12,
@@ -24688,9 +26572,11 @@ const monstersLocal = [
                 Desc: "The giant magically polymorphs into a beast or humanoid it has seen, or back into its true form. Any equipment the giant is wearing or carrying is absorbed by the new form. Its statistics, other than its size, are the same in each form. It reverts to its true form if it dies."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Fire Giant Dreadnought
@@ -24698,10 +26584,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Fire Giant Dreadnought",
         Type: "Huge giant, lawful evil",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [21, "plate, shields"],
         HitPoints: 187,
         HitPointsRoll: "15d12 + 90",
-        ArmorClass: [21, "plate, shields"],
         Speed: ["30 ft."],
         Strength: 27,
         Dexterity: 9,
@@ -24743,9 +26631,11 @@ const monstersLocal = [
                 Desc: "The giant moves up to 30 feet in a straight line and can move through the space of any creature smaller than Huge. The first time it enters a creature's space during this move, it makes a fireshield attack against that creature. If the attack hits, the target must also succeed on a DC 21 Strength saving throw or be pushed ahead of the giant for the rest of this move. If a creature fails the save by 5 or more, it is also knocked prone and takes 18 (3d6 + 8) bludgeoning damage, or 29 (6d6 + 8) bludgeoning damage if it was already prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Frost Giant Everlasting One
@@ -24753,10 +26643,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Frost Giant Everlasting One",
         Type: "Huge giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "patchwork armor"],
         HitPoints: 189,
         HitPointsRoll: "14d12 + 98",
-        ArmorClass: [15, "patchwork armor"],
         Speed: ["40 ft."],
         Strength: 25,
         Dexterity: 9,
@@ -24802,9 +26694,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mouth of Grolantor
@@ -24812,10 +26706,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mouth of Grolantor",
         Type: "Huge giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 105,
         HitPointsRoll: "10d12 + 40",
-        ArmorClass: [14, "natural armor"],
         Speed: ["50 ft."],
         Strength: 21,
         Dexterity: 10,
@@ -24849,9 +26745,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Stone Giant Dreamwalker
@@ -24859,10 +26757,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Stone Giant Dreamwalker",
         Type: "Huge giant, chaotic neutral",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [18, "natural armor"],
         HitPoints: 161,
         HitPointsRoll: "14d12 + 70",
-        ArmorClass: [18, "natural armor"],
         Speed: ["40 ft."],
         Strength: 23,
         Dexterity: 14,
@@ -24904,9 +26804,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +10 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Storm Giant Quintessent
@@ -24914,10 +26816,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Storm Giant Quintessent",
         Type: "Huge giant, chaotic good",
+        TypeCategory: "Giant",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12],
         HitPoints: 230,
         HitPointsRoll: "20d12 + 100",
-        ArmorClass: [12],
         Speed: ["50 ft.", "fly 50 ft. (hover)", "swim 50 ft."],
         Strength: 29,
         Dexterity: 14,
@@ -24955,6 +26859,7 @@ const monstersLocal = [
                 Desc: "The giant coalesces wind into a javelin-like form and hurls it at a creature it can see within 600 feet of it. The javelin is considered a magic weapon and deals 19 (3d6 + 9) piercing damage to the target, striking unerringly. The javelin disappears after it hits."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -24984,6 +26889,7 @@ const monstersLocal = [
                 Desc: "The giant creates a 60-foot-long, 10-foot-wide line of strong wind (or strong current within water) originating from a point anywhere in its lair. Each creature in that line must succeed on a DC 18 Strength saving throw or be pushed 15 feet in the direction the wind is blowing. The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in its area. Protected flames, such as those of lanterns, have a 50 percent chance of being extinguished."
             }
         ],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Girallon
@@ -24991,10 +26897,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Girallon",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13],
         HitPoints: 59,
         HitPointsRoll: "7d10 + 21",
-        ArmorClass: [13],
         Speed: ["40 ft.", "climb 40 ft."],
         Strength: 18,
         Dexterity: 16,
@@ -25036,9 +26944,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Flind
@@ -25046,10 +26956,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Flind",
         Type: "Medium humanoid (gnoll), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "chain mail"],
         HitPoints: 127,
         HitPointsRoll: "15d8 + 60",
-        ArmorClass: [16, "chain mail"],
         Speed: ["30 ft."],
         Strength: 20,
         Dexterity: 10,
@@ -25095,9 +27007,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 4 (1d8) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gnoll Flesh Gnawer
@@ -25105,10 +27019,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gnoll Flesh Gnawer",
         Type: "Medium humanoid (gnoll), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "studded leather"],
         HitPoints: 22,
         HitPointsRoll: "4d8 + 4",
-        ArmorClass: [14, "studded leather"],
         Speed: ["30 ft."],
         Strength: 12,
         Dexterity: 14,
@@ -25150,9 +27066,11 @@ const monstersLocal = [
                 Desc: "Until the end of the turn, the gnoll's speed increases by 60 feet and it doesn't provoke opportunity attacks."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gnoll Hunter
@@ -25160,10 +27078,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gnoll Hunter",
         Type: "Medium humanoid (gnoll), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "leather armor"],
         HitPoints: 22,
         HitPointsRoll: "4d8 + 4",
-        ArmorClass: [13, "leather armor"],
         Speed: ["30 ft."],
         Strength: 14,
         Dexterity: 14,
@@ -25205,9 +27125,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage, and the target's speed is reduced by 10 feet until the end of its next turn."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Gnoll Witherling
@@ -25215,10 +27137,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Gnoll Witherling",
         Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [12, "natural armor"],
         Speed: ["30 ft."],
         Strength: 14,
         Dexterity: 8,
@@ -25256,6 +27180,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Vengeful Strike",
@@ -25264,6 +27189,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Grung
@@ -25271,10 +27197,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Grung",
         Type: "Small humanoid (grung), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12],
         HitPoints: 11,
         HitPointsRoll: "2d6 + 4",
-        ArmorClass: [12],
         Speed: ["25 ft.", "climb 25 ft."],
         Strength: 7,
         Dexterity: 14,
@@ -25290,7 +27218,7 @@ const monstersLocal = [
         ConditionImmunities: ["Poisoned"],
         Senses: ["Passive Perception 12"],
         Languages: ["Grung"],
-        Challenge: [.25, 50],
+        Challenge: [0.25, 50],
         ExtraRewards: "",
         Traits: [
             {
@@ -25312,9 +27240,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Grung Elite Warrior
@@ -25322,10 +27252,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Grung Elite Warrior",
         Type: "Small humanoid (grung), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13],
         HitPoints: 49,
         HitPointsRoll: "9d6 + 18",
-        ArmorClass: [13],
         Speed: ["25 ft.", "climb 25 ft."],
         Strength: 7,
         Dexterity: 16,
@@ -25371,9 +27303,11 @@ const monstersLocal = [
                 Desc: "The grung makes a chirring noise to which grungs are immune. Each humanoid or beast that is within 15 feet of the grung and able to hear it must succeed on a DC 12 Wisdom saving throw or be stunned until the end of the grung's next turn."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Grung Wildling
@@ -25381,10 +27315,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Grung Wildling",
         Type: "Small humanoid (grung), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "16 with barkskin"],
         HitPoints: 27,
         HitPointsRoll: "5d6 + 10",
-        ArmorClass: [13, "16 with barkskin"],
         Speed: ["25 ft.", "climb 25 ft."],
         Strength: 7,
         Dexterity: 16,
@@ -25417,7 +27353,7 @@ const monstersLocal = [
             },
             {
                 Title: "Standing Leap",
-                Desc: "The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."            
+                Desc: "The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
             }
         ],
         Actions: [
@@ -25430,9 +27366,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Guard Drake
@@ -25440,10 +27378,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Guard Drake",
         Type: "Medium dragon, unaligned",
+        TypeCategory: "Dragon",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 52,
         HitPointsRoll: "7d8 + 21",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 11,
@@ -25476,9 +27416,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Annis Hag
@@ -25486,10 +27428,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Annis Hag",
         Type: "Large fey, chaotic evil",
+        TypeCategory: "Fey",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 75,
         HitPointsRoll: "10d10 + 20",
-        ArmorClass: [17, "natural armor"],
         Speed: ["40 ft."],
         Strength: 21,
         Dexterity: 12,
@@ -25531,9 +27475,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 36 (4d12 + 10) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape DC 16), and the hag can't use this attack against another target until the grapple ends."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Bheur Hag
@@ -25541,10 +27487,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Bheur Hag",
         Type: "Medium fey, chaotic evil",
+        TypeCategory: "Fey",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 91,
         HitPointsRoll: "14d8 + 28",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 16,
@@ -25586,9 +27534,11 @@ const monstersLocal = [
                 Desc: "The hag feasts on the corpse of one enemy within 5 feet of her that died within the past minute. Each creature of the hag's choice that is within 60 feet of her and able to see her must succeed on a DC 15 Wisdom saving throw or be frightened of her for 1 minute. While frightened in this way, a creature is incapacitated, can't understand what others say, can't read, and speaks only in gibberish; the OM controls the creature's movement, which is erratic. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Maddening Feast for the next 24 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hobgoblin Devastator
@@ -25596,10 +27546,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hobgoblin Devastator",
         Type: "Medium humanoid (goblinoid), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "studded leather"],
         HitPoints: 45,
         HitPointsRoll: "10d8",
-        ArmorClass: [13, "studded leather"],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 12,
@@ -25637,9 +27589,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage, or 5 (1d8 + 1) bludgeoning damage if used with two hands."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Hobgoblin Iron Shadow
@@ -25647,10 +27601,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Hobgoblin Iron Shadow",
         Type: "Medium humanoid (goblinoid), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15],
         HitPoints: 32,
         HitPointsRoll: "5d8 + 10",
-        ArmorClass: [15],
         Speed: ["40 ft."],
         Strength: 14,
         Dexterity: 16,
@@ -25696,9 +27652,11 @@ const monstersLocal = [
                 Desc: "The hobgoblin magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see. Both the space it is leaving and its destination must be in dim light or darkness."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Ki-rin
@@ -25706,10 +27664,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ki-rin",
         Type: "Huge celestial, lawful good",
+        TypeCategory: "Celestial",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [20, "natural armor"],
         HitPoints: 152,
         HitPointsRoll: "16d12 + 48",
-        ArmorClass: [20, "natural armor"],
         Speed: ["60 ft.", "fly 120 ft. (hover)"],
         Strength: 21,
         Dexterity: 16,
@@ -25763,6 +27723,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -25793,10 +27754,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kobold Dragonshield",
         Type: "Small humanoid (kobold), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "leather, shield"],
         HitPoints: 44,
         HitPointsRoll: "8d6 + 16",
-        ArmorClass: [15, "leather, shield"],
         Speed: ["20 ft."],
         Strength: 12,
         Dexterity: 15,
@@ -25842,9 +27805,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage when used with two hands to make a melee attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Kobold Inventor
@@ -25852,10 +27817,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kobold Inventor",
         Type: "Small humanoid (kobold), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12],
         HitPoints: 13,
         HitPointsRoll: "3d6 + 3",
-        ArmorClass: [12],
         Speed: ["30 ft."],
         Strength: 7,
         Dexterity: 15,
@@ -25894,27 +27861,14 @@ const monstersLocal = [
             },
             {
                 Title: "Weapon Invention",
-                Desc: "The kobold uses one of the following options (roll a d8 or choose one); the kobold can use each one no more than once per day: 1. Acid. The kobold hurls a flask of acid." + 
-                " Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: 7 (2d6) acid damage. 2. Alchemist's Fire. The kobold throws a flask of alchemist's fire. Ranged Weapon Attack:" + 
-                " +4 to hit, range 5/20 ft., one target. Hit: 2 (1d4) fire damage at the start of each of the target's turns. A creature can end this damage by using its action to make a DC 10 Dexterity" + 
-                " check to extinguish the flames. 3. Basket of Centipedes. The kobold throws a small basket into a 5-foot-square space within 20 feet of it. A swarm of insects (centipedes) with 11 hit" + 
-                " points emerges from the basket and rolls initiative. At the end of each of the swarm's turns, there's a 50 percent chance that the swarm disperses. 4. Green Slime Pot. The kobold" + 
-                " throws a clay pot full of green slime at the target, and it breaks open on impact. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: The target is covered in a" + 
-                " patch of green slime (see chapter 5 of the Dungeon Master's Guide). Miss: A patch of green slime covers a randomly determined 5-foot-square section of wall or floor within 5" + 
-                " feet of the target. 5. Rot Grub Pot. The kobold throws a clay pot into a 5-foot square space within 20 feet of it, and it breaks open on impact. A swarm of rot grubs (see appendix A)" + 
-                " emerges from the shattered pot and remains a hazard in that square. 6. Scorpion on a Stick. The kobold makes a melee attack with a scorpion tied to the end of a 5-foot-long pole." + 
-                " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (ld8) poison damage on a failed" + 
-                " save, or half as much damage on a successful one. 7. Skunk in a Cage. The kobold releases a skunk into an unoccupied space within 5 feet ofit. The skunk has a walking speed of 20" + 
-                " feet, AC 10, 1 hit point, and no effective attacks. It rolls initiative and, on its turn, uses its action to spray musk at a random creature within 5 feet of it. The target" + 
-                " must make a DC 9 Constitution saving throw. On a failed save, the target retches and can't take actions for 1 minute. The target can repeat the saving throw at the end of each" + 
-                " of its turns, ending the effect on itself on a success. A creature that doesn't need to breathe or is immune to poison automatically succeeds on the saving throw. Once the skunk" + 
-                " has sprayed its musk, it can't do so again until it finishes a short or long rest. 8. Wasp Nest in a Bag. The kobold throws a small bag into a 5-foot-square space within 20 feet" + 
-                " of it. A swarm of insects (wasps) with 11 hit points emerges from the bag and rolls initiative. At the end of each of the swarm's turns, there's a 50 percent chance that the swarm disperses."
+                Desc: "The kobold uses one of the following options (roll a d8 or choose one); the kobold can use each one no more than once per day: <br>1. Acid. The kobold hurls a flask of acid. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: 7 (2d6) acid damage. <br>2. Alchemist's Fire. The kobold throws a flask of alchemist's fire. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: 2 (1d4) fire damage at the start of each of the target's turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames. <br>3. Basket of Centipedes. The kobold throws a small basket into a 5-foot-square space within 20 feet of it. A swarm of insects (centipedes) with 11 hit points emerges from the basket and rolls initiative. At the end of each of the swarm's turns, there's a 50 percent chance that the swarm disperses. <br>4. Green Slime Pot. The kobold throws a clay pot full of green slime at the target, and it breaks open on impact. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: The target is covered in a patch of green slime (see chapter 5 of the Dungeon Master's Guide). Miss: A patch of green slime covers a randomly determined 5-foot-square section of wall or floor within 5 feet of the target. <br>5. Rot Grub Pot. The kobold throws a clay pot into a 5-foot square space within 20 feet of it, and it breaks open on impact. A swarm of rot grubs (see appendix A) emerges from the shattered pot and remains a hazard in that square. <br>6. Scorpion on a Stick. The kobold makes a melee attack with a scorpion tied to the end of a 5-foot-long pole. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (ld8) poison damage on a failed save, or half as much damage on a successful one. <br>7. Skunk in a Cage. The kobold releases a skunk into an unoccupied space within 5 feet ofit. The skunk has a walking speed of 20 feet, AC 10, 1 hit point, and no effective attacks. It rolls initiative and, on its turn, uses its action to spray musk at a random creature within 5 feet of it. The target must make a DC 9 Constitution saving throw. On a failed save, the target retches and can't take actions for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that doesn't need to breathe or is immune to poison automatically succeeds on the saving throw. Once the skunk has sprayed its musk, it can't do so again until it finishes a short or long rest. <br>8. Wasp Nest in a Bag. The kobold throws a small bag into a 5-foot-square space within 20 feet of it. A swarm of insects (wasps) with 11 hit points emerges from the bag and rolls initiative. At the end of each of the swarm's turns, there's a 50 percent chance that the swarm disperses."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Kobold Scale Sorcerer
@@ -25922,10 +27876,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kobold Scale Sorcerer",
         Type: "Small humanoid (kobold), lawful evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 27,
         HitPointsRoll: "5d6 + 10",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 7,
         Dexterity: 15,
@@ -25967,9 +27923,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Korred
@@ -25977,10 +27935,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Korred",
         Type: "Small fey, chaotic neutral",
+        TypeCategory: "Fey",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 102,
         HitPointsRoll: "12d6 + 60",
-        ArmorClass: [17, "natural armor"],
         Speed: ["30 ft.", "burrow 30 ft."],
         Strength: 23,
         Dexterity: 14,
@@ -26030,9 +27990,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +9 to hit, range 60/120 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage, or 24 (4d8 + 6) bludgeoning damage if the korred is on the ground. "
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Leucrotta
@@ -26040,10 +28002,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Leucrotta",
         Type: "Large monstrosity, chaotic evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 67,
         HitPointsRoll: "9d10 + 18",
-        ArmorClass: [14, "natural armor"],
         Speed: ["50 ft."],
         Strength: 18,
         Dexterity: 14,
@@ -26093,9 +28057,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Meenlock
@@ -26103,10 +28069,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Meenlock",
         Type: "Small fey, neutral evil",
+        TypeCategory: "Fey",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 31,
         HitPointsRoll: "7d6 + 7",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 7,
         Dexterity: 15,
@@ -26144,9 +28112,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage, and the target must succeed on a DC 11 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Alhoon
@@ -26154,10 +28124,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Alhoon",
         Type: "Medium undead, any evil alignment",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 120,
         HitPointsRoll: "16d8 + 48",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 12,
@@ -26203,9 +28175,11 @@ const monstersLocal = [
                 Desc: "The alhoon magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 16 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Elder Brain
@@ -26213,10 +28187,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Elder Brain",
         Type: "Large aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [10],
         HitPoints: 210,
         HitPointsRoll: "20d10 + 100",
-        ArmorClass: [10],
         Speed: ["5 ft.", "swim 10 ft."],
         Strength: 15,
         Dexterity: 10,
@@ -26274,6 +28250,7 @@ const monstersLocal = [
                 Desc: "The elder brain targets a creature with which it has a psychic link. The elder brain gains insight into the target's reasoning, its emotional state, and thoughts that loom large in its mind (including things the target worries about, loves, or hates). The elder brain can also make a Charisma (Deception) check with advantage to deceive the target's mind into thinking it believes one idea or feels a particular emotion. The target contests this attempt with a Wisdom (Insight) check. If the elder brain succeeds, the mind believes the deception for 1 hour or until evidence of the lie is presented to the target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -26310,10 +28287,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Ulitharid",
         Type: "Large aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "breastplate"],
         HitPoints: 127,
         HitPointsRoll: "17d10 + 34",
-        ArmorClass: [15, "breastplate"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 12,
@@ -26363,9 +28342,11 @@ const monstersLocal = [
                 Desc: "The ulitharid magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 17 Intelligence saving throw or take 31 (4d12 + 5) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Mindwitness
@@ -26373,10 +28354,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Mindwitness",
         Type: "Large aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 75,
         HitPointsRoll: "10d10 + 20",
-        ArmorClass: [15, "natural armor"],
         Speed: ["0 ft.", "fly 20 ft. (hover)"],
         Strength: 10,
         Dexterity: 14,
@@ -26418,9 +28401,11 @@ const monstersLocal = [
                 Desc: "The mindwitness shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it: 1. Aversion Ray. The targeted creature must make a DC 13 Charisma saving throw. On a failed save, the target has disadvantage on attack rolls for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 2. Fear Ray. The targeted creature must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 3. Psychic Ray. The target must succeed on a DC 13 Intelligence saving throw or take 27 (6d8) psychic damage. 4. Slowing Ray. The targeted creature must make a DC 13 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn but not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 5. Stunning Ray. The targeted creature must succeed on a DC 13 Constitution saving throw or be stunned for 1 minute. The target can repeat the saving throw at the start of each of its turns, ending the effect on itself on a success. 6. Telekinetic Ray. If the target is a creature, it must make a DC 13 Strength saving throw. On a failed save, the mindwitness moves it up to 30 feet in any direction, and it is restrained by the ray's telekinetic grip until the start of the mindwitness's next turn or until the mindwitness is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is telekinetically moved up to 30 feet in any direction. The mindwitness can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Morkoth
@@ -26428,10 +28413,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Morkoth",
         Type: "Medium aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [17, "natural armor"],
         HitPoints: 130,
         HitPointsRoll: "20d8 + 40",
-        ArmorClass: [17, "natural armor"],
         Speed: ["25 ft.", "swim 50 ft."],
         Strength: 14,
         Dexterity: 14,
@@ -26477,6 +28464,7 @@ const monstersLocal = [
                 Desc: "The morkoth projects a 30-foot cone of magical energy. Each creature in that area must make a DC 17 Wisdom saving throw. On a failed save, the creature is charmed by the morkoth for 1 minute. While charmed in this way, the target tries to get as close to the morkoth as possible, using its actions to Dash until it is within 5 feet of the morkoth. A charmed target can repeat the saving throw at the end of each of its turns and whenever it takes damage, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature has advantage on saving throws against the morkoth's Hypnosis for 24 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Spell Reflection",
@@ -26501,10 +28489,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Neogi Hatchling",
         Type: "Tiny aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Tiny",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [11, ""],
         HitPoints: 7,
         HitPointsRoll: "3d4",
-        ArmorClass: [11, ""],
         Speed: ["20 ft.", "climb 20 ft."],
         Strength: 3,
         Dexterity: 13,
@@ -26538,9 +28528,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 10 Constitution saving throw or become poisoned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Neogi
@@ -26548,10 +28540,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Neogi",
         Type: "Small aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 33,
         HitPointsRoll: "6d6 + 12",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 6,
         Dexterity: 16,
@@ -26597,9 +28591,11 @@ const monstersLocal = [
                 Desc: "The neogi targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the neogi for 1 day, or until the neogi dies or is more than 1 mile from the target. The charmed target obeys the neogi's commands and can't take reactions, and the neogi and the target can communicate telepathically with each other at a distance of up to 1 mile. Whenever the charmed target takes damage, it can repeat the saving throw, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Neogi Master
@@ -26607,10 +28603,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Neogi Master",
         Type: "Medium aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 71,
         HitPointsRoll: "13d6 + 26",
-        ArmorClass: [15, "natural armor"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 6,
         Dexterity: 16,
@@ -26660,9 +28658,11 @@ const monstersLocal = [
                 Desc: "The neogi targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the neogi for 1 day, or until the neogi dies or is more than 1 mile from the target. The charmed target obeys the neogi's commands and can't take reactions, and the neogi and the target can communicate telepathically with each other at a distance of up to 1 mile. Whenever the charmed target takes damage, it can repeat the saving throw, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Neothelid
@@ -26670,10 +28670,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Neothelid",
         Type: "Gargantuan aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Gargantuan",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 325,
         HitPointsRoll: "21d20 + 105",
-        ArmorClass: [16, "natural armor"],
         Speed: ["30 ft."],
         Strength: 27,
         Dexterity: 7,
@@ -26715,9 +28717,11 @@ const monstersLocal = [
                 Desc: "The neothelid exhales acid in a 60-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) acid damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Nilbog
@@ -26725,10 +28729,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Nilbog",
         Type: "Small humanoid (goblinoid), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "leather armor"],
         HitPoints: 7,
         HitPointsRoll: "2d6",
-        ArmorClass: [13, "leather armor"],
         Speed: ["30 ft."],
         Strength: 8,
         Dexterity: 14,
@@ -26770,6 +28776,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Reversal of Fortune",
@@ -26778,6 +28785,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Orc Blade of Ilneval
@@ -26785,10 +28793,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Orc Blade of Ilneval",
         Type: "Medium humanoid (orc), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [18, "chain mail, shield"],
         HitPoints: 60,
         HitPointsRoll: "8d8 + 24",
-        ArmorClass: [18, "chain mail, shield"],
         Speed: ["30 ft."],
         Strength: 17,
         Dexterity: 11,
@@ -26834,9 +28844,11 @@ const monstersLocal = [
                 Desc: "Up to three allied orcs within 120 feet of this orc that can hear it can use their reactions to each make one weapon attack."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Orc Claw of Luthic
@@ -26844,10 +28856,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Orc Claw of Luthic",
         Type: "Medium humanoid (orc), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "hide armor"],
         HitPoints: 45,
         HitPointsRoll: "6d8 + 18",
-        ArmorClass: [14, "hide armor"],
         Speed: ["30 ft."],
         Strength: 14,
         Dexterity: 15,
@@ -26885,9 +28899,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Orc Hand of Yurtrus
@@ -26895,10 +28911,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Orc Hand of Yurtrus",
         Type: "Medium humanoid (orc), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "hide armor"],
         HitPoints: 30,
         HitPointsRoll: "4d8 + 12",
-        ArmorClass: [12, "hide armor"],
         Speed: ["30 ft."],
         Strength: 12,
         Dexterity: 11,
@@ -26932,9 +28950,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 9 (2d8) necrotic damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Orc Nurtured One of Yurtrus
@@ -26942,10 +28962,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Orc Nurtured One of Yurtrus",
         Type: "Medium humanoid (orc), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [9, ""],
         HitPoints: 30,
         HitPointsRoll: "4d8 + 12",
-        ArmorClass: [9, ""],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 8,
@@ -26987,9 +29009,11 @@ const monstersLocal = [
                 Desc: "The orc reduces itself to 0 hit points, triggering its Corrupted Carrier trait."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Orc Red Fang of Shargaas
@@ -26997,10 +29021,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Orc Red Fang of Shargaas",
         Type: "Medium humanoid (orc), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "studded leather"],
         HitPoints: 52,
         HitPointsRoll: "8d8 + 16",
-        ArmorClass: [15, "studded leather"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 16,
@@ -27054,9 +29080,11 @@ const monstersLocal = [
                 Desc: "The orc casts darkness without any components. Wisdom is its spellcasting ability."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Tanarukk
@@ -27064,10 +29092,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Tanarukk",
         Type: "Medium fiend (demon, orc), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 95,
         HitPointsRoll: "10d8 + 50",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -27109,6 +29139,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Unbridled Fury",
@@ -27117,6 +29148,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Quickling
@@ -27124,10 +29156,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Quickling",
         Type: "Tiny fey, chaotic evil",
+        TypeCategory: "Fey",
+        Size: "Tiny",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, ""],
         HitPoints: 10,
         HitPointsRoll: "3d4 + 3",
-        ArmorClass: [16, ""],
         Speed: ["120 ft."],
         Strength: 4,
         Dexterity: 23,
@@ -27165,9 +29199,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +8 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 8 (1d4 + 6) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Redcap
@@ -27175,10 +29211,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Redcap",
         Type: "Small fey, chaotic evil",
+        TypeCategory: "Fey",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 45,
         HitPointsRoll: "6d6 + 24",
-        ArmorClass: [13, "natural armor"],
         Speed: ["25 ft."],
         Strength: 18,
         Dexterity: 13,
@@ -27220,9 +29258,11 @@ const monstersLocal = [
                 Desc: "The redcap moves up to its speed to a creature it can see and kicks with its iron boots. The target must succeed on a DC 14 Dexterity saving throw or take 20 (3d10 + 4) bludgeoning damage and be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Sea Spawn
@@ -27230,10 +29270,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Sea Spawn",
         Type: "Medium humanoid, neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [11, "natural armor"],
         HitPoints: 32,
         HitPointsRoll: "5d8 + 10",
-        ArmorClass: [11, "natural armor"],
         Speed: ["20 ft.", "swim 30 ft."],
         Strength: 15,
         Dexterity: 8,
@@ -27279,9 +29321,11 @@ const monstersLocal = [
                 Desc: "(If the sea spawn has the appropriate anatomy): Tentacle. Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage, and the target is grappled (escape DC 12) if it is a Medium or smaller creature. Until this grapple ends, the sea spawn can't use this tentacle on another target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Shadow Mastiff
@@ -27289,10 +29333,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Shadow Mastiff",
         Type: "Medium monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, ""],
         HitPoints: 33,
         HitPointsRoll: "6d8 + 6",
-        ArmorClass: [12, ""],
         Speed: ["40 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -27334,9 +29380,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Slithering Tracker
@@ -27344,10 +29392,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Slithering Tracker",
         Type: "Medium ooze, chaotic evil",
+        TypeCategory: "Ooze",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, ""],
         HitPoints: 32,
         HitPointsRoll: "5d8 + 10",
-        ArmorClass: [14, ""],
         Speed: ["30 ft.", "climb 30 ft.", "swim 30 ft."],
         Strength: 16,
         Dexterity: 19,
@@ -27405,9 +29455,11 @@ const monstersLocal = [
                 Desc: "One Large or smaller creature that the slithering tracker can see within 5 feet of it must succeed on a DC 13 Dexterity saving throw or be grappled (escape DC 13). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. In addition, the grappled target takes 16 (3d10) necrotic damage at the start of each of its turns. The slithering tracker can grapple only one target at a time."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Spawn of Kyuss
@@ -27415,10 +29467,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Spawn of Kyuss",
         Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [10, ""],
         HitPoints: 76,
         HitPointsRoll: "9d8 + 36",
-        ArmorClass: [10, ""],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 11,
@@ -27460,9 +29514,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 7 (2d6) necrotic damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Tlincalli
@@ -27470,10 +29526,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Tlincalli",
         Type: "Large monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "natural armor"],
         HitPoints: 85,
         HitPointsRoll: "10d10 + 30",
-        ArmorClass: [15, "natural armor"],
         Speed: ["40 ft."],
         Strength: 16,
         Dexterity: 13,
@@ -27510,9 +29568,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage plus 14 (4d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned for 1 minute. If it fails the saving throw by 5 or more, the target is also paralyzed while poisoned. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Trapper
@@ -27520,10 +29580,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Trapper",
         Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 85,
         HitPointsRoll: "10d10 + 30",
-        ArmorClass: [13, "natural armor"],
         Speed: ["10 ft.", "climb 10 ft."],
         Strength: 17,
         Dexterity: 10,
@@ -27557,9 +29619,11 @@ const monstersLocal = [
                 Desc: "One Large or smaller creature within 5 feet of the trapper must succeed on a DC 14 Dexterity saving throw or be grappled (escape DC 14). Until the grapple ends, the target takes 17 (4d6 + 3) bludgeoning damage plus 3 (1d6) acid damage at the start of each of its turns. While grappled in this way, the target is restrained, blinded, and at risk of suffocating. The trapper can smother only one creature at a time."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Vargouille
@@ -27567,10 +29631,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Vargouille",
         Type: "Tiny fiend, chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Tiny",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, ""],
         HitPoints: 13,
         HitPointsRoll: "3d4 + 6",
-        ArmorClass: [12, ""],
         Speed: ["5 ft.", "fly 40 ft."],
         Strength: 6,
         Dexterity: 14,
@@ -27603,9 +29669,11 @@ const monstersLocal = [
                 Desc: "The vargouille shrieks. Each humanoid and beast within 30 feet of the vargouille and able to hear it must succeed on a DC 12 Wisdom saving throw or be frightened until the end of the vargouille's next turn. While frightened in this way, a target is stunned. If a target's saving throw is successful or the effect ends for it, the target is immune to the Stunning Shriek of all vargouilles for 1 hour."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Vegepygmy
@@ -27613,10 +29681,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Vegepygmy",
         Type: "Small plant, neutral",
+        TypeCategory: "Plant",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 9,
         HitPointsRoll: "2d6 + 2",
-        ArmorClass: [13, "natural armor"],
         Speed: ["30 ft."],
         Strength: 7,
         Dexterity: 14,
@@ -27654,9 +29724,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Vegepygmy Chief
@@ -27664,10 +29736,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Vegepygmy Chief",
         Type: "Small plant, neutral",
+        TypeCategory: "Plant",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 33,
         HitPointsRoll: "6d6 + 12",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 14,
         Dexterity: 14,
@@ -27713,9 +29787,11 @@ const monstersLocal = [
                 Desc: "A 15-foot-radius cloud of toxic spores extends out from the vegepygmy. The spores spread around corners. Each creature in that area that isn't a plant must succeed on a DC 12 Constitution saving throw or be poisoned. While poisoned in this way, a target takes 9 (2d8) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Thorny
@@ -27723,10 +29799,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Thorny",
         Type: "Medium plant, neutral",
+        TypeCategory: "Plant",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 27,
         HitPointsRoll: "5d8 + 5",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 13,
         Dexterity: 12,
@@ -27764,9 +29842,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Wood Woad
@@ -27774,10 +29854,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Wood Woad",
         Type: "Medium plant, lawful neutral",
+        TypeCategory: "Plant",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [18, "natural armor, shield"],
         HitPoints: 75,
         HitPointsRoll: "10d8 + 30",
-        ArmorClass: [18, "natural armor, shield"],
         Speed: ["30 ft.", "climb 30 ft."],
         Strength: 18,
         Dexterity: 12,
@@ -27823,9 +29905,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (4d4 + 4) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Xvart
@@ -27833,10 +29917,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Xvart",
         Type: "Small humanoid (xvart), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [13, "leather armor"],
         HitPoints: 7,
         HitPointsRoll: "2d6",
-        ArmorClass: [13, "leather armor"],
         Speed: ["30 ft."],
         Strength: 8,
         Dexterity: 14,
@@ -27878,9 +29964,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Xvart Warlock of Raxivort
@@ -27888,10 +29976,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Xvart Warlock of Raxivort",
         Type: "Small humanoid (xvart), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Small",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 22,
         HitPointsRoll: "5d6 + 5",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 8,
         Dexterity: 14,
@@ -27937,9 +30027,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yeth Hound
@@ -27947,10 +30039,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yeth Hound",
         Type: "Large fey, neutral evil",
+        TypeCategory: "Fey",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 51,
         HitPointsRoll: "6d10 + 18",
-        ArmorClass: [14, "natural armor"],
         Speed: ["40 ft.", "fly 40 ft. (hover)"],
         Strength: 18,
         Dexterity: 17,
@@ -27992,9 +30086,11 @@ const monstersLocal = [
                 Desc: "The yeth hound bays magically. Every enemy within 300 feet of the hound that can hear it must succeed on a DC 13 Wisdom saving throw or be frightened until the end of the hound's next turn or until the hound is incapacitated. A frightened target that starts its turn within 30 feet of the hound must use all its movement on that turn to get as far from the hound as possible, must finish the move before taking an action, and must take the most direct route, even if hazards lie that way. A target that successfully saves is immune to the baying of all yeth hounds for the next 24 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yuan-ti Anathema
@@ -28002,10 +30098,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yuan-ti Anathema",
         Type: "Huge monstrosity (shapechanger, yuan-ti), neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Huge",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "natural armor"],
         HitPoints: 189,
         HitPointsRoll: "18d12 + 72",
-        ArmorClass: [16, "natural armor"],
         Speed: ["40 ft.", "climb 30 ft.", "swim 30 ft."],
         Strength: 23,
         Dexterity: 13,
@@ -28063,9 +30161,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +10 to hit, reach 10 ft., one creature. Hit: 27 (6d6 + 6) piercing damage plus 14 (4d6) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yuan-ti Broodguard
@@ -28073,10 +30173,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yuan-ti Broodguard",
         Type: "Medium humanoid (yuan-ti), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 45,
         HitPointsRoll: "7d8 + 14",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 15,
         Dexterity: 14,
@@ -28118,9 +30220,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yuan-ti Mind Whisperer
@@ -28128,10 +30232,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yuan-ti Mind Whisperer",
         Type: "Medium monstrosity (shapechanger, yuan-ti), neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 71,
         HitPointsRoll: "13d8 + 13",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -28189,9 +30295,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yuan-ti Nightmare Speaker
@@ -28199,10 +30307,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yuan-ti Nightmare Speaker",
         Type: "Medium monstrosity (shapechanger, yuan-ti), neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 71,
         HitPointsRoll: "13d8 + 13",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -28260,9 +30370,11 @@ const monstersLocal = [
                 Desc: "The yuan-ti taps into the nightmares of a creature it can see within 60 feet of it and creates an illusory, immobile manifestation of the creature's deepest fears, visible only to that creature. The target must make a DC 13 Intelligence saving throw. On a failed save, the target takes 11 (2d10) psychic damage and is frightened of the manifestation, believing it to be real. The yuan-ti must concentrate to maintain the illusion (as if concentrating on a spell), which lasts for up to 1 minute and can't be harmed. The target can repeat the saving throw at the end of each of its turns, ending the illusion on a success, or taking 11 (2d10) psychic damage on a failure."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Yuan-ti Pit Master
@@ -28270,10 +30382,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Yuan-ti Pit Master",
         Type: "Medium monstrosity (shapechanger, yuan-ti), neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [14, "natural armor"],
         HitPoints: 88,
         HitPointsRoll: "16d8 + 16",
-        ArmorClass: [14, "natural armor"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 14,
@@ -28327,9 +30441,11 @@ const monstersLocal = [
                 Desc: "The yuan-ti targets up to five creatures that it can see within 60 feet of it. Each target must succeed on a DC 13 Constitution saving throw or fall into a magical sleep and be unconscious for 10 minutes. A sleeping target awakens if it takes damage or if someone uses an action to shake or slap it awake. This magical sleep has no effect on a creature immune to being charmed."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Aurochs
@@ -28337,10 +30453,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Aurochs",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [11, "natural armor"],
         HitPoints: 38,
         HitPointsRoll: "4d10 + 16",
-        ArmorClass: [11, "natural armor"],
         Speed: ["50 ft."],
         Strength: 20,
         Dexterity: 10,
@@ -28370,9 +30488,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Cow
@@ -28380,10 +30500,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Cow",
         Type: "Large beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Large",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [10],
         HitPoints: 15,
         HitPointsRoll: "2d10 + 4",
-        ArmorClass: [10],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 10,
@@ -28413,9 +30535,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Dolphin
@@ -28423,10 +30547,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Dolphin",
         Type: "Medium beast, unaligned",
+        TypeCategory: "Beast",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "natural armor"],
         HitPoints: 11,
         HitPointsRoll: "2d8 + 2",
-        ArmorClass: [12, "natural armor"],
         Speed: ["0 ft.", "swim 60 ft."],
         Strength: 14,
         Dexterity: 13,
@@ -28460,9 +30586,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Swarm of Rot Grubs
@@ -28470,10 +30598,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swarm of Rot Grubs",
         Type: "Medium swarm of Tiny beasts, unaligned",
+        TypeCategory: "Swarm",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [8],
         HitPoints: 22,
         HitPointsRoll: "5d8",
-        ArmorClass: [8],
         Speed: ["5 ft.", "climb 5 ft."],
         Strength: 2,
         Dexterity: 7,
@@ -28503,9 +30633,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +0 to hit, reach 0 ft., one creature in the swarm's space. Hit: The target is infested by 1d4 rot grubs. At the start of each of the target's turns, the target takes 1d6 piercing damage per rot grub infesting it. Applying fire to the bite wound before the end of the target's next turn deals 1 fire damage to the target and kills these rot grubs. After this time, these rot grubs are too far under the skin to be burned. If a target infested by rot grubs ends its turn with 0 hit points, it dies as the rot grubs burrow into its heart and kill it. Any effect that cures disease kills all rot grubs infesting the target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Abjurer
@@ -28513,10 +30645,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Abjurer",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 84,
         HitPointsRoll: "8d8 + 26",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -28550,9 +30684,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Apprentice Wizard
@@ -28560,10 +30696,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Apprentice Wizard",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [10],
         HitPoints: 9,
         HitPointsRoll: "2d8",
-        ArmorClass: [10],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -28593,9 +30731,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Archdruid
@@ -28603,10 +30743,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Archdruid",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "hide armor, shield"],
         HitPoints: 132,
         HitPointsRoll: "24d8 + 24",
-        ArmorClass: [16, "hide armor, shield"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 14,
@@ -28640,9 +30782,11 @@ const monstersLocal = [
                 Desc: "The archdruid magically polymorphs into a beast or elemental with a challenge rating of 6 or less, and can remain in this form for up to 9 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action on its turn. While in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form. The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Archer
@@ -28650,10 +30794,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Archer",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "studded leather"],
         HitPoints: 75,
         HitPointsRoll: "10d8 + 30",
-        ArmorClass: [16, "studded leather"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 18,
@@ -28691,9 +30837,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Description here"
     },
     { // Bard
@@ -28701,10 +30849,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Bard",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [15, "chain shirt"],
         HitPoints: 44,
         HitPointsRoll: "8d8 + 8",
-        ArmorClass: [15, "chain shirt"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 14,
@@ -28746,9 +30896,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Bards are gifted poets, storytellers, and entertainers who travel far and wide, but are commonly found in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, and wealthy patrons."
     },
     { // Blackguard
@@ -28756,10 +30908,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Blackguard",
         Type: "Medium humanoid (any race), any non-good alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [18, "plate"],
         HitPoints: 153,
         HitPointsRoll: "18d8 + 72",
-        ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 18,
         Dexterity: 11,
@@ -28801,9 +30955,11 @@ const monstersLocal = [
                 Desc: "The blackguard exudes magical menace. Each enemy within 30 feet of the blackguard must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If a frightened target ends its turn more than 30 feet away from the blackguard, the target can repeat the saving throw, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Blackguards are paladins who broke their sacred oaths and now indulge their own dark ambitions. They consort with fiends and undead, and they reject all goodly things from their former lives."
     },
     { // Champion
@@ -28811,10 +30967,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Champion",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [18, "plate"],
         HitPoints: 143,
         HitPointsRoll: "22d8 + 44",
-        ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 20,
         Dexterity: 15,
@@ -28856,9 +31014,11 @@ const monstersLocal = [
                 Desc: " Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage, plus 7 (2d6) piercing damage if the champion has more than half of its total hit points remaining."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Champions are mighty warriors who honed their fighting skills in wars or gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers."
     },
     { // Conjurer
@@ -28866,10 +31026,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Conjurer",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 40,
         HitPointsRoll: "9d8",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -28903,9 +31065,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Conjurers are specialist wizards who summon creatures from other planes and create materials out of thin air. Some conjurers use their magic to bolster armies or destroy enemies on battlefields, while others use summoned creatures to guard their lairs."
     },
     { // Diviner
@@ -28913,10 +31077,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Diviner",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 67,
         HitPointsRoll: "15d8",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -28950,9 +31116,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Diviners are specialist wizards who know that knowledge is power. They might act aloof and mysterious, hinting at omens and secrets, or they might be know-italls, spilling secrets and insights to advance their own status or reputation."
     },
     { // Enchanter
@@ -28960,10 +31128,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Enchanter",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 40,
         HitPointsRoll: "9d8",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -28993,6 +31163,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Instinctive Charm (Recharges after the Enchanter Casts an Enchantment Spell of 1st Level or Higher)",
@@ -29001,6 +31172,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Enchanters are specialist wizards who understand how to alter and control minds using magic. They might be personable and interesting, using magic to manipulate people only when banter and conventional persuasion fails, or they might be rude and demanding, using and relying on charmed, obedient minions."
     },
     { // Evoker
@@ -29008,10 +31180,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Evoker",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 66,
         HitPointsRoll: "12d8 + 12",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -29045,9 +31219,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Evokers are specialist wizards who harness magical energy and elemental forces to destroy. Many tend to be hotheaded and aggressive. Others are cold and reserved, unleashing their power at just the right moment to exploit an opponent's weakness."
     },
     { // Illusionist
@@ -29055,10 +31231,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Illusionist",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 38,
         HitPointsRoll: "7d8 + 7",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -29092,9 +31270,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: + 1 to hit, reach 5 ft., one target. Hit: 2 (ld6-1) bludgeoning damage, or 3 (1d8- 1) bludgeoning damage if used with two hands."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Illusionists are specialist wizards who twist light, sound, shadow, and even minds to create false and quasi-real effects. They can be flamboyant and use their powers in spectacular and obvious ways, or quiet and subtle, using their magic to conceal the truth."
     },
     { // Kraken Priest
@@ -29102,10 +31282,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Kraken Priest",
         Type: "Medium humanoid (any race), any evil alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [10],
         HitPoints: 75,
         HitPointsRoll: "10d8 + 30",
-        ArmorClass: [10],
         Speed: ["30 ft.", "swim 30 ft."],
         Strength: 12,
         Dexterity: 10,
@@ -29143,9 +31325,11 @@ const monstersLocal = [
                 Desc: "A kraken speaks through the priest with a thunderous voice audible within 300 feet. Creatures of the priest's choice that can hear the kraken's words (which are spoken in Abyssal, Infernal, or Primordial) must succeed on a DC 14 Charisma saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A kraken can seem godlike to folk who have witnessed its fury. Those who mistake its might for divine power and those who seek to appease the monster through veneration are sometimes rewarded with power, to serve thereafter as kraken priests. The kraken can make itself dimly aware of a kraken priest's thoughts if the two are on the same plane of existence, and it can then push aside the priest's personality and control it. Kraken priests can thereby act as eyes and ears for their masters, and when the kraken has something to say, the priest becomes its mouthpiece. Every kraken priest undergoes a change in appearance that reflects the kraken's influence, although each one differs in how its reverence is displayed. One kraken priest might have ink-black eyes and a suckered tentacle for a tongue, while another has a featureless face and a body covered in eyes and mouths that dribble seawater. These horrific manifestations intensify when the kraken possesses its minion to utter its dire pronouncements."
     },
     { // Martial Arts Adept
@@ -29153,10 +31337,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Martial Arts Adept",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16],
         HitPoints: 60,
         HitPointsRoll: "11d8 + 11",
-        ArmorClass: [16],
         Speed: ["40 ft."],
         Strength: 11,
         Dexterity: 17,
@@ -29194,6 +31380,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Deflect Missile",
@@ -29202,6 +31389,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Martial arts adepts are disciplined monks with extensive training in hand-to-hand combat. Some protect monasteries; others travel the world seeking enlightenment or new forms of combat to master. A few become bodyguards, trading their combat prowess and loyalty for food and lodging."
     },
     { // Master Thief
@@ -29209,10 +31397,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Master Thief",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [16, "studded leather"],
         HitPoints: 84,
         HitPointsRoll: "13d8 + 26",
-        ArmorClass: [16, "studded leather"],
         Speed: ["30 ft."],
         Strength: 11,
         Dexterity: 18,
@@ -29258,6 +31448,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Uncanny Dodge",
@@ -29266,6 +31457,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Master thieves are known for perpetrating daring heists. They tend to develop a reputation and a cult of personality. A master thief might 'retire' from hands-on work to run a thieves' guild, spearhead some covert enterprise, or enjoy a quiet life of luxury."
     },
     { // Necromancer
@@ -29273,10 +31465,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Necromancer",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 66,
         HitPointsRoll: "12d8 + 12",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -29310,9 +31504,11 @@ const monstersLocal = [
                 Desc: "Melee Spell Attack: +7 to hit, reach 5 ft., one creature. Hit: 5 (2d4) necrotic damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Necromancers are specialist wizards who study the interaction of life, death, and undeath. Some like to dig up corpses to create undead slaves. A few use their powers for good, becoming hunters of the undead and risking their lives to save others."
     },
     { // Swashbuckler
@@ -29320,10 +31516,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Swashbuckler",
         Type: "Medium humanoid (any race), any non-lawful alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [17, "leather armor"],
         HitPoints: 66,
         HitPointsRoll: "12d8 + 12",
-        ArmorClass: [17, "leather armor"],
         Speed: ["30 ft."],
         Strength: 12,
         Dexterity: 18,
@@ -29365,9 +31563,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Swashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoreity, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long."
     },
     { // Transmuter
@@ -29375,10 +31575,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Transmuter",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 40,
         HitPointsRoll: "9d8",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -29412,9 +31614,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Transmuters are specialist wizards who embrace change, rail against the status quo, and view magical transmutation as a path to riches, enlightenment, or apotheosis."
     },
     { // War Priest
@@ -29422,10 +31626,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "War Priest",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [18, "plate"],
         HitPoints: 117,
         HitPointsRoll: "18d8 + 36",
-        ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 16,
         Dexterity: 10,
@@ -29459,6 +31665,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Guided Strike (Recharges after a Short or Long Rest)",
@@ -29467,6 +31674,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "War priests worship deities of war and combat. They plan tactics, lead soldiers into battle, confront enemy spellcasters, and tend to casualties. A war priest might command an army or serve as a warlord's right hand on the battlefield."
     },
     { // Warlock of the Archfey
@@ -29474,10 +31682,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Warlock of the Archfey",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [11, "14 with mage armor"],
         HitPoints: 49,
         HitPointsRoll: "11d8",
-        ArmorClass: [11, "14 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 13,
@@ -29511,6 +31721,7 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Misty Escape (Recharges after a Short or Long Rest)",
@@ -29519,6 +31730,7 @@ const monstersLocal = [
         ],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Warlocks of the archfey gain their powers through magical pacts forged with lords of the Feywild. These warlocks commonly associate with lesser fey creatures such as boggles, quicklings, redcaps, satyrs, and sprites."
     },
     { // Warlock of the Fiend
@@ -29526,10 +31738,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Warlock of the Fiend",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 78,
         HitPointsRoll: "12d8 + 24",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 14,
@@ -29567,9 +31781,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Warlocks of the fiend gain their powers through magical pacts forged with archfiends of the Lower Planes. These warlocks often keep imps or quasits as companions, and they tend toward extremes of behavior: consorting with fiend-worshiping cultists or dedicating their lives to destroying fiendish cults."
     },
     { // Warlock of the Great Old One
@@ -29577,10 +31793,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Warlock of the Great Old One",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [12, "15 with mage armor"],
         HitPoints: 91,
         HitPointsRoll: "14d8 + 28",
-        ArmorClass: [12, "15 with mage armor"],
         Speed: ["30 ft."],
         Strength: 9,
         Dexterity: 14,
@@ -29618,9 +31836,11 @@ const monstersLocal = [
                 Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Warlocks of the Great Old One gain their powers through magical pacts forged with eldritch entities from strange and distant realms of existence. Some of these warlocks associate with cultists devoted to these entities, as well as aberrations that share their goals, yet other warlocks of the Great Old One are experts at rooting out the insanity and wickedness inspired by bizarre beings from beyond the stars."
     },
     { // Warlord
@@ -29628,10 +31848,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Warlord",
         Type: "Medium humanoid (any race), any alignment",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
         Source: "Volo's Guide to Monsters",
+        ArmorClass: [18, "plate"],
         HitPoints: 229,
         HitPointsRoll: "27d8 + 108",
-        ArmorClass: [18, "plate"],
         Speed: ["30 ft."],
         Strength: 20,
         Dexterity: 16,
@@ -29673,6 +31895,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -29689,6 +31912,7 @@ const monstersLocal = [
             }
         ],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Warlords are legendary battlefield commanders whose names are spoken with awe. After a string of decisive victories, a warlord could easily take on the role of monarch or general and attract followers willing to die for his or her banner."
     },
     { // Allip
@@ -29696,11 +31920,12 @@ const monstersLocal = [
         ProfileType: "Monster",
         Name: "Allip",
         Type: "Medium undead, neutral evil",
-        TypeCategory: "Creature Type",
+        TypeCategory: "Undead",
+        Size: "Medium",
         Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [13, "natural armor"],
         HitPoints: 40,
         HitPointsRoll: "9d8",
-        ArmorClass: [13, "natural armor"],
         Speed: ["0 ft.", "fly 40 ft. (hover)"],
         Strength: 6,
         Dexterity: 17,
@@ -29738,6 +31963,7 @@ const monstersLocal = [
                 Desc: "Each creature within 30 feet of the allip that can hear it must make a DC 14 Wisdom saving throw. On a failed save, a target takes 12 (2d8 + 3) psychic damage, and it is stunned until the end of its next turn. On a successful save, it takes half as much damage and isn't stunned. Constructs and undead are immune to this effect."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
         LairActions: [],
@@ -29816,6 +32042,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 19 (3d6 + 9) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -29831,8 +32058,8 @@ const monstersLocal = [
                 Desc: "Each creature within 60 feet of the astral dreadnought must make a DC 19 Wisdom saving throw, taking 15 (2d10 + 4) psychic damage on a failed save, or half as much damage on a successful one."
             }
         ],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Astral dreadnoughts are enormous, terrifying monstrosities that haunt the silvery void of the Astral Plane. As large as an ancient red dragon, a dreadnought is covered from head to tail in layers of thick, spiked plates. Two gnarled limbs end in razor-sharp pincer claws, while a single enormous eye dominates its head; constellations seem to swirl within the depths of that starry eye. Its serpentine, armored tail trails behind it through the silvery void. Astral dreadnoughts are silent creatures that communicate in no known way and normally exist as solitary hunters. They are remorseless and indiscriminate predators, using their teeth and claws to tear apart anything they encounter while instinctively positioning themselves so that as many opponents as possible remain within the antimagic gaze of their eye. Anything they swallow is transported into a unique demiplane resembling a vast stone cavern containing the remains of countless past meals and dead planar travelers. Astral dreadnoughts were created by Tharizdun, the Chained God, to devour planar travelers seeking portals from the Astral Plane to the Outer Planes. They cannot leave the Astral Plane and do not require air, food, drink, or sleep."
     },
     { // Balhannoth
@@ -29883,6 +32110,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15) and is moved up to 5 feet toward the balhannoth. Until this grapple ends, the target is restrained, and the balhannoth can't use this tentacle against other targets. The balhannoth has four tentacles."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -29898,14 +32126,14 @@ const monstersLocal = [
                 Desc: "The balhannoth magically becomes invisible for up to 10 minutes or until immediately after it makes an attack roll."
             }
         ],
-        RegionalEffects: [
-            "Creatures within 1 mile of the balhannoth's lair experience a sensation of being close to whatever they desire most. The sensation grows stronger the closer the creatures come to the balhannoth's lair.",
-            "The balhannoth can sense the strongest desires of any humanoid within 1 mile of it and learns whether those desires involve a place: a safe location to rest, a temple, home, or somewhere else."
-        ],
         LairActions: [
             "The balhannoth warps reality around it in an area up to 500 feet square. After 10 minutes, the terrain in the area reshapes to assume the appearance of a location sought by one intelligent creature whose mind the balhannoth has read (see Regional Effects below). The transformation affects nonliving material only and can't create anything with moving parts or magical properties. Any object created in this area is, upon close inspection, revealed as a fake. Books are filled with empty pages, golden items are obvious counterfeits, and so on. The transformation lasts until the balhannoth dies or uses this lair action again.",
             "The balhannoth targets one creature within 500 feet of it. The target must succeed on a DC 16 Wisdom saving throw or the target, along with whatever it is wearing and carrying, teleports to an unoccupied space of the balhannoth's choice within 60 feet of it.",
             "The balhannoth targets one creature within 500 feet of it. The target must succeed on a DC 16 Wisdom saving throw or the balhannoth becomes invisible to that creature for 1 minute. This effect ends if the balhannoth attacks the target."
+        ],
+        RegionalEffects: [
+            "Creatures within 1 mile of the balhannoth's lair experience a sensation of being close to whatever they desire most. The sensation grows stronger the closer the creatures come to the balhannoth's lair.",
+            "The balhannoth can sense the strongest desires of any humanoid within 1 mile of it and learns whether those desires involve a place: a safe location to rest, a temple, home, or somewhere else."
         ],
         Description: "Native to the Shadowfell, the balhannoth is a vicious, predatory aberration that makes its lair appear inviting to travelers before springing its trap. It is a large, powerful creature equipped with a dangerous bite and four tentacles, which it uses to seize and restrain its prey. Its extraordinary blindsight allows it to perceive creatures at great distances despite being blind beyond that range. Balhannoths are masters of deception through reality warping: they sense the desires of nearby creatures and reshape their surroundings to resemble places those creatures desperately wish to find, though the imitations always contain subtle flaws and inconsistencies. They thrive on fear and despair, taking pleasure in the terror of their victims before teleporting away to feed. In the Shadowfell, they typically establish lairs near places inhabited by their prey, such as well-traveled roads and paths. Drow and other Underdark inhabitants sometimes capture balhannoths and use them as guardians for passages, slave pens, and other strategic locations."
     },
@@ -29961,10 +32189,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Berbalangs are strange aberrations that creep across the petrified remains of dead gods drifting through the Astral Plane. They have a gaunt, unsettling humanoid appearance and are obsessed with gathering secrets from the dead, often calling forth the spirits of deceased creatures and recording the information they reveal on bones. A berbalang can also create a spectral duplicate of itself to spy on other planes. While its duplicate gathers information, the berbalang's physical body becomes completely unconscious. Berbalangs are valued as sources of obscure information by powerful planar travelers, while githyanki sometimes cooperate with them as spies and watchers."
     },
     { // Boneclaw
@@ -30019,6 +32248,7 @@ const monstersLocal = [
                 Desc: "If the boneclaw is in dim light or darkness, each creature of the boneclaw's choice within 5 feet of it must succeed on a DC 14 Constitution saving throw or take 34 (5d12 + 2) necrotic damage. The boneclaw then magically teleports up to 60 feet to an unoccupied space it can see. It can bring one creature it's grappling, teleporting that creature to an unoccupied space it can see within 5 feet of its destination. The destination spaces of this teleportation must be in dim light or darkness."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Deadly Reach",
@@ -30026,8 +32256,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A boneclaw is the hideous result of a failed attempt to become a lich. Its body is an emaciated undead form with unnaturally long, skeletal limbs that allow it to attack and drag victims from surprising distances. Boneclaws delight in murder and horrific pain, often hiding like spiders in darkness before impaling victims with their claws. The soul of a failed lich becomes bound to a humanoid master with a particularly hate-filled heart, enslaving the boneclaw to that master's wishes. A boneclaw cannot be permanently destroyed while its master lives, and it reforms hours after its body is destroyed. If its master genuinely abandons evil or finds redemption, the boneclaw is permanently destroyed."
     },
     { // Cadaver Collector
@@ -30082,10 +32312,11 @@ const monstersLocal = [
                 Desc: "The cadaver collector releases paralyzing gas in a 30-foot cone. Each creature in that area must make a successful DC 18 Constitution saving throw or be paralyzed for 1 minute. A paralyzed creature repeats the saving throw at the end of each of its turns, ending the effect on itself with a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Cadaver collectors are enormous ancient war machines from Acheron, built to gather the dead for conquering armies. Their hulking metal bodies are covered in the armor and weapons of fallen warriors, with corpses impaled upon the lances and blades embedded in their shells. They are drawn to battlefields and can be summoned by necromancers, hobgoblin generals, and other warlords. The spirits of the dead accumulated by a collector can be summoned as specters to fight alongside it, while its paralyzing breath allows it to immobilize additional victims for collection."
     },
     { // Choker
@@ -30140,10 +32371,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 3 (1d6) piercing damage. If the target is a Large or smaller creature, it is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the choker can't use this tentacle on another target. The choker has two tentacles. If this attack is a critical hit, the target also can't breathe or speak until the grapple ends."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Chokers are small subterranean aberrations with rubbery bodies, flexible cartilage instead of bones, and unnaturally long arms ending in starfish-shaped hands. They hide inside narrow cracks and fissures, using their ability to squeeze through spaces only a few inches wide to remain concealed from their prey. A choker commonly leaves the corpse of a previous victim outside its hiding place to lure curious creatures close enough to seize. Once it attacks, its long tentacles wrap around a victim's throat and pin the creature against the cavern wall."
     },
     { // Bronze Scout
@@ -30194,10 +32426,11 @@ const monstersLocal = [
                 Desc: "Each creature in contact with the ground within 15 feet of the bronze scout must make a DC 13 Dexterity saving throw, taking 14 (4d6) lightning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A bronze scout is a segmented, wormlike clockwork construct that normally remains mostly buried underground. Its telescoping eyestalks allow it to observe enemies while keeping its body concealed beneath the earth. When discovered, it uses its burrowing ability to retreat and can discharge a powerful electrical flare through the ground to discourage pursuit."
     },
     { // Iron Cobra
@@ -30240,10 +32473,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or suffer one random poison effect: 1. Poison Damage: The target takes 13 (3d8) poison damage. 2. Confusion: On its next turn, the target must use its action to make one weapon attack against a random creature it can see within 30 feet of it, using whatever weapon it has in hand and moving beforehand if necessary to get in range. If it's holding no weapon, it makes an unarmed strike. If no creature is visible within 30 feet, it takes the Dash action, moving toward the nearest creature. 3. Paralysis: The target is paralyzed until the end of its next turn."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "An iron cobra is a clockwork construct shaped like a metallic serpent. Gnomish artificers build these constructs with poisonous bites and often load them with alchemical compounds designed to produce different debilitating effects. Depending on the poison delivered, an iron cobra can inflict additional poison damage, cloud a victim's judgment into attacking an unexpected target, or temporarily paralyze its prey."
     },
     { // Oaken Bolter
@@ -30298,10 +32532,11 @@ const monstersLocal = [
                 Desc: "The oaken bolter launches an explosive charge at a point within 120 feet. Each creature within 20 feet of that point must make a DC 15 Dexterity saving throw, taking 17 (5d6) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "An oaken bolter is a massive clockwork ballista designed to strike targets from long distances. Its wooden and mechanical construction houses several specialized weapons: heavy bolts for piercing targets, harpoons for dragging enemies toward the construct, and explosive charges for blasting groups of creatures. Oaken bolters are typically employed alongside other clockworks, allowing them to pull enemies into range of more melee-oriented constructs or traps."
     },
     { // Stone Defender
@@ -30348,6 +32583,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage, and if the target is Large or smaller, it is knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Intercept Attack",
@@ -30355,8 +32591,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Stone defenders are heavily armored clockwork constructs made from thick plates of stone riveted together. Their stony bodies allow them to conceal themselves against uneven earthen or stone surfaces, making them capable of ambushing enemies when necessary. Their primary purpose, however, is protection: they serve as bodyguards for gnomes and other clockworks, interposing themselves between their allies and incoming attacks."
     },
     { // Corpse Flower
@@ -30415,10 +32651,11 @@ const monstersLocal = [
                 Desc: "The corpse flower grabs one unsecured dead humanoid within 10 feet of it and stuffs the corpse into itself, along with any equipment the corpse is wearing or carrying. The remains can be used with the Corpses trait."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A corpse flower can sprout atop the grave of an evil necromancer or the remains of powerful undead. It grows into an enormous, mobile plant that tears itself from the earth and scavenges humanoid corpses from battlefields and graveyards. Its fibrous tentacles stuff bodies into its mass, where the corpses can be digested for nourishment or animated as zombies. The flower's body gives off a powerful stench of decay that can incapacitate nearby living creatures. It is a malevolent plant that despises the living and feeds on the dead."
     },
     { // Deathlock
@@ -30469,10 +32706,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) necrotic damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A deathlock is an undead warlock created when a warlock fails to fulfill a pact with an evil patron and rises from death bound to continue serving that patron. Its former ambitions and goals are overwhelmed by an obsessive need to carry out its master's wishes. Deathlocks retain some of their former magical abilities and appear as sinister undead spellcasters, using necromantic and warlock magic to pursue the interests of their otherworldly masters. Powerful necromancers can also create deathlocks and bind them to their service."
     },
     { // Deathlock Mastermind
@@ -30527,10 +32765,11 @@ const monstersLocal = [
                 Desc: "Ranged Spell Attack: +6 to hit, range 120 ft., one or two targets. Hit: 18 (4d8) necrotic damage. If the target is Large or smaller, it must succeed on a DC 16 Strength saving throw or become restrained as shadowy tendrils wrap around it for 1 minute. A restrained target can use its action to repeat the saving throw, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A deathlock mastermind is a more powerful and cunning form of deathlock that has developed the freedom and intelligence necessary to devise its own tactics. While all deathlocks remain bound to their patrons, masterminds recruit lesser creatures and orchestrate elaborate schemes in pursuit of their master's goals. They retain the appearance and necromantic nature of deathlocks while wielding considerably greater magical power, including spells capable of controlling, restraining, and devastating enemies from a distance."
     },
     { // Deathlock Wight
@@ -30585,10 +32824,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A deathlock wight is a deathlock stripped of much of the magical power it possessed in life, occupying a state between a warlock's undead punishment and the existence of a traditional wight. It retains the appearance of a sinister undead spellcaster and can wield grave bolts from a distance, while its life-draining touch can weaken and eventually kill living creatures. Deathlock wights retain the languages they knew in life and remain bound to the purposes imposed upon them by their patrons or creators."
     },
     { // Alkilith
@@ -30647,10 +32887,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 18 (4d6 + 4) acid damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "An alkilith resembles a foul, dripping fungal growth that infests doorways, windows, and other portals. Its body stretches around openings and anchors itself with a sticky secretion, allowing it to masquerade as an ordinary slime or fungus. Wherever an alkilith takes root, it weakens the fabric of reality and gradually attunes the opening to the Abyss, eventually creating a portal through which other demons can invade. Alkiliths are spawned from cast-off pieces of Juiblex's hideous body and seek routes out of the Abyss despite being too dangerous for most cultists to summon."
     },
     { // Armanite
@@ -30713,10 +32954,11 @@ const monstersLocal = [
                 Desc: "The armanite looses a bolt of lightning in a line 60 feet long and 10 feet wide. Each creature in the line must make a DC 15 Dexterity saving throw, taking 27 (6d8) lightning damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Armanites are savage demonic heavy cavalry that race across the blasted fields of the Abyss. They have powerful, muscular bodies equipped with sharp hooves, claws, and long serrated tails, giving them numerous ways to tear apart their enemies. Great herds of armanites serve in the armies of demon lords, where they lead charges and attack enemy flanks. Their bloodlust is so intense that they frequently fight among themselves when no other enemies are available."
     },
     { // Bulezau
@@ -30767,10 +33009,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d12 + 2) piercing damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw against disease or become poisoned until the disease ends. While poisoned in this way, the target sports festering boils, coughs up flies, and sheds rotting skin, and the target must repeat the saving throw after every 24 hours that elapse. On a successful save, the disease ends. On a failed save, the target's hit point maximum is reduced by 4 (1d8). The target dies if its hit point maximum is reduced to 0."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Bulezaus are diseased manifestations of animalistic rage that embody the violence of nature. They are repulsive, goatlike demons plagued by crusted eyes, open sores crawling with maggots, and the stench of rotten meat. Bulezaus gather in the deep canyons and lofty crags of the Abyss and commonly serve as foot soldiers in demon lord armies. Their bloodlust drives them toward constant violence, whether against enemies or against each other."
     },
     { // Dybbuk
@@ -30829,10 +33072,11 @@ const monstersLocal = [
                 Desc: "The dybbuk disappears into an intact corpse it can see within 5 feet of it. The corpse must be Large or smaller and be that of a beast or a humanoid. The dybbuk is now effectively the possessed creature. Its type becomes undead, though it now looks alive, and it gains a number of temporary hit points equal to the corpse's hit point maximum in life. While possessing the corpse, the dybbuk retains its hit points, alignment, Intelligence, Wisdom, Charisma, telepathy, and immunity to poison damage, exhaustion, and being charmed and frightened. It otherwise uses the possessed target's game statistics, gaining access to its knowledge and proficiencies but not its class features, if any. The possession lasts until the temporary hit points are lost (at which point the body becomes a corpse once more) or the dybbuk ends its possession using a bonus action. When the possession ends, the dybbuk reappears in an unoccupied space within 5 feet of the corpse."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Dybbuks are translucent, flying demons resembling jellyfish with long trailing tendrils. Rather than remaining in their natural form, they usually possess corpses and give the bodies a semblance of life. A possessed corpse retains enough of its former appearance and knowledge to fool others temporarily, but the dybbuk inevitably reveals itself through grotesque behavior such as vomiting blood, contorting limbs, or otherwise violating the corpse it inhabits. Dybbuks delight in terrorizing mortals and indulging in the vices of their chosen hosts."
     },
     { // Maurezhi
@@ -30891,94 +33135,96 @@ const monstersLocal = [
                 Desc: "The maurezhi targets one dead ghoul or ghast it can see within 30 feet of it. The target rises with all its hit points and follows the maurezhi's commands."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Maurezhi are demons created by Doresain, the King of Ghouls, to lead packs of ghouls and ghasts in the Material Plane. They have a horrific, predatory appearance and can consume the corpse of a humanoid they have slain, taking on that creature's appearance for several days while the stolen form gradually decays. Their bites drain a victim's sense of self by reducing Charisma, and their claws can paralyze living creatures. Maurezhi embody the spreading hunger of the undead and can raise dead ghouls and ghasts to serve them."
     },
     { // Molydeus
-       ID: 575,
-       ProfileType: "Monster",
-       Name: "Molydeus",
-       Type: "Huge fiend (demon), chaotic evil",
-       TypeCategory: "Fiend",
-       Size: "Huge",
-       Source: "Mordenkainen's Tome of Foes",
-       ArmorClass: [19, "natural armor"],
-       HitPoints: 216,
-       HitPointsRoll: "16d12 + 112",
-       Speed: ["40 ft."],
-       Strength: 28,
-       Dexterity: 22,
-       Constitution: 25,
-       Intelligence: 21,
-       Wisdom: 24,
-       Charisma: 24,
-       SavingThrows: ["Strength +16", "Constitution +14", "Wisdom +14", "Charisma +14"],
-       Skills: ["Perception +21"],
-       DamageVulnerabilities: [],
-       DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
-       DamageImmunities: ["Poison"],
-       ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened", "Poisoned", "Stunned"],
-       Senses: ["Truesight 120 ft.", "Passive Perception 31"],
-       Languages: ["Abyssal", "Telepathy 120 ft."],
-       Challenge: [21, 33000],
-       ExtraRewards: "",
-       Traits: [
-           {
-               Title: "Innate Spellcasting",
-               Desc: "The molydeus's innate spellcasting ability is Charisma (spell save DC 22). It can innately cast the following spells, requiring no material components: At will: dispel magic, polymorph, telekinesis, teleport; 3/day: lightning bolt; 1/day: imprisonment."
-           },
-           {
-               Title: "Legendary Resistance (3/Day)",
-               Desc: "If the molydeus fails a saving throw, it can choose to succeed instead."
-           },
-           {
-               Title: "Magic Resistance",
-               Desc: "The molydeus has advantage on saving throws against spells and other magical effects."
-           },
-           {
-               Title: "Magic Weapons",
-               Desc: "The molydeus's weapon attacks are magical."
-           }
-       ],
-       Actions: [
-           {
-               Title: "Multiattack",
-               Desc: "The molydeus makes three attacks: one with its weapon, one with its wolf bite, and one with its snakebite."
-           },
-           {
-               Title: "Demonic Weapon",
-               Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) slashing damage. If the target has at least one head and the molydeus rolled a 20 on the attack roll, the target is decapitated and dies if it can't survive without that head. A target is immune to this effect if it takes none of the damage, has legendary actions, or is Huge or larger. Such a creature takes an extra 6d8 slashing damage from the hit."
-           },
-           {
-               Title: "Wolf Bite",
-               Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) piercing damage."
-           },
-           {
-               Title: "Snakebite",
-               Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one creature. Hit: 12 (1d6 + 9) piercing damage, and the target must succeed on a DC 22 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target transforms into a manes if this reduces its hit point maximum to 0. This transformation can be ended only by a wish spell."
-           }
-       ],
-       Reactions: [],
-       LegendaryActions: [
-           {
-               Title: "Attack",
-               Desc: "The molydeus makes one attack, either with its demonic weapon or with its snakebite."
-           },
-           {
-               Title: "Move",
-               Desc: "The molydeus moves without provoking opportunity attacks."
-           },
-           {
-               Title: "Cast a Spell",
-               Desc: "The molydeus casts one spell from its Innate Spellcasting trait."
-           }
-       ],
-       RegionalEffects: [],
-       LairActions: [],
-       Description: "Molydei are among the most ruthless and dangerous demons in the Abyss, standing roughly 12 feet tall with red-skinned humanoid bodies and two heads: one a slavering wolf and the other a serpent with dripping fangs. A demon lord creates a molydeus by remaking a particularly devoted or formidable demon through excruciating torment. Each molydeus serves a specific demon lord and acts as that master's enforcer, commander, guardian, and executioner. Its special weapon is fashioned from a portion of its demon lord's essence and remains mystically bound to the molydeus."
+        ID: 575,
+        ProfileType: "Monster",
+        Name: "Molydeus",
+        Type: "Huge fiend (demon), chaotic evil",
+        TypeCategory: "Fiend",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [19, "natural armor"],
+        HitPoints: 216,
+        HitPointsRoll: "16d12 + 112",
+        Speed: ["40 ft."],
+        Strength: 28,
+        Dexterity: 22,
+        Constitution: 25,
+        Intelligence: 21,
+        Wisdom: 24,
+        Charisma: 24,
+        SavingThrows: ["Strength +16", "Constitution +14", "Wisdom +14", "Charisma +14"],
+        Skills: ["Perception +21"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened", "Poisoned", "Stunned"],
+        Senses: ["Truesight 120 ft.", "Passive Perception 31"],
+        Languages: ["Abyssal", "Telepathy 120 ft."],
+        Challenge: [21, 33000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The molydeus's innate spellcasting ability is Charisma (spell save DC 22). It can innately cast the following spells, requiring no material components: At will: dispel magic, polymorph, telekinesis, teleport; 3/day: lightning bolt; 1/day: imprisonment."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If the molydeus fails a saving throw, it can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The molydeus has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The molydeus's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The molydeus makes three attacks: one with its weapon, one with its wolf bite, and one with its snakebite."
+            },
+            {
+                Title: "Demonic Weapon",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) slashing damage. If the target has at least one head and the molydeus rolled a 20 on the attack roll, the target is decapitated and dies if it can't survive without that head. A target is immune to this effect if it takes none of the damage, has legendary actions, or is Huge or larger. Such a creature takes an extra 6d8 slashing damage from the hit."
+            },
+            {
+                Title: "Wolf Bite",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) piercing damage."
+            },
+            {
+                Title: "Snakebite",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 15 ft., one creature. Hit: 12 (1d6 + 9) piercing damage, and the target must succeed on a DC 22 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target transforms into a manes if this reduces its hit point maximum to 0. This transformation can be ended only by a wish spell."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "The molydeus makes one attack, either with its demonic weapon or with its snakebite."
+            },
+            {
+                Title: "Move",
+                Desc: "The molydeus moves without provoking opportunity attacks."
+            },
+            {
+                Title: "Cast a Spell",
+                Desc: "The molydeus casts one spell from its Innate Spellcasting trait."
+            }
+        ],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Molydei are among the most ruthless and dangerous demons in the Abyss, standing roughly 12 feet tall with red-skinned humanoid bodies and two heads: one a slavering wolf and the other a serpent with dripping fangs. A demon lord creates a molydeus by remaking a particularly devoted or formidable demon through excruciating torment. Each molydeus serves a specific demon lord and acts as that master's enforcer, commander, guardian, and executioner. Its special weapon is fashioned from a portion of its demon lord's essence and remains mystically bound to the molydeus."
     },
     { // Nabassu
         ID: 576,
@@ -31044,10 +33290,11 @@ const monstersLocal = [
                 Desc: "The nabassu targets one creature it can see within 30 feet of it. If the target can see the nabassu and isn't a construct or an undead, it must succeed on a DC 16 Charisma saving throw or reduce its hit point maximum by 13 (2d12) and give the nabassu an equal number of temporary hit points. This reduction lasts until the target finishes a short or long rest. The target dies if its hit point maximum is reduced to 0, and if the target is a humanoid, it immediately rises as a ghoul under the nabassu's control."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Nabassus are insatiable soul-eating demons that prowl the multiverse in search of victims. They are hated and shunned by other demons because they consume souls, including the souls of fellow demons. A nabassu appears as a monstrous winged predator with a powerful, hungry physique and a grotesque visage suited to its predatory nature. When summoned to the Material Plane, a nabassu often attempts to break free from its summoner so it can devour the summoner's soul and begin hunting independently. Particularly powerful nabassus seek out the amulets of demon lords."
     },
     { // Rutterkin
@@ -31090,10 +33337,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw against disease or become poisoned. At the end of each long rest, the poisoned target can repeat the saving throw, ending the effect on itself on a success. If the target is reduced to 0 hit points while poisoned in this way, it dies and instantly transforms into a living abyssal wretch. The transformation of the body can be undone only by a wish spell."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Rutterkins are warped demons that roam the Abyss in mobs, constantly searching for intruders to surround and devour. Their twisted forms are unsettling even by demonic standards, and their greatest weapon is the terror they create when gathered in numbers. Groups of rutterkins emit a supernatural wave of fear that can leave victims frightened and restrained before the demons swarm them. Their bites carry a terrible Abyssal disease that can eventually transform a slain victim into an abyssal wretch."
     },
     { // Abyssal Wretch
@@ -31131,10 +33379,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Abyssal wretches are the lowest and most pitiful forms of demon, twisted remnants of creatures transformed by the corrupting influence of the Abyss. They are misshapen, savage creatures that exist in mindless mobs and follow more powerful demons. Rutterkins and sibriexes can create abyssal wretches from other creatures, making them a common consequence of demonic corruption."
     },
     { // Sibriex
@@ -31205,6 +33454,7 @@ const monstersLocal = [
                 Desc: "The sibriex targets up to three creatures it can see within 120 feet of it. Each target must make a DC 20 Constitution saving throw. On a successful save, a creature becomes immune to this sibriex's Warp Creature. On a failed save, the target is poisoned, which causes it to also gain 1 level of exhaustion. While poisoned in this way, the target must repeat the saving throw at the start of each of its turns. Three successful saves against the poison end it, and ending the poison removes any levels of exhaustion caused by it. Each failed save causes the target to suffer another level of exhaustion. Once the target reaches 6 levels of exhaustion, it dies and instantly transforms into a living abyssal wretch under the sibriex's control. The transformation of the body can be undone only by a wish spell."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -31220,8 +33470,8 @@ const monstersLocal = [
                 Desc: "The sibriex uses Warp Creature."
             }
         ],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Sibriexes are ancient, grotesque demons thought to be as old as the Abyss itself. Their enormous bodies float above the ground while blood and bile cascade from them, polluting the landscape wherever the fluids fall. Sibriexes are keepers of forbidden lore, having spent eons gathering information from across the planes. They also serve as demonic flesh-shapers, using the power of the Abyss to twist creatures into horrific new forms and create rutterkins and abyssal wretches. Demon lords and other powerful beings sometimes seek their knowledge or their ability to graft new body parts, but sibriexes never provide such services freely."
     },
     { // Wastrilith
@@ -31288,10 +33538,11 @@ const monstersLocal = [
                 Desc: "The wastrilith magically launches a spout of water at one creature it can see within 60 feet of it. The target must make a DC 17 Strength saving throw, and it has disadvantage if it's underwater. On a failed save, it takes 22 (4d8 + 4) acid damage and is pulled up to 60 feet toward the wastrilith. On a successful save, it takes half as much damage and isn't pulled."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Wastriliths are enormous aquatic demons that establish themselves as cruel lords of the deep in the waters of the Abyss and in other bodies of water contaminated by Abyssal influence. Their serpentine, powerful forms are built for swimming and hunting, with broad claws and a massive biting maw. A wastrilith corrupts the water around it, turning it into a poisonous extension of its own demonic essence. It can manipulate corrupted water to hinder creatures, drag victims toward itself, and contaminate those who drink or swim in it. Other demons can even gain temporary vitality by consuming the foul water."
     },
     { // Derro
@@ -31342,10 +33593,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Derro are small, wild-haired, haggard, and shabbily dressed dwarfkin who dwell in the Underdark. They are fearful and vicious, often shuddering, cackling, spitting, and howling as they attack in groups. Their natural paranoia helps them survive the dangers of the subterranean world, while an unusually strong tendency toward sorcery allows some derro to become powerful savants and leaders."
     },
     { // Derro Savant
@@ -31396,10 +33648,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Derro savants are derro who develop an unusually strong talent for sorcery and become leaders among their people. The derro consider them specially blessed by their deity Diirinka and believe their strange behavior represents messages from that god. Like other derro, savants suffer from paranoia and madness, but their magical power gives them authority over their kin."
     },
     { // Black Abishai
@@ -31466,10 +33719,11 @@ const monstersLocal = [
                 Desc: "The abishai casts darkness at a point within 120 feet of it, requiring no components. Wisdom is its spellcasting ability for this spell. While the spell persists, the abishai can move the area of darkness up to 60 feet as a bonus action."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Black abishais are expert assassins and infiltrators who weave shadows around themselves to conceal their presence. Their dark scales and ability to manipulate darkness allow them to approach targets unseen before striking with their scimitars and corrosive bites."
     },
     { // Blue Abishai
@@ -31532,10 +33786,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d10 + 2) piercing damage plus 14 (4d6) lightning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Blue abishais are the most cunning and learned of the abishais. They seek forgotten lore and lost relics, studying occult subjects from tomes and grimoires plundered across the multiverse. Their extensive magical knowledge makes them accomplished spellcasters who use destructive magic against Tiamat's enemies."
     },
     { // Green Abishai
@@ -31598,10 +33853,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or take 11 (2d10) poison damage and become poisoned for 1 minute. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Green abishais serve as envoys of Tiamat's armies and represent her interests throughout the Nine Hells and beyond. Their keen senses help them uncover secrets, while their diplomatic skills, deception, and magic allow them to manipulate even shrewd opponents."
     },
     { // Red Abishai
@@ -31676,10 +33932,11 @@ const monstersLocal = [
                 Desc: "The abishai targets one dragon it can see within 120 feet of it. The dragon must make a DC 18 Charisma saving throw. A chromatic dragon makes this save with disadvantage. On a successful save, the target is immune to the abishai's Power of the Dragon Queen for 1 hour. On a failed save, the target is charmed by the abishai for 1 hour. While charmed in this way, the target regards the abishai as a trusted friend to be heeded and protected. This effect ends if the abishai or its companions deal damage to the target."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Red abishais are the most powerful leaders among their kind, combining immense physical strength with an imposing presence. They lead other devils into battle and take command of troublesome cults to ensure obedience to Tiamat. Their authority can even be brought to bear against dragons, while their terrifying appearance inspires fanatical devotion among their allies."
     },
     { // White Abishai
@@ -31746,6 +34003,7 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) cold damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Vicious Reprisal",
@@ -31753,8 +34011,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "White abishais are the least of the abishai ranks, but they make up for their relative weakness with reckless fury. They fight without fear and serve Tiamat's armies as relentless front-line troops, becoming whirling engines of destruction in battle."
     },
     { // Amnizu
@@ -31821,6 +34079,7 @@ const monstersLocal = [
                 Desc: "The amnizu targets one creature it can see within 60 feet of it. That creature must succeed on a DC 18 Intelligence saving throw or become stunned for 1 minute. A stunned creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target is stunned for the full minute, it forgets everything it sensed, experienced, and learned during the last 5 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Instinctive Charm",
@@ -31828,8 +34087,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Amnizus lead infernal legions and command guardians at gateways throughout the Nine Hells. They are arrogant, bullying, and ruthless, but also highly intelligent tacticians whose loyalty is valued by the archdukes. Some amnizus guard the River Styx from fortified positions along its blighted banks, directing newly arrived lemures and organizing them into infernal legions."
     },
     { // Hellfire Engine
@@ -31892,10 +34151,11 @@ const monstersLocal = [
                 Desc: "The hellfire engine targets a point within 120 feet of it that it can see. Each creature within 30 feet of that point must make a DC 20 Dexterity saving throw, taking 27 (5d10) bludgeoning damage plus 13 (2d12) thunder damage on a failed save, or half as much damage on a successful one. If the chosen option kills a creature, the creature's soul rises from the River Styx as a lemure in Avernus in 1d4 hours. If the creature isn't revived before then, only a wish spell or killing the lemure and casting true resurrection on the creature's original body can restore it to life. Constructs and devils are immune to this effect."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Hellfire engines are semiautonomous magical war machines designed to bring destruction to the battlefield. They take many forms, but all share the same purpose: mowing down enemies in waves. They are mechanical and magical hybrids held in reserve by devilish generals, although some escape and become driven by an overwhelming need to destroy. Mortal creatures killed by a hellfire engine face the additional horror of having their souls transformed into lemures in Avernus."
     },
     { // Merregon
@@ -31950,6 +34210,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +4 to hit, range 100/400 ft., one target. Hit: 7 (1d10 + 2) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Loyal Bodyguard",
@@ -31957,8 +34218,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Merregons are the faceless foot soldiers of the Nine Hells, formed from the souls of fallen soldiers, mercenaries, and bodyguards who served evil without reservation. Every merregon wears a metal mask bolted to its head, with markings identifying its commander and the layer it serves. They possess no individuality and obey orders with absolute loyalty, forming the backbone of many devils' protective retinues."
     },
     { // Narzugon
@@ -32025,10 +34286,11 @@ const monstersLocal = [
                 Desc: "The narzugon, or one creature it touches, regains up to 100 hit points."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Narzugons are fallen paladins who made deals with devils and carried their twisted sense of honor into the afterlife. They serve as champions and commanders of infernal legions, riding nightmare steeds and wielding hellfire lances. Their armor and weapons evoke horrific versions of knightly regalia, while their lances condemn slain mortals to rebirth as lemures unless powerful magic intervenes."
     },
     { // Nupperibo
@@ -32075,10 +34337,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Nupperibos are pitiful devils formed from souls whose evil in life arose from carelessness and sloth. They are blind, bloated, and driven by an unending hunger, shuffling across the Nine Hells while surrounded by clouds of stinging insects and vermin. Though individually weak, they become dangerous when gathered into large throngs, and they obey telepathic commands from other devils without question."
     },
     { // Orthon
@@ -32125,106 +34388,106 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +7 to hit, range 100/400 ft., one target. Hit: 14 (2d10 + 3) piercing damage, plus one of the following effects: 1. Acid. The target must make a DC 17 Constitution saving throw, taking an additional 17 (5d6) acid damage on a failed save, or half as much damage on a successful one. 2. Blindness (1/Day). The target takes 5 (1d10) radiant damage. In addition, the target and all other creatures within 20 feet of it must each make a successful DC 17 Dexterity saving throw or be blinded until the end of the orthon's next turn. 3. Concussion. The target and each creature within 20 feet of it must make a DC 17 Constitution saving throw, taking 13 (2d12) thunder damage on a failed save, or half as much damage on a successful one. 4. Entanglement. The target must make a successful DC 17 Dexterity saving throw or be restrained for 1 hour by strands of sticky webbing. A restrained creature can escape by using an action to make a successful DC 17 Dexterity or Strength check. Any creature other than an orthon that touches the restrained creature must make a successful DC 17 Dexterity saving throw or become similarly restrained. 5. Paralysis (1/Day). The target takes 22 (4d10) lightning damage and must make a successful DC 17 Constitution saving throw or be paralyzed for 1 minute. The paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 6. Tracking. For the next 24 hours, the orthon knows the direction and distance to the target, as long as it's on the same plane of existence. If the target is on a different plane, the orthon knows which one, but not the exact location there."
             }
         ],
-        Reactions: [
-            {
-                Title: "Explosive Retribution",
-                Desc: "When it is reduced to 15 hit points or fewer, the orthon causes itself to explode. All other creatures within 30 feet of it must each make a DC 17 Dexterity saving throw, taking 9 (2d8) fire damage plus 9 (2d8) thunder damage on a failed save, or half as much damage on a successful one. This explosion destroys the orthon, its infernal dagger, and its brass crossbow."
-            }
-        ],
         BonusActions: [
             {
                 Title: "Invisibility Field",
                 Desc: "The orthon can use a bonus action to become invisible. Any equipment the orthon wears or carries is also invisible as long as the equipment is on its person. This invisibility ends immediately after the orthon makes an attack roll or is hit by an attack."
             }
         ],
+        Reactions: [
+            {
+                Title: "Explosive Retribution",
+                Desc: "When it is reduced to 15 hit points or fewer, the orthon causes itself to explode. All other creatures within 30 feet of it must each make a DC 17 Dexterity saving throw, taking 9 (2d8) fire damage plus 9 (2d8) thunder damage on a failed save, or half as much damage on a successful one. This explosion destroys the orthon, its infernal dagger, and its brass crossbow."
+            }
+        ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Orthons are infernal bounty hunters sent by archdevils to track, capture, or destroy specific creatures across the multiverse. They are heavily armed hunters with keen senses and the ability to become invisible at will, allowing them to stalk prey before striking. Orthons value the challenge of the chase and one-on-one combat, and their travels throughout the Nine Hells make them exceptionally knowledgeable guides to its layers."
     },
     { // Drow Arachnomancer
-       ID: 594,
-       ProfileType: "Monster",
-       Name: "Drow Arachnomancer",
-       Type: "Medium humanoid (elf), chaotic evil",
-       TypeCategory: "Humanoid",
-       Size: "Medium",
-       Source: "Mordenkainen's Tome of Foes",
-       ArmorClass: [15, "studded leather"],
-       HitPoints: 162,
-       HitPointsRoll: "25d8 + 50",
-       Speed: ["30 ft.", "climb 30 ft."],
-       Strength: 11,
-       Dexterity: 17,
-       Constitution: 14,
-       Intelligence: 19,
-       Wisdom: 14,
-       Charisma: 16,
-       SavingThrows: ["Constitution +7", "Intelligence +9", "Charisma +8"],
-       Skills: ["Arcana +9", "Nature +9", "Perception +7", "Stealth +8"],
-       DamageVulnerabilities: [],
-       DamageResistances: ["Poison"],
-       DamageImmunities: [],
-       ConditionImmunities: [],
-       Senses: ["Blindsight 10 ft.", "Darkvision 120 ft.", "Passive Perception 17"],
-       Languages: ["Elvish", "Undercommon", "Can speak with spiders"],
-       Challenge: [13, 10000],
-       ExtraRewards: "",
-       Traits: [
-           {
-               Title: "Fey Ancestry",
-               Desc: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
-           },
-           {
-               Title: "Innate Spellcasting",
-               Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: dancing lights; 1/day each: darkness, faerie fire, levitate (self only)."
-           },
-           {
-               Title: "Spellcasting",
-               Desc: "The drow is a 16th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): chill touch, eldritch blast, mage hand, poison spray; 1st-5th level (3 5th-level slots): conjure animals (spiders only), crown of madness, dimension door, dispel magic, fear, fly, giant insect, hold monster, insect plague, invisibility, vampiric touch, web, witch bolt; 1/day each: dominate monster, etherealness, eyebite."
-           },
-           {
-               Title: "Spider Climb",
-               Desc: "The drow can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
-           },
-           {
-               Title: "Sunlight Sensitivity",
-               Desc: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
-           },
-           {
-               Title: "Web Walker",
-               Desc: "The drow ignores movement restrictions caused by webbing."
-           }
-       ],
-       Actions: [
-           {
-               Title: "Multiattack",
-               Desc: "The drow makes two poisonous touch attacks or two bite attacks. The first of these attacks that hits each round deals an extra 26 (4d12) poison damage to the target."
-           },
-           {
-               Title: "Poisonous Touch (Humanoid Form Only)",
-               Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 28 (8d6) poison damage."
-           },
-           {
-               Title: "Bite (Giant Spider Form Only)",
-               Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 26 (4d12) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
-           },
-           {
-               Title: "Web (Giant Spider Form Only; Recharge 5-6)",
-               Desc: "Ranged Weapon Attack: +8 to hit, range 30/60 ft., one target. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 15 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, piercing, and slashing damage)."
-           }
-       ],
-       BonusActions: [
-           {
-               Title: "Change Shape",
-               Desc: "The drow can use a bonus action to magically polymorph into a giant spider, remaining in that form for up to 1 hour. It can revert to its true form as a bonus action. Its statistics, other than its size, are the same in each form. It can speak and cast spells while in giant spider form. Any equipment it is wearing or carrying in humanoid form melds into the giant spider form. It can't activate, use, wield, or otherwise benefit from any of its equipment. It reverts to its humanoid form if it dies."
-           },
-       ],
-       Reactions: [],
-       LegendaryActions: [],
-       RegionalEffects: [],
-       LairActions: [],
-       Description: "Drow spellcasters who devote themselves wholly to Lolth can become arachnomancers, offering body and soul to the Spider Queen. Their bodies and magic become connected to the spiders of the Demonweb Pits, allowing them to wield powerful spider-themed magic. An arachnomancer can magically assume the form of a giant spider while retaining its ability to speak and cast spells."
+        ID: 594,
+        ProfileType: "Monster",
+        Name: "Drow Arachnomancer",
+        Type: "Medium humanoid (elf), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [15, "studded leather"],
+        HitPoints: 162,
+        HitPointsRoll: "25d8 + 50",
+        Speed: ["30 ft.", "climb 30 ft."],
+        Strength: 11,
+        Dexterity: 17,
+        Constitution: 14,
+        Intelligence: 19,
+        Wisdom: 14,
+        Charisma: 16,
+        SavingThrows: ["Constitution +7", "Intelligence +9", "Charisma +8"],
+        Skills: ["Arcana +9", "Nature +9", "Perception +7", "Stealth +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Poison"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Blindsight 10 ft.", "Darkvision 120 ft.", "Passive Perception 17"],
+        Languages: ["Elvish", "Undercommon", "Can speak with spiders"],
+        Challenge: [13, 10000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Fey Ancestry",
+                Desc: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: dancing lights; 1/day each: darkness, faerie fire, levitate (self only)."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The drow is a 16th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): chill touch, eldritch blast, mage hand, poison spray; 1st-5th level (3 5th-level slots): conjure animals (spiders only), crown of madness, dimension door, dispel magic, fear, fly, giant insect, hold monster, insect plague, invisibility, vampiric touch, web, witch bolt; 1/day each: dominate monster, etherealness, eyebite."
+            },
+            {
+                Title: "Spider Climb",
+                Desc: "The drow can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            },
+            {
+                Title: "Sunlight Sensitivity",
+                Desc: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+            },
+            {
+                Title: "Web Walker",
+                Desc: "The drow ignores movement restrictions caused by webbing."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The drow makes two poisonous touch attacks or two bite attacks. The first of these attacks that hits each round deals an extra 26 (4d12) poison damage to the target."
+            },
+            {
+                Title: "Poisonous Touch (Humanoid Form Only)",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 28 (8d6) poison damage."
+            },
+            {
+                Title: "Bite (Giant Spider Form Only)",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 26 (4d12) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
+            },
+            {
+                Title: "Web (Giant Spider Form Only; Recharge 5-6)",
+                Desc: "Ranged Weapon Attack: +8 to hit, range 30/60 ft., one target. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 15 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, piercing, and slashing damage)."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Change Shape",
+                Desc: "The drow can use a bonus action to magically polymorph into a giant spider, remaining in that form for up to 1 hour. It can revert to its true form as a bonus action. Its statistics, other than its size, are the same in each form. It can speak and cast spells while in giant spider form. Any equipment it is wearing or carrying in humanoid form melds into the giant spider form. It can't activate, use, wield, or otherwise benefit from any of its equipment. It reverts to its humanoid form if it dies."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Drow spellcasters who devote themselves wholly to Lolth can become arachnomancers, offering body and soul to the Spider Queen. Their bodies and magic become connected to the spiders of the Demonweb Pits, allowing them to wield powerful spider-themed magic. An arachnomancer can magically assume the form of a giant spider while retaining its ability to speak and cast spells."
     },
     { // Drow Favored Consort
         ID: 595,
@@ -32290,10 +34553,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +11 to hit, range 30/120 ft., one target. Hit: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target regains consciousness if it takes damage or if another creature takes an action to shake it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Favored consorts are drow chosen by Lolth's priestesses for their beauty, companionship, and sometimes their magical abilities. Most serve primarily for pleasure or breeding, but a particularly capable consort may gain influence by providing useful counsel. Their position is precarious, since a priestess's favor can change without warning."
     },
     { // Drow House Captain
@@ -32360,6 +34624,7 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +8 to hit, range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target regains consciousness if it takes damage or if another creature takes an action to shake it."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Parry",
@@ -32367,8 +34632,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Each drow noble house entrusts its military forces to a house captain, normally the matriarch's first or second son. The captain commands the drow and slaves that form the family's army and has studied strategy and tactics extensively. House captains are battlefield leaders who combine martial skill with the ability to direct their allies."
     },
     { // Drow Inquisitor
@@ -32435,10 +34700,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) piercing damage plus 18 (4d8) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage it takes. This reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Drow inquisitors are priestesses entrusted with rooting out treachery and disloyalty within drow society. Their authority is surpassed only by the matrons of the noble houses. They use interrogation, torture, divine magic, and their ability to recognize lies to hunt down those who threaten the established hierarchy."
     },
     { // Drow Matron Mother
@@ -32513,6 +34779,7 @@ const monstersLocal = [
                 Desc: "The drow magically summons a retriever or a yochlol. The summoned creature appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -32528,8 +34795,8 @@ const monstersLocal = [
                 Desc: "The drow expends a spell slot to cast a 1st-, 2nd-, or 3rd-level spell that she has prepared. Doing so costs 1 legendary action per level of the spell."
             }
         ],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "At the head of each drow noble house sits a matron mother, a powerful priestess of Lolth who must simultaneously carry out the Spider Queen's will and advance the interests of her family. Matron mothers sit at the center of intricate webs of drow, demons, spiders, and slaves. Their power depends upon maintaining Lolth's favor, which the Spider Queen can grant or withdraw capriciously."
     },
     { // Drow Shadowblade
@@ -32592,10 +34859,11 @@ const monstersLocal = [
                 Desc: "Ranged Weapon Attack: +9 to hit, range 30/120 ft., one target. Hit: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target regains consciousness if it takes damage or if another creature takes an action to shake it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Drow shadowblades are ruthless killers who move unseen through the Underdark. Noble houses employ them to eliminate rivals, protect important locations, hunt thieves, and carry out other deadly assignments. Their shadow magic comes from a fiendish ritual that prevents a slain lesser demon from reforming in the Abyss, infusing the drow with the demon's shadow power."
     },
     { // Duergar Despot
@@ -32662,10 +34930,11 @@ const monstersLocal = [
                 Desc: "The duergar spews flames in a line 100 feet long and 5 feet wide. Each creature in the line must make a DC 16 Dexterity saving throw, taking 18 (4d8) fire damage on a failed save, or half as much damage on a successful one."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Duergar despots replace parts of their bodies with mechanical devices controlled through their psionic abilities. The resulting constructs of flesh, metal, and machinery give these tyrants immense physical power. Their mechanical modifications are weapons as much as symbols of authority."
     },
     { // Duergar Hammerer
@@ -32720,10 +34989,11 @@ const monstersLocal = [
                 Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A duergar hammerer is a digging machine with a duergar strapped inside it, often as punishment for failing to meet expectations. The machine converts the captive's pain into energy, allowing the hammerer to dig tunnels and smash apart obstacles or intruders."
     },
     { // Duergar Kavalrachni
@@ -32786,10 +35056,11 @@ const monstersLocal = [
                 Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it. While the invisible duergar is mounted on a female steeder, the steeder is invisible as well. The invisibility ends early on the steeder immediately after it attacks."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Duergar kavalrachni are cavalry trained to fight while mounted on female steeders. They use their mounts and psionic abilities to strike quickly and disappear, making them effective scouts and raiders in the Underdark."
     },
     { // Duergar Mind Master
@@ -32852,10 +35123,11 @@ const monstersLocal = [
                 Desc: "For 1 minute, the duergar magically decreases in size, along with anything it is wearing or carrying. While reduced, the duergar is Tiny, reduces its weapon damage to 1, and makes attacks, checks, and saving throws with disadvantage if they use Strength. It gains a +5 bonus to all Dexterity (Stealth) checks and a +5 bonus to its AC. It can also take a bonus action on each of its turns to take the Hide action."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Duergar mind masters are feared spies who operate inside and beyond duergar strongholds. Their psionic talents allow them to see through illusions, manipulate the actions of others, become invisible, and shrink themselves to miniature size for infiltration."
     },
     { // Duergar Screamer
@@ -32906,10 +35178,11 @@ const monstersLocal = [
                 Desc: "The screamer emits destructive energy in a 15-foot cube. Each creature in that area must succeed on a DC 11 Strength saving throw or take 7 (2d6) thunder damage and be knocked prone."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A duergar screamer is a construct that uses sonic energy to grind rock into dust. Duergar accused of spreading gossip or plotting against their superiors can be imprisoned inside these devices, where their pain is converted into the psionic energy that powers the machine."
     },
     { // Duergar Soulblade
@@ -32972,10 +35245,11 @@ const monstersLocal = [
                 Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Duergar soulblades are warriors who have mastered the use of psionics to manifest blades of psychic energy. They combine this supernatural weapon with the ability to grow larger and disappear from sight, making them dangerous skirmishers."
     },
     { // Duergar Stone Guard
@@ -33038,10 +35312,11 @@ const monstersLocal = [
                 Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Duergar stone guards are elite troops deployed in small numbers to strengthen ordinary war bands or organized into strike forces for specialized missions. Their heavy armor, shields, and disciplined formations make them particularly effective when fighting alongside other duergar."
     },
     { // Duergar Warlord
@@ -33116,8 +35391,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A duergar warlord is a cunning, inspiring, and cruel battlefield leader. Skilled warriors who command other duergar, warlords use psionic energy to compel their troops to fight harder and coordinate their attacks."
     },
     { // Duergar Xarrorn
@@ -33176,10 +35451,11 @@ const monstersLocal = [
                 Desc: "The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Duergar xarrorn are specialists who construct weapons using a combination of alchemy and psionics. Their signature fire lances can strike at reach and unleash blasts of flame, making the xarrorn dangerous specialists on the battlefield."
     },
     { // Eidolon
@@ -33233,8 +35509,8 @@ const monstersLocal = [
         BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "An eidolon is a ghostly spirit bound by a sacred oath to protect a holy site. Forged from the soul of a devoted servant, it normally remains at the place it was assigned to guard. When intruders threaten the site, the eidolon merges with a specially prepared sacred statue and controls the statue as its physical form."
     },
     { // Sacred Statue
@@ -33296,8 +35572,8 @@ const monstersLocal = [
         BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A sacred statue is a specially prepared effigy created to serve as a vessel for an eidolon. When inhabited, the statue becomes a powerful construct-like guardian that smashes intruders with its enormous fists and hurls chunks of stone. When uninhabited, it is simply an inert statue."
     },
     { // Autumn Eladrin
@@ -33364,8 +35640,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Autumn eladrin embody goodwill, compassion, and a desire for peace. Their magic is focused on healing and calming others, and their autumn aspect often manifests when they are overcome with feelings of kindness. They tolerate violence poorly and seek to end conflicts wherever they encounter them."
     },
     { // Spring Eladrin
@@ -33431,8 +35707,8 @@ const monstersLocal = [
         BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Spring eladrin are joyful, playful creatures whose hearts are filled with the exuberance of spring. They fill the Feywild with songs and laughter and use their magic to spread that joy, although their playful antics can sometimes lead other creatures into dangerous situations."
     },
     { // Summer Eladrin
@@ -33499,8 +35775,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Summer eladrin embody anger and fury. Their summer aspect transforms them into aggressive warriors whose magic amplifies their speed and fighting ability. Their wrath manifests as intense heat and devastating physical attacks."
     },
     { // Winter Eladrin
@@ -33567,8 +35843,8 @@ const monstersLocal = [
             }
         ],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Winter eladrin embody sorrow and melancholy. Frozen tears fall from their faces, and their sadness radiates as bitter cold. Their winter aspect grants them control over frigid winds and ice while their presence can weigh heavily on the emotions of nearby creatures."
     },
     { // Leviathan
@@ -33647,8 +35923,8 @@ const monstersLocal = [
                 Desc: "The leviathan moves up to its speed."
             }
         ],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A leviathan is a towering wall of water that rises from a large body of water in the form of an immense serpent. It can drag ships into the depths, devastate coastal settlements, and generate enormous moving walls of water."
     },
     { // Phoenix
@@ -33735,8 +36011,8 @@ const monstersLocal = [
                 Desc: "The phoenix moves up to its speed and attacks with its fiery talons."
             }
         ],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A phoenix is an enormous fiery bird formed from the destructive power of the Inner Planes. It emerges amid fire and smoke and seeks to turn everything around it to ash. When slain, it erupts in an explosion and leaves behind a blazing cinder that eventually hatches into a new phoenix."
     },
     { // Elder Tempest
@@ -33819,8 +36095,8 @@ const monstersLocal = [
                 Desc: "The tempest releases a blast of thunder and wind in a line that is 1 mile long and 20 feet wide. Objects in that area take 22 (4d10) thunder damage. Each creature there must succeed on a DC 21 Dexterity saving throw or take 22 (4d10) thunder damage and be flung up to 60 feet in a direction away from the line. If a thrown target collides with an immovable object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown before impact. If the target would collide with another creature instead, that other creature must succeed on a DC 19 Dexterity saving throw or take the same damage and be knocked prone."
             }
         ],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "An elder tempest is a living storm given elemental form, appearing as a gigantic serpent carved from clouds, wind, rain, and lightning. It flies through the sky surrounded by a vast storm, unleashing torrential rain, powerful winds, thunder, and devastating lightning."
     },
     { // Zaratan
@@ -33920,8 +36196,8 @@ const monstersLocal = [
                 Desc: "The zaratan emerges from its shell and uses Spit Rock. It can use this option only if it is retracted in its shell."
             }
         ],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "A zaratan is a colossal elemental resembling a hulking, armored reptile whose shell is formed from the landscape of the Elemental Plane of Earth. Each step sends powerful shock waves through the ground. When seriously injured, the zaratan can retract beneath its nearly impervious shell to recover."
     },
     { // Air Elemental Myrmidon
@@ -33975,8 +36251,8 @@ const monstersLocal = [
         BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Air elemental myrmidons are elementals bound into magically created suits of plate armor. They have no memory of their former existence as free elementals and exist solely to obey their creators."
     },
     { // Earth Elemental Myrmidon
@@ -34030,8 +36306,8 @@ const monstersLocal = [
         BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Earth elemental myrmidons are elementals bound inside suits of plate armor through powerful ritual magic. They are durable warriors that strike with heavy mauls and can channel the power of earth into thunderous blows."
     },
     { // Fire Elemental Myrmidon
@@ -34093,8 +36369,8 @@ const monstersLocal = [
         BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Fire elemental myrmidons are fiery elementals bound into suits of plate armor. Their bodies radiate intense heat and light, and they fight with flaming scimitars while remaining vulnerable to the effects of water."
     },
     { // Water Elemental Myrmidon
@@ -34148,8 +36424,8 @@ const monstersLocal = [
         BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Water elemental myrmidons are elementals bound within suits of plate armor. Their movements combine the weight and discipline of a warrior with the fluid nature of water, and they wield tridents to freeze and hinder their opponents."
     },
     { // Giff
@@ -34215,8 +36491,8 @@ const monstersLocal = [
         BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        RegionalEffects: [],
         LairActions: [],
+        RegionalEffects: [],
         Description: "Giff are 7-foot-tall, hippopotamus-headed humanoids dressed in colorful military uniforms. They are spacefaring mercenaries organized into strict military hierarchies and are renowned for their martial training, firearms, muskets, pistols, and love of explosives. Giff mercenary units serve together as regiments and place the reputation of the unit above the life of any individual member."
     },
 
@@ -34227,98 +36503,88 @@ const monstersLocal = [
 
 
 
-
-
-
-
-
-
-
-
-   { // World Agent
-       ID: 999,
-       ProfileType: "Monster",
-       Name: "World Agent",
-       Type: "Medium humanoid, neutral",
-       TypeCategory: "Humanoid",
-       Size: "Medium",
-       Source: "Homebrew",
-       ArmorClass: [20, "Supernatural reflexes"],
-       HitPoints: 420,
-       HitPointsRoll: "40d8 + 240",
-       Speed: ["60 ft.", "fly 100 ft."],
-       Strength: 20,
-       Dexterity: 22,
-       Constitution: 22,
-       Intelligence: 16,
-       Wisdom: 18,
-       Charisma: 16,
-       SavingThrows: ["Dexterity +11", "Constitution +11", "Wisdom +9"],
-       Skills: ["Perception +9", "Insight +9", "Athletics +10", "Acrobatics +11"],
-       DamageVulnerabilities: [],
-       DamageResistances: ["Psychic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
-       DamageImmunities: ["Poison", "Necrotic"],
-       ConditionImmunities: ["Charmed", "Frightened", "Paralyzed", "Poisoned", "Unconscious"],
-       Senses: ["Darkvision 120 ft.", "Passive Perception 19"],
-       Languages: ["All"],
-       Challenge: [17, 18000],
-       ExtraRewards: "",
-       Traits: [
-           {
-               Title: "Phase Movement",
-               Desc: "The World Agent can move through creatures and objects as if they were difficult terrain, ignoring movement penalties. It takes 5 (1d10) force damage if it ends its turn inside a solid object."
-           },
-           {
-               Title: "Wall Running",
-               Desc: "The World Agent can move along vertical surfaces and ceilings without needing to make checks or use magic. It must end its movement on a horizontal surface, or it will fall as normal."
-           },
-           {
-               Title: "Impossible Leap",
-               Desc: "The World Agent's standing long jump is up to 30 feet, and its high jump is up to 20 feet, with or without a running start. This movement ignores opportunity attacks."
-           },
-           {
-               Title: "Unstoppable Stride",
-               Desc: "When the World Agent moves within 5 feet of a closed nonmagical door, barrier, or window, it can choose to automatically destroy it. The object shatters, breaks, or swings open unless it is magically sealed or reinforced beyond 50 hit points."
-           }
-       ],
-       Actions: [
-           {
-               Title: "Multiattack",
-               Desc: "The World Agent makes two Unarmed Strikes."
-           },
-           {
-               Title: "Unarmed Strike",
-               Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage. If the target is Large or smaller, they must succeed on a DC 18 Strength saving throw or be knocked prone."
-           },
-           {
-               Title: "Handgun Barrage",
-               Desc: "Ranged Weapon Attack: +11 to hit, range 60/180 ft., one target. The World Agent makes 7 handgun attacks (standard magazine size of a Glock 17). Each hit deals 10 (2d6 + 3) piercing damage. If at least 4 shots hit a single target, the target must succeed on a DC 18 Constitution saving throw or be staggered (movement halved, disadvantage on Dexterity saves) until the end of its next turn."
-           }
-       ],
-       Reactions: [
-           {
-               Title: "Bullet Time",
-               Desc: "The World Agent can use its reaction to halve the damage from a ranged weapon attack or automatically succeed on a Dexterity saving throw."
-           }
-       ],
-       BonusActions: [
-           {
-               Title: "Glitch Dash",
-               Desc: "The World Agent can Dash. During this movement, it does not provoke opportunity attacks and can move through enemy spaces as if they were difficult terrain. If the Agent moves through a creature's space during this dash, that creature must succeed on a DC 18 Dexterity saving throw or be knocked prone by the shockwave of the passing force."
-           }
-       ],
-       LegendaryActions: [
-           {
-               Title: "Attack",
-               Desc: "The World Agent makes one Unarmed Strike."
-           }
-       ],
-       RegionalEffects: [],
-       LairActions: [],
-       Description: "A man in a perfectly pressed black suit stands motionless in the center of the room—clean-cut hair, polished shoes, and mirrored sunglasses that somehow reflect your faces even in the low light. There's something wrong about him. He doesn't blink. He doesn't breathe. It's like he's waiting for the world to catch up to him. Without turning his head, he speaks in a calm, unfeeling voice that echoes in your skull more than your ears: \"Unauthorized entities detected. System anomaly in progress. Initiating correction protocol.\" His body twitches—not naturally, but like a puppet yanked by a string—and in a single frame, he's no longer standing; he's walking toward you, fast, smooth, unstoppable. Walls and obstacles don't matter; he moves through them like they aren't real. As he raises a black handgun—no glowing runes, no arcane sigils, just matte steel and deadly intent—it's clear: this isn't a person. This is the system's immune response."
-   },
-
-
+    { // World Agent
+        ID: 999,
+        ProfileType: "Monster",
+        Name: "World Agent",
+        Type: "Medium humanoid, neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [20, "Supernatural reflexes"],
+        HitPoints: 420,
+        HitPointsRoll: "40d8 + 240",
+        Speed: ["60 ft.", "fly 100 ft."],
+        Strength: 20,
+        Dexterity: 22,
+        Constitution: 22,
+        Intelligence: 16,
+        Wisdom: 18,
+        Charisma: 16,
+        SavingThrows: ["Dexterity +11", "Constitution +11", "Wisdom +9"],
+        Skills: ["Perception +9", "Insight +9", "Athletics +10", "Acrobatics +11"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Psychic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison", "Necrotic"],
+        ConditionImmunities: ["Charmed", "Frightened", "Paralyzed", "Poisoned", "Unconscious"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 19"],
+        Languages: ["All"],
+        Challenge: [17, 18000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Phase Movement",
+                Desc: "The World Agent can move through creatures and objects as if they were difficult terrain, ignoring movement penalties. It takes 5 (1d10) force damage if it ends its turn inside a solid object."
+            },
+            {
+                Title: "Wall Running",
+                Desc: "The World Agent can move along vertical surfaces and ceilings without needing to make checks or use magic. It must end its movement on a horizontal surface, or it will fall as normal."
+            },
+            {
+                Title: "Impossible Leap",
+                Desc: "The World Agent's standing long jump is up to 30 feet, and its high jump is up to 20 feet, with or without a running start. This movement ignores opportunity attacks."
+            },
+            {
+                Title: "Unstoppable Stride",
+                Desc: "When the World Agent moves within 5 feet of a closed nonmagical door, barrier, or window, it can choose to automatically destroy it. The object shatters, breaks, or swings open unless it is magically sealed or reinforced beyond 50 hit points."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The World Agent makes two Unarmed Strikes."
+            },
+            {
+                Title: "Unarmed Strike",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage. If the target is Large or smaller, they must succeed on a DC 18 Strength saving throw or be knocked prone."
+            },
+            {
+                Title: "Handgun Barrage",
+                Desc: "Ranged Weapon Attack: +11 to hit, range 60/180 ft., one target. The World Agent makes 7 handgun attacks (standard magazine size of a Glock 17). Each hit deals 10 (2d6 + 3) piercing damage. If at least 4 shots hit a single target, the target must succeed on a DC 18 Constitution saving throw or be staggered (movement halved, disadvantage on Dexterity saves) until the end of its next turn."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Glitch Dash",
+                Desc: "The World Agent can Dash. During this movement, it does not provoke opportunity attacks and can move through enemy spaces as if they were difficult terrain. If the Agent moves through a creature's space during this dash, that creature must succeed on a DC 18 Dexterity saving throw or be knocked prone by the shockwave of the passing force."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Bullet Time",
+                Desc: "The World Agent can use its reaction to halve the damage from a ranged weapon attack or automatically succeed on a Dexterity saving throw."
+            }
+        ],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "The World Agent makes one Unarmed Strike."
+            }
+        ],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "A man in a perfectly pressed black suit stands motionless in the center of the room—clean-cut hair, polished shoes, and mirrored sunglasses that somehow reflect your faces even in the low light. There's something wrong about him. He doesn't blink. He doesn't breathe. It's like he's waiting for the world to catch up to him. Without turning his head, he speaks in a calm, unfeeling voice that echoes in your skull more than your ears: \"Unauthorized entities detected. System anomaly in progress. Initiating correction protocol.\" His body twitches—not naturally, but like a puppet yanked by a string—and in a single frame, he's no longer standing; he's walking toward you, fast, smooth, unstoppable. Walls and obstacles don't matter; he moves through them like they aren't real. As he raises a black handgun—no glowing runes, no arcane sigils, just matte steel and deadly intent—it's clear: this isn't a person. This is the system's immune response."
+    }
 ];
 
 const uniqueLocal = [
@@ -34328,10 +36594,11 @@ const uniqueLocal = [
         Name: "Omega",
         Type: "gargantuan construct, neutral",
         TypeCategory: "Construct",
+        Size: "Gargantuan",
         Source: "Homebrew",
+        ArmorClass: [25, "natural armor"],
         HitPoints: 999,
         HitPointsRoll: "",
-        ArmorClass: [25, "natural armor"],
         Speed: ["100 ft.", "fly 100 ft.", "climb 100 ft.", "swim 100 ft.", "hover 100 ft."],
         Strength: 30,
         Dexterity: 30,
@@ -34344,7 +36611,21 @@ const uniqueLocal = [
         DamageVulnerabilities: [],
         DamageResistances: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder"],
         DamageImmunities: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
-        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Paralyzed", "Petrified", "Poisoned", "Prone", "Stunned", "Unconscious"],
+        ConditionImmunities: [
+            "Blinded",
+            "Charmed",
+            "Deafened",
+            "Exhaustion",
+            "Frightened",
+            "Grappled",
+            "Incapacitated",
+            "Paralyzed",
+            "Petrified",
+            "Poisoned",
+            "Prone",
+            "Stunned",
+            "Unconscious"
+        ],
         Senses: ["blindsight 60 ft.", "darkvision 120 ft.", "tremorsense 60 ft.", "truesight 120 ft.", "passive perception 30"],
         Languages: ["All", "telepathy 5 miles"],
         Challenge: [30, 155000],
@@ -34356,20 +36637,20 @@ const uniqueLocal = [
             },
             {
                 Title: "Magic Resistance",
-                Desc: "Omega has advantage on saving throws against spells and other magical effects.",
+                Desc: "Omega has advantage on saving throws against spells and other magical effects."
             },
             {
                 Title: "Magical Weapons",
-                Desc: "All Omega’s attacks are magical.",
+                Desc: "All Omega’s attacks are magical."
             },
             {
                 Title: "Show of Endurance",
-                Desc: "Omega doesn’t show any sign of tiredness, wear & tear, or any indication of the state of hit points or condition.",
+                Desc: "Omega doesn’t show any sign of tiredness, wear & tear, or any indication of the state of hit points or condition."
             },
             {
                 Title: "Immune to Finishers",
-                Desc: "Omega cannot be instantly killed by a skill like Quivering Palm, Power Word Kill, or Wish. Instead, Omega automatically saves and takes the successful save amount of damage. If damage isn’t described in the spell, attacker rolls 55 (10d10) force damage.",
-            },
+                Desc: "Omega cannot be instantly killed by a skill like Quivering Palm, Power Word Kill, or Wish. Instead, Omega automatically saves and takes the successful save amount of damage. If damage isn’t described in the spell, attacker rolls 55 (10d10) force damage."
+            }
         ],
         InnateSpellcasting: [
             {
@@ -34419,48 +36700,41 @@ const uniqueLocal = [
         Actions: [
             {
                 Title: "Melee Offense",
-                Desc: "Melee Weapon Attack: +20 to hit, reach 10 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:" +  "\n" +
-                "Blugeoning | Mace, Hammer, Flail, Maul, Staff | Hit: 26 (4d12 bludgeoning damage)" + "\n" +
-                "Slashing | Axe, Sickle, Glaive, Halberd, Sword, Bladed Whip | Hit: 26 (4d12 slashing damage)" + "\n" +
-                "Piercing | Dagger, Javelin, Spear, Lance, Morningstar, Rapier, Trident | Hit: 26 (4d12 piercing damage)" + "\n" +
-                "Then select what kind of damage is inflicted from the list below:" + "\n" +
-                "Acid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder" + "\n" +
-                "Hit: 26 (4d12) type damage",
+                Desc: "Melee Weapon Attack: +20 to hit, reach 10 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:\nBlugeoning | Mace, Hammer, Flail, Maul, Staff | Hit: 26 (4d12 bludgeoning damage)\nSlashing | Axe, Sickle, Glaive, Halberd, Sword, Bladed Whip | Hit: 26 (4d12 slashing damage)\nPiercing | Dagger, Javelin, Spear, Lance, Morningstar, Rapier, Trident | Hit: 26 (4d12 piercing damage)\nThen select what kind of damage is inflicted from the list below:\nAcid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder\nHit: 26 (4d12) type damage"
             },
             {
                 Title: "Ranged Offense",
-                Desc: "Ranged Weapon Attack: +20 to hit, reach 1,000 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:" +  "\n" +
-                "Blugeoning | Sling | Hit: 26 (4d12 bludgeoning damage)" + "\n" +
-                "Slashing | Bladed Whip | Hit: 26 (4d12 slashing damage)" + "\n" +
-                "Piercing | Crossbow, Dart, Bow, Blowgun | Hit: 26 (4d12 piercing damage)" + "\n" +
-                "Then select what kind of damage is inflicted from the list below:" + "\n" +
-                "Acid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder" + "\n" +
-                "Hit: 26 (4d12) type damage",
+                Desc: "Ranged Weapon Attack: +20 to hit, reach 1,000 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:\nBlugeoning | Sling | Hit: 26 (4d12 bludgeoning damage)\nSlashing | Bladed Whip | Hit: 26 (4d12 slashing damage)\nPiercing | Crossbow, Dart, Bow, Blowgun | Hit: 26 (4d12 piercing damage)\nThen select what kind of damage is inflicted from the list below:\nAcid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder\nHit: 26 (4d12) type damage"
             },
             {
                 Title: "Scythe of Near Death (Recharge 20)",
-                Desc: "Melee Weapon Attack: +20 to hit, reach 15 ft., one target. " +  "\n" +
-                "If attack hits, a scythe of pure cosmic energy forms in Omega’s hands. It swings at its target, the energy from the blade forming a tornado of colorful energy swirling around the target. It spirals in closer darkening the world around the target for a brief moment as a spark of cosmic light explodes from the target. The target takes an enormous amount of damage leaving them with one hit point remaining." +  "\n" +
-                "If attack misses, cosmic light explodes around the target. If the target is a conscious being, they get the feeling if that hit them they would have been near death." +  "\n" +
-                "Whether the attack hit or missed, Omega falls prone to one knee and cannot take any actions, legendary actions, or reactions until its next turn.",
-            },
+                Desc: "Melee Weapon Attack: +20 to hit, reach 15 ft., one target. \nIf attack hits, a scythe of pure cosmic energy forms in Omega’s hands. It swings at its target, the energy from the blade forming a tornado of colorful energy swirling around the target. It spirals in closer darkening the world around the target for a brief moment as a spark of cosmic light explodes from the target. The target takes an enormous amount of damage leaving them with one hit point remaining.\nIf attack misses, cosmic light explodes around the target. If the target is a conscious being, they get the feeling if that hit them they would have been near death.\nWhether the attack hit or missed, Omega falls prone to one knee and cannot take any actions, legendary actions, or reactions until its next turn."
+            }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
                 Title: "Attack",
-                Desc: "Omega makes one attack.",
+                Desc: "Omega makes one attack."
             },
             {
                 Title: "Move",
-                Desc: "Move up to Omega’s full speed.",
+                Desc: "Move up to Omega’s full speed."
             },
             {
                 Title: "Parry",
-                Desc: "Omega can add +2 to his AC to parry an attack that would hit him.",
-            },
+                Desc: "Omega can add +2 to his AC to parry an attack that would hit him."
+            }
         ],
-        Description: "Description here"
+        LairActions: [
+            "Description here.",
+            "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of ",
+            "Description here.",
+            "Description here."
+        ],
+        RegionalEffects: [],
+        Description: "Description here",
     },
     { // Baphomet
         ID: 100002,
@@ -34542,6 +36816,7 @@ const uniqueLocal = [
                 Desc: "Each creature of Baphomet's choice within 120 feet of him and aware of him must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. These later saves have disadvantage if Baphomet is within line of sight of the creature. If a creature succeeds on any of these saves or the effect ends on it, the creature is immune to Baphomet's Frightful Presence for the next 24 hours."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -34553,16 +36828,16 @@ const uniqueLocal = [
                 Desc: "Baphomet moves up to his speed, then makes a gore attack."
             }
         ],
+        LairActions: [
+            "Baphomet seals one doorway or other entryway within the lair. The opening must be unoccupied. It is filled with solid stone for 1 minute or until Baphomet creates this effect again.",
+            "Baphomet chooses a room within the lair that is no larger in any dimension than 100 feet. Until the next initiative count 20, gravity is reversed within that room. Any creatures or objects in the room when this happens fall in the direction of the new pull of gravity, unless they have some means of remaining aloft. Baphomet can ignore the gravity reversal if he's in the room.",
+            "Baphomet casts mirage arcane, affecting a room within the lair that is no larger in any dimension than 100 feet. The effect ends on the next initiative count 20."
+        ],
         RegionalEffects: [
             "Plant life within 1 mile of the lair grows thick and forms walls of trees, hedges, and other flora in the form of small mazes.",
             "Beasts within 1 mile of the lair become frightened and disoriented, as though constantly under threat of being hunted, and might lash out or panic even when no visible threat is nearby.",
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 18 Wisdom saving throw or descend into a madness determined by the Madness of Baphomet table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Baphomet dies, these effects fade over the course of 1d10 days."
-        ],
-        LairActions: [
-            "Baphomet seals one doorway or other entryway within the lair. The opening must be unoccupied. It is filled with solid stone for 1 minute or until Baphomet creates this effect again.",
-            "Baphomet chooses a room within the lair that is no larger in any dimension than 100 feet. Until the next initiative count 20, gravity is reversed within that room. Any creatures or objects in the room when this happens fall in the direction of the new pull of gravity, unless they have some means of remaining aloft. Baphomet can ignore the gravity reversal if he's in the room.",
-            "Baphomet casts mirage arcane, affecting a room within the lair that is no larger in any dimension than 100 feet. The effect ends on the next initiative count 20."
         ],
         Description: "Baphomet, the Prince of Beasts, appears as a gigantic black-furred minotaur standing 20 feet tall, with six iron horns and infernal light burning in his red eyes. Beneath his savage appearance is a cruel and cunning intellect devoted to destroying the restraints of civilization. He wields the enormous glaive Heartcleaver, though he often casts it aside to charge his enemies, gore them with his horns, and tear them apart with his teeth. His lair is the Lyktion, a palace hidden within the plane-spanning Endless Maze of the Abyss."
     },
@@ -34630,6 +36905,7 @@ const uniqueLocal = [
                 Desc: "Demogorgon turns his magical gaze toward one creature that he can see within 120 feet of him. That target must make a DC 23 Wisdom saving throw. Unless the target is incapacitated, it can avert its eyes to avoid the gaze and to automatically succeed on the save. If the target does so, it can't see Demogorgon until the start of his next turn. If the target looks at him in the meantime, it must immediately make the save. If the target fails the save, the target suffers one of the following effects of Demogorgon's choice or at random: - Beguiling Gaze: The target is stunned until the start of Demogorgon's next turn or until Demogorgon is no longer within line of sight. - Hypnotic Gaze: The target is charmed by Demogorgon until the start of Demogorgon's next turn. Demogorgon chooses how the charmed target uses its actions, reactions, and movement. - Insanity Gaze: The target suffers the effect of the confusion spell without making a saving throw. The effect lasts until the start of Demogorgon's next turn, and Demogorgon doesn't need to concentrate on the spell."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -34641,15 +36917,15 @@ const uniqueLocal = [
                 Desc: "Demogorgon uses his Gaze action, and must choose either the Beguiling Gaze or the Insanity Gaze effect."
             }
         ],
+        LairActions: [
+            "Demogorgon creates an illusory duplicate of himself, which appears in his own space and lasts until initiative count 20 of the next round. On his turn, Demogorgon can move the illusory duplicate a distance equal to his walking speed (no action required). The first time a creature or object interacts physically with Demogorgon, there is a 50 percent chance that the illusory duplicate is being affected instead, in which case the illusion disappears.",
+            "Demogorgon casts the darkness spell four times at its lowest level, targeting different areas with the spell. Demogorgon doesn't need to concentrate on the spells, which end on initiative count 20 of the next round."
+        ],
         RegionalEffects: [
             "The area within 6 miles of the lair becomes overpopulated with lizards, poisonous snakes, and other venomous beasts.",
             "Beasts within 1 mile of the lair become violent and crazed, even creatures that are normally docile.",
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Demogorgon table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Demogorgon dies, these effects fade over the course of 1d10 days."
-        ],
-        LairActions: [
-            "Demogorgon creates an illusory duplicate of himself, which appears in his own space and lasts until initiative count 20 of the next round. On his turn, Demogorgon can move the illusory duplicate a distance equal to his walking speed (no action required). The first time a creature or object interacts physically with Demogorgon, there is a 50 percent chance that the illusory duplicate is being affected instead, in which case the illusion disappears.",
-            "Demogorgon casts the darkness spell four times at its lowest level, targeting different areas with the spell. Demogorgon doesn't need to concentrate on the spells, which end on initiative count 20 of the next round."
         ],
         Description: "Demogorgon, the Prince of Demons, is a monstrous embodiment of chaos and madness. His body combines a saurian lower form with clawed, webbed feet, suckered tentacles sprouting from the shoulders of a great apelike torso, and two hideous simian heads named Aameul and Hathradiah. Each head possesses its own madness, and their gaze can overwhelm creatures with confusion, charm, or stunning terror. Demogorgon rules from Abysm, a palace of duality rising from and extending deep beneath the waters of the Gaping Maw."
     },
@@ -34717,6 +36993,7 @@ const uniqueLocal = [
                 Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 22 (3d8 + 9) bludgeoning damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -34728,16 +37005,16 @@ const uniqueLocal = [
                 Desc: "Fraz-Urb'luu casts phantasmal killer, no concentration required."
             }
         ],
+        LairActions: [
+            "Fraz-Urb'luu causes up to five doors within the lair to become walls, and an equal number of doors to appear on walls where there previously were none.",
+            "Fraz-Urb'luu chooses one humanoid within the lair and instantly creates a simulacrum of that creature, as if created with the simulacrum spell. This simulacrum obeys Fraz-Urb'luu's commands and is destroyed on the next initiative count 20.",
+            "Fraz-Urb'luu creates a wave of anguish. Each creature he can see within the lair must succeed on a DC 23 Wisdom saving throw or take 33 (6d10) psychic damage."
+        ],
         RegionalEffects: [
             "Intelligent creatures within 1 mile of the lair frequently see hallucinations of long-dead friends and comrades that vanish after only a brief glimpse.",
             "Roads and paths within 6 miles of the lair twist and turn back on themselves, making navigation in the area exceedingly difficult.",
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Fraz-Urb'luu table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Fraz-Urb'luu dies, these effects fade over the course of 1d10 days."
-        ],
-        LairActions: [
-            "Fraz-Urb'luu causes up to five doors within the lair to become walls, and an equal number of doors to appear on walls where there previously were none.",
-            "Fraz-Urb'luu chooses one humanoid within the lair and instantly creates a simulacrum of that creature, as if created with the simulacrum spell. This simulacrum obeys Fraz-Urb'luu's commands and is destroyed on the next initiative count 20.",
-            "Fraz-Urb'luu creates a wave of anguish. Each creature he can see within the lair must succeed on a DC 23 Wisdom saving throw or take 33 (6d10) psychic damage."
         ],
         Description: "Fraz-Urb'luu, the Prince of Deception and Demon Lord of Illusions, is a master of lies who delights in manipulating mortals and demons alike. His true form resembles a great gargoyle about 12 feet tall, with a long muscular neck, smiling face, pointed ears, lank dark hair, and batlike wings. He can assume forms ranging from hideous to beautiful and often becomes so immersed in a role that he temporarily loses himself within it. His lair is the fortress-city of Zoragmelok in Hollow's Heart, where even the architecture reflects his talent for deception."
     },
@@ -34805,6 +37082,7 @@ const uniqueLocal = [
                 Desc: "Graz'zt magically teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -34824,15 +37102,15 @@ const uniqueLocal = [
                 Desc: "Graz'zt uses his Teleport action."
             }
         ],
+        LairActions: [
+            "Graz'zt casts the command spell on every creature of his choice in the lair. He needn't see each one, but he must be aware that an individual is in the lair to target that creature. He issues the same command to all the targets.",
+            "Smooth surfaces within the lair become as reflective as a polished mirror. Until a different lair action is used, creatures within the lair have disadvantage on Dexterity (Stealth) checks made to hide."
+        ],
         RegionalEffects: [
             "Flat surfaces within 1 mile of the lair that are made of stone or metal become highly reflective, as though polished to a shine. These surfaces become supernaturally mirrorlike.",
             "Wild beasts within 6 miles of the lair break into frequent conflicts and coupling, mirroring the behavior that occurs during their mating seasons.",
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Graz'zt table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Graz'zt dies, these effects fade over the course of 1d10 days."
-        ],
-        LairActions: [
-            "Graz'zt casts the command spell on every creature of his choice in the lair. He needn't see each one, but he must be aware that an individual is in the lair to target that creature. He issues the same command to all the targets.",
-            "Smooth surfaces within the lair become as reflective as a polished mirror. Until a different lair action is used, creatures within the lair have disadvantage on Dexterity (Stealth) checks made to hide."
         ],
         Description: "Graz'zt, the Dark Prince and Lord of Pleasure, stands nearly nine feet tall and possesses an unnaturally beautiful humanoid form. Six fingers adorn each hand and six toes each foot, while a subtle cruelty mars his otherwise perfect features. He can transform into whatever humanoid form best suits his desires. Graz'zt surrounds himself with luxury, beautiful servants, and decadent pleasure palaces, and wields the greatsword Angdrelve, also called Wave of Sorrow, whose blade can drip with acid at his command. His principal lair is the Argent Palace in Zelatar, within his Abyssal domain of Azzatar."
     },
@@ -34859,7 +37137,21 @@ const uniqueLocal = [
         DamageVulnerabilities: [],
         DamageResistances: ["Cold", "Fire", "Lightning"],
         DamageImmunities: ["Poison", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
-        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
+        ConditionImmunities: [
+            "Blinded",
+            "Charmed",
+            "Deafened",
+            "Exhaustion",
+            "Frightened",
+            "Grappled",
+            "Paralyzed",
+            "Petrified",
+            "Poisoned",
+            "Prone",
+            "Restrained",
+            "Stunned",
+            "Unconscious"
+        ],
         Senses: ["Truesight 120 ft.", "Passive Perception 22"],
         Languages: ["All", "Telepathy 120 ft."],
         Challenge: [23, 50000],
@@ -34908,6 +37200,7 @@ const uniqueLocal = [
                 Desc: "Juiblex spews out a corrosive slime, targeting one creature that it can see within 60 feet of it. The target must make a DC 21 Dexterity saving throw. On a failure, the target takes 55 (10d10) acid damage. Unless the target avoids taking any of this damage, any metal armor worn by the target takes a permanent -1 penalty to the AC it offers, and any metal weapon it is carrying or wearing takes a permanent -1 penalty to damage rolls. The penalty worsens each time a target is subjected to this effect. If the penalty on an object drops to -5, the object is destroyed."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -34923,15 +37216,15 @@ const uniqueLocal = [
                 Desc: "Melee Weapon Attack: +14 to hit, reach 10 ft., one creature. Hit: 21 (4d6 + 7) poison damage, and the target is slimed. Until the slime is scraped off with an action, the target is poisoned, and any creature, other than an ooze, is poisoned while within 10 feet of the target."
             }
         ],
-        RegionalEffects: [
-            "Small bodies of water, such as ponds or wells, within 1 mile of the lair turn highly acidic, corroding any object that touches them.",
-            "Surfaces within 6 miles of the lair are frequently covered by a thin film of slime, which is slick and sticks to anything that touches it.",
-            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 18 Wisdom saving throw or descend into a madness determined by the Madness of Juiblex table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours."
-        ],
         LairActions: [
             "Juiblex slimes a square area of ground it can see within the lair. The area can be up to 10 feet on a side. The slime lasts for 1 hour or until it is burned away with fire. When the slime appears, each creature in that area must succeed on a DC 21 Strength saving throw or become restrained. When a creature enters the area for the first time on a turn or ends its turn there, that creature must make the same save. If the slime is set on fire, it burns away after 1 round. Any creature that starts its turn in the burning slime takes 22 (4d10) fire damage.",
             "Juiblex slimes a square area of ground it can see within the lair. The area can be up to 10 feet on a side. The slime lasts for 1 hour or until it is burned away with fire. When the slime appears, each creature on it must succeed on a DC 21 Dexterity saving throw or fall prone and slide 10 feet in a random direction determined by a d8 roll. If the slime is set on fire, it burns away after 1 round. Any creature that starts its turn in the burning slime takes 22 (4d10) fire damage.",
             "A green slime appears on a spot on the ceiling that Juiblex chooses within the lair. The slime disintegrates after 1 hour."
+        ],
+        RegionalEffects: [
+            "Small bodies of water, such as ponds or wells, within 1 mile of the lair turn highly acidic, corroding any object that touches them.",
+            "Surfaces within 6 miles of the lair are frequently covered by a thin film of slime, which is slick and sticks to anything that touches it.",
+            "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 18 Wisdom saving throw or descend into a madness determined by the Madness of Juiblex table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours."
         ],
         Description: "Juiblex, the Faceless Lord and Oozing Hunger, is a horrifying mass of bubbling black and green slime with glaring red eyes that float and shift within its body. It can rise like a twenty-foot hill and lash out with dripping pseudopods, dragging victims into its bulk where they are obliterated. Those who willingly offer themselves to Juiblex are engulfed and transformed into vaguely humanoid, sentient oozes whose bodies become part of the demon lord. Juiblex dwells in the Slime Pits of Shedaklah, a bubbling morass of sludge, molds, and caustic oozes shared with Zuggtmoy."
     },
@@ -35003,6 +37296,7 @@ const uniqueLocal = [
                 Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) piercing damage plus 9 (2d8) poison damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -35018,16 +37312,16 @@ const uniqueLocal = [
                 Desc: "Orcus chooses a point on the ground that he can see within 100 feet of him. A cylinder of swirling necrotic energy 60 feet tall and with a 10-foot radius rises from that point and lasts until the end of Orcus's next turn. Creatures in that area have vulnerability to necrotic damage."
             }
         ],
+        LairActions: [
+            "Orcus's voice booms throughout the lair. His utterance causes one creature of his choice to be subjected to power word kill (save DC 23). Orcus needn't see the creature, but he must be aware that the individual is in the lair.",
+            "Orcus causes up to six corpses within the lair to rise as skeletons, zombies, or ghouls. These undead obey his telepathic commands, which can reach anywhere in the lair.",
+            "Orcus causes skeletal arms to rise from an area on the ground in a 20-foot square that he can see. They last until the next initiative count 20. Each creature in that area when the arms appear must succeed on a DC 23 Strength saving throw or be restrained until the arms disappear or until Orcus releases them (no action required)."
+        ],
         RegionalEffects: [
             "Dead beasts periodically animate as undead mockeries of their former selves. Skeletal and zombie versions of local wildlife are commonly seen in the area.",
             "The air becomes filled with the stench of rotting flesh, and buzzing flies grow thick within the region, even when there is no carrion to be found.",
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Orcus table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Orcus dies, these effects fade over the course of 1d10 days."
-        ],
-        LairActions: [
-            "Orcus's voice booms throughout the lair. His utterance causes one creature of his choice to be subjected to power word kill (save DC 23). Orcus needn't see the creature, but he must be aware that the individual is in the lair.",
-            "Orcus causes up to six corpses within the lair to rise as skeletons, zombies, or ghouls. These undead obey his telepathic commands, which can reach anywhere in the lair.",
-            "Orcus causes skeletal arms to rise from an area on the ground in a 20-foot square that he can see. They last until the next initiative count 20. Each creature in that area when the arms appear must succeed on a DC 23 Strength saving throw or be restrained until the arms disappear or until Orcus releases them (no action required)."
         ],
         Description: "Orcus, the Demon Prince of Undeath and Blood Lord, is a foul, corpulent creature with the lower torso of a goat and a humanoid upper body swollen with rot. Great bat wings sprout from his shoulders, while his head resembles a nearly fleshless goat skull with glowing eyes. He wields the legendary Wand of Orcus, an obsidian rod topped with a humanoid skull, and surrounds himself with undead servants. His lair is the fortress city of Naratyr on Thanatos, a cold and eerily quiet city dominated by a castle of bone, flesh, and woven hair."
     },
@@ -35095,6 +37389,7 @@ const uniqueLocal = [
                 Desc: "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 14 (1d10 + 9) piercing damage."
             }
         ],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [
             {
@@ -35110,16 +37405,16 @@ const uniqueLocal = [
                 Desc: "Yeenoghu makes a bite attack against each creature within 10 feet of him."
             }
         ],
+        LairActions: [
+            "Yeenoghu causes an iron spike, 5 feet tall and 1 inch in diameter, to burst from the ground at a point he can see within 100 feet of him. Any creature in the space where the spike emerges must make a DC 24 Dexterity saving throw. On a failed save, the creature takes 27 (6d8) piercing damage and is restrained by being impaled on the spike. A creature can use an action to remove itself or a creature it can reach from the spike, ending the restrained condition.",
+            "Each gnoll or hyena that Yeenoghu can see can use its reaction to move up to its speed.",
+            "Until the next initiative count 20, all gnolls and hyenas within the lair are enraged, causing them to have advantage on melee weapon attack rolls and causing attack rolls to have advantage against them."
+        ],
         RegionalEffects: [
             "Within 1 mile of the lair, large iron spikes grow out of the ground and stone surfaces. Yeenoghu impales the bodies of the slain on these spikes.",
             "Predatory beasts within 6 miles of the lair become unusually savage, killing far more than what they need for food. Carcasses of prey are left to rot in an unnatural display of wasteful slaughter.",
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 17 Wisdom saving throw or descend into a madness determined by the Madness of Yeenoghu table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Yeenoghu dies, these effects fade over the course of 1d10 days."
-        ],
-        LairActions: [
-            "Yeenoghu causes an iron spike, 5 feet tall and 1 inch in diameter, to burst from the ground at a point he can see within 100 feet of him. Any creature in the space where the spike emerges must make a DC 24 Dexterity saving throw. On a failed save, the creature takes 27 (6d8) piercing damage and is restrained by being impaled on the spike. A creature can use an action to remove itself or a creature it can reach from the spike, ending the restrained condition.",
-            "Each gnoll or hyena that Yeenoghu can see can use its reaction to move up to its speed.",
-            "Until the next initiative count 20, all gnolls and hyenas within the lair are enraged, causing them to have advantage on melee weapon attack rolls and causing attack rolls to have advantage against them."
         ],
         Description: "Yeenoghu, the Beast of Butchery and Gnoll Lord, appears as a fourteen-foot-tall, battle-scarred gnoll covered in matted fur and taut leathery hide. His face resembles a grinning predator's skull, and patchwork armor made from the shields and breastplates of fallen foes is lashed to his body with chains and decorated with flayed skins. He wields the triple-headed flail Butcher, though he is equally willing to tear prey apart with his claws and teeth. His lair, the Death Dells, is a barren hunting ground of hills and ravines populated by gnolls, hyenas, and ghouls."
     },
@@ -35187,6 +37482,7 @@ const uniqueLocal = [
                 Desc: "Zuggtmoy releases spores that burst out in a cloud that fills a 20-foot-radius sphere centered on her, and it lingers for 1 minute. Humanoids and beasts in the cloud when it appears, or that enter it later, must make a DC 19 Wisdom saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the influence of Zuggtmoy for 24 hours. While infected in this way, the creature is charmed by her and can't be reinfected by these spores."
             }
         ],
+        BonusActions: [],
         Reactions: [
             {
                 Title: "Protective Thrall",
@@ -35203,31 +37499,31 @@ const uniqueLocal = [
                 Desc: "One creature charmed by Zuggtmoy that she can see must use its reaction to move up to its speed as she directs or to make a weapon attack against a target that she designates."
             }
         ],
+        LairActions: [
+            "Zuggtmoy causes four gas spores or violet fungi to appear in unoccupied spaces that she chooses within the lair. They vanish after 1 hour.",
+            "Up to four plant creatures that are friendly to Zuggtmoy and that Zuggtmoy can see can use their reactions to move up to their speed and make one weapon attack.",
+            "Zuggtmoy uses either her Infestation Spores or her Mind Control Spores, centered on a mushroom or other fungus within her lair, instead of on herself."
+        ],
         RegionalEffects: [
             "Molds and fungi grow on surfaces within 6 miles of the lair, even where they would normally find no purchase.",
             "Plant life within 1 mile of the lair becomes infested with parasitic fungi, slowly mutating as it is overwhelmed.",
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 17 Wisdom saving throw or descend into a madness determined by the Madness of Zuggtmoy table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Zuggtmoy dies, these effects fade over the course of 1d10 days."
         ],
-        LairActions: [
-            "Zuggtmoy causes four gas spores or violet fungi to appear in unoccupied spaces that she chooses within the lair. They vanish after 1 hour.",
-            "Up to four plant creatures that are friendly to Zuggtmoy and that Zuggtmoy can see can use their reactions to move up to their speed and make one weapon attack.",
-            "Zuggtmoy uses either her Infestation Spores or her Mind Control Spores, centered on a mushroom or other fungus within her lair, instead of on herself."
-        ],
         Description: "Zuggtmoy, the Demon Queen of Fungi and Lady of Rot and Decay, is an alien fungal entity that seeks to infect living creatures with spores and transform them into extensions of her will. She can mold her fungoid body into an approximation of humanoid form, including the skeletal-thin figure depicted in ancient art, draped in mycelia and lichen. Her cultists are often unknowingly infected, gradually becoming creatures in which flesh and fungus merge. Zuggtmoy's principal lair is a palace on Shedaklah made from enormous pale-yellow and rancid-brown mushrooms, surrounded by acidic puffballs and poisonous vapors."
-    },
+    }
 ];
 
 const playersLocal = [
-    { // Adam
+    { // CharacterName (Adam)
         ID: 1000001,
         ProfileType: "Player",
         Name: "CharacterName (Adam)",
         Type: "Medium humanoid(), alignment",
         Source: "Player's Handbook",
+        ArmorClass: [10, "natural armor"],
         HitPoints: 1,
         HitPointsRoll: "",
-        ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -35244,21 +37540,27 @@ const playersLocal = [
         Senses: [],
         Languages: [],
         Challenge: [1, 200],
+        ExtraRewards: "",
         Traits: [],
         Actions: [],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        Description: "Description here"
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here",
+        Size: "Medium",
+        TypeCategory: "Humanoid"
     },
-    { // Vincent
+    { // CharacterName (Vincent)
         ID: 1000002,
         ProfileType: "Player",
         Name: "CharacterName (Vincent)",
         Type: "Medium humanoid(), alignment",
         Source: "Player's Handbook",
+        ArmorClass: [10, "natural armor"],
         HitPoints: 1,
         HitPointsRoll: "",
-        ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -35275,21 +37577,27 @@ const playersLocal = [
         Senses: [],
         Languages: [],
         Challenge: [1, 200],
+        ExtraRewards: "",
         Traits: [],
         Actions: [],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        Description: "Description here"
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here",
+        Size: "Medium",
+        TypeCategory: "Humanoid"
     },
-    { // Austin Yingling
+    { // CharacterName (Austin Yingling)
         ID: 1000003,
         ProfileType: "Player",
         Name: "CharacterName (Austin Yingling)",
         Type: "Medium humanoid(), alignment",
         Source: "Player's Handbook",
+        ArmorClass: [10, "natural armor"],
         HitPoints: 1,
         HitPointsRoll: "",
-        ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -35306,21 +37614,27 @@ const playersLocal = [
         Senses: [],
         Languages: [],
         Challenge: [1, 200],
+        ExtraRewards: "",
         Traits: [],
         Actions: [],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        Description: "Description here"
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here",
+        Size: "Medium",
+        TypeCategory: "Humanoid"
     },
-    { // Austin Dwiggins
+    { // CharacterName (Austin Dwiggins)
         ID: 1000004,
         ProfileType: "Player",
         Name: "CharacterName (Austin Dwiggins)",
         Type: "Medium humanoid(), alignment",
         Source: "Player's Handbook",
+        ArmorClass: [10, "natural armor"],
         HitPoints: 1,
         HitPointsRoll: "",
-        ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -35337,21 +37651,27 @@ const playersLocal = [
         Senses: [],
         Languages: [],
         Challenge: [1, 200],
+        ExtraRewards: "",
         Traits: [],
         Actions: [],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        Description: "Description here"
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here",
+        Size: "Medium",
+        TypeCategory: "Humanoid"
     },
-    { // Solomon
+    { // Freman (Solomon)
         ID: 1000005,
         ProfileType: "Player",
         Name: "Freman (Solomon)",
         Type: "Medium humanoid(), alignment",
         Source: "Player's Handbook",
+        ArmorClass: [10, "natural armor"],
         HitPoints: 1,
         HitPointsRoll: "",
-        ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -35368,21 +37688,27 @@ const playersLocal = [
         Senses: [],
         Languages: [],
         Challenge: [1, 200],
+        ExtraRewards: "",
         Traits: [],
         Actions: [],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        Description: "Description here"
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here",
+        Size: "Medium",
+        TypeCategory: "Humanoid"
     },
-    { // Kevin
+    { // John (Kevin)
         ID: 1000006,
         ProfileType: "Player",
         Name: "John (Kevin)",
         Type: "Medium humanoid(), alignment",
         Source: "Player's Handbook",
+        ArmorClass: [10, "natural armor"],
         HitPoints: 1,
         HitPointsRoll: "",
-        ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -35399,21 +37725,27 @@ const playersLocal = [
         Senses: [],
         Languages: [],
         Challenge: [1, 200],
+        ExtraRewards: "",
         Traits: [],
         Actions: [],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        Description: "Description here"
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here",
+        Size: "Medium",
+        TypeCategory: "Humanoid"
     },
-    { // Jonah
+    { // Rooking (Jonah)
         ID: 1000007,
         ProfileType: "Player",
         Name: "Rooking (Jonah)",
         Type: "Medium humanoid(), alignment",
         Source: "Player's Handbook",
+        ArmorClass: [10, "natural armor"],
         HitPoints: 1,
         HitPointsRoll: "",
-        ArmorClass: [10, "natural armor"],
         Speed: ["30 ft."],
         Strength: 10,
         Dexterity: 10,
@@ -35430,12 +37762,18 @@ const playersLocal = [
         Senses: [],
         Languages: [],
         Challenge: [1, 200],
+        ExtraRewards: "",
         Traits: [],
         Actions: [],
+        BonusActions: [],
         Reactions: [],
         LegendaryActions: [],
-        Description: "Description here"
-    },
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Description here",
+        Size: "Medium",
+        TypeCategory: "Humanoid"
+    }
 ];
 
 // NEW WRAPPER
