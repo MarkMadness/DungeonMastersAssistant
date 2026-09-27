@@ -960,6 +960,17 @@ function populateProfileDetails(creatureName, creatureType) {
         } else {
             $content.find("#profile-actions").hide();
         }
+
+        if(Array.isArray($creature.BonusActions) && $creature.BonusActions.length > 0) {
+            $content.find("#profile-bonusactions").show();
+            $content.find("#profile-bonusactions").html("<strong>Bonus Actions</strong><br>");
+            for(let i = 0; i < $creature.BonusActions.length; i++) {
+                $content.find("#profile-bonusactions")
+                .append("<p class='text-md'><strong>" + $creature.BonusActions[i].Title + "</strong></p><p class='text-md'> " + $creature.BonusActions[i].Desc + "<p/><br>");
+            }
+        } else {
+            $content.find("#profile-bonusactions").hide();
+        }
         
         if($creature.Reactions.length > 0) {
             $content.find("#profile-reactions").show();
