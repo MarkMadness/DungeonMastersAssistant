@@ -37555,7 +37555,7 @@ const monstersLocal = [
         TypeCategory: "Giant",
         Size: "Large",
         Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: 14,
+        ArmorClass: [14, "ring mail"],
         HitPoints: 59,
         HitPointsRoll: "7d10 + 21",
         Speed: ["40 ft."],
@@ -37606,7 +37606,7 @@ const monstersLocal = [
         TypeCategory: "Giant",
         Size: "Large",
         Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: 13,
+        ArmorClass: [13, "hide armor"],
         HitPoints: 59,
         HitPointsRoll: "7d10 + 21",
         Speed: ["40 ft."],
@@ -37732,10 +37732,6 @@ const monstersLocal = [
             {
                 Title: "Mace",
                 Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
-            },
-            {
-                Title: "Javelin",
-                Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
             }
         ],
         BonusActions: [],
@@ -37753,7 +37749,7 @@ const monstersLocal = [
         TypeCategory: "Construct",
         Size: "Large",
         Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: 19,
+        ArmorClass: [19, "natural armor"],
         HitPoints: 210,
         HitPointsRoll: "20d10 + 100",
         Speed: ["40 ft.", "climb 40 ft."],
@@ -37770,7 +37766,7 @@ const monstersLocal = [
         DamageImmunities: ["Necrotic", "Poison", "Psychic", "Bludgeoning, Piercing, And Slashing From Nonmagical Attacks That Aren't Adamantine"],
         ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Poisoned"],
         Senses: ["blindsight 30 ft.", "darkvision 60 ft.", "passive Perception 15"],
-        Languages: ["Understands Abyssal, Elvish, And Undercommon But Can't Speak"],
+        Languages: ["Understands Abyssal, Elvish, And Undercommon But can't Speak"],
         Challenge: [14, 11500],
         ExtraRewards: "",
         Traits: [
@@ -37780,7 +37776,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting",
-                Desc: "The retriever's innate spellcasting ability is Wisdom (spell save DC 13). The retriever can innately cast the following spells, requiring no material components: 3/day each: plane shift (only self and up to one incapacitated creature, which is considered willing for the spell), web."
+                Desc: "The retriever's innate spellcasting ability is Wisdom (spell save DC 13). The retriever can innately cast the following spells, requiring no material components: <br><br>3/day each: plane shift (only self and up to one incapacitated creature, which is considered willing for the spell), web."
             }
         ],
         Actions: [
@@ -37798,7 +37794,7 @@ const monstersLocal = [
             },
             {
                 Title: "Paralyzing Beam (Recharge 5-6)",
-                Desc: "The retriever targets one creature it can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the paralyzed creature is Medium or smaller, the retriever can pick it up as part of the retriever's move and walk or climb with it at full speed."
+                Desc: "The retriever targets one creature it can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. <br>If the paralyzed creature is Medium or smaller, the retriever can pick it up as part of the retriever's move and walk or climb with it at full speed."
             }
         ],
         BonusActions: [],
@@ -37906,11 +37902,11 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting",
-                Desc: "The gloom weaver's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components: At will: arcane eye, mage armor, speak with dead; 1/day each: arcane gate, bane, compulsion, confusion, true seeing."
+                Desc: "The gloom weaver's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components: <br><br>At will: arcane eye, mage armor, speak with dead; <br>1/day each: arcane gate, bane, compulsion, confusion, true seeing."
             },
             {
                 Title: "Spellcasting",
-                Desc: "The gloom weaver is a 12th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): chill touch (3d8 damage), eldritch blast (3 beams, +4 bonus to each damage roll), minor illusion, prestidigitation; 1st-5th level (3 5th-level slots): armor of Agathys, blight, darkness, dream, invisibility, fear, hypnotic pattern, major image, contact other plane, vampiric touch, witch bolt."
+                Desc: "The gloom weaver is a 12th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: <br><br>Cantrips (at will): chill touch (3d8 damage), eldritch blast (3 beams, +4 bonus to each damage roll), minor illusion, prestidigitation; <br>1st-5th level (3 5th-level slots): armor of Agathys, blight, darkness, dream, invisibility, fear, hypnotic pattern, major image, contact other plane, vampiric touch, witch bolt."
             }
         ],
         Actions: [
@@ -37976,7 +37972,7 @@ const monstersLocal = [
             },
             {
                 Title: "Spiked Chain",
-                Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage, and the target must succeed on a DC 14 Dexterity saving throw or suffer one additional effect of the shadow dancer's choice: The target is grappled (escape DC 14) if it is a Medium or smaller creature. Until the grapple ends, the target is restrained, and the shadow dancer can't grapple another target; the target is knocked prone; or the target takes 22 (4d10) necrotic damage."
+                Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage, and the target must succeed on a DC 14 Dexterity saving throw or suffer one additional effect of the shadow dancer's choice: <br>- The target is grappled (escape DC 14) if it is a Medium or smaller creature. Until the grapple ends, the target is restrained, and the shadow dancer can't grapple another target; <br>- the target is knocked prone<br>- the target takes 22 (4d10) necrotic damage."
             }
         ],
         BonusActions: [
@@ -38026,7 +38022,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting",
-                Desc: "The soul monger's innate spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components: At will: chill touch (3d8 damage), poison spray (3d12 damage); 1/day each: bestow curse, chain lightning, finger of death, gaseous form, phantasmal killer, seeming."
+                Desc: "The soul monger's innate spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components: <br><br>At will: chill touch (3d8 damage), poison spray (3d12 damage); <br>1/day each: bestow curse, chain lightning, finger of death, gaseous form, phantasmal killer, seeming."
             },
             {
                 Title: "Magic Resistance",
@@ -38093,7 +38089,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Fallible Invisibility",
-                Desc: "The skulk is invisible. This invisibility can be circumvented by three things: The skulk appears as a drab, smooth-skinned humanoid if its reflection can be seen in a mirror or on another surface; the skulk appears as a dim, translucent form in the light of a candle made of fat rendered from a corpse whose identity is unknown; humanoid children, aged 10 and under, can see through this invisibility."
+                Desc: "The skulk is invisible. This invisibility can be circumvented by three things: <br>- The skulk appears as a drab, smooth-skinned humanoid if its reflection can be seen in a mirror or on another surface.<br>- The skulk appears as a dim, translucent form in the light of a candle made of fat rendered from a corpse whose identity is unknown.<br>- Humanoid children, aged 10 and under, can see through this invisibility."
             },
             {
                 Title: "Trackless",
@@ -38138,7 +38134,7 @@ const monstersLocal = [
         DamageImmunities: ["Poison"],
         ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Poisoned", "Stunned", "Unconscious"],
         Senses: ["darkvision 60 ft.", "passive Perception 22"],
-        Languages: ["All The Languages It Knew In Life"],
+        Languages: ["All the languages it knew in life"],
         Challenge: [15, 13000],
         ExtraRewards: "",
         Traits: [
@@ -38156,7 +38152,7 @@ const monstersLocal = [
             },
             {
                 Title: "Spellcasting",
-                Desc: "The skull lord is a 13th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The skull lord knows the following sorcerer spells: Cantrips (at will): chill touch, fire bolt, mage hand, poison spray, ray of frost, shocking grasp; 1st level (4 slots): magic missile, expeditious retreat, thunderwave; 2nd level (3 slots): mirror image, scorching ray; 3rd level (3 slots): fear, haste; 4th level (3 slots): dimension door, ice storm; 5th level (2 slots): cloudkill, cone of cold; 6th level (1 slot): eyebite; 7th level (1 slot): finger of death."
+                Desc: "The skull lord is a 13th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The skull lord knows the following sorcerer spells: <br><br>Cantrips (at will): chill touch, fire bolt, mage hand, poison spray, ray of frost, shocking grasp; <br>1st level (4 slots): magic missile, expeditious retreat, thunderwave; <br>2nd level (3 slots): mirror image, scorching ray; <br>3rd level (3 slots): fear, haste; <br>4th level (3 slots): dimension door, ice storm; <br>5th level (2 slots): cloudkill, cone of cold; <br>6th level (1 slot): eyebite; <br>7th level (1 slot): finger of death."
             }
         ],
         Actions: [
@@ -38193,6 +38189,1778 @@ const monstersLocal = [
         LairActions: [],
         Description: "Skull lords are undead rulers created from three hateful individuals fused together. They claim territories in the Shadowfell and command hordes of undead, but the three minds within each skull lord constantly plot against one another. They are heavily armored undead wielding bone staffs and commanding the dead through sorcery."
     },
+    { // The Angry
+        ID: 652,
+        ProfileType: "Monster",
+        Name: "The Angry",
+        Type: "Medium monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 18,
+        HitPoints: 255,
+        HitPointsRoll: "30d8 + 120",
+        Speed: ["30 ft."],
+        Strength: 17,
+        Dexterity: 10,
+        Constitution: 19,
+        Intelligence: 8,
+        Wisdom: 13,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: ["Perception +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing while in dim light or darkness"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 16"],
+        Languages: ["Common"],
+        Challenge: [13, 10000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Two Heads",
+                Desc: "The Angry has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious."
+            },
+            {
+                Title: "Rising Anger",
+                Desc: "If another creature deals damage to the Angry, the Angry's attack rolls have advantage until the end of its next turn, and the first time it hits with a hook attack on its next turn, the attack's target takes an extra 19 (3d12) psychic damage. <br>On its turn, the Angry has disadvantage on attack rolls if no other creature has dealt damage to it since the end of its last turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Angry makes two hook attacks."
+            },
+            {
+                Title: "Hook",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d12 + 3) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "The Angry is a two-headed manifestation of rage and violence. Its two heads bicker with each other until they find something else on which to vent their wrath. The creature grows more dangerous when its foes fight back, feeding on the violence directed against it."
+    },
+    { // The Hungry
+        ID: 653,
+        ProfileType: "Monster",
+        Name: "The Hungry",
+        Type: "Medium monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 17,
+        HitPoints: 225,
+        HitPointsRoll: "30d8 + 90",
+        Speed: ["30 ft."],
+        Strength: 19,
+        Dexterity: 10,
+        Constitution: 17,
+        Intelligence: 6,
+        Wisdom: 11,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing while in dim light or darkness"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Common"],
+        Challenge: [11, 7200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Life Hunger",
+                Desc: "If a creature the Hungry can see regains hit points, the Hungry gains two benefits until the end of its next turn: it has advantage on attack rolls, and its bite deals an extra 22 (4d10) necrotic damage on a hit."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Hungry makes two attacks: one with its bite and one with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 13 (3d8) necrotic damage."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) slashing damage. If the target is Medium or smaller, it is grappled (escape DC 16) and restrained until the grapple ends. While grappling a creature, the Hungry can't attack with its claws."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "The Hungry is a horrid beast with grasping claws and yawning mouths. It exists to sate an endless appetite, consuming life and energy wherever it finds them and drinking in the screams of its victims."
+    },
+    { // The Lonely
+        ID: 654,
+        ProfileType: "Monster",
+        Name: "The Lonely",
+        Type: "Medium monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 16,
+        HitPoints: 112,
+        HitPointsRoll: "15d8 + 45",
+        Speed: ["30 ft."],
+        Strength: 16,
+        Dexterity: 12,
+        Constitution: 17,
+        Intelligence: 6,
+        Wisdom: 11,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing while in dim light or darkness"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Common"],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Psychic Leech",
+                Desc: "At the start of each of the Lonely's turns, each creature within 5 feet of it must succeed on a DC 15 Wisdom saving throw or take 10 (3d6) psychic damage."
+            },
+            {
+                Title: "Thrives on Company",
+                Desc: "The Lonely has advantage on attack rolls while it is within 30 feet of at least two other creatures. It otherwise has disadvantage on attack rolls."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Lonely makes one harpoon arm attack and uses Sorrowful Embrace."
+            },
+            {
+                Title: "Harpoon Arm",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 60 ft., one target. Hit: 21 (4d8 + 3) piercing damage, and the target is grappled (escape DC 15) if it is a Large or smaller creature. The Lonely has two harpoon arms and can grapple up to two creatures at once."
+            },
+            {
+                Title: "Sorrowful Embrace",
+                Desc: "Each creature grappled by the Lonely must make a DC 15 Wisdom saving throw. A creature takes 18 (4d8) psychic damage on a failed save, or half as much damage on a successful one. In either case, the Lonely pulls each creature grappled by it up to 30 feet straight toward it."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "The Lonely is a manifestation of the sorrow of isolation. Its long, harpoon-like arms allow it to seize creatures from a great distance and drag them toward its grasp. Despite its nature, the creature becomes more effective when surrounded by others."
+    },
+    { // The Lost
+        ID: 655,
+        ProfileType: "Monster",
+        Name: "The Lost",
+        Type: "Medium monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 15,
+        HitPoints: 78,
+        HitPointsRoll: "12d8 + 24",
+        Speed: ["30 ft."],
+        Strength: 17,
+        Dexterity: 12,
+        Constitution: 15,
+        Intelligence: 6,
+        Wisdom: 7,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: ["Athletics +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing while in dim light or darkness"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 8"],
+        Languages: ["Common"],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Lost makes two arm spike attacks."
+            },
+            {
+                Title: "Arm Spike",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) piercing damage."
+            },
+            {
+                Title: "Embrace",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 25 (4d10 + 3) piercing damage, and the target is grappled (escape DC 14) if it is a Medium or smaller creature. Until the grapple ends, the target is frightened, and it takes 27 (6d8) psychic damage at the end of each of its turns. The Lost can embrace only one creature at a time."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Tightening Embrace",
+                Desc: "If the Lost takes damage while it has a creature grappled, that creature takes 18 (4d8) psychic damage."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "The Lost is a manifestation of despair and disorientation. Its body is built around grasping limbs and cruel spikes, allowing it to seize a victim and hold that creature in a terrifying embrace."
+    },
+    { // The Wretched
+        ID: 656,
+        ProfileType: "Monster",
+        Name: "The Wretched",
+        Type: "Small monstrosity, neutral evil",
+        TypeCategory: "Monstrosity",
+        Size: "Small",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 15,
+        HitPoints: 10,
+        HitPointsRoll: "4d6 - 4",
+        Speed: ["40 ft."],
+        Strength: 7,
+        Dexterity: 12,
+        Constitution: 9,
+        Intelligence: 5,
+        Wisdom: 6,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing while in dim light or darkness"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 8"],
+        Languages: [],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Wretched Pack Tactics",
+                Desc: "The Wretched has advantage on an attack roll against a creature if at least one of the Wretched's allies is within 5 feet of the creature and the ally isn't incapacitated. The Wretched otherwise has disadvantage on attack rolls."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) piercing damage, and the Wretched attaches to the target. While attached, the Wretched can't attack, and at the start of each of the Wretched's turns, the target takes 6 (1d10 + 1) necrotic damage. <br>The attached Wretched moves with the target whenever the target moves, requiring none of the Wretched's movement. The Wretched can detach itself by spending 5 feet of its movement on its turn. A creature, including the target, can use its action to detach a Wretched."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "The Wretched are horrid little creatures that gather in large packs throughout the Shadowfell. They subsist on life force, swarming over prey and sinking their fangs into victims to drink their life energy and fear."
+    },
+    { // Star Spawn Grue
+        ID: 657,
+        ProfileType: "Monster",
+        Name: "Star Spawn Grue",
+        Type: "Small aberration, neutral evil",
+        TypeCategory: "Aberration",
+        Size: "Small",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 11,
+        HitPoints: 17,
+        HitPointsRoll: "5d6",
+        Speed: ["30 ft."],
+        Strength: 6,
+        Dexterity: 13,
+        Constitution: 10,
+        Intelligence: 9,
+        Wisdom: 11,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Psychic"],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Deep Speech"],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Aura of Madness",
+                Desc: "Creatures within 20 feet of the grue that aren't aberrations have disadvantage on saving throws, as well as on attack rolls against creatures other than a star spawn grue."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Confounding Bite",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) piercing damage, and the target must succeed on a DC 10 Wisdom saving throw or attack rolls against it have advantage until the start of the grue's next turn."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Star spawn grues are fanged, lipless creatures with pallid skin, bristles, spines, and long arms and legs. Their constant chittering and shrieking produces discordant psychic energy that disrupts thought patterns in nearby creatures."
+    },
+    { // Star Spawn Hulk
+        ID: 658,
+        ProfileType: "Monster",
+        Name: "Star Spawn Hulk",
+        Type: "Large aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 16,
+        HitPoints: 136,
+        HitPointsRoll: "13d10 + 65",
+        Speed: ["30 ft."],
+        Strength: 20,
+        Dexterity: 8,
+        Constitution: 21,
+        Intelligence: 7,
+        Wisdom: 12,
+        Charisma: 9,
+        SavingThrows: ["Dex +3", "Wis +5"],
+        Skills: ["Perception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning", "Piercing", "Slashing from nonmagical attacks"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Frightened"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 15"],
+        Languages: ["Deep Speech"],
+        Challenge: [10, 5900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Psychic Mirror",
+                Desc: "If the hulk takes psychic damage, each creature within 10 feet of the hulk takes that damage instead; the hulk takes none of the damage. In addition, the hulk's thoughts and location can't be discerned by magic."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The hulk makes two slam attacks. If both attacks hit the same target, the target also takes 9 (2d8) psychic damage and must succeed on a DC 17 Constitution saving throw or be stunned until the end of the target's next turn."
+            },
+            {
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+            },
+            {
+                Title: "Reaping Arms (Recharge 5-6)",
+                Desc: "The hulk makes a separate slam attack against each creature within 10 feet of it. Each creature that is hit must also succeed on a DC 17 Dexterity saving throw or be knocked prone."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "The star spawn hulk is the largest of the known star spawn. It resembles an ogre in stature, but its glistening translucent skin reveals a heavily muscled form devoid of an ogre's fat. Pale, seemingly lidless eyes glare from a face distorted by too many teeth and too little nose. Hulks are often encountered near a commanding star spawn seer."
+    },
+    { // Star Spawn Larva Mage
+        ID: 659,
+        ProfileType: "Monster",
+        Name: "Star Spawn Larva Mage",
+        Type: "Medium aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 16,
+        HitPoints: 168,
+        HitPointsRoll: "16d8 + 96",
+        Speed: ["30 ft."],
+        Strength: 17,
+        Dexterity: 12,
+        Constitution: 23,
+        Intelligence: 18,
+        Wisdom: 12,
+        Charisma: 16,
+        SavingThrows: ["Dex +6", "Wis +6", "Cha +8"],
+        Skills: ["Perception +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Psychic"],
+        ConditionImmunities: ["Charmed", "Frightened", "Paralyzed", "Petrified", "Poisoned", "Restrained"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 16"],
+        Languages: ["Deep Speech"],
+        Challenge: [16, 15000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The larva mage's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components: <br><br>At will: eldritch blast (3 beams, +3 bonus to each damage roll), minor illusion; <br>3/day: dominate monster; <br>1/day: circle of death."
+            },
+            {
+                Title: "Return to Worms",
+                Desc: "When the larva mage is reduced to 0 hit points, it breaks apart into a swarm of insects in the same space. Unless the swarm is destroyed, the larva mage reforms from it 24 hours later."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, and the target must succeed on a DC 19 Constitution saving throw or be poisoned until the end of its next turn."
+            },
+            {
+                Title: "Plague of Worms (Recharge 6)",
+                Desc: "Each creature other than a star spawn within 10 feet of the larva mage must succeed on a DC 19 Dexterity saving throw or take 22 (5d8) necrotic damage and be blinded and restrained by masses of swarming worms. The affected creature takes 22 (5d8) necrotic damage at the start of each of the larva mage's turns. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Feed on Weakness",
+                Desc: "When a creature within 20 feet of the larva mage fails a saving throw, the larva mage gains 10 temporary hit points."
+            }
+        ],
+        LegendaryActions: [
+            {
+                Title: "Cantrip (Costs 2 Actions)",
+                Desc: "The larva mage casts one cantrip."
+            },
+            {
+                Title: "Slam (Costs 2 Actions)",
+                Desc: "The larva mage makes one slam attack."
+            },
+            {
+                Title: "Feed (Costs 3 Actions)",
+                Desc: "Each creature restrained by the larva mage's Plague of Worms takes 13 (3d8) necrotic damage, and the larva mage gains 6 temporary hit points."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A larva mage is a nightmarish fusion of a mortal body and otherworldly substance. It is created when a powerful cultist makes contact with a comet-borne emissary of an Elder Evil and is transformed into something wholly alien. None of the original cultist's personality survives the transformation."
+    },
+    { // Star Spawn Mangler
+        ID: 660,
+        ProfileType: "Monster",
+        Name: "Star Spawn Mangler",
+        Type: "Medium aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 14,
+        HitPoints: 71,
+        HitPointsRoll: "13d8 + 13",
+        Speed: ["40 ft.", "climb 40 ft."],
+        Strength: 8,
+        Dexterity: 18,
+        Constitution: 12,
+        Intelligence: 11,
+        Wisdom: 12,
+        Charisma: 7,
+        SavingThrows: ["Dex +7", "Con +4"],
+        Skills: ["Stealth +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold"],
+        DamageImmunities: ["Psychic"],
+        ConditionImmunities: ["Charmed", "Frightened", "Prone"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["Deep Speech"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Ambush",
+                Desc: "On the first round of each combat, the mangler has advantage on attack rolls against a creature that hasn't taken a turn yet."
+            },
+            {
+                Title: "Shadow Stealth",
+                Desc: "While in dim light or darkness, the mangler can take the Hide action as a bonus action."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The mangler makes two claw attacks."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage. If the attack roll has advantage, the target also takes 7 (2d6) psychic damage."
+            },
+            {
+                Title: "Flurry of Claws (Recharge 4-6)",
+                Desc: "The mangler makes six claw attacks against one target. Either before or after these attacks, it can move up to its speed as a bonus action without provoking opportunity attacks."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "The mangler is a low-slung, creeping horror with multiple gangly arms. It usually has six arms, though individuals can have anywhere from four to eight. Manglers creep along ground and walls, hiding in shadows and serving cultists as guards and assassins."
+    },
+    { // Star Spawn Seer
+        ID: 661,
+        ProfileType: "Monster",
+        Name: "Star Spawn Seer",
+        Type: "Medium aberration, neutral evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [17, "natural armor"],
+        HitPoints: 153,
+        HitPointsRoll: "18d8 + 72",
+        Speed: ["30 ft."],
+        Strength: 14,
+        Dexterity: 12,
+        Constitution: 18,
+        Intelligence: 22,
+        Wisdom: 19,
+        Charisma: 16,
+        SavingThrows: ["Dex +6", "Int +11", "Wis +9", "Cha +8"],
+        Skills: ["Perception +9"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Psychic"],
+        ConditionImmunities: ["Charmed", "Frightened"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 19"],
+        Languages: ["Common", "Deep Speech", "Undercommon"],
+        Challenge: [13, 10000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Out-of-Phase Movement",
+                Desc: "The seer can move through other creatures and objects as if they were difficult terrain. Each creature it moves through takes 5 (1d10) psychic damage; no creature can take this damage more than once per turn. The seer takes 5 (1d10) force damage if it ends its turn inside an object."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The seer makes two comet staff attacks or uses Psychic Orb twice."
+            },
+            {
+                Title: "Comet Staff",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 9 (1d6 + 6) bludgeoning damage, or 10 (1d8 + 6) bludgeoning damage if used with two hands, plus 18 (4d8) psychic damage, and the target must succeed on a DC 19 Constitution saving throw or be incapacitated until the end of its next turn."
+            },
+            {
+                Title: "Psychic Orb",
+                Desc: "Ranged Spell Attack: +11 to hit, range 120 feet, one target. Hit: 27 (5d10) psychic damage."
+            },
+            {
+                Title: "Collapse Distance (Recharge 6)",
+                Desc: "The seer warps space around a creature it can see within 30 feet of it. That creature must make a DC 19 Wisdom saving throw. On a failed save, the target, along with any equipment it is wearing or carrying, is magically teleported up to 60 feet to an unoccupied space the seer can see, and all other creatures within 10 feet of the target's original space each takes 39 (6d12) psychic damage. On a successful save, the target takes 19 (3d12) psychic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Bend Space",
+                Desc: "When the seer would be hit by an attack, it teleports, exchanging positions with another star spawn it can see within 60 feet of it. The other star spawn is hit by the attack instead."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A star spawn seer is usually the leader of a cult devoted to one or more Elder Evils. Its former mortal identity largely vanishes beneath corpulent, tumorous skin. Its hands become bulky, flipper-like appendages capable of wielding strange staffs formed from flesh, bone, and star stuff. Seers are often accompanied by star spawn hulks and seek to bridge the Material Plane with the prison of an Elder Evil."
+    },
+    { // Female Steeder
+        ID: 662,
+        ProfileType: "Monster",
+        Name: "Female Steeder",
+        Type: "Large monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 14,
+        HitPoints: 30,
+        HitPointsRoll: "4d10 + 8",
+        Speed: ["30 ft.", "climb 30 ft."],
+        Strength: 15,
+        Dexterity: 16,
+        Constitution: 14,
+        Intelligence: 2,
+        Wisdom: 10,
+        Charisma: 3,
+        SavingThrows: [],
+        Skills: ["Stealth +7", "Perception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 14"],
+        Languages: [],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spider Climb",
+                Desc: "The steeder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            },
+            {
+                Title: "Extraordinary Leap",
+                Desc: "The distance of the steeder's long jumps is tripled; every foot of its walking speed that it spends on the jump allows it to move 3 feet."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 9 (2d8) poison damage."
+            },
+            {
+                Title: "Sticky Leg",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one Medium or smaller creature. Hit: The target is stuck to the steeder's leg and grappled until it escapes (escape DC 12). The steeder can have only one creature grappled at a time."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Female steeders are giant hunting spiders of the Underdark. Females grow larger and stronger than males and serve as battle steeds among the duergar. Their legs excrete a viscous substance that lets them climb walls and ceilings and grapple prey."
+    },
+    { // Male Steeder
+        ID: 663,
+        ProfileType: "Monster",
+        Name: "Male Steeder",
+        Type: "Medium monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 12,
+        HitPoints: 13,
+        HitPointsRoll: "2d8 + 4",
+        Speed: ["30 ft.", "climb 30 ft."],
+        Strength: 15,
+        Dexterity: 12,
+        Constitution: 14,
+        Intelligence: 2,
+        Wisdom: 10,
+        Charisma: 3,
+        SavingThrows: [],
+        Skills: ["Stealth +5", "Perception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 14"],
+        Languages: [],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spider Climb",
+                Desc: "The steeder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            },
+            {
+                Title: "Extraordinary Leap",
+                Desc: "The distance of the steeder's long jumps is tripled; every foot of its walking speed that it spends on the jump allows it to jump 3 feet."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage plus 4 (1d8) poison damage."
+            },
+            {
+                Title: "Sticky Leg",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one Small or Tiny creature. Hit: The target is stuck to the steeder's leg and grappled until it escapes (escape DC 12). The steeder can have only one creature grappled at a time."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Male steeders are smaller than females and are commonly used by duergar as draft animals. They are aggressive toward other steeders and can be dangerous even when domesticated."
+    },
+    { // Steel Predator
+        ID: 664,
+        ProfileType: "Monster",
+        Name: "Steel Predator",
+        Type: "Large construct, lawful evil",
+        TypeCategory: "Construct",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 20,
+        HitPoints: 207,
+        HitPointsRoll: "18d10 + 108",
+        Speed: ["40 ft."],
+        Strength: 24,
+        Dexterity: 17,
+        Constitution: 22,
+        Intelligence: 4,
+        Wisdom: 14,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: ["Perception +7", "Stealth +8", "Survival +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Lightning", "Necrotic", "Thunder"],
+        DamageImmunities: ["Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned", "Stunned"],
+        Senses: ["Blindsight 30 ft.", "Darkvision 60 ft.", "Passive Perception 17"],
+        Languages: ["Understands Modron and the language of its owner but can't speak"],
+        Challenge: [16, 15000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The steel predator's innate spellcasting ability is Wisdom. The steel predator can innately cast the following spells, requiring no components: <br><br>3/day each: dimension door (self only), plane shift (self only)."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The steel predator has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The steel predator's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The steel predator makes three attacks: one with its bite and two with its claw."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) piercing damage."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 16 (2d8 + 7) slashing damage."
+            },
+            {
+                Title: "Stunning Roar (Recharge 5-6)",
+                Desc: "The steel predator emits a roar in a 60-foot cone. Each creature in that area must make a DC 19 Constitution saving throw. On a failed save, a creature takes 27 (5d10) thunder damage, drops everything it's holding, and is stunned for 1 minute. On a successful save, a creature takes half as much damage. The stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A steel predator is a merciless machine created for one purpose: to locate and kill its target regardless of distance or obstacles. Created by a rogue hexton modron, these constructs can track a designated target across planar boundaries. Once manufactured, a steel predator immediately begins hunting its prey."
+    },
+    { // Stone Cursed
+        ID: 665,
+        ProfileType: "Monster",
+        Name: "Stone Cursed",
+        Type: "Medium construct, lawful evil",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 17,
+        HitPoints: 19,
+        HitPointsRoll: "3d8 + 4",
+        Speed: ["10 ft."],
+        Strength: 16,
+        Dexterity: 5,
+        Constitution: 14,
+        Intelligence: 5,
+        Wisdom: 8,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: ["Bludgeoning"],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Petrified", "Poisoned"],
+        Senses: ["Passive Perception 9"],
+        Languages: ["The languages it knew in life"],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Cunning Opportunist",
+                Desc: "The stone cursed has advantage on the attack rolls of opportunity attacks."
+            },
+            {
+                Title: "False Appearance",
+                Desc: "While the stone cursed remains motionless, it is indistinguishable from a normal statue."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Petrifying Claws",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) slashing damage, or 14 (2d10 + 3) slashing damage if the attack roll had advantage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw, or it begins to turn to stone and is restrained until the end of its next turn, when it must repeat the saving throw. The effect ends if the second save is successful; otherwise the target is petrified for 24 hours."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Stone cursed are creatures transformed into living statues through an alchemical ritual. Their fingers end in stony claws dripping with thick gray sludge that can transform those they slash into stone. When a stone cursed is slain, its statue shatters and reveals a fist-sized obsidian skull embedded within its torso, containing a dim echo of the original victim's memories."
+    },
+    { // Sword Wraith Commander
+        ID: 666,
+        ProfileType: "Monster",
+        Name: "Sword Wraith Commander",
+        Type: "Medium undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 18,
+        HitPoints: 127,
+        HitPointsRoll: "15d8 + 60",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 14,
+        Constitution: 18,
+        Intelligence: 11,
+        Wisdom: 12,
+        Charisma: 14,
+        SavingThrows: [],
+        Skills: ["Perception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Necrotic", "Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Exhaustion", "Frightened", "Poisoned", "Unconscious"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 14"],
+        Languages: ["The languages it knew in life"],
+        Challenge: [8, 3900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Martial Fury",
+                Desc: "As a bonus action, the sword wraith can make one weapon attack, which deals an extra 9 (2d8) necrotic damage on a hit. If it does so, attack rolls against it have advantage until the start of its next turn."
+            },
+            {
+                Title: "Turning Defiance",
+                Desc: "The sword wraith and any other sword wraiths within 30 feet of it have advantage on saving throws against effects that turn undead."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The sword wraith makes two weapon attacks."
+            },
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands."
+            },
+            {
+                Title: "Longbow",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+            },
+            {
+                Title: "Call to Honor (1/Day)",
+                Desc: "To use this action, the sword wraith must have taken damage during the current combat. If the sword wraith can use this action, it gives itself advantage on attack rolls until the end of its next turn, and 1d4 + 1 sword wraith warriors appear in unoccupied spaces within 30 feet of it. The warriors last until they drop to 0 hit points, and they take their turns immediately after the commander's turn on the same initiative count."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Sword wraith commanders are the leaders of undead warriors who died in battle but remain bound to the world by pride, duty, or unfinished business. They appear as spectral warriors clad in the armor they wore in life, their forms often surrounded by an eerie, ghostly presence. A commander can call other sword wraiths to its side and drive them into battle once more."
+    },
+    { // Sword Wraith Warrior
+        ID: 667,
+        ProfileType: "Monster",
+        Name: "Sword Wraith Warrior",
+        Type: "Medium undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 16,
+        HitPoints: 45,
+        HitPointsRoll: "6d8 + 18",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 12,
+        Constitution: 17,
+        Intelligence: 6,
+        Wisdom: 9,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Necrotic", "Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Exhaustion", "Frightened", "Poisoned", "Unconscious"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 9"],
+        Languages: ["The languages it knew in life"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Martial Fury",
+                Desc: "As a bonus action, the sword wraith can make one weapon attack. If it does so, attack rolls against it have advantage until the start of its next turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands."
+            },
+            {
+                Title: "Longbow",
+                Desc: "Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Sword wraith warriors are the spectral remains of soldiers who refused to accept death after dying in battle. They retain the martial skills they possessed in life and appear as ghostly warriors equipped with the weapons and armor they carried when they died."
+    },
+    { // Tortle
+        ID: 668,
+        ProfileType: "Monster",
+        Name: "Tortle",
+        Type: "Medium humanoid (tortle), lawful good",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 17,
+        HitPoints: 22,
+        HitPointsRoll: "4d8 + 4",
+        Speed: ["30 ft."],
+        Strength: 15,
+        Dexterity: 10,
+        Constitution: 12,
+        Intelligence: 11,
+        Wisdom: 13,
+        Charisma: 12,
+        SavingThrows: [],
+        Skills: ["Athletics +4", "Survival +3"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Aquan", "Common"],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Hold Breath",
+                Desc: "The tortle can hold its breath for 1 hour."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+            },
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage if used with two hands."
+            },
+            {
+                Title: "Light Crossbow",
+                Desc: "Ranged Weapon Attack: +2 to hit, range 80/320 ft., one target. Hit: 4 (1d8) piercing damage."
+            },
+            {
+                Title: "Shell Defense",
+                Desc: "The tortle withdraws into its shell. Until it emerges, it gains a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in its shell, the tortle is prone, its speed is 0 and can't increase, it has disadvantage on Dexterity saving throws, it can't take reactions, and the only action it can take is a bonus action to emerge."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Tortles are omnivorous, turtle-like humanoids with shells that cover most of their bodies. An adult tortle stands about 6 feet tall and weighs between 450 and 500 pounds. Tortles view the world as a place of everyday wonder and enjoy wandering, meeting other peoples, and discovering new customs. They commonly say, \"We wear our homes on our backs.\""
+    },
+    { // Tortle Druid
+        ID: 669,
+        ProfileType: "Monster",
+        Name: "Tortle Druid",
+        Type: "Medium humanoid (tortle), lawful neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 17,
+        HitPoints: 33,
+        HitPointsRoll: "6d8 + 6",
+        Speed: ["30 ft."],
+        Strength: 14,
+        Dexterity: 10,
+        Constitution: 12,
+        Intelligence: 11,
+        Wisdom: 15,
+        Charisma: 12,
+        SavingThrows: [],
+        Skills: ["Animal Handling +4", "Nature +2", "Survival +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 12"],
+        Languages: ["Aquan", "Common"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Hold Breath",
+                Desc: "The tortle can hold its breath for 1 hour."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The tortle is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared: Cantrips (at will): druidcraft, guidance, produce flame; 1st level (4 slots): animal friendship, cure wounds, speak with animals, thunderwave; 2nd level (3 slots): darkvision, hold person."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+            },
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage if used with two hands."
+            },
+            {
+                Title: "Shell Defense",
+                Desc: "The tortle withdraws into its shell. Until it emerges, it gains a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in its shell, the tortle is prone, its speed is 0 and can't increase, it has disadvantage on Dexterity saving throws, it can't take reactions, and the only action it can take is a bonus action to emerge."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Tortle druids are wandering spellcasters who combine the tortle's natural resilience with the magic of the druidic tradition. Like other tortles, they have little attachment to permanent settlements and are comfortable traveling for years at a time."
+    },
+    { // Dire Troll
+        ID: 670,
+        ProfileType: "Monster",
+        Name: "Dire Troll",
+        Type: "Huge giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 15,
+        HitPoints: 172,
+        HitPointsRoll: "15d12 + 75",
+        Speed: ["40 ft."],
+        Strength: 22,
+        Dexterity: 15,
+        Constitution: 21,
+        Intelligence: 9,
+        Wisdom: 11,
+        Charisma: 5,
+        SavingThrows: ["Wis +5", "Cha +2"],
+        Skills: ["Perception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Frightened", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 15"],
+        Languages: ["Giant"],
+        Challenge: [13, 10000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Keen Senses",
+                Desc: "The troll has advantage on Wisdom (Perception) checks that rely on smell or sight."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, it regains only 5 hit points at the start of its next turn. The troll dies only if it is hit by an attack that deals 10 or more acid or fire damage while the troll has 0 hit points."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The troll makes five attacks: one with its bite and four with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 10 (1d8 + 6) piercing damage plus 5 (1d10) poison damage."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 16 (3d6 + 6) slashing damage."
+            },
+            {
+                Title: "Whirlwind of Claws (Recharge 5-6)",
+                Desc: "Each creature within 10 feet of the troll must make a DC 19 Dexterity saving throw, taking 44 (8d10) slashing damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Dire trolls are trolls that have grown to enormous size through cannibalism and the grafting of additional flesh and organs onto their bodies. A dire troll can tear limbs, eyes, claws, and other organs from victims and attach them to itself, allowing its regenerative nature to incorporate the new mass."
+    },
+    { // Rot Troll
+        ID: 671,
+        ProfileType: "Monster",
+        Name: "Rot Troll",
+        Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 16,
+        HitPoints: 138,
+        HitPointsRoll: "12d10 + 72",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 13,
+        Constitution: 22,
+        Intelligence: 5,
+        Wisdom: 8,
+        Charisma: 4,
+        SavingThrows: [],
+        Skills: ["Perception +3"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Necrotic"],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 13"],
+        Languages: ["Giant"],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Rancid Degeneration",
+                Desc: "At the end of each of the troll's turns, each creature within 5 feet of it takes 11 (2d10) necrotic damage, unless the troll has taken acid or fire damage since the end of its last turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The troll makes three attacks: one with its bite and two with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 16 (3d10) necrotic damage."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 5 (1d10) necrotic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A rot troll is a troll infused with waves of necrotic energy as it regenerates. Its body withers and its flesh falls away almost as quickly as it forms. The creature can no longer regenerate normally, but the necrotic energy coursing through its body constantly radiates outward."
+    },
+    { // Spirit Troll
+        ID: 672,
+        ProfileType: "Monster",
+        Name: "Spirit Troll",
+        Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 17,
+        HitPoints: 97,
+        HitPointsRoll: "15d10 + 15",
+        Speed: ["30 ft."],
+        Strength: 1,
+        Dexterity: 17,
+        Constitution: 13,
+        Intelligence: 8,
+        Wisdom: 9,
+        Charisma: 16,
+        SavingThrows: [],
+        Skills: ["Perception +3"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Fire", "Lightning", "Thunder"],
+        DamageImmunities: ["Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        ConditionImmunities: ["Exhaustion", "Grappled", "Paralyzed", "Petrified", "Prone", "Restrained", "Unconscious"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 13"],
+        Languages: ["Giant"],
+        Challenge: [11, 7200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Incorporeal Movement",
+                Desc: "The troll can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "The troll regains 10 hit points at the start of each of its turns. If the troll takes psychic or force damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The troll makes three attacks: one with its bite and two with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 19 (3d10 + 3) psychic damage, and the target must succeed on a DC 15 Wisdom saving throw or be stunned for 1 minute. The stunned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 14 (2d10 + 3) psychic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A spirit troll is a troll whose body has become insubstantial after being blasted with psychic energy. Its psyche survives the transformation while its physical form becomes as insubstantial as shadow. Although it continues to move and attack like a normal troll, its attacks strike at the minds of its victims."
+    },
+    { // Venom Troll
+        ID: 673,
+        ProfileType: "Monster",
+        Name: "Venom Troll",
+        Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 15,
+        HitPoints: 94,
+        HitPointsRoll: "9d10 + 45",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 13,
+        Constitution: 20,
+        Intelligence: 7,
+        Wisdom: 9,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: ["Perception +2"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 12"],
+        Languages: ["Giant"],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Keen Smell",
+                Desc: "The troll has advantage on Wisdom (Perception) checks that rely on smell."
+            },
+            {
+                Title: "Poison Splash",
+                Desc: "When the troll takes damage of any type but psychic, each creature within 5 feet of the troll takes 9 (2d8) poison damage."
+            },
+            {
+                Title: "Regeneration",
+                Desc: "The troll regains 10 hit points at the start of each of its turns. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The troll makes three attacks: one with its bite and two with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 4 (1d8) poison damage, and the creature is poisoned until the start of the troll's next turn."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 4 (1d8) poison damage."
+            },
+            {
+                Title: "Venom Spray (Recharge 6)",
+                Desc: "The troll slices itself with a claw, releasing a spray of poison in a 15-foot cube. The troll takes 7 (2d6) slashing damage (this damage can't be reduced in any way). Each creature in the area must make a DC 16 Constitution saving throw. On a failed save, a creature takes 18 (4d8) poison damage and is poisoned for 1 minute. On a successful save, the creature takes half as much damage and isn't poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Venom trolls are trolls ravaged by massive doses of poison. Their blood and tissues become infused with venom, while poison leaks from their pores and coats their fangs and claws. Their bodies also spray poison whenever they are wounded, making them especially dangerous at close range."
+    },
+    { // Vampiric Mist
+        ID: 674,
+        ProfileType: "Monster",
+        Name: "Vampiric Mist",
+        Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 13,
+        HitPoints: 30,
+        HitPointsRoll: "4d8 + 12",
+        Speed: ["0 ft.", "fly 30 ft. (hover)"],
+        Strength: 6,
+        Dexterity: 16,
+        Constitution: 16,
+        Intelligence: 6,
+        Wisdom: 12,
+        Charisma: 7,
+        SavingThrows: ["Wis +3"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Lightning", "Necrotic", "Thunder", "Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Grappled", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: [],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Life Sense",
+                Desc: "The mist can sense the location of any creature within 60 feet of it, unless that creature's type is construct or undead."
+            },
+            {
+                Title: "Forbiddance",
+                Desc: "The mist can't enter a residence without an invitation from one of the occupants."
+            },
+            {
+                Title: "Misty Form",
+                Desc: "The mist can occupy another creature's space and vice versa. In addition, if air can pass through a space, the mist can pass through it without squeezing. Each foot of movement in water costs it 2 extra feet, rather than 1 extra foot. The mist can't manipulate objects in any way that requires fingers or manual dexterity."
+            },
+            {
+                Title: "Sunlight Hypersensitivity",
+                Desc: "The mist takes 10 radiant damage whenever it starts its turn in sunlight. While in sunlight, the mist has disadvantage on attack rolls and ability checks."
+            },
+            {
+                Title: "Undead Nature",
+                Desc: "A vampiric mist doesn't require air or sleep."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Life Drain",
+                Desc: "The mist touches one creature in its space. The target must succeed on a DC 13 Constitution saving throw (undead and constructs automatically succeed), or it takes 10 (2d6 + 3) necrotic damage, the mist regains 10 hit points, and the target's hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Vampiric mists are the remnants of vampires who were prevented from returning to their burial places after being defeated or suffering some mishap. Their bodies dissolve into mist, stripping away their intelligence and personality until only an insatiable thirst for blood remains. They are indistinguishable from ordinary fog except for the charnel reek they exude."
+    },
+    { // Canoloth
+        ID: 675,
+        ProfileType: "Monster",
+        Name: "Canoloth",
+        Type: "Medium fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 16,
+        HitPoints: 120,
+        HitPointsRoll: "16d8 + 48",
+        Speed: ["50 ft."],
+        Strength: 18,
+        Dexterity: 10,
+        Constitution: 17,
+        Intelligence: 5,
+        Wisdom: 17,
+        Charisma: 12,
+        SavingThrows: [],
+        Skills: ["Investigation +3", "Perception +9"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: ["Acid", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Truesight 120 ft.", "Passive Perception 19"],
+        Languages: ["Abyssal", "Infernal", "Telepathy 60 ft."],
+        Challenge: [8, 3900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Dimensional Lock",
+                Desc: "Other creatures can't teleport to or from a space within 60 feet of the canoloth. Any attempt to do so is wasted."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The canoloth has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The canoloth's weapon attacks are magical."
+            },
+            {
+                Title: "Uncanny Senses",
+                Desc: "The canoloth can't be surprised while it isn't incapacitated."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The canoloth makes two attacks: one with its tongue or its bite and one with its claws."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 25 (6d6 + 4) piercing damage."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) slashing damage."
+            },
+            {
+                Title: "Tongue",
+                Desc: "Ranged Weapon Attack: +7 to hit, range 30 ft., one target. Hit: 17 (2d12 + 4) piercing damage. If the target is Medium or smaller, it is grappled (escape DC 15), pulled up to 30 feet toward the canoloth, and restrained until the grapple ends. The canoloth can grapple one target at a time with its tongue."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Canoloths are yugoloths that specialize in guarding valuable treasures and important locations. They have extraordinarily sharp senses and can pinpoint nearby invisible creatures. Their magical distortion field prevents creatures close to them from teleporting. A canoloth's long, spiny tongue can seize a foe from a distance and drag it close."
+    },
+    { // Dhergoloth
+        ID: 676,
+        ProfileType: "Monster",
+        Name: "Dhergoloth",
+        Type: "Medium fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 15,
+        HitPoints: 119,
+        HitPointsRoll: "14d8 + 56",
+        Speed: ["30 ft."],
+        Strength: 17,
+        Dexterity: 10,
+        Constitution: 19,
+        Intelligence: 7,
+        Wisdom: 10,
+        Charisma: 9,
+        SavingThrows: ["Str +6"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: ["Acid", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Blindsight 60 ft.", "Darkvision 60 ft.", "Passive Perception 10"],
+        Languages: ["Abyssal", "Infernal", "Telepathy 60 ft."],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The dhergoloth's innate spellcasting ability is Charisma (spell save DC 10). It can innately cast the following spells, requiring no material components: At will: darkness, fear; 3/day: sleep."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The dhergoloth has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The dhergoloth's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The dhergoloth makes two claw attacks."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage."
+            },
+            {
+                Title: "Flailing Claws (Recharge 5-6)",
+                Desc: "The dhergoloth moves up to its walking speed in a straight line and targets each creature within 5 feet of it during its movement. Each target must succeed on a DC 14 Dexterity saving throw or take 22 (3d12 + 3) slashing damage."
+            },
+            {
+                Title: "Teleport",
+                Desc: "The dhergoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Dhergoloths are squat, barrel-shaped yugoloths with five sets of claws. They rush into battle like whirlwinds of destruction, reveling in the slaughter they create. They are used for simple mercenary tasks such as suppressing uprisings, clearing out rabble, and eliminating scouts and skirmishers."
+    },
+    { // Hydroloth
+        ID: 677,
+        ProfileType: "Monster",
+        Name: "Hydroloth",
+        Type: "Medium fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 15,
+        HitPoints: 135,
+        HitPointsRoll: "18d8 + 54",
+        Speed: ["20 ft.", "swim 40 ft."],
+        Strength: 12,
+        Dexterity: 21,
+        Constitution: 16,
+        Intelligence: 19,
+        Wisdom: 10,
+        Charisma: 14,
+        SavingThrows: [],
+        Skills: ["Insight +4", "Perception +4"],
+        DamageVulnerabilities: ["Fire"],
+        DamageResistances: ["Cold", "Lightning", "Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: ["Acid", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Blindsight 60 ft.", "Darkvision 60 ft.", "Passive Perception 14"],
+        Languages: ["Abyssal", "Infernal", "Telepathy 60 ft."],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Amphibious",
+                Desc: "The hydroloth can breathe air and water."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The hydroloth's innate spellcasting ability is Intelligence (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: darkness, detect magic, dispel magic, invisibility (self only), water walk; 3/day each: control water, crown of madness, fear, phantasmal killer, suggestion."
+            },
+            {
+                Title: "Watery Advantage",
+                Desc: "While submerged in liquid, the hydroloth has advantage on attack rolls."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The hydroloth makes two melee attacks. In place of one of these attacks, it can cast one spell that takes 1 action to cast."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage."
+            },
+            {
+                Title: "Steal Memory (1/Day)",
+                Desc: "The hydroloth targets one creature it can see within 60 feet of it. The target takes 4d6 psychic damage, and it must make a DC 16 Intelligence saving throw. On a successful save, the target becomes immune to this hydroloth's Steal Memory for 24 hours. On a failed save, the target loses all proficiencies, it can't cast spells, it can't understand language, and if its Intelligence and Charisma scores are higher than 5, they become 5. Each time the target finishes a long rest, it can repeat the saving throw, ending the effect on itself on a success. A greater restoration or remove curse spell cast on the target ends this effect early."
+            },
+            {
+                Title: "Teleport",
+                Desc: "The hydroloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Hydroloths are yugoloths associated with the waters of the River Styx. They steal the memories of creatures they attack and deliver those thoughts to whatever master they serve. Hydroloths are also skilled at finding things lost in deep waters and are often employed in amphibious assaults, underwater conflicts, and raids on ships and coastal settlements."
+    },
+    { // Merrenoloth
+        ID: 678,
+        ProfileType: "Monster",
+        Name: "Merrenoloth",
+        Type: "Medium fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 13,
+        HitPoints: 40,
+        HitPointsRoll: "9d8",
+        Speed: ["30 ft.", "swim 40 ft."],
+        Strength: 8,
+        Dexterity: 17,
+        Constitution: 10,
+        Intelligence: 17,
+        Wisdom: 14,
+        Charisma: 11,
+        SavingThrows: ["Dex +5", "Int +5"],
+        Skills: ["History +5", "Nature +5", "Perception +4", "Survival +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: ["Acid", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Blindsight 60 ft.", "Darkvision 60 ft.", "Passive Perception 14"],
+        Languages: ["Abyssal", "Infernal", "Telepathy 60 ft."],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The merrenoloth's innate spellcasting ability is Intelligence (spell save DC 13). It can innately cast the following spells, requiring no material components: At will: charm person, darkness, detect magic, dispel magic, gust of wind; 3/day: control water; 1/day: control weather."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The merrenoloth has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The merrenoloth's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The merrenoloth uses Fear Gaze once and makes one oar attack."
+            },
+            {
+                Title: "Oar",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage."
+            },
+            {
+                Title: "Fear Gaze",
+                Desc: "The merrenoloth targets one creature it can see within 60 feet of it. The target must succeed on a DC 13 Wisdom saving throw or become frightened of the merrenoloth for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Teleport",
+                Desc: "As a bonus action, the merrenoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [
+            "The ship doesn't sink even if its hull is breached.",
+            "The ship always stays on course to the destination the merrenoloth names.",
+            "Creatures the merrenoloth chooses to take on the ship aren't discomfited by wind or weather, though this effect doesn't protect against damage. If the merrenoloth dies, these effects fade over the course of 1d6 hours."
+        ],
+        LairActions: [
+            "The ship regains 22 (4d10) hit points.",
+            "A strong wind propels the ship, increasing its speed by 30 feet until initiative count 20 on the next round.",
+            "The air within 60 feet of the ship is filled with howling wind. Until initiative count 20 on the next round, that area is difficult terrain, and when a Medium or smaller creature flies into that area or starts its turn flying there, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+        ],
+        Description: "Merrenoloths are the grim, gaunt captains of the ferries on the River Styx. They have total command of their vessels and ensure that their passengers reach their destinations safely. When a merrenoloth contracts to captain a ship, it bonds with the vessel, allowing it to navigate safely through the worst storms and avoid the myriad hazards that can thwart lesser captains."
+    },
+    { // Oinoloth
+        ID: 679,
+        ProfileType: "Monster",
+        Name: "Oinoloth",
+        Type: "Medium fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 17,
+        HitPoints: 126,
+        HitPointsRoll: "12d10 + 60",
+        Speed: ["40 ft."],
+        Strength: 19,
+        Dexterity: 17,
+        Constitution: 18,
+        Intelligence: 17,
+        Wisdom: 16,
+        Charisma: 19,
+        SavingThrows: ["Con +8", "Wis +7"],
+        Skills: ["Deception +8", "Intimidation +8", "Perception +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: ["Acid", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Blindsight 60 ft.", "Darkvision 60 ft.", "Passive Perception 17"],
+        Languages: ["Abyssal", "Infernal", "Telepathy 60 ft."],
+        Challenge: [12, 8400],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance",
+                Desc: "The oinoloth has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The oinoloth's weapon attacks are magical."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The oinoloth's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: darkness, detect magic, dispel magic, invisibility (self only); 1/day each: feeblemind, globe of invulnerability, wall of fire, wall of ice."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The oinoloth uses its Transfixing Gaze and makes two claw attacks."
+            },
+            {
+                Title: "Bringer of Plagues (Recharge 5-6)",
+                Desc: "As a bonus action, the oinoloth blights the area within 30 feet of it. The blight lasts for 24 hours. While blighted, all normal plants in the area wither and die, and the number of hit points restored by a spell to a creature in that area is halved. Furthermore, when a creature moves into the blighted area or starts its turn there, that creature must make a DC 16 Constitution saving throw. On a successful save, the creature is immune to the oinoloth's Bringer of Plagues for the next 24 hours. On a failed save, the creature takes 14 (4d6) necrotic damage and is poisoned. The poisoned creature can't regain hit points. After every 24 hours that elapse, the poisoned creature can repeat the saving throw. On a failed save, the creature's hit point maximum is reduced by 5 (1d10). This reduction lasts until the poison ends, and the target dies if its hit point maximum is reduced to 0. The poison ends after the creature successfully saves against it three times."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) slashing damage plus 22 (4d10) necrotic damage."
+            },
+            {
+                Title: "Corrupted Healing (Recharge 6)",
+                Desc: "The oinoloth touches one willing creature within 5 feet of it. The target regains all its hit points. In addition, the oinoloth can end one disease on the target or remove one of the following conditions from it: blinded, deafened, paralyzed, or poisoned. The target then gains 1 level of exhaustion, and its hit point maximum is reduced by 7 (2d6). This reduction can be removed only by a wish spell or by casting greater restoration on the target three times within the same hour. The target dies if its hit point maximum is reduced to 0."
+            },
+            {
+                Title: "Teleport",
+                Desc: "The oinoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+            },
+            {
+                Title: "Transfixing Gaze",
+                Desc: "The oinoloth targets one creature it can see within 30 feet of it. The target must succeed on a DC 16 Wisdom saving throw against this magic or be charmed until the end of the oinoloth's next turn. While charmed in this way, the target is restrained. If the target's saving throw is successful, the target is immune to the oinoloth's gaze for the next 24 hours."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Oinoloths are grim specters of death that bring pestilence wherever they go. They are often hired as a last resort when a siege has gone on too long or an army has proved too strong to overcome. Once summoned, an oinoloth stalks the killing field, poisoning the ground and sickening creatures it encounters."
+    },
+    { // Yagnoloth
+        ID: 680,
+        ProfileType: "Monster",
+        Name: "Yagnoloth",
+        Type: "Large fiend (yugoloth), neutral evil",
+        TypeCategory: "Fiend",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 17,
+        HitPoints: 147,
+        HitPointsRoll: "14d10 + 70",
+        Speed: ["40 ft."],
+        Strength: 19,
+        Dexterity: 14,
+        Constitution: 21,
+        Intelligence: 16,
+        Wisdom: 15,
+        Charisma: 18,
+        SavingThrows: ["Dex +6", "Int +7", "Wis +6", "Cha +8"],
+        Skills: ["Deception +8", "Insight +6", "Perception +6", "Persuasion +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Lightning", "Bludgeoning, Piercing, Slashing from nonmagical attacks"],
+        DamageImmunities: ["Acid", "Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: ["Blindsight 60 ft.", "Darkvision 60 ft.", "Passive Perception 16"],
+        Languages: ["Abyssal", "Infernal", "Telepathy 60 ft."],
+        Challenge: [11, 7200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The yagnoloth's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: darkness, detect magic, dispel magic, invisibility (self only), suggestion; 3/day: lightning bolt."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The yagnoloth has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The yagnoloth's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The yagnoloth makes one massive arm attack and one electrified touch attack, or it makes one massive arm attack and teleports before or after the attack."
+            },
+            {
+                Title: "Electrified Touch",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 27 (6d8) lightning damage."
+            },
+            {
+                Title: "Massive Arm",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 23 (3d12 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or become stunned until the end of the yagnoloth's next turn."
+            },
+            {
+                Title: "Life Leech",
+                Desc: "The yagnoloth touches one incapacitated creature within 15 feet of it. The target takes 36 (7d8 + 4) necrotic damage, and the yagnoloth gains temporary hit points equal to half the damage dealt. The target must succeed on a DC 16 Constitution saving throw, or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest, and the target dies if its hit point maximum is reduced to 0."
+            },
+            {
+                Title: "Battlefield Cunning (Recharge 4-6)",
+                Desc: "Up to two allied yugoloths within 60 feet of the yagnoloth that can hear it can use their reactions to make one melee attack each."
+            },
+            {
+                Title: "Teleport",
+                Desc: "The yagnoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Yagnoloths are the contract negotiators and commanders of the yugoloths. They possess one human-sized arm and one giant-sized arm, normally concealing one beneath a long cape. Their contracts are carefully written and frequently contain loopholes that allow the yagnoloth to escape an obligation when circumstances permit."
+    },
+    
 
 
 
