@@ -36585,7 +36585,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting (Psionics)",
-                Desc: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no components: At will: mage hand (the hand is invisible); 3/day each: blur, jump, misty step, nondetection (self only); 1/day each: plane shift, telekinesis."
+                Desc: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no components: <br><br>At will: mage hand (the hand is invisible); <br>3/day each: blur, jump, misty step, nondetection (self only); <br>1/day each: plane shift, telekinesis."
             },
             {
                 Title: "Rally the Troops",
@@ -36645,7 +36645,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting (Psionics)",
-                Desc: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components: At will: mage hand (the hand is invisible); 3/day each: jump, levitate (self only), misty step, nondetection (self only); 1/day each: Bigby's hand, mass suggestion, plane shift, telekinesis."
+                Desc: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components: <br><br>At will: mage hand (the hand is invisible); <br>3/day each: jump, levitate (self only), misty step, nondetection (self only); <br>1/day each: Bigby's hand, mass suggestion, plane shift, telekinesis."
             }
         ],
         Actions: [
@@ -36714,7 +36714,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting (Psionics)",
-                Desc: "The anarch's innate spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It can innately cast the following spells, requiring no components: At will: mage hand (the hand is invisible); 3/day each: feather fall, jump, see invisibility, shield, telekinesis; 1/day each: globe of invulnerability, plane shift, teleportation circle, wall of force."
+                Desc: "The anarch's innate spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It can innately cast the following spells, requiring no components: <br><br>At will: mage hand (the hand is invisible); <br>3/day each: feather fall, jump, see invisibility, shield, telekinesis; <br>1/day each: globe of invulnerability, plane shift, teleportation circle, wall of force."
             },
             {
                 Title: "Psychic Defense",
@@ -36752,6 +36752,7 @@ const monstersLocal = [
             "The anarch stabilizes any object created in Limbo and brought to the Material Plane for as long as the anarch remains within 1 mile of it (no action required). If the anarch dies, these effects end after 1d6 rounds. All formed substance becomes a chaotic churn of energy and matter, unraveling into unformed substance that dissipates 1d6 rounds later."
         ],
         LairActions: [
+            "The anarch casts the lightning bolt spell (at 5th level), but the anarch can change the damage type from lightning to cold, fire, psychic, radiant, or thunder. If the spell deals damage other than fire or lightning, it doesn't ignite flammable objects.",
             "The anarch casts the creation spell (as a 9th-level spell) using the unformed substance of Limbo instead of shadow material. If used in Limbo, the object remains until the anarch's concentration is broken, regardless of its composition. If the anarch moves more than 120 feet from the object, its concentration breaks.",
             "The anarch can magically move an object it can see within 150 feet of it by making a Wisdom check with advantage. The DC depends on the object's size: DC 5 for Tiny, DC 10 for Small, DC 15 for Medium, DC 20 for Large, and DC 25 for Huge or larger."
         ],
@@ -36788,7 +36789,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting (Psionics)",
-                Desc: "The githzerai's innate spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components: At will: mage hand (the hand is invisible); 3/day each: blur, expeditious retreat, feather fall, jump, see invisibility, shield; 1/day each: haste, plane shift, teleport."
+                Desc: "The githzerai's innate spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components: <br><br>At will: mage hand (the hand is invisible); <br>3/day each: blur, expeditious retreat, feather fall, jump, see invisibility, shield; <br>1/day each: haste, plane shift, teleport."
             },
             {
                 Title: "Psychic Defense",
@@ -37146,7 +37147,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting",
-                Desc: "The marut's innate spellcasting ability is Intelligence (spell save DC 20). The marut can innately cast the following spell, requiring no material components: At will: plane shift (self only)."
+                Desc: "The marut's innate spellcasting ability is Intelligence (spell save DC 20). The marut can innately cast the following spell, requiring no material components: <br><br>At will: plane shift (self only)."
             },
             {
                 Title: "Legendary Resistance (3/Day)",
@@ -37227,7 +37228,7 @@ const monstersLocal = [
             },
             {
                 Title: "Shadow Teleport (Recharge 5-6)",
-                Desc: "The meazel, any equipment it is wearing or carrying, and any creature it is grappling teleport to an unoccupied space within 500 feet of it, provided that the starting space and the destination are in dim light or darkness. The destination must be a place the meazel has seen before, but it need not be within line of sight. If the destination space is occupied, the teleportation leads to the nearest unoccupied space. Any other creature the meazel teleports becomes cursed by shadow for 1 hour. Until this curse ends, every undead and every creature native to the Shadowfell within 300 feet of the cursed creature can sense it, which prevents that creature from hiding from them."
+                Desc: "The meazel, any equipment it is wearing or carrying, and any creature it is grappling teleport to an unoccupied space within 500 feet of it, provided that the starting space and the destination are in dim light or darkness. The destination must be a place the meazel has seen before, but it need not be within line of sight. If the destination space is occupied, the teleportation leads to the nearest unoccupied space. <br>Any other creature the meazel teleports becomes cursed by shadow for 1 hour. Until this curse ends, every undead and every creature native to the Shadowfell within 300 feet of the cursed creature can sense it, which prevents that creature from hiding from them."
             }
         ],
         BonusActions: [],
@@ -37276,7 +37277,7 @@ const monstersLocal = [
             },
             {
                 Title: "Spellcasting",
-                Desc: "The nagpa is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). A nagpa has the following wizard spells prepared: Cantrips (at will): chill touch, fire bolt, mage hand, message, minor illusion; 1st level (4 slots): charm person, detect magic, protection from evil and good, witch bolt; 2nd level (3 slots): hold person, ray of enfeeblement, suggestion; 3rd level (3 slots): counterspell, fireball, fly; 4th level (3 slots): confusion, hallucinatory terrain, wall of fire; 5th level (2 slots): dominate person, dream, geas; 6th level (1 slot): circle of death, disintegrate; 7th level (1 slot): etherealness, prismatic spray; 8th level (1 slot): feeblemind."
+                Desc: "The nagpa is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). A nagpa has the following wizard spells prepared: <br><br>Cantrips (at will): chill touch, fire bolt, mage hand, message, minor illusion; <br>1st level (4 slots): charm person, detect magic, protection from evil and good, witch bolt; <br>2nd level (3 slots): hold person, ray of enfeeblement, suggestion; <br>3rd level (3 slots): counterspell, fireball, fly; <br>4th level (3 slots): confusion, hallucinatory terrain, wall of fire; <br>5th level (2 slots): dominate person, dream, geas; <br>6th level (1 slot): circle of death, disintegrate; <br>7th level (1 slot): etherealness, prismatic spray; <br>8th level (1 slot): feeblemind."
             }
         ],
         Actions: [
@@ -37291,6 +37292,906 @@ const monstersLocal = [
         RegionalEffects: [],
         LairActions: [],
         Description: "Nagpas are scabrous, bird-like humanoid wizards cursed long ago by the Raven Queen after meddling in a ritual intended to avert a war between the gods. The curse stripped away their beauty and left them dependent on the ruins of fallen civilizations for new lore and magical power. The surviving nagpas manipulate events from the shadows, engineering calamities so they can loot the resulting ruins for arcane knowledge and secrets."
+    },
+    { // Nightwalker
+        ID: 637,
+        ProfileType: "Monster",
+        Name: "Nightwalker",
+        Type: "Huge undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [14, ""],
+        HitPoints: 297,
+        HitPointsRoll: "22d12 + 154",
+        Speed: ["40 ft.", "fly 40 ft."],
+        Strength: 22,
+        Dexterity: 19,
+        Constitution: 24,
+        Intelligence: 6,
+        Wisdom: 9,
+        Charisma: 8,
+        SavingThrows: ["Constitution +13"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Fire", "Lightning", "Thunder", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: ["Necrotic", "Poison"],
+        ConditionImmunities: ["Exhaustion", "Frightened", "Grappled", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained"],
+        Senses: ["Darkvision 120 ft.", "Passive Perception 9"],
+        Languages: [],
+        Challenge: [20, 25000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Annihilating Aura",
+                Desc: "Any creature that starts its turn within 30 feet of the nightwalker must succeed on a DC 21 Constitution saving throw or take 14 (4d6) necrotic damage and grant the nightwalker advantage on attack rolls against it until the start of the creature's next turn. Undead are immune to this aura."
+            },
+            {
+                Title: "Life Eater",
+                Desc: "A creature reduced to 0 hit points from damage dealt by the nightwalker dies and can't be revived by any means short of a wish spell."
+            },
+            {
+                Title: "Unusual Nature",
+                Desc: "The nightwalker doesn't require air, food, drink, or sleep."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The nightwalker uses Enervating Focus twice, or it uses Enervating Focus and Finger of Doom, if available."
+            },
+            {
+                Title: "Enervating Focus",
+                Desc: "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 28 (5d8 + 6) necrotic damage. The target must succeed on a DC 21 Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest."
+            },
+            {
+                Title: "Finger of Doom (Recharge 6)",
+                Desc: "The nightwalker points at one creature it can see within 300 feet of it. The target must succeed on a DC 21 Wisdom saving throw or take 26 (4d12) necrotic damage and become frightened until the end of the nightwalker's next turn. While frightened in this way, the creature is also paralyzed. If a target's saving throw is successful, the target is immune to the nightwalker's Finger of Doom for the next 24 hours."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Nightwalkers are terrifying undead creatures born when a living creature enters the Negative Plane and is replaced by one of these beings of anti-life. They are immense, shadowy figures that exist to extinguish life wherever they appear. A nightwalker's presence drains vitality from nearby creatures, while its touch and gaze can permanently diminish or destroy its victims."
+    },
+    { // Oblex Spawn
+        ID: 638,
+        ProfileType: "Monster",
+        Name: "Oblex Spawn",
+        Type: "Tiny ooze, lawful evil",
+        TypeCategory: "Ooze",
+        Size: "Tiny",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [13, ""],
+        HitPoints: 18,
+        HitPointsRoll: "4d6 + 4",
+        Speed: ["20 ft."],
+        Strength: 8,
+        Dexterity: 16,
+        Constitution: 15,
+        Intelligence: 14,
+        Wisdom: 11,
+        Charisma: 10,
+        SavingThrows: ["Intelligence +4", "Charisma +2"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Prone"],
+        Senses: ["Blindsight 60 ft. (blind beyond this distance)", "Passive Perception 12"],
+        Languages: [],
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Amorphous",
+                Desc: "The oblex can move through a space as narrow as 1 inch wide without squeezing."
+            },
+            {
+                Title: "Aversion to Fire",
+                Desc: "If the oblex takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Pseudopod",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 5 (2d4) psychic damage."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Sulfurous Impersonation",
+                Desc: "As a bonus action, the oblex can extrude a piece of itself that assumes the appearance of one Medium or smaller creature whose memories it has stolen. This simulacrum appears, feels, and sounds exactly like the creature it impersonates, though it smells faintly of sulfur. The oblex can impersonate 1d4 + 1 different creatures, each one tethered to its body by a strand of slime that can extend up to 120 feet away. For all practical purposes, the simulacrum is the oblex, meaning that the oblex occupies its space and the simulacrum's space simultaneously. The slimy tether is immune to damage, but it is severed if there is no opening at least 1 inch wide between the oblex's main body and the simulacrum. The simulacrum disappears if the tether is severed."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Oblex spawn are small pieces of the larger oblex organism. They are shapeless, sinister oozes created by mind flayers to feed on memories and thoughts. Even these lesser specimens can steal memories and use them to create unsettling copies of their victims."
+    },
+    { // Adult Oblex
+        ID: 639,
+        ProfileType: "Monster",
+        Name: "Adult Oblex",
+        Type: "Medium ooze, lawful evil",
+        TypeCategory: "Ooze",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: [14, ""],
+        HitPoints: 75,
+        HitPointsRoll: "10d8 + 30",
+        Speed: ["20 ft."],
+        Strength: 8,
+        Dexterity: 19,
+        Constitution: 16,
+        Intelligence: 19,
+        Wisdom: 12,
+        Charisma: 15,
+        SavingThrows: ["Intelligence +7", "Charisma +5"],
+        Skills: ["Deception +5", "Perception +4", "plus one of the following: Arcana +7, History +7, Nature +7, or Religion +7 "],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Prone"],
+        Senses: ["Blindsight 60 ft. (blind beyond this distance)", "Passive Perception 14"],
+        Languages: ["Common plus two more languages"],
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Amorphous",
+                Desc: "The oblex can move through a space as narrow as 1 inch wide without squeezing."
+            },
+            {
+                Title: "Aversion to Fire",
+                Desc: "If the oblex takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The oblex's innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no components: <br><br>3/day each: charm person (as 5th-level spell), color spray, detect thoughts, hold person (as 3rd-level spell)."
+            },
+            {
+                Title: "Sulfurous Impersonation",
+                Desc: "As a bonus action, the oblex can extrude a piece of itself that assumes the appearance of one Medium or smaller creature whose memories it has stolen. This simulacrum appears, feels, and sounds exactly like the creature it impersonates, though it smells faintly of sulfur. The oblex can impersonate 1d4 + 1 different creatures, each one tethered to its body by a strand of slime that can extend up to 120 feet away. For all practical purposes, the simulacrum is the oblex, meaning that the oblex occupies its space and the simulacrum's space simultaneously. The slimy tether is immune to damage, but it is severed if there is no opening at least 1 inch wide between the oblex's main body and the simulacrum. The simulacrum disappears if the tether is severed."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The oblex makes one pseudopod attack and uses Eat Memories."
+            },
+            {
+                Title: "Pseudopod",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 5 (2d4) psychic damage."
+            },
+            {
+                Title: "Eat Memories",
+                Desc: "The oblex targets one creature it can see within 5 feet of it. The target must succeed on a DC 15 Wisdom saving throw or take 18 (4d8) psychic damage and become memory drained until it finishes a short or long rest or until it benefits from the greater restoration or heal spell. Constructs, oozes, plants, and undead succeed on the save automatically. <br>While memory drained, the target must roll a d4 and subtract the number rolled from any ability check or attack roll it makes. Each time the target is memory drained beyond the first, the die size increases by one: the d4 becomes a d6, the d6 becomes a d8, and so on until the die becomes a d20, at which point the target becomes unconscious for 1 hour. The effect then ends. <br>When an oblex causes a target to become memory drained, the oblex learns all the languages the target knows and gains all its proficiencies, except for any saving throw proficiencies."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Adult oblexes are larger and more dangerous memory-eating oozes created by mind flayers. Their bodies can extrude lifelike simulacrums of creatures whose memories they have consumed. These copies remain connected to the oblex by long strands of slime, allowing the creature to infiltrate communities and manipulate victims while remaining hidden."
+    },
+    { // Elder Oblex
+        ID: 640,
+        ProfileType: "Monster",
+        Name: "Elder Oblex",
+        Type: "Huge ooze, lawful evil",
+        TypeCategory: "Ooze",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 16,
+        HitPoints: 115,
+        HitPointsRoll: "10d12 + 50",
+        Speed: ["20 ft."],
+        Strength: 15,
+        Dexterity: 16,
+        Constitution: 21,
+        Intelligence: 22,
+        Wisdom: 13,
+        Charisma: 18,
+        SavingThrows: ["Int +10", "Cha +8"],
+        Skills: ["Arcana +10", "Deception +8", "History +10", "Nature +10", "Perception +5", "Religion +10"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Prone"],
+        Senses: ["Blindsight 60 ft. (blind beyond this distance)", "passive Perception 15"],
+        Languages: ["Common plus six more"],
+        Challenge: [10, 5900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Amorphous",
+                Desc: "The oblex can move through a space as narrow as 1 inch wide without squeezing."
+            },
+            {
+                Title: "Aversion to Fire",
+                Desc: "If the oblex takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The oblex's innate spellcasting ability is Intelligence (spell save DC 18). It can innately cast the following spells, requiring no material components: <br><br>At will: charm person (as 5th-level spell), detect thoughts, hold person; <br>3/day each: confusion, dimension door, dominate person, fear, hallucinatory terrain, hold monster, hypnotic pattern, telekinesis."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The elder oblex makes two pseudopod attacks and uses Eat Memories."
+            },
+            {
+                Title: "Pseudopod",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 17 (4d6 + 3) bludgeoning damage plus 7 (2d6) psychic damage."
+            },
+            {
+                Title: "Eat Memories",
+                Desc: "The oblex targets one creature it can see within 5 feet of it. The target must succeed on a DC 18 Wisdom saving throw or take 44 (8d10) psychic damage and become memory drained until it finishes a short or long rest or until it benefits from the greater restoration or heal spell. Constructs, oozes, plants, and undead succeed on the save automatically. <br>While memory drained, the target must roll a d4 and subtract the number rolled from any ability check or attack roll it makes. Each time the target is memory drained beyond the first, the die size increases by one: the d4 becomes a d6, the d6 becomes a d8, and so on until the die becomes a d20, at which point the target becomes unconscious for 1 hour. The effect then ends. <br>When an oblex causes a target to become memory drained, the oblex learns all the languages the target knows and gains all its proficiencies, except any saving throw proficiencies."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Sulfurous Impersonation",
+                Desc: "As a bonus action, the oblex can extrude a piece of itself that assumes the appearance of one Medium or smaller creature whose memories it has stolen. This simulacrum appears, feels, and sounds exactly like the creature it impersonates, though it smells faintly of sulfur. The oblex can impersonate 2d6 + 1 different creatures, each one tethered to its body by a strand of slime that can extend up to 120 feet away. For all practical purposes, the simulacrum is the oblex, meaning the oblex occupies its space and the simulacrum's space simultaneously. The slimy tether is immune to damage, but it is severed if there is no opening at least 1 inch wide between the oblex's main body and the simulacrum. The simulacrum disappears if the tether is severed."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Elder oblexes are enormous, highly intelligent masses of slime created by consuming vast quantities of memories. Their bodies can form duplicates of creatures they have devoured, which they send out to lure victims into danger while remaining connected to the main body by long tendrils of goo. These duplicates are indistinguishable from the creatures they imitate except for a faint sulfurous smell."
+    },
+    { // Ogre Battering Ram
+        ID: 641,
+        ProfileType: "Monster",
+        Name: "Ogre Battering Ram",
+        Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 14,
+        HitPoints: 59,
+        HitPointsRoll: "7d10 + 21",
+        Speed: ["40 ft."],
+        Strength: 19,
+        Dexterity: 8,
+        Constitution: 16,
+        Intelligence: 5,
+        Wisdom: 7,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "passive Perception 8"],
+        Languages: ["Common", "Giant"],
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Siege Monster",
+                Desc: "The ogre deals double damage to objects and structures."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bash",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage, and the ogre can push the target 5 feet away if the target is Huge or smaller."
+            },
+            {
+                Title: "Block the Path",
+                Desc: "Until the start of the ogre's next turn, attack rolls against the ogre have disadvantage, it has advantage on the attack roll it makes for an opportunity attack, and that attack deals an extra 16 (3d10) bludgeoning damage on a hit. Also, each enemy that tries to move out of the ogre's reach without teleporting must succeed on a DC 14 Strength saving throw or have its speed reduced to 0 until the start of the ogre's next turn."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "An ogre battering ram carries an enormous club used primarily for smashing through doors and fortifications. These ogres are drilled to rush forward and shatter enemy defenses or use their weapons to halt advancing enemies."
+    },
+    { // Ogre Bolt Launcher
+        ID: 642,
+        ProfileType: "Monster",
+        Name: "Ogre Bolt Launcher",
+        Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 13,
+        HitPoints: 59,
+        HitPointsRoll: "7d10 + 21",
+        Speed: ["40 ft."],
+        Strength: 19,
+        Dexterity: 12,
+        Constitution: 16,
+        Intelligence: 5,
+        Wisdom: 7,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "passive Perception 8"],
+        Languages: ["Common", "Giant"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Fist",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage."
+            },
+            {
+                Title: "Bolt Launcher",
+                Desc: "Ranged Weapon Attack: +3 to hit, range 120/480 ft., one target. Hit: 17 (2d12 + 4) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "An ogre bolt launcher carries a gigantic crossbow that is essentially a ballista wielded by an ogre. The enormous bolts can punch through foes and, when ammunition runs low, the ogre can uproot small trees or tear beams from buildings to use as improvised ammunition."
+    },
+    { // Ogre Chain Brute
+        ID: 643,
+        ProfileType: "Monster",
+        Name: "Ogre Chain Brute",
+        Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 11,
+        HitPoints: 59,
+        HitPointsRoll: "7d10 + 21",
+        Speed: ["40 ft."],
+        Strength: 19,
+        Dexterity: 8,
+        Constitution: 16,
+        Intelligence: 5,
+        Wisdom: 7,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "passive Perception 8"],
+        Languages: ["Common", "Giant"],
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Fist",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage."
+            },
+            {
+                Title: "Chain Sweep",
+                Desc: "The ogre swings its chain, and every creature within 10 feet of it must make a DC 14 Dexterity saving throw. On a failed saving throw, a creature takes 8 (1d8 + 4) bludgeoning damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone."
+            },
+            {
+                Title: "Chain Smash (Recharge 6)",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage, and the target must succeed on a DC 14 Constitution saving throw or be knocked unconscious for 1 minute. The unconscious target repeats the saving throw if it takes damage and at the end of each of its turns, ending the effect on itself on a success."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "An ogre chain brute wields a great spiked chain, swinging it in broad circles to knock foes from their feet or bringing it down in a crushing overhead strike that is difficult to avoid."
+    },
+    { // Ogre Howdah
+        ID: 644,
+        ProfileType: "Monster",
+        Name: "Ogre Howdah",
+        Type: "Large giant, chaotic evil",
+        TypeCategory: "Giant",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 13,
+        HitPoints: 59,
+        HitPointsRoll: "7d10 + 21",
+        Speed: ["40 ft."],
+        Strength: 19,
+        Dexterity: 8,
+        Constitution: 16,
+        Intelligence: 5,
+        Wisdom: 7,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "passive Perception 8"],
+        Languages: ["Common", "Giant"],
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Howdah",
+                Desc: "The ogre carries a compact fort on its back. Up to four Small creatures can ride in the fort without squeezing. To make a melee attack against a target within 5 feet of the ogre, they must use spears or weapons with reach. Creatures in the fort have three-quarters cover against attacks and effects from outside it. If the ogre dies, creatures in the fort are placed in unoccupied spaces within 5 feet of the ogre."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Mace",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+            },
+            {
+                Title: "Javelin",
+                Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "An ogre howdah carries a compact, palisaded wooden fort on its back. The fort serves as a fighting platform for up to four Small humanoids, commonly goblins armed with bows and spears."
+    },
+    { // Retriever
+        ID: 645,
+        ProfileType: "Monster",
+        Name: "Retriever",
+        Type: "Large construct, lawful evil",
+        TypeCategory: "Construct",
+        Size: "Large",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 19,
+        HitPoints: 210,
+        HitPointsRoll: "20d10 + 100",
+        Speed: ["40 ft.", "climb 40 ft."],
+        Strength: 22,
+        Dexterity: 16,
+        Constitution: 20,
+        Intelligence: 3,
+        Wisdom: 11,
+        Charisma: 4,
+        SavingThrows: ["Dex +8", "Con +10", "Wis +5"],
+        Skills: ["Perception +5", "Stealth +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Necrotic", "Poison", "Psychic", "Bludgeoning, Piercing, And Slashing From Nonmagical Attacks That Aren't Adamantine"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Poisoned"],
+        Senses: ["blindsight 30 ft.", "darkvision 60 ft.", "passive Perception 15"],
+        Languages: ["Understands Abyssal, Elvish, And Undercommon But Can't Speak"],
+        Challenge: [14, 11500],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Faultless Tracker",
+                Desc: "The retriever is given a quarry by its master. The quarry can be a specific creature or object the master is personally acquainted with, or it can be a general type of creature or object the master has seen before. The retriever knows the direction and distance to its quarry as long as the two of them are on the same plane of existence. The retriever can have only one such quarry at a time. The retriever also always knows the location of its master."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The retriever's innate spellcasting ability is Wisdom (spell save DC 13). The retriever can innately cast the following spells, requiring no material components: 3/day each: plane shift (only self and up to one incapacitated creature, which is considered willing for the spell), web."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The retriever makes two foreleg attacks and uses its force or paralyzing beam once, if available."
+            },
+            {
+                Title: "Foreleg",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) slashing damage."
+            },
+            {
+                Title: "Force Beam",
+                Desc: "The retriever targets one creature it can see within 60 feet of it. The target must make a DC 16 Dexterity saving throw, taking 27 (5d10) force damage on a failed save, or half as much damage on a successful one."
+            },
+            {
+                Title: "Paralyzing Beam (Recharge 5-6)",
+                Desc: "The retriever targets one creature it can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the paralyzed creature is Medium or smaller, the retriever can pick it up as part of the retriever's move and walk or climb with it at full speed."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A retriever is a potent spider-like construct created by the drow. Its metal body houses the imprisoned spirit of a bebilith, leaving the construct with a measure of the demon's cruelty and cunning. Retrievers are used as hunters and collectors, relentlessly tracking creatures or objects assigned to them by their masters."
+    },
+    { // Frost Salamander
+        ID: 646,
+        ProfileType: "Monster",
+        Name: "Frost Salamander",
+        Type: "Huge elemental, unaligned",
+        TypeCategory: "Elemental",
+        Size: "Huge",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 17,
+        HitPoints: 168,
+        HitPointsRoll: "16d12 + 64",
+        Speed: ["60 ft.", "burrow 40 ft.", "climb 40 ft."],
+        Strength: 20,
+        Dexterity: 12,
+        Constitution: 18,
+        Intelligence: 7,
+        Wisdom: 11,
+        Charisma: 7,
+        SavingThrows: ["Con +8", "Wis +4"],
+        Skills: ["Perception +4"],
+        DamageVulnerabilities: ["Fire"],
+        DamageResistances: [],
+        DamageImmunities: ["Cold"],
+        ConditionImmunities: [],
+        Senses: ["darkvision 60 ft.", "tremorsense 60 ft.", "passive Perception 14"],
+        Languages: ["Primordial"],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Burning Fury",
+                Desc: "When the salamander takes fire damage, its Freezing Breath automatically recharges."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The salamander makes five attacks: four with its claws and one with its bite."
+            },
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5) piercing damage."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 9 (1d8 + 5) piercing damage and 5 (1d10) cold damage."
+            },
+            {
+                Title: "Freezing Breath (Recharge 6)",
+                Desc: "The salamander exhales chill wind in a 60-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 44 (8d10) cold damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Frost salamanders are natives of the Plane of Ice, also called the Frostfell. They are enormous, cold-loving predators that hunt warm-blooded creatures and are drawn to sources of heat. They burrow through ice and create extensive networks of icy caves that can appear to travelers to be safe shelters."
+    },
+    { // Gloom Weaver
+        ID: 647,
+        ProfileType: "Monster",
+        Name: "Gloom Weaver",
+        Type: "Medium humanoid (elf), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 14,
+        HitPoints: 104,
+        HitPointsRoll: "16d8 + 32",
+        Speed: ["30 ft."],
+        Strength: 11,
+        Dexterity: 18,
+        Constitution: 14,
+        Intelligence: 15,
+        Wisdom: 12,
+        Charisma: 18,
+        SavingThrows: ["Dex +8", "Con +6"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Necrotic"],
+        ConditionImmunities: ["Charmed", "Exhaustion"],
+        Senses: ["darkvision 60 ft.", "passive Perception 11"],
+        Languages: ["Common", "Elvish"],
+        Challenge: [9, 5000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Burden of Time",
+                Desc: "Beasts and humanoids, other than shadar-kai, have disadvantage on saving throws while within 10 feet of the gloom weaver."
+            },
+            {
+                Title: "Fey Ancestry",
+                Desc: "The gloom weaver has advantage on saving throws against being charmed, and magic can't put it to sleep."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The gloom weaver's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components: At will: arcane eye, mage armor, speak with dead; 1/day each: arcane gate, bane, compulsion, confusion, true seeing."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The gloom weaver is a 12th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: Cantrips (at will): chill touch (3d8 damage), eldritch blast (3 beams, +4 bonus to each damage roll), minor illusion, prestidigitation; 1st-5th level (3 5th-level slots): armor of Agathys, blight, darkness, dream, invisibility, fear, hypnotic pattern, major image, contact other plane, vampiric touch, witch bolt."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The gloom weaver makes two spear attacks and casts one spell that takes 1 action to cast."
+            },
+            {
+                Title: "Shadow Spear",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands, plus 26 (4d12) necrotic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Misty Escape (Recharges after a Short or Long Rest)",
+                Desc: "When the gloom weaver takes damage, it turns invisible and teleports up to 60 feet to an unoccupied space it can see. It remains invisible until the start of its next turn or until it attacks or casts a spell."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Gloom weavers are shadar-kai who dress in dark cloaks and heavy veils and detest reminders of their age. They often remain hidden in shadows, their presence weighing on the hearts of nearby creatures while their shadow magic allows them to destroy those who discover them."
+    },
+    { // Shadow Dancer
+        ID: 648,
+        ProfileType: "Monster",
+        Name: "Shadow Dancer",
+        Type: "Medium humanoid (elf), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 15,
+        HitPoints: 71,
+        HitPointsRoll: "13d8 + 13",
+        Speed: ["30 ft."],
+        Strength: 12,
+        Dexterity: 16,
+        Constitution: 13,
+        Intelligence: 11,
+        Wisdom: 12,
+        Charisma: 12,
+        SavingThrows: ["Dex +6", "Cha +4"],
+        Skills: ["Stealth +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Necrotic"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Exhaustion"],
+        Senses: ["darkvision 60 ft.", "passive Perception 11"],
+        Languages: ["Common", "Elvish"],
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Fey Ancestry",
+                Desc: "The shadow dancer has advantage on saving throws against being charmed, and magic can't put it to sleep."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The shadow dancer makes three spiked chain attacks."
+            },
+            {
+                Title: "Spiked Chain",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage, and the target must succeed on a DC 14 Dexterity saving throw or suffer one additional effect of the shadow dancer's choice: The target is grappled (escape DC 14) if it is a Medium or smaller creature. Until the grapple ends, the target is restrained, and the shadow dancer can't grapple another target; the target is knocked prone; or the target takes 22 (4d10) necrotic damage."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Shadow Jump",
+                Desc: "As a bonus action, the shadow dancer can teleport up to 30 feet to an unoccupied space it can see. Both the space it teleports from and the space it teleports to must be in dim light or darkness. The shadow dancer can use this ability between the weapon attacks of another action it takes."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Shadow dancers resemble living darkness and use dim alcoves and darkened spaces to emerge suddenly against their prey. They fight with entangling spiked chains, binding and corrupting their victims before others move in to finish them."
+    },
+    { // Soul Monger
+        ID: 649,
+        ProfileType: "Monster",
+        Name: "Soul Monger",
+        Type: "Medium humanoid (elf), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 15,
+        HitPoints: 123,
+        HitPointsRoll: "19d8 + 38",
+        Speed: ["30 ft."],
+        Strength: 8,
+        Dexterity: 17,
+        Constitution: 14,
+        Intelligence: 19,
+        Wisdom: 15,
+        Charisma: 13,
+        SavingThrows: ["Dex +7", "Wis +7", "Cha +5"],
+        Skills: ["Perception +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Necrotic", "Psychic"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened"],
+        Senses: ["darkvision 60 ft.", "passive Perception 17"],
+        Languages: ["Common", "Elvish"],
+        Challenge: [11, 7200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Fey Ancestry",
+                Desc: "The soul monger has advantage on saving throws against being charmed, and magic can't put it to sleep."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The soul monger's innate spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components: At will: chill touch (3d8 damage), poison spray (3d12 damage); 1/day each: bestow curse, chain lightning, finger of death, gaseous form, phantasmal killer, seeming."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The soul monger has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Soul Thirst",
+                Desc: "When the soul monger reduces a creature to 0 hit points, the soul monger can gain temporary hit points equal to half the creature's hit point maximum. While the soul monger has temporary hit points from this ability, it has advantage on attack rolls."
+            },
+            {
+                Title: "Weight of Ages",
+                Desc: "Any beast or humanoid, other than a shadar-kai, that starts its turn within 5 feet of the soul monger has its speed reduced by 20 feet until the start of that creature's next turn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The soul monger makes two phantasmal dagger attacks."
+            },
+            {
+                Title: "Phantasmal Dagger",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (4d4 + 3) piercing damage plus 19 (3d12) necrotic damage, and the target has disadvantage on saving throws until the start of the soul monger's next turn."
+            },
+            {
+                Title: "Wave of Weariness (Recharge 4-6)",
+                Desc: "The soul monger emits weariness in a 60-foot cube. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save, a creature takes 45 (10d8) psychic damage and suffers 1 level of exhaustion. On a successful save, it takes 22 (5d8) psychic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Soul mongers are shadar-kai consumed by despair over lost memories and a craving for the vitality of others. An aching void within them manifests as an oppressive weight that drains the vigor of creatures nearby."
+    },
+    { // Skulk
+        ID: 650,
+        ProfileType: "Monster",
+        Name: "Skulk",
+        Type: "Medium humanoid, chaotic neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 14,
+        HitPoints: 18,
+        HitPointsRoll: "4d8",
+        Speed: ["30 ft."],
+        Strength: 6,
+        Dexterity: 19,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 7,
+        Charisma: 1,
+        SavingThrows: ["Con +2"],
+        Skills: ["Stealth +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Radiant"],
+        ConditionImmunities: ["Blinded"],
+        Senses: ["darkvision 120 ft.", "passive Perception 8"],
+        Languages: ["Understands Common But Can't Speak"],
+        Challenge: [0.5, 100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Fallible Invisibility",
+                Desc: "The skulk is invisible. This invisibility can be circumvented by three things: The skulk appears as a drab, smooth-skinned humanoid if its reflection can be seen in a mirror or on another surface; the skulk appears as a dim, translucent form in the light of a candle made of fat rendered from a corpse whose identity is unknown; humanoid children, aged 10 and under, can see through this invisibility."
+            },
+            {
+                Title: "Trackless",
+                Desc: "The skulk leaves no tracks to indicate where it has been or where it's headed."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Claws",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) slashing damage. If the skulk has advantage on the attack roll, the target also takes 7 (2d6) necrotic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Skulks are soulless shells of travelers who became lost in the Shadowfell and gradually lost all sense of identity. They are permanently invisible except under certain conditions, and when visible they appear as drab, smooth-skinned, featureless humanoids."
+    },
+    { // Skull Lord
+        ID: 651,
+        ProfileType: "Monster",
+        Name: "Skull Lord",
+        Type: "Medium undead, lawful evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Mordenkainen's Tome of Foes",
+        ArmorClass: 18,
+        HitPoints: 105,
+        HitPointsRoll: "14d8 + 42",
+        Speed: ["30 ft."],
+        Strength: 14,
+        Dexterity: 16,
+        Constitution: 17,
+        Intelligence: 16,
+        Wisdom: 15,
+        Charisma: 21,
+        SavingThrows: [],
+        Skills: ["Athletics +7", "History +8", "Perception +12", "Stealth +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Necrotic", "Bludgeoning, Piercing, And Slashing From Nonmagical Attacks"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Poisoned", "Stunned", "Unconscious"],
+        Senses: ["darkvision 60 ft.", "passive Perception 22"],
+        Languages: ["All The Languages It Knew In Life"],
+        Challenge: [15, 13000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If the skull lord fails a saving throw, it can choose to succeed instead."
+            },
+            {
+                Title: "Master of the Grave",
+                Desc: "While within 30 feet of the skull lord, any undead ally of the skull lord makes saving throws with advantage, and that ally regains 1d6 hit points whenever it starts its turn there."
+            },
+            {
+                Title: "Evasion",
+                Desc: "If the skull lord is subjected to an effect that allows it to make a Dexterity saving throw to take only half the damage, the skull lord instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The skull lord is a 13th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The skull lord knows the following sorcerer spells: Cantrips (at will): chill touch, fire bolt, mage hand, poison spray, ray of frost, shocking grasp; 1st level (4 slots): magic missile, expeditious retreat, thunderwave; 2nd level (3 slots): mirror image, scorching ray; 3rd level (3 slots): fear, haste; 4th level (3 slots): dimension door, ice storm; 5th level (2 slots): cloudkill, cone of cold; 6th level (1 slot): eyebite; 7th level (1 slot): finger of death."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The skull lord makes three bone staff attacks."
+            },
+            {
+                Title: "Bone Staff",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 14 (4d6) necrotic damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Bone Staff (Costs 2 Actions)",
+                Desc: "The skull lord makes a bone staff attack."
+            },
+            {
+                Title: "Cantrip",
+                Desc: "The skull lord casts a cantrip."
+            },
+            {
+                Title: "Move",
+                Desc: "The skull lord moves up to its speed without provoking opportunity attacks."
+            },
+            {
+                Title: "Summon Undead (Costs 3 Actions)",
+                Desc: "Up to five skeletons or zombies appear in unoccupied spaces within 30 feet of the skull lord and remain until destroyed. Undead summoned in this way roll initiative and act in the next available turn. The skull lord can have up to five undead summoned by this ability at a time."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Skull lords are undead rulers created from three hateful individuals fused together. They claim territories in the Shadowfell and command hordes of undead, but the three minds within each skull lord constantly plot against one another. They are heavily armored undead wielding bone staffs and commanding the dead through sorcery."
     },
 
 
