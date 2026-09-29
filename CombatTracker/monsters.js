@@ -38994,7 +38994,7 @@ const monstersLocal = [
         TypeCategory: "Undead",
         Size: "Medium",
         Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: 18,
+        ArmorClass: [18, "breastplate, shield"],
         HitPoints: 127,
         HitPointsRoll: "15d8 + 60",
         Speed: ["30 ft."],
@@ -39057,7 +39057,7 @@ const monstersLocal = [
         TypeCategory: "Undead",
         Size: "Medium",
         Source: "Mordenkainen's Tome of Foes",
-        ArmorClass: 16,
+        ArmorClass: [16, "chain shirt, shield"],
         HitPoints: 45,
         HitPointsRoll: "6d8 + 18",
         Speed: ["30 ft."],
@@ -39194,7 +39194,7 @@ const monstersLocal = [
             },
             {
                 Title: "Spellcasting",
-                Desc: "The tortle is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared: Cantrips (at will): druidcraft, guidance, produce flame; 1st level (4 slots): animal friendship, cure wounds, speak with animals, thunderwave; 2nd level (3 slots): darkvision, hold person."
+                Desc: "The tortle is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared: <br><br>Cantrips (at will): druidcraft, guidance, produce flame; <br>1st level (4 slots): animal friendship, cure wounds, speak with animals, thunderwave; <br>2nd level (3 slots): darkvision, hold person."
             }
         ],
         Actions: [
@@ -39627,7 +39627,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting",
-                Desc: "The dhergoloth's innate spellcasting ability is Charisma (spell save DC 10). It can innately cast the following spells, requiring no material components: At will: darkness, fear; 3/day: sleep."
+                Desc: "The dhergoloth's innate spellcasting ability is Charisma (spell save DC 10). It can innately cast the following spells, requiring no material components: <br><br>At will: darkness, fear; <br>3/day: sleep."
             },
             {
                 Title: "Magic Resistance",
@@ -39698,7 +39698,19 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting",
-                Desc: "The hydroloth's innate spellcasting ability is Intelligence (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: darkness, detect magic, dispel magic, invisibility (self only), water walk; 3/day each: control water, crown of madness, fear, phantasmal killer, suggestion."
+                Desc: "The hydroloth's innate spellcasting ability is Intelligence (spell save DC 16). It can innately cast the following spells, requiring no material components: <br><br>At will: darkness, detect magic, dispel magic, invisibility (self only), water walk; <br>3/day each: control water, crown of madness, fear, phantasmal killer, suggestion."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The hydroloth has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The hydroloth's weapon attacks are magical."
+            },
+            {
+                Title: "Secure Memory",
+                Desc: "The hydroloth is immune to the waters of the River Styx as well as any effect that would steal or modify its memories or detect or read its thoughts."
             },
             {
                 Title: "Watery Advantage",
@@ -39765,7 +39777,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting",
-                Desc: "The merrenoloth's innate spellcasting ability is Intelligence (spell save DC 13). It can innately cast the following spells, requiring no material components: At will: charm person, darkness, detect magic, dispel magic, gust of wind; 3/day: control water; 1/day: control weather."
+                Desc: "The merrenoloth's innate spellcasting ability is Intelligence (spell save DC 13). It can innately cast the following spells, requiring no material components: <br><br>At will: charm person, darkness, detect magic, dispel magic, gust of wind; <br>3/day: control water; <br>1/day: control weather."
             },
             {
                 Title: "Magic Resistance",
@@ -39849,17 +39861,13 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting",
-                Desc: "The oinoloth's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: darkness, detect magic, dispel magic, invisibility (self only); 1/day each: feeblemind, globe of invulnerability, wall of fire, wall of ice."
+                Desc: "The oinoloth's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: <br><br>At will: darkness, detect magic, dispel magic, invisibility (self only); <br>1/day each: feeblemind, globe of invulnerability, wall of fire, wall of ice."
             }
         ],
         Actions: [
             {
                 Title: "Multiattack",
                 Desc: "The oinoloth uses its Transfixing Gaze and makes two claw attacks."
-            },
-            {
-                Title: "Bringer of Plagues (Recharge 5-6)",
-                Desc: "As a bonus action, the oinoloth blights the area within 30 feet of it. The blight lasts for 24 hours. While blighted, all normal plants in the area wither and die, and the number of hit points restored by a spell to a creature in that area is halved. Furthermore, when a creature moves into the blighted area or starts its turn there, that creature must make a DC 16 Constitution saving throw. On a successful save, the creature is immune to the oinoloth's Bringer of Plagues for the next 24 hours. On a failed save, the creature takes 14 (4d6) necrotic damage and is poisoned. The poisoned creature can't regain hit points. After every 24 hours that elapse, the poisoned creature can repeat the saving throw. On a failed save, the creature's hit point maximum is reduced by 5 (1d10). This reduction lasts until the poison ends, and the target dies if its hit point maximum is reduced to 0. The poison ends after the creature successfully saves against it three times."
             },
             {
                 Title: "Claw",
@@ -39878,7 +39886,12 @@ const monstersLocal = [
                 Desc: "The oinoloth targets one creature it can see within 30 feet of it. The target must succeed on a DC 16 Wisdom saving throw against this magic or be charmed until the end of the oinoloth's next turn. While charmed in this way, the target is restrained. If the target's saving throw is successful, the target is immune to the oinoloth's gaze for the next 24 hours."
             }
         ],
-        BonusActions: [],
+        BonusActions: [
+            {
+                Title: "Bringer of Plagues (Recharge 5-6)",
+                Desc: "As a bonus action, the oinoloth blights the area within 30 feet of it. The blight lasts for 24 hours. While blighted, all normal plants in the area wither and die, and the number of hit points restored by a spell to a creature in that area is halved. <br>Furthermore, when a creature moves into the blighted area or starts its turn there, that creature must make a DC 16 Constitution saving throw. On a successful save, the creature is immune to the oinoloth's Bringer of Plagues for the next 24 hours. On a failed save, the creature takes 14 (4d6) necrotic damage and is poisoned. <br>The poisoned creature can't regain hit points. After every 24 hours that elapse, the poisoned creature can repeat the saving throw. On a failed save, the creature's hit point maximum is reduced by 5 (1d10). This reduction lasts until the poison ends, and the target dies if its hit point maximum is reduced to 0. The poison ends after the creature successfully saves against it three times."
+            },
+        ],
         Reactions: [],
         LegendaryActions: [],
         RegionalEffects: [],
@@ -39916,7 +39929,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting",
-                Desc: "The yagnoloth's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: darkness, detect magic, dispel magic, invisibility (self only), suggestion; 3/day: lightning bolt."
+                Desc: "The yagnoloth's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: <br><br>At will: darkness, detect magic, dispel magic, invisibility (self only), suggestion; <br>3/day: lightning bolt."
             },
             {
                 Title: "Magic Resistance",
@@ -39960,6 +39973,7 @@ const monstersLocal = [
         LairActions: [],
         Description: "Yagnoloths are the contract negotiators and commanders of the yugoloths. They possess one human-sized arm and one giant-sized arm, normally concealing one beneath a long cape. Their contracts are carefully written and frequently contain loopholes that allow the yagnoloth to escape an obligation when circumstances permit."
     },
+    // 681 left off. Now Homebrew!!!
     
 
 
