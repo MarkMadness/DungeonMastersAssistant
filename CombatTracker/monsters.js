@@ -1841,7 +1841,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Couatl
         ID: 32,
@@ -1904,7 +1908,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Crawling Claw
         ID: 33,
@@ -1946,7 +1954,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cyclops
         ID: 34,
@@ -1996,7 +2008,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Darkmantle
         ID: 35,
@@ -2051,7 +2067,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Death Knight
         ID: 36,
@@ -2119,7 +2139,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Demilich
         ID: 37,
@@ -2194,7 +2218,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Balor
         ID: 38,
@@ -2261,7 +2289,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Barlgura
         ID: 39,
@@ -2320,7 +2352,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Chasme
         ID: 40,
@@ -2371,7 +2407,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Dretch
         ID: 41,
@@ -2425,7 +2465,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Glabrezu
         ID: 42,
@@ -2484,7 +2528,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Goristro
         ID: 43,
@@ -2547,7 +2595,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hezrou
         ID: 44,
@@ -2606,7 +2658,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Manes
         ID: 45,
@@ -2648,7 +2704,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Marilith
         ID: 46,
@@ -2715,7 +2775,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Nalfeshnee
         ID: 47,
@@ -2774,7 +2838,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Quasit
         ID: 48,
@@ -2833,7 +2901,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Shadow Demon
         ID: 49,
@@ -2896,7 +2968,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Vrock
         ID: 50,
@@ -2959,7 +3035,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yochlol
         ID: 51,
@@ -3030,7 +3110,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Barbed Devil
         ID: 52,
@@ -3097,7 +3181,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bearded Devil
         ID: 53,
@@ -3156,7 +3244,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bone Devil
         ID: 54,
@@ -3215,7 +3307,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Chain Devil
         ID: 55,
@@ -3278,7 +3374,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Erinyes
         ID: 56,
@@ -3342,7 +3442,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Horned Devil
         ID: 57,
@@ -3409,7 +3513,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ice Devil
         ID: 58,
@@ -3480,7 +3588,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Imp
         ID: 59,
@@ -3539,7 +3651,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Lemure
         ID: 60,
@@ -3586,7 +3702,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Pit Fiend
         ID: 61,
@@ -3657,7 +3777,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Spined Devil
         ID: 62,
@@ -3716,7 +3840,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Allosaurus
         ID: 63,
@@ -3771,7 +3899,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ankylosaurus
         ID: 64,
@@ -3813,7 +3945,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Plesiosaurus
         ID: 65,
@@ -3860,7 +3996,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Triceratops
         ID: 66,
@@ -3915,7 +4055,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Pteranodon
         ID: 67,
@@ -3962,7 +4106,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Tyrannosaurus Rex
         ID: 68,
@@ -4012,7 +4160,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Displacer Beast
         ID: 69,
@@ -4067,7 +4219,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Doppelganger
         ID: 70,
@@ -4130,7 +4286,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Blue Dracolich
         ID: 71,
@@ -4214,7 +4374,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Red Shadow Dragon
         ID: 72,
@@ -4281,7 +4445,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient Black Dragon
         ID: 73,
@@ -4365,7 +4533,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Black Dragon
         ID: 74,
@@ -4449,7 +4621,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Black Dragon
         ID: 75,
@@ -4508,7 +4684,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Black Dragon Wyrmling
         ID: 76,
@@ -4563,7 +4743,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient Blue Dragon
         ID: 77,
@@ -4648,7 +4832,11 @@ const monstersLocal = [
             "A wall of sand rises to form a solid wall up to 60 feet long, 20 feet high, and 5 feet thick, within 120 feet of the dragon. The wall lasts until the dragon uses this lair action again or until the dragon dies."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Blue Dragon
         ID: 78,
@@ -4728,7 +4916,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Blue Dragon
         ID: 79,
@@ -4782,7 +4974,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Blue Dragon Wyrmling
         ID: 80,
@@ -4828,7 +5024,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient Green Dragon
         ID: 81,
@@ -4917,7 +5117,11 @@ const monstersLocal = [
             "A pocket of caustic gas explodes in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. Each creature in that area must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Green Dragon
         ID: 82,
@@ -5001,7 +5205,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Green Dragon
         ID: 83,
@@ -5060,7 +5268,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Green Dragon Wyrmling
         ID: 84,
@@ -5106,7 +5318,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient Red Dragon
         ID: 85,
@@ -5191,7 +5407,11 @@ const monstersLocal = [
             "Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners, and its area is heavily obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the start of its next turn."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Red Dragon
         ID: 86,
@@ -5271,7 +5491,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Red Dragon
         ID: 87,
@@ -5325,7 +5549,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Red Dragon Wyrmling
         ID: 88,
@@ -5371,7 +5599,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient White Dragon
         ID: 89,
@@ -5460,7 +5692,11 @@ const monstersLocal = [
             "The dragon causes the ground within 60 feet of it to become icy difficult terrain. The ice remains until initiative count 20 on the next round. Any creature that enters the icy area or starts its turn there must succeed on a DC 18 Dexterity saving throw or fall prone."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult White Dragon
         ID: 90,
@@ -5544,7 +5780,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young White Dragon
         ID: 91,
@@ -5603,7 +5843,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // White Dragon Wyrmling
         ID: 92,
@@ -5654,7 +5898,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient Brass Dragon
         ID: 93,
@@ -5738,7 +5986,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Brass Dragon
         ID: 94,
@@ -5822,7 +6074,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Brass Dragon
         ID: 95,
@@ -5876,7 +6132,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Brass Dragon Wyrmling
         ID: 96,
@@ -5922,7 +6182,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient Bronze Dragon
         ID: 97,
@@ -6015,7 +6279,11 @@ const monstersLocal = [
             "The dragon casts fog cloud, without providing material components, centered on a point within 120 feet of it. The spell lasts until initiative count 20 on the next round."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Bronze Dragon
         ID: 98,
@@ -6103,7 +6371,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Bronze Dragon
         ID: 99,
@@ -6162,7 +6434,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bronze Dragon Wyrmling
         ID: 100,
@@ -6208,7 +6484,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient Copper Dragon
         ID: 101,
@@ -6292,7 +6572,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Copper Dragon
         ID: 102,
@@ -6376,7 +6660,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Copper Dragon
         ID: 103,
@@ -6430,7 +6718,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Copper Dragon Wyrmling
         ID: 104,
@@ -6476,7 +6768,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient Gold Dragon
         ID: 105,
@@ -6565,7 +6861,11 @@ const monstersLocal = [
             "The dragon creates a tremor that shakes the ground within 60 feet of it. Each creature other than the dragon on the ground in that area must succeed on a DC 18 Dexterity saving throw or fall prone."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Gold Dragon
         ID: 106,
@@ -6649,7 +6949,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Gold Dragon
         ID: 107,
@@ -6703,7 +7007,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gold Dragon Wyrmling
         ID: 108,
@@ -6749,7 +7057,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ancient Silver Dragon
         ID: 109,
@@ -6833,7 +7145,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Adult Silver Dragon
         ID: 110,
@@ -6917,7 +7233,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Silver Dragon
         ID: 111,
@@ -6971,7 +7291,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Silver Dragon Wyrmling
         ID: 112,
@@ -7017,7 +7341,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Dragon Turtle
         ID: 113,
@@ -7080,7 +7408,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Drider
         ID: 114,
@@ -7151,7 +7483,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Dryad
         ID: 115,
@@ -7214,7 +7550,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Duergar
         ID: 116,
@@ -7281,7 +7621,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Air Elemental
         ID: 117,
@@ -7336,7 +7680,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Earth Elemental
         ID: 118,
@@ -7391,7 +7739,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Fire Elemental
         ID: 119,
@@ -7446,7 +7798,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Water Elemental
         ID: 120,
@@ -7505,7 +7861,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Drow
         ID: 121,
@@ -7568,7 +7928,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Drow Elite Warrior
         ID: 122,
@@ -7636,7 +8000,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Drow Mage
         ID: 123,
@@ -7695,7 +8063,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Drow Priestess of Lolth
         ID: 124,
@@ -7758,7 +8130,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Empyrean
         ID: 125,
@@ -7834,7 +8210,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ettercap
         ID: 126,
@@ -7901,7 +8281,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ettin
         ID: 127,
@@ -7960,7 +8344,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Faerie Dragon
         ID: 128,
@@ -8019,7 +8407,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Flameskull
         ID: 129,
@@ -8078,7 +8470,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Flumph
         ID: 130,
@@ -8137,7 +8533,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Fomorian
         ID: 131,
@@ -8191,7 +8591,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gas Spore
         ID: 132,
@@ -8242,7 +8646,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Shrieker
         ID: 133,
@@ -8289,7 +8697,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Violet Fungus
         ID: 134,
@@ -8340,7 +8752,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Galeb Duhr
         ID: 135,
@@ -8395,7 +8811,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gargoyle
         ID: 136,
@@ -8450,7 +8870,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Dao
         ID: 137,
@@ -8517,7 +8941,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Djinni
         ID: 138,
@@ -8576,7 +9004,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Efreeti
         ID: 139,
@@ -8635,7 +9067,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Marid
         ID: 140,
@@ -8698,7 +9134,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ghost
         ID: 141,
@@ -8761,7 +9201,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ghast
         ID: 142,
@@ -8816,7 +9260,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ghoul
         ID: 143,
@@ -8862,7 +9310,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cloud Giant
         ID: 144,
@@ -8921,7 +9373,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Fire Giant
         ID: 145,
@@ -8971,7 +9427,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Frost Giant
         ID: 146,
@@ -9021,7 +9481,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hill Giant
         ID: 147,
@@ -9071,7 +9535,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Stone Giant
         ID: 148,
@@ -9131,7 +9599,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Storm Giant
         ID: 149,
@@ -9194,7 +9666,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gibbering Mouther
         ID: 150,
@@ -9253,7 +9729,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Githyanki Warrior
         ID: 151,
@@ -9304,7 +9784,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Githyanki Knight
         ID: 152,
@@ -9355,7 +9839,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Githzerai Monk
         ID: 153,
@@ -9410,7 +9898,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Githzerai Zerth
         ID: 154,
@@ -9465,7 +9957,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gnoll
         ID: 155,
@@ -9520,7 +10016,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gnoll Pack Lord
         ID: 156,
@@ -9583,7 +10083,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gnoll Fang of Yeenoghu
         ID: 157,
@@ -9638,7 +10142,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Deep Gnome (Svirfneblin)
         ID: 158,
@@ -9697,7 +10205,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Goblin
         ID: 159,
@@ -9748,7 +10260,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Goblin Boss
         ID: 160,
@@ -9808,7 +10324,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Clay Golem
         ID: 161,
@@ -9879,7 +10399,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Flesh Golem
         ID: 162,
@@ -9950,7 +10474,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Iron Golem
         ID: 163,
@@ -10021,7 +10549,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Stone Golem
         ID: 164,
@@ -10084,7 +10616,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gorgon
         ID: 165,
@@ -10139,7 +10675,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Grell
         ID: 166,
@@ -10189,7 +10729,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Grick
         ID: 167,
@@ -10244,7 +10788,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Grick Alpha
         ID: 168,
@@ -10303,7 +10851,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Griffon
         ID: 169,
@@ -10358,7 +10910,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Grimlock
         ID: 170,
@@ -10413,7 +10969,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Green Hag
         ID: 171,
@@ -10476,7 +11036,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Night Hag
         ID: 172,
@@ -10539,7 +11103,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Sea Hag
         ID: 173,
@@ -10598,7 +11166,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Half-Red Dragon Veteran
         ID: 174,
@@ -10661,7 +11233,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Harpy
         ID: 175,
@@ -10715,7 +11291,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hell Hound
         ID: 176,
@@ -10770,7 +11350,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Helmed Horror
         ID: 177,
@@ -10825,7 +11409,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hippogriff
         ID: 178,
@@ -10880,7 +11468,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hobgoblin
         ID: 179,
@@ -10931,7 +11523,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hobgoblin Captain
         ID: 180,
@@ -10990,7 +11586,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hobgoblin Warlord
         ID: 181,
@@ -11058,7 +11658,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Homunculus
         ID: 182,
@@ -11105,7 +11709,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hook Horror
         ID: 183,
@@ -11160,7 +11768,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hydra
         ID: 184,
@@ -11223,7 +11835,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Intellect Devourer
         ID: 185,
@@ -11282,7 +11898,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Invisible Stalker
         ID: 186,
@@ -11337,7 +11957,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Jackalwere
         ID: 187,
@@ -11400,7 +12024,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Kenku
         ID: 188,
@@ -11510,7 +12138,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Kobold
         ID: 190,
@@ -11565,7 +12197,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Kraken
         ID: 191,
@@ -11653,7 +12289,11 @@ const monstersLocal = [
             "The water in the kraken's lair becomes electrically charged. All creatures within 120 feet of the kraken must succeed on a DC 23 Constitution saving throw, taking 10 (3d6) lightning damage on a failed save, or half as much damage on a successful one."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Kuo-Toa
         ID: 192,
@@ -11725,7 +12365,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Kuo-Toa Archpriest
         ID: 193,
@@ -11796,7 +12440,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Kuo-Toa Whip
         ID: 194,
@@ -11867,7 +12515,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Lamia
         ID: 195,
@@ -11926,7 +12578,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Lich
         ID: 196,
@@ -12006,7 +12662,11 @@ const monstersLocal = [
             "The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw, taking 52 (15d6) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Lizardfolk
         ID: 197,
@@ -12069,7 +12729,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Lizardfolk Shaman
         ID: 198,
@@ -12128,7 +12792,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Lizard King/Queen
         ID: 199,
@@ -12187,7 +12855,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Werebear
         ID: 200,
@@ -12250,7 +12922,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Wereboar
         ID: 201,
@@ -12313,7 +12989,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Wererat
         ID: 202,
@@ -12376,7 +13056,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Weretiger
         ID: 203,
@@ -12447,7 +13131,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Werewolf
         ID: 204,
@@ -12510,7 +13198,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Magmin
         ID: 205,
@@ -12561,7 +13253,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Manticore
         ID: 206,
@@ -12620,7 +13316,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Medusa
         ID: 207,
@@ -12679,7 +13379,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Dust Mephit
         ID: 208,
@@ -12734,7 +13438,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ice Mephit
         ID: 209,
@@ -12793,7 +13501,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Magma Mephit
         ID: 210,
@@ -12852,7 +13564,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mud Mephit
         ID: 211,
@@ -12907,7 +13623,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Smoke Mephit
         ID: 212,
@@ -12962,7 +13682,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Steam Mephit
         ID: 213,
@@ -13017,7 +13741,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Merfolk
         ID: 214,
@@ -13064,7 +13792,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Merrow
         ID: 215,
@@ -13123,7 +13855,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mimic
         ID: 216,
@@ -13186,7 +13922,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mind Flayer
         ID: 217,
@@ -13245,7 +13985,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Minotaur
         ID: 218,
@@ -13304,7 +14048,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Monodrone
         ID: 219,
@@ -13359,7 +14107,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Duodrone
         ID: 220,
@@ -13418,7 +14170,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Tridrone
         ID: 221,
@@ -13477,7 +14233,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Quadrone
         ID: 222,
@@ -13536,7 +14296,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Pentadrone
         ID: 223,
@@ -13595,7 +14359,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mummy
         ID: 224,
@@ -13645,7 +14413,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mummy Lord
         ID: 225,
@@ -13733,7 +14505,11 @@ const monstersLocal = [
             "Until initiative count 20 on the next round, any non-undead creature that tries to cast a spell of 4th level or lower in the mummy lord's lair is wracked with pain. The creature can choose another action, but if it tries to cast the spell, it must make a DC 16 Constitution saving throw. On a failed save, it takes 1d6 necrotic damage per level of the spell, and the spell has no effect and is wasted."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Myconid Sprout
         ID: 226,
@@ -13788,7 +14564,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Quaggoth Spore Servant
         ID: 227,
@@ -13834,7 +14614,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Myconid Adult
         ID: 228,
@@ -13893,7 +14677,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Myconid Sovereign
         ID: 229,
@@ -13964,7 +14752,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bone Naga
         ID: 230,
@@ -14011,7 +14803,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Spirit Naga
         ID: 231,
@@ -14062,7 +14858,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Guardian Naga
         ID: 232,
@@ -14117,7 +14917,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Nightmare
         ID: 233,
@@ -14172,7 +14976,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Nothic
         ID: 234,
@@ -14231,7 +15039,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ogre
         ID: 235,
@@ -14277,7 +15089,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Half-Ogre
         ID: 236,
@@ -14323,7 +15139,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Oni
         ID: 237,
@@ -14386,7 +15206,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Black Pudding
         ID: 238,
@@ -14446,7 +15270,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gelatinous Cube
         ID: 239,
@@ -14501,7 +15329,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gray Ooze
         ID: 240,
@@ -14556,7 +15388,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ochre Jelly
         ID: 241,
@@ -14612,7 +15448,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orc
         ID: 242,
@@ -14663,7 +15503,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orc War Chief
         ID: 243,
@@ -14723,7 +15567,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orc Eye of Gruumsh
         ID: 244,
@@ -14778,7 +15626,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orog
         ID: 245,
@@ -14833,7 +15685,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Otyugh
         ID: 246,
@@ -14892,7 +15748,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Owlbear
         ID: 247,
@@ -14947,7 +15807,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Pegasus
         ID: 248,
@@ -14994,7 +15858,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Peryton
         ID: 249,
@@ -15057,7 +15925,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Piercer
         ID: 250,
@@ -15108,7 +15980,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Pixie
         ID: 251,
@@ -15163,7 +16039,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Pseudodragon
         ID: 252,
@@ -15222,7 +16102,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Purple Worm
         ID: 253,
@@ -15272,7 +16156,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Quaggoth
         ID: 254,
@@ -15327,7 +16215,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Rakshasa
         ID: 255,
@@ -15382,7 +16274,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Young Remorhaz
         ID: 256,
@@ -15429,7 +16325,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Remorhaz
         ID: 257,
@@ -15480,7 +16380,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Revenant
         ID: 258,
@@ -15547,7 +16451,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Roc
         ID: 259,
@@ -15602,7 +16510,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Roper
         ID: 260,
@@ -15669,7 +16581,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Rust Monster
         ID: 261,
@@ -15724,7 +16640,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Sahuagin
         ID: 262,
@@ -15791,7 +16711,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Sahuagin Priestess
         ID: 263,
@@ -15858,7 +16782,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Sahuagin Baron
         ID: 264,
@@ -15925,7 +16853,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Fire Snake
         ID: 265,
@@ -15980,7 +16912,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Salamander
         ID: 266,
@@ -16039,7 +16975,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Satyr
         ID: 267,
@@ -16094,7 +17034,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Scarecrow
         ID: 268,
@@ -16157,7 +17101,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Shadow
         ID: 269,
@@ -16212,7 +17160,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Shambling Mound
         ID: 270,
@@ -16267,7 +17219,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Shield Guardian
         ID: 271,
@@ -16331,7 +17287,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Skeleton
         ID: 272,
@@ -16377,7 +17337,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Minotaur Skeleton
         ID: 273,
@@ -16428,7 +17392,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Warhorse Skeleton
         ID: 274,
@@ -16475,7 +17443,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Red Slaad
         ID: 275,
@@ -16534,7 +17506,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Slaad Tadpole
         ID: 276,
@@ -16581,7 +17557,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Blue Slaad
         ID: 277,
@@ -16640,7 +17620,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Green Slaad
         ID: 278,
@@ -16715,7 +17699,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gray Slaad
         ID: 279,
@@ -16786,7 +17774,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Death Slaad
         ID: 280,
@@ -16857,7 +17849,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Specter
         ID: 281,
@@ -16908,7 +17904,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Androsphinx
         ID: 282,
@@ -16967,7 +17967,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gynosphinx
         ID: 283,
@@ -17022,7 +18026,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Sprite
         ID: 284,
@@ -17077,7 +18085,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Stirge
         ID: 285,
@@ -17119,7 +18131,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Succubus/Incubus
         ID: 286,
@@ -17182,7 +18198,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Tarrasque
         ID: 287,
@@ -17278,7 +18298,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Thri-kreen
         ID: 288,
@@ -17337,7 +18361,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Treant
         ID: 289,
@@ -17400,7 +18428,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Troglodyte
         ID: 290,
@@ -17463,7 +18495,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Troll
         ID: 291,
@@ -17522,7 +18558,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Umber Hulk
         ID: 292,
@@ -17581,7 +18621,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Unicorn
         ID: 293,
@@ -17665,7 +18709,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Vampire
         ID: 294,
@@ -17757,7 +18805,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Vampire Spawn
         ID: 295,
@@ -17820,7 +18872,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Water Weird
         ID: 296,
@@ -17871,7 +18927,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Wight
         ID: 297,
@@ -17934,7 +18994,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Will-o'-Wisp
         ID: 298,
@@ -17997,7 +19061,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Wraith
         ID: 299,
@@ -18052,7 +19120,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Wyvern
         ID: 300,
@@ -18106,7 +19178,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Xorn
         ID: 301,
@@ -18169,7 +19245,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yeti
         ID: 302,
@@ -18232,7 +19312,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Abominable Yeti
         ID: 303,
@@ -18295,7 +19379,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yuan-ti Abomination
         ID: 304,
@@ -18366,7 +19454,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yuan-ti Malison
         ID: 305,
@@ -18437,7 +19529,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yuan-ti Pureblood
         ID: 306,
@@ -18492,7 +19588,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Arcanaloth
         ID: 307,
@@ -18555,7 +19655,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mezzoloth
         ID: 308,
@@ -18622,7 +19726,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Nycaloth
         ID: 309,
@@ -18689,7 +19797,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ultroloth
         ID: 310,
@@ -18756,7 +19868,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Zombie
         ID: 311,
@@ -18803,7 +19919,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ogre Zombie
         ID: 312,
@@ -18850,7 +19970,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Beholder Zombie
         ID: 313,
@@ -18901,7 +20025,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ape
         ID: 314,
@@ -18951,7 +20079,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Awakened Shrub
         ID: 315,
@@ -18993,7 +20125,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Awakened Tree
         ID: 316,
@@ -19040,7 +20176,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Axe Beak
         ID: 317,
@@ -19082,7 +20222,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Baboon
         ID: 318,
@@ -19129,7 +20273,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Badger
         ID: 319,
@@ -19176,7 +20324,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bat
         ID: 320,
@@ -19223,7 +20375,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Black Bear
         ID: 321,
@@ -19278,7 +20434,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Blink Dog
         ID: 322,
@@ -19324,7 +20484,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Blood Hawk
         ID: 323,
@@ -19375,7 +20539,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Boar
         ID: 324,
@@ -19426,7 +20594,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Brown Bear
         ID: 325,
@@ -19481,7 +20653,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Camel
         ID: 326,
@@ -19523,7 +20699,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cat
         ID: 327,
@@ -19574,7 +20754,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Constrictor Snake
         ID: 328,
@@ -19620,7 +20804,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Crab
         ID: 329,
@@ -19662,7 +20850,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Crocodile
         ID: 330,
@@ -19709,7 +20901,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Death Dog
         ID: 331,
@@ -19760,7 +20956,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Deer
         ID: 332,
@@ -19806,7 +21006,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Dire Wolf
         ID: 333,
@@ -19857,7 +21061,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Draft Horse
         ID: 334,
@@ -19899,7 +21107,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Eagle
         ID: 335,
@@ -19946,7 +21158,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Elephant
         ID: 336,
@@ -19997,7 +21213,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Elk
         ID: 337,
@@ -20048,7 +21268,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Flying Snake
         ID: 338,
@@ -20095,7 +21319,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Frog
         ID: 339,
@@ -20146,7 +21374,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Ape
         ID: 340,
@@ -20196,7 +21428,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Badger
         ID: 341,
@@ -20251,7 +21487,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Bat
         ID: 342,
@@ -20302,7 +21542,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Boar
         ID: 343,
@@ -20353,7 +21597,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Centipede
         ID: 344,
@@ -20395,7 +21643,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Constrictor Snake
         ID: 345,
@@ -20441,7 +21693,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Crab
         ID: 346,
@@ -20488,7 +21744,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Crocodile
         ID: 347,
@@ -20543,7 +21803,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Eagle
         ID: 348,
@@ -20598,7 +21862,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Elk
         ID: 349,
@@ -20649,7 +21917,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Fire Beetle
         ID: 350,
@@ -20696,7 +21968,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Frog
         ID: 351,
@@ -20751,7 +22027,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Goat
         ID: 352,
@@ -20802,7 +22082,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Hyena
         ID: 353,
@@ -20849,7 +22133,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Lizard
         ID: 354,
@@ -20891,7 +22179,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Octopus
         ID: 355,
@@ -20950,7 +22242,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Owl
         ID: 356,
@@ -21001,7 +22297,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Poisonous Snake
         ID: 357,
@@ -21043,7 +22343,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Rat
         ID: 358,
@@ -21094,7 +22398,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Scorpion
         ID: 359,
@@ -21144,7 +22452,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Sea Horse
         ID: 360,
@@ -21195,7 +22507,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Shark
         ID: 361,
@@ -21246,7 +22562,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Spider
         ID: 362,
@@ -21305,7 +22625,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Toad
         ID: 363,
@@ -21360,7 +22684,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Vulture
         ID: 364,
@@ -21419,7 +22747,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Wasp
         ID: 365,
@@ -21461,7 +22793,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Weasel
         ID: 366,
@@ -21508,7 +22844,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Wolf Spider
         ID: 367,
@@ -21563,7 +22903,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Goat
         ID: 368,
@@ -21614,7 +22958,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hawk
         ID: 369,
@@ -21661,7 +23009,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hunter Shark
         ID: 370,
@@ -21712,7 +23064,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hyena
         ID: 371,
@@ -21759,7 +23115,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Jackal
         ID: 372,
@@ -21810,7 +23170,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Killer Whale
         ID: 373,
@@ -21861,7 +23225,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Lion
         ID: 374,
@@ -21920,7 +23288,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Lizard
         ID: 375,
@@ -21962,7 +23334,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mammoth
         ID: 376,
@@ -22013,7 +23389,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mastiff
         ID: 377,
@@ -22060,7 +23440,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mule
         ID: 378,
@@ -22111,7 +23495,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Octopus
         ID: 379,
@@ -22162,7 +23550,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Owl
         ID: 380,
@@ -22213,7 +23605,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Panther
         ID: 381,
@@ -22268,7 +23664,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Phase Spider
         ID: 382,
@@ -22319,7 +23719,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Poisonous Snake
         ID: 383,
@@ -22361,7 +23765,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Polar Bear
         ID: 384,
@@ -22416,7 +23824,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Pony
         ID: 385,
@@ -22463,7 +23875,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Quipper
         ID: 386,
@@ -22514,7 +23930,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Rat
         ID: 387,
@@ -22561,7 +23981,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Raven
         ID: 388,
@@ -22608,7 +24032,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Reef Shark
         ID: 389,
@@ -22655,7 +24083,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Rhinoceros
         ID: 390,
@@ -22702,7 +24134,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Riding Horse
         ID: 391,
@@ -22744,7 +24180,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Sabre-Toothed Tiger
         ID: 392,
@@ -22799,7 +24239,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Scorpion
         ID: 393,
@@ -22841,7 +24285,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Sea Horse
         ID: 394,
@@ -22883,7 +24331,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Spider
         ID: 395,
@@ -22938,7 +24390,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Bats
         ID: 396,
@@ -22989,7 +24445,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Beetles
         ID: 397,
@@ -23036,7 +24496,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Centipedes
         ID: 398,
@@ -23083,7 +24547,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Insects
         ID: 399,
@@ -23130,7 +24598,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Poisonous Snakes
         ID: 400,
@@ -23177,7 +24649,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Quippers
         ID: 401,
@@ -23232,7 +24708,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Rats
         ID: 402,
@@ -23283,7 +24763,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Ravens
         ID: 403,
@@ -23334,7 +24818,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Tiger
         ID: 404,
@@ -23389,7 +24877,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Vulture
         ID: 405,
@@ -23440,7 +24932,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Warhorse
         ID: 406,
@@ -23487,7 +24983,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Weasel
         ID: 407,
@@ -23534,7 +25034,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Winter Wolf
         ID: 408,
@@ -23593,7 +25097,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Wolf
         ID: 409,
@@ -23644,7 +25152,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Worg
         ID: 410,
@@ -23691,7 +25203,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Acolyte
         ID: 411,
@@ -23738,7 +25254,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Archmage
         ID: 412,
@@ -23789,7 +25309,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Assassin
         ID: 413,
@@ -23852,7 +25376,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bandit
         ID: 414,
@@ -23898,7 +25426,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bandit Captain
         ID: 415,
@@ -23953,7 +25485,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Berserker
         ID: 416,
@@ -24000,7 +25536,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Commoner
         ID: 417,
@@ -24042,7 +25582,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cultist
         ID: 418,
@@ -24089,7 +25633,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cult Fanatic
         ID: 419,
@@ -24144,7 +25692,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Druid
         ID: 420,
@@ -24191,7 +25743,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gladiator
         ID: 421,
@@ -24258,7 +25814,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Guard
         ID: 422,
@@ -24300,7 +25860,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Knight
         ID: 423,
@@ -24364,7 +25928,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mage
         ID: 424,
@@ -24411,7 +25979,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Noble
         ID: 425,
@@ -24463,7 +26035,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Priest
         ID: 426,
@@ -24514,7 +26090,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Scout
         ID: 427,
@@ -24569,7 +26149,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Spy
         ID: 428,
@@ -24628,7 +26212,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Thug
         ID: 429,
@@ -24683,7 +26271,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Tribal Warrior
         ID: 430,
@@ -24730,7 +26322,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Veteran
         ID: 431,
@@ -24784,7 +26380,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Banderhobb
         ID: 432,
@@ -24847,7 +26447,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Barghest
         ID: 433,
@@ -24910,7 +26514,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Death Kiss
         ID: 434,
@@ -24965,7 +26573,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gauth
         ID: 435,
@@ -25020,7 +26632,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gazer
         ID: 436,
@@ -25075,7 +26691,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bodak
         ID: 437,
@@ -25134,7 +26754,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Boggle
         ID: 438,
@@ -25193,7 +26817,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Catoblepas
         ID: 439,
@@ -25248,7 +26876,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cave Fisher
         ID: 440,
@@ -25311,7 +26943,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Chitine
         ID: 441,
@@ -25374,7 +27010,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Choldrith
         ID: 442,
@@ -25445,7 +27085,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cranium Rat
         ID: 443,
@@ -25496,7 +27140,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Cranium Rats
         ID: 444,
@@ -25555,7 +27203,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Darkling
         ID: 445,
@@ -25606,7 +27258,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Darkling Elder
         ID: 446,
@@ -25661,7 +27317,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Deep Scion
         ID: 447,
@@ -25728,7 +27388,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Babau
         ID: 448,
@@ -25787,7 +27451,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Maw Demon
         ID: 449,
@@ -25834,7 +27502,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Shoosuva
         ID: 450,
@@ -25889,7 +27561,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Devourer
         ID: 451,
@@ -25943,7 +27619,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Dimetrodon
         ID: 452,
@@ -25985,7 +27665,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Brontosaurus
         ID: 453,
@@ -26031,7 +27715,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Deinonychus
         ID: 454,
@@ -26086,7 +27774,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hadrosaurus
         ID: 455,
@@ -26128,7 +27820,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Quetzalcoatlus
         ID: 456,
@@ -26179,7 +27875,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Stegosaurus
         ID: 457,
@@ -26221,7 +27921,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Velociraptor
         ID: 458,
@@ -26276,7 +27980,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Draegloth
         ID: 459,
@@ -26335,7 +28043,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Firenewt Warrior
         ID: 460,
@@ -26390,7 +28102,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Giant Strider
         ID: 461,
@@ -26441,7 +28157,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Firenewt Warlock of Imix
         ID: 462,
@@ -26500,7 +28220,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Flail Snail
         ID: 463,
@@ -26563,7 +28287,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Froghemoth
         ID: 464,
@@ -26626,7 +28354,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cloud Giant Smiling One
         ID: 465,
@@ -26693,7 +28425,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Fire Giant Dreadnought
         ID: 466,
@@ -26752,7 +28488,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Frost Giant Everlasting One
         ID: 467,
@@ -26815,7 +28555,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mouth of Grolantor
         ID: 468,
@@ -26866,7 +28610,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Stone Giant Dreamwalker
         ID: 469,
@@ -26925,7 +28673,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Storm Giant Quintessent
         ID: 470,
@@ -27006,7 +28758,11 @@ const monstersLocal = [
             }
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Girallon
         ID: 471,
@@ -27065,7 +28821,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Flind
         ID: 472,
@@ -27128,7 +28888,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gnoll Flesh Gnawer
         ID: 473,
@@ -27187,7 +28951,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gnoll Hunter
         ID: 474,
@@ -27246,7 +29014,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Gnoll Witherling
         ID: 475,
@@ -27306,7 +29078,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Grung
         ID: 476,
@@ -27361,7 +29137,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Grung Elite Warrior
         ID: 477,
@@ -27424,7 +29204,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Grung Wildling
         ID: 478,
@@ -27487,7 +29271,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Guard Drake
         ID: 479,
@@ -27537,7 +29325,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Annis Hag
         ID: 480,
@@ -27596,7 +29388,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bheur Hag
         ID: 481,
@@ -27655,7 +29451,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hobgoblin Devastator
         ID: 482,
@@ -27710,7 +29510,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Hobgoblin Iron Shadow
         ID: 483,
@@ -27773,7 +29577,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ki-rin
         ID: 484,
@@ -27863,7 +29671,11 @@ const monstersLocal = [
             "A ki-rin can cast control weather while it is within 3 miles of its lair. The spell's point of origin is always the point outdoors closest to the center of its lair. The ki-rin doesn't need to maintain a clear path to the sky or to concentrate for the change in weather to persist.",
             "Within 3 miles of the lair, winds buoy non-evil creatures that fall due to no act of the ki-rin or its allies. Such creatures descend at a rate of 60 feet per round and take no falling damage."
         ],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Kobold Dragonshield
         ID: 485,
@@ -27926,7 +29738,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Kobold Inventor
         ID: 486,
@@ -27985,7 +29801,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Kobold Scale Sorcerer
         ID: 487,
@@ -28044,7 +29864,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Korred
         ID: 488,
@@ -28111,7 +29935,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Leucrotta
         ID: 489,
@@ -28178,7 +30006,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Meenlock
         ID: 490,
@@ -28233,7 +30065,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Alhoon
         ID: 491,
@@ -28296,7 +30132,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Elder Brain
         ID: 492,
@@ -28396,7 +30236,11 @@ const monstersLocal = [
             "The elder brain can overhear any telepathic conversation happening within 5 miles of it. The creature that initiated the telepathic conversation makes a DC 18 Wisdom (Insight) check when telepathic contact is first established. If the check succeeds, the creature is aware that something is eavesdropping on the conversation. The nature of the eavesdropper isn't revealed, and the elder brain can't participate in the telepathic conversation unless it has formed a psychic link with the creature that initiated it.",
             "Any creature with which the elder brain has formed a psychic link hears faint, incomprehensible whispers in the deepest recesses of its mind. This psychic detritus consists of the elder brain's stray thoughts commingled with those of other creatures to which it is linked."
         ],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ulitharid
         ID: 493,
@@ -28463,7 +30307,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Mindwitness
         ID: 494,
@@ -28522,7 +30370,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Morkoth
         ID: 495,
@@ -28598,7 +30450,11 @@ const monstersLocal = [
             "Entrances to the morkoth's lair have an enchantment that the morkoth can activate or suppress at any time while it's in its lair and not incapacitated. Any creature within 30 feet of such an entrance and able to see it must make a DC 15 Wisdom saving throw. On a failed save, the creature feels an intense urge to use its movement on each of its turns to enter the lair and to move toward the morkoth's location (the target doesn't realize it's heading toward a creature). The target moves toward the morkoth by the most direct route. As soon as it can see the morkoth, the target can repeat the saving throw, ending the effect on itself on a success. It can also repeat the saving throw at the end of each of its turns and every time it takes damage.",
             "With a thought (no action required), the morkoth can initiate a change in the water within its lair that takes effect 1 minute later. The water can be as breathable and clear as air, or it can be normal water (ranging in clarity from murky to clear)."
         ],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Neogi Hatchling
         ID: 496,
@@ -28649,7 +30505,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Neogi
         ID: 497,
@@ -28712,7 +30572,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Neogi Master
         ID: 498,
@@ -28779,7 +30643,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Neothelid
         ID: 499,
@@ -28838,7 +30706,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Nilbog
         ID: 500,
@@ -28902,7 +30774,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orc Blade of Ilneval
         ID: 501,
@@ -28965,7 +30841,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orc Claw of Luthic
         ID: 502,
@@ -29020,7 +30900,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orc Hand of Yurtrus
         ID: 503,
@@ -29071,7 +30955,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orc Nurtured One of Yurtrus
         ID: 504,
@@ -29130,7 +31018,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orc Red Fang of Shargaas
         ID: 505,
@@ -29201,7 +31093,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Tanarukk
         ID: 506,
@@ -29265,7 +31161,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Quickling
         ID: 507,
@@ -29320,7 +31220,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Redcap
         ID: 508,
@@ -29379,7 +31283,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Sea Spawn
         ID: 509,
@@ -29442,7 +31350,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Shadow Mastiff
         ID: 510,
@@ -29501,7 +31413,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Slithering Tracker
         ID: 511,
@@ -29576,7 +31492,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Spawn of Kyuss
         ID: 512,
@@ -29635,7 +31555,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Tlincalli
         ID: 513,
@@ -29689,7 +31613,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Trapper
         ID: 514,
@@ -29740,7 +31668,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Vargouille
         ID: 515,
@@ -29790,7 +31722,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Vegepygmy
         ID: 516,
@@ -29845,7 +31781,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Vegepygmy Chief
         ID: 517,
@@ -29908,7 +31848,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Thorny
         ID: 518,
@@ -29963,7 +31907,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Wood Woad
         ID: 519,
@@ -30026,7 +31974,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Xvart
         ID: 520,
@@ -30085,7 +32037,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Xvart Warlock of Raxivort
         ID: 521,
@@ -30148,7 +32104,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yeth Hound
         ID: 522,
@@ -30207,7 +32167,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yuan-ti Anathema
         ID: 523,
@@ -30282,7 +32246,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yuan-ti Broodguard
         ID: 524,
@@ -30341,7 +32309,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yuan-ti Mind Whisperer
         ID: 525,
@@ -30416,7 +32388,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yuan-ti Nightmare Speaker
         ID: 526,
@@ -30491,7 +32467,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yuan-ti Pit Master
         ID: 527,
@@ -30562,7 +32542,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Aurochs
         ID: 528,
@@ -30609,7 +32593,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cow
         ID: 529,
@@ -30656,7 +32644,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Dolphin
         ID: 530,
@@ -30707,7 +32699,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swarm of Rot Grubs
         ID: 531,
@@ -30754,7 +32750,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Abjurer
         ID: 532,
@@ -30805,7 +32805,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Apprentice Wizard
         ID: 533,
@@ -30852,7 +32856,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Archdruid
         ID: 534,
@@ -30903,7 +32911,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Archer
         ID: 535,
@@ -30958,7 +32970,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bard
         ID: 536,
@@ -31017,7 +33033,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Bards are gifted poets, storytellers, and entertainers who travel far and wide, but are commonly found in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, and wealthy patrons."
+        Description: "Bards are gifted poets, storytellers, and entertainers who travel far and wide, but are commonly found in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, and wealthy patrons.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Blackguard
         ID: 537,
@@ -31076,7 +33096,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Blackguards are paladins who broke their sacred oaths and now indulge their own dark ambitions. They consort with fiends and undead, and they reject all goodly things from their former lives."
+        Description: "Blackguards are paladins who broke their sacred oaths and now indulge their own dark ambitions. They consort with fiends and undead, and they reject all goodly things from their former lives.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Champion
         ID: 538,
@@ -31135,7 +33159,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Champions are mighty warriors who honed their fighting skills in wars or gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers."
+        Description: "Champions are mighty warriors who honed their fighting skills in wars or gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Conjurer
         ID: 539,
@@ -31186,7 +33214,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Conjurers are specialist wizards who summon creatures from other planes and create materials out of thin air. Some conjurers use their magic to bolster armies or destroy enemies on battlefields, while others use summoned creatures to guard their lairs."
+        Description: "Conjurers are specialist wizards who summon creatures from other planes and create materials out of thin air. Some conjurers use their magic to bolster armies or destroy enemies on battlefields, while others use summoned creatures to guard their lairs.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Diviner
         ID: 540,
@@ -31237,7 +33269,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Diviners are specialist wizards who know that knowledge is power. They might act aloof and mysterious, hinting at omens and secrets, or they might be know-italls, spilling secrets and insights to advance their own status or reputation."
+        Description: "Diviners are specialist wizards who know that knowledge is power. They might act aloof and mysterious, hinting at omens and secrets, or they might be know-italls, spilling secrets and insights to advance their own status or reputation.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Enchanter
         ID: 541,
@@ -31289,7 +33325,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Enchanters are specialist wizards who understand how to alter and control minds using magic. They might be personable and interesting, using magic to manipulate people only when banter and conventional persuasion fails, or they might be rude and demanding, using and relying on charmed, obedient minions."
+        Description: "Enchanters are specialist wizards who understand how to alter and control minds using magic. They might be personable and interesting, using magic to manipulate people only when banter and conventional persuasion fails, or they might be rude and demanding, using and relying on charmed, obedient minions.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Evoker
         ID: 542,
@@ -31340,7 +33380,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Evokers are specialist wizards who harness magical energy and elemental forces to destroy. Many tend to be hotheaded and aggressive. Others are cold and reserved, unleashing their power at just the right moment to exploit an opponent's weakness."
+        Description: "Evokers are specialist wizards who harness magical energy and elemental forces to destroy. Many tend to be hotheaded and aggressive. Others are cold and reserved, unleashing their power at just the right moment to exploit an opponent's weakness.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Illusionist
         ID: 543,
@@ -31391,7 +33435,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Illusionists are specialist wizards who twist light, sound, shadow, and even minds to create false and quasi-real effects. They can be flamboyant and use their powers in spectacular and obvious ways, or quiet and subtle, using their magic to conceal the truth."
+        Description: "Illusionists are specialist wizards who twist light, sound, shadow, and even minds to create false and quasi-real effects. They can be flamboyant and use their powers in spectacular and obvious ways, or quiet and subtle, using their magic to conceal the truth.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Kraken Priest
         ID: 544,
@@ -31446,7 +33494,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A kraken can seem godlike to folk who have witnessed its fury. Those who mistake its might for divine power and those who seek to appease the monster through veneration are sometimes rewarded with power, to serve thereafter as kraken priests. The kraken can make itself dimly aware of a kraken priest's thoughts if the two are on the same plane of existence, and it can then push aside the priest's personality and control it. Kraken priests can thereby act as eyes and ears for their masters, and when the kraken has something to say, the priest becomes its mouthpiece. Every kraken priest undergoes a change in appearance that reflects the kraken's influence, although each one differs in how its reverence is displayed. One kraken priest might have ink-black eyes and a suckered tentacle for a tongue, while another has a featureless face and a body covered in eyes and mouths that dribble seawater. These horrific manifestations intensify when the kraken possesses its minion to utter its dire pronouncements."
+        Description: "A kraken can seem godlike to folk who have witnessed its fury. Those who mistake its might for divine power and those who seek to appease the monster through veneration are sometimes rewarded with power, to serve thereafter as kraken priests. The kraken can make itself dimly aware of a kraken priest's thoughts if the two are on the same plane of existence, and it can then push aside the priest's personality and control it. Kraken priests can thereby act as eyes and ears for their masters, and when the kraken has something to say, the priest becomes its mouthpiece. Every kraken priest undergoes a change in appearance that reflects the kraken's influence, although each one differs in how its reverence is displayed. One kraken priest might have ink-black eyes and a suckered tentacle for a tongue, while another has a featureless face and a body covered in eyes and mouths that dribble seawater. These horrific manifestations intensify when the kraken possesses its minion to utter its dire pronouncements.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Martial Arts Adept
         ID: 545,
@@ -31506,7 +33558,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Martial arts adepts are disciplined monks with extensive training in hand-to-hand combat. Some protect monasteries; others travel the world seeking enlightenment or new forms of combat to master. A few become bodyguards, trading their combat prowess and loyalty for food and lodging."
+        Description: "Martial arts adepts are disciplined monks with extensive training in hand-to-hand combat. Some protect monasteries; others travel the world seeking enlightenment or new forms of combat to master. A few become bodyguards, trading their combat prowess and loyalty for food and lodging.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Master Thief
         ID: 546,
@@ -31574,7 +33630,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Master thieves are known for perpetrating daring heists. They tend to develop a reputation and a cult of personality. A master thief might 'retire' from hands-on work to run a thieves' guild, spearhead some covert enterprise, or enjoy a quiet life of luxury."
+        Description: "Master thieves are known for perpetrating daring heists. They tend to develop a reputation and a cult of personality. A master thief might 'retire' from hands-on work to run a thieves' guild, spearhead some covert enterprise, or enjoy a quiet life of luxury.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Necromancer
         ID: 547,
@@ -31625,7 +33685,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Necromancers are specialist wizards who study the interaction of life, death, and undeath. Some like to dig up corpses to create undead slaves. A few use their powers for good, becoming hunters of the undead and risking their lives to save others."
+        Description: "Necromancers are specialist wizards who study the interaction of life, death, and undeath. Some like to dig up corpses to create undead slaves. A few use their powers for good, becoming hunters of the undead and risking their lives to save others.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Swashbuckler
         ID: 548,
@@ -31684,7 +33748,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Swashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoreity, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long."
+        Description: "Swashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoreity, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Transmuter
         ID: 549,
@@ -31735,7 +33803,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Transmuters are specialist wizards who embrace change, rail against the status quo, and view magical transmutation as a path to riches, enlightenment, or apotheosis."
+        Description: "Transmuters are specialist wizards who embrace change, rail against the status quo, and view magical transmutation as a path to riches, enlightenment, or apotheosis.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // War Priest
         ID: 550,
@@ -31791,7 +33863,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "War priests worship deities of war and combat. They plan tactics, lead soldiers into battle, confront enemy spellcasters, and tend to casualties. A war priest might command an army or serve as a warlord's right hand on the battlefield."
+        Description: "War priests worship deities of war and combat. They plan tactics, lead soldiers into battle, confront enemy spellcasters, and tend to casualties. A war priest might command an army or serve as a warlord's right hand on the battlefield.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Warlock of the Archfey
         ID: 551,
@@ -31847,7 +33923,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Warlocks of the archfey gain their powers through magical pacts forged with lords of the Feywild. These warlocks commonly associate with lesser fey creatures such as boggles, quicklings, redcaps, satyrs, and sprites."
+        Description: "Warlocks of the archfey gain their powers through magical pacts forged with lords of the Feywild. These warlocks commonly associate with lesser fey creatures such as boggles, quicklings, redcaps, satyrs, and sprites.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Warlock of the Fiend
         ID: 552,
@@ -31902,7 +33982,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Warlocks of the fiend gain their powers through magical pacts forged with archfiends of the Lower Planes. These warlocks often keep imps or quasits as companions, and they tend toward extremes of behavior: consorting with fiend-worshiping cultists or dedicating their lives to destroying fiendish cults."
+        Description: "Warlocks of the fiend gain their powers through magical pacts forged with archfiends of the Lower Planes. These warlocks often keep imps or quasits as companions, and they tend toward extremes of behavior: consorting with fiend-worshiping cultists or dedicating their lives to destroying fiendish cults.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Warlock of the Great Old One
         ID: 553,
@@ -31957,7 +34041,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Warlocks of the Great Old One gain their powers through magical pacts forged with eldritch entities from strange and distant realms of existence. Some of these warlocks associate with cultists devoted to these entities, as well as aberrations that share their goals, yet other warlocks of the Great Old One are experts at rooting out the insanity and wickedness inspired by bizarre beings from beyond the stars."
+        Description: "Warlocks of the Great Old One gain their powers through magical pacts forged with eldritch entities from strange and distant realms of existence. Some of these warlocks associate with cultists devoted to these entities, as well as aberrations that share their goals, yet other warlocks of the Great Old One are experts at rooting out the insanity and wickedness inspired by bizarre beings from beyond the stars.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Warlord
         ID: 554,
@@ -32029,7 +34117,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Warlords are legendary battlefield commanders whose names are spoken with awe. After a string of decisive victories, a warlord could easily take on the role of monarch or general and attract followers willing to die for his or her banner."
+        Description: "Warlords are legendary battlefield commanders whose names are spoken with awe. After a string of decisive victories, a warlord could easily take on the role of monarch or general and attract followers willing to die for his or her banner.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Allip
         ID: 555,
@@ -32084,7 +34176,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Astral Dreadnought
         ID: 556,
@@ -32176,7 +34272,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Astral dreadnoughts are enormous, terrifying monstrosities that haunt the silvery void of the Astral Plane. As large as an ancient red dragon, a dreadnought is covered from head to tail in layers of thick, spiked plates. Two gnarled limbs end in razor-sharp pincer claws, while a single enormous eye dominates its head; constellations seem to swirl within the depths of that starry eye. Its serpentine, armored tail trails behind it through the silvery void. Astral dreadnoughts are silent creatures that communicate in no known way and normally exist as solitary hunters. They are remorseless and indiscriminate predators, using their teeth and claws to tear apart anything they encounter while instinctively positioning themselves so that as many opponents as possible remain within the antimagic gaze of their eye. Anything they swallow is transported into a unique demiplane resembling a vast stone cavern containing the remains of countless past meals and dead planar travelers. Astral dreadnoughts were created by Tharizdun, the Chained God, to devour planar travelers seeking portals from the Astral Plane to the Outer Planes. They cannot leave the Astral Plane and do not require air, food, drink, or sleep."
+        Description: "Astral dreadnoughts are enormous, terrifying monstrosities that haunt the silvery void of the Astral Plane. As large as an ancient red dragon, a dreadnought is covered from head to tail in layers of thick, spiked plates. Two gnarled limbs end in razor-sharp pincer claws, while a single enormous eye dominates its head; constellations seem to swirl within the depths of that starry eye. Its serpentine, armored tail trails behind it through the silvery void. Astral dreadnoughts are silent creatures that communicate in no known way and normally exist as solitary hunters. They are remorseless and indiscriminate predators, using their teeth and claws to tear apart anything they encounter while instinctively positioning themselves so that as many opponents as possible remain within the antimagic gaze of their eye. Anything they swallow is transported into a unique demiplane resembling a vast stone cavern containing the remains of countless past meals and dead planar travelers. Astral dreadnoughts were created by Tharizdun, the Chained God, to devour planar travelers seeking portals from the Astral Plane to the Outer Planes. They cannot leave the Astral Plane and do not require air, food, drink, or sleep.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Balhannoth
         ID: 557,
@@ -32251,7 +34351,11 @@ const monstersLocal = [
             "Creatures within 1 mile of the balhannoth's lair experience a sensation of being close to whatever they desire most. The sensation grows stronger the closer the creatures come to the balhannoth's lair.",
             "The balhannoth can sense the strongest desires of any humanoid within 1 mile of it and learns whether those desires involve a place: a safe location to rest, a temple, home, or somewhere else."
         ],
-        Description: "Native to the Shadowfell, the balhannoth is a vicious, predatory aberration that makes its lair appear inviting to travelers before springing its trap. It is a large, powerful creature equipped with a dangerous bite and four tentacles, which it uses to seize and restrain its prey. Its extraordinary blindsight allows it to perceive creatures at great distances despite being blind beyond that range. Balhannoths are masters of deception through reality warping: they sense the desires of nearby creatures and reshape their surroundings to resemble places those creatures desperately wish to find, though the imitations always contain subtle flaws and inconsistencies. They thrive on fear and despair, taking pleasure in the terror of their victims before teleporting away to feed. In the Shadowfell, they typically establish lairs near places inhabited by their prey, such as well-traveled roads and paths. Drow and other Underdark inhabitants sometimes capture balhannoths and use them as guardians for passages, slave pens, and other strategic locations."
+        Description: "Native to the Shadowfell, the balhannoth is a vicious, predatory aberration that makes its lair appear inviting to travelers before springing its trap. It is a large, powerful creature equipped with a dangerous bite and four tentacles, which it uses to seize and restrain its prey. Its extraordinary blindsight allows it to perceive creatures at great distances despite being blind beyond that range. Balhannoths are masters of deception through reality warping: they sense the desires of nearby creatures and reshape their surroundings to resemble places those creatures desperately wish to find, though the imitations always contain subtle flaws and inconsistencies. They thrive on fear and despair, taking pleasure in the terror of their victims before teleporting away to feed. In the Shadowfell, they typically establish lairs near places inhabited by their prey, such as well-traveled roads and paths. Drow and other Underdark inhabitants sometimes capture balhannoths and use them as guardians for passages, slave pens, and other strategic locations.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Berbalang
         ID: 558,
@@ -32310,7 +34414,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Berbalangs are strange aberrations that creep across the petrified remains of dead gods drifting through the Astral Plane. They have a gaunt, unsettling humanoid appearance and are obsessed with gathering secrets from the dead, often calling forth the spirits of deceased creatures and recording the information they reveal on bones. A berbalang can also create a spectral duplicate of itself to spy on other planes. While its duplicate gathers information, the berbalang's physical body becomes completely unconscious. Berbalangs are valued as sources of obscure information by powerful planar travelers, while githyanki sometimes cooperate with them as spies and watchers."
+        Description: "Berbalangs are strange aberrations that creep across the petrified remains of dead gods drifting through the Astral Plane. They have a gaunt, unsettling humanoid appearance and are obsessed with gathering secrets from the dead, often calling forth the spirits of deceased creatures and recording the information they reveal on bones. A berbalang can also create a spectral duplicate of itself to spy on other planes. While its duplicate gathers information, the berbalang's physical body becomes completely unconscious. Berbalangs are valued as sources of obscure information by powerful planar travelers, while githyanki sometimes cooperate with them as spies and watchers.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Boneclaw
         ID: 559,
@@ -32374,7 +34482,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A boneclaw is the hideous result of a failed attempt to become a lich. Its body is an emaciated undead form with unnaturally long, skeletal limbs that allow it to attack and drag victims from surprising distances. Boneclaws delight in murder and horrific pain, often hiding like spiders in darkness before impaling victims with their claws. The soul of a failed lich becomes bound to a humanoid master with a particularly hate-filled heart, enslaving the boneclaw to that master's wishes. A boneclaw cannot be permanently destroyed while its master lives, and it reforms hours after its body is destroyed. If its master genuinely abandons evil or finds redemption, the boneclaw is permanently destroyed."
+        Description: "A boneclaw is the hideous result of a failed attempt to become a lich. Its body is an emaciated undead form with unnaturally long, skeletal limbs that allow it to attack and drag victims from surprising distances. Boneclaws delight in murder and horrific pain, often hiding like spiders in darkness before impaling victims with their claws. The soul of a failed lich becomes bound to a humanoid master with a particularly hate-filled heart, enslaving the boneclaw to that master's wishes. A boneclaw cannot be permanently destroyed while its master lives, and it reforms hours after its body is destroyed. If its master genuinely abandons evil or finds redemption, the boneclaw is permanently destroyed.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cadaver Collector
         ID: 560,
@@ -32433,7 +34545,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Cadaver collectors are enormous ancient war machines from Acheron, built to gather the dead for conquering armies. Their hulking metal bodies are covered in the armor and weapons of fallen warriors, with corpses impaled upon the lances and blades embedded in their shells. They are drawn to battlefields and can be summoned by necromancers, hobgoblin generals, and other warlords. The spirits of the dead accumulated by a collector can be summoned as specters to fight alongside it, while its paralyzing breath allows it to immobilize additional victims for collection."
+        Description: "Cadaver collectors are enormous ancient war machines from Acheron, built to gather the dead for conquering armies. Their hulking metal bodies are covered in the armor and weapons of fallen warriors, with corpses impaled upon the lances and blades embedded in their shells. They are drawn to battlefields and can be summoned by necromancers, hobgoblin generals, and other warlords. The spirits of the dead accumulated by a collector can be summoned as specters to fight alongside it, while its paralyzing breath allows it to immobilize additional victims for collection.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Choker
         ID: 561,
@@ -32547,7 +34663,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A bronze scout is a segmented, wormlike clockwork construct that normally remains mostly buried underground. Its telescoping eyestalks allow it to observe enemies while keeping its body concealed beneath the earth. When discovered, it uses its burrowing ability to retreat and can discharge a powerful electrical flare through the ground to discourage pursuit."
+        Description: "A bronze scout is a segmented, wormlike clockwork construct that normally remains mostly buried underground. Its telescoping eyestalks allow it to observe enemies while keeping its body concealed beneath the earth. When discovered, it uses its burrowing ability to retreat and can discharge a powerful electrical flare through the ground to discourage pursuit.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Iron Cobra
         ID: 563,
@@ -32594,7 +34714,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "An iron cobra is a clockwork construct shaped like a metallic serpent. Gnomish artificers build these constructs with poisonous bites and often load them with alchemical compounds designed to produce different debilitating effects. Depending on the poison delivered, an iron cobra can inflict additional poison damage, cloud a victim's judgment into attacking an unexpected target, or temporarily paralyze its prey."
+        Description: "An iron cobra is a clockwork construct shaped like a metallic serpent. Gnomish artificers build these constructs with poisonous bites and often load them with alchemical compounds designed to produce different debilitating effects. Depending on the poison delivered, an iron cobra can inflict additional poison damage, cloud a victim's judgment into attacking an unexpected target, or temporarily paralyze its prey.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Oaken Bolter
         ID: 564,
@@ -32653,7 +34777,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "An oaken bolter is a massive clockwork ballista designed to strike targets from long distances. Its wooden and mechanical construction houses several specialized weapons: heavy bolts for piercing targets, harpoons for dragging enemies toward the construct, and explosive charges for blasting groups of creatures. Oaken bolters are typically employed alongside other clockworks, allowing them to pull enemies into range of more melee-oriented constructs or traps."
+        Description: "An oaken bolter is a massive clockwork ballista designed to strike targets from long distances. Its wooden and mechanical construction houses several specialized weapons: heavy bolts for piercing targets, harpoons for dragging enemies toward the construct, and explosive charges for blasting groups of creatures. Oaken bolters are typically employed alongside other clockworks, allowing them to pull enemies into range of more melee-oriented constructs or traps.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Stone Defender
         ID: 565,
@@ -32709,7 +34837,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Stone defenders are heavily armored clockwork constructs made from thick plates of stone riveted together. Their stony bodies allow them to conceal themselves against uneven earthen or stone surfaces, making them capable of ambushing enemies when necessary. Their primary purpose, however, is protection: they serve as bodyguards for gnomes and other clockworks, interposing themselves between their allies and incoming attacks."
+        Description: "Stone defenders are heavily armored clockwork constructs made from thick plates of stone riveted together. Their stony bodies allow them to conceal themselves against uneven earthen or stone surfaces, making them capable of ambushing enemies when necessary. Their primary purpose, however, is protection: they serve as bodyguards for gnomes and other clockworks, interposing themselves between their allies and incoming attacks.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Corpse Flower
         ID: 566,
@@ -32772,7 +34904,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A corpse flower can sprout atop the grave of an evil necromancer or the remains of powerful undead. It grows into an enormous, mobile plant that tears itself from the earth and scavenges humanoid corpses from battlefields and graveyards. Its fibrous tentacles stuff bodies into its mass, where the corpses can be digested for nourishment or animated as zombies. The flower's body gives off a powerful stench of decay that can incapacitate nearby living creatures. It is a malevolent plant that despises the living and feeds on the dead."
+        Description: "A corpse flower can sprout atop the grave of an evil necromancer or the remains of powerful undead. It grows into an enormous, mobile plant that tears itself from the earth and scavenges humanoid corpses from battlefields and graveyards. Its fibrous tentacles stuff bodies into its mass, where the corpses can be digested for nourishment or animated as zombies. The flower's body gives off a powerful stench of decay that can incapacitate nearby living creatures. It is a malevolent plant that despises the living and feeds on the dead.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Deathlock
         ID: 567,
@@ -32827,7 +34963,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A deathlock is an undead warlock created when a warlock fails to fulfill a pact with an evil patron and rises from death bound to continue serving that patron. Its former ambitions and goals are overwhelmed by an obsessive need to carry out its master's wishes. Deathlocks retain some of their former magical abilities and appear as sinister undead spellcasters, using necromantic and warlock magic to pursue the interests of their otherworldly masters. Powerful necromancers can also create deathlocks and bind them to their service."
+        Description: "A deathlock is an undead warlock created when a warlock fails to fulfill a pact with an evil patron and rises from death bound to continue serving that patron. Its former ambitions and goals are overwhelmed by an obsessive need to carry out its master's wishes. Deathlocks retain some of their former magical abilities and appear as sinister undead spellcasters, using necromantic and warlock magic to pursue the interests of their otherworldly masters. Powerful necromancers can also create deathlocks and bind them to their service.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Deathlock Mastermind
         ID: 568,
@@ -32886,7 +35026,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A deathlock mastermind is a more powerful and cunning form of deathlock that has developed the freedom and intelligence necessary to devise its own tactics. While all deathlocks remain bound to their patrons, masterminds recruit lesser creatures and orchestrate elaborate schemes in pursuit of their master's goals. They retain the appearance and necromantic nature of deathlocks while wielding considerably greater magical power, including spells capable of controlling, restraining, and devastating enemies from a distance."
+        Description: "A deathlock mastermind is a more powerful and cunning form of deathlock that has developed the freedom and intelligence necessary to devise its own tactics. While all deathlocks remain bound to their patrons, masterminds recruit lesser creatures and orchestrate elaborate schemes in pursuit of their master's goals. They retain the appearance and necromantic nature of deathlocks while wielding considerably greater magical power, including spells capable of controlling, restraining, and devastating enemies from a distance.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Deathlock Wight
         ID: 569,
@@ -32945,7 +35089,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A deathlock wight is a deathlock stripped of much of the magical power it possessed in life, occupying a state between a warlock's undead punishment and the existence of a traditional wight. It retains the appearance of a sinister undead spellcaster and can wield grave bolts from a distance, while its life-draining touch can weaken and eventually kill living creatures. Deathlock wights retain the languages they knew in life and remain bound to the purposes imposed upon them by their patrons or creators."
+        Description: "A deathlock wight is a deathlock stripped of much of the magical power it possessed in life, occupying a state between a warlock's undead punishment and the existence of a traditional wight. It retains the appearance of a sinister undead spellcaster and can wield grave bolts from a distance, while its life-draining touch can weaken and eventually kill living creatures. Deathlock wights retain the languages they knew in life and remain bound to the purposes imposed upon them by their patrons or creators.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Alkilith
         ID: 570,
@@ -33008,7 +35156,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "An alkilith resembles a foul, dripping fungal growth that infests doorways, windows, and other portals. Its body stretches around openings and anchors itself with a sticky secretion, allowing it to masquerade as an ordinary slime or fungus. Wherever an alkilith takes root, it weakens the fabric of reality and gradually attunes the opening to the Abyss, eventually creating a portal through which other demons can invade. Alkiliths are spawned from cast-off pieces of Juiblex's hideous body and seek routes out of the Abyss despite being too dangerous for most cultists to summon."
+        Description: "An alkilith resembles a foul, dripping fungal growth that infests doorways, windows, and other portals. Its body stretches around openings and anchors itself with a sticky secretion, allowing it to masquerade as an ordinary slime or fungus. Wherever an alkilith takes root, it weakens the fabric of reality and gradually attunes the opening to the Abyss, eventually creating a portal through which other demons can invade. Alkiliths are spawned from cast-off pieces of Juiblex's hideous body and seek routes out of the Abyss despite being too dangerous for most cultists to summon.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Armanite
         ID: 571,
@@ -33075,7 +35227,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Armanites are savage demonic heavy cavalry that race across the blasted fields of the Abyss. They have powerful, muscular bodies equipped with sharp hooves, claws, and long serrated tails, giving them numerous ways to tear apart their enemies. Great herds of armanites serve in the armies of demon lords, where they lead charges and attack enemy flanks. Their bloodlust is so intense that they frequently fight among themselves when no other enemies are available."
+        Description: "Armanites are savage demonic heavy cavalry that race across the blasted fields of the Abyss. They have powerful, muscular bodies equipped with sharp hooves, claws, and long serrated tails, giving them numerous ways to tear apart their enemies. Great herds of armanites serve in the armies of demon lords, where they lead charges and attack enemy flanks. Their bloodlust is so intense that they frequently fight among themselves when no other enemies are available.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bulezau
         ID: 572,
@@ -33130,7 +35286,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Bulezaus are diseased manifestations of animalistic rage that embody the violence of nature. They are repulsive, goatlike demons plagued by crusted eyes, open sores crawling with maggots, and the stench of rotten meat. Bulezaus gather in the deep canyons and lofty crags of the Abyss and commonly serve as foot soldiers in demon lord armies. Their bloodlust drives them toward constant violence, whether against enemies or against each other."
+        Description: "Bulezaus are diseased manifestations of animalistic rage that embody the violence of nature. They are repulsive, goatlike demons plagued by crusted eyes, open sores crawling with maggots, and the stench of rotten meat. Bulezaus gather in the deep canyons and lofty crags of the Abyss and commonly serve as foot soldiers in demon lord armies. Their bloodlust drives them toward constant violence, whether against enemies or against each other.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Dybbuk
         ID: 573,
@@ -33193,7 +35353,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Dybbuks are translucent, flying demons resembling jellyfish with long trailing tendrils. Rather than remaining in their natural form, they usually possess corpses and give the bodies a semblance of life. A possessed corpse retains enough of its former appearance and knowledge to fool others temporarily, but the dybbuk inevitably reveals itself through grotesque behavior such as vomiting blood, contorting limbs, or otherwise violating the corpse it inhabits. Dybbuks delight in terrorizing mortals and indulging in the vices of their chosen hosts."
+        Description: "Dybbuks are translucent, flying demons resembling jellyfish with long trailing tendrils. Rather than remaining in their natural form, they usually possess corpses and give the bodies a semblance of life. A possessed corpse retains enough of its former appearance and knowledge to fool others temporarily, but the dybbuk inevitably reveals itself through grotesque behavior such as vomiting blood, contorting limbs, or otherwise violating the corpse it inhabits. Dybbuks delight in terrorizing mortals and indulging in the vices of their chosen hosts.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Maurezhi
         ID: 574,
@@ -33256,7 +35420,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Maurezhi are demons created by Doresain, the King of Ghouls, to lead packs of ghouls and ghasts in the Material Plane. They have a horrific, predatory appearance and can consume the corpse of a humanoid they have slain, taking on that creature's appearance for several days while the stolen form gradually decays. Their bites drain a victim's sense of self by reducing Charisma, and their claws can paralyze living creatures. Maurezhi embody the spreading hunger of the undead and can raise dead ghouls and ghasts to serve them."
+        Description: "Maurezhi are demons created by Doresain, the King of Ghouls, to lead packs of ghouls and ghasts in the Material Plane. They have a horrific, predatory appearance and can consume the corpse of a humanoid they have slain, taking on that creature's appearance for several days while the stolen form gradually decays. Their bites drain a victim's sense of self by reducing Charisma, and their claws can paralyze living creatures. Maurezhi embody the spreading hunger of the undead and can raise dead ghouls and ghasts to serve them.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Molydeus
         ID: 575,
@@ -33340,7 +35508,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Molydei are among the most ruthless and dangerous demons in the Abyss, standing roughly 12 feet tall with red-skinned humanoid bodies and two heads: one a slavering wolf and the other a serpent with dripping fangs. A demon lord creates a molydeus by remaking a particularly devoted or formidable demon through excruciating torment. Each molydeus serves a specific demon lord and acts as that master's enforcer, commander, guardian, and executioner. Its special weapon is fashioned from a portion of its demon lord's essence and remains mystically bound to the molydeus."
+        Description: "Molydei are among the most ruthless and dangerous demons in the Abyss, standing roughly 12 feet tall with red-skinned humanoid bodies and two heads: one a slavering wolf and the other a serpent with dripping fangs. A demon lord creates a molydeus by remaking a particularly devoted or formidable demon through excruciating torment. Each molydeus serves a specific demon lord and acts as that master's enforcer, commander, guardian, and executioner. Its special weapon is fashioned from a portion of its demon lord's essence and remains mystically bound to the molydeus.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Nabassu
         ID: 576,
@@ -33411,7 +35583,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Nabassus are insatiable soul-eating demons that prowl the multiverse in search of victims. They are hated and shunned by other demons because they consume souls, including the souls of fellow demons. A nabassu appears as a monstrous winged predator with a powerful, hungry physique and a grotesque visage suited to its predatory nature. When summoned to the Material Plane, a nabassu often attempts to break free from its summoner so it can devour the summoner's soul and begin hunting independently. Particularly powerful nabassus seek out the amulets of demon lords."
+        Description: "Nabassus are insatiable soul-eating demons that prowl the multiverse in search of victims. They are hated and shunned by other demons because they consume souls, including the souls of fellow demons. A nabassu appears as a monstrous winged predator with a powerful, hungry physique and a grotesque visage suited to its predatory nature. When summoned to the Material Plane, a nabassu often attempts to break free from its summoner so it can devour the summoner's soul and begin hunting independently. Particularly powerful nabassus seek out the amulets of demon lords.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Rutterkin
         ID: 577,
@@ -33458,7 +35634,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Rutterkins are warped demons that roam the Abyss in mobs, constantly searching for intruders to surround and devour. Their twisted forms are unsettling even by demonic standards, and their greatest weapon is the terror they create when gathered in numbers. Groups of rutterkins emit a supernatural wave of fear that can leave victims frightened and restrained before the demons swarm them. Their bites carry a terrible Abyssal disease that can eventually transform a slain victim into an abyssal wretch."
+        Description: "Rutterkins are warped demons that roam the Abyss in mobs, constantly searching for intruders to surround and devour. Their twisted forms are unsettling even by demonic standards, and their greatest weapon is the terror they create when gathered in numbers. Groups of rutterkins emit a supernatural wave of fear that can leave victims frightened and restrained before the demons swarm them. Their bites carry a terrible Abyssal disease that can eventually transform a slain victim into an abyssal wretch.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Abyssal Wretch
         ID: 578,
@@ -33500,7 +35680,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Abyssal wretches are the lowest and most pitiful forms of demon, twisted remnants of creatures transformed by the corrupting influence of the Abyss. They are misshapen, savage creatures that exist in mindless mobs and follow more powerful demons. Rutterkins and sibriexes can create abyssal wretches from other creatures, making them a common consequence of demonic corruption."
+        Description: "Abyssal wretches are the lowest and most pitiful forms of demon, twisted remnants of creatures transformed by the corrupting influence of the Abyss. They are misshapen, savage creatures that exist in mindless mobs and follow more powerful demons. Rutterkins and sibriexes can create abyssal wretches from other creatures, making them a common consequence of demonic corruption.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Sibriex
         ID: 579,
@@ -33588,7 +35772,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Sibriexes are ancient, grotesque demons thought to be as old as the Abyss itself. Their enormous bodies float above the ground while blood and bile cascade from them, polluting the landscape wherever the fluids fall. Sibriexes are keepers of forbidden lore, having spent eons gathering information from across the planes. They also serve as demonic flesh-shapers, using the power of the Abyss to twist creatures into horrific new forms and create rutterkins and abyssal wretches. Demon lords and other powerful beings sometimes seek their knowledge or their ability to graft new body parts, but sibriexes never provide such services freely."
+        Description: "Sibriexes are ancient, grotesque demons thought to be as old as the Abyss itself. Their enormous bodies float above the ground while blood and bile cascade from them, polluting the landscape wherever the fluids fall. Sibriexes are keepers of forbidden lore, having spent eons gathering information from across the planes. They also serve as demonic flesh-shapers, using the power of the Abyss to twist creatures into horrific new forms and create rutterkins and abyssal wretches. Demon lords and other powerful beings sometimes seek their knowledge or their ability to graft new body parts, but sibriexes never provide such services freely.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Wastrilith
         ID: 580,
@@ -33659,7 +35847,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Wastriliths are enormous aquatic demons that establish themselves as cruel lords of the deep in the waters of the Abyss and in other bodies of water contaminated by Abyssal influence. Their serpentine, powerful forms are built for swimming and hunting, with broad claws and a massive biting maw. A wastrilith corrupts the water around it, turning it into a poisonous extension of its own demonic essence. It can manipulate corrupted water to hinder creatures, drag victims toward itself, and contaminate those who drink or swim in it. Other demons can even gain temporary vitality by consuming the foul water."
+        Description: "Wastriliths are enormous aquatic demons that establish themselves as cruel lords of the deep in the waters of the Abyss and in other bodies of water contaminated by Abyssal influence. Their serpentine, powerful forms are built for swimming and hunting, with broad claws and a massive biting maw. A wastrilith corrupts the water around it, turning it into a poisonous extension of its own demonic essence. It can manipulate corrupted water to hinder creatures, drag victims toward itself, and contaminate those who drink or swim in it. Other demons can even gain temporary vitality by consuming the foul water.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Derro
         ID: 581,
@@ -33714,7 +35906,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Derro are small, wild-haired, haggard, and shabbily dressed dwarfkin who dwell in the Underdark. They are fearful and vicious, often shuddering, cackling, spitting, and howling as they attack in groups. Their natural paranoia helps them survive the dangers of the subterranean world, while an unusually strong tendency toward sorcery allows some derro to become powerful savants and leaders."
+        Description: "Derro are small, wild-haired, haggard, and shabbily dressed dwarfkin who dwell in the Underdark. They are fearful and vicious, often shuddering, cackling, spitting, and howling as they attack in groups. Their natural paranoia helps them survive the dangers of the subterranean world, while an unusually strong tendency toward sorcery allows some derro to become powerful savants and leaders.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Derro Savant
         ID: 582,
@@ -33769,7 +35965,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Derro savants are derro who develop an unusually strong talent for sorcery and become leaders among their people. The derro consider them specially blessed by their deity Diirinka and believe their strange behavior represents messages from that god. Like other derro, savants suffer from paranoia and madness, but their magical power gives them authority over their kin."
+        Description: "Derro savants are derro who develop an unusually strong talent for sorcery and become leaders among their people. The derro consider them specially blessed by their deity Diirinka and believe their strange behavior represents messages from that god. Like other derro, savants suffer from paranoia and madness, but their magical power gives them authority over their kin.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Black Abishai
         ID: 583,
@@ -33840,7 +36040,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Black abishais are expert assassins and infiltrators who weave shadows around themselves to conceal their presence. Their dark scales and ability to manipulate darkness allow them to approach targets unseen before striking with their scimitars and corrosive bites."
+        Description: "Black abishais are expert assassins and infiltrators who weave shadows around themselves to conceal their presence. Their dark scales and ability to manipulate darkness allow them to approach targets unseen before striking with their scimitars and corrosive bites.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Blue Abishai
         ID: 584,
@@ -33907,7 +36111,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Blue abishais are the most cunning and learned of the abishais. They seek forgotten lore and lost relics, studying occult subjects from tomes and grimoires plundered across the multiverse. Their extensive magical knowledge makes them accomplished spellcasters who use destructive magic against Tiamat's enemies."
+        Description: "Blue abishais are the most cunning and learned of the abishais. They seek forgotten lore and lost relics, studying occult subjects from tomes and grimoires plundered across the multiverse. Their extensive magical knowledge makes them accomplished spellcasters who use destructive magic against Tiamat's enemies.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Green Abishai
         ID: 585,
@@ -33974,7 +36182,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Green abishais serve as envoys of Tiamat's armies and represent her interests throughout the Nine Hells and beyond. Their keen senses help them uncover secrets, while their diplomatic skills, deception, and magic allow them to manipulate even shrewd opponents."
+        Description: "Green abishais serve as envoys of Tiamat's armies and represent her interests throughout the Nine Hells and beyond. Their keen senses help them uncover secrets, while their diplomatic skills, deception, and magic allow them to manipulate even shrewd opponents.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Red Abishai
         ID: 586,
@@ -34053,7 +36265,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Red abishais are the most powerful leaders among their kind, combining immense physical strength with an imposing presence. They lead other devils into battle and take command of troublesome cults to ensure obedience to Tiamat. Their authority can even be brought to bear against dragons, while their terrifying appearance inspires fanatical devotion among their allies."
+        Description: "Red abishais are the most powerful leaders among their kind, combining immense physical strength with an imposing presence. They lead other devils into battle and take command of troublesome cults to ensure obedience to Tiamat. Their authority can even be brought to bear against dragons, while their terrifying appearance inspires fanatical devotion among their allies.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // White Abishai
         ID: 587,
@@ -34129,7 +36345,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "White abishais are the least of the abishai ranks, but they make up for their relative weakness with reckless fury. They fight without fear and serve Tiamat's armies as relentless front-line troops, becoming whirling engines of destruction in battle."
+        Description: "White abishais are the least of the abishai ranks, but they make up for their relative weakness with reckless fury. They fight without fear and serve Tiamat's armies as relentless front-line troops, becoming whirling engines of destruction in battle.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Amnizu
         ID: 588,
@@ -34205,7 +36425,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Amnizus lead infernal legions and command guardians at gateways throughout the Nine Hells. They are arrogant, bullying, and ruthless, but also highly intelligent tacticians whose loyalty is valued by the archdukes. Some amnizus guard the River Styx from fortified positions along its blighted banks, directing newly arrived lemures and organizing them into infernal legions."
+        Description: "Amnizus lead infernal legions and command guardians at gateways throughout the Nine Hells. They are arrogant, bullying, and ruthless, but also highly intelligent tacticians whose loyalty is valued by the archdukes. Some amnizus guard the River Styx from fortified positions along its blighted banks, directing newly arrived lemures and organizing them into infernal legions.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Hellfire Engine
         ID: 589,
@@ -34272,7 +36496,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Hellfire engines are semiautonomous magical war machines designed to bring destruction to the battlefield. They take many forms, but all share the same purpose: mowing down enemies in waves. They are mechanical and magical hybrids held in reserve by devilish generals, although some escape and become driven by an overwhelming need to destroy. Mortal creatures killed by a hellfire engine face the additional horror of having their souls transformed into lemures in Avernus."
+        Description: "Hellfire engines are semiautonomous magical war machines designed to bring destruction to the battlefield. They take many forms, but all share the same purpose: mowing down enemies in waves. They are mechanical and magical hybrids held in reserve by devilish generals, although some escape and become driven by an overwhelming need to destroy. Mortal creatures killed by a hellfire engine face the additional horror of having their souls transformed into lemures in Avernus.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Merregon
         ID: 590,
@@ -34336,7 +36564,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Merregons are the faceless foot soldiers of the Nine Hells, formed from the souls of fallen soldiers, mercenaries, and bodyguards who served evil without reservation. Every merregon wears a metal mask bolted to its head, with markings identifying its commander and the layer it serves. They possess no individuality and obey orders with absolute loyalty, forming the backbone of many devils' protective retinues."
+        Description: "Merregons are the faceless foot soldiers of the Nine Hells, formed from the souls of fallen soldiers, mercenaries, and bodyguards who served evil without reservation. Every merregon wears a metal mask bolted to its head, with markings identifying its commander and the layer it serves. They possess no individuality and obey orders with absolute loyalty, forming the backbone of many devils' protective retinues.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Narzugon
         ID: 591,
@@ -34407,7 +36639,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Narzugons are fallen paladins who made deals with devils and carried their twisted sense of honor into the afterlife. They serve as champions and commanders of infernal legions, riding nightmare steeds and wielding hellfire lances. Their armor and weapons evoke horrific versions of knightly regalia, while their lances condemn slain mortals to rebirth as lemures unless powerful magic intervenes."
+        Description: "Narzugons are fallen paladins who made deals with devils and carried their twisted sense of honor into the afterlife. They serve as champions and commanders of infernal legions, riding nightmare steeds and wielding hellfire lances. Their armor and weapons evoke horrific versions of knightly regalia, while their lances condemn slain mortals to rebirth as lemures unless powerful magic intervenes.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Nupperibo
         ID: 592,
@@ -34458,7 +36694,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Nupperibos are pitiful devils formed from souls whose evil in life arose from carelessness and sloth. They are blind, bloated, and driven by an unending hunger, shuffling across the Nine Hells while surrounded by clouds of stinging insects and vermin. Though individually weak, they become dangerous when gathered into large throngs, and they obey telepathic commands from other devils without question."
+        Description: "Nupperibos are pitiful devils formed from souls whose evil in life arose from carelessness and sloth. They are blind, bloated, and driven by an unending hunger, shuffling across the Nine Hells while surrounded by clouds of stinging insects and vermin. Though individually weak, they become dangerous when gathered into large throngs, and they obey telepathic commands from other devils without question.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Orthon
         ID: 593,
@@ -34519,7 +36759,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Orthons are infernal bounty hunters sent by archdevils to track, capture, or destroy specific creatures across the multiverse. They are heavily armed hunters with keen senses and the ability to become invisible at will, allowing them to stalk prey before striking. Orthons value the challenge of the chase and one-on-one combat, and their travels throughout the Nine Hells make them exceptionally knowledgeable guides to its layers."
+        Description: "Orthons are infernal bounty hunters sent by archdevils to track, capture, or destroy specific creatures across the multiverse. They are heavily armed hunters with keen senses and the ability to become invisible at will, allowing them to stalk prey before striking. Orthons value the challenge of the chase and one-on-one combat, and their travels throughout the Nine Hells make them exceptionally knowledgeable guides to its layers.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Drow Arachnomancer
         ID: 594,
@@ -34603,7 +36847,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Drow spellcasters who devote themselves wholly to Lolth can become arachnomancers, offering body and soul to the Spider Queen. Their bodies and magic become connected to the spiders of the Demonweb Pits, allowing them to wield powerful spider-themed magic. An arachnomancer can magically assume the form of a giant spider while retaining its ability to speak and cast spells."
+        Description: "Drow spellcasters who devote themselves wholly to Lolth can become arachnomancers, offering body and soul to the Spider Queen. Their bodies and magic become connected to the spiders of the Demonweb Pits, allowing them to wield powerful spider-themed magic. An arachnomancer can magically assume the form of a giant spider while retaining its ability to speak and cast spells.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Drow Favored Consort
         ID: 595,
@@ -34674,7 +36922,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Favored consorts are drow chosen by Lolth's priestesses for their beauty, companionship, and sometimes their magical abilities. Most serve primarily for pleasure or breeding, but a particularly capable consort may gain influence by providing useful counsel. Their position is precarious, since a priestess's favor can change without warning."
+        Description: "Favored consorts are drow chosen by Lolth's priestesses for their beauty, companionship, and sometimes their magical abilities. Most serve primarily for pleasure or breeding, but a particularly capable consort may gain influence by providing useful counsel. Their position is precarious, since a priestess's favor can change without warning.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Drow House Captain
         ID: 596,
@@ -34750,7 +37002,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Each drow noble house entrusts its military forces to a house captain, normally the matriarch's first or second son. The captain commands the drow and slaves that form the family's army and has studied strategy and tactics extensively. House captains are battlefield leaders who combine martial skill with the ability to direct their allies."
+        Description: "Each drow noble house entrusts its military forces to a house captain, normally the matriarch's first or second son. The captain commands the drow and slaves that form the family's army and has studied strategy and tactics extensively. House captains are battlefield leaders who combine martial skill with the ability to direct their allies.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Drow Inquisitor
         ID: 597,
@@ -34821,7 +37077,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Drow inquisitors are priestesses entrusted with rooting out treachery and disloyalty within drow society. Their authority is surpassed only by the matrons of the noble houses. They use interrogation, torture, divine magic, and their ability to recognize lies to hunt down those who threaten the established hierarchy."
+        Description: "Drow inquisitors are priestesses entrusted with rooting out treachery and disloyalty within drow society. Their authority is surpassed only by the matrons of the noble houses. They use interrogation, torture, divine magic, and their ability to recognize lies to hunt down those who threaten the established hierarchy.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Drow Matron Mother
         ID: 598,
@@ -34913,7 +37173,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "At the head of each drow noble house sits a matron mother, a powerful priestess of Lolth who must simultaneously carry out the Spider Queen's will and advance the interests of her family. Matron mothers sit at the center of intricate webs of drow, demons, spiders, and slaves. Their power depends upon maintaining Lolth's favor, which the Spider Queen can grant or withdraw capriciously."
+        Description: "At the head of each drow noble house sits a matron mother, a powerful priestess of Lolth who must simultaneously carry out the Spider Queen's will and advance the interests of her family. Matron mothers sit at the center of intricate webs of drow, demons, spiders, and slaves. Their power depends upon maintaining Lolth's favor, which the Spider Queen can grant or withdraw capriciously.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Drow Shadowblade
         ID: 599,
@@ -34980,7 +37244,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Drow shadowblades are ruthless killers who move unseen through the Underdark. Noble houses employ them to eliminate rivals, protect important locations, hunt thieves, and carry out other deadly assignments. Their shadow magic comes from a fiendish ritual that prevents a slain lesser demon from reforming in the Abyss, infusing the drow with the demon's shadow power."
+        Description: "Drow shadowblades are ruthless killers who move unseen through the Underdark. Noble houses employ them to eliminate rivals, protect important locations, hunt thieves, and carry out other deadly assignments. Their shadow magic comes from a fiendish ritual that prevents a slain lesser demon from reforming in the Abyss, infusing the drow with the demon's shadow power.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Duergar Despot
         ID: 600,
@@ -35051,7 +37319,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Duergar despots replace parts of their bodies with mechanical devices controlled through their psionic abilities. The resulting constructs of flesh, metal, and machinery give these tyrants immense physical power. Their mechanical modifications are weapons as much as symbols of authority."
+        Description: "Duergar despots replace parts of their bodies with mechanical devices controlled through their psionic abilities. The resulting constructs of flesh, metal, and machinery give these tyrants immense physical power. Their mechanical modifications are weapons as much as symbols of authority.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Duergar Hammerer
         ID: 601,
@@ -35110,7 +37382,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A duergar hammerer is a digging machine with a duergar strapped inside it, often as punishment for failing to meet expectations. The machine converts the captive's pain into energy, allowing the hammerer to dig tunnels and smash apart obstacles or intruders."
+        Description: "A duergar hammerer is a digging machine with a duergar strapped inside it, often as punishment for failing to meet expectations. The machine converts the captive's pain into energy, allowing the hammerer to dig tunnels and smash apart obstacles or intruders.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Duergar Kavalrachni
         ID: 602,
@@ -35177,7 +37453,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Duergar kavalrachni are cavalry trained to fight while mounted on female steeders. They use their mounts and psionic abilities to strike quickly and disappear, making them effective scouts and raiders in the Underdark."
+        Description: "Duergar kavalrachni are cavalry trained to fight while mounted on female steeders. They use their mounts and psionic abilities to strike quickly and disappear, making them effective scouts and raiders in the Underdark.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Duergar Mind Master
         ID: 603,
@@ -35244,7 +37524,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Duergar mind masters are feared spies who operate inside and beyond duergar strongholds. Their psionic talents allow them to see through illusions, manipulate the actions of others, become invisible, and shrink themselves to miniature size for infiltration."
+        Description: "Duergar mind masters are feared spies who operate inside and beyond duergar strongholds. Their psionic talents allow them to see through illusions, manipulate the actions of others, become invisible, and shrink themselves to miniature size for infiltration.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Duergar Screamer
         ID: 604,
@@ -35299,7 +37583,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A duergar screamer is a construct that uses sonic energy to grind rock into dust. Duergar accused of spreading gossip or plotting against their superiors can be imprisoned inside these devices, where their pain is converted into the psionic energy that powers the machine."
+        Description: "A duergar screamer is a construct that uses sonic energy to grind rock into dust. Duergar accused of spreading gossip or plotting against their superiors can be imprisoned inside these devices, where their pain is converted into the psionic energy that powers the machine.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Duergar Soulblade
         ID: 605,
@@ -35366,7 +37654,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Duergar soulblades are warriors who have mastered the use of psionics to manifest blades of psychic energy. They combine this supernatural weapon with the ability to grow larger and disappear from sight, making them dangerous skirmishers."
+        Description: "Duergar soulblades are warriors who have mastered the use of psionics to manifest blades of psychic energy. They combine this supernatural weapon with the ability to grow larger and disappear from sight, making them dangerous skirmishers.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Duergar Stone Guard
         ID: 606,
@@ -35433,7 +37725,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Duergar stone guards are elite troops deployed in small numbers to strengthen ordinary war bands or organized into strike forces for specialized missions. Their heavy armor, shields, and disciplined formations make them particularly effective when fighting alongside other duergar."
+        Description: "Duergar stone guards are elite troops deployed in small numbers to strengthen ordinary war bands or organized into strike forces for specialized missions. Their heavy armor, shields, and disciplined formations make them particularly effective when fighting alongside other duergar.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Duergar Warlord
         ID: 607,
@@ -35509,7 +37805,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A duergar warlord is a cunning, inspiring, and cruel battlefield leader. Skilled warriors who command other duergar, warlords use psionic energy to compel their troops to fight harder and coordinate their attacks."
+        Description: "A duergar warlord is a cunning, inspiring, and cruel battlefield leader. Skilled warriors who command other duergar, warlords use psionic energy to compel their troops to fight harder and coordinate their attacks.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Duergar Xarrorn
         ID: 608,
@@ -35572,7 +37872,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Duergar xarrorn are specialists who construct weapons using a combination of alchemy and psionics. Their signature fire lances can strike at reach and unleash blasts of flame, making the xarrorn dangerous specialists on the battlefield."
+        Description: "Duergar xarrorn are specialists who construct weapons using a combination of alchemy and psionics. Their signature fire lances can strike at reach and unleash blasts of flame, making the xarrorn dangerous specialists on the battlefield.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Eidolon
         ID: 609,
@@ -35627,7 +37931,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "An eidolon is a ghostly spirit bound by a sacred oath to protect a holy site. Forged from the soul of a devoted servant, it normally remains at the place it was assigned to guard. When intruders threaten the site, the eidolon merges with a specially prepared sacred statue and controls the statue as its physical form."
+        Description: "An eidolon is a ghostly spirit bound by a sacred oath to protect a holy site. Forged from the soul of a devoted servant, it normally remains at the place it was assigned to guard. When intruders threaten the site, the eidolon merges with a specially prepared sacred statue and controls the statue as its physical form.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Sacred Statue
         ID: 610,
@@ -35690,7 +37998,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A sacred statue is a specially prepared effigy created to serve as a vessel for an eidolon. When inhabited, the statue becomes a powerful construct-like guardian that smashes intruders with its enormous fists and hurls chunks of stone. When uninhabited, it is simply an inert statue."
+        Description: "A sacred statue is a specially prepared effigy created to serve as a vessel for an eidolon. When inhabited, the statue becomes a powerful construct-like guardian that smashes intruders with its enormous fists and hurls chunks of stone. When uninhabited, it is simply an inert statue.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Autumn Eladrin
         ID: 611,
@@ -35758,7 +38070,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Autumn eladrin embody goodwill, compassion, and a desire for peace. Their magic is focused on healing and calming others, and their autumn aspect often manifests when they are overcome with feelings of kindness. They tolerate violence poorly and seek to end conflicts wherever they encounter them."
+        Description: "Autumn eladrin embody goodwill, compassion, and a desire for peace. Their magic is focused on healing and calming others, and their autumn aspect often manifests when they are overcome with feelings of kindness. They tolerate violence poorly and seek to end conflicts wherever they encounter them.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Spring Eladrin
         ID: 612,
@@ -35825,7 +38141,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Spring eladrin are joyful, playful creatures whose hearts are filled with the exuberance of spring. They fill the Feywild with songs and laughter and use their magic to spread that joy, although their playful antics can sometimes lead other creatures into dangerous situations."
+        Description: "Spring eladrin are joyful, playful creatures whose hearts are filled with the exuberance of spring. They fill the Feywild with songs and laughter and use their magic to spread that joy, although their playful antics can sometimes lead other creatures into dangerous situations.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Summer Eladrin
         ID: 613,
@@ -35893,7 +38213,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Summer eladrin embody anger and fury. Their summer aspect transforms them into aggressive warriors whose magic amplifies their speed and fighting ability. Their wrath manifests as intense heat and devastating physical attacks."
+        Description: "Summer eladrin embody anger and fury. Their summer aspect transforms them into aggressive warriors whose magic amplifies their speed and fighting ability. Their wrath manifests as intense heat and devastating physical attacks.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Winter Eladrin
         ID: 614,
@@ -35961,7 +38285,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Winter eladrin embody sorrow and melancholy. Frozen tears fall from their faces, and their sadness radiates as bitter cold. Their winter aspect grants them control over frigid winds and ice while their presence can weigh heavily on the emotions of nearby creatures."
+        Description: "Winter eladrin embody sorrow and melancholy. Frozen tears fall from their faces, and their sadness radiates as bitter cold. Their winter aspect grants them control over frigid winds and ice while their presence can weigh heavily on the emotions of nearby creatures.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Leviathan
         ID: 615,
@@ -36041,7 +38369,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A leviathan is a towering wall of water that rises from a large body of water in the form of an immense serpent. It can drag ships into the depths, devastate coastal settlements, and generate enormous moving walls of water."
+        Description: "A leviathan is a towering wall of water that rises from a large body of water in the form of an immense serpent. It can drag ships into the depths, devastate coastal settlements, and generate enormous moving walls of water.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Phoenix
         ID: 616,
@@ -36129,7 +38461,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A phoenix is an enormous fiery bird formed from the destructive power of the Inner Planes. It emerges amid fire and smoke and seeks to turn everything around it to ash. When slain, it erupts in an explosion and leaves behind a blazing cinder that eventually hatches into a new phoenix."
+        Description: "A phoenix is an enormous fiery bird formed from the destructive power of the Inner Planes. It emerges amid fire and smoke and seeks to turn everything around it to ash. When slain, it erupts in an explosion and leaves behind a blazing cinder that eventually hatches into a new phoenix.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Elder Tempest
         ID: 617,
@@ -36213,7 +38549,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "An elder tempest is a living storm given elemental form, appearing as a gigantic serpent carved from clouds, wind, rain, and lightning. It flies through the sky surrounded by a vast storm, unleashing torrential rain, powerful winds, thunder, and devastating lightning."
+        Description: "An elder tempest is a living storm given elemental form, appearing as a gigantic serpent carved from clouds, wind, rain, and lightning. It flies through the sky surrounded by a vast storm, unleashing torrential rain, powerful winds, thunder, and devastating lightning.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Zaratan
         ID: 618,
@@ -36314,7 +38654,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A zaratan is a colossal elemental resembling a hulking, armored reptile whose shell is formed from the landscape of the Elemental Plane of Earth. Each step sends powerful shock waves through the ground. When seriously injured, the zaratan can retract beneath its nearly impervious shell to recover."
+        Description: "A zaratan is a colossal elemental resembling a hulking, armored reptile whose shell is formed from the landscape of the Elemental Plane of Earth. Each step sends powerful shock waves through the ground. When seriously injured, the zaratan can retract beneath its nearly impervious shell to recover.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Air Elemental Myrmidon
         ID: 619,
@@ -36369,7 +38713,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Air elemental myrmidons are elementals bound into magically created suits of plate armor. They have no memory of their former existence as free elementals and exist solely to obey their creators."
+        Description: "Air elemental myrmidons are elementals bound into magically created suits of plate armor. They have no memory of their former existence as free elementals and exist solely to obey their creators.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Earth Elemental Myrmidon
         ID: 620,
@@ -36424,7 +38772,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Earth elemental myrmidons are elementals bound inside suits of plate armor through powerful ritual magic. They are durable warriors that strike with heavy mauls and can channel the power of earth into thunderous blows."
+        Description: "Earth elemental myrmidons are elementals bound inside suits of plate armor through powerful ritual magic. They are durable warriors that strike with heavy mauls and can channel the power of earth into thunderous blows.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Fire Elemental Myrmidon
         ID: 621,
@@ -36487,7 +38839,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Fire elemental myrmidons are fiery elementals bound into suits of plate armor. Their bodies radiate intense heat and light, and they fight with flaming scimitars while remaining vulnerable to the effects of water."
+        Description: "Fire elemental myrmidons are fiery elementals bound into suits of plate armor. Their bodies radiate intense heat and light, and they fight with flaming scimitars while remaining vulnerable to the effects of water.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Water Elemental Myrmidon
         ID: 622,
@@ -36542,7 +38898,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Water elemental myrmidons are elementals bound within suits of plate armor. Their movements combine the weight and discipline of a warrior with the fluid nature of water, and they wield tridents to freeze and hinder their opponents."
+        Description: "Water elemental myrmidons are elementals bound within suits of plate armor. Their movements combine the weight and discipline of a warrior with the fluid nature of water, and they wield tridents to freeze and hinder their opponents.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Giff
         ID: 623,
@@ -36609,7 +38969,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Giff are 7-foot-tall, hippopotamus-headed humanoids dressed in colorful military uniforms. They are spacefaring mercenaries organized into strict military hierarchies and are renowned for their martial training, firearms, muskets, pistols, and love of explosives. Giff mercenary units serve together as regiments and place the reputation of the unit above the life of any individual member."
+        Description: "Giff are 7-foot-tall, hippopotamus-headed humanoids dressed in colorful military uniforms. They are spacefaring mercenaries organized into strict military hierarchies and are renowned for their martial training, firearms, muskets, pistols, and love of explosives. Giff mercenary units serve together as regiments and place the reputation of the unit above the life of any individual member.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Githyanki Gish
         ID: 624,
@@ -36668,7 +39032,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Githyanki gish are warriors whose keen minds and psionic gifts allow them to master magic. They blend swordplay with spellcasting, making them dangerous opponents suited to assassination, raiding, and espionage."
+        Description: "Githyanki gish are warriors whose keen minds and psionic gifts allow them to master magic. They blend swordplay with spellcasting, making them dangerous opponents suited to assassination, raiding, and espionage.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Githyanki Kith'rak
         ID: 625,
@@ -36728,7 +39096,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Kith'raks are high-ranking githyanki champions who command groups of warriors. Their rank is earned through torturous training and psionic testing, and they are responsible for leading the sarths and maintaining discipline among their forces."
+        Description: "Kith'raks are high-ranking githyanki champions who command groups of warriors. Their rank is earned through torturous training and psionic testing, and they are responsible for leading the sarths and maintaining discipline among their forces.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Githyanki Supreme Commander
         ID: 626,
@@ -36797,7 +39169,11 @@ const monstersLocal = [
         ],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Supreme commanders lead the githyanki armies, each commanding ten kith'raks, who in turn lead the rest of their forces. Most supreme commanders ride red dragons into battle and serve as the highest-ranking military leaders beneath Vlaakith."
+        Description: "Supreme commanders lead the githyanki armies, each commanding ten kith'raks, who in turn lead the rest of their forces. Most supreme commanders ride red dragons into battle and serve as the highest-ranking military leaders beneath Vlaakith.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Githzerai Anarch
         ID: 627,
@@ -36872,7 +39248,11 @@ const monstersLocal = [
             "The anarch casts the creation spell (as a 9th-level spell) using the unformed substance of Limbo instead of shadow material. If used in Limbo, the object remains until the anarch's concentration is broken, regardless of its composition. If the anarch moves more than 120 feet from the object, its concentration breaks.",
             "The anarch can magically move an object it can see within 150 feet of it by making a Wisdom check with advantage. The DC depends on the object's size: DC 5 for Tiny, DC 10 for Small, DC 15 for Medium, DC 20 for Large, and DC 25 for Huge or larger."
         ],
-        Description: "Githzerai anarchs are the most powerful of the githzerai. They lead communities and maintain adamantine citadels beyond Limbo, using formidable psionic power to manipulate the unformed substance of their adopted plane. They are sages and mystics whose word is law among their followers."
+        Description: "Githzerai anarchs are the most powerful of the githzerai. They lead communities and maintain adamantine citadels beyond Limbo, using formidable psionic power to manipulate the unformed substance of their adopted plane. They are sages and mystics whose word is law among their followers.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Githzerai Enlightened
         ID: 628,
@@ -36931,7 +39311,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Githzerai enlightened are monks who have completed another tier of training beyond the zerth. They spend long hours in meditation to transcend the limits of their forms and apprehend the nature of reality, mastering powerful psychic and temporal abilities."
+        Description: "Githzerai enlightened are monks who have completed another tier of training beyond the zerth. They spend long hours in meditation to transcend the limits of their forms and apprehend the nature of reality, mastering powerful psychic and temporal abilities.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Gray Render
         ID: 629,
@@ -36986,7 +39370,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Gray renders are enormous, hulking monstrosities driven by a strange need to bond with an intelligent creature and protect that master with their lives. They have great strength and savage appetites but little cunning. Once bonded, a render serves its master in all things, although its chaotic nature can make it an unpredictable companion outside battle."
+        Description: "Gray renders are enormous, hulking monstrosities driven by a strange need to bond with an intelligent creature and protect that master with their lives. They have great strength and savage appetites but little cunning. Once bonded, a render serves its master in all things, although its chaotic nature can make it an unpredictable companion outside battle.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Howler
         ID: 630,
@@ -37041,7 +39429,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Howlers are nightmare creatures native to Pandemonium. They are quadrupedal fiends whose keening howls can overwhelm the minds of their victims, leaving them frightened, slowed, and unable to act effectively. Fiends capture and train howlers as war hounds, using them in the Blood War and as guardians."
+        Description: "Howlers are nightmare creatures native to Pandemonium. They are quadrupedal fiends whose keening howls can overwhelm the minds of their victims, leaving them frightened, slowed, and unable to act effectively. Fiends capture and train howlers as war hounds, using them in the Blood War and as guardians.",
+        Environments: [],
+        PlaneOfExistence: ["Pandemonium"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Young Kruthik
         ID: 631,
@@ -37096,7 +39488,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Young kruthiks hatch from eggs and become large enough to hunt and defend themselves within about a month. They are smaller versions of the adult creatures and already possess the keen senses, tunneling ability, and pack-hunting behavior characteristic of the species."
+        Description: "Young kruthiks hatch from eggs and become large enough to hunt and defend themselves within about a month. They are smaller versions of the adult creatures and already possess the keen senses, tunneling ability, and pack-hunting behavior characteristic of the species.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Adult Kruthik
         ID: 632,
@@ -37159,7 +39555,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Adult kruthiks reach their full size after roughly six months of steady eating and have a natural life span of about seven years. Their legs grow spiky protrusions that allow them to fling dagger-sized spikes at enemies beyond the reach of their claws."
+        Description: "Adult kruthiks reach their full size after roughly six months of steady eating and have a natural life span of about seven years. Their legs grow spiky protrusions that allow them to fling dagger-sized spikes at enemies beyond the reach of their claws.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Kruthik Hive Lord
         ID: 633,
@@ -37226,7 +39626,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Each kruthik hive is ruled by a hive lord. When one dies, the surviving kruthiks abandon their lair and search for a new one. At a suitable location, the largest kruthik undergoes a metamorphosis, emerging weeks later as a larger and more intelligent hive lord capable of spraying digestive acid from its maw."
+        Description: "Each kruthik hive is ruled by a hive lord. When one dies, the surviving kruthiks abandon their lair and search for a new one. At a suitable location, the largest kruthik undergoes a metamorphosis, emerging weeks later as a larger and more intelligent hive lord capable of spraying digestive acid from its maw.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Marut
         ID: 634,
@@ -37297,7 +39701,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Maruts are nearly unstoppable inevitables created to enforce contracts forged in the Hall of Concordance in Sigil. They are immense, imposing constructs whose purpose is to bring absolute order to agreements between planar beings. A marut follows the exact wording of a contract rather than its intended spirit and resorts to lethal force when the contract requires it, when it has been fully broken, or when the marut itself is attacked."
+        Description: "Maruts are nearly unstoppable inevitables created to enforce contracts forged in the Hall of Concordance in Sigil. They are immense, imposing constructs whose purpose is to bring absolute order to agreements between planar beings. A marut follows the exact wording of a contract rather than its intended spirit and resorts to lethal force when the contract requires it, when it has been fully broken, or when the marut itself is attacked.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Meazel
         ID: 635,
@@ -37352,7 +39760,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Meazels are hateful hermits transformed by the Shadowfell after abandoning their former lives. They loiter near crossings between the Shadowfell and Material Plane, ambushing travelers with their strangling cords and magical ability to move through shadows. Creatures transported by a meazel can be cursed with a magical beacon that draws undead, sorrowsworn, and other horrors toward them."
+        Description: "Meazels are hateful hermits transformed by the Shadowfell after abandoning their former lives. They loiter near crossings between the Shadowfell and Material Plane, ambushing travelers with their strangling cords and magical ability to move through shadows. Creatures transported by a meazel can be cursed with a magical beacon that draws undead, sorrowsworn, and other horrors toward them.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Nagpa
         ID: 636,
@@ -37407,7 +39819,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Nagpas are scabrous, bird-like humanoid wizards cursed long ago by the Raven Queen after meddling in a ritual intended to avert a war between the gods. The curse stripped away their beauty and left them dependent on the ruins of fallen civilizations for new lore and magical power. The surviving nagpas manipulate events from the shadows, engineering calamities so they can loot the resulting ruins for arcane knowledge and secrets."
+        Description: "Nagpas are scabrous, bird-like humanoid wizards cursed long ago by the Raven Queen after meddling in a ritual intended to avert a war between the gods. The curse stripped away their beauty and left them dependent on the ruins of fallen civilizations for new lore and magical power. The surviving nagpas manipulate events from the shadows, engineering calamities so they can loot the resulting ruins for arcane knowledge and secrets.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Nightwalker
         ID: 637,
@@ -37470,7 +39886,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Nightwalkers are terrifying undead creatures born when a living creature enters the Negative Plane and is replaced by one of these beings of anti-life. They are immense, shadowy figures that exist to extinguish life wherever they appear. A nightwalker's presence drains vitality from nearby creatures, while its touch and gaze can permanently diminish or destroy its victims."
+        Description: "Nightwalkers are terrifying undead creatures born when a living creature enters the Negative Plane and is replaced by one of these beings of anti-life. They are immense, shadowy figures that exist to extinguish life wherever they appear. A nightwalker's presence drains vitality from nearby creatures, while its touch and gaze can permanently diminish or destroy its victims.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Oblex Spawn
         ID: 638,
@@ -37526,7 +39946,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Oblex spawn are small pieces of the larger oblex organism. They are shapeless, sinister oozes created by mind flayers to feed on memories and thoughts. Even these lesser specimens can steal memories and use them to create unsettling copies of their victims."
+        Description: "Oblex spawn are small pieces of the larger oblex organism. They are shapeless, sinister oozes created by mind flayers to feed on memories and thoughts. Even these lesser specimens can steal memories and use them to create unsettling copies of their victims.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Adult Oblex
         ID: 639,
@@ -37593,7 +40017,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Adult oblexes are larger and more dangerous memory-eating oozes created by mind flayers. Their bodies can extrude lifelike simulacrums of creatures whose memories they have consumed. These copies remain connected to the oblex by long strands of slime, allowing the creature to infiltrate communities and manipulate victims while remaining hidden."
+        Description: "Adult oblexes are larger and more dangerous memory-eating oozes created by mind flayers. Their bodies can extrude lifelike simulacrums of creatures whose memories they have consumed. These copies remain connected to the oblex by long strands of slime, allowing the creature to infiltrate communities and manipulate victims while remaining hidden.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Elder Oblex
         ID: 640,
@@ -37661,7 +40089,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Elder oblexes are enormous, highly intelligent masses of slime created by consuming vast quantities of memories. Their bodies can form duplicates of creatures they have devoured, which they send out to lure victims into danger while remaining connected to the main body by long tendrils of goo. These duplicates are indistinguishable from the creatures they imitate except for a faint sulfurous smell."
+        Description: "Elder oblexes are enormous, highly intelligent masses of slime created by consuming vast quantities of memories. Their bodies can form duplicates of creatures they have devoured, which they send out to lure victims into danger while remaining connected to the main body by long tendrils of goo. These duplicates are indistinguishable from the creatures they imitate except for a faint sulfurous smell.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Ogre Battering Ram
         ID: 641,
@@ -37712,7 +40144,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "An ogre battering ram carries an enormous club used primarily for smashing through doors and fortifications. These ogres are drilled to rush forward and shatter enemy defenses or use their weapons to halt advancing enemies."
+        Description: "An ogre battering ram carries an enormous club used primarily for smashing through doors and fortifications. These ogres are drilled to rush forward and shatter enemy defenses or use their weapons to halt advancing enemies.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Ogre Bolt Launcher
         ID: 642,
@@ -37758,7 +40194,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "An ogre bolt launcher carries a gigantic crossbow that is essentially a ballista wielded by an ogre. The enormous bolts can punch through foes and, when ammunition runs low, the ogre can uproot small trees or tear beams from buildings to use as improvised ammunition."
+        Description: "An ogre bolt launcher carries a gigantic crossbow that is essentially a ballista wielded by an ogre. The enormous bolts can punch through foes and, when ammunition runs low, the ogre can uproot small trees or tear beams from buildings to use as improvised ammunition.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Ogre Chain Brute
         ID: 643,
@@ -37808,7 +40248,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "An ogre chain brute wields a great spiked chain, swinging it in broad circles to knock foes from their feet or bringing it down in a crushing overhead strike that is difficult to avoid."
+        Description: "An ogre chain brute wields a great spiked chain, swinging it in broad circles to knock foes from their feet or bringing it down in a crushing overhead strike that is difficult to avoid.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Ogre Howdah
         ID: 644,
@@ -37855,7 +40299,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "An ogre howdah carries a compact, palisaded wooden fort on its back. The fort serves as a fighting platform for up to four Small humanoids, commonly goblins armed with bows and spears."
+        Description: "An ogre howdah carries a compact, palisaded wooden fort on its back. The fort serves as a fighting platform for up to four Small humanoids, commonly goblins armed with bows and spears.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Retriever
         ID: 645,
@@ -37918,7 +40366,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "A retriever is a potent spider-like construct created by the drow. Its metal body houses the imprisoned spirit of a bebilith, leaving the construct with a measure of the demon's cruelty and cunning. Retrievers are used as hunters and collectors, relentlessly tracking creatures or objects assigned to them by their masters."
+        Description: "A retriever is a potent spider-like construct created by the drow. Its metal body houses the imprisoned spirit of a bebilith, leaving the construct with a measure of the demon's cruelty and cunning. Retrievers are used as hunters and collectors, relentlessly tracking creatures or objects assigned to them by their masters.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Frost Salamander
         ID: 646,
@@ -37977,7 +40429,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Frost salamanders are natives of the Plane of Ice, also called the Frostfell. They are enormous, cold-loving predators that hunt warm-blooded creatures and are drawn to sources of heat. They burrow through ice and create extensive networks of icy caves that can appear to travelers to be safe shelters."
+        Description: "Frost salamanders are natives of the Plane of Ice, also called the Frostfell. They are enormous, cold-loving predators that hunt warm-blooded creatures and are drawn to sources of heat. They burrow through ice and create extensive networks of icy caves that can appear to travelers to be safe shelters.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Gloom Weaver
         ID: 647,
@@ -38045,7 +40501,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Gloom weavers are shadar-kai who dress in dark cloaks and heavy veils and detest reminders of their age. They often remain hidden in shadows, their presence weighing on the hearts of nearby creatures while their shadow magic allows them to destroy those who discover them."
+        Description: "Gloom weavers are shadar-kai who dress in dark cloaks and heavy veils and detest reminders of their age. They often remain hidden in shadows, their presence weighing on the hearts of nearby creatures while their shadow magic allows them to destroy those who discover them.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Shadow Dancer
         ID: 648,
@@ -38101,7 +40561,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Shadow dancers resemble living darkness and use dim alcoves and darkened spaces to emerge suddenly against their prey. They fight with entangling spiked chains, binding and corrupting their victims before others move in to finish them."
+        Description: "Shadow dancers resemble living darkness and use dim alcoves and darkened spaces to emerge suddenly against their prey. They fight with entangling spiked chains, binding and corrupting their victims before others move in to finish them.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Soul Monger
         ID: 649,
@@ -38172,7 +40636,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Soul mongers are shadar-kai consumed by despair over lost memories and a craving for the vitality of others. An aching void within them manifests as an oppressive weight that drains the vigor of creatures nearby."
+        Description: "Soul mongers are shadar-kai consumed by despair over lost memories and a craving for the vitality of others. An aching void within them manifests as an oppressive weight that drains the vigor of creatures nearby.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Skulk
         ID: 650,
@@ -38223,7 +40691,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Skulks are soulless shells of travelers who became lost in the Shadowfell and gradually lost all sense of identity. They are permanently invisible except under certain conditions, and when visible they appear as drab, smooth-skinned, featureless humanoids."
+        Description: "Skulks are soulless shells of travelers who became lost in the Shadowfell and gradually lost all sense of identity. They are permanently invisible except under certain conditions, and when visible they appear as drab, smooth-skinned, featureless humanoids.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Skull Lord
         ID: 651,
@@ -38303,7 +40775,11 @@ const monstersLocal = [
         ],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Skull lords are undead rulers created from three hateful individuals fused together. They claim territories in the Shadowfell and command hordes of undead, but the three minds within each skull lord constantly plot against one another. They are heavily armored undead wielding bone staffs and commanding the dead through sorcery."
+        Description: "Skull lords are undead rulers created from three hateful individuals fused together. They claim territories in the Shadowfell and command hordes of undead, but the three minds within each skull lord constantly plot against one another. They are heavily armored undead wielding bone staffs and commanding the dead through sorcery.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // The Angry
         ID: 652,
@@ -38358,7 +40834,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "The Angry is a two-headed manifestation of rage and violence. Its two heads bicker with each other until they find something else on which to vent their wrath. The creature grows more dangerous when its foes fight back, feeding on the violence directed against it."
+        Description: "The Angry is a two-headed manifestation of rage and violence. Its two heads bicker with each other until they find something else on which to vent their wrath. The creature grows more dangerous when its foes fight back, feeding on the violence directed against it.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // The Hungry
         ID: 653,
@@ -38413,7 +40893,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "The Hungry is a horrid beast with grasping claws and yawning mouths. It exists to sate an endless appetite, consuming life and energy wherever it finds them and drinking in the screams of its victims."
+        Description: "The Hungry is a horrid beast with grasping claws and yawning mouths. It exists to sate an endless appetite, consuming life and energy wherever it finds them and drinking in the screams of its victims.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // The Lonely
         ID: 654,
@@ -38472,7 +40956,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "The Lonely is a manifestation of the sorrow of isolation. Its long, harpoon-like arms allow it to seize creatures from a great distance and drag them toward its grasp. Despite its nature, the creature becomes more effective when surrounded by others."
+        Description: "The Lonely is a manifestation of the sorrow of isolation. Its long, harpoon-like arms allow it to seize creatures from a great distance and drag them toward its grasp. Despite its nature, the creature becomes more effective when surrounded by others.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // The Lost
         ID: 655,
@@ -38527,7 +41015,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "The Lost is a manifestation of despair and disorientation. Its body is built around grasping limbs and cruel spikes, allowing it to seize a victim and hold that creature in a terrifying embrace."
+        Description: "The Lost is a manifestation of despair and disorientation. Its body is built around grasping limbs and cruel spikes, allowing it to seize a victim and hold that creature in a terrifying embrace.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // The Wretched
         ID: 656,
@@ -38574,7 +41066,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "The Wretched are horrid little creatures that gather in large packs throughout the Shadowfell. They subsist on life force, swarming over prey and sinking their fangs into victims to drink their life energy and fear."
+        Description: "The Wretched are horrid little creatures that gather in large packs throughout the Shadowfell. They subsist on life force, swarming over prey and sinking their fangs into victims to drink their life energy and fear.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Star Spawn Grue
         ID: 657,
@@ -38621,7 +41117,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Star spawn grues are fanged, lipless creatures with pallid skin, bristles, spines, and long arms and legs. Their constant chittering and shrieking produces discordant psychic energy that disrupts thought patterns in nearby creatures."
+        Description: "Star spawn grues are fanged, lipless creatures with pallid skin, bristles, spines, and long arms and legs. Their constant chittering and shrieking produces discordant psychic energy that disrupts thought patterns in nearby creatures.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Star Spawn Hulk
         ID: 658,
@@ -38676,7 +41176,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "The star spawn hulk is the largest of the known star spawn. It resembles an ogre in stature, but its glistening translucent skin reveals a heavily muscled form devoid of an ogre's fat. Pale, seemingly lidless eyes glare from a face distorted by too many teeth and too little nose. Hulks are often encountered near a commanding star spawn seer."
+        Description: "The star spawn hulk is the largest of the known star spawn. It resembles an ogre in stature, but its glistening translucent skin reveals a heavily muscled form devoid of an ogre's fat. Pale, seemingly lidless eyes glare from a face distorted by too many teeth and too little nose. Hulks are often encountered near a commanding star spawn seer.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Star Spawn Larva Mage
         ID: 659,
@@ -38749,7 +41253,11 @@ const monstersLocal = [
         ],
         RegionalEffects: [],
         LairActions: [],
-        Description: "A larva mage is a nightmarish fusion of a mortal body and otherworldly substance. It is created when a powerful cultist makes contact with a comet-borne emissary of an Elder Evil and is transformed into something wholly alien. None of the original cultist's personality survives the transformation."
+        Description: "A larva mage is a nightmarish fusion of a mortal body and otherworldly substance. It is created when a powerful cultist makes contact with a comet-borne emissary of an Elder Evil and is transformed into something wholly alien. None of the original cultist's personality survives the transformation.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Star Spawn Mangler
         ID: 660,
@@ -38808,7 +41316,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "The mangler is a low-slung, creeping horror with multiple gangly arms. It usually has six arms, though individuals can have anywhere from four to eight. Manglers creep along ground and walls, hiding in shadows and serving cultists as guards and assassins."
+        Description: "The mangler is a low-slung, creeping horror with multiple gangly arms. It usually has six arms, though individuals can have anywhere from four to eight. Manglers creep along ground and walls, hiding in shadows and serving cultists as guards and assassins.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Star Spawn Seer
         ID: 661,
@@ -38872,7 +41384,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "A star spawn seer is usually the leader of a cult devoted to one or more Elder Evils. Its former mortal identity largely vanishes beneath corpulent, tumorous skin. Its hands become bulky, flipper-like appendages capable of wielding strange staffs formed from flesh, bone, and star stuff. Seers are often accompanied by star spawn hulks and seek to bridge the Material Plane with the prison of an Elder Evil."
+        Description: "A star spawn seer is usually the leader of a cult devoted to one or more Elder Evils. Its former mortal identity largely vanishes beneath corpulent, tumorous skin. Its hands become bulky, flipper-like appendages capable of wielding strange staffs formed from flesh, bone, and star stuff. Seers are often accompanied by star spawn hulks and seek to bridge the Material Plane with the prison of an Elder Evil.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Female Steeder
         ID: 662,
@@ -38927,7 +41443,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Female steeders are giant hunting spiders of the Underdark. Females grow larger and stronger than males and serve as battle steeds among the duergar. Their legs excrete a viscous substance that lets them climb walls and ceilings and grapple prey."
+        Description: "Female steeders are giant hunting spiders of the Underdark. Females grow larger and stronger than males and serve as battle steeds among the duergar. Their legs excrete a viscous substance that lets them climb walls and ceilings and grapple prey.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Male Steeder
         ID: 663,
@@ -38982,7 +41502,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Male steeders are smaller than females and are commonly used by duergar as draft animals. They are aggressive toward other steeders and can be dangerous even when domesticated."
+        Description: "Male steeders are smaller than females and are commonly used by duergar as draft animals. They are aggressive toward other steeders and can be dangerous even when domesticated.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Steel Predator
         ID: 664,
@@ -39049,7 +41573,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "A steel predator is a merciless machine created for one purpose: to locate and kill its target regardless of distance or obstacles. Created by a rogue hexton modron, these constructs can track a designated target across planar boundaries. Once manufactured, a steel predator immediately begins hunting its prey."
+        Description: "A steel predator is a merciless machine created for one purpose: to locate and kill its target regardless of distance or obstacles. Created by a rogue hexton modron, these constructs can track a designated target across planar boundaries. Once manufactured, a steel predator immediately begins hunting its prey.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Stone Cursed
         ID: 665,
@@ -39100,7 +41628,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Stone cursed are creatures transformed into living statues through an alchemical ritual. Their fingers end in stony claws dripping with thick gray sludge that can transform those they slash into stone. When a stone cursed is slain, its statue shatters and reveals a fist-sized obsidian skull embedded within its torso, containing a dim echo of the original victim's memories."
+        Description: "Stone cursed are creatures transformed into living statues through an alchemical ritual. Their fingers end in stony claws dripping with thick gray sludge that can transform those they slash into stone. When a stone cursed is slain, its statue shatters and reveals a fist-sized obsidian skull embedded within its torso, containing a dim echo of the original victim's memories.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Sword Wraith Commander
         ID: 666,
@@ -39163,7 +41695,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Sword wraith commanders are the leaders of undead warriors who died in battle but remain bound to the world by pride, duty, or unfinished business. They appear as spectral warriors clad in the armor they wore in life, their forms often surrounded by an eerie, ghostly presence. A commander can call other sword wraiths to its side and drive them into battle once more."
+        Description: "Sword wraith commanders are the leaders of undead warriors who died in battle but remain bound to the world by pride, duty, or unfinished business. They appear as spectral warriors clad in the armor they wore in life, their forms often surrounded by an eerie, ghostly presence. A commander can call other sword wraiths to its side and drive them into battle once more.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Sword Wraith Warrior
         ID: 667,
@@ -39214,7 +41750,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Sword wraith warriors are the spectral remains of soldiers who refused to accept death after dying in battle. They retain the martial skills they possessed in life and appear as ghostly warriors equipped with the weapons and armor they carried when they died."
+        Description: "Sword wraith warriors are the spectral remains of soldiers who refused to accept death after dying in battle. They retain the martial skills they possessed in life and appear as ghostly warriors equipped with the weapons and armor they carried when they died.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Tortle
         ID: 668,
@@ -39273,7 +41813,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Tortles are omnivorous, turtle-like humanoids with shells that cover most of their bodies. An adult tortle stands about 6 feet tall and weighs between 450 and 500 pounds. Tortles view the world as a place of everyday wonder and enjoy wandering, meeting other peoples, and discovering new customs. They commonly say, \"We wear our homes on our backs.\""
+        Description: "Tortles are omnivorous, turtle-like humanoids with shells that cover most of their bodies. An adult tortle stands about 6 feet tall and weighs between 450 and 500 pounds. Tortles view the world as a place of everyday wonder and enjoy wandering, meeting other peoples, and discovering new customs. They commonly say, \"We wear our homes on our backs.\"",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Tortle Druid
         ID: 669,
@@ -39332,7 +41876,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Tortle druids are wandering spellcasters who combine the tortle's natural resilience with the magic of the druidic tradition. Like other tortles, they have little attachment to permanent settlements and are comfortable traveling for years at a time."
+        Description: "Tortle druids are wandering spellcasters who combine the tortle's natural resilience with the magic of the druidic tradition. Like other tortles, they have little attachment to permanent settlements and are comfortable traveling for years at a time.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Dire Troll
         ID: 670,
@@ -39395,7 +41943,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Dire trolls are trolls that have grown to enormous size through cannibalism and the grafting of additional flesh and organs onto their bodies. A dire troll can tear limbs, eyes, claws, and other organs from victims and attach them to itself, allowing its regenerative nature to incorporate the new mass."
+        Description: "Dire trolls are trolls that have grown to enormous size through cannibalism and the grafting of additional flesh and organs onto their bodies. A dire troll can tear limbs, eyes, claws, and other organs from victims and attach them to itself, allowing its regenerative nature to incorporate the new mass.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Rot Troll
         ID: 671,
@@ -39450,7 +42002,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "A rot troll is a troll infused with waves of necrotic energy as it regenerates. Its body withers and its flesh falls away almost as quickly as it forms. The creature can no longer regenerate normally, but the necrotic energy coursing through its body constantly radiates outward."
+        Description: "A rot troll is a troll infused with waves of necrotic energy as it regenerates. Its body withers and its flesh falls away almost as quickly as it forms. The creature can no longer regenerate normally, but the necrotic energy coursing through its body constantly radiates outward.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Spirit Troll
         ID: 672,
@@ -39509,7 +42065,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "A spirit troll is a troll whose body has become insubstantial after being blasted with psychic energy. Its psyche survives the transformation while its physical form becomes as insubstantial as shadow. Although it continues to move and attack like a normal troll, its attacks strike at the minds of its victims."
+        Description: "A spirit troll is a troll whose body has become insubstantial after being blasted with psychic energy. Its psyche survives the transformation while its physical form becomes as insubstantial as shadow. Although it continues to move and attack like a normal troll, its attacks strike at the minds of its victims.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Venom Troll
         ID: 673,
@@ -39576,7 +42136,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Venom trolls are trolls ravaged by massive doses of poison. Their blood and tissues become infused with venom, while poison leaks from their pores and coats their fangs and claws. Their bodies also spray poison whenever they are wounded, making them especially dangerous at close range."
+        Description: "Venom trolls are trolls ravaged by massive doses of poison. Their blood and tissues become infused with venom, while poison leaks from their pores and coats their fangs and claws. Their bodies also spray poison whenever they are wounded, making them especially dangerous at close range.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Vampiric Mist
         ID: 674,
@@ -39639,7 +42203,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Vampiric mists are the remnants of vampires who were prevented from returning to their burial places after being defeated or suffering some mishap. Their bodies dissolve into mist, stripping away their intelligence and personality until only an insatiable thirst for blood remains. They are indistinguishable from ordinary fog except for the charnel reek they exude."
+        Description: "Vampiric mists are the remnants of vampires who were prevented from returning to their burial places after being defeated or suffering some mishap. Their bodies dissolve into mist, stripping away their intelligence and personality until only an insatiable thirst for blood remains. They are indistinguishable from ordinary fog except for the charnel reek they exude.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Canoloth
         ID: 675,
@@ -39710,7 +42278,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Canoloths are yugoloths that specialize in guarding valuable treasures and important locations. They have extraordinarily sharp senses and can pinpoint nearby invisible creatures. Their magical distortion field prevents creatures close to them from teleporting. A canoloth's long, spiny tongue can seize a foe from a distance and drag it close."
+        Description: "Canoloths are yugoloths that specialize in guarding valuable treasures and important locations. They have extraordinarily sharp senses and can pinpoint nearby invisible creatures. Their magical distortion field prevents creatures close to them from teleporting. A canoloth's long, spiny tongue can seize a foe from a distance and drag it close.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Dhergoloth
         ID: 676,
@@ -39777,7 +42349,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Dhergoloths are squat, barrel-shaped yugoloths with five sets of claws. They rush into battle like whirlwinds of destruction, reveling in the slaughter they create. They are used for simple mercenary tasks such as suppressing uprisings, clearing out rabble, and eliminating scouts and skirmishers."
+        Description: "Dhergoloths are squat, barrel-shaped yugoloths with five sets of claws. They rush into battle like whirlwinds of destruction, reveling in the slaughter they create. They are used for simple mercenary tasks such as suppressing uprisings, clearing out rabble, and eliminating scouts and skirmishers.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Hydroloth
         ID: 677,
@@ -39860,7 +42436,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Hydroloths are yugoloths associated with the waters of the River Styx. They steal the memories of creatures they attack and deliver those thoughts to whatever master they serve. Hydroloths are also skilled at finding things lost in deep waters and are often employed in amphibious assaults, underwater conflicts, and raids on ships and coastal settlements."
+        Description: "Hydroloths are yugoloths associated with the waters of the River Styx. They steal the memories of creatures they attack and deliver those thoughts to whatever master they serve. Hydroloths are also skilled at finding things lost in deep waters and are often employed in amphibious assaults, underwater conflicts, and raids on ships and coastal settlements.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Merrenoloth
         ID: 678,
@@ -39936,7 +42516,11 @@ const monstersLocal = [
             "A strong wind propels the ship, increasing its speed by 30 feet until initiative count 20 on the next round.",
             "The air within 60 feet of the ship is filled with howling wind. Until initiative count 20 on the next round, that area is difficult terrain, and when a Medium or smaller creature flies into that area or starts its turn flying there, it must succeed on a DC 13 Strength saving throw or be knocked prone."
         ],
-        Description: "Merrenoloths are the grim, gaunt captains of the ferries on the River Styx. They have total command of their vessels and ensure that their passengers reach their destinations safely. When a merrenoloth contracts to captain a ship, it bonds with the vessel, allowing it to navigate safely through the worst storms and avoid the myriad hazards that can thwart lesser captains."
+        Description: "Merrenoloths are the grim, gaunt captains of the ferries on the River Styx. They have total command of their vessels and ensure that their passengers reach their destinations safely. When a merrenoloth contracts to captain a ship, it bonds with the vessel, allowing it to navigate safely through the worst storms and avoid the myriad hazards that can thwart lesser captains.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Oinoloth
         ID: 679,
@@ -40012,7 +42596,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Oinoloths are grim specters of death that bring pestilence wherever they go. They are often hired as a last resort when a siege has gone on too long or an army has proved too strong to overcome. Once summoned, an oinoloth stalks the killing field, poisoning the ground and sickening creatures it encounters."
+        Description: "Oinoloths are grim specters of death that bring pestilence wherever they go. They are often hired as a last resort when a siege has gone on too long or an army has proved too strong to overcome. Once summoned, an oinoloth stalks the killing field, poisoning the ground and sickening creatures it encounters.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Yagnoloth
         ID: 680,
@@ -40087,7 +42675,11 @@ const monstersLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Yagnoloths are the contract negotiators and commanders of the yugoloths. They possess one human-sized arm and one giant-sized arm, normally concealing one beneath a long cape. Their contracts are carefully written and frequently contain loopholes that allow the yagnoloth to escape an obligation when circumstances permit."
+        Description: "Yagnoloths are the contract negotiators and commanders of the yugoloths. They possess one human-sized arm and one giant-sized arm, normally concealing one beneath a long cape. Their contracts are carefully written and frequently contain loopholes that allow the yagnoloth to escape an obligation when circumstances permit.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Black Knight
         ID: 681,
@@ -40157,9 +42749,453 @@ const monstersLocal = [
         Description: "Weapon is magically transforming for the black knight's needs. Cannot be wielded by others.",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
-        GeographicalLocations: [],
+        GeographicalLocations: ["Tridenthia, Aesis"],
         Campaigns_Worlds: ["All"],
     },
+    { // Darkwraith
+        ID: 682,
+        ProfileType: "Monster",
+        Name: "Darkwraith",
+        Type: "Medium aberration, lawful evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [16, "Scale Mail"],
+        HitPoints: 91,
+        HitPointsRoll: "14d8 + 28",
+        Speed: ["30 ft."],
+        Strength: 18,
+        Dexterity: 14,
+        Constitution: 14,
+        Intelligence: 12,
+        Wisdom: 16,
+        Charisma: 12,
+        SavingThrows: ["Strength +8", "Wisdom +7"],
+        Skills: ["Stealth +5"],
+        DamageVulnerabilities: ["Radiant"],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: ["Necrotic"],
+        ConditionImmunities: [],
+        Senses: ["Blindsight 60 ft.", "Passive Perception 13"],
+        Languages: ["Understands Common, but can't speak"],
+        Challenge: [8, 3900],
+        ExtraRewards: "Roll 1d12. On a 6-9, the Darkwraith drops a Sardonyx. On a 10-11, the Darkwraith drops a Tourmaline. On a 12, the Darkwraith drops a Ruby.",
+        Traits: [
+            {
+                Title: "Dark Weapon",
+                Desc: "The darkwraith's weapon attacks are magical. When the darkwraith hits with his weapon, the weapon deals an extra 4d6 necrotic damage (included in the attack)."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The darkwraith makes two dark sword attacks."
+            },
+            {
+                Title: "Dark Sword",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft. Hit: 8 (1d8 + 4) slashing damage plus 14 (4d6) necrotic damage."
+            },
+            {
+                Title: "Life Drain (Recharge 4-6)",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft. The darkwraith raises a hand towards an enemy and attempts to leech its life. The target must make a DC 14 Wisdom saving throw. On a failed save, the target takes 17 (6d6) necrotic damage and is knocked prone with 1 level of exhaustion. On a successful save, the target only takes half damage. The darkwraith regains an amount of hit points equal to the damage dealt."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Parry",
+                Desc: "The Dark Wraith adds 2 to its AC against one melee attack that would hit it by conjuring a red phantom shield. To do so, the Dark Wraith must see the attacker and have its left hand free."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Their armor and skull helms resemble a pale skeletal look with flickers of necrotic energy flaking off them so slightly. Their swords are blackened as well. On death, their bodies and armor dissolve into flakes of necrotic leaves into thin air.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Mimic Chest
+        ID: 683,
+        ProfileType: "Monster",
+        Name: "Mimic Chest",
+        Type: "Medium monstrosity (shapechanger), neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [12, "Natural Armor"],
+        HitPoints: 58,
+        HitPointsRoll: "9d8 + 18",
+        Speed: ["15 ft."],
+        Strength: 17,
+        Dexterity: 12,
+        Constitution: 15,
+        Intelligence: 5,
+        Wisdom: 13,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: ["Stealth +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Acid"],
+        ConditionImmunities: ["Prone"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["None"],
+        Challenge: [2, 450],
+        ExtraRewards: "1 boons, 1 Uncommon Gems, 3 Common Gems",
+        Traits: [
+            {
+                Title: "Shapechanger",
+                Desc: "The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+            },
+            {
+                Title: "Adhesive (Object Form Only)",
+                Desc: "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage."
+            },
+            {
+                Title: "False Appearance (Object Form Only)",
+                Desc: "While the mimic remains motionless, it is indistinguishable from an ordinary object."
+            },
+            {
+                Title: "Grappler",
+                Desc: "The mimic has advantage on attack rolls against any creature grappled by it."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Pseudopod",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Mimics are shapeshifting predators able to take on the form of inanimate objects to lure creatures to their doom. In dungeons, these cunning creatures most often take the form of doors and chests, having learned that such forms attract a steady stream of prey. Mimics can alter their outward texture to resemble wood, stone, and other basic materials, and they have evolved to assume the appearance of objects that other creatures are likely to come into contact with. A mimic in its altered form is nearly unrecognizable until potential prey blunders into its reach, whereupon the monster sprouts pseudopods and attacks. When it changes shape, a mimic excretes an adhesive that helps it seize prey and weapons that touch it. The adhesive is absorbed when the mimic assumes its amorphous form and on parts the mimic uses to move itself.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Mimic Chest (Heroic)
+        ID: 684,
+        ProfileType: "Monster",
+        Name: "Mimic Chest (Heroic)",
+        Type: "Large monstrosity (shapechanger), neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Large",
+        Source: "Homebrew",
+        ArmorClass: [14, "Natural Armor"],
+        HitPoints: 174,
+        HitPointsRoll: "(9d8 + 18) x 3",
+        Speed: ["30 ft."],
+        Strength: 20,
+        Dexterity: 12,
+        Constitution: 18,
+        Intelligence: 5,
+        Wisdom: 13,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: ["Stealth +8"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: ["Acid"],
+        ConditionImmunities: ["Prone"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["None"],
+        Challenge: [5, 1500],
+        ExtraRewards: "3 boons, 1 Rare Gems, 3 Uncommon Gems, 5 Common Gems, +1 magical item? (3-4) [36 (1d3 then 1d12) for all weapons (except net)] [13 (1d13) for all armor (including shield)]",
+        Traits: [
+            {
+                Title: "Shapechanger",
+                Desc: "The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+            },
+            {
+                Title: "Adhesive (Object Form Only)",
+                Desc: "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 15). Ability checks made to escape this grapple have disadvantage."
+            },
+            {
+                Title: "False Appearance (Object Form Only)",
+                Desc: "While the mimic remains motionless, it is indistinguishable from an ordinary object. If hit while motionless, an attack roll of 14 or less doesn’t break the False Appearance."
+            },
+            {
+                Title: "Automatic Grapple",
+                Desc: "If a creature tries to open or touch the chest, the Mimic automatically does a Grapple attack."
+            },
+            {
+                Title: "Grappler",
+                Desc: "The mimic has advantage on attack rolls against any creature grappled by it."
+            },
+            {
+                Title: "Additional Limbs",
+                Desc: "The Mimic has two long arms and legs."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Mimic can make two attacks with Pseudopod and Bite."
+            },
+            {
+                Title: "Pseudopod",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage. If the mimic is in object form or uses its arms/legs, the target is subjected to its Adhesive trait."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage plus 11 (2d8 + 2) acid damage."
+            },
+            {
+                Title: "Grapple (Recharge 5-6)",
+                Desc: "The Mimic attempts to grapple a creature Medium or smaller within 10 ft. of it. If it succeeds in grappling the creature, the Mimic lifts the creature in its mouth and chomps on its body several times. The creature takes 23 (7d4 + 5) piercing damage plus 11 (2d8 + 2) acid damage. Once the creature has been chomped on, it falls out of its mouth and falls prone on the ground in front of the Mimic."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Mimics are shapeshifting predators able to take onthe form of inanimate objects to lure creatures to their doom. In dungeons, these cunning creatures most often take the form of doors and chests, having learned that such forms attract a steady stream of prey. Mimics can alter theiroutward texture to resemble wood, stone, and other basic materials, and they have evolved to assume the appearance of objects that other creatures are likely to come into contact with. A mimic in its altered form is nearly unrecognizable until potential prey blunders into its reach, whereupon the monster sprouts pseudopods and attacks. When it changes shape, a mimic excretes an adhesive that helps it seize prey and weapons that touch it. The adhesive is absorbed when the mimic assumesits amorphous form and on parts the mimic uses to move itself.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Mimic Chest (Legendary)
+        ID: 685,
+        ProfileType: "Monster",
+        Name: "Mimic Chest (Legendary)",
+        Type: "Huge monstrosity (shapechanger), neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: [18, "Natural Armor"],
+        HitPoints: 290,
+        HitPointsRoll: "(9d8 + 18) x 5",
+        Speed: ["45 ft."],
+        Strength: 25,
+        Dexterity: 12,
+        Constitution: 23,
+        Intelligence: 5,
+        Wisdom: 13,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: ["Stealth +13"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder"],
+        DamageImmunities: ["Acid", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        ConditionImmunities: ["Prone"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["None"],
+        Challenge: [8, 3900],
+        ExtraRewards: "5 boons, 1 Very Rare Gems, 3 Rare Gems, 5 Uncommon Gems, 7 Common Gems, 2 magical item? (roll 4-5), +3 magical item? (roll 6) [36 (1d3 then 1d12) for all weapons (except net)] [13 (1d13) for all armor (including shield)]",
+        Traits: [
+            {
+                Title: "Shapechanger",
+                Desc: "The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+            },
+            {
+                Title: "Adhesive",
+                Desc: "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 18). Ability checks made to escape this grapple have disadvantage."
+            },
+            {
+                Title: "False Appearance (Object Form Only)",
+                Desc: "While the mimic remains motionless, it is indistinguishable from an ordinary object. If hit while motionless, an attack roll of 19 or less doesn’t break the False Appearance."
+            },
+            {
+                Title: "Automatic Grapple",
+                Desc: "If a creature tries to open or touch the chest, the Mimic automatically does a Grapple attack."
+            },
+            {
+                Title: "Grappler",
+                Desc: "The mimic has advantage on attack rolls against any creature grappled by it."
+            },
+            {
+                Title: "Additional Limbs",
+                Desc: "The Mimic has two long arms and legs."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Mimic can make three attacks with Pseudopod and Bite."
+            },
+            {
+                Title: "Pseudopod",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 15 ft., one target. Hit: 21 (3d8 + 8) bludgeoning damage. If the mimic is in object form or uses its arms/legs, the target is subjected to its Adhesive trait."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) piercing damage plus 18 (3d8 + 5) acid damage."
+            },
+            {
+                Title: "Grab (Recharge 5-6)",
+                Desc: "The Mimic attempts to grapple a creature Medium or smaller within 15 ft. of it. If it succeeds in grappling the creature, the Mimic lifts the creature in its mouth and chomps on its body several times. The creature takes 38 (12d4 + 8) piercing damage plus 18 (3d8 + 5) acid damage. Once the creature has been chomped on, it falls out of its mouth and falls prone on the ground in front of the Mimic."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Mimics are shapeshifting predators able to take on the form of inanimate objects to lure creatures to their doom. In dungeons, these cunning creatures most often take the form of doors and chests, having learned that such forms attract a steady stream of prey. Mimics can alter their outward texture to resemble wood, stone, and other basic materials, and they have evolved to assume the appearance of objects that other creatures are likely to come into contact with. A mimic in its altered form is nearly unrecognizable until potential prey blunders into its reach, whereupon the monster sprouts pseudopods and attacks. When it changes shape, a mimic excretes an adhesive that helps it seize prey and weapons that touch it. The adhesive is absorbed when the mimic assumes its amorphous form and on parts the mimic uses to move itself.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Mimic Chest (Godly)
+        ID: 686,
+        ProfileType: "Monster",
+        Name: "Mimic Chest (Godly)",
+        Type: "Gargantuan monstrosity (shapechanger), neutral",
+        TypeCategory: "Monstrosity",
+        Size: "Gargantuan",
+        Source: "Homebrew",
+        ArmorClass: [25, "Natural Armor"],
+        HitPoints: 580,
+        HitPointsRoll: "(9d8 + 18) x 10",
+        Speed: ["60 ft."],
+        Strength: 30,
+        Dexterity: 12,
+        Constitution: 30,
+        Intelligence: 5,
+        Wisdom: 13,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: ["Stealth +20"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        ConditionImmunities: ["Prone"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
+        Languages: ["None"],
+        Challenge: [13, 13000],
+        ExtraRewards: "7 boons, Denthorite, 3 Very Rare Gems, 5 Rare Gems, 7 Uncommon Gems, 10 Common Gems, +3 magical item, [36 (1d3 then 1d12) for all weapons (except net)] [13 (1d13) for all armor (including shield)]",
+        Traits: [
+            {
+                Title: "Shapechanger",
+                Desc: "The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+            },
+            {
+                Title: "Adhesive",
+                Desc: "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 22). Ability checks made to escape this grapple have disadvantage."
+            },
+            {
+                Title: "False Appearance (Object Form Only)",
+                Desc: "While the mimic remains motionless, it is indistinguishable from an ordinary object. If hit while motionless, an attack roll of 25 or less doesn’t break the False Appearance."
+            },
+            {
+                Title: "Automatic Grapple",
+                Desc: "If a creature tries to open or touch the chest, the Mimic automatically does a Grapple attack."
+            },
+            {
+                Title: "Grappler",
+                Desc: "The mimic has advantage on attack rolls against any creature grappled by it."
+            },
+            {
+                Title: "Additional Limbs",
+                Desc: "The Mimic has two long arms and legs."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Mimic can make five attacks with Pseudopod and Bite."
+            },
+            {
+                Title: "Pseudopod",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 28 (4d8 + 12) bludgeoning damage. If the mimic is in object form or uses its arms/legs, the target is subjected to its Adhesive trait."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 28 (4d8 + 12) piercing damage plus 25 (4d8 + 9) acid damage."
+            },
+            {
+                Title: "Grab (Recharge 5-6)",
+                Desc: "The Mimic attempts to grapple a creature Medium or smaller within 20 ft. of it. If it succeeds in grappling the creature, the Mimic lifts the creature in its mouth and chomps on its body several times. The creature takes 52 (16d4 + 12) piercing damage plus 25 (4d8 + 9) acid damage. Once the creature has been chomped on, it falls out of its mouth and falls prone on the ground in front of the Mimic."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Mimics are shapeshifting predators able to take onthe form of inanimate objects to lure creatures to their doom. In dungeons, these cunning creatures most often take the form of doors and chests, having learned that such forms attract a steady stream of prey. Mimics can alter theiroutward texture to resemble wood, stone, and other basic materials, and they have evolved to assume the appearance of objects that other creatures are likely to come into contact with. A mimic in its altered form is nearly unrecognizable until potential prey blunders into its reach, whereupon the monster sprouts pseudopods and attacks. When it changes shape, a mimic excretes an adhesive that helps it seize prey and weapons that touch it. The adhesive is absorbed when the mimic assumesits amorphous form and on parts the mimic uses to move itself.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Silver Knight
+        ID: 687,
+        ProfileType: "Monster",
+        Name: "Silver Knight",
+        Type: "Medium humanoid (human), lawful neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [16, "Scale Mail"],
+        HitPoints: 97,
+        HitPointsRoll: "15d8 + 30",
+        Speed: ["30 ft."],
+        Strength: 16,
+        Dexterity: 14,
+        Constitution: 14,
+        Intelligence: 14,
+        Wisdom: 12,
+        Charisma: 10,
+        SavingThrows: ["Dexterity +5", "Intelligence +5"],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Common"],
+        Challenge: [6, 2300],
+        ExtraRewards: "Roll 1d12. On a 6-9, the Silver Knight drops a Rhodochrosite. On a 10-11, the Silver Knight drops a Quartz. On a 12, the Silver Knight drops a Pearl.",
+        Traits: [
+            {
+                Title: "Versatile",
+                Desc: "The silver knight has plenty of weapons to choose from. It is equipped with a longsword, a spear, and a greatbow, of which it can switch between by using a bonus action. While the silver knight is wielding a longsword or spear, it also has a shield, giving it a +2 AC bonus."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The silver knight can make three longsword attacks, two spear attacks, or two greatbow attacks."
+            },
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., Hit: 7 (1d8 + 3) slashing damage."
+            },
+            {
+                Title: "Spear",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., Hit: 10 (2d6 + 3) piercing damage."
+            },
+            {
+                Title: "Greatbow",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 120/300 ft., Hit: 7 (1d10 + 2) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength check or be knocked prone."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Weapon is magically transforming for the silver knight's needs. Cannot be wielded by others.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+
+
+
+
+
+
+
 
     
 
@@ -40249,7 +43285,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "A man in a perfectly pressed black suit stands motionless in the center of the room—clean-cut hair, polished shoes, and mirrored sunglasses that somehow reflect your faces even in the low light. There's something wrong about him. He doesn't blink. He doesn't breathe. It's like he's waiting for the world to catch up to him. Without turning his head, he speaks in a calm, unfeeling voice that echoes in your skull more than your ears: \"Unauthorized entities detected. System anomaly in progress. Initiating correction protocol.\" His body twitches—not naturally, but like a puppet yanked by a string—and in a single frame, he's no longer standing; he's walking toward you, fast, smooth, unstoppable. Walls and obstacles don't matter; he moves through them like they aren't real. As he raises a black handgun—no glowing runes, no arcane sigils, just matte steel and deadly intent—it's clear: this isn't a person. This is the system's immune response."
+        Description: "A man in a perfectly pressed black suit stands motionless in the center of the room—clean-cut hair, polished shoes, and mirrored sunglasses that somehow reflect your faces even in the low light. There's something wrong about him. He doesn't blink. He doesn't breathe. It's like he's waiting for the world to catch up to him. Without turning his head, he speaks in a calm, unfeeling voice that echoes in your skull more than your ears: \"Unauthorized entities detected. System anomaly in progress. Initiating correction protocol.\" His body twitches—not naturally, but like a puppet yanked by a string—and in a single frame, he's no longer standing; he's walking toward you, fast, smooth, unstoppable. Walls and obstacles don't matter; he moves through them like they aren't real. As he raises a black handgun—no glowing runes, no arcane sigils, just matte steel and deadly intent—it's clear: this isn't a person. This is the system's immune response.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     }
 ];
 
@@ -40401,6 +43441,10 @@ const uniqueLocal = [
         ],
         RegionalEffects: [],
         Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Any"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Halls of Creation (only)"],
     },
     { // Baphomet
         ID: 100002,
@@ -40505,7 +43549,11 @@ const uniqueLocal = [
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 18 Wisdom saving throw or descend into a madness determined by the Madness of Baphomet table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Baphomet dies, these effects fade over the course of 1d10 days."
         ],
-        Description: "Baphomet, the Prince of Beasts, appears as a gigantic black-furred minotaur standing 20 feet tall, with six iron horns and infernal light burning in his red eyes. Beneath his savage appearance is a cruel and cunning intellect devoted to destroying the restraints of civilization. He wields the enormous glaive Heartcleaver, though he often casts it aside to charge his enemies, gore them with his horns, and tear them apart with his teeth. His lair is the Lyktion, a palace hidden within the plane-spanning Endless Maze of the Abyss."
+        Description: "Baphomet, the Prince of Beasts, appears as a gigantic black-furred minotaur standing 20 feet tall, with six iron horns and infernal light burning in his red eyes. Beneath his savage appearance is a cruel and cunning intellect devoted to destroying the restraints of civilization. He wields the enormous glaive Heartcleaver, though he often casts it aside to charge his enemies, gore them with his horns, and tear them apart with his teeth. His lair is the Lyktion, a palace hidden within the plane-spanning Endless Maze of the Abyss.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Demogorgon
         ID: 100003,
@@ -40593,7 +43641,11 @@ const uniqueLocal = [
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Demogorgon table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Demogorgon dies, these effects fade over the course of 1d10 days."
         ],
-        Description: "Demogorgon, the Prince of Demons, is a monstrous embodiment of chaos and madness. His body combines a saurian lower form with clawed, webbed feet, suckered tentacles sprouting from the shoulders of a great apelike torso, and two hideous simian heads named Aameul and Hathradiah. Each head possesses its own madness, and their gaze can overwhelm creatures with confusion, charm, or stunning terror. Demogorgon rules from Abysm, a palace of duality rising from and extending deep beneath the waters of the Gaping Maw."
+        Description: "Demogorgon, the Prince of Demons, is a monstrous embodiment of chaos and madness. His body combines a saurian lower form with clawed, webbed feet, suckered tentacles sprouting from the shoulders of a great apelike torso, and two hideous simian heads named Aameul and Hathradiah. Each head possesses its own madness, and their gaze can overwhelm creatures with confusion, charm, or stunning terror. Demogorgon rules from Abysm, a palace of duality rising from and extending deep beneath the waters of the Gaping Maw.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Fraz-Urb'luu
         ID: 100004,
@@ -40682,7 +43734,11 @@ const uniqueLocal = [
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Fraz-Urb'luu table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Fraz-Urb'luu dies, these effects fade over the course of 1d10 days."
         ],
-        Description: "Fraz-Urb'luu, the Prince of Deception and Demon Lord of Illusions, is a master of lies who delights in manipulating mortals and demons alike. His true form resembles a great gargoyle about 12 feet tall, with a long muscular neck, smiling face, pointed ears, lank dark hair, and batlike wings. He can assume forms ranging from hideous to beautiful and often becomes so immersed in a role that he temporarily loses himself within it. His lair is the fortress-city of Zoragmelok in Hollow's Heart, where even the architecture reflects his talent for deception."
+        Description: "Fraz-Urb'luu, the Prince of Deception and Demon Lord of Illusions, is a master of lies who delights in manipulating mortals and demons alike. His true form resembles a great gargoyle about 12 feet tall, with a long muscular neck, smiling face, pointed ears, lank dark hair, and batlike wings. He can assume forms ranging from hideous to beautiful and often becomes so immersed in a role that he temporarily loses himself within it. His lair is the fortress-city of Zoragmelok in Hollow's Heart, where even the architecture reflects his talent for deception.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Graz'zt
         ID: 100005,
@@ -40778,7 +43834,11 @@ const uniqueLocal = [
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Graz'zt table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Graz'zt dies, these effects fade over the course of 1d10 days."
         ],
-        Description: "Graz'zt, the Dark Prince and Lord of Pleasure, stands nearly nine feet tall and possesses an unnaturally beautiful humanoid form. Six fingers adorn each hand and six toes each foot, while a subtle cruelty mars his otherwise perfect features. He can transform into whatever humanoid form best suits his desires. Graz'zt surrounds himself with luxury, beautiful servants, and decadent pleasure palaces, and wields the greatsword Angdrelve, also called Wave of Sorrow, whose blade can drip with acid at his command. His principal lair is the Argent Palace in Zelatar, within his Abyssal domain of Azzatar."
+        Description: "Graz'zt, the Dark Prince and Lord of Pleasure, stands nearly nine feet tall and possesses an unnaturally beautiful humanoid form. Six fingers adorn each hand and six toes each foot, while a subtle cruelty mars his otherwise perfect features. He can transform into whatever humanoid form best suits his desires. Graz'zt surrounds himself with luxury, beautiful servants, and decadent pleasure palaces, and wields the greatsword Angdrelve, also called Wave of Sorrow, whose blade can drip with acid at his command. His principal lair is the Argent Palace in Zelatar, within his Abyssal domain of Azzatar.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Juiblex
         ID: 100006,
@@ -40892,7 +43952,11 @@ const uniqueLocal = [
             "Surfaces within 6 miles of the lair are frequently covered by a thin film of slime, which is slick and sticks to anything that touches it.",
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 18 Wisdom saving throw or descend into a madness determined by the Madness of Juiblex table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours."
         ],
-        Description: "Juiblex, the Faceless Lord and Oozing Hunger, is a horrifying mass of bubbling black and green slime with glaring red eyes that float and shift within its body. It can rise like a twenty-foot hill and lash out with dripping pseudopods, dragging victims into its bulk where they are obliterated. Those who willingly offer themselves to Juiblex are engulfed and transformed into vaguely humanoid, sentient oozes whose bodies become part of the demon lord. Juiblex dwells in the Slime Pits of Shedaklah, a bubbling morass of sludge, molds, and caustic oozes shared with Zuggtmoy."
+        Description: "Juiblex, the Faceless Lord and Oozing Hunger, is a horrifying mass of bubbling black and green slime with glaring red eyes that float and shift within its body. It can rise like a twenty-foot hill and lash out with dripping pseudopods, dragging victims into its bulk where they are obliterated. Those who willingly offer themselves to Juiblex are engulfed and transformed into vaguely humanoid, sentient oozes whose bodies become part of the demon lord. Juiblex dwells in the Slime Pits of Shedaklah, a bubbling morass of sludge, molds, and caustic oozes shared with Zuggtmoy.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Orcus
         ID: 100007,
@@ -40989,7 +44053,11 @@ const uniqueLocal = [
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 23 Wisdom saving throw or descend into a madness determined by the Madness of Orcus table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Orcus dies, these effects fade over the course of 1d10 days."
         ],
-        Description: "Orcus, the Demon Prince of Undeath and Blood Lord, is a foul, corpulent creature with the lower torso of a goat and a humanoid upper body swollen with rot. Great bat wings sprout from his shoulders, while his head resembles a nearly fleshless goat skull with glowing eyes. He wields the legendary Wand of Orcus, an obsidian rod topped with a humanoid skull, and surrounds himself with undead servants. His lair is the fortress city of Naratyr on Thanatos, a cold and eerily quiet city dominated by a castle of bone, flesh, and woven hair."
+        Description: "Orcus, the Demon Prince of Undeath and Blood Lord, is a foul, corpulent creature with the lower torso of a goat and a humanoid upper body swollen with rot. Great bat wings sprout from his shoulders, while his head resembles a nearly fleshless goat skull with glowing eyes. He wields the legendary Wand of Orcus, an obsidian rod topped with a humanoid skull, and surrounds himself with undead servants. His lair is the fortress city of Naratyr on Thanatos, a cold and eerily quiet city dominated by a castle of bone, flesh, and woven hair.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Yeenoghu
         ID: 100008,
@@ -41082,7 +44150,11 @@ const uniqueLocal = [
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 17 Wisdom saving throw or descend into a madness determined by the Madness of Yeenoghu table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Yeenoghu dies, these effects fade over the course of 1d10 days."
         ],
-        Description: "Yeenoghu, the Beast of Butchery and Gnoll Lord, appears as a fourteen-foot-tall, battle-scarred gnoll covered in matted fur and taut leathery hide. His face resembles a grinning predator's skull, and patchwork armor made from the shields and breastplates of fallen foes is lashed to his body with chains and decorated with flayed skins. He wields the triple-headed flail Butcher, though he is equally willing to tear prey apart with his claws and teeth. His lair, the Death Dells, is a barren hunting ground of hills and ravines populated by gnolls, hyenas, and ghouls."
+        Description: "Yeenoghu, the Beast of Butchery and Gnoll Lord, appears as a fourteen-foot-tall, battle-scarred gnoll covered in matted fur and taut leathery hide. His face resembles a grinning predator's skull, and patchwork armor made from the shields and breastplates of fallen foes is lashed to his body with chains and decorated with flayed skins. He wields the triple-headed flail Butcher, though he is equally willing to tear prey apart with his claws and teeth. His lair, the Death Dells, is a barren hunting ground of hills and ravines populated by gnolls, hyenas, and ghouls.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Zuggtmoy
         ID: 100009,
@@ -41176,7 +44248,11 @@ const uniqueLocal = [
             "If a humanoid spends at least 1 hour within 1 mile of the lair, that creature must succeed on a DC 17 Wisdom saving throw or descend into a madness determined by the Madness of Zuggtmoy table. A creature that succeeds on this saving throw can't be affected by this regional effect again for 24 hours.",
             "If Zuggtmoy dies, these effects fade over the course of 1d10 days."
         ],
-        Description: "Zuggtmoy, the Demon Queen of Fungi and Lady of Rot and Decay, is an alien fungal entity that seeks to infect living creatures with spores and transform them into extensions of her will. She can mold her fungoid body into an approximation of humanoid form, including the skeletal-thin figure depicted in ancient art, draped in mycelia and lichen. Her cultists are often unknowingly infected, gradually becoming creatures in which flesh and fungus merge. Zuggtmoy's principal lair is a palace on Shedaklah made from enormous pale-yellow and rancid-brown mushrooms, surrounded by acidic puffballs and poisonous vapors."
+        Description: "Zuggtmoy, the Demon Queen of Fungi and Lady of Rot and Decay, is an alien fungal entity that seeks to infect living creatures with spores and transform them into extensions of her will. She can mold her fungoid body into an approximation of humanoid form, including the skeletal-thin figure depicted in ancient art, draped in mycelia and lichen. Her cultists are often unknowingly infected, gradually becoming creatures in which flesh and fungus merge. Zuggtmoy's principal lair is a palace on Shedaklah made from enormous pale-yellow and rancid-brown mushrooms, surrounded by acidic puffballs and poisonous vapors.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     }
 ];
 
