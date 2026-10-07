@@ -53,7 +53,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Aboleth
         ID: 2,
@@ -138,7 +142,11 @@ const monstersLocal = [
             "Water in the aboleth's lair magically becomes a conduit for the creature's rage. The aboleth can target any number of creatures it can see in such water within 90 feet of it. A target must succeed on a DC 14 Wisdom saving throw or take 7 (2d6) psychic damage. The aboleth can't use this lair action again until it has used a different one."
         ],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Deva
         ID: 3,
@@ -205,7 +213,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Planetar
         ID: 5,
@@ -284,7 +296,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Planetars are muscular and hairless and have opalescent green skin and white-feathered wings. They tower over most humanoids, brandishing immense swords with grace. Sometimes sent to aid powerful mortals on important tasks for good, planetars are especially fond of missions that involve battling fiends"
+        Description: "Planetars are muscular and hairless and have opalescent green skin and white-feathered wings. They tower over most humanoids, brandishing immense swords with grace. Sometimes sent to aid powerful mortals on important tasks for good, planetars are especially fond of missions that involve battling fiends",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Solar
         ID: 6,
@@ -341,7 +357,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Animated Armor
         ID: 7,
@@ -396,7 +416,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Flying Sword
         ID: 8,
@@ -447,7 +471,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Rug of Smothering
         ID: 9,
@@ -502,7 +530,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Ankheg
         ID: 10,
@@ -548,7 +580,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Azer
         ID: 11,
@@ -607,7 +643,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Banshee
         ID: 12,
@@ -666,7 +706,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Basilisk
         ID: 13,
@@ -713,7 +757,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Behir
         ID: 14,
@@ -771,7 +819,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Beholder
         ID: 15,
@@ -827,7 +879,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Death Tyrant
         ID: 16,
@@ -891,7 +947,11 @@ const monstersLocal = [
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Spectator
         ID: 17,
@@ -946,7 +1006,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Needle Blight
         ID: 18,
@@ -1001,7 +1065,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Twig Blight
         ID: 19,
@@ -1048,7 +1116,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Vine Blight
         ID: 20,
@@ -1099,7 +1171,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bugbear
         ID: 21,
@@ -1154,7 +1230,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bugbear Chief
         ID: 22,
@@ -1209,7 +1289,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bulette
         ID: 23,
@@ -1260,7 +1344,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Bullywug
         ID: 24,
@@ -1323,7 +1411,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cambion
         ID: 25,
@@ -1386,7 +1478,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Carrion Crawler
         ID: 26,
@@ -1436,7 +1532,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Centaur
         ID: 27,
@@ -1495,7 +1595,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Chimera
         ID: 28,
@@ -1553,7 +1657,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Chuul
         ID: 29,
@@ -1612,7 +1720,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
     { // Cloaker
         ID: 30,
@@ -1683,7 +1795,11 @@ const monstersLocal = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here"
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
     },
     { // Cockatrice
         ID: 31,
@@ -39973,7 +40089,78 @@ const monstersLocal = [
         LairActions: [],
         Description: "Yagnoloths are the contract negotiators and commanders of the yugoloths. They possess one human-sized arm and one giant-sized arm, normally concealing one beneath a long cape. Their contracts are carefully written and frequently contain loopholes that allow the yagnoloth to escape an obligation when circumstances permit."
     },
-    // 681 left off. Now Homebrew!!!
+    { // Black Knight
+        ID: 681,
+        ProfileType: "Monster",
+        Name: "Black Knight",
+        Type: "Medium humanoid, lawful neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [16, "Burnt Breastplate"],
+        HitPoints: 127,
+        HitPointsRoll: "17d8 + 51",
+        Speed: ["30 ft."],
+        Strength: 20,
+        Dexterity: 16,
+        Constitution: 16,
+        Intelligence: 14,
+        Wisdom: 12,
+        Charisma: 12,
+        SavingThrows: ["Dexterity +5", "Intelligence +5"],
+        Skills: ["Athletics +9", "Perception +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Fire", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 11"],
+        Languages: ["Common"],
+        Challenge: [12, 8400],
+        ExtraRewards: "Roll 1d12. On a 6-9, the Black Knight drops a Quartz and Zircon. On a 10-11, the Black Knight drops a Pearl and Jet. On a 12, the Black Knight drops a Diamond and Black Sapphire.",
+        Traits: [
+            {
+                Title: "Versatile",
+                Desc: "The black knight has a variety of weapons at his disposal. He has a longsword and shield, a greatsword, and a halberd. He can use a bonus action to switch weapons. While he is wielding the longsword and shield, his AC increases by 2."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The black knight's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The black knight can make three longsword attacks, two greatsword attacks, or two halberd attacks."
+            },
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft. Hit: 9 (1d8 + 5) slashing damage."
+            },
+            {
+                Title: "Greatsword",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft. Hit: 12 (2d6 + 5) piercing damage."
+            },
+            {
+                Title: "Halberd",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 10 ft. Hit: 10 (1d10 + 5) slashing damage."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Parry",
+                Desc: "When the black knight is hit by a melee attack, he can make a Strength (Athletics) check against the attack roll. If the Strength (Athletics) check is higher than the attack roll, he takes no damage from the attack, and can immediately make an attack against the original attacker."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Weapon is magically transforming for the black knight's needs. Cannot be wielded by others.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"],
+    },
+
     
 
 
