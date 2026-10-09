@@ -6,6 +6,8 @@
 const monstersLocal = [
     { // Aarakocra
         ID: 1,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Aarakocra",
         Type: "Medium humanoid(aarakocra), neutral good",
@@ -61,6 +63,8 @@ const monstersLocal = [
     },
     { // Aboleth
         ID: 2,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Aboleth",
         Type: "Large aberration, lawful evil",
@@ -150,6 +154,8 @@ const monstersLocal = [
     },
     { // Deva
         ID: 3,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Deva",
         Type: "Medium celestial, lawful good",
@@ -221,6 +227,8 @@ const monstersLocal = [
     },
     { // Planetar
         ID: 5,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Planetar",
         Type: "Large celestial, lawful good ",
@@ -304,6 +312,8 @@ const monstersLocal = [
     },
     { // Solar
         ID: 6,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Solar",
         Type: "Large celestial, lawful good ",
@@ -365,6 +375,8 @@ const monstersLocal = [
     },
     { // Animated Armor
         ID: 7,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Animated Armor",
         Type: "Medium construct, unaligned",
@@ -424,6 +436,8 @@ const monstersLocal = [
     },
     { // Flying Sword
         ID: 8,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Flying Sword",
         Type: "Small construct, unaligned",
@@ -479,6 +493,8 @@ const monstersLocal = [
     },
     { // Rug of Smothering
         ID: 9,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Rug of Smothering",
         Type: "Large construct, unaligned",
@@ -538,6 +554,8 @@ const monstersLocal = [
     },
     { // Ankheg
         ID: 10,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ankheg",
         Type: "Large monstrosity, unaligned",
@@ -588,6 +606,8 @@ const monstersLocal = [
     },
     { // Azer
         ID: 11,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Azer",
         Type: "Medium elemental, lawful neutral",
@@ -651,6 +671,8 @@ const monstersLocal = [
     },
     { // Banshee
         ID: 12,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Banshee",
         Type: "Medium undead, chaotic evil",
@@ -714,6 +736,8 @@ const monstersLocal = [
     },
     { // Basilisk
         ID: 13,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Basilisk",
         Type: "Medium monstrosity, unaligned",
@@ -765,6 +789,8 @@ const monstersLocal = [
     },
     { // Behir
         ID: 14,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Behir",
         Type: "Huge monstrosity, neutral evil",
@@ -827,6 +853,8 @@ const monstersLocal = [
     },
     { // Beholder
         ID: 15,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Beholder",
         Type: "Large aberration, lawful evil",
@@ -887,6 +915,8 @@ const monstersLocal = [
     },
     { // Death Tyrant
         ID: 16,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Death Tyrant",
         Type: "Large undead, lawful evil",
@@ -955,6 +985,8 @@ const monstersLocal = [
     },
     { // Spectator
         ID: 17,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Spectator",
         Type: "Medium aberration, lawful neutral",
@@ -1014,6 +1046,8 @@ const monstersLocal = [
     },
     { // Needle Blight
         ID: 18,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Needle Blight",
         Type: "Medium plant, neutral evil",
@@ -1073,6 +1107,8 @@ const monstersLocal = [
     },
     { // Twig Blight
         ID: 19,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Twig Blight",
         Type: "Small plant, neutral evil",
@@ -1124,6 +1160,8 @@ const monstersLocal = [
     },
     { // Vine Blight
         ID: 20,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Vine Blight",
         Type: "Medium plant, neutral evil",
@@ -1179,6 +1217,8 @@ const monstersLocal = [
     },
     { // Bugbear
         ID: 21,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bugbear",
         Type: "Medium humanoid (goblinoid), chaotic evil",
@@ -1238,6 +1278,8 @@ const monstersLocal = [
     },
     { // Bugbear Chief
         ID: 22,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bugbear Chief",
         Type: "Medium humanoid (goblinoid), chaotic evil",
@@ -1297,6 +1339,8 @@ const monstersLocal = [
     },
     { // Bulette
         ID: 23,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bulette",
         Type: "Large monstrosity, unaligned",
@@ -1352,6 +1396,8 @@ const monstersLocal = [
     },
     { // Bullywug
         ID: 24,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bullywug",
         Type: "Medium humanoid (bullywug), neutral evil",
@@ -1419,6 +1465,8 @@ const monstersLocal = [
     },
     { // Cambion
         ID: 25,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cambion",
         Type: "Medium fiend, any evil alignment",
@@ -1486,6 +1534,8 @@ const monstersLocal = [
     },
     { // Carrion Crawler
         ID: 26,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Carrion Crawler",
         Type: "Large monstrosity, unaligned",
@@ -1540,6 +1590,8 @@ const monstersLocal = [
     },
     { // Centaur
         ID: 27,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Centaur",
         Type: "Large monstrosity, neutral good",
@@ -1603,6 +1655,8 @@ const monstersLocal = [
     },
     { // Chimera
         ID: 28,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Chimera",
         Type: "Large monstrosity, chaotic evil",
@@ -1665,6 +1719,8 @@ const monstersLocal = [
     },
     { // Chuul
         ID: 29,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Chuul",
         Type: "Large aberration, chaotic evil",
@@ -1728,6 +1784,8 @@ const monstersLocal = [
     },
     { // Cloaker
         ID: 30,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cloaker",
         Type: "Large aberration, chaotic neutral",
@@ -1803,6 +1861,8 @@ const monstersLocal = [
     },
     { // Cockatrice
         ID: 31,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cockatrice",
         Type: "Small monstrosity, unaligned",
@@ -1849,6 +1909,8 @@ const monstersLocal = [
     },
     { // Couatl
         ID: 32,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Couatl",
         Type: "Medium celestial, lawful good",
@@ -1916,6 +1978,8 @@ const monstersLocal = [
     },
     { // Crawling Claw
         ID: 33,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Crawling Claw",
         Type: "Tiny undead, neutral evil",
@@ -1962,6 +2026,8 @@ const monstersLocal = [
     },
     { // Cyclops
         ID: 34,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cyclops",
         Type: "Huge giant, chaotic neutral",
@@ -2016,6 +2082,8 @@ const monstersLocal = [
     },
     { // Darkmantle
         ID: 35,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Darkmantle",
         Type: "Small monstrosity, unaligned",
@@ -2075,6 +2143,8 @@ const monstersLocal = [
     },
     { // Death Knight
         ID: 36,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Death Knight",
         Type: "Medium undead, lawful evil",
@@ -2147,6 +2217,8 @@ const monstersLocal = [
     },
     { // Demilich
         ID: 37,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Demilich",
         Type: "Tiny undead, neutral evil",
@@ -2226,6 +2298,8 @@ const monstersLocal = [
     },
     { // Balor
         ID: 38,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Balor",
         Type: "Huge fiend (demon), chaotic evil",
@@ -2297,6 +2371,8 @@ const monstersLocal = [
     },
     { // Barlgura
         ID: 39,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Barlgura",
         Type: "Large fiend (demon), chaotic evil",
@@ -2360,6 +2436,8 @@ const monstersLocal = [
     },
     { // Chasme
         ID: 40,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Chasme",
         Type: "Large fiend (demon), chaotic evil",
@@ -2415,6 +2493,8 @@ const monstersLocal = [
     },
     { // Dretch
         ID: 41,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dretch",
         Type: "Small fiend (demon), chaotic evil",
@@ -2473,6 +2553,8 @@ const monstersLocal = [
     },
     { // Glabrezu
         ID: 42,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Glabrezu",
         Type: "Large fiend (demon), chaotic evil",
@@ -2536,6 +2618,8 @@ const monstersLocal = [
     },
     { // Goristro
         ID: 43,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Goristro",
         Type: "Huge fiend (demon), chaotic evil",
@@ -2603,6 +2687,8 @@ const monstersLocal = [
     },
     { // Hezrou
         ID: 44,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hezrou",
         Type: "Large fiend (demon), chaotic evil",
@@ -2666,6 +2752,8 @@ const monstersLocal = [
     },
     { // Manes
         ID: 45,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Manes",
         Type: "Small fiend (demon), chaotic evil",
@@ -2712,6 +2800,8 @@ const monstersLocal = [
     },
     { // Marilith
         ID: 46,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Marilith",
         Type: "Large fiend (demon), chaotic evil",
@@ -2783,6 +2873,8 @@ const monstersLocal = [
     },
     { // Nalfeshnee
         ID: 47,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Nalfeshnee",
         Type: "Large fiend (demon), chaotic evil",
@@ -2846,6 +2938,8 @@ const monstersLocal = [
     },
     { // Quasit
         ID: 48,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Quasit",
         Type: "Tiny fiend (demon, shapechanger), chaotic evil",
@@ -2909,6 +3003,8 @@ const monstersLocal = [
     },
     { // Shadow Demon
         ID: 49,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Shadow Demon",
         Type: "Medium fiend (demon), chaotic evil",
@@ -2976,6 +3072,8 @@ const monstersLocal = [
     },
     { // Vrock
         ID: 50,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Vrock",
         Type: "Large fiend (demon), chaotic evil",
@@ -3043,6 +3141,8 @@ const monstersLocal = [
     },
     { // Yochlol
         ID: 51,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yochlol",
         Type: "Medium fiend (demon, shapechanger), chaotic evil",
@@ -3118,6 +3218,8 @@ const monstersLocal = [
     },
     { // Barbed Devil
         ID: 52,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Barbed Devil",
         Type: "Medium fiend (devil), lawful evil",
@@ -3189,6 +3291,8 @@ const monstersLocal = [
     },
     { // Bearded Devil
         ID: 53,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bearded Devil",
         Type: "Medium fiend (devil), lawful evil",
@@ -3252,6 +3356,8 @@ const monstersLocal = [
     },
     { // Bone Devil
         ID: 54,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bone Devil",
         Type: "Large fiend (devil), lawful evil",
@@ -3315,6 +3421,8 @@ const monstersLocal = [
     },
     { // Chain Devil
         ID: 55,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Chain Devil",
         Type: "Medium fiend (devil), lawful evil",
@@ -3382,6 +3490,8 @@ const monstersLocal = [
     },
     { // Erinyes
         ID: 56,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Erinyes",
         Type: "Medium fiend (devil), lawful evil",
@@ -3450,6 +3560,8 @@ const monstersLocal = [
     },
     { // Horned Devil
         ID: 57,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Horned Devil",
         Type: "Large fiend (devil), lawful evil",
@@ -3521,6 +3633,8 @@ const monstersLocal = [
     },
     { // Ice Devil
         ID: 58,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ice Devil",
         Type: "Large fiend (devil), lawful evil",
@@ -3596,6 +3710,8 @@ const monstersLocal = [
     },
     { // Imp
         ID: 59,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Imp",
         Type: "Tiny fiend (devil, shapechanger), lawful evil",
@@ -3659,6 +3775,8 @@ const monstersLocal = [
     },
     { // Lemure
         ID: 60,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Lemure",
         Type: "Medium fiend (devil), lawful evil",
@@ -3710,6 +3828,8 @@ const monstersLocal = [
     },
     { // Pit Fiend
         ID: 61,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pit Fiend",
         Type: "Large fiend (devil), lawful evil",
@@ -3785,6 +3905,8 @@ const monstersLocal = [
     },
     { // Spined Devil
         ID: 62,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Spined Devil",
         Type: "Small fiend (devil), lawful evil",
@@ -3848,6 +3970,8 @@ const monstersLocal = [
     },
     { // Allosaurus
         ID: 63,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Allosaurus",
         Type: "Large beast, unaligned",
@@ -3907,6 +4031,8 @@ const monstersLocal = [
     },
     { // Ankylosaurus
         ID: 64,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ankylosaurus",
         Type: "Huge beast, unaligned",
@@ -3953,6 +4079,8 @@ const monstersLocal = [
     },
     { // Plesiosaurus
         ID: 65,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Plesiosaurus",
         Type: "Large beast, unaligned",
@@ -4004,6 +4132,8 @@ const monstersLocal = [
     },
     { // Triceratops
         ID: 66,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Triceratops",
         Type: "Huge beast, unaligned",
@@ -4063,6 +4193,8 @@ const monstersLocal = [
     },
     { // Pteranodon
         ID: 67,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pteranodon",
         Type: "Medium beast, unaligned",
@@ -4114,6 +4246,8 @@ const monstersLocal = [
     },
     { // Tyrannosaurus Rex
         ID: 68,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tyrannosaurus Rex",
         Type: "Huge beast, unaligned",
@@ -4168,6 +4302,8 @@ const monstersLocal = [
     },
     { // Displacer Beast
         ID: 69,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Displacer Beast",
         Type: "Large monstrosity, chaotic evil",
@@ -4227,6 +4363,8 @@ const monstersLocal = [
     },
     { // Doppelganger
         ID: 70,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Doppelganger",
         Type: "Medium monstrosity (shapechanger), neutral",
@@ -4294,6 +4432,8 @@ const monstersLocal = [
     },
     { // Adult Blue Dracolich
         ID: 71,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Blue Dracolich",
         Type: "Huge undead, lawful evil",
@@ -4382,6 +4522,8 @@ const monstersLocal = [
     },
     { // Young Red Shadow Dragon
         ID: 72,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Red Shadow Dragon",
         Type: "Large dragon, chaotic evil",
@@ -4453,6 +4595,8 @@ const monstersLocal = [
     },
     { // Ancient Black Dragon
         ID: 73,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient Black Dragon",
         Type: "Gargantuan dragon, chaotic evil",
@@ -4541,6 +4685,8 @@ const monstersLocal = [
     },
     { // Adult Black Dragon
         ID: 74,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Black Dragon",
         Type: "Huge dragon, chaotic evil",
@@ -4629,6 +4775,8 @@ const monstersLocal = [
     },
     { // Young Black Dragon
         ID: 75,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Black Dragon",
         Type: "Large dragon, chaotic evil",
@@ -4692,6 +4840,8 @@ const monstersLocal = [
     },
     { // Black Dragon Wyrmling
         ID: 76,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Black Dragon Wyrmling",
         Type: "Medium dragon, chaotic evil",
@@ -4751,6 +4901,8 @@ const monstersLocal = [
     },
     { // Ancient Blue Dragon
         ID: 77,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient Blue Dragon",
         Type: "Gargantuan dragon, lawful evil",
@@ -4840,6 +4992,8 @@ const monstersLocal = [
     },
     { // Adult Blue Dragon
         ID: 78,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Blue Dragon",
         Type: "Huge dragon, lawful evil",
@@ -4924,6 +5078,8 @@ const monstersLocal = [
     },
     { // Young Blue Dragon
         ID: 79,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Blue Dragon",
         Type: "Large dragon, lawful evil",
@@ -4982,6 +5138,8 @@ const monstersLocal = [
     },
     { // Blue Dragon Wyrmling
         ID: 80,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Blue Dragon Wyrmling",
         Type: "Medium dragon, lawful evil",
@@ -5032,6 +5190,8 @@ const monstersLocal = [
     },
     { // Ancient Green Dragon
         ID: 81,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient Green Dragon",
         Type: "Gargantuan dragon, lawful evil",
@@ -5125,6 +5285,8 @@ const monstersLocal = [
     },
     { // Adult Green Dragon
         ID: 82,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Green Dragon",
         Type: "Huge dragon, lawful evil",
@@ -5213,6 +5375,8 @@ const monstersLocal = [
     },
     { // Young Green Dragon
         ID: 83,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Green Dragon",
         Type: "Large dragon, lawful evil",
@@ -5276,6 +5440,8 @@ const monstersLocal = [
     },
     { // Green Dragon Wyrmling
         ID: 84,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Green Dragon Wyrmling",
         Type: "Medium dragon, lawful evil",
@@ -5326,6 +5492,8 @@ const monstersLocal = [
     },
     { // Ancient Red Dragon
         ID: 85,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient Red Dragon",
         Type: "Gargantuan dragon, chaotic evil",
@@ -5415,6 +5583,8 @@ const monstersLocal = [
     },
     { // Adult Red Dragon
         ID: 86,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Red Dragon",
         Type: "Huge dragon, chaotic evil",
@@ -5499,6 +5669,8 @@ const monstersLocal = [
     },
     { // Young Red Dragon
         ID: 87,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Red Dragon",
         Type: "Large dragon, chaotic evil",
@@ -5557,6 +5729,8 @@ const monstersLocal = [
     },
     { // Red Dragon Wyrmling
         ID: 88,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Red Dragon Wyrmling",
         Type: "Medium dragon, chaotic evil",
@@ -5607,6 +5781,8 @@ const monstersLocal = [
     },
     { // Ancient White Dragon
         ID: 89,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient White Dragon",
         Type: "Gargantuan dragon, chaotic evil",
@@ -5700,6 +5876,8 @@ const monstersLocal = [
     },
     { // Adult White Dragon
         ID: 90,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult White Dragon",
         Type: "Huge dragon, chaotic evil",
@@ -5788,6 +5966,8 @@ const monstersLocal = [
     },
     { // Young White Dragon
         ID: 91,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young White Dragon",
         Type: "Large dragon, chaotic evil",
@@ -5851,6 +6031,8 @@ const monstersLocal = [
     },
     { // White Dragon Wyrmling
         ID: 92,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "White Dragon Wyrmling",
         Type: "Medium dragon, chaotic evil",
@@ -5906,6 +6088,8 @@ const monstersLocal = [
     },
     { // Ancient Brass Dragon
         ID: 93,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient Brass Dragon",
         Type: "Gargantuan dragon, chaotic good",
@@ -5994,6 +6178,8 @@ const monstersLocal = [
     },
     { // Adult Brass Dragon
         ID: 94,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Brass Dragon",
         Type: "Huge dragon, chaotic good",
@@ -6082,6 +6268,8 @@ const monstersLocal = [
     },
     { // Young Brass Dragon
         ID: 95,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Brass Dragon",
         Type: "Large dragon, chaotic good",
@@ -6140,6 +6328,8 @@ const monstersLocal = [
     },
     { // Brass Dragon Wyrmling
         ID: 96,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Brass Dragon Wyrmling",
         Type: "Medium dragon, chaotic good",
@@ -6190,6 +6380,8 @@ const monstersLocal = [
     },
     { // Ancient Bronze Dragon
         ID: 97,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient Bronze Dragon",
         Type: "Gargantuan dragon, lawful good",
@@ -6287,6 +6479,8 @@ const monstersLocal = [
     },
     { // Adult Bronze Dragon
         ID: 98,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Bronze Dragon",
         Type: "Huge dragon, lawful good",
@@ -6379,6 +6573,8 @@ const monstersLocal = [
     },
     { // Young Bronze Dragon
         ID: 99,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Bronze Dragon",
         Type: "Large dragon, lawful good",
@@ -6442,6 +6638,8 @@ const monstersLocal = [
     },
     { // Bronze Dragon Wyrmling
         ID: 100,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bronze Dragon Wyrmling",
         Type: "Medium dragon, lawful good",
@@ -6492,6 +6690,8 @@ const monstersLocal = [
     },
     { // Ancient Copper Dragon
         ID: 101,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient Copper Dragon",
         Type: "Gargantuan dragon, chaotic good",
@@ -6580,6 +6780,8 @@ const monstersLocal = [
     },
     { // Adult Copper Dragon
         ID: 102,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Copper Dragon",
         Type: "Huge dragon, chaotic good",
@@ -6668,6 +6870,8 @@ const monstersLocal = [
     },
     { // Young Copper Dragon
         ID: 103,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Copper Dragon",
         Type: "Large dragon, chaotic good",
@@ -6726,6 +6930,8 @@ const monstersLocal = [
     },
     { // Copper Dragon Wyrmling
         ID: 104,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Copper Dragon Wyrmling",
         Type: "Medium dragon, chaotic good",
@@ -6776,6 +6982,8 @@ const monstersLocal = [
     },
     { // Ancient Gold Dragon
         ID: 105,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient Gold Dragon",
         Type: "Gargantuan dragon, lawful good",
@@ -6869,6 +7077,8 @@ const monstersLocal = [
     },
     { // Adult Gold Dragon
         ID: 106,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Gold Dragon",
         Type: "Huge dragon, lawful good",
@@ -6957,6 +7167,8 @@ const monstersLocal = [
     },
     { // Young Gold Dragon
         ID: 107,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Gold Dragon",
         Type: "Large dragon, lawful good",
@@ -7015,6 +7227,8 @@ const monstersLocal = [
     },
     { // Gold Dragon Wyrmling
         ID: 108,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gold Dragon Wyrmling",
         Type: "Medium dragon, lawful good",
@@ -7065,6 +7279,8 @@ const monstersLocal = [
     },
     { // Ancient Silver Dragon
         ID: 109,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ancient Silver Dragon",
         Type: "Gargantuan dragon, lawful good",
@@ -7153,6 +7369,8 @@ const monstersLocal = [
     },
     { // Adult Silver Dragon
         ID: 110,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Silver Dragon",
         Type: "Huge dragon, lawful good",
@@ -7241,6 +7459,8 @@ const monstersLocal = [
     },
     { // Young Silver Dragon
         ID: 111,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Silver Dragon",
         Type: "Large dragon, lawful good",
@@ -7299,6 +7519,8 @@ const monstersLocal = [
     },
     { // Silver Dragon Wyrmling
         ID: 112,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Silver Dragon Wyrmling",
         Type: "Medium dragon, lawful good",
@@ -7349,6 +7571,8 @@ const monstersLocal = [
     },
     { // Dragon Turtle
         ID: 113,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dragon Turtle",
         Type: "Gargantuan dragon, neutral",
@@ -7416,6 +7640,8 @@ const monstersLocal = [
     },
     { // Drider
         ID: 114,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drider",
         Type: "Large monstrosity, chaotic evil",
@@ -7491,6 +7717,8 @@ const monstersLocal = [
     },
     { // Dryad
         ID: 115,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dryad",
         Type: "Medium fey, neutral",
@@ -7558,6 +7786,8 @@ const monstersLocal = [
     },
     { // Duergar
         ID: 116,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar",
         Type: "Medium humanoid (dwarf), lawful evil",
@@ -7629,6 +7859,8 @@ const monstersLocal = [
     },
     { // Air Elemental
         ID: 117,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Air Elemental",
         Type: "Large elemental, neutral",
@@ -7688,6 +7920,8 @@ const monstersLocal = [
     },
     { // Earth Elemental
         ID: 118,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Earth Elemental",
         Type: "Large elemental, neutral",
@@ -7747,6 +7981,8 @@ const monstersLocal = [
     },
     { // Fire Elemental
         ID: 119,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Fire Elemental",
         Type: "Large elemental, neutral",
@@ -7806,6 +8042,8 @@ const monstersLocal = [
     },
     { // Water Elemental
         ID: 120,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Water Elemental",
         Type: "Large elemental, neutral",
@@ -7869,6 +8107,8 @@ const monstersLocal = [
     },
     { // Drow
         ID: 121,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow",
         Type: "Medium humanoid (elf), neutral evil",
@@ -7936,6 +8176,8 @@ const monstersLocal = [
     },
     { // Drow Elite Warrior
         ID: 122,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow Elite Warrior",
         Type: "Medium humanoid (elf), neutral evil",
@@ -8008,6 +8250,8 @@ const monstersLocal = [
     },
     { // Drow Mage
         ID: 123,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow Mage",
         Type: "Medium humanoid (elf), neutral evil",
@@ -8071,6 +8315,8 @@ const monstersLocal = [
     },
     { // Drow Priestess of Lolth
         ID: 124,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow Priestess of Lolth",
         Type: "Medium humanoid (elf), neutral evil",
@@ -8138,6 +8384,8 @@ const monstersLocal = [
     },
     { // Empyrean
         ID: 125,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Empyrean",
         Type: "Huge celestial (titan), chaotic good (75%) or neutral evil (25%)",
@@ -8218,6 +8466,8 @@ const monstersLocal = [
     },
     { // Ettercap
         ID: 126,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ettercap",
         Type: "Medium monstrosity, neutral evil",
@@ -8289,6 +8539,8 @@ const monstersLocal = [
     },
     { // Ettin
         ID: 127,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ettin",
         Type: "Large giant, chaotic evil",
@@ -8352,6 +8604,8 @@ const monstersLocal = [
     },
     { // Faerie Dragon
         ID: 128,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Faerie Dragon",
         Type: "Tiny dragon, chaotic good",
@@ -8415,6 +8669,8 @@ const monstersLocal = [
     },
     { // Flameskull
         ID: 129,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Flameskull",
         Type: "Tiny undead, neutral evil",
@@ -8478,6 +8734,8 @@ const monstersLocal = [
     },
     { // Flumph
         ID: 130,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Flumph",
         Type: "Small aberration, lawful good",
@@ -8541,6 +8799,8 @@ const monstersLocal = [
     },
     { // Fomorian
         ID: 131,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Fomorian",
         Type: "Huge giant, chaotic evil",
@@ -8599,6 +8859,8 @@ const monstersLocal = [
     },
     { // Gas Spore
         ID: 132,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gas Spore",
         Type: "Large plant, unaligned",
@@ -8654,6 +8916,8 @@ const monstersLocal = [
     },
     { // Shrieker
         ID: 133,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Shrieker",
         Type: "Medium plant, unaligned",
@@ -8705,6 +8969,8 @@ const monstersLocal = [
     },
     { // Violet Fungus
         ID: 134,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Violet Fungus",
         Type: "Medium plant, unaligned",
@@ -8760,6 +9026,8 @@ const monstersLocal = [
     },
     { // Galeb Duhr
         ID: 135,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Galeb Duhr",
         Type: "Medium elemental, neutral",
@@ -8819,6 +9087,8 @@ const monstersLocal = [
     },
     { // Gargoyle
         ID: 136,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gargoyle",
         Type: "Medium elemental, chaotic evil",
@@ -8878,6 +9148,8 @@ const monstersLocal = [
     },
     { // Dao
         ID: 137,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dao",
         Type: "Large elemental, neutral evil",
@@ -8949,6 +9221,8 @@ const monstersLocal = [
     },
     { // Djinni
         ID: 138,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Djinni",
         Type: "Large elemental, chaotic good",
@@ -9012,6 +9286,8 @@ const monstersLocal = [
     },
     { // Efreeti
         ID: 139,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Efreeti",
         Type: "Large elemental, lawful evil",
@@ -9075,6 +9351,8 @@ const monstersLocal = [
     },
     { // Marid
         ID: 140,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Marid",
         Type: "Large elemental, chaotic neutral",
@@ -9142,6 +9420,8 @@ const monstersLocal = [
     },
     { // Ghost
         ID: 141,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ghost",
         Type: "Medium undead, any alignment",
@@ -9209,6 +9489,8 @@ const monstersLocal = [
     },
     { // Ghast
         ID: 142,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ghast",
         Type: "Medium undead, chaotic evil",
@@ -9268,6 +9550,8 @@ const monstersLocal = [
     },
     { // Ghoul
         ID: 143,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ghoul",
         Type: "Medium undead, chaotic evil",
@@ -9318,6 +9602,8 @@ const monstersLocal = [
     },
     { // Cloud Giant
         ID: 144,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cloud Giant",
         Type: "Huge giant, neutral (any alignment)",
@@ -9381,6 +9667,8 @@ const monstersLocal = [
     },
     { // Fire Giant
         ID: 145,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Fire Giant",
         Type: "Huge giant, lawful evil",
@@ -9435,6 +9723,8 @@ const monstersLocal = [
     },
     { // Frost Giant
         ID: 146,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Frost Giant",
         Type: "Huge giant, neutral evil",
@@ -9489,6 +9779,8 @@ const monstersLocal = [
     },
     { // Hill Giant
         ID: 147,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hill Giant",
         Type: "Huge giant, chaotic evil",
@@ -9543,6 +9835,8 @@ const monstersLocal = [
     },
     { // Stone Giant
         ID: 148,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Stone Giant",
         Type: "Huge giant, neutral",
@@ -9607,6 +9901,8 @@ const monstersLocal = [
     },
     { // Storm Giant
         ID: 149,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Storm Giant",
         Type: "Huge giant, chaotic good",
@@ -9674,6 +9970,8 @@ const monstersLocal = [
     },
     { // Gibbering Mouther
         ID: 150,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gibbering Mouther",
         Type: "Medium aberration, neutral",
@@ -9737,6 +10035,8 @@ const monstersLocal = [
     },
     { // Githyanki Warrior
         ID: 151,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Githyanki Warrior",
         Type: "Medium humanoid (gith), lawful evil",
@@ -9792,6 +10092,8 @@ const monstersLocal = [
     },
     { // Githyanki Knight
         ID: 152,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Githyanki Knight",
         Type: "Medium humanoid (gith), lawful evil",
@@ -9847,6 +10149,8 @@ const monstersLocal = [
     },
     { // Githzerai Monk
         ID: 153,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Githzerai Monk",
         Type: "Medium humanoid (gith), lawful neutral",
@@ -9906,6 +10210,8 @@ const monstersLocal = [
     },
     { // Githzerai Zerth
         ID: 154,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Githzerai Zerth",
         Type: "Medium humanoid (gith), lawful neutral",
@@ -9965,6 +10271,8 @@ const monstersLocal = [
     },
     { // Gnoll
         ID: 155,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gnoll",
         Type: "Medium humanoid (gnoll), chaotic evil",
@@ -10024,6 +10332,8 @@ const monstersLocal = [
     },
     { // Gnoll Pack Lord
         ID: 156,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gnoll Pack Lord",
         Type: "Medium humanoid (gnoll), chaotic evil",
@@ -10091,6 +10401,8 @@ const monstersLocal = [
     },
     { // Gnoll Fang of Yeenoghu
         ID: 157,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gnoll Fang of Yeenoghu",
         Type: "Medium fiend (gnoll), chaotic evil",
@@ -10150,6 +10462,8 @@ const monstersLocal = [
     },
     { // Deep Gnome (Svirfneblin)
         ID: 158,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Deep Gnome (Svirfneblin)",
         Type: "Small humanoid (gnome), neutral good",
@@ -10213,6 +10527,8 @@ const monstersLocal = [
     },
     { // Goblin
         ID: 159,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Goblin",
         Type: "Small humanoid (goblinoid), neutral evil",
@@ -10268,6 +10584,8 @@ const monstersLocal = [
     },
     { // Goblin Boss
         ID: 160,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Goblin Boss",
         Type: "Small humanoid (goblinoid), neutral evil",
@@ -10332,6 +10650,8 @@ const monstersLocal = [
     },
     { // Clay Golem
         ID: 161,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Clay Golem",
         Type: "Large construct, unaligned",
@@ -10407,6 +10727,8 @@ const monstersLocal = [
     },
     { // Flesh Golem
         ID: 162,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Flesh Golem",
         Type: "Medium construct, neutral",
@@ -10482,6 +10804,8 @@ const monstersLocal = [
     },
     { // Iron Golem
         ID: 163,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Iron Golem",
         Type: "Large construct, unaligned",
@@ -10557,6 +10881,8 @@ const monstersLocal = [
     },
     { // Stone Golem
         ID: 164,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Stone Golem",
         Type: "Large construct, unaligned",
@@ -10624,6 +10950,8 @@ const monstersLocal = [
     },
     { // Gorgon
         ID: 165,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gorgon",
         Type: "Large monstrosity, unaligned",
@@ -10683,6 +11011,8 @@ const monstersLocal = [
     },
     { // Grell
         ID: 166,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Grell",
         Type: "Medium aberration, neutral evil",
@@ -10737,6 +11067,8 @@ const monstersLocal = [
     },
     { // Grick
         ID: 167,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Grick",
         Type: "Medium monstrosity, neutral",
@@ -10796,6 +11128,8 @@ const monstersLocal = [
     },
     { // Grick Alpha
         ID: 168,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Grick Alpha",
         Type: "Large monstrosity, neutral",
@@ -10859,6 +11193,8 @@ const monstersLocal = [
     },
     { // Griffon
         ID: 169,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Griffon",
         Type: "Large monstrosity, unaligned",
@@ -10918,6 +11254,8 @@ const monstersLocal = [
     },
     { // Grimlock
         ID: 170,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Grimlock",
         Type: "Medium humanoid (grimlock), neutral evil",
@@ -10977,6 +11315,8 @@ const monstersLocal = [
     },
     { // Green Hag
         ID: 171,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Green Hag",
         Type: "Medium fey, neutral evil",
@@ -11044,6 +11384,8 @@ const monstersLocal = [
     },
     { // Night Hag
         ID: 172,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Night Hag",
         Type: "Medium fiend, neutral evil",
@@ -11111,6 +11453,8 @@ const monstersLocal = [
     },
     { // Sea Hag
         ID: 173,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sea Hag",
         Type: "Medium fey, chaotic evil",
@@ -11174,6 +11518,8 @@ const monstersLocal = [
     },
     { // Half-Red Dragon Veteran
         ID: 174,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Half-Red Dragon Veteran",
         Type: "Medium humanoid (human), any alignment",
@@ -11241,6 +11587,8 @@ const monstersLocal = [
     },
     { // Harpy
         ID: 175,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Harpy",
         Type: "Medium monstrosity, chaotic evil",
@@ -11299,6 +11647,8 @@ const monstersLocal = [
     },
     { // Hell Hound
         ID: 176,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hell Hound",
         Type: "Medium fiend, lawful evil",
@@ -11358,6 +11708,8 @@ const monstersLocal = [
     },
     { // Helmed Horror
         ID: 177,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Helmed Horror",
         Type: "Medium construct, neutral",
@@ -11417,6 +11769,8 @@ const monstersLocal = [
     },
     { // Hippogriff
         ID: 178,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hippogriff",
         Type: "Large monstrosity, unaligned",
@@ -11476,6 +11830,8 @@ const monstersLocal = [
     },
     { // Hobgoblin
         ID: 179,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hobgoblin",
         Type: "Medium humanoid (goblinoid), lawful evil",
@@ -11531,6 +11887,8 @@ const monstersLocal = [
     },
     { // Hobgoblin Captain
         ID: 180,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hobgoblin Captain",
         Type: "Medium humanoid (goblinoid), lawful evil",
@@ -11594,6 +11952,8 @@ const monstersLocal = [
     },
     { // Hobgoblin Warlord
         ID: 181,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hobgoblin Warlord",
         Type: "Medium humanoid (goblinoid), lawful evil",
@@ -11666,6 +12026,8 @@ const monstersLocal = [
     },
     { // Homunculus
         ID: 182,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Homunculus",
         Type: "Tiny construct, neutral",
@@ -11717,6 +12079,8 @@ const monstersLocal = [
     },
     { // Hook Horror
         ID: 183,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hook Horror",
         Type: "Large monstrosity, neutral",
@@ -11776,6 +12140,8 @@ const monstersLocal = [
     },
     { // Hydra
         ID: 184,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hydra",
         Type: "Huge monstrosity, unaligned",
@@ -11843,6 +12209,8 @@ const monstersLocal = [
     },
     { // Intellect Devourer
         ID: 185,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Intellect Devourer",
         Type: "Tiny aberration, lawful evil",
@@ -11906,6 +12274,8 @@ const monstersLocal = [
     },
     { // Invisible Stalker
         ID: 186,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Invisible Stalker",
         Type: "Medium elemental, neutral",
@@ -11965,6 +12335,8 @@ const monstersLocal = [
     },
     { // Jackalwere
         ID: 187,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Jackalwere",
         Type: "Medium humanoid (shapechanger), chaotic evil",
@@ -12032,6 +12404,8 @@ const monstersLocal = [
     },
     { // Kenku
         ID: 188,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kenku",
         Type: "Medium humanoid (kenku), chaotic neutral",
@@ -12087,6 +12461,8 @@ const monstersLocal = [
     },
     { // Winged Kobold
         ID: 189,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Winged Kobold",
         Type: "Small humanoid (kobold), lawful evil",
@@ -12146,6 +12522,8 @@ const monstersLocal = [
     },
     { // Kobold
         ID: 190,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kobold",
         Type: "Small humanoid (kobold), lawful evil",
@@ -12205,6 +12583,8 @@ const monstersLocal = [
     },
     { // Kraken
         ID: 191,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kraken",
         Type: "Gargantuan monstrosity (titan), chaotic evil",
@@ -12297,6 +12677,8 @@ const monstersLocal = [
     },
     { // Kuo-Toa
         ID: 192,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kuo-Toa",
         Type: "Medium humanoid (kuo-toa), neutral evil",
@@ -12373,6 +12755,8 @@ const monstersLocal = [
     },
     { // Kuo-Toa Archpriest
         ID: 193,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kuo-Toa Archpriest",
         Type: "Medium humanoid (kuo-toa), neutral evil",
@@ -12448,6 +12832,8 @@ const monstersLocal = [
     },
     { // Kuo-Toa Whip
         ID: 194,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kuo-Toa Whip",
         Type: "Medium humanoid (kuo-toa), neutral evil",
@@ -12523,6 +12909,8 @@ const monstersLocal = [
     },
     { // Lamia
         ID: 195,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Lamia",
         Type: "Large monstrosity, chaotic evil",
@@ -12586,6 +12974,8 @@ const monstersLocal = [
     },
     { // Lich
         ID: 196,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Lich",
         Type: "Medium undead, any evil alignment",
@@ -12670,6 +13060,8 @@ const monstersLocal = [
     },
     { // Lizardfolk
         ID: 197,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Lizardfolk",
         Type: "Medium humanoid (lizardfolk), neutral",
@@ -12737,6 +13129,8 @@ const monstersLocal = [
     },
     { // Lizardfolk Shaman
         ID: 198,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Lizardfolk Shaman",
         Type: "Medium humanoid (lizardfolk), neutral",
@@ -12800,6 +13194,8 @@ const monstersLocal = [
     },
     { // Lizard King/Queen
         ID: 199,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Lizard King/Queen",
         Type: "Medium humanoid (lizardfolk), neutral evil",
@@ -12863,6 +13259,8 @@ const monstersLocal = [
     },
     { // Werebear
         ID: 200,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Werebear",
         Type: "Medium humanoid (human, shapechanger), neutral good",
@@ -12930,6 +13328,8 @@ const monstersLocal = [
     },
     { // Wereboar
         ID: 201,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Wereboar",
         Type: "Medium humanoid (human, shapechanger), neutral evil",
@@ -12997,6 +13397,8 @@ const monstersLocal = [
     },
     { // Wererat
         ID: 202,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Wererat",
         Type: "Medium humanoid (human, shapechanger), lawful evil",
@@ -13064,6 +13466,8 @@ const monstersLocal = [
     },
     { // Weretiger
         ID: 203,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Weretiger",
         Type: "Medium humanoid (human, shapechanger), neutral",
@@ -13139,6 +13543,8 @@ const monstersLocal = [
     },
     { // Werewolf
         ID: 204,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Werewolf",
         Type: "Medium humanoid (human, shapechanger), chaotic evil",
@@ -13206,6 +13612,8 @@ const monstersLocal = [
     },
     { // Magmin
         ID: 205,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Magmin",
         Type: "Small elemental, chaotic neutral",
@@ -13261,6 +13669,8 @@ const monstersLocal = [
     },
     { // Manticore
         ID: 206,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Manticore",
         Type: "Large monstrosity, lawful evil",
@@ -13324,6 +13734,8 @@ const monstersLocal = [
     },
     { // Medusa
         ID: 207,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Medusa",
         Type: "Medium monstrosity, lawful evil",
@@ -13387,6 +13799,8 @@ const monstersLocal = [
     },
     { // Dust Mephit
         ID: 208,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dust Mephit",
         Type: "Small elemental, neutral evil",
@@ -13446,6 +13860,8 @@ const monstersLocal = [
     },
     { // Ice Mephit
         ID: 209,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ice Mephit",
         Type: "Small elemental, neutral evil",
@@ -13509,6 +13925,8 @@ const monstersLocal = [
     },
     { // Magma Mephit
         ID: 210,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Magma Mephit",
         Type: "Small elemental, neutral evil",
@@ -13572,6 +13990,8 @@ const monstersLocal = [
     },
     { // Mud Mephit
         ID: 211,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mud Mephit",
         Type: "Small elemental, neutral evil",
@@ -13631,6 +14051,8 @@ const monstersLocal = [
     },
     { // Smoke Mephit
         ID: 212,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Smoke Mephit",
         Type: "Small elemental, neutral evil",
@@ -13690,6 +14112,8 @@ const monstersLocal = [
     },
     { // Steam Mephit
         ID: 213,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Steam Mephit",
         Type: "Small elemental, neutral evil",
@@ -13749,6 +14173,8 @@ const monstersLocal = [
     },
     { // Merfolk
         ID: 214,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Merfolk",
         Type: "Medium humanoid (merfolk), neutral",
@@ -13800,6 +14226,8 @@ const monstersLocal = [
     },
     { // Merrow
         ID: 215,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Merrow",
         Type: "Large monstrosity, chaotic evil",
@@ -13863,6 +14291,8 @@ const monstersLocal = [
     },
     { // Mimic
         ID: 216,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mimic",
         Type: "Medium monstrosity (shapechanger), neutral",
@@ -13930,6 +14360,8 @@ const monstersLocal = [
     },
     { // Mind Flayer
         ID: 217,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mind Flayer",
         Type: "Medium aberration, lawful evil",
@@ -13993,6 +14425,8 @@ const monstersLocal = [
     },
     { // Minotaur
         ID: 218,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Minotaur",
         Type: "Large monstrosity, chaotic evil",
@@ -14056,6 +14490,8 @@ const monstersLocal = [
     },
     { // Monodrone
         ID: 219,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Monodrone",
         Type: "Medium construct, lawful neutral",
@@ -14115,6 +14551,8 @@ const monstersLocal = [
     },
     { // Duodrone
         ID: 220,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duodrone",
         Type: "Medium construct, lawful neutral",
@@ -14178,6 +14616,8 @@ const monstersLocal = [
     },
     { // Tridrone
         ID: 221,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tridrone",
         Type: "Medium construct, lawful neutral",
@@ -14241,6 +14681,8 @@ const monstersLocal = [
     },
     { // Quadrone
         ID: 222,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Quadrone",
         Type: "Medium construct, lawful neutral",
@@ -14304,6 +14746,8 @@ const monstersLocal = [
     },
     { // Pentadrone
         ID: 223,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pentadrone",
         Type: "Large construct, lawful neutral",
@@ -14367,6 +14811,8 @@ const monstersLocal = [
     },
     { // Mummy
         ID: 224,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mummy",
         Type: "Medium undead, lawful evil",
@@ -14421,6 +14867,8 @@ const monstersLocal = [
     },
     { // Mummy Lord
         ID: 225,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mummy Lord",
         Type: "Medium undead, lawful evil",
@@ -14513,6 +14961,8 @@ const monstersLocal = [
     },
     { // Myconid Sprout
         ID: 226,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Myconid Sprout",
         Type: "Small plant, lawful neutral",
@@ -14572,6 +15022,8 @@ const monstersLocal = [
     },
     { // Quaggoth Spore Servant
         ID: 227,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Quaggoth Spore Servant",
         Type: "Medium plant, unaligned",
@@ -14622,6 +15074,8 @@ const monstersLocal = [
     },
     { // Myconid Adult
         ID: 228,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Myconid Adult",
         Type: "Medium plant, lawful neutral",
@@ -14685,6 +15139,8 @@ const monstersLocal = [
     },
     { // Myconid Sovereign
         ID: 229,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Myconid Sovereign",
         Type: "Large plant, lawful neutral",
@@ -14760,6 +15216,8 @@ const monstersLocal = [
     },
     { // Bone Naga
         ID: 230,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bone Naga",
         Type: "Large undead, lawful evil",
@@ -14811,6 +15269,8 @@ const monstersLocal = [
     },
     { // Spirit Naga
         ID: 231,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Spirit Naga",
         Type: "Large monstrosity, chaotic evil",
@@ -14866,6 +15326,8 @@ const monstersLocal = [
     },
     { // Guardian Naga
         ID: 232,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Guardian Naga",
         Type: "Large monstrosity, lawful good",
@@ -14925,6 +15387,8 @@ const monstersLocal = [
     },
     { // Nightmare
         ID: 233,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Nightmare",
         Type: "Large fiend, neutral evil",
@@ -14984,6 +15448,8 @@ const monstersLocal = [
     },
     { // Nothic
         ID: 234,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Nothic",
         Type: "Medium aberration, neutral evil",
@@ -15047,6 +15513,8 @@ const monstersLocal = [
     },
     { // Ogre
         ID: 235,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ogre",
         Type: "Large giant, chaotic evil",
@@ -15097,6 +15565,8 @@ const monstersLocal = [
     },
     { // Half-Ogre
         ID: 236,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Half-Ogre",
         Type: "Large giant, any evil alignment",
@@ -15147,6 +15617,8 @@ const monstersLocal = [
     },
     { // Oni
         ID: 237,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Oni",
         Type: "Large giant, lawful evil",
@@ -15214,6 +15686,8 @@ const monstersLocal = [
     },
     { // Black Pudding
         ID: 238,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Black Pudding",
         Type: "Large ooze, unaligned",
@@ -15278,6 +15752,8 @@ const monstersLocal = [
     },
     { // Gelatinous Cube
         ID: 239,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gelatinous Cube",
         Type: "Large ooze, unaligned",
@@ -15337,6 +15813,8 @@ const monstersLocal = [
     },
     { // Gray Ooze
         ID: 240,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gray Ooze",
         Type: "Medium ooze, unaligned",
@@ -15396,6 +15874,8 @@ const monstersLocal = [
     },
     { // Ochre Jelly
         ID: 241,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ochre Jelly",
         Type: "Large ooze, unaligned",
@@ -15456,6 +15936,8 @@ const monstersLocal = [
     },
     { // Orc
         ID: 242,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orc",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -15511,6 +15993,8 @@ const monstersLocal = [
     },
     { // Orc War Chief
         ID: 243,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orc War Chief",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -15575,6 +16059,8 @@ const monstersLocal = [
     },
     { // Orc Eye of Gruumsh
         ID: 244,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orc Eye of Gruumsh",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -15634,6 +16120,8 @@ const monstersLocal = [
     },
     { // Orog
         ID: 245,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orog",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -15693,6 +16181,8 @@ const monstersLocal = [
     },
     { // Otyugh
         ID: 246,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Otyugh",
         Type: "Large aberration, neutral",
@@ -15756,6 +16246,8 @@ const monstersLocal = [
     },
     { // Owlbear
         ID: 247,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Owlbear",
         Type: "Large monstrosity, unaligned",
@@ -15815,6 +16307,8 @@ const monstersLocal = [
     },
     { // Pegasus
         ID: 248,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pegasus",
         Type: "Large celestial, chaotic good",
@@ -15866,6 +16360,8 @@ const monstersLocal = [
     },
     { // Peryton
         ID: 249,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Peryton",
         Type: "Medium monstrosity, chaotic evil",
@@ -15933,6 +16429,8 @@ const monstersLocal = [
     },
     { // Piercer
         ID: 250,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Piercer",
         Type: "Medium monstrosity, unaligned",
@@ -15988,6 +16486,8 @@ const monstersLocal = [
     },
     { // Pixie
         ID: 251,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pixie",
         Type: "Tiny fey, neutral good",
@@ -16047,6 +16547,8 @@ const monstersLocal = [
     },
     { // Pseudodragon
         ID: 252,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pseudodragon",
         Type: "Tiny dragon, neutral good",
@@ -16110,6 +16612,8 @@ const monstersLocal = [
     },
     { // Purple Worm
         ID: 253,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Purple Worm",
         Type: "Gargantuan monstrosity, unaligned",
@@ -16164,6 +16668,8 @@ const monstersLocal = [
     },
     { // Quaggoth
         ID: 254,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Quaggoth",
         Type: "Medium humanoid (quaggoth), chaotic neutral",
@@ -16223,6 +16729,8 @@ const monstersLocal = [
     },
     { // Rakshasa
         ID: 255,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Rakshasa",
         Type: "Medium fiend, lawful evil",
@@ -16282,6 +16790,8 @@ const monstersLocal = [
     },
     { // Young Remorhaz
         ID: 256,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Remorhaz",
         Type: "Medium monstrosity, unaligned",
@@ -16333,6 +16843,8 @@ const monstersLocal = [
     },
     { // Remorhaz
         ID: 257,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Remorhaz",
         Type: "Huge monstrosity, unaligned",
@@ -16388,6 +16900,8 @@ const monstersLocal = [
     },
     { // Revenant
         ID: 258,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Revenant",
         Type: "Medium undead, neutral",
@@ -16459,6 +16973,8 @@ const monstersLocal = [
     },
     { // Roc
         ID: 259,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Roc",
         Type: "Gargantuan monstrosity, unaligned",
@@ -16518,6 +17034,8 @@ const monstersLocal = [
     },
     { // Roper
         ID: 260,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Roper",
         Type: "Large monstrosity, neutral evil",
@@ -16589,6 +17107,8 @@ const monstersLocal = [
     },
     { // Rust Monster
         ID: 261,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Rust Monster",
         Type: "Medium monstrosity, unaligned",
@@ -16648,6 +17168,8 @@ const monstersLocal = [
     },
     { // Sahuagin
         ID: 262,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sahuagin",
         Type: "Medium humanoid (sahuagin), lawful evil",
@@ -16719,6 +17241,8 @@ const monstersLocal = [
     },
     { // Sahuagin Priestess
         ID: 263,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sahuagin Priestess",
         Type: "Medium humanoid (sahuagin), lawful evil",
@@ -16790,6 +17314,8 @@ const monstersLocal = [
     },
     { // Sahuagin Baron
         ID: 264,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sahuagin Baron",
         Type: "Large humanoid (sahuagin), lawful evil",
@@ -16861,6 +17387,8 @@ const monstersLocal = [
     },
     { // Fire Snake
         ID: 265,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Fire Snake",
         Type: "Medium elemental, neutral evil",
@@ -16920,6 +17448,8 @@ const monstersLocal = [
     },
     { // Salamander
         ID: 266,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Salamander",
         Type: "Large elemental, chaotic evil",
@@ -16983,6 +17513,8 @@ const monstersLocal = [
     },
     { // Satyr
         ID: 267,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Satyr",
         Type: "Medium fey, chaotic neutral",
@@ -17042,6 +17574,8 @@ const monstersLocal = [
     },
     { // Scarecrow
         ID: 268,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Scarecrow",
         Type: "Medium construct, chaotic evil",
@@ -17109,6 +17643,8 @@ const monstersLocal = [
     },
     { // Shadow
         ID: 269,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Shadow",
         Type: "Medium undead, chaotic evil",
@@ -17168,6 +17704,8 @@ const monstersLocal = [
     },
     { // Shambling Mound
         ID: 270,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Shambling Mound",
         Type: "Large plant, unaligned",
@@ -17227,6 +17765,8 @@ const monstersLocal = [
     },
     { // Shield Guardian
         ID: 271,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Shield Guardian",
         Type: "Large construct, unaligned",
@@ -17295,6 +17835,8 @@ const monstersLocal = [
     },
     { // Skeleton
         ID: 272,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Skeleton",
         Type: "Medium undead, lawful evil",
@@ -17345,6 +17887,8 @@ const monstersLocal = [
     },
     { // Minotaur Skeleton
         ID: 273,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Minotaur Skeleton",
         Type: "Large undead, lawful evil",
@@ -17400,6 +17944,8 @@ const monstersLocal = [
     },
     { // Warhorse Skeleton
         ID: 274,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Warhorse Skeleton",
         Type: "Large undead, lawful evil",
@@ -17451,6 +17997,8 @@ const monstersLocal = [
     },
     { // Red Slaad
         ID: 275,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Red Slaad",
         Type: "Large aberration, chaotic neutral",
@@ -17514,6 +18062,8 @@ const monstersLocal = [
     },
     { // Slaad Tadpole
         ID: 276,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Slaad Tadpole",
         Type: "Tiny aberration, chaotic neutral",
@@ -17565,6 +18115,8 @@ const monstersLocal = [
     },
     { // Blue Slaad
         ID: 277,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Blue Slaad",
         Type: "Large aberration, chaotic neutral",
@@ -17628,6 +18180,8 @@ const monstersLocal = [
     },
     { // Green Slaad
         ID: 278,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Green Slaad",
         Type: "Large aberration, chaotic neutral",
@@ -17707,6 +18261,8 @@ const monstersLocal = [
     },
     { // Gray Slaad
         ID: 279,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gray Slaad",
         Type: "Medium aberration (shapechanger), chaotic neutral",
@@ -17782,6 +18338,8 @@ const monstersLocal = [
     },
     { // Death Slaad
         ID: 280,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Death Slaad",
         Type: "Medium aberration (shapechanger), chaotic neutral",
@@ -17857,6 +18415,8 @@ const monstersLocal = [
     },
     { // Specter
         ID: 281,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Specter",
         Type: "Medium undead, chaotic evil",
@@ -17912,6 +18472,8 @@ const monstersLocal = [
     },
     { // Androsphinx
         ID: 282,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Androsphinx",
         Type: "Large monstrosity, lawful neutral",
@@ -17975,6 +18537,8 @@ const monstersLocal = [
     },
     { // Gynosphinx
         ID: 283,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gynosphinx",
         Type: "Large monstrosity, lawful neutral",
@@ -18034,6 +18598,8 @@ const monstersLocal = [
     },
     { // Sprite
         ID: 284,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sprite",
         Type: "Tiny fey, neutral good",
@@ -18093,6 +18659,8 @@ const monstersLocal = [
     },
     { // Stirge
         ID: 285,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Stirge",
         Type: "Tiny beast, unaligned",
@@ -18139,6 +18707,8 @@ const monstersLocal = [
     },
     { // Succubus/Incubus
         ID: 286,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Succubus/Incubus",
         Type: "Medium fiend (shapechanger), neutral evil",
@@ -18206,6 +18776,8 @@ const monstersLocal = [
     },
     { // Tarrasque
         ID: 287,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tarrasque",
         Type: "Gargantuan monstrosity (titan), unaligned",
@@ -18306,6 +18878,8 @@ const monstersLocal = [
     },
     { // Thri-kreen
         ID: 288,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Thri-kreen",
         Type: "Medium humanoid (thri-kreen), chaotic neutral",
@@ -18369,6 +18943,8 @@ const monstersLocal = [
     },
     { // Treant
         ID: 289,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Treant",
         Type: "Huge plant, chaotic good",
@@ -18436,6 +19012,8 @@ const monstersLocal = [
     },
     { // Troglodyte
         ID: 290,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Troglodyte",
         Type: "Medium humanoid (troglodyte), chaotic evil",
@@ -18503,6 +19081,8 @@ const monstersLocal = [
     },
     { // Troll
         ID: 291,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Troll",
         Type: "Large giant, chaotic evil",
@@ -18566,6 +19146,8 @@ const monstersLocal = [
     },
     { // Umber Hulk
         ID: 292,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Umber Hulk",
         Type: "Large monstrosity, chaotic evil",
@@ -18629,6 +19211,8 @@ const monstersLocal = [
     },
     { // Unicorn
         ID: 293,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Unicorn",
         Type: "Large celestial, lawful good",
@@ -18717,6 +19301,8 @@ const monstersLocal = [
     },
     { // Vampire
         ID: 294,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Vampire",
         Type: "Medium undead (shapechanger), lawful evil",
@@ -18813,6 +19399,8 @@ const monstersLocal = [
     },
     { // Vampire Spawn
         ID: 295,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Vampire Spawn",
         Type: "Medium undead, neutral evil",
@@ -18880,6 +19468,8 @@ const monstersLocal = [
     },
     { // Water Weird
         ID: 296,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Water Weird",
         Type: "Large elemental, neutral",
@@ -18935,6 +19525,8 @@ const monstersLocal = [
     },
     { // Wight
         ID: 297,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Wight",
         Type: "Medium undead, neutral evil",
@@ -19002,6 +19594,8 @@ const monstersLocal = [
     },
     { // Will-o'-Wisp
         ID: 298,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Will-o'-Wisp",
         Type: "Tiny undead, chaotic evil",
@@ -19069,6 +19663,8 @@ const monstersLocal = [
     },
     { // Wraith
         ID: 299,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Wraith",
         Type: "Medium undead, chaotic evil",
@@ -19128,6 +19724,8 @@ const monstersLocal = [
     },
     { // Wyvern
         ID: 300,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Wyvern",
         Type: "Large dragon, unaligned",
@@ -19186,6 +19784,8 @@ const monstersLocal = [
     },
     { // Xorn
         ID: 301,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Xorn",
         Type: "Medium elemental, neutral",
@@ -19253,6 +19853,8 @@ const monstersLocal = [
     },
     { // Yeti
         ID: 302,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yeti",
         Type: "Large monstrosity, chaotic evil",
@@ -19320,6 +19922,8 @@ const monstersLocal = [
     },
     { // Abominable Yeti
         ID: 303,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Abominable Yeti",
         Type: "Huge monstrosity, chaotic evil",
@@ -19387,6 +19991,8 @@ const monstersLocal = [
     },
     { // Yuan-ti Abomination
         ID: 304,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yuan-ti Abomination",
         Type: "Large monstrosity (shapechanger), neutral evil",
@@ -19462,6 +20068,8 @@ const monstersLocal = [
     },
     { // Yuan-ti Malison
         ID: 305,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yuan-ti Malison",
         Type: "Medium monstrosity (shapechanger), neutral evil",
@@ -19537,6 +20145,8 @@ const monstersLocal = [
     },
     { // Yuan-ti Pureblood
         ID: 306,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yuan-ti Pureblood",
         Type: "Medium humanoid (yuan-ti), neutral evil",
@@ -19596,6 +20206,8 @@ const monstersLocal = [
     },
     { // Arcanaloth
         ID: 307,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Arcanaloth",
         Type: "Medium fiend (yugoloth), neutral evil",
@@ -19663,6 +20275,8 @@ const monstersLocal = [
     },
     { // Mezzoloth
         ID: 308,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mezzoloth",
         Type: "Medium fiend (yugoloth), neutral evil",
@@ -19734,6 +20348,8 @@ const monstersLocal = [
     },
     { // Nycaloth
         ID: 309,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Nycaloth",
         Type: "Large fiend (yugoloth), neutral evil",
@@ -19805,6 +20421,8 @@ const monstersLocal = [
     },
     { // Ultroloth
         ID: 310,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ultroloth",
         Type: "Medium fiend (yugoloth), neutral evil",
@@ -19876,6 +20494,8 @@ const monstersLocal = [
     },
     { // Zombie
         ID: 311,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Zombie",
         Type: "Medium undead, neutral evil",
@@ -19927,6 +20547,8 @@ const monstersLocal = [
     },
     { // Ogre Zombie
         ID: 312,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ogre Zombie",
         Type: "Large undead, neutral evil",
@@ -19978,6 +20600,8 @@ const monstersLocal = [
     },
     { // Beholder Zombie
         ID: 313,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Beholder Zombie",
         Type: "Large undead, neutral evil",
@@ -20033,6 +20657,8 @@ const monstersLocal = [
     },
     { // Ape
         ID: 314,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ape",
         Type: "Medium beast, unaligned",
@@ -20087,6 +20713,8 @@ const monstersLocal = [
     },
     { // Awakened Shrub
         ID: 315,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Awakened Shrub",
         Type: "Small plant, unaligned",
@@ -20133,6 +20761,8 @@ const monstersLocal = [
     },
     { // Awakened Tree
         ID: 316,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Awakened Tree",
         Type: "Huge plant, unaligned",
@@ -20184,6 +20814,8 @@ const monstersLocal = [
     },
     { // Axe Beak
         ID: 317,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Axe Beak",
         Type: "Large beast, unaligned",
@@ -20230,6 +20862,8 @@ const monstersLocal = [
     },
     { // Baboon
         ID: 318,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Baboon",
         Type: "Small beast, unaligned",
@@ -20281,6 +20915,8 @@ const monstersLocal = [
     },
     { // Badger
         ID: 319,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Badger",
         Type: "Tiny beast, unaligned",
@@ -20332,6 +20968,8 @@ const monstersLocal = [
     },
     { // Bat
         ID: 320,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bat",
         Type: "Tiny beast, unaligned",
@@ -20383,6 +21021,8 @@ const monstersLocal = [
     },
     { // Black Bear
         ID: 321,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Black Bear",
         Type: "Medium beast, unaligned",
@@ -20442,6 +21082,8 @@ const monstersLocal = [
     },
     { // Blink Dog
         ID: 322,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Blink Dog",
         Type: "Medium fey, lawful good",
@@ -20492,6 +21134,8 @@ const monstersLocal = [
     },
     { // Blood Hawk
         ID: 323,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Blood Hawk",
         Type: "Small beast, neutral",
@@ -20547,6 +21191,8 @@ const monstersLocal = [
     },
     { // Boar
         ID: 324,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Boar",
         Type: "Medium beast, unaligned",
@@ -20602,6 +21248,8 @@ const monstersLocal = [
     },
     { // Brown Bear
         ID: 325,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Brown Bear",
         Type: "Large beast, unaligned",
@@ -20661,6 +21309,8 @@ const monstersLocal = [
     },
     { // Camel
         ID: 326,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Camel",
         Type: "Large beast, unaligned",
@@ -20707,6 +21357,8 @@ const monstersLocal = [
     },
     { // Cat
         ID: 327,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cat",
         Type: "Tiny beast, unaligned",
@@ -20762,6 +21414,8 @@ const monstersLocal = [
     },
     { // Constrictor Snake
         ID: 328,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Constrictor Snake",
         Type: "Large beast, unaligned",
@@ -20812,6 +21466,8 @@ const monstersLocal = [
     },
     { // Crab
         ID: 329,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Crab",
         Type: "Tiny beast, unaligned",
@@ -20858,6 +21514,8 @@ const monstersLocal = [
     },
     { // Crocodile
         ID: 330,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Crocodile",
         Type: "Large beast, unaligned",
@@ -20909,6 +21567,8 @@ const monstersLocal = [
     },
     { // Death Dog
         ID: 331,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Death Dog",
         Type: "Medium monstrosity, neutral evil",
@@ -20964,6 +21624,8 @@ const monstersLocal = [
     },
     { // Deer
         ID: 332,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Deer",
         Type: "Medium beast, unaligned",
@@ -21014,6 +21676,8 @@ const monstersLocal = [
     },
     { // Dire Wolf
         ID: 333,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dire Wolf",
         Type: "Large beast, unaligned",
@@ -21069,6 +21733,8 @@ const monstersLocal = [
     },
     { // Draft Horse
         ID: 334,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Draft Horse",
         Type: "Large beast, unaligned",
@@ -21115,6 +21781,8 @@ const monstersLocal = [
     },
     { // Eagle
         ID: 335,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Eagle",
         Type: "Small beast, neutral good",
@@ -21166,6 +21834,8 @@ const monstersLocal = [
     },
     { // Elephant
         ID: 336,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Elephant",
         Type: "Huge beast, unaligned",
@@ -21221,6 +21891,8 @@ const monstersLocal = [
     },
     { // Elk
         ID: 337,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Elk",
         Type: "Large beast, unaligned",
@@ -21276,6 +21948,8 @@ const monstersLocal = [
     },
     { // Flying Snake
         ID: 338,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Flying Snake",
         Type: "Tiny beast, unaligned",
@@ -21327,6 +22001,8 @@ const monstersLocal = [
     },
     { // Frog
         ID: 339,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Frog",
         Type: "Tiny beast, unaligned",
@@ -21382,6 +22058,8 @@ const monstersLocal = [
     },
     { // Giant Ape
         ID: 340,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Ape",
         Type: "Huge beast, unaligned",
@@ -21436,6 +22114,8 @@ const monstersLocal = [
     },
     { // Giant Badger
         ID: 341,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Badger",
         Type: "Medium beast, unaligned",
@@ -21495,6 +22175,8 @@ const monstersLocal = [
     },
     { // Giant Bat
         ID: 342,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Bat",
         Type: "Large beast, unaligned",
@@ -21550,6 +22232,8 @@ const monstersLocal = [
     },
     { // Giant Boar
         ID: 343,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Boar",
         Type: "Large beast, unaligned",
@@ -21605,6 +22289,8 @@ const monstersLocal = [
     },
     { // Giant Centipede
         ID: 344,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Centipede",
         Type: "Small beast, unaligned",
@@ -21651,6 +22337,8 @@ const monstersLocal = [
     },
     { // Giant Constrictor Snake
         ID: 345,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Constrictor Snake",
         Type: "Huge beast, unaligned",
@@ -21701,6 +22389,8 @@ const monstersLocal = [
     },
     { // Giant Crab
         ID: 346,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Crab",
         Type: "Medium beast, unaligned",
@@ -21752,6 +22442,8 @@ const monstersLocal = [
     },
     { // Giant Crocodile
         ID: 347,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Crocodile",
         Type: "Huge beast, unaligned",
@@ -21811,6 +22503,8 @@ const monstersLocal = [
     },
     { // Giant Eagle
         ID: 348,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Eagle",
         Type: "Large beast, neutral good",
@@ -21870,6 +22564,8 @@ const monstersLocal = [
     },
     { // Giant Elk
         ID: 349,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Elk",
         Type: "Huge beast, unaligned",
@@ -21925,6 +22621,8 @@ const monstersLocal = [
     },
     { // Giant Fire Beetle
         ID: 350,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Fire Beetle",
         Type: "Small beast, unaligned",
@@ -21976,6 +22674,8 @@ const monstersLocal = [
     },
     { // Giant Frog
         ID: 351,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Frog",
         Type: "Medium beast, unaligned",
@@ -22035,6 +22735,8 @@ const monstersLocal = [
     },
     { // Giant Goat
         ID: 352,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Goat",
         Type: "Large beast, unaligned",
@@ -22090,6 +22792,8 @@ const monstersLocal = [
     },
     { // Giant Hyena
         ID: 353,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Hyena",
         Type: "Large beast, unaligned",
@@ -22141,6 +22845,8 @@ const monstersLocal = [
     },
     { // Giant Lizard
         ID: 354,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Lizard",
         Type: "Large beast, unaligned",
@@ -22187,6 +22893,8 @@ const monstersLocal = [
     },
     { // Giant Octopus
         ID: 355,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Octopus",
         Type: "Large beast, unaligned",
@@ -22250,6 +22958,8 @@ const monstersLocal = [
     },
     { // Giant Owl
         ID: 356,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Owl",
         Type: "Large beast, neutral",
@@ -22305,6 +23015,8 @@ const monstersLocal = [
     },
     { // Giant Poisonous Snake
         ID: 357,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Poisonous Snake",
         Type: "Large beast, unaligned",
@@ -22351,6 +23063,8 @@ const monstersLocal = [
     },
     { // Giant Rat
         ID: 358,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Rat",
         Type: "Small beast, unaligned",
@@ -22406,6 +23120,8 @@ const monstersLocal = [
     },
     { // Giant Scorpion
         ID: 359,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Scorpion",
         Type: "Large beast, unaligned",
@@ -22460,6 +23176,8 @@ const monstersLocal = [
     },
     { // Giant Sea Horse
         ID: 360,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Sea Horse",
         Type: "Large beast, unaligned",
@@ -22515,6 +23233,8 @@ const monstersLocal = [
     },
     { // Giant Shark
         ID: 361,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Shark",
         Type: "Huge beast, unaligned",
@@ -22570,6 +23290,8 @@ const monstersLocal = [
     },
     { // Giant Spider
         ID: 362,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Spider",
         Type: "Large beast, unaligned",
@@ -22633,6 +23355,8 @@ const monstersLocal = [
     },
     { // Giant Toad
         ID: 363,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Toad",
         Type: "Large beast, unaligned",
@@ -22692,6 +23416,8 @@ const monstersLocal = [
     },
     { // Giant Vulture
         ID: 364,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Vulture",
         Type: "Large beast, neutral evil",
@@ -22755,6 +23481,8 @@ const monstersLocal = [
     },
     { // Giant Wasp
         ID: 365,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Wasp",
         Type: "Medium beast, unaligned",
@@ -22801,6 +23529,8 @@ const monstersLocal = [
     },
     { // Giant Weasel
         ID: 366,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Weasel",
         Type: "Medium beast, unaligned",
@@ -22852,6 +23582,8 @@ const monstersLocal = [
     },
     { // Giant Wolf Spider
         ID: 367,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Wolf Spider",
         Type: "Medium beast, unaligned",
@@ -22911,6 +23643,8 @@ const monstersLocal = [
     },
     { // Goat
         ID: 368,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Goat",
         Type: "Medium beast, unaligned",
@@ -22966,6 +23700,8 @@ const monstersLocal = [
     },
     { // Hawk
         ID: 369,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hawk",
         Type: "Tiny beast, unaligned",
@@ -23017,6 +23753,8 @@ const monstersLocal = [
     },
     { // Hunter Shark
         ID: 370,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hunter Shark",
         Type: "Large beast, unaligned",
@@ -23072,6 +23810,8 @@ const monstersLocal = [
     },
     { // Hyena
         ID: 371,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hyena",
         Type: "Medium beast, unaligned",
@@ -23123,6 +23863,8 @@ const monstersLocal = [
     },
     { // Jackal
         ID: 372,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Jackal",
         Type: "Small beast, unaligned",
@@ -23178,6 +23920,8 @@ const monstersLocal = [
     },
     { // Killer Whale
         ID: 373,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Killer Whale",
         Type: "Huge beast, unaligned",
@@ -23233,6 +23977,8 @@ const monstersLocal = [
     },
     { // Lion
         ID: 374,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Lion",
         Type: "Large beast, unaligned",
@@ -23296,6 +24042,8 @@ const monstersLocal = [
     },
     { // Lizard
         ID: 375,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Lizard",
         Type: "Tiny beast, unaligned",
@@ -23342,6 +24090,8 @@ const monstersLocal = [
     },
     { // Mammoth
         ID: 376,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mammoth",
         Type: "Huge beast, unaligned",
@@ -23397,6 +24147,8 @@ const monstersLocal = [
     },
     { // Mastiff
         ID: 377,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mastiff",
         Type: "Medium beast, unaligned",
@@ -23448,6 +24200,8 @@ const monstersLocal = [
     },
     { // Mule
         ID: 378,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mule",
         Type: "Medium beast, unaligned",
@@ -23503,6 +24257,8 @@ const monstersLocal = [
     },
     { // Octopus
         ID: 379,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Octopus",
         Type: "Small beast, unaligned",
@@ -23558,6 +24314,8 @@ const monstersLocal = [
     },
     { // Owl
         ID: 380,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Owl",
         Type: "Tiny beast, unaligned",
@@ -23613,6 +24371,8 @@ const monstersLocal = [
     },
     { // Panther
         ID: 381,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Panther",
         Type: "Medium beast, unaligned",
@@ -23672,6 +24432,8 @@ const monstersLocal = [
     },
     { // Phase Spider
         ID: 382,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Phase Spider",
         Type: "Large monstrosity, unaligned",
@@ -23727,6 +24489,8 @@ const monstersLocal = [
     },
     { // Poisonous Snake
         ID: 383,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Poisonous Snake",
         Type: "Tiny beast, unaligned",
@@ -23773,6 +24537,8 @@ const monstersLocal = [
     },
     { // Polar Bear
         ID: 384,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Polar Bear",
         Type: "Large beast, unaligned",
@@ -23832,6 +24598,8 @@ const monstersLocal = [
     },
     { // Pony
         ID: 385,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pony",
         Type: "Medium beast, unaligned",
@@ -23883,6 +24651,8 @@ const monstersLocal = [
     },
     { // Quipper
         ID: 386,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Quipper",
         Type: "Tiny beast, unaligned",
@@ -23938,6 +24708,8 @@ const monstersLocal = [
     },
     { // Rat
         ID: 387,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Rat",
         Type: "Tiny beast, unaligned",
@@ -23989,6 +24761,8 @@ const monstersLocal = [
     },
     { // Raven
         ID: 388,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Raven",
         Type: "Tiny beast, unaligned",
@@ -24040,6 +24814,8 @@ const monstersLocal = [
     },
     { // Reef Shark
         ID: 389,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Reef Shark",
         Type: "Medium beast, unaligned",
@@ -24091,6 +24867,8 @@ const monstersLocal = [
     },
     { // Rhinoceros
         ID: 390,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Rhinoceros",
         Type: "Large beast, unaligned",
@@ -24142,6 +24920,8 @@ const monstersLocal = [
     },
     { // Riding Horse
         ID: 391,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Riding Horse",
         Type: "Large beast, unaligned",
@@ -24188,6 +24968,8 @@ const monstersLocal = [
     },
     { // Sabre-Toothed Tiger
         ID: 392,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sabre-Toothed Tiger",
         Type: "Large beast, unaligned",
@@ -24247,6 +25029,8 @@ const monstersLocal = [
     },
     { // Scorpion
         ID: 393,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Scorpion",
         Type: "Tiny beast, unaligned",
@@ -24293,6 +25077,8 @@ const monstersLocal = [
     },
     { // Sea Horse
         ID: 394,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sea Horse",
         Type: "Tiny beast, unaligned",
@@ -24339,6 +25125,8 @@ const monstersLocal = [
     },
     { // Spider
         ID: 395,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Spider",
         Type: "Tiny beast, unaligned",
@@ -24398,6 +25186,8 @@ const monstersLocal = [
     },
     { // Swarm of Bats
         ID: 396,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Bats",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -24453,6 +25243,8 @@ const monstersLocal = [
     },
     { // Swarm of Beetles
         ID: 397,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Beetles",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -24504,6 +25296,8 @@ const monstersLocal = [
     },
     { // Swarm of Centipedes
         ID: 398,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Centipedes",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -24555,6 +25349,8 @@ const monstersLocal = [
     },
     { // Swarm of Insects
         ID: 399,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Insects",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -24606,6 +25402,8 @@ const monstersLocal = [
     },
     { // Swarm of Poisonous Snakes
         ID: 400,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Poisonous Snakes",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -24657,6 +25455,8 @@ const monstersLocal = [
     },
     { // Swarm of Quippers
         ID: 401,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Quippers",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -24716,6 +25516,8 @@ const monstersLocal = [
     },
     { // Swarm of Rats
         ID: 402,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Rats",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -24771,6 +25573,8 @@ const monstersLocal = [
     },
     { // Swarm of Ravens
         ID: 403,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Ravens",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -24826,6 +25630,8 @@ const monstersLocal = [
     },
     { // Tiger
         ID: 404,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tiger",
         Type: "Large beast, unaligned",
@@ -24885,6 +25691,8 @@ const monstersLocal = [
     },
     { // Vulture
         ID: 405,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Vulture",
         Type: "Medium beast, unaligned",
@@ -24940,6 +25748,8 @@ const monstersLocal = [
     },
     { // Warhorse
         ID: 406,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Warhorse",
         Type: "Large beast, unaligned",
@@ -24991,6 +25801,8 @@ const monstersLocal = [
     },
     { // Weasel
         ID: 407,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Weasel",
         Type: "Tiny beast, unaligned",
@@ -25042,6 +25854,8 @@ const monstersLocal = [
     },
     { // Winter Wolf
         ID: 408,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Winter Wolf",
         Type: "Large monstrosity, neutral evil",
@@ -25105,6 +25919,8 @@ const monstersLocal = [
     },
     { // Wolf
         ID: 409,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Wolf",
         Type: "Medium beast, unaligned",
@@ -25160,6 +25976,8 @@ const monstersLocal = [
     },
     { // Worg
         ID: 410,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Worg",
         Type: "Large monstrosity, neutral evil",
@@ -25211,6 +26029,8 @@ const monstersLocal = [
     },
     { // Acolyte
         ID: 411,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Acolyte",
         Type: "Medium humanoid (any race), any alignment",
@@ -25262,6 +26082,8 @@ const monstersLocal = [
     },
     { // Archmage
         ID: 412,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Archmage",
         Type: "Medium humanoid (any race), any alignment",
@@ -25317,6 +26139,8 @@ const monstersLocal = [
     },
     { // Assassin
         ID: 413,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Assassin",
         Type: "Medium humanoid (any race), any non-good alignment",
@@ -25384,6 +26208,8 @@ const monstersLocal = [
     },
     { // Bandit
         ID: 414,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bandit",
         Type: "Medium humanoid (any race), any non-lawful alignment",
@@ -25434,6 +26260,8 @@ const monstersLocal = [
     },
     { // Bandit Captain
         ID: 415,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bandit Captain",
         Type: "Medium humanoid (any race), any non-lawful alignment",
@@ -25493,6 +26321,8 @@ const monstersLocal = [
     },
     { // Berserker
         ID: 416,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Berserker",
         Type: "Medium humanoid (any race), any chaotic alignment",
@@ -25544,6 +26374,8 @@ const monstersLocal = [
     },
     { // Commoner
         ID: 417,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Commoner",
         Type: "Medium humanoid (any race), any alignment",
@@ -25590,6 +26422,8 @@ const monstersLocal = [
     },
     { // Cultist
         ID: 418,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cultist",
         Type: "Medium humanoid (any race), any non-good alignment",
@@ -25641,6 +26475,8 @@ const monstersLocal = [
     },
     { // Cult Fanatic
         ID: 419,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cult Fanatic",
         Type: "Medium humanoid (any race), any non-good alignment",
@@ -25700,6 +26536,8 @@ const monstersLocal = [
     },
     { // Druid
         ID: 420,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Druid",
         Type: "Medium humanoid (any race), any alignment",
@@ -25751,6 +26589,8 @@ const monstersLocal = [
     },
     { // Gladiator
         ID: 421,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gladiator",
         Type: "Medium humanoid (any race), any alignment",
@@ -25822,6 +26662,8 @@ const monstersLocal = [
     },
     { // Guard
         ID: 422,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Guard",
         Type: "Medium humanoid (any race), any alignment",
@@ -25868,6 +26710,8 @@ const monstersLocal = [
     },
     { // Knight
         ID: 423,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Knight",
         Type: "Medium humanoid (any race), any alignment",
@@ -25936,6 +26780,8 @@ const monstersLocal = [
     },
     { // Mage
         ID: 424,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mage",
         Type: "Medium humanoid (any race), any alignment",
@@ -25987,6 +26833,8 @@ const monstersLocal = [
     },
     { // Noble
         ID: 425,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Noble",
         Type: "Medium humanoid (any race), any alignment",
@@ -26043,6 +26891,8 @@ const monstersLocal = [
     },
     { // Priest
         ID: 426,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Priest",
         Type: "Medium humanoid (any race), any alignment",
@@ -26098,6 +26948,8 @@ const monstersLocal = [
     },
     { // Scout
         ID: 427,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Scout",
         Type: "Medium humanoid (any race), any alignment",
@@ -26157,6 +27009,8 @@ const monstersLocal = [
     },
     { // Spy
         ID: 428,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Spy",
         Type: "Medium humanoid (any race), any alignment",
@@ -26220,6 +27074,8 @@ const monstersLocal = [
     },
     { // Thug
         ID: 429,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Thug",
         Type: "Medium humanoid (any race), any non-good alignment",
@@ -26279,6 +27135,8 @@ const monstersLocal = [
     },
     { // Tribal Warrior
         ID: 430,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tribal Warrior",
         Type: "Medium humanoid (any race), any alignment",
@@ -26330,6 +27188,8 @@ const monstersLocal = [
     },
     { // Veteran
         ID: 431,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Veteran",
         Type: "Medium humanoid (any race), any alignment",
@@ -26388,6 +27248,8 @@ const monstersLocal = [
     },
     { // Banderhobb
         ID: 432,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Banderhobb",
         Type: "Large monstrosity, neutral evil",
@@ -26455,6 +27317,8 @@ const monstersLocal = [
     },
     { // Barghest
         ID: 433,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Barghest",
         Type: "Large fiend (shapechanger), neutral evil",
@@ -26522,6 +27386,8 @@ const monstersLocal = [
     },
     { // Death Kiss
         ID: 434,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Death Kiss",
         Type: "Large aberration, neutral evil",
@@ -26581,6 +27447,8 @@ const monstersLocal = [
     },
     { // Gauth
         ID: 435,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gauth",
         Type: "Medium aberration, lawful evil",
@@ -26640,6 +27508,8 @@ const monstersLocal = [
     },
     { // Gazer
         ID: 436,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gazer",
         Type: "Tiny aberration, neutral evil",
@@ -26699,6 +27569,8 @@ const monstersLocal = [
     },
     { // Bodak
         ID: 437,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bodak",
         Type: "Medium undead, chaotic evil",
@@ -26762,6 +27634,8 @@ const monstersLocal = [
     },
     { // Boggle
         ID: 438,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Boggle",
         Type: "Small fey, chaotic neutral",
@@ -26825,6 +27699,8 @@ const monstersLocal = [
     },
     { // Catoblepas
         ID: 439,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Catoblepas",
         Type: "Large monstrosity, unaligned",
@@ -26884,6 +27760,8 @@ const monstersLocal = [
     },
     { // Cave Fisher
         ID: 440,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cave Fisher",
         Type: "Medium monstrosity, unaligned",
@@ -26951,6 +27829,8 @@ const monstersLocal = [
     },
     { // Chitine
         ID: 441,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Chitine",
         Type: "Small monstrosity, chaotic evil",
@@ -27018,6 +27898,8 @@ const monstersLocal = [
     },
     { // Choldrith
         ID: 442,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Choldrith",
         Type: "Medium monstrosity, chaotic evil",
@@ -27093,6 +27975,8 @@ const monstersLocal = [
     },
     { // Cranium Rat
         ID: 443,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cranium Rat",
         Type: "Tiny beast, lawful evil",
@@ -27148,6 +28032,8 @@ const monstersLocal = [
     },
     { // Swarm of Cranium Rats
         ID: 444,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Cranium Rats",
         Type: "Medium swarm of Tiny beasts, lawful evil",
@@ -27211,6 +28097,8 @@ const monstersLocal = [
     },
     { // Darkling
         ID: 445,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Darkling",
         Type: "Small fey, chaotic neutral",
@@ -27266,6 +28154,8 @@ const monstersLocal = [
     },
     { // Darkling Elder
         ID: 446,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Darkling Elder",
         Type: "Medium fey, chaotic neutral",
@@ -27325,6 +28215,8 @@ const monstersLocal = [
     },
     { // Deep Scion
         ID: 447,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Deep Scion",
         Type: "Medium humanoid (shapechanger), neutral evil",
@@ -27396,6 +28288,8 @@ const monstersLocal = [
     },
     { // Babau
         ID: 448,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Babau",
         Type: "Medium fiend (demon), chaotic evil",
@@ -27459,6 +28353,8 @@ const monstersLocal = [
     },
     { // Maw Demon
         ID: 449,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Maw Demon",
         Type: "Medium fiend (demon), chaotic evil",
@@ -27510,6 +28406,8 @@ const monstersLocal = [
     },
     { // Shoosuva
         ID: 450,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Shoosuva",
         Type: "Large fiend (demon), chaotic evil",
@@ -27569,6 +28467,8 @@ const monstersLocal = [
     },
     { // Devourer
         ID: 451,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Devourer",
         Type: "Large fiend, chaotic evil",
@@ -27627,6 +28527,8 @@ const monstersLocal = [
     },
     { // Dimetrodon
         ID: 452,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dimetrodon",
         Type: "Medium beast, unaligned",
@@ -27673,6 +28575,8 @@ const monstersLocal = [
     },
     { // Brontosaurus
         ID: 453,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Brontosaurus",
         Type: "Gargantuan beast, unaligned",
@@ -27723,6 +28627,8 @@ const monstersLocal = [
     },
     { // Deinonychus
         ID: 454,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Deinonychus",
         Type: "Medium beast, unaligned",
@@ -27782,6 +28688,8 @@ const monstersLocal = [
     },
     { // Hadrosaurus
         ID: 455,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hadrosaurus",
         Type: "Large beast, unaligned",
@@ -27828,6 +28736,8 @@ const monstersLocal = [
     },
     { // Quetzalcoatlus
         ID: 456,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Quetzalcoatlus",
         Type: "Huge beast, unaligned",
@@ -27883,6 +28793,8 @@ const monstersLocal = [
     },
     { // Stegosaurus
         ID: 457,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Stegosaurus",
         Type: "Huge beast, unaligned",
@@ -27929,6 +28841,8 @@ const monstersLocal = [
     },
     { // Velociraptor
         ID: 458,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Velociraptor",
         Type: "Tiny beast, unaligned",
@@ -27988,6 +28902,8 @@ const monstersLocal = [
     },
     { // Draegloth
         ID: 459,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Draegloth",
         Type: "Large fiend (demon), chaotic evil",
@@ -28051,6 +28967,8 @@ const monstersLocal = [
     },
     { // Firenewt Warrior
         ID: 460,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Firenewt Warrior",
         Type: "Medium humanoid (firenewt), neutral evil",
@@ -28110,6 +29028,8 @@ const monstersLocal = [
     },
     { // Giant Strider
         ID: 461,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giant Strider",
         Type: "Large monstrosity, neutral evil",
@@ -28165,6 +29085,8 @@ const monstersLocal = [
     },
     { // Firenewt Warlock of Imix
         ID: 462,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Firenewt Warlock of Imix",
         Type: "Medium humanoid (firenewt), neutral evil",
@@ -28228,6 +29150,8 @@ const monstersLocal = [
     },
     { // Flail Snail
         ID: 463,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Flail Snail",
         Type: "Large elemental, unaligned",
@@ -28295,6 +29219,8 @@ const monstersLocal = [
     },
     { // Froghemoth
         ID: 464,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Froghemoth",
         Type: "Huge monstrosity, unaligned",
@@ -28362,6 +29288,8 @@ const monstersLocal = [
     },
     { // Cloud Giant Smiling One
         ID: 465,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cloud Giant Smiling One",
         Type: "Huge giant, chaotic neutral",
@@ -28433,6 +29361,8 @@ const monstersLocal = [
     },
     { // Fire Giant Dreadnought
         ID: 466,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Fire Giant Dreadnought",
         Type: "Huge giant, lawful evil",
@@ -28496,6 +29426,8 @@ const monstersLocal = [
     },
     { // Frost Giant Everlasting One
         ID: 467,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Frost Giant Everlasting One",
         Type: "Huge giant, chaotic evil",
@@ -28563,6 +29495,8 @@ const monstersLocal = [
     },
     { // Mouth of Grolantor
         ID: 468,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mouth of Grolantor",
         Type: "Huge giant, chaotic evil",
@@ -28618,6 +29552,8 @@ const monstersLocal = [
     },
     { // Stone Giant Dreamwalker
         ID: 469,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Stone Giant Dreamwalker",
         Type: "Huge giant, chaotic neutral",
@@ -28681,6 +29617,8 @@ const monstersLocal = [
     },
     { // Storm Giant Quintessent
         ID: 470,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Storm Giant Quintessent",
         Type: "Huge giant, chaotic good",
@@ -28766,6 +29704,8 @@ const monstersLocal = [
     },
     { // Girallon
         ID: 471,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Girallon",
         Type: "Large monstrosity, unaligned",
@@ -28829,6 +29769,8 @@ const monstersLocal = [
     },
     { // Flind
         ID: 472,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Flind",
         Type: "Medium humanoid (gnoll), chaotic evil",
@@ -28896,6 +29838,8 @@ const monstersLocal = [
     },
     { // Gnoll Flesh Gnawer
         ID: 473,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gnoll Flesh Gnawer",
         Type: "Medium humanoid (gnoll), chaotic evil",
@@ -28959,6 +29903,8 @@ const monstersLocal = [
     },
     { // Gnoll Hunter
         ID: 474,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gnoll Hunter",
         Type: "Medium humanoid (gnoll), chaotic evil",
@@ -29022,6 +29968,8 @@ const monstersLocal = [
     },
     { // Gnoll Witherling
         ID: 475,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gnoll Witherling",
         Type: "Medium undead, chaotic evil",
@@ -29086,6 +30034,8 @@ const monstersLocal = [
     },
     { // Grung
         ID: 476,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Grung",
         Type: "Small humanoid (grung), lawful evil",
@@ -29145,6 +30095,8 @@ const monstersLocal = [
     },
     { // Grung Elite Warrior
         ID: 477,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Grung Elite Warrior",
         Type: "Small humanoid (grung), lawful evil",
@@ -29212,6 +30164,8 @@ const monstersLocal = [
     },
     { // Grung Wildling
         ID: 478,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Grung Wildling",
         Type: "Small humanoid (grung), lawful evil",
@@ -29279,6 +30233,8 @@ const monstersLocal = [
     },
     { // Guard Drake
         ID: 479,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Guard Drake",
         Type: "Medium dragon, unaligned",
@@ -29333,6 +30289,8 @@ const monstersLocal = [
     },
     { // Annis Hag
         ID: 480,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Annis Hag",
         Type: "Large fey, chaotic evil",
@@ -29396,6 +30354,8 @@ const monstersLocal = [
     },
     { // Bheur Hag
         ID: 481,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bheur Hag",
         Type: "Medium fey, chaotic evil",
@@ -29459,6 +30419,8 @@ const monstersLocal = [
     },
     { // Hobgoblin Devastator
         ID: 482,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hobgoblin Devastator",
         Type: "Medium humanoid (goblinoid), lawful evil",
@@ -29518,6 +30480,8 @@ const monstersLocal = [
     },
     { // Hobgoblin Iron Shadow
         ID: 483,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hobgoblin Iron Shadow",
         Type: "Medium humanoid (goblinoid), lawful evil",
@@ -29585,6 +30549,8 @@ const monstersLocal = [
     },
     { // Ki-rin
         ID: 484,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ki-rin",
         Type: "Huge celestial, lawful good",
@@ -29679,6 +30645,8 @@ const monstersLocal = [
     },
     { // Kobold Dragonshield
         ID: 485,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kobold Dragonshield",
         Type: "Small humanoid (kobold), lawful evil",
@@ -29746,6 +30714,8 @@ const monstersLocal = [
     },
     { // Kobold Inventor
         ID: 486,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kobold Inventor",
         Type: "Small humanoid (kobold), lawful evil",
@@ -29809,6 +30779,8 @@ const monstersLocal = [
     },
     { // Kobold Scale Sorcerer
         ID: 487,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kobold Scale Sorcerer",
         Type: "Small humanoid (kobold), lawful evil",
@@ -29872,6 +30844,8 @@ const monstersLocal = [
     },
     { // Korred
         ID: 488,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Korred",
         Type: "Small fey, chaotic neutral",
@@ -29943,6 +30917,8 @@ const monstersLocal = [
     },
     { // Leucrotta
         ID: 489,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Leucrotta",
         Type: "Large monstrosity, chaotic evil",
@@ -30014,6 +30990,8 @@ const monstersLocal = [
     },
     { // Meenlock
         ID: 490,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Meenlock",
         Type: "Small fey, neutral evil",
@@ -30073,6 +31051,8 @@ const monstersLocal = [
     },
     { // Alhoon
         ID: 491,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Alhoon",
         Type: "Medium undead, any evil alignment",
@@ -30140,6 +31120,8 @@ const monstersLocal = [
     },
     { // Elder Brain
         ID: 492,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Elder Brain",
         Type: "Large aberration, lawful evil",
@@ -30244,6 +31226,8 @@ const monstersLocal = [
     },
     { // Ulitharid
         ID: 493,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulitharid",
         Type: "Large aberration, lawful evil",
@@ -30315,6 +31299,8 @@ const monstersLocal = [
     },
     { // Mindwitness
         ID: 494,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mindwitness",
         Type: "Large aberration, lawful evil",
@@ -30378,6 +31364,8 @@ const monstersLocal = [
     },
     { // Morkoth
         ID: 495,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Morkoth",
         Type: "Medium aberration, chaotic evil",
@@ -30458,6 +31446,8 @@ const monstersLocal = [
     },
     { // Neogi Hatchling
         ID: 496,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Neogi Hatchling",
         Type: "Tiny aberration, lawful evil",
@@ -30513,6 +31503,8 @@ const monstersLocal = [
     },
     { // Neogi
         ID: 497,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Neogi",
         Type: "Small aberration, lawful evil",
@@ -30580,6 +31572,8 @@ const monstersLocal = [
     },
     { // Neogi Master
         ID: 498,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Neogi Master",
         Type: "Medium aberration, lawful evil",
@@ -30651,6 +31645,8 @@ const monstersLocal = [
     },
     { // Neothelid
         ID: 499,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Neothelid",
         Type: "Gargantuan aberration, chaotic evil",
@@ -30714,6 +31710,8 @@ const monstersLocal = [
     },
     { // Nilbog
         ID: 500,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Nilbog",
         Type: "Small humanoid (goblinoid), chaotic evil",
@@ -30782,6 +31780,8 @@ const monstersLocal = [
     },
     { // Orc Blade of Ilneval
         ID: 501,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orc Blade of Ilneval",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -30849,6 +31849,8 @@ const monstersLocal = [
     },
     { // Orc Claw of Luthic
         ID: 502,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orc Claw of Luthic",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -30908,6 +31910,8 @@ const monstersLocal = [
     },
     { // Orc Hand of Yurtrus
         ID: 503,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orc Hand of Yurtrus",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -30963,6 +31967,8 @@ const monstersLocal = [
     },
     { // Orc Nurtured One of Yurtrus
         ID: 504,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orc Nurtured One of Yurtrus",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -31026,6 +32032,8 @@ const monstersLocal = [
     },
     { // Orc Red Fang of Shargaas
         ID: 505,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orc Red Fang of Shargaas",
         Type: "Medium humanoid (orc), chaotic evil",
@@ -31101,6 +32109,8 @@ const monstersLocal = [
     },
     { // Tanarukk
         ID: 506,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tanarukk",
         Type: "Medium fiend (demon, orc), chaotic evil",
@@ -31169,6 +32179,8 @@ const monstersLocal = [
     },
     { // Quickling
         ID: 507,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Quickling",
         Type: "Tiny fey, chaotic evil",
@@ -31228,6 +32240,8 @@ const monstersLocal = [
     },
     { // Redcap
         ID: 508,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Redcap",
         Type: "Small fey, chaotic evil",
@@ -31291,6 +32305,8 @@ const monstersLocal = [
     },
     { // Sea Spawn
         ID: 509,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sea Spawn",
         Type: "Medium humanoid, neutral evil",
@@ -31358,6 +32374,8 @@ const monstersLocal = [
     },
     { // Shadow Mastiff
         ID: 510,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Shadow Mastiff",
         Type: "Medium monstrosity, neutral evil",
@@ -31421,6 +32439,8 @@ const monstersLocal = [
     },
     { // Slithering Tracker
         ID: 511,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Slithering Tracker",
         Type: "Medium ooze, chaotic evil",
@@ -31500,6 +32520,8 @@ const monstersLocal = [
     },
     { // Spawn of Kyuss
         ID: 512,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Spawn of Kyuss",
         Type: "Medium undead, chaotic evil",
@@ -31563,6 +32585,8 @@ const monstersLocal = [
     },
     { // Tlincalli
         ID: 513,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tlincalli",
         Type: "Large monstrosity, neutral evil",
@@ -31621,6 +32645,8 @@ const monstersLocal = [
     },
     { // Trapper
         ID: 514,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Trapper",
         Type: "Large monstrosity, unaligned",
@@ -31676,6 +32702,8 @@ const monstersLocal = [
     },
     { // Vargouille
         ID: 515,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Vargouille",
         Type: "Tiny fiend, chaotic evil",
@@ -31730,6 +32758,8 @@ const monstersLocal = [
     },
     { // Vegepygmy
         ID: 516,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Vegepygmy",
         Type: "Small plant, neutral",
@@ -31789,6 +32819,8 @@ const monstersLocal = [
     },
     { // Vegepygmy Chief
         ID: 517,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Vegepygmy Chief",
         Type: "Small plant, neutral",
@@ -31856,6 +32888,8 @@ const monstersLocal = [
     },
     { // Thorny
         ID: 518,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Thorny",
         Type: "Medium plant, neutral",
@@ -31915,6 +32949,8 @@ const monstersLocal = [
     },
     { // Wood Woad
         ID: 519,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Wood Woad",
         Type: "Medium plant, lawful neutral",
@@ -31982,6 +33018,8 @@ const monstersLocal = [
     },
     { // Xvart
         ID: 520,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Xvart",
         Type: "Small humanoid (xvart), chaotic evil",
@@ -32045,6 +33083,8 @@ const monstersLocal = [
     },
     { // Xvart Warlock of Raxivort
         ID: 521,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Xvart Warlock of Raxivort",
         Type: "Small humanoid (xvart), chaotic evil",
@@ -32112,6 +33152,8 @@ const monstersLocal = [
     },
     { // Yeth Hound
         ID: 522,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yeth Hound",
         Type: "Large fey, neutral evil",
@@ -32175,6 +33217,8 @@ const monstersLocal = [
     },
     { // Yuan-ti Anathema
         ID: 523,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yuan-ti Anathema",
         Type: "Huge monstrosity (shapechanger, yuan-ti), neutral evil",
@@ -32254,6 +33298,8 @@ const monstersLocal = [
     },
     { // Yuan-ti Broodguard
         ID: 524,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yuan-ti Broodguard",
         Type: "Medium humanoid (yuan-ti), neutral evil",
@@ -32317,6 +33363,8 @@ const monstersLocal = [
     },
     { // Yuan-ti Mind Whisperer
         ID: 525,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yuan-ti Mind Whisperer",
         Type: "Medium monstrosity (shapechanger, yuan-ti), neutral evil",
@@ -32396,6 +33444,8 @@ const monstersLocal = [
     },
     { // Yuan-ti Nightmare Speaker
         ID: 526,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yuan-ti Nightmare Speaker",
         Type: "Medium monstrosity (shapechanger, yuan-ti), neutral evil",
@@ -32475,6 +33525,8 @@ const monstersLocal = [
     },
     { // Yuan-ti Pit Master
         ID: 527,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yuan-ti Pit Master",
         Type: "Medium monstrosity (shapechanger, yuan-ti), neutral evil",
@@ -32550,6 +33602,8 @@ const monstersLocal = [
     },
     { // Aurochs
         ID: 528,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Aurochs",
         Type: "Large beast, unaligned",
@@ -32601,6 +33655,8 @@ const monstersLocal = [
     },
     { // Cow
         ID: 529,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cow",
         Type: "Large beast, unaligned",
@@ -32652,6 +33708,8 @@ const monstersLocal = [
     },
     { // Dolphin
         ID: 530,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dolphin",
         Type: "Medium beast, unaligned",
@@ -32707,6 +33765,8 @@ const monstersLocal = [
     },
     { // Swarm of Rot Grubs
         ID: 531,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swarm of Rot Grubs",
         Type: "Medium swarm of Tiny beasts, unaligned",
@@ -32758,6 +33818,8 @@ const monstersLocal = [
     },
     { // Abjurer
         ID: 532,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Abjurer",
         Type: "Medium humanoid (any race), any alignment",
@@ -32813,6 +33875,8 @@ const monstersLocal = [
     },
     { // Apprentice Wizard
         ID: 533,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Apprentice Wizard",
         Type: "Medium humanoid (any race), any alignment",
@@ -32864,6 +33928,8 @@ const monstersLocal = [
     },
     { // Archdruid
         ID: 534,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Archdruid",
         Type: "Medium humanoid (any race), any alignment",
@@ -32919,6 +33985,8 @@ const monstersLocal = [
     },
     { // Archer
         ID: 535,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Archer",
         Type: "Medium humanoid (any race), any alignment",
@@ -32978,6 +34046,8 @@ const monstersLocal = [
     },
     { // Bard
         ID: 536,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bard",
         Type: "Medium humanoid (any race), any alignment",
@@ -33041,6 +34111,8 @@ const monstersLocal = [
     },
     { // Blackguard
         ID: 537,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Blackguard",
         Type: "Medium humanoid (any race), any non-good alignment",
@@ -33104,6 +34176,8 @@ const monstersLocal = [
     },
     { // Champion
         ID: 538,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Champion",
         Type: "Medium humanoid (any race), any alignment",
@@ -33167,6 +34241,8 @@ const monstersLocal = [
     },
     { // Conjurer
         ID: 539,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Conjurer",
         Type: "Medium humanoid (any race), any alignment",
@@ -33222,6 +34298,8 @@ const monstersLocal = [
     },
     { // Diviner
         ID: 540,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Diviner",
         Type: "Medium humanoid (any race), any alignment",
@@ -33277,6 +34355,8 @@ const monstersLocal = [
     },
     { // Enchanter
         ID: 541,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Enchanter",
         Type: "Medium humanoid (any race), any alignment",
@@ -33333,6 +34413,8 @@ const monstersLocal = [
     },
     { // Evoker
         ID: 542,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Evoker",
         Type: "Medium humanoid (any race), any alignment",
@@ -33388,6 +34470,8 @@ const monstersLocal = [
     },
     { // Illusionist
         ID: 543,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Illusionist",
         Type: "Medium humanoid (any race), any alignment",
@@ -33443,6 +34527,8 @@ const monstersLocal = [
     },
     { // Kraken Priest
         ID: 544,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kraken Priest",
         Type: "Medium humanoid (any race), any evil alignment",
@@ -33502,6 +34588,8 @@ const monstersLocal = [
     },
     { // Martial Arts Adept
         ID: 545,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Martial Arts Adept",
         Type: "Medium humanoid (any race), any alignment",
@@ -33566,6 +34654,8 @@ const monstersLocal = [
     },
     { // Master Thief
         ID: 546,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Master Thief",
         Type: "Medium humanoid (any race), any alignment",
@@ -33638,6 +34728,8 @@ const monstersLocal = [
     },
     { // Necromancer
         ID: 547,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Necromancer",
         Type: "Medium humanoid (any race), any alignment",
@@ -33693,6 +34785,8 @@ const monstersLocal = [
     },
     { // Swashbuckler
         ID: 548,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Swashbuckler",
         Type: "Medium humanoid (any race), any non-lawful alignment",
@@ -33756,6 +34850,8 @@ const monstersLocal = [
     },
     { // Transmuter
         ID: 549,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Transmuter",
         Type: "Medium humanoid (any race), any alignment",
@@ -33811,6 +34907,8 @@ const monstersLocal = [
     },
     { // War Priest
         ID: 550,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "War Priest",
         Type: "Medium humanoid (any race), any alignment",
@@ -33871,6 +34969,8 @@ const monstersLocal = [
     },
     { // Warlock of the Archfey
         ID: 551,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Warlock of the Archfey",
         Type: "Medium humanoid (any race), any alignment",
@@ -33931,6 +35031,8 @@ const monstersLocal = [
     },
     { // Warlock of the Fiend
         ID: 552,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Warlock of the Fiend",
         Type: "Medium humanoid (any race), any alignment",
@@ -33990,6 +35092,8 @@ const monstersLocal = [
     },
     { // Warlock of the Great Old One
         ID: 553,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Warlock of the Great Old One",
         Type: "Medium humanoid (any race), any alignment",
@@ -34049,6 +35153,8 @@ const monstersLocal = [
     },
     { // Warlord
         ID: 554,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Warlord",
         Type: "Medium humanoid (any race), any alignment",
@@ -34125,6 +35231,8 @@ const monstersLocal = [
     },
     { // Allip
         ID: 555,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Allip",
         Type: "Medium undead, neutral evil",
@@ -34184,6 +35292,8 @@ const monstersLocal = [
     },
     { // Astral Dreadnought
         ID: 556,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Astral Dreadnought",
         Type: "Gargantuan monstrosity (titan), unaligned",
@@ -34280,6 +35390,8 @@ const monstersLocal = [
     },
     { // Balhannoth
         ID: 557,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Balhannoth",
         Type: "Large aberration, chaotic evil",
@@ -34359,6 +35471,8 @@ const monstersLocal = [
     },
     { // Berbalang
         ID: 558,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Berbalang",
         Type: "Medium aberration, neutral evil",
@@ -34422,6 +35536,8 @@ const monstersLocal = [
     },
     { // Boneclaw
         ID: 559,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Boneclaw",
         Type: "Large undead, chaotic evil",
@@ -34490,6 +35606,8 @@ const monstersLocal = [
     },
     { // Cadaver Collector
         ID: 560,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Cadaver Collector",
         Type: "Large construct, lawful evil",
@@ -34553,6 +35671,8 @@ const monstersLocal = [
     },
     { // Choker
         ID: 561,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Choker",
         Type: "Small aberration, chaotic evil",
@@ -34612,6 +35732,8 @@ const monstersLocal = [
     },
     { // Bronze Scout
         ID: 562,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bronze Scout",
         Type: "Medium construct, unaligned",
@@ -34671,6 +35793,8 @@ const monstersLocal = [
     },
     { // Iron Cobra
         ID: 563,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Iron Cobra",
         Type: "Medium construct, unaligned",
@@ -34722,6 +35846,8 @@ const monstersLocal = [
     },
     { // Oaken Bolter
         ID: 564,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Oaken Bolter",
         Type: "Medium construct, unaligned",
@@ -34785,6 +35911,8 @@ const monstersLocal = [
     },
     { // Stone Defender
         ID: 565,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Stone Defender",
         Type: "Medium construct, unaligned",
@@ -34845,6 +35973,8 @@ const monstersLocal = [
     },
     { // Corpse Flower
         ID: 566,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Corpse Flower",
         Type: "Large plant, chaotic evil",
@@ -34912,6 +36042,8 @@ const monstersLocal = [
     },
     { // Deathlock
         ID: 567,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Deathlock",
         Type: "Medium undead, neutral evil",
@@ -34971,6 +36103,8 @@ const monstersLocal = [
     },
     { // Deathlock Mastermind
         ID: 568,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Deathlock Mastermind",
         Type: "Medium undead, neutral evil",
@@ -35034,6 +36168,8 @@ const monstersLocal = [
     },
     { // Deathlock Wight
         ID: 569,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Deathlock Wight",
         Type: "Medium undead, neutral evil",
@@ -35097,6 +36233,8 @@ const monstersLocal = [
     },
     { // Alkilith
         ID: 570,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Alkilith",
         Type: "Medium fiend (demon), chaotic evil",
@@ -35164,6 +36302,8 @@ const monstersLocal = [
     },
     { // Armanite
         ID: 571,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Armanite",
         Type: "Large fiend (demon), chaotic evil",
@@ -35235,6 +36375,8 @@ const monstersLocal = [
     },
     { // Bulezau
         ID: 572,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Bulezau",
         Type: "Medium fiend (demon), chaotic evil",
@@ -35294,6 +36436,8 @@ const monstersLocal = [
     },
     { // Dybbuk
         ID: 573,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dybbuk",
         Type: "Medium fiend (demon), chaotic evil",
@@ -35361,6 +36505,8 @@ const monstersLocal = [
     },
     { // Maurezhi
         ID: 574,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Maurezhi",
         Type: "Medium fiend (demon), chaotic evil",
@@ -35428,6 +36574,8 @@ const monstersLocal = [
     },
     { // Molydeus
         ID: 575,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Molydeus",
         Type: "Huge fiend (demon), chaotic evil",
@@ -35516,6 +36664,8 @@ const monstersLocal = [
     },
     { // Nabassu
         ID: 576,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Nabassu",
         Type: "Medium fiend (demon), chaotic evil",
@@ -35591,6 +36741,8 @@ const monstersLocal = [
     },
     { // Rutterkin
         ID: 577,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Rutterkin",
         Type: "Medium fiend (demon), chaotic evil",
@@ -35642,6 +36794,8 @@ const monstersLocal = [
     },
     { // Abyssal Wretch
         ID: 578,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Abyssal Wretch",
         Type: "Medium fiend (demon), chaotic evil",
@@ -35688,6 +36842,8 @@ const monstersLocal = [
     },
     { // Sibriex
         ID: 579,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sibriex",
         Type: "Huge fiend (demon), chaotic evil",
@@ -35780,6 +36936,8 @@ const monstersLocal = [
     },
     { // Wastrilith
         ID: 580,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Wastrilith",
         Type: "Large fiend (demon), chaotic evil",
@@ -35855,6 +37013,8 @@ const monstersLocal = [
     },
     { // Derro
         ID: 581,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Derro",
         Type: "Small humanoid (derro), chaotic evil",
@@ -35914,6 +37074,8 @@ const monstersLocal = [
     },
     { // Derro Savant
         ID: 582,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Derro Savant",
         Type: "Small humanoid (derro), chaotic evil",
@@ -35973,6 +37135,8 @@ const monstersLocal = [
     },
     { // Black Abishai
         ID: 583,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Black Abishai",
         Type: "Medium fiend (devil), lawful evil",
@@ -36048,6 +37212,8 @@ const monstersLocal = [
     },
     { // Blue Abishai
         ID: 584,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Blue Abishai",
         Type: "Medium fiend (devil), lawful evil",
@@ -36119,6 +37285,8 @@ const monstersLocal = [
     },
     { // Green Abishai
         ID: 585,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Green Abishai",
         Type: "Medium fiend (devil), lawful evil",
@@ -36190,6 +37358,8 @@ const monstersLocal = [
     },
     { // Red Abishai
         ID: 586,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Red Abishai",
         Type: "Medium fiend (devil), lawful evil",
@@ -36273,6 +37443,8 @@ const monstersLocal = [
     },
     { // White Abishai
         ID: 587,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "White Abishai",
         Type: "Medium fiend (devil), lawful evil",
@@ -36353,6 +37525,8 @@ const monstersLocal = [
     },
     { // Amnizu
         ID: 588,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Amnizu",
         Type: "Medium fiend (devil), lawful evil",
@@ -36433,6 +37607,8 @@ const monstersLocal = [
     },
     { // Hellfire Engine
         ID: 589,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hellfire Engine",
         Type: "Huge construct, lawful evil",
@@ -36504,6 +37680,8 @@ const monstersLocal = [
     },
     { // Merregon
         ID: 590,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Merregon",
         Type: "Medium fiend (devil), lawful evil",
@@ -36572,6 +37750,8 @@ const monstersLocal = [
     },
     { // Narzugon
         ID: 591,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Narzugon",
         Type: "Medium fiend (devil), lawful evil",
@@ -36647,6 +37827,8 @@ const monstersLocal = [
     },
     { // Nupperibo
         ID: 592,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Nupperibo",
         Type: "Medium fiend (devil), lawful evil",
@@ -36702,6 +37884,8 @@ const monstersLocal = [
     },
     { // Orthon
         ID: 593,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Orthon",
         Type: "Large fiend (devil), lawful evil",
@@ -36767,6 +37951,8 @@ const monstersLocal = [
     },
     { // Drow Arachnomancer
         ID: 594,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow Arachnomancer",
         Type: "Medium humanoid (elf), chaotic evil",
@@ -36855,6 +38041,8 @@ const monstersLocal = [
     },
     { // Drow Favored Consort
         ID: 595,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow Favored Consort",
         Type: "Medium humanoid (elf), neutral evil",
@@ -36930,6 +38118,8 @@ const monstersLocal = [
     },
     { // Drow House Captain
         ID: 596,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow House Captain",
         Type: "Medium humanoid (elf), neutral evil",
@@ -37010,6 +38200,8 @@ const monstersLocal = [
     },
     { // Drow Inquisitor
         ID: 597,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow Inquisitor",
         Type: "Medium humanoid (elf), neutral evil",
@@ -37085,6 +38277,8 @@ const monstersLocal = [
     },
     { // Drow Matron Mother
         ID: 598,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow Matron Mother",
         Type: "Medium humanoid (elf), neutral evil",
@@ -37181,6 +38375,8 @@ const monstersLocal = [
     },
     { // Drow Shadowblade
         ID: 599,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Drow Shadowblade",
         Type: "Medium humanoid (elf), neutral evil",
@@ -37252,6 +38448,8 @@ const monstersLocal = [
     },
     { // Duergar Despot
         ID: 600,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar Despot",
         Type: "Medium humanoid (dwarf), lawful evil",
@@ -37327,6 +38525,8 @@ const monstersLocal = [
     },
     { // Duergar Hammerer
         ID: 601,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar Hammerer",
         Type: "Medium construct, lawful evil",
@@ -37390,6 +38590,8 @@ const monstersLocal = [
     },
     { // Duergar Kavalrachni
         ID: 602,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar Kavalrachni",
         Type: "Medium humanoid (dwarf), lawful evil",
@@ -37461,6 +38663,8 @@ const monstersLocal = [
     },
     { // Duergar Mind Master
         ID: 603,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar Mind Master",
         Type: "Medium humanoid (dwarf), lawful evil",
@@ -37532,6 +38736,8 @@ const monstersLocal = [
     },
     { // Duergar Screamer
         ID: 604,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar Screamer",
         Type: "Medium construct, lawful evil",
@@ -37591,6 +38797,8 @@ const monstersLocal = [
     },
     { // Duergar Soulblade
         ID: 605,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar Soulblade",
         Type: "Medium humanoid (dwarf), lawful evil",
@@ -37662,6 +38870,8 @@ const monstersLocal = [
     },
     { // Duergar Stone Guard
         ID: 606,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar Stone Guard",
         Type: "Medium humanoid (dwarf), lawful evil",
@@ -37733,6 +38943,8 @@ const monstersLocal = [
     },
     { // Duergar Warlord
         ID: 607,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar Warlord",
         Type: "Medium humanoid (dwarf), lawful evil",
@@ -37813,6 +39025,8 @@ const monstersLocal = [
     },
     { // Duergar Xarrorn
         ID: 608,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Duergar Xarrorn",
         Type: "Medium humanoid (dwarf), lawful evil",
@@ -37880,6 +39094,8 @@ const monstersLocal = [
     },
     { // Eidolon
         ID: 609,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Eidolon",
         Type: "Medium undead, any alignment",
@@ -37939,6 +39155,8 @@ const monstersLocal = [
     },
     { // Sacred Statue
         ID: 610,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sacred Statue",
         Type: "Medium construct, unaligned",
@@ -38006,6 +39224,8 @@ const monstersLocal = [
     },
     { // Autumn Eladrin
         ID: 611,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Autumn Eladrin",
         Type: "Medium fey (elf), chaotic neutral",
@@ -38078,6 +39298,8 @@ const monstersLocal = [
     },
     { // Spring Eladrin
         ID: 612,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Spring Eladrin",
         Type: "Medium fey (elf), chaotic neutral",
@@ -38149,6 +39371,8 @@ const monstersLocal = [
     },
     { // Summer Eladrin
         ID: 613,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Summer Eladrin",
         Type: "Medium fey (elf), chaotic neutral",
@@ -38221,6 +39445,8 @@ const monstersLocal = [
     },
     { // Winter Eladrin
         ID: 614,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Winter Eladrin",
         Type: "Medium fey (elf), chaotic neutral",
@@ -38293,6 +39519,8 @@ const monstersLocal = [
     },
     { // Leviathan
         ID: 615,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Leviathan",
         Type: "Gargantuan elemental, neutral",
@@ -38377,6 +39605,8 @@ const monstersLocal = [
     },
     { // Phoenix
         ID: 616,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Phoenix",
         Type: "Gargantuan elemental, neutral",
@@ -38469,6 +39699,8 @@ const monstersLocal = [
     },
     { // Elder Tempest
         ID: 617,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Elder Tempest",
         Type: "Gargantuan elemental, neutral",
@@ -38557,6 +39789,8 @@ const monstersLocal = [
     },
     { // Zaratan
         ID: 618,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Zaratan",
         Type: "Gargantuan elemental, neutral",
@@ -38662,6 +39896,8 @@ const monstersLocal = [
     },
     { // Air Elemental Myrmidon
         ID: 619,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Air Elemental Myrmidon",
         Type: "Medium elemental, neutral",
@@ -38721,6 +39957,8 @@ const monstersLocal = [
     },
     { // Earth Elemental Myrmidon
         ID: 620,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Earth Elemental Myrmidon",
         Type: "Medium elemental, neutral",
@@ -38780,6 +40018,8 @@ const monstersLocal = [
     },
     { // Fire Elemental Myrmidon
         ID: 621,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Fire Elemental Myrmidon",
         Type: "Medium elemental, neutral",
@@ -38847,6 +40087,8 @@ const monstersLocal = [
     },
     { // Water Elemental Myrmidon
         ID: 622,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Water Elemental Myrmidon",
         Type: "Medium elemental, neutral",
@@ -38906,6 +40148,8 @@ const monstersLocal = [
     },
     { // Giff
         ID: 623,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Giff",
         Type: "Medium humanoid, lawful neutral",
@@ -38977,6 +40221,8 @@ const monstersLocal = [
     },
     { // Githyanki Gish
         ID: 624,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Githyanki Gish",
         Type: "Medium humanoid (gith), lawful evil",
@@ -39040,6 +40286,8 @@ const monstersLocal = [
     },
     { // Githyanki Kith'rak
         ID: 625,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Githyanki Kith'rak",
         Type: "Medium humanoid (gith), lawful evil",
@@ -39104,6 +40352,8 @@ const monstersLocal = [
     },
     { // Githyanki Supreme Commander
         ID: 626,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Githyanki Supreme Commander",
         Type: "Medium humanoid (gith), lawful evil",
@@ -39177,6 +40427,8 @@ const monstersLocal = [
     },
     { // Githzerai Anarch
         ID: 627,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Githzerai Anarch",
         Type: "Medium humanoid (gith), lawful neutral",
@@ -39256,6 +40508,8 @@ const monstersLocal = [
     },
     { // Githzerai Enlightened
         ID: 628,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Githzerai Enlightened",
         Type: "Medium humanoid (gith), lawful neutral",
@@ -39319,6 +40573,8 @@ const monstersLocal = [
     },
     { // Gray Render
         ID: 629,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gray Render",
         Type: "Large monstrosity, chaotic neutral",
@@ -39378,6 +40634,8 @@ const monstersLocal = [
     },
     { // Howler
         ID: 630,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Howler",
         Type: "Large fiend, chaotic evil",
@@ -39437,6 +40695,8 @@ const monstersLocal = [
     },
     { // Young Kruthik
         ID: 631,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Young Kruthik",
         Type: "Small monstrosity, unaligned",
@@ -39496,6 +40756,8 @@ const monstersLocal = [
     },
     { // Adult Kruthik
         ID: 632,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Kruthik",
         Type: "Medium monstrosity, unaligned",
@@ -39563,6 +40825,8 @@ const monstersLocal = [
     },
     { // Kruthik Hive Lord
         ID: 633,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Kruthik Hive Lord",
         Type: "Large monstrosity, unaligned",
@@ -39634,6 +40898,8 @@ const monstersLocal = [
     },
     { // Marut
         ID: 634,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Marut",
         Type: "Large construct (inevitable), lawful neutral",
@@ -39709,6 +40975,8 @@ const monstersLocal = [
     },
     { // Meazel
         ID: 635,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Meazel",
         Type: "Medium humanoid (meazel), neutral evil",
@@ -39768,6 +41036,8 @@ const monstersLocal = [
     },
     { // Nagpa
         ID: 636,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Nagpa",
         Type: "Medium humanoid (nagpa), neutral evil",
@@ -39827,6 +41097,8 @@ const monstersLocal = [
     },
     { // Nightwalker
         ID: 637,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Nightwalker",
         Type: "Huge undead, chaotic evil",
@@ -39894,6 +41166,8 @@ const monstersLocal = [
     },
     { // Oblex Spawn
         ID: 638,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Oblex Spawn",
         Type: "Tiny ooze, lawful evil",
@@ -39954,6 +41228,8 @@ const monstersLocal = [
     },
     { // Adult Oblex
         ID: 639,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Adult Oblex",
         Type: "Medium ooze, lawful evil",
@@ -40025,6 +41301,8 @@ const monstersLocal = [
     },
     { // Elder Oblex
         ID: 640,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Elder Oblex",
         Type: "Huge ooze, lawful evil",
@@ -40097,6 +41375,8 @@ const monstersLocal = [
     },
     { // Ogre Battering Ram
         ID: 641,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ogre Battering Ram",
         Type: "Large giant, chaotic evil",
@@ -40152,6 +41432,8 @@ const monstersLocal = [
     },
     { // Ogre Bolt Launcher
         ID: 642,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ogre Bolt Launcher",
         Type: "Large giant, chaotic evil",
@@ -40202,6 +41484,8 @@ const monstersLocal = [
     },
     { // Ogre Chain Brute
         ID: 643,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ogre Chain Brute",
         Type: "Large giant, chaotic evil",
@@ -40256,6 +41540,8 @@ const monstersLocal = [
     },
     { // Ogre Howdah
         ID: 644,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ogre Howdah",
         Type: "Large giant, chaotic evil",
@@ -40307,6 +41593,8 @@ const monstersLocal = [
     },
     { // Retriever
         ID: 645,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Retriever",
         Type: "Large construct, lawful evil",
@@ -40374,6 +41662,8 @@ const monstersLocal = [
     },
     { // Frost Salamander
         ID: 646,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Frost Salamander",
         Type: "Huge elemental, unaligned",
@@ -40437,6 +41727,8 @@ const monstersLocal = [
     },
     { // Gloom Weaver
         ID: 647,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Gloom Weaver",
         Type: "Medium humanoid (elf), neutral",
@@ -40509,6 +41801,8 @@ const monstersLocal = [
     },
     { // Shadow Dancer
         ID: 648,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Shadow Dancer",
         Type: "Medium humanoid (elf), neutral",
@@ -40569,6 +41863,8 @@ const monstersLocal = [
     },
     { // Soul Monger
         ID: 649,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Soul Monger",
         Type: "Medium humanoid (elf), neutral",
@@ -40644,6 +41940,8 @@ const monstersLocal = [
     },
     { // Skulk
         ID: 650,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Skulk",
         Type: "Medium humanoid, chaotic neutral",
@@ -40699,6 +41997,8 @@ const monstersLocal = [
     },
     { // Skull Lord
         ID: 651,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Skull Lord",
         Type: "Medium undead, lawful evil",
@@ -40783,6 +42083,8 @@ const monstersLocal = [
     },
     { // The Angry
         ID: 652,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "The Angry",
         Type: "Medium monstrosity, neutral evil",
@@ -40842,6 +42144,8 @@ const monstersLocal = [
     },
     { // The Hungry
         ID: 653,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "The Hungry",
         Type: "Medium monstrosity, neutral evil",
@@ -40901,6 +42205,8 @@ const monstersLocal = [
     },
     { // The Lonely
         ID: 654,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "The Lonely",
         Type: "Medium monstrosity, neutral evil",
@@ -40964,6 +42270,8 @@ const monstersLocal = [
     },
     { // The Lost
         ID: 655,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "The Lost",
         Type: "Medium monstrosity, neutral evil",
@@ -41023,6 +42331,8 @@ const monstersLocal = [
     },
     { // The Wretched
         ID: 656,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "The Wretched",
         Type: "Small monstrosity, neutral evil",
@@ -41074,6 +42384,8 @@ const monstersLocal = [
     },
     { // Star Spawn Grue
         ID: 657,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Star Spawn Grue",
         Type: "Small aberration, neutral evil",
@@ -41125,6 +42437,8 @@ const monstersLocal = [
     },
     { // Star Spawn Hulk
         ID: 658,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Star Spawn Hulk",
         Type: "Large aberration, chaotic evil",
@@ -41184,6 +42498,8 @@ const monstersLocal = [
     },
     { // Star Spawn Larva Mage
         ID: 659,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Star Spawn Larva Mage",
         Type: "Medium aberration, chaotic evil",
@@ -41261,6 +42577,8 @@ const monstersLocal = [
     },
     { // Star Spawn Mangler
         ID: 660,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Star Spawn Mangler",
         Type: "Medium aberration, chaotic evil",
@@ -41324,6 +42642,8 @@ const monstersLocal = [
     },
     { // Star Spawn Seer
         ID: 661,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Star Spawn Seer",
         Type: "Medium aberration, neutral evil",
@@ -41392,6 +42712,8 @@ const monstersLocal = [
     },
     { // Female Steeder
         ID: 662,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Female Steeder",
         Type: "Large monstrosity, unaligned",
@@ -41451,6 +42773,8 @@ const monstersLocal = [
     },
     { // Male Steeder
         ID: 663,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Male Steeder",
         Type: "Medium monstrosity, unaligned",
@@ -41510,6 +42834,8 @@ const monstersLocal = [
     },
     { // Steel Predator
         ID: 664,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Steel Predator",
         Type: "Large construct, lawful evil",
@@ -41581,6 +42907,8 @@ const monstersLocal = [
     },
     { // Stone Cursed
         ID: 665,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Stone Cursed",
         Type: "Medium construct, lawful evil",
@@ -41636,6 +42964,8 @@ const monstersLocal = [
     },
     { // Sword Wraith Commander
         ID: 666,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sword Wraith Commander",
         Type: "Medium undead, lawful evil",
@@ -41703,6 +43033,8 @@ const monstersLocal = [
     },
     { // Sword Wraith Warrior
         ID: 667,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Sword Wraith Warrior",
         Type: "Medium undead, lawful evil",
@@ -41758,6 +43090,8 @@ const monstersLocal = [
     },
     { // Tortle
         ID: 668,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tortle",
         Type: "Medium humanoid (tortle), lawful good",
@@ -41821,6 +43155,8 @@ const monstersLocal = [
     },
     { // Tortle Druid
         ID: 669,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tortle Druid",
         Type: "Medium humanoid (tortle), lawful neutral",
@@ -41884,6 +43220,8 @@ const monstersLocal = [
     },
     { // Dire Troll
         ID: 670,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dire Troll",
         Type: "Huge giant, chaotic evil",
@@ -41951,6 +43289,8 @@ const monstersLocal = [
     },
     { // Rot Troll
         ID: 671,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Rot Troll",
         Type: "Large giant, chaotic evil",
@@ -42010,6 +43350,8 @@ const monstersLocal = [
     },
     { // Spirit Troll
         ID: 672,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Spirit Troll",
         Type: "Large giant, chaotic evil",
@@ -42073,6 +43415,8 @@ const monstersLocal = [
     },
     { // Venom Troll
         ID: 673,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Venom Troll",
         Type: "Large giant, chaotic evil",
@@ -42144,6 +43488,8 @@ const monstersLocal = [
     },
     { // Vampiric Mist
         ID: 674,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Vampiric Mist",
         Type: "Medium undead, chaotic evil",
@@ -42211,6 +43557,8 @@ const monstersLocal = [
     },
     { // Canoloth
         ID: 675,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Canoloth",
         Type: "Medium fiend (yugoloth), neutral evil",
@@ -42286,6 +43634,8 @@ const monstersLocal = [
     },
     { // Dhergoloth
         ID: 676,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Dhergoloth",
         Type: "Medium fiend (yugoloth), neutral evil",
@@ -42357,6 +43707,8 @@ const monstersLocal = [
     },
     { // Hydroloth
         ID: 677,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hydroloth",
         Type: "Medium fiend (yugoloth), neutral evil",
@@ -42444,6 +43796,8 @@ const monstersLocal = [
     },
     { // Merrenoloth
         ID: 678,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Merrenoloth",
         Type: "Medium fiend (yugoloth), neutral evil",
@@ -42524,6 +43878,8 @@ const monstersLocal = [
     },
     { // Oinoloth
         ID: 679,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Oinoloth",
         Type: "Medium fiend (yugoloth), neutral evil",
@@ -42604,6 +43960,8 @@ const monstersLocal = [
     },
     { // Yagnoloth
         ID: 680,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Yagnoloth",
         Type: "Large fiend (yugoloth), neutral evil",
@@ -42683,6 +44041,8 @@ const monstersLocal = [
     },
     { // Black Knight
         ID: 681,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Black Knight",
         Type: "Medium humanoid, lawful neutral",
@@ -42754,6 +44114,8 @@ const monstersLocal = [
     },
     { // Darkwraith
         ID: 682,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Darkwraith",
         Type: "Medium aberration, lawful evil",
@@ -42817,6 +44179,8 @@ const monstersLocal = [
     },
     { // Mimic Chest
         ID: 683,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mimic Chest",
         Type: "Medium monstrosity (shapechanger), neutral",
@@ -42883,6 +44247,8 @@ const monstersLocal = [
     },
     { // Mimic Chest (Heroic)
         ID: 684,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mimic Chest (Heroic)",
         Type: "Large monstrosity (shapechanger), neutral",
@@ -42965,6 +44331,8 @@ const monstersLocal = [
     },
     { // Mimic Chest (Legendary)
         ID: 685,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mimic Chest (Legendary)",
         Type: "Huge monstrosity (shapechanger), neutral",
@@ -43047,6 +44415,8 @@ const monstersLocal = [
     },
     { // Mimic Chest (Godly)
         ID: 686,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Mimic Chest (Godly)",
         Type: "Gargantuan monstrosity (shapechanger), neutral",
@@ -43129,6 +44499,8 @@ const monstersLocal = [
     },
     { // Silver Knight
         ID: 687,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Silver Knight",
         Type: "Medium humanoid (human), lawful neutral",
@@ -43191,6 +44563,8 @@ const monstersLocal = [
     },
     { // Tridenthian Archmage
         ID: 688,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tridenthian Archmage",
         Type: "Humanoid",
@@ -43249,6 +44623,8 @@ const monstersLocal = [
     },
     { // Tridenthian Guard
         ID: 689,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tridenthian Guard",
         Type: "Humanoid",
@@ -43303,6 +44679,8 @@ const monstersLocal = [
     },
     { // Tridenthian Knight
         ID: 690,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tridenthian Knight",
         Type: "Humanoid",
@@ -43370,6 +44748,8 @@ const monstersLocal = [
     },
     { // Tridenthian Mage
         ID: 691,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tridenthian Mage",
         Type: "Humanoid",
@@ -43424,6 +44804,8 @@ const monstersLocal = [
     },
     { // Tridenthian Priest
         ID: 692,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tridenthian Priest",
         Type: "Humanoid",
@@ -43478,6 +44860,8 @@ const monstersLocal = [
     },
     { // Tridenthian Scout
         ID: 693,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Tridenthian Scout",
         Type: "Humanoid",
@@ -43536,6 +44920,8 @@ const monstersLocal = [
     },
     { // Alkor Legionnaire
         ID: 694,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Alkor Legionnaire",
         Type: "Medium humanoid (Dragonborn), neutral",
@@ -43598,6 +44984,8 @@ const monstersLocal = [
     },
     { // Alkor Shieldman
         ID: 695,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Alkor Shieldman",
         Type: "Medium humanoid (Dragonborn), neutral",
@@ -43669,6 +45057,8 @@ const monstersLocal = [
     },
     { // Alkor Captain
         ID: 696,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Alkor Captain",
         Type: "Medium humanoid (Dragonborn), neutral",
@@ -43731,6 +45121,8 @@ const monstersLocal = [
     },
     { // Alkor Commander
         ID: 697,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Alkor Commander",
         Type: "Medium humanoid (Dragonborn), neutral",
@@ -43798,6 +45190,8 @@ const monstersLocal = [
     },
     { // Prye-Heart Scarecrow
         ID: 698,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Prye-Heart Scarecrow",
         Type: "Medium construct, chaotic evil",
@@ -43864,6 +45258,8 @@ const monstersLocal = [
     },
     { // Pumpkin Bomb
         ID: 699,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pumpkin Bomb",
         Type: "Small plant, chaotic evil",
@@ -43918,6 +45314,8 @@ const monstersLocal = [
     },
     { // Pumpkin Servant
         ID: 700,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pumpkin Servant",
         Type: "Medium plant, chaotic evil",
@@ -43972,6 +45370,8 @@ const monstersLocal = [
     },
     { // Pumpkin Soldier
         ID: 701,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pumpkin Soldier",
         Type: "Medium undead, chaotic evil",
@@ -44021,6 +45421,8 @@ const monstersLocal = [
     },
     { // Hollyphant
         ID: 702,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Hollyphant",
         Type: "Small celestial(shapeshifter), lawful good",
@@ -44099,7 +45501,7 @@ const monstersLocal = [
     },
     { // Ulgiroth's Devourer
         ID: 703,
-        ParentID: 111111, /// Ulgiroth
+        ParentID: null,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulgiroth's Devourer",
@@ -44163,7 +45565,7 @@ const monstersLocal = [
     },
     { // Ulgiroth's Eye
         ID: 704,
-        ParentID: 111111, /// Ulgiroth
+        ParentID: null,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulgiroth's Eye",
@@ -44210,7 +45612,7 @@ const monstersLocal = [
     },
     { // Ulgiroth's Silencer
         ID: 705,
-        ParentID: 111111, /// Ulgiroth
+        ParentID: null,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulgiroth's Silencer",
@@ -44663,6 +46065,8 @@ const monstersLocal = [
 const uniqueLocal = [
     { // Omega
         ID: 100001,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Omega",
         Type: "gargantuan construct, neutral",
@@ -44815,6 +46219,8 @@ const uniqueLocal = [
     },
     { // Baphomet
         ID: 100002,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Baphomet",
         Type: "Huge fiend (demon), chaotic evil",
@@ -44924,6 +46330,8 @@ const uniqueLocal = [
     },
     { // Demogorgon
         ID: 100003,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Demogorgon",
         Type: "Huge fiend (demon), chaotic evil",
@@ -45016,6 +46424,8 @@ const uniqueLocal = [
     },
     { // Fraz-Urb'luu
         ID: 100004,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Fraz-Urb'luu",
         Type: "Large fiend (demon), chaotic evil",
@@ -45109,6 +46519,8 @@ const uniqueLocal = [
     },
     { // Graz'zt
         ID: 100005,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Graz'zt",
         Type: "Large fiend (demon, shapechanger), chaotic evil",
@@ -45209,6 +46621,8 @@ const uniqueLocal = [
     },
     { // Juiblex
         ID: 100006,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Juiblex",
         Type: "Huge fiend (demon), chaotic evil",
@@ -45327,6 +46741,8 @@ const uniqueLocal = [
     },
     { // Orcus
         ID: 100007,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Orcus",
         Type: "Huge fiend (demon), chaotic evil",
@@ -45428,6 +46844,8 @@ const uniqueLocal = [
     },
     { // Yeenoghu
         ID: 100008,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Yeenoghu",
         Type: "Huge fiend (demon), chaotic evil",
@@ -45525,6 +46943,8 @@ const uniqueLocal = [
     },
     { // Zuggtmoy
         ID: 100009,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Zuggtmoy",
         Type: "Large fiend (demon), chaotic evil",

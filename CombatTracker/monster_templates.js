@@ -117,6 +117,8 @@ const monstersLocal_Template = [
 const uniqueLocal_Template = [
     { // templateUnique
         ID: 100000,
+        ParentID: null, // ID of the boss/leader monster in the encounter or the parent entity of this monster
+        ChildrenIDs: [], // ID's of minions, extensions of the monster, or the next phase of a boss fight
         ProfileType: "Unique",
         Name: "template name",
         Type: "Size type, alignment",
@@ -265,6 +267,8 @@ const uniqueLocal_Template = [
 const playersLocal_Template = [
     { // templatePlayer
         ID: 1000000,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Player",
         Name: "CharacterName (RealLifeName)",
         Type: "Medium humanoid(), alignment",
@@ -340,6 +344,10 @@ const playersLocal_Template = [
         LegendaryActions: [],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Description here."
+        Description: "Description here.",
+        Environments: ["Any"], 
+        PlaneOfExistence: ["Material Plane"],         
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
     },
 ];
