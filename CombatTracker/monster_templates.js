@@ -8,6 +8,8 @@
 const monstersLocal_Template = [
     { // templateMonster
         ID: 0,
+        ParentID: null, // ID of the boss/leader monster in the encounter or the parent entity of this monster
+        ChildrenIDs: [], // ID's of minions, extensions of the monster, or the next phase of a boss fight
         ProfileType: "Monster",
         Name: "template",
         Type: "Size type, alignment",
@@ -108,7 +110,7 @@ const monstersLocal_Template = [
         Environments: ["Any"], // Any=Default, Forest, Jungle, Desert, Grassland, Plains, Tundra, Arctic, Mountain, Hills, Swamp, Marsh, Coastal, Ocean, Underwater, River, Lake, Cave, Underground, Volcanic, Ruins, Dungeon, Urban, Rural, Other
         PlaneOfExistence: ["Material Plane"], // Material Plane=Default, Feywild, Shadowfell, Astral Plane, Ethereal Plane, Beastlands, Arborea, Ysgard, Limbo, Pandemonium, Abyss, Carceri, Hades, Gehenna, Nine Hells, Acheron, Mechanus, Arcadia, Mount Celestia, Bytopia, Elysium, Outlands, Elemental Plane of Air, Elemental Plane of Earth, Elemental Plane of Fire, Elemental Plane of Water, Plane of Positive Energy, Plane of Negative Energy, Far Realm, Sigil, Other, Any
         GeographicalLocations: [], // Default=No Specific Location, Country, Region, Province, Territory, City, Town, Village, Settlement, Dungeon, Landmark, Building, etc.
-        Campaigns_Worlds: ["All"] // All=Default, Denethor (World), Soul of Denethor, Untitled NPC World, Halls of Creation (only), Chaos Hunters, Nor'Gamak's Campaign, The Black Seed, The Crimson War, Timeline Krosis War, Trials of Valor, etc.
+        Campaigns_Worlds: ["All"] // All=Default, Denethor (World), Soul of Denethor, Untitled NPC World, Halls of Creation (only), Chaos Hunters, Nor'Gamak's Campaign, The Black Seed, The Crimson War, Timeline Krosis War, Trials of Valor, Special Events, etc.
     },
 ];
 

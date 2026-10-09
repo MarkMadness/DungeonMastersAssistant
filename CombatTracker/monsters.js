@@ -42813,7 +42813,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["Soul of Denethor"]
     },
     { // Mimic Chest
         ID: 683,
@@ -42879,7 +42879,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["Soul of Denethor"]
     },
     { // Mimic Chest (Heroic)
         ID: 684,
@@ -42961,7 +42961,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["Soul of Denethor"]
     },
     { // Mimic Chest (Legendary)
         ID: 685,
@@ -43043,7 +43043,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["Soul of Denethor"]
     },
     { // Mimic Chest (Godly)
         ID: 686,
@@ -43125,7 +43125,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["Soul of Denethor"]
     },
     { // Silver Knight
         ID: 687,
@@ -43186,27 +43186,1393 @@ const monstersLocal = [
         Description: "Weapon is magically transforming for the silver knight's needs. Cannot be wielded by others.",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Tridenthia", "Aesis"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Tridenthian Archmage
+        ID: 688,
+        ProfileType: "Monster",
+        Name: "Tridenthian Archmage",
+        Type: "Humanoid",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [12, "15 with mage armor"],
+        HitPoints: 110,
+        HitPointsRoll: "20d8 + 20",
+        Speed: "30 ft.",
+        Strength: 11,
+        Dexterity: 16,
+        Constitution: 15,
+        Intelligence: 20,
+        Wisdom: 17,
+        Charisma: 18,
+        SavingThrows: "Int +10, Wis +8",
+        Skills: "Arcana +10, History +10, Perception +8",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Damage from spells", "Nonmagical bludgeoning, piercing, and slashing (from stoneskin)"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 14",
+        Languages: "Common, Elvish, plus four other languages",
+        Challenge: [13, 10000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magic Resistance",
+                Desc: "The archmage has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). The archmage can cast disguise self and invisibility at will. It has the following wizard spells prepared:<br><br>Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp<br>1st level (4 slots): detect magic, identify, mage armor*, magic missile<br>2nd level (3 slots): detect thoughts, mirror image, misty step<br>3rd level (3 slots): counterspell, fly, lightning bolt<br>4th level (3 slots): banishment, fire shield, stoneskin*<br>5th level (3 slots): cone of cold, scrying, wall of force<br>6th level (2 slots): globe of invulnerability, sunbeam<br>7th level (2 slots): delayed blast fireball, teleport<br>8th level (1 slot): mind blank*<br>9th level (1 slot): time stop<br><br>*The archmage casts these spells on itself before combat."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands."
+            },
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Tridenthian archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption. <br>An archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers. ",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Tridenthia"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Tridenthian Guard
+        ID: 689,
+        ProfileType: "Monster",
+        Name: "Tridenthian Guard",
+        Type: "Humanoid",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [16, "chain shirt, shield"],
+        HitPoints: 20,
+        HitPointsRoll: "4d8 + 2",
+        Speed: "30 ft.",
+        Strength: 15,
+        Dexterity: 13,
+        Constitution: 12,
+        Intelligence: 10,
+        Wisdom: 11,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: "Perception +2",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 12",
+        Languages: "Common",
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Allied Coordination",
+                Desc: "Training well invested by city’s defenders; when another Tridenthian Guard is attacking the same target as the current guard, both have advantage on their shortsword attack rolls."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Shortsword",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+            },
+            {
+                Title: "Light Crossbow",
+                Desc: "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Tridenthia"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Tridenthian Knight
+        ID: 690,
+        ProfileType: "Monster",
+        Name: "Tridenthian Knight",
+        Type: "Humanoid",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [18, "plate"],
+        HitPoints: 65,
+        HitPointsRoll: "10d8 + 20",
+        Speed: "30 ft.",
+        Strength: 18,
+        Dexterity: 13,
+        Constitution: 16,
+        Intelligence: 11,
+        Wisdom: 11,
+        Charisma: 16,
+        SavingThrows: "Str +7, Con +6, Wis +3",
+        Skills: "Athletics +7, Perception +3",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Radiant"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 13",
+        Languages: "Common",
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Brave",
+                Desc: "Advantage on saving throws against frightened."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The knight makes three attacks."
+            },
+            {
+                Title: "Greatsword",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 5) slashing damage."
+            },
+            {
+                Title: "Heavy Crossbow",
+                Desc: "Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 5 (1d10 + 1) piercing damage."
+            },
+            {
+                Title: "Leadership (Recharges after Short or Long Rest)",
+                Desc: "For 1 minute, the knight can utter a special command or warning whenever a non-hostile creature that it can see within 30 ft. makes an attack roll or a saving throw. The creature can add a d6 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Parry",
+                Desc: "The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Tridenthia"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Tridenthian Mage
+        ID: 691,
+        ProfileType: "Monster",
+        Name: "Tridenthian Mage",
+        Type: "Humanoid",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [12, "15 with mage armor"],
+        HitPoints: 57,
+        HitPointsRoll: "11d8 + 8",
+        Speed: "30 ft.",
+        Strength: 9,
+        Dexterity: 14,
+        Constitution: 15,
+        Intelligence: 19,
+        Wisdom: 14,
+        Charisma: 13,
+        SavingThrows: "Int +8, Wis +6",
+        Skills: "Arcana +8, History +8, Perception +6",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Radiant"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 14",
+        Languages: "Common, Elvish, plus two other languages",
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Spellcasting",
+                Desc: "The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It has the following wizard spells prepared:<br><br>Cantrips (at will): firebolt, light, mage hand, message, prestidigitation<br>1st level (4 slots): burning hands, detect magic, fog cloud, mage armor, magic missile, shield, thunderwave<br>2nd level (3 slots): misty step, scorching ray, see invisibility, suggestion, web<br>3rd level (3 slots): counterspell, fireball, fly, lightning bolt<br>4th level (3 slots): greater invisibility, ice storm<br>5th level (1 slot): cone of cold"
+            }
+        ],
+        Actions: [
+            {
+                Title: "Quarterstaff",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands."
+            },
+            {
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Tridenthia"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Tridenthian Priest
+        ID: 692,
+        ProfileType: "Monster",
+        Name: "Tridenthian Priest",
+        Type: "Humanoid",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [13, "chain shirt"],
+        HitPoints: 40,
+        HitPointsRoll: "7d8 + 9",
+        Speed: "25 ft.",
+        Strength: 11,
+        Dexterity: 12,
+        Constitution: 14,
+        Intelligence: 15,
+        Wisdom: 18,
+        Charisma: 15,
+        SavingThrows: "Con +6, Wis +8",
+        Skills: "Arcana +8, Insight +8, Medicine +8, Persuasion +6, Religion +6",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Radiant"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 14",
+        Languages: "Common plus three other languages",
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Divine Eminence",
+                Desc: "As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This extra damage increases by 1d6 for each spell slot above 1st."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). The priest has the following cleric spells prepared:<br><br>Cantrips (at will): light, sacred flame, thaumaturgy<br>1st level (4 slots): cure wounds, guiding bolt, sanctuary<br>2nd level (3 slots): lesser restoration, spiritual weapon<br>3rd level (2 slots): dispel magic, spirit guardians<br>4th level (1 slot): guardian of faith"
+            }
+        ],
+        Actions: [
+            {
+                Title: "Mace",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites.<br><br>A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Tridenthia"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Tridenthian Scout
+        ID: 693,
+        ProfileType: "Monster",
+        Name: "Tridenthian Scout",
+        Type: "Humanoid",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [13, "leather armor"],
+        HitPoints: 27,
+        HitPointsRoll: "5d8 + 5",
+        Speed: "30 ft., 60 ft. when mounted",
+        Strength: 13,
+        Dexterity: 17,
+        Constitution: 14,
+        Intelligence: 11,
+        Wisdom: 13,
+        Charisma: 11,
+        SavingThrows: [],
+        Skills: "Animal Handling +3, Nature +4, Perception +3, Stealth +6, Survival +5",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 15",
+        Languages: "Common",
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Keen Hearing and Sight",
+                Desc: "The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The scout makes two melee attacks or three ranged attacks."
+            },
+            {
+                Title: "Shortsword",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+            },
+            {
+                Title: "Longbow",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Tridenthia"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Alkor Legionnaire
+        ID: 694,
+        ProfileType: "Monster",
+        Name: "Alkor Legionnaire",
+        Type: "Medium humanoid (Dragonborn), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [18, "plate"],
+        HitPoints: 44,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 18,
+        Dexterity: 13,
+        Constitution: 14,
+        Intelligence: 11,
+        Wisdom: 11,
+        Charisma: 16,
+        SavingThrows: "Str +6, Con +4, Cha +6",
+        Skills: "Athletics +6, Intimidation +6, Perception +2",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 12",
+        Languages: "Common, Draconic",
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Brave",
+                Desc: "The Alkor Legionnaire has advantage on saving throws against being frightened."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Alkor Legionnaire makes two attacks."
+            },
+            {
+                Title: "Halberd",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) slashing damage."
+            },
+            {
+                Title: "Crossbow, (Heavy)",
+                Desc: "Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 6 (1d10 + 1) piercing damage."
+            },
+            {
+                Title: "Breath Weapon (Recharge 5-6)",
+                Desc: "The Alkor Legionnaire exhales a breath of destructive energy determined by the DM referencing the chart below. All creatures in a 15 ft. cone in front of the Alkor Legionnaire must make a DC 14 saving throw determined by the chart below. On a failed save, the creature takes 10 (2d6 + 3) damage and half damage on a successful save.<br><br>Acid: Dex. Saving throw<br>Cold: Con. Saving throw<br>Fire: Dex. Saving throw<br>Lightning: Dex. Saving throw<br>Poison: Con. Saving throw"
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Alkor"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Alkor Shieldman
+        ID: 695,
+        ProfileType: "Monster",
+        Name: "Alkor Shieldman",
+        Type: "Medium humanoid (Dragonborn), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [20, "plate, shield"],
+        HitPoints: 40,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 18,
+        Dexterity: 13,
+        Constitution: 14,
+        Intelligence: 11,
+        Wisdom: 11,
+        Charisma: 16,
+        SavingThrows: "Str +6, Con +4, Cha +6",
+        Skills: "Athletics +6, Intimidation +6, Perception +2",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 12",
+        Languages: "Common, Draconic",
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Brave",
+                Desc: "The Alkor Shieldman has advantage on saving throws against being frightened."
+            },
+            {
+                Title: "Shield Wall",
+                Desc: "If two or more Alkor Shieldman are next to each other in a line, they can form a shield wall that gives Half Cover to themselves and any creature standing behind them. The shield wall effect ends if an Alkor Shieldman leaves the formation at will or by force."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Alkor Shieldman makes two spear attacks or one spear attack and either a shield slam or a breath weapon attack."
+            },
+            {
+                Title: "Spear",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+            },
+            {
+                Title: "Shield Slam",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. On a hit, the creature must make a Strength saving throw (DC 16) or be knocked prone."
+            },
+            {
+                Title: "Breath Weapon (Recharge 5-6)",
+                Desc: "The Alkor Shieldman exhales a breath of destructive energy determined by the DM referencing the chart below. All creatures in a 15 ft. cone in front of the Alkor Shieldman must make a DC 14 saving throw determined by the chart below. On a failed save, the creature takes 10 (2d6 + 3) damage and half damage on a successful save.<br><br>Acid: Dex. Saving throw<br>Cold: Con. Saving throw<br>Fire: Dex. Saving throw<br>Lightning: Dex. Saving throw<br>Poison: Con. Saving throw"
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Block",
+                Desc: "The Alkor Shieldman adds 2 to its AC against one attack that would hit it by blocking with its shield."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Alkor"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Alkor Captain
+        ID: 696,
+        ProfileType: "Monster",
+        Name: "Alkor Captain",
+        Type: "Medium humanoid (Dragonborn), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [20, "plate, shield"],
+        HitPoints: 60,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 19,
+        Dexterity: 13,
+        Constitution: 14,
+        Intelligence: 12,
+        Wisdom: 11,
+        Charisma: 18,
+        SavingThrows: "Str +7, Con +6, Cha +7",
+        Skills: "Athletics +7, Intimidation +6, Perception +2",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 13",
+        Languages: "Common, Draconic",
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Brave",
+                Desc: "The Alkor Captain has advantage on saving throws against being frightened."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Alkor Captain makes three attacks."
+            },
+            {
+                Title: "+1 Warhammer",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage."
+            },
+            {
+                Title: "Breath Weapon (Recharge 5-6)",
+                Desc: "The Alkor Legionnaire exhales a breath of destructive energy determined by the DM referencing the chart below. All creatures in a 15 ft. cone in front of the Alkor Legionnaire must make a DC 14 saving throw determined by the chart below. On a failed save, the creature takes 10 (2d6 + 3) damage and half damage on a successful save.<br><br>Acid: Dex. Saving throw<br>Cold: Con. Saving throw<br>Fire: Dex. Saving throw<br>Lightning: Dex. Saving throw<br>Poison: Con. Saving throw"
+            },
+            {
+                Title: "Leadership (1/Rest)",
+                Desc: "For 1 minute, the Alkor Captain can utter a special command or warning whenever a non hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Alkor Captain. A creature can benefit from only one Leadership die at a time. This effect ends if the Alkor Captain is incapacitated."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Alkor"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Alkor Commander
+        ID: 697,
+        ProfileType: "Monster",
+        Name: "Alkor Commander",
+        Type: "Medium humanoid (Dragonborn), neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [20, "+2 plate"],
+        HitPoints: 78,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 20,
+        Dexterity: 14,
+        Constitution: 16,
+        Intelligence: 12,
+        Wisdom: 11,
+        Charisma: 20,
+        SavingThrows: "Str +9, Con +7, Cha +9",
+        Skills: "Athletics +9, Intimidation +6, Perception +4",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 14",
+        Languages: "Common, Draconic",
+        Challenge: [5, 1800],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Brave",
+                Desc: "The Alkor Commander has advantage on saving throws against being frightened."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Alkor Commander makes four maul attacks or three maul attacks and one breath weapon attack."
+            },
+            {
+                Title: "+1 Maul",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage."
+            },
+            {
+                Title: "+1 Crossbow, (Heavy)",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 100/400 ft., one target. Hit: 7 (1d10 + 2) piercing damage."
+            },
+            {
+                Title: "Breath Weapon (Recharge 5-6)",
+                Desc: "The Alkor Commander exhales a breath of destructive energy determined by the DM referencing the chart below. All creatures in a 15 ft. cone in front of the Alkor Commander must make a DC 14 saving throw determined by the chart below. On a failed save, the creature takes 10 (4d6 + 3) damage and half damage on a successful save.<br><br>Acid: Dex. Saving throw<br>Cold: Con. Saving throw<br>Fire: Dex. Saving throw<br>Lightning: Dex. Saving throw<br>Poison: Con. Saving throw"
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Parry",
+                Desc: "The Alkor Commander adds 2 to its AC against one melee attack that would hit it. To do so, the Alkor Commander must see the attacker and be wielding a melee weapon."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Alkor"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Prye-Heart Scarecrow
+        ID: 698,
+        ProfileType: "Monster",
+        Name: "Prye-Heart Scarecrow",
+        Type: "Medium construct, chaotic evil",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [15, "natural armor"],
+        HitPoints: 94,
+        HitPointsRoll: "21d8",
+        Speed: "30 ft.",
+        Strength: 13,
+        Dexterity: 18,
+        Constitution: 11,
+        Intelligence: 10,
+        Wisdom: 13,
+        Charisma: 16,
+        SavingThrows: "Dex +7",
+        Skills: "Deception +6",
+        DamageVulnerabilities: ["Fire"],
+        DamageResistances: ["Necrotic", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: "Darkvision 120 ft., Passive Perception 11",
+        Languages: "Understands the languages of its creator but can't speak",
+        Challenge: [7, 2900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "False Appearance",
+                Desc: "While the scarecrow remains motionless, it is indistinguishable from an ordinary inanimate scarecrow."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The Prye-Heart Scarecrow [name]'s innate spellcasting ability is Charisma (spell save DC 14). The Prye-Heart Scarecrow can innately cast the following spells, requiring no material components:<br><br>Cantrips (at will): burning hands, fire bolt, hellish rebuke<br>3/day each: flaming sphere, scorching ray"
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Prye-Heart Scarecrow makes two attacks."
+            },
+            {
+                Title: "Sickle",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) type damage."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage. If the target is a creature, it must succeed on a DC 11 Wisdom saving throw or be frightened until the end of the scarecrow's next turn."
+            },
+            {
+                Title: "Terrifying Glare",
+                Desc: "The Prye-Heart Scarecrow targets one creature it can see within 30 feet of it. If the target can see the scarecrow, the target must succeed on a DC 15 Wisdom saving throw or be magically frightened until the end of the scarecrow's next turn. The frightened target is paralyzed."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Special Events"]
+    },
+    { // Pumpkin Bomb
+        ID: 699,
+        ProfileType: "Monster",
+        Name: "Pumpkin Bomb",
+        Type: "Small plant, chaotic evil",
+        TypeCategory: "Plant",
+        Size: "Small",
+        Source: "Homebrew",
+        ArmorClass: [10, "natural armor"],
+        HitPoints: 11,
+        HitPointsRoll: "2d6 + 4",
+        Speed: "10 ft.",
+        Strength: 8,
+        Dexterity: 10,
+        Constitution: 14,
+        Intelligence: 4,
+        Wisdom: 8,
+        Charisma: 3,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened"],
+        Senses: "Blindsight 60 ft., Passive Perception 9",
+        Languages: "",
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "False Appearance",
+                Desc: "While the pumpkin remains motionless, it is indistinguishable from an ordinary pumpkin."
+            },
+            {
+                Title: "Death Burst",
+                Desc: "When the Pumpkin Bomb reaches 0 hit points, it instantly takes a Burst action."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Burst",
+                Desc: "The Pumpkin Bomb explodes, killing itself. Each non-Halloween creature within 5 feet of it must make a DC 14 Dexterity saving throw, taking 10 (2d6 + 3) necrotic damage on a failed save and half as much damage on a successful one."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Special Events"]
+    },
+    { // Pumpkin Servant
+        ID: 700,
+        ProfileType: "Monster",
+        Name: "Pumpkin Servant",
+        Type: "Medium plant, chaotic evil",
+        TypeCategory: "Plant",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [12, "natural armor"],
+        HitPoints: 20,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 14,
+        Dexterity: 12,
+        Constitution: 14,
+        Intelligence: 4,
+        Wisdom: 8,
+        Charisma: 3,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened"],
+        Senses: "Blindsight 60 ft., Darkvision 60 ft., Passive Perception 9",
+        Languages: "",
+        Challenge: [0.25, 50],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "False Appearance",
+                Desc: "While the pumpkin remains motionless, it is indistinguishable from an ordinary pumpkin."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage."
+            },
+            {
+                Title: "Poison Spit",
+                Desc: "Ranged Weapon Attack: +3 to hit, range 20/60 ft., one target. Hit: 6 (1d8 + 2) poison damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Special Events"]
+    },
+    { // Pumpkin Soldier
+        ID: 701,
+        ProfileType: "Monster",
+        Name: "Pumpkin Soldier",
+        Type: "Medium undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [12, "natural armor"],
+        HitPoints: 30,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 16,
+        Dexterity: 12,
+        Constitution: 15,
+        Intelligence: 6,
+        Wisdom: 8,
+        Charisma: 8,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened"],
+        Senses: "Darkvision 60 ft., Passive Perception 9",
+        Languages: "",
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) bludgeoning damage."
+            },
+            {
+                Title: "Head Throw (Recharge 4-6)",
+                Desc: "Ranged Weapon Attack: +3 to hit, range 30/60 ft., one target. The Pumpkin Soldier throws his head at a creature. On a hit, the creature loses control of its actions and mind. While a creature is possessed, the Pumpkin Soldier cannot grow another head.<br>On its turn, the DM decides a target the creature must attack. A possessed creature cannot remove the pumpkin off its own head, but another creature can remove it with a successful DC 14 Strength check.<br>On a miss, the pumpkin head returns to the Pumpkin Soldier."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Special Events"]
+    },
+    { // Hollyphant
+        ID: 702,
+        ProfileType: "Monster",
+        Name: "Hollyphant",
+        Type: "Small celestial(shapeshifter), lawful good",
+        TypeCategory: "Celestial",
+        Size: "Small",
+        Source: "Homebrew",
+        ArmorClass: [14, "natural armor"],
+        HitPoints: 52,
+        HitPointsRoll: "8d10 + 8",
+        Speed: "25 ft., fly 60 ft.",
+        Strength: 20,
+        Dexterity: 12,
+        Constitution: 12,
+        Intelligence: 16,
+        Wisdom: 18,
+        Charisma: 17,
+        SavingThrows: "Wis +7, Cha +6",
+        Skills: "Insight +7, Perception +7, Persuasion +6",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Radiant", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Exhaustion"],
+        Senses: "Darkvision 120 ft., Passive Perception 14",
+        Languages: "Celestial, Common",
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Shapechanger",
+                Desc: "The hollyphant can magically polymorphs into a smaller version of itself, or back into its large form. Its statistics, other than its Strength score is 10 (+0) in small form, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its large form if it dies."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The hollyphant’s has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The hollyphant’s innate spellcasting ability is charisma (spell save DC 15) (+6 to hit). The hollyphant can innately cast the following spells, requiring no material components:<br><br>At will: light, bless, teleport(self)<br><br>3/Day: cure wounds, detect thought, see invisibility, suggestion<br><br>1/Day: banishment, flame strike, heal, raise dead"
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "In large form, the hollyphant makes one gore and slam attack. In small form, it makes three gore attacks."
+            },
+            {
+                Title: "Gore(Small form)",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage."
+            },
+            {
+                Title: "Gore(Large form)",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage."
+            },
+            {
+                Title: "Slam(Large form)",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage."
+            },
+            {
+                Title: "Sun Sparkles",
+                Desc: "Ranged Spell Attack: +6 to hit, range 80 ft., one target. Hit: 3 (1d6) radiant damage and the next attack roll made against the target before the end of its next turn has advantage, thanks to the mystical dim light glittering on the target until then."
+            },
+            {
+                Title: "Play Trumpet (Recharge 5-6)",
+                Desc: "The hollyphant uses one of the following trumpet abilities:<br><br>Sound Blast. The hollyphant’s trumpet emits thunderous energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Constitution saving throw or take 16 (3d10) thunder damage and are stunned until the start of the hollyphant’s next turn. On a successful save creatures take half as much damage and aren’t stunned.<br><br>Sun Sparks. The hollyphant’s trumpet emits a shower of gold sparks in a 30-foot cone. Each fiend and undead in that area must succeed on a DC 15 Constitution saving throw or take 27 (6d8) radiant damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A hollyphant looks like a tiny little flying elephant, about 2 feet in length, with golden fur and wings. Some who had encountered hollyphants claimed that their wings were golden like their fur; others insisted that the wings were shining white. Its small tusks appeared to be made of ivory. There seemed to be variety in their eye color. Some hollyphants had amber to glowing brown eyes. For others, their eyes displayed a rainbow of colors.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
         Campaigns_Worlds: ["All"]
     },
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
+    { // Ulgiroth's Devourer
+        ID: 703,
+        ParentID: 111111, /// Ulgiroth
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Ulgiroth's Devourer",
+        Type: "Huge Abberation, Chaotic Evil",
+        TypeCategory: "Aberration",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: [19],
+        HitPoints: 70,
+        HitPointsRoll: "",
+        Speed: "50 ft.",
+        Strength: 18,
+        Dexterity: 16,
+        Constitution: 12,
+        Intelligence: 10,
+        Wisdom: 8,
+        Charisma: 7,
+        SavingThrows: ["Str +7", "Dex +6", "Con +4"],
+        Skills: "Athletics +8, Acrobatics +7",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Deafened", "Frightened", "Petrified", "Prone"],
+        Senses: "Blindsight 60 ft., Passive Perception 17",
+        Languages: "None. Only perceives the void speaker's telepathic commands",
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Grapple Proficiency",
+                Desc: "If a creature is grappled by the Devourer, the Bite attack automatically hits. A Medium or smaller target cannot attack back while grappled due to its long fingers wrapped around it. It can still roll to escape the grapple against the Devourer's Athletics or Acrobatics roll."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Devourer can make either 2 Claw attacks or a Jump action."
+            },
+            {
+                Title: "Claw",
+                Desc: "Melee Attack: +10 to hit, reach 10 ft., 1 target. Hit: 12 (2d8) slashing damage. If a creature is a Medium or smaller creature, the Void Devourer can choose to grapple the target (escape DC 18). If the grapple succeeds, the target is restrained and the Void Devourer can immediately make a Bite attack."
+            },
+            {
+                Title: "Jump",
+                Desc: "Reach 70 ft., one target. Target must succeed on a DC 16 Dexterity saving throw or take 21 (3d12) bludgeoning damage from the Devourer landing on it and be knocked prone, followed by an immediate Bite attack."
+            },
+            {
+                Title: "Bite",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 24 (3d10 + 6) piercing damage."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Vines of muscle spiral outward as cold energy clouds around it. The clouds solidify and the muscles clamp together to form a tall thin pale body with large thin hands, long fingers and an open triangular head with tons of arm limbs with scythe blades at their ends in anticipation to lash out.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Far Realm"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Ulgiroth's Eye
+        ID: 704,
+        ParentID: 111111, /// Ulgiroth
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Ulgiroth's Eye",
+        Type: "Medium Abberation, Chaotic Evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [12],
+        HitPoints: 40,
+        HitPointsRoll: "",
+        Speed: "0 ft.",
+        Strength: 7,
+        Dexterity: 9,
+        Constitution: 15,
+        Intelligence: 10,
+        Wisdom: 16,
+        Charisma: 18,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Deafened", "Frightened", "Incapacitated", "Invisible", "Petrified", "Prone"],
+        Senses: "Blindsight 60 ft., Passive Perception 13",
+        Languages: "None. Only perceives the void speaker's telepathic commands",
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Witch Bolt",
+                Desc: "Range Spell Attack: +7 to hit, reach 30 ft., one target. Hit: 14 (1d12 + 6) lightning damage. On each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Sheets of purple energy fly over ground and arc upwards forming a sphere in the shape of an eye with a yellow iris on a pillar of twisting purple mist.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Far Realm"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Ulgiroth's Silencer
+        ID: 705,
+        ParentID: 111111, /// Ulgiroth
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Ulgiroth's Silencer",
+        Type: "Medium Abberation, Chaotic Evil",
+        TypeCategory: "Aberration",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [14],
+        HitPoints: 20,
+        HitPointsRoll: "",
+        Speed: "0 ft.",
+        Strength: 14,
+        Dexterity: 11,
+        Constitution: 13,
+        Intelligence: 10,
+        Wisdom: 11,
+        Charisma: 17,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Deafened", "Exhaustion", "Frightened", "Incapacitated", "Paralyzed", "Petrified", "Prone", "Stunned", "Unconscious"],
+        Senses: "Blindsight, Passive Perception 13",
+        Languages: "None. Only perceives the void speaker's telepathic commands",
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Silence Magic",
+                Desc: "Within 200 ft. of the Silencer, it selects only one creature that cannot use magic, spells, or non-physical abilities until the Silencer is killed. Affects Bards, Clerics, Druids, Paladins, Sorcerers, Warlocks, Wizards.<br>The Silencer cannot switch targets."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "The Void Speaker extends his hand where a large seed floats out and spears itself in the ground. A small mist appears where the seed fell followed by the rising of a curved totem body with an oval head and two arms that come together and form a hand sign.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Far Realm"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Royal Guard
+        ID: 706,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Royal Guard",
+        Type: "Medium Humanoid, Lawful Neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [24, "+3 Plate Armor, +3 Shield"],
+        HitPoints: 500,
+        HitPointsRoll: "",
+        Speed: "40 ft.",
+        Strength: 20,
+        Dexterity: 20,
+        Constitution: 20,
+        Intelligence: 14,
+        Wisdom: 16,
+        Charisma: 14,
+        SavingThrows: ["Str +12", "Dex +12", "Con +12", "Int +7", "Wis +9", "Cha +8"],
+        Skills: "Athletics +12, Intimidation +8, Perception +9, Survival +9",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Frightened"],
+        Senses: "Blindsight 60 ft., Darkvision 120 ft., Passive Perception 13",
+        Languages: "All",
+        Challenge: [18, 20000],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Royal Guard makes three Longsword attacks."
+            },
+            {
+                Title: "+3 Lance",
+                Desc: "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 14 (1d12 + 8) slashing damage. Cannot be looted."
+            },
+            {
+                Title: "+3 Longbow",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 12 (1d8 + 8) piercing damage. Cannot be looted."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["The Big City"],
+        Campaigns_Worlds: ["Untitled NPC World"]
+    },
+    { // Big City Guard
+        ID: 707,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Big City Guard",
+        Type: "Medium humanoid, lawful good",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [20, "Plate, Shield"],
+        HitPoints: 200,
+        HitPointsRoll: "",
+        Speed: "40 ft.",
+        Strength: 18,
+        Dexterity: 14,
+        Constitution: 16,
+        Intelligence: 12,
+        Wisdom: 14,
+        Charisma: 11,
+        SavingThrows: ["Str +9", "Dex +7", "Con +8", "Wis +7"],
+        Skills: "Athletics +9, Intimidation +5, Perception +7, Survival +7",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Blindsight 60 ft., Darkvision 120 ft., Passive Perception 12",
+        Languages: "All",
+        Challenge: [10, 5900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Battle-hardened",
+                Desc: "The Big City Guard has advantage on saving throws to resist being charmed or frightened."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Big City Guard makes three Longsword attacks."
+            },
+            {
+                Title: "+2 Longsword",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) slashing damage. Cannot be looted."
+            },
+            {
+                Title: "+2 Longbow",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 8 (1d8 + 4) piercing damage. Cannot be looted."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["The Big City"],
+        Campaigns_Worlds: ["Untitled NPC World"]
+    },
+    { // Town Guard
+        ID: 708,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Town Guard",
+        Type: "Medium Humanoid, Lawful Neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [18, "chain mail, shield"],
+        HitPoints: 50,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 16,
+        Dexterity: 12,
+        Constitution: 14,
+        Intelligence: 10,
+        Wisdom: 12,
+        Charisma: 10,
+        SavingThrows: ["Str +5", "Dex +3", "Con +4", "Wis +3"],
+        Skills: "Athletics +5, Intimidation +2, Perception +3",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 13",
+        Languages: "Common",
+        Challenge: [2, 450],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Tactical Command",
+                Desc: "As a seasoned guard, the Town Guard can give an ally within 30 feet advantage on their next attack roll or a +2 bonus to AC for one round as a bonus action. The Town Guard can use this feature once per short rest."
+            },
+            {
+                Title: "Disciplined Stance",
+                Desc: "The Town Guard has advantage on saving throws against being frightened and on checks to resist being grappled or restrained."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Town Guard makes two Longsword attacks."
+            },
+            {
+                Title: "+1 Longsword",
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage. Cannot be looted."
+            },
+            {
+                Title: "+1 Light Crossbow",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage. Cannot be looted."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Shield Bash",
+                Desc: "The Town Guard can use their shield to bash an enemy. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage, and the target must succeed on a DC 13 Strength saving throw or be knocked prone."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Untitled NPC World"]
+    },
+    { // Bouncer
+        ID: 709,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Bouncer",
+        Type: "Medium humanoid(human), Lawful Good",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [20],
+        HitPoints: 100,
+        HitPointsRoll: "",
+        Speed: "40 ft.",
+        Strength: 20,
+        Dexterity: 16,
+        Constitution: 20,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: "Athletics +9, Intimidation +4",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Frightened"],
+        Senses: "Passive Perception 10",
+        Languages: "Common",
+        Challenge: [10, 5900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Magical Weapons",
+                Desc: "The Bouncer's Punch attacks are considered magical."
+            },
+            {
+                Title: "Mobile",
+                Desc: "The Bouncer can Dash through difficult terrain without expending extra movement. Additionally, when it makes a melee attack against a creature, it doesn't provoke opportunity attacks from that creature for the rest of the turn."
+            },
+            {
+                Title: "Sentinel",
+                Desc: "When a creature within 5 feet of the Bouncer makes an attack against a target other than the Bouncer, the Bouncer can use its reaction to make a melee attack against the creature. Additionally, creatures within 5 feet of the Bouncer provoke opportunity attacks even when they take the Dash action."
+            },
+            {
+                Title: "Handler",
+                Desc: "The Bouncer has advantage on all Athletic and Grappling checks."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Bouncer makes two Punch attacks. One of these attacks can be a Sweeping Strike."
+            },
+            {
+                Title: "Punch",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 5) bludgeoning damage."
+            },
+            {
+                Title: "+3 Hand Crossbow",
+                Desc: "Melee Weapon Attack: +10 to hit, range 30/120 ft., one target. Hit: 12 (1d6 + 6) piercing damage."
+            },
+            {
+                Title: "Sweeping Strike (Recharge 5-6)",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage, and the target must succeed on a DC 16 Strength saving throw or be knocked prone."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["The Big City"],
+        Campaigns_Worlds: ["Untitled NPC World"]
+    },
+    { // Punching Bag
+        ID: 710,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Punching Bag",
+        Type: "Medium Construct, Neutral",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [1],
+        HitPoints: 999,
+        HitPointsRoll: "",
+        Speed: "0 ft.",
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "",
+        Languages: "",
+        Challenge: [0, 0],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Instant Healing",
+                Desc: "Anytime Punching Bag takes damage, it heals that exact amount."
+            },
+            {
+                Title: "Immortal",
+                Desc: "If Punching Bag's hit points reaches 0, it instantly regains full hit points and does not die."
+            }
+        ],
+        Actions: [],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
     { // World Agent
-        ID: 999,
+        ID: 711,
+        ParentID: null,
+        ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "World Agent",
         Type: "Medium humanoid, neutral",
@@ -43289,8 +44655,9 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"],
+        Campaigns_Worlds: ["Untitled NPC World"],
     }
+    
 ];
 
 const uniqueLocal = [
@@ -43406,15 +44773,15 @@ const uniqueLocal = [
         Actions: [
             {
                 Title: "Melee Offense",
-                Desc: "Melee Weapon Attack: +20 to hit, reach 10 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:\nBlugeoning | Mace, Hammer, Flail, Maul, Staff | Hit: 26 (4d12 bludgeoning damage)\nSlashing | Axe, Sickle, Glaive, Halberd, Sword, Bladed Whip | Hit: 26 (4d12 slashing damage)\nPiercing | Dagger, Javelin, Spear, Lance, Morningstar, Rapier, Trident | Hit: 26 (4d12 piercing damage)\nThen select what kind of damage is inflicted from the list below:\nAcid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder\nHit: 26 (4d12) type damage"
+                Desc: "Melee Weapon Attack: +20 to hit, reach 10 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:<br>Blugeoning | Mace, Hammer, Flail, Maul, Staff | Hit: 26 (4d12 bludgeoning damage)<br>Slashing | Axe, Sickle, Glaive, Halberd, Sword, Bladed Whip | Hit: 26 (4d12 slashing damage)<br>Piercing | Dagger, Javelin, Spear, Lance, Morningstar, Rapier, Trident | Hit: 26 (4d12 piercing damage)<br>Then select what kind of damage is inflicted from the list below:<br>Acid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder<br>Hit: 26 (4d12) type damage"
             },
             {
                 Title: "Ranged Offense",
-                Desc: "Ranged Weapon Attack: +20 to hit, reach 1,000 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:\nBlugeoning | Sling | Hit: 26 (4d12 bludgeoning damage)\nSlashing | Bladed Whip | Hit: 26 (4d12 slashing damage)\nPiercing | Crossbow, Dart, Bow, Blowgun | Hit: 26 (4d12 piercing damage)\nThen select what kind of damage is inflicted from the list below:\nAcid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder\nHit: 26 (4d12) type damage"
+                Desc: "Ranged Weapon Attack: +20 to hit, reach 1,000 ft., one target. Omega channels energy into its hand creating the shape of the desired weapon with the following damage. For every attack, choose which type of attack it will be from the list below:<br>Blugeoning | Sling | Hit: 26 (4d12 bludgeoning damage)<br>Slashing | Bladed Whip | Hit: 26 (4d12 slashing damage)<br>Piercing | Crossbow, Dart, Bow, Blowgun | Hit: 26 (4d12 piercing damage)<br>Then select what kind of damage is inflicted from the list below:<br>Acid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, Thunder<br>Hit: 26 (4d12) type damage"
             },
             {
                 Title: "Scythe of Near Death (Recharge 20)",
-                Desc: "Melee Weapon Attack: +20 to hit, reach 15 ft., one target. \nIf attack hits, a scythe of pure cosmic energy forms in Omega’s hands. It swings at its target, the energy from the blade forming a tornado of colorful energy swirling around the target. It spirals in closer darkening the world around the target for a brief moment as a spark of cosmic light explodes from the target. The target takes an enormous amount of damage leaving them with one hit point remaining.\nIf attack misses, cosmic light explodes around the target. If the target is a conscious being, they get the feeling if that hit them they would have been near death.\nWhether the attack hit or missed, Omega falls prone to one knee and cannot take any actions, legendary actions, or reactions until its next turn."
+                Desc: "Melee Weapon Attack: +20 to hit, reach 15 ft., one target. <br>If attack hits, a scythe of pure cosmic energy forms in Omega’s hands. It swings at its target, the energy from the blade forming a tornado of colorful energy swirling around the target. It spirals in closer darkening the world around the target for a brief moment as a spark of cosmic light explodes from the target. The target takes an enormous amount of damage leaving them with one hit point remaining.<br>If attack misses, cosmic light explodes around the target. If the target is a conscious being, they get the feeling if that hit them they would have been near death.<br>Whether the attack hit or missed, Omega falls prone to one knee and cannot take any actions, legendary actions, or reactions until its next turn."
             }
         ],
         BonusActions: [],
