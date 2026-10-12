@@ -45501,7 +45501,7 @@ const monstersLocal = [
     },
     { // Ulgiroth's Devourer
         ID: 703,
-        ParentID: null,
+        ParentID: null, // Ulgiroth
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulgiroth's Devourer",
@@ -45565,7 +45565,7 @@ const monstersLocal = [
     },
     { // Ulgiroth's Eye
         ID: 704,
-        ParentID: null,
+        ParentID: null, // Ulgiroth
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulgiroth's Eye",
@@ -45612,7 +45612,7 @@ const monstersLocal = [
     },
     { // Ulgiroth's Silencer
         ID: 705,
-        ParentID: null,
+        ParentID: null, // Ulgiroth
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulgiroth's Silencer",
@@ -46058,8 +46058,716 @@ const monstersLocal = [
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
         Campaigns_Worlds: ["Untitled NPC World"],
-    }
-    
+    },
+    { // Clockwork Rifleman
+        ID: 712,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Clockwork Rifleman",
+        Type: "Medium construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [12, "natural armor"],
+        HitPoints: 42,
+        HitPointsRoll: "7d8 + 10",
+        Speed: "30 ft.",
+        Strength: 13,
+        Dexterity: 15,
+        Constitution: 15,
+        Intelligence: 7,
+        Wisdom: 10,
+        Charisma: 3,
+        SavingThrows: [],
+        Skills: "Athletics +4, Intimidation -3",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from non-magical weapons that aren't adamantine"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: "Darkvision 60 ft., Passive Perception 10",
+        Languages: "Understands the languages of its creator but can't speak",
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Immutable Form",
+                Desc: "The rifleman is immune to any spell or effect that would alter its form."
+            },
+            {
+                Title: "Intimidating Legions",
+                Desc: "A single clockwork rifleman's rigid movements appear silly, but, when gathered in numbers, they become an inhuman terror. When the clockwork riflemen makes a Charisma (Intimidation) check, it gains a bonus on that check equal to the number of other clockwork riflemen the target can see or hear."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The rifleman has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Musket",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 120/480 ft., one target. Hit: 8 (1d12 + 2) piercing damage."
+            },
+            {
+                Title: "Bayonet",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["The Factory"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Clockwork Mortarman
+        ID: 713,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Clockwork Mortarman",
+        Type: "Medium construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [12, "natural armor"],
+        HitPoints: 42,
+        HitPointsRoll: "7d8 + 10",
+        Speed: "30 ft.",
+        Strength: 13,
+        Dexterity: 15,
+        Constitution: 15,
+        Intelligence: 7,
+        Wisdom: 10,
+        Charisma: 3,
+        SavingThrows: [],
+        Skills: "Athletics +4, Intimidation +3",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from non-magical weapons that aren't adamantine"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: "Darkvision 60 ft., Passive Perception 10",
+        Languages: "Understands the languages of its creator but can't speak",
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Immutable Form",
+                Desc: "The mortarman is immune to any spell or effect that would alter its form."
+            },
+            {
+                Title: "Intimidating Legions",
+                Desc: "A single clockwork mortarman's rigid movements appear silly, but, when gathered in numbers, they become an inhuman terror. When the clockwork mortarman makes a Charisma (Intimidation) check, it gains a bonus on that check equal to the number of other clockwork mortarman the target can see or hear."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The mortarman has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Hand Mortar",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 30/60 ft., one target. Hit: 20 (4d8 + 2) piercing damage."
+            },
+            {
+                Title: "Warhammer",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["The Factory"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Clockwork Blunderbusser
+        ID: 714,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Clockwork Blunderbusser",
+        Type: "Medium construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [12, "natural armor"],
+        HitPoints: 42,
+        HitPointsRoll: "7d8 + 10",
+        Speed: "30 ft.",
+        Strength: 13,
+        Dexterity: 15,
+        Constitution: 15,
+        Intelligence: 7,
+        Wisdom: 10,
+        Charisma: 3,
+        SavingThrows: [],
+        Skills: "Athletics +4, Intimidation +3",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from non-magical weapons that aren't adamantine"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: "Darkvision 60 ft., Passive Perception 10",
+        Languages: "Understands the languages of its creator but can't speak",
+        Challenge: [3, 700],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Immutable Form",
+                Desc: "The blunderbusser is immune to any spell or effect that would alter its form."
+            },
+            {
+                Title: "Intimidating Legions",
+                Desc: "A single clockwork blunderbusser's rigid movements appear silly, but, when gathered in numbers, they become an inhuman terror. When the clockwork blunderbusser makes a Charisma (Intimidation) check, it gains a bonus on that check equal to the number of other clockwork blunderbusser the target can see or hear."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The blunderbusser has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Blunderbuss",
+                Desc: "Ranged Weapon Attack: +4 to hit, range 15/60 ft., one target. Hit: 8 (2d8 + 2) piercing damage."
+            },
+            {
+                Title: "Longsword",
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["The Factory"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Empyrean (Krosis converted)
+        ID: 715,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Empyrean (Krosis converted)",
+        Type: "Huge celestial (titan), chaotic evil",
+        TypeCategory: "Celestial",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: [22],
+        HitPoints: 400,
+        HitPointsRoll: "",
+        Speed: "50 ft., fly 50 ft., swim 50 ft.",
+        Strength: 30,
+        Dexterity: 21,
+        Constitution: 30,
+        Intelligence: 21,
+        Wisdom: 22,
+        Charisma: 27,
+        SavingThrows: ["Str +17", "Int +12", "Wis +13", "Cha +15"],
+        Skills: "Insight +13, Persuasion +15",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Fire", "Poison", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        ConditionImmunities: ["Charmed", "Frightened", "Poisoned"],
+        Senses: "Truesight 120 ft., Passive Perception 16",
+        Languages: "All",
+        Challenge: [24, 62000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Warlord's Flame",
+                Desc: "All fire attacks deal an additional 3d8 magical fire damage plus a DC 15 Constitution saving throw or take another 1d8 fire damage."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If the empyrean fails a saving throw, it can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "The empyrean has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons",
+                Desc: "The empyrean's weapon attacks are magical."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The empyrean's innate spellcasting ability is Charisma (spell save DC 23, +15 to hit with spell attacks). It can innately cast the following spells, requiring no material components:<br><br>At will: Cast Flame of the Warlord, greater restoration, pass without trace, water breathing, water walk<br>1/day each: commune, dispel evil and good, earthquake, fire storm, plane shift (self only)"
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Empyrean (Krosis) makes two attacks."
+            },
+            {
+                Title: "Maul",
+                Desc: "Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 38 (6d8 + 10) bludgeoning damage plus 3d8 magical fire damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or be stunned until the end of the empyrean's next turn."
+            },
+            {
+                Title: "Bolt",
+                Desc: "Ranged Spell Attack: +15 to hit, range 600 ft., one target. Hit: 24 (7d8) magical fire damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "The empyrean makes one attack."
+            },
+            {
+                Title: "Bolster",
+                Desc: "The empyrean bolsters all nonhostile creatures within 120 feet of it until the end of its next turn. Bolstered creatures can't be charmed or frightened, and they gain advantage on ability checks and saving throws until the end of the empyrean's next turn."
+            },
+            {
+                Title: "Trembling Strike (Costs 2 Actions)",
+                Desc: "The empyrean strikes the ground with its maul, triggering an earth tremor. All other creatures on the ground within 60 feet of the empyrean must succeed on a DC 25 Strength saving throw or be knocked prone."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Roma"],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Mob of Skeletons
+        ID: 716,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Mob of Skeletons",
+        Type: "Large swarm of undead, chaotic evil",
+        TypeCategory: "Undead",
+        Size: "Large",
+        Source: "Homebrew",
+        ArmorClass: [11],
+        HitPoints: 25,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 10,
+        Dexterity: 12,
+        Constitution: 13,
+        Intelligence: 6,
+        Wisdom: 8,
+        Charisma: 5,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: ["Bludgeoning"],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Exhaustion", "Poisoned"],
+        Senses: "Darkvision 60 ft., Passive Perception 10",
+        Languages: "",
+        Challenge: [0.5, 100],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {
+                Title: "Multiattack", 
+                Desc: "The Mob of Skeletons makes one shortsword attack and two slam attacks."
+            },
+            {
+                Title: "Shortsword", 
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+            },
+            {
+                Title: "Slam", 
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Mob of Zombies
+        ID: 717,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Mob of Zombies",
+        Type: "Large swarm of undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Large",
+        Source: "Homebrew",
+        ArmorClass: [8],
+        HitPoints: 80,
+        HitPointsRoll: "",
+        Speed: "20 ft.",
+        Strength: 13,
+        Dexterity: 6,
+        Constitution: 16,
+        Intelligence: 3,
+        Wisdom: 6,
+        Charisma: 5,
+        SavingThrows: ["Wis +0"],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Exhaustion", "Poisoned"],
+        Senses: "Darkvision 60 ft., Passive Perception 8",
+        Languages: "Understands the languages it knew in life, but can't speak",
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Undead Fortitude", 
+                Desc: "If damage reduces the Mob of Zombies to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the Mob of Zombies drops to 1 hit point instead."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack", 
+                Desc: "The Mob of Zombies makes three attacks."
+            },
+            {
+                Title: "Slam", 
+                Desc: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Needlisk
+        ID: 718,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Needlisk",
+        Type: "Huge monstrosity, unaligned",
+        TypeCategory: "Monstrosity",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 82,
+        HitPointsRoll: "",
+        Speed: "20 ft.",
+        Strength: 16,
+        Dexterity: 14,
+        Constitution: 15,
+        Intelligence: 2,
+        Wisdom: 8,
+        Charisma: 7,
+        SavingThrows: ["Str +6", "Con +5"],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Poison"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Poisoned"],
+        Senses: "Darkvision 60 ft., Passive Perception 9",
+        Languages: "",
+        Challenge: [4, 1100],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Petrifying Gaze", 
+                Desc: "If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic.<br>A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.<br>If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze."}
+        ],
+        Actions: [
+            {
+                Title: "Pierce", 
+                Desc: "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 7 (2d6) poison damage."
+            },
+            {
+                Title: "Needle Fire", 
+                Desc: "Ranged Weapon Attack: +4 to hit, reach 40 ft., one target. Hit: # (2d6 + 3) piercing damage plus (3d8) acid damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Time Assassin
+        ID: 719,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Time Assassin",
+        Type: "Medium humanoid (any race), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [17, "studded leather, magical +1"],
+        HitPoints: 90,
+        HitPointsRoll: "14d8 + 26",
+        Speed: "40 ft.",
+        Strength: 11,
+        Dexterity: 20,
+        Constitution: 14,
+        Intelligence: 15,
+        Wisdom: 11,
+        Charisma: 12,
+        SavingThrows: ["Dex +8", "Int +5"],
+        Skills: "Acrobatics +8, Arcana +5, Athletics +3, Perception +3, Sleight of Hand +8, Stealth +8",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed"],
+        Senses: "Blindsight 60 ft., Darkvision 60 ft., Tremorsense 60 ft., Truesight 60 ft., Passive Perception 13",
+        Languages: "Common, Thieves' Cant",
+        Challenge: [10, 5900],
+        ExtraRewards: "Book of Time Magic by Miles, 3 books on topics relating to Miles questline (No Echoes rewarded in Soul of Denethor)",
+        Traits: [
+            {
+                Title: "Assassinate", 
+                Desc: "During its first turn, the Time Assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the Time Assassin scores against a surprised creature is a critical hit."
+            },
+            {
+                Title: "Evasion", 
+                Desc: "If the Time Assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the Time Assassin instead takes no damage if it succeeds on the saving throw and only half damage if it fails."
+            },
+            {
+                Title: "Sneak Attack (1/Turn)", 
+                Desc: "The Time Assassin deals an extra 13 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Time Assassin that isn't incapacitated and the Time Assassin doesn't have disadvantage on the attack roll."
+            },
+            {
+                Title: "Innate Spellcasting", 
+                Desc: "The Time Assassin's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit). The Time Assassin can innately cast the following spells, requiring no material components:<br><br>Cantrips (at will): dancing lights, mage hand, mending, ray of frost<br>1st level (4 slots): comprehend languages, jump, longstrider<br>2nd level (3 slots): blur, locate object, mirror image"
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack", 
+                Desc: "The Time Assassin makes three longsword/throwing knives attacks or two longsword/throwing knives and one spell/spell attack."
+            },
+            {
+                Title: "Longsword", 
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+            },
+            {
+                Title: "Throwing knives", 
+                Desc: "Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 16 (3d8 + 3) piercing damage."
+            },
+            {
+                Title: "Time True Strike", 
+                Desc: "The Time Assassin uses his/her time magic to glimpse into the future action of their opponent. The Time Assassin's next attack has advantage."
+            },
+            {
+                Title: "Time Freeze Individual (Recharge 4-6)", 
+                Desc: "The Time Assassin points to a creature and snaps his/her finger. The creature that was pointed at suddenly freezes in time and cannot move, speak, think, plan, or take any actions until their next turn."
+            },
+            {
+                Title: "Reverse Self Time (Recharge 4-6)", 
+                Desc: "The Time Assassin reverses his/her own time space undoing all damage, effects, and actions upon him/her and any actions he/she performed after their last turn. The Time Assassin returns to the hit points, spell points, and location they were at the end of their last turn."
+            },
+            {
+                Title: "Teleport (Recharge 5-6)", 
+                Desc: "The Time Assassin teleports to any space up to 50 ft. from the Time Assassin without provoking opportunity attacks."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Uncanny Dodge", 
+                Desc: "The Time Assassin halves the damage that it takes from an attack that hits it. The Time Assassin must be able to see the attacker."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A humanoid wearing a full body suit with glowing highlighting lines that colorfully move across the suit like a sound wave in the texture.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // War Golem (Sardithias)
+        ID: 720,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "War Golem (Sardithias)",
+        Type: "Large construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Large",
+        Source: "Homebrew",
+        ArmorClass: [20, "natural armor"],
+        HitPoints: 210,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 24,
+        Dexterity: 15,
+        Constitution: 20,
+        Intelligence: 3,
+        Wisdom: 11,
+        Charisma: 1,
+        SavingThrows: [],
+        Skills: "Athletics +10, Perception +4",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Force"],
+        DamageImmunities: ["Fire", "Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        ConditionImmunities: ["Charmed", "Deafened", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
+        Senses: "Darkvision 120 ft., Passive Perception 10",
+        Languages: "Understands Common, Elvish, and Abyssal but can't speak",
+        Challenge: [16, 15000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Arsenal Arms", 
+                Desc: "The wrists of the War Golem (Sardithias) are equipped with rotator cuffs that each hold a retractable blade and a loaded crossbow as well as a tube from the palm that can eject flames."
+            },
+            {
+                Title: "Fire Absorption", 
+                Desc: "Whenever the golem is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt."
+            },
+            {
+                Title: "Immutable Form", 
+                Desc: "The golem is immune to any spell or effect that would alter its form."
+            },
+            {
+                Title: "Magic Resistance", 
+                Desc: "The golem has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Magic Weapons", 
+                Desc: "The golem's weapon attacks are magical."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack", 
+                Desc: "The golem makes two melee attacks."
+            },
+            {
+                Title: "Slam", 
+                Desc: "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage."
+            },
+            {
+                Title: "Sword", 
+                Desc: "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 23 (3d10 + 7) slashing damage."
+            },
+            {
+                Title: "Crossbow Bolter", 
+                Desc: "Ranged Attack: +8 to hit, reach 60/240 ft., one target. Hit: (4d6 + 7) piercing damage."
+            },
+            {
+                Title: "Flamethrower", 
+                Desc: "The War Golem (Sardithias) sprays flame in a 25-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 28 (6d8) fire damage on a failed save, or half as much damage on a successful one."
+            },
+            {
+                Title: "Poison Breath (Recharge 6)", 
+                Desc: "The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Warlord Elemental
+        ID: 721,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Warlord Elemental",
+        Type: "Huge elemental, chaotic evil",
+        TypeCategory: "Elemental",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: [15],
+        HitPoints: 170,
+        HitPointsRoll: "",
+        Speed: "60 ft.",
+        Strength: 10,
+        Dexterity: 17,
+        Constitution: 16,
+        Intelligence: 6,
+        Wisdom: 10,
+        Charisma: 16,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Grappled", "Frightened", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
+        Senses: "Darkvision 60 ft., Passive Perception 10",
+        Languages: "None, Only follows Krosis's commands",
+        Challenge: [8, 3900],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Fire Form", 
+                Desc: "The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) magical fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) magical fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) magical fire damage at the start of each of its turns."
+            },
+            {
+                Title: "Illumination", 
+                Desc: "The elemental sheds bright light in a 60-foot radius and dim light in an additional 60 feet."
+            },
+            {
+                Title: "Water Susceptibility", 
+                Desc: "For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+            },
+            {
+                Title: "Innate Spellcasting", 
+                Desc: "The Warlord Elemental's innate spellcasting ability is Charisma (spell save DC 15). The Warlord Elemental can innately cast the following spells, requiring no material components:<br><br>Cantrips (at will): Cast Flame of the Warlord"
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack", 
+                Desc: "The Warlord Elemental makes two attacks."
+            },
+            {
+                Title: "Touch", 
+                Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (4d6 + 3) magical fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) magical fire damage at the start of each of its turns."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane", "Abyss"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+
+
+
 ];
 
 const uniqueLocal = [
@@ -47040,7 +47748,89 @@ const uniqueLocal = [
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
         Campaigns_Worlds: ["All"],
-    }
+    },
+    { // Alagos, King of Storms
+        ID: 100010,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Alagos, King of Storms",
+        Type: "Medium humanoid (Half-Elf), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [17],
+        HitPoints: 142,
+        HitPointsRoll: "",
+        Speed: "30 ft., Fly 60 ft.",
+        Strength: 12,
+        Dexterity: 18,
+        Constitution: 16,
+        Intelligence: 11,
+        Wisdom: 13,
+        Charisma: 20,
+        SavingThrows: ["Str +3", "Dex +6", "Con +11", "Int +2", "Wis +3", "Cha +13"],
+        Skills: "Athletics +7, Deception +11, Insight +7, Perception +7, Persuasion +17, Stealth +10",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: ["Lightning", "Thunder"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
+        Senses: "Darkvision 60 ft., Truesight 60 ft., Passive Perception 17",
+        Languages: "Common, Elvish, Primordial, Draconic",
+        Challenge: [20, 25000],
+        ExtraRewards: "10 boons, 3 Very Rare Gems, 5 Rare Gems, 7 Uncommon Gems, Robe of Stars, Wand of Magic Missile, Staff of Thunder and Lightning, Crown of the Storm King",
+        Traits: [
+            {Title: "Fey Ancestry", Desc: "Alagos has advantage on saving throws against being charmed and magic can't put him to sleep."},
+            {Title: "Font of Magic", Desc: "From the wellspring of magic within him, Alagos has 20 sorcery points, which allow him to create a variety of magical effects. Regain all points after a long rest."},
+            {Title: "Flexible Casting", Desc: "Alagos can use his sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. He can transform unexpended sorcery points into one spell slot as a bonus action on his turn.<br><br>As a bonus action on his turn, Alagos can also expend one spell slot and gain a number of sorcery points equal to the slot's level.<br><br>Spell Slot Level — Sorcery Point Cost:<br>1st — 2<br>2nd — 3<br>3rd — 5<br>4th — 6<br>5th — 7"},
+            {Title: "Metamagic", Desc: "Alagos can only use one metamagic option on a spell when he casts it, unless otherwise noted."},
+            {Title: "Heightened Spell", Desc: "When Alagos casts a spell that forces a creature to make a saving throw to resist its effects, he can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against that spell."},
+            {Title: "Twinned Spell", Desc: "When Alagos casts a spell that targets only one creature and doesn't have a range of self, he can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip)."},
+            {Title: "Wind Speaker", Desc: "The arcane magic Alagos commands is infused with elemental air. He can speak, read, and write Primordial. Knowing this language allows him to understand and be understood by those who speak its dialects: Aquan, Auran, Ignan, and Terran."},
+            {Title: "Tempestuous Magic", Desc: "Alagos can use a bonus action on his turn to cause whirling gusts of elemental air to briefly surround him, immediately before or after he casts a spell of 1st level or higher. Doing so allows him to fly up to 10 ft. without provoking opportunity attacks."},
+            {Title: "Heart of the Storm", Desc: "When Alagos starts casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from him. This eruption causes creatures of his choice that he can see within 10 feet of him to take 10 lightning or thunder damage (choose each time this ability activates)."},
+            {Title: "Storm Guide", Desc: "Alagos gains the ability to subtly control the weather around him.<br><br>If it is raining, he can use an action to cause the rain to stop falling in a 20-ft. radius sphere centered on him. He can end this effect as a bonus action.<br><br>If it is windy, he can use a bonus action each round to choose the direction that the wind blows in a 100-ft. radius sphere centered on him. The wind blows in that direction until the end of his next turn. This feature doesn't alter the speed of the wind."},
+            {Title: "Storm's Fury", Desc: "When Alagos is hit by a melee attack, he can use his reaction to deal 20 lightning damage to the attacker. The attacker must also make a Strength saving throw (DC 19). On a failed save, the attacker is pushed in a straight line up to 20 feet away from him."},
+            {Title: "Magical Flight", Desc: "Alagos gains a magical flying speed of 60 feet. As an action, he can reduce his flying speed to 30 feet for 1 hour and choose up to 8 creatures within 30 feet of him. The chosen creatures gain a magical flying speed of 30 feet for 1 hour. Once he reduces his flying speed in this way, he can't do so again until he finishes a short or long rest."},
+            {Title: "Elemental Adept: Lightning", Desc: "Spells Alagos casts ignore resistance to lightning damage. When he rolls damage for a spell he casts that deals lightning damage, he can treat any 1 on a damage die as a 2."},
+            {Title: "Lucky (3 Luck Points)", Desc: "Alagos has inexplicable luck that seems to kick in at just the right moment. Whenever he makes an attack roll, an ability check, or a saving throw, he can spend one luck point to roll an additional d20. He can choose to spend one of his luck points after he rolls the die, but before the outcome is determined. He chooses which of the d20s is used for the attack roll, ability check, or saving throw.<br><br>Alagos can also spend one luck point when an attack roll is made against him. Roll a d20, and then choose whether the attack uses the attacker's roll or his. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.<br><br>Alagos regains his expended luck points when he finishes a long rest."},
+            {Title: "Sorcerous Restoration", Desc: "Alagos regains 4 expended sorcery points whenever he finishes a short rest."},
+            {Title: "Astral Plane (Robe of Stars)", Desc: "Alagos can use an action to enter the Astral Plane along with everything he is wearing and carrying. He remains there until he uses an action to return to the plane he was on and reappears in the last space he occupied, or if that space is occupied, the nearest unoccupied space."},
+            {Title: "Protection from the Warlord's Flame", Desc: "When hit with Flame of the Warlord, Alagos no longer needs to make a Constitution saving throw."},
+            {Title: "Conjure Thunder Storm", Desc: "Call upon the weather of the world to create a thunderstorm necessary for a variety of his abilities. If a natural thunderstorm exists where he is, use that as a supplement to his abilities. Once used, this ability cannot be used again until the next dawn."},
+            {Title: "Extra Lightning", Desc: "For spells Alagos can cast as a sorcerer that deal lightning damage, add an additional 4 (1d8) lightning damage to spells that hit their target(s) (Cannot use this feature for automatic lightning damage or the abilities of the Crown of the Storm King)."},
+            {Title: "Spellcasting Focus", Desc: "The crown can be used as a sorcerer spellcasting focus. Spell attack bonus +12."},
+            {Title: "Innate Spellcasting", Desc: "Alagos's innate spellcasting ability is Charisma (spell save DC 19). Alagos can innately cast the following spells, requiring no material components:<br><br>Cantrips (at will): Booming Blade, Lightning Lure, Minor Illusion, Fire Bolt, Ray of Frost, Thunderclap, Lightning Prestidigitation<br><br>1st level (4 slots): Shield<br><br>2nd level (3 slots): Mirror Image<br><br>3rd level (3 slots): Counterspell, Haste, Lightning Bolt<br><br>4th level (3 slots): Polymorph, Greater Invisibility, Sickening Radiance<br><br>5th level (3 slots):<br><br>6th level (3 slots): Chain Lightning, Disintegrate<br><br>7th level (2 slots): Whirlwind, Teleport<br><br>8th level (1 slot): Dominate Monster<br><br>9th level (1 slot): Wish, Meteor Swarm"}
+        ],
+        Actions: [
+            {Title: "Multiattack", Desc: "Alagos, King of Storms makes three attacks."},
+            {Title: "Wand of Magic Missiles (7 Charges)", Desc: "Alagos can expend 1 or more charges to cast Magic Missile. For 1 charge, he casts the 1st-level version of the spell. He can increase the spell slot by one for each additional charge he expends.<br><br>The wand regains 4 (1d6 + 1) expended charges daily at dawn. If he expends the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."},
+            {Title: "Staff of Thunder and Lightning", Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) magical bludgeoning damage. The staff has additional properties which, when used, cannot be used again until the next dawn.<br><br>Lightning (1/Day): If Alagos hits with a melee attack, he can cause the target to take an extra 10 (2d6 + 3) lightning damage.<br><br>Thunder (1/Day): If Alagos hits with a melee attack, he can cause the staff to emit a crack of thunder, audible out to 300 ft. The target he hits must succeed on a DC 17 Constitution saving throw or become stunned until the end of his next turn.<br><br>Lightning Strike (1/Day): Alagos can use an action to cause a bolt of lightning to leap from the staff's tip in a line that is 5 ft. wide and 120 ft. long. Each creature in that line must make a DC 17 Dexterity saving throw, taking 34 (9d6 + 3) lightning damage on a failed save, or half as much damage on a successful one.<br><br>Thunderclap (1/Day): Alagos can use an action to cause the staff to issue a deafening Thunderclap audible out to 600 ft. Each creature within 60 ft. of him must make a DC 17 Constitution saving throw. On a failed save, a creature takes 10 (2d6 + 3) thunder damage and becomes deafened for 1 minute. On a successful save, a creature takes half damage and isn't deafened.<br><br>Thunder and Lightning (1/Day): Alagos can use an action to use Lightning Strike and Thunderclap properties at the same time. Doing so doesn't expend the daily use of those properties, only the use of this one."},
+            {Title: "Magic Missile (Robe of Stars) (6 Charges)", Desc: "Alagos pulls off one of the six stars on his robe and uses it to cast Magic Missile as a 5th-level spell. Daily at dawn, 1d6 removed stars reappear on the robe."},
+            {Title: "Storm of Vengeance (Thunderstorm required)", Desc: "Alagos can cast Storm of Vengeance. Once used, this ability cannot be used again until the next dawn. (Extra Lightning is not added to the damage.)"},
+            {Title: "Cone of Lightning (3 Charges) (Thunderstorm required)", Desc: "Alagos can cast Cone of Lightning. Once all three charges are used, this ability cannot be used again until the next dawn. (Extra Lightning is not added to the damage.)"},
+            {Title: "Throw Lightning Arrow (3 Charges)", Desc: "Using his staff, Alagos can cast Lightning Arrow as a 3rd-level spell. (Extra Lightning is not added to the damage.)"}
+        ],
+        BonusActions: [],
+        Reactions: [
+            {Title: "Storm's Fury", Desc: "When Alagos is hit by a melee attack, he can use his reaction to deal 20 lightning damage to the attacker. The attacker must also make a Strength saving throw (DC 19). On a failed save, the attacker is pushed in a straight line up to 20 feet away from him."}
+        ],
+        LegendaryActions: [
+            {Title: "Attack", Desc: "Alagos, King of Storms makes one attack."},
+            {Title: "Move", Desc: "Alagos, King of Storms can move up to half his speed."}
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Dark blue robe embroidered with small white stars.<br><br>A thick silver circlet with four panels each with a gem accompanied by two smaller gems.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+
+
+
+
 ];
 
 const playersLocal = [
