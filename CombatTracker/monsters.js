@@ -47835,7 +47835,1302 @@ const uniqueLocal = [
         GeographicalLocations: ["Stormhold"],
         Campaigns_Worlds: ["Soul of Denethor"]
     },
-
+    { // Arthur, the Wolf Knight
+        ID: 100011,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Arthur, the Wolf Knight",
+        Type: "Medium humanoid, chaotic neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [18, "half plate"],
+        HitPoints: 170,
+        HitPointsRoll: "20d8 + 80",
+        Speed: "40 ft.",
+        Strength: 18,
+        Dexterity: 18,
+        Constitution: 18,
+        Intelligence: 14,
+        Wisdom: 16,
+        Charisma: 12,
+        SavingThrows: ["Str +10", "Dex +10", "Con +10"],
+        Skills: "Acrobatics +10, Animal Handling +9, Athletics +10",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: ["Necrotic", "Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: "Darkvision 60 ft., Passive Perception 13",
+        Languages: "Common, Infernal",
+        Challenge: [16, 15000],
+        ExtraRewards: "6 boons, 3 Rare Gems, 5 Uncommon Gems, 7 Common Gems, Boots of Speed, Fang of The Father, Key to the Wolf Door. Inscription reads, \"In the realm of shadow at Bellevue Asylum, the wolf door leads to the Father of the Shadow. A key to such an aberration should only be used in the company of the strong.\"",
+        Traits: [
+            {Title: "Magic Resistance", Desc: "Arthur has advantage on saving throws against spells and other magical effects."},
+            {Title: "Dark Weapon", Desc: "When Arthur hits with his weapon, the weapon deals an extra 4d8 necrotic damage (included in the attack)."}
+        ],
+        Actions: [
+            {Title: "Multiattack", Desc: "Arthur makes three Fang of the Father attacks."},
+            {Title: "Fang of the Father (Greatsword)", Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 18 (4d8) necrotic damage."},
+            {Title: "Deeper Corruption (1/Day)", Desc: "Arthur can allow the corruption of the Shadowfell to seep deeper into his bones, making him stronger, faster, and tougher at the price of his sanity. When Arthur's hit points drop to 70 or lower, he gains a +4 bonus to attack and damage rolls, a +2 bonus to AC, and can move an additional 10 feet per round. During this time, he has disadvantage on all Intelligence, Wisdom, and Charisma checks and saving throws."}
+        ],
+        BonusActions: [],
+        Reactions: [
+            {Title: "Leap Attack", Desc: "When Arthur is targeted by an attacker who is within 30 feet, he can jump into the air, adding 2 to his AC against the attack, and land within 5 feet of the attack. Arthur can then make an attack with his greatsword (Fang of the Father)."}
+        ],
+        LegendaryActions: [
+            {Title: "Fang of the Father", Desc: "Arthur makes an attack with his greatsword (Fang of the Father)."},
+            {Title: "Dripping Darkness (Costs 2 Actions)", Desc: "The corruption of the Shadowfell leaks through Arthur's being, leaving a puddle in a 5-foot radius around him. Any creature that is in the puddle must make a DC 17 Dexterity saving throw. On a failed save, the creature takes 14 (4d6) necrotic damage or half as much damage on a successful one. The puddle lasts for one round, after which it dissipates."}
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A man in silver plate armor with a blue scarf, brown cape of wolf skin, and a wolf-shaped helmet. He wields a thick greatsword in the shape of a large fang with purple veins along the steel.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Bayard, the Abomination
+        ID: 100012,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Bayard, the Abomination",
+        Type: "Huge aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: [14],
+        HitPoints: 389,
+        HitPointsRoll: "",
+        Speed: "45 ft.",
+        Strength: 19,
+        Dexterity: 14,
+        Constitution: 20,
+        Intelligence: 5,
+        Wisdom: 12,
+        Charisma: 7,
+        SavingThrows: ["Str +8", "Con +9"],
+        Skills: "Athletics +8, Perception +18",
+        DamageVulnerabilities: ["Lightning", "Thunder"],
+        DamageResistances: ["Poison", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Darkvision 60 ft., Passive Perception 25",
+        Languages: "None",
+        Challenge: [15, 13000],
+        ExtraRewards: "5 boons, 2 Rare Gems, 4 Uncommon Gems, 7 Common Gems, 4 boons",
+        Traits: [
+            {Title: "Shock Collar", Desc: "The Abomination wears a collar that it cannot remove. When the Abomination takes Thunder or Lightning damage, the collar amplifies this all across its body. The next attack against it will have advantage."},
+            {Title: "Sure-Footed", Desc: "The Abomination has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."},
+            {Title: "Sense Magic", Desc: "The Abomination senses magic within 120 feet of it at will. This trait otherwise works like the detect magic spell but isn't itself magical."},
+            {Title: "Tail Spike Regrowth", Desc: "The Abomination has twenty-four manticore tail spikes. Used spikes regrow when the Abomination finishes a long rest."}
+        ],
+        Actions: [
+            {Title: "Multiattack", Desc: "The Abomination makes three bite attacks (Chimera, Manticore, and Otyugh), three claw/pincer attacks (Chimera, Manticore, and Otyugh), and two attacks of any remaining options."},
+            {Title: "Chimera Bite", Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."},
+            {Title: "Manticore Bite", Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage."},
+            {Title: "Otyugh Bite", Desc: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured."},
+            {Title: "Chimera Claws", Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."},
+            {Title: "Manticore Claw", Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."},
+            {Title: "Chuul Pincer", Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the Abomination doesn't have another creature grappled with the chuul pincer."},
+            {Title: "Manticore Tail Spike", Desc: "Ranged Weapon Attack: +5 to hit, range 100/200 ft., one target. Hit: 7 (1d8 + 3) piercing damage."},
+            {Title: "Chimera Horns", Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) bludgeoning damage. The target must make a Strength saving throw (DC 16) or be knocked prone."},
+            {Title: "Chuul Tentacles", Desc: "One creature grappled by the Abomination's chuul pincer must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."},
+            {Title: "Otyugh Tentacle", Desc: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 4 (1d8) piercing damage. If the target is Medium or smaller, it is grappled (escape DC 13) and restrained until the grapple ends. The otyugh has two tentacles, each of which can grapple one target."},
+            {Title: "Otyugh Tentacle Slam", Desc: "The Abomination slams creatures grappled by its tentacles into each other or a solid surface. Each creature must succeed on a DC 14 Strength saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the Abomination's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned."},
+            {Title: "Mule Hooves", Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage. The target must make a Strength saving throw (DC 16) or be knocked prone."},
+            {Title: "Stomach Mouth Bites", Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 17 (5d6) piercing damage. If the Abomination hits the target, the Abomination shoves the target to the ground and lays on top of it exposing the stomach mouths to feast. If the target is Medium or smaller, it is considered prone. If the target is killed by this damage, it is absorbed into the mouths of the stomach."},
+            {Title: "Bite & Grapple", Desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (2d4) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 16). At the start of the Abomination's next turn, if the target is a Large or smaller creature, it must make a Strength saving throw (DC 15) or Bayard can use the Swallow action."},
+            {Title: "Swallow (Target must be grappled)", Desc: "At the start of the Abomination's turn, if it has grappled a creature with its bite, it is momentarily trapped inside the Abomination's body and can make another Strength saving throw at the start of its turns to escape (DC 15). Until this grapple ends, the target is restrained, and every turn the creature spends inside the Abomination's stomach it takes 21 (6d6) acid damage and the Abomination cannot swallow another target."},
+            {Title: "Stomach Mouth Blinding Spittle (Recharge 6-10)", Desc: "The Abomination stands up on its back two legs and spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 10 ft. of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the Abomination's next turn."},
+            {Title: "Chimera Fire Breath (Recharge 7-10)", Desc: "The dragon head exhales fire in a 20-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one."},
+            {Title: "Bayard's Screech (Recharge 8-10)", Desc: "The Abomination lets out a screech of strange sounds of \"YEEEEAAARRRR\". It pierced your eardrums and vibrates in your heads. All creatures within 30 ft. of the Abomination must make an Intelligence saving throw (DC 16). On a failed save, a creature takes 36 (8d8) psychic damage and half on a success."},
+            {Title: "Roll (Recharge 9-10)", Desc: "The Abomination spends half its movement to roll across the right or left side of his body. All creatures must make a Dexterity saving throw (DC 16) or take 45 (10d8) bludgeoning damage and be prone."}
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [
+            {Title: "Attack", Desc: "The Abomination makes one attack."},
+            {Title: "Name", Desc: "The Abomination moves up to half its speed."}
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Heads of Mountain Lion, Dragon, Mule, and dozens of Goats aligned form the neck to the hips across the side of its body. Its back had two dragon wings with the skin cut between the bones, unable to fly and over occupied by Otyugh tentacles. Stomach is a red skin of Glibbering mouths. Rear end has Otyugh mouth. Wears a collar aligned with yellow jewels.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Brave Sir Boros (SoD, Ally)
+        ID: 100013,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Brave Sir Boros (SoD, Ally)",
+        Type: "Medium humanoid, neutral",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [21, "+3 plate armor"],
+        HitPoints: 228,
+        HitPointsRoll: "25d8 + 80",
+        Speed: "30 ft.",
+        Strength: 20,
+        Dexterity: 16,
+        Constitution: 20,
+        Intelligence: 12,
+        Wisdom: 12,
+        Charisma: 20,
+        SavingThrows: [],
+        Skills: "Athletics +5, Deception +6, Performance +6",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed"],
+        Senses: "Passive Perception 15",
+        Languages: "Understands Common, but doesn't speak",
+        Challenge: [15, 13000],
+        ExtraRewards: "",
+        Traits: [
+            {Title: "Service in Death", Desc: "Brave Sir Boros follows the commands of the one(s) who summoned him via Echo Signature.<br>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.<br><br>"+
+            "- Approach: The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.<br>"+
+            "- Drop: The target drops whatever it is holding and then ends its turn.<br>"+
+            "- Flee: The target spends its turn moving away from you by the fastest available means.<br>"+
+            "- Grovel: The target falls prone and then ends its turn.<br>"+
+            "- Halt: The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air."},
+            {Title: "Echo Gift", Desc: "Brave Sir Boros does not need Echoes received as the party share when Echo Signatures are usually summoned so the party splits echoes evenly among themselves or Brave Sir Boros gives his echoes willingly to a party member."}
+        ],
+        Actions: [
+            {Title: "Multiattack", Desc: "Brave Sir Boros makes five attacks with his longswords or bombs."},
+            {Title: "+4 Longsword", Desc: "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 12 (1d6 + 9) type damage."},
+            {Title: "Great Bomb", Desc: "Ranged Weapon Attack: +6 to hit, range 30/60 ft., one target. Hit: 25 (8d4 + 5) acid, cold, fire, lightning, radiant, necrotic, or poison damage."}
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Brave Sir Boros (SoD, Version 1)
+        ID: 100014,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Brave Sir Boros (SoD, Version 1)",
+        Type: "Medium humanoid, chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [18, "plate armor"],
+        HitPoints: 112,
+        HitPointsRoll: "15d8 + 30",
+        Speed: "30 ft.",
+        Strength: 16,
+        Dexterity: 12,
+        Constitution: 14,
+        Intelligence: 8,
+        Wisdom: 12,
+        Charisma: 18,
+        SavingThrows: [],
+        Skills: "Athletics +5, Deception +6, Performance +6",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed"],
+        Senses: "Passive Perception 11",
+        Languages: "Common",
+        Challenge: [5, 1800],
+        ExtraRewards: "First drop: Grand Key, two memory shards, and a sigil of an ouroboros with a background of a raven.",
+        Traits: [
+            {Title: "Aura of Nobility", Desc: "As an action, Sir Boros may raise his hand in the air and demand assistance from the creatures around him. Roll a d20.<br><br>On a 10+, 1d4 + 1 risen creatures come forward to his aid.<br>On a 15+, 1d4 + 1 of any type of creatures are charmed to come forward to his aid with a CR rating of 15 or lower.<br>On a natural 20, 1d4 of any type of creatures are charmed to come forward to his aid."},
+            {Title: "Curse of Life", Desc: "If Brave Sir Boros dies, he will be revived in 1d4 hours without cost."}
+        ],
+        Actions: [
+            {Title: "Multiattack", Desc: "Brave Sir Boros makes three attacks with his longswords."},
+            {Title: "Longsword", Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."}
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Brave Sir Boros (SoD, Version 2)
+        ID: 100015,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Brave Sir Boros (SoD, Version 2)",
+        Type: "Medium humanoid, chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [20, "+2 plate armor"],
+        HitPoints: 155,
+        HitPointsRoll: "20d8 + 50",
+        Speed: "30 ft.",
+        Strength: 18,
+        Dexterity: 14,
+        Constitution: 17,
+        Intelligence: 10,
+        Wisdom: 12,
+        Charisma: 19,
+        SavingThrows: [],
+        Skills: "Athletics +5, Deception +6, Performance +6",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed"],
+        Senses: "Passive Perception 13",
+        Languages: "Common",
+        Challenge: [10, 5900],
+        ExtraRewards: "First drop: Grand Key, two memory shards, and a sigil of an ouroboros with a background of a raven.",
+        Traits: [
+            {Title: "Aura of Nobility", Desc: "As an action, Sir Boros may raise his hand in the air and demand assistance from the creatures around him. Roll a d20.<br><br>On a 10+, 1d4 + 1 risen creatures come forward to his aid.<br>On a 15+, 1d4 + 1 of any type of creatures are charmed to come forward to his aid with a CR rating of 15 or lower.<br>On a natural 20, 1d4 of any type of creatures are charmed to come forward to his aid."},
+            {Title: "Curse of Life", Desc: "If Brave Sir Boros dies, he will be revived in 1d4 hours without cost."}
+        ],
+        Actions: [
+            {Title: "Multiattack", Desc: "Brave Sir Boros makes four attacks with his longswords or bombs."},
+            {Title: "+2 Longsword", Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 9 (1d6 + 6) slashing damage."},
+            {Title: "Bomb", Desc: "Ranged Weapon Attack: +6 to hit, range 30/60 ft., one target. Hit: 13 (4d4 + 5) acid, fire, or lightning damage."}
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Brave Sir Boros (SoD, Version 3)
+        ID: 100016,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Brave Sir Boros (SoD, Version 3)",
+        Type: "Medium humanoid, chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [21, "+3 plate armor"],
+        HitPoints: 228,
+        HitPointsRoll: "25d8 + 80",
+        Speed: "30 ft.",
+        Strength: 20,
+        Dexterity: 16,
+        Constitution: 20,
+        Intelligence: 12,
+        Wisdom: 12,
+        Charisma: 20,
+        SavingThrows: [],
+        Skills: "Athletics +5, Deception +6, Performance +6",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed"],
+        Senses: "Passive Perception 15",
+        Languages: "Common",
+        Challenge: [15, 13000],
+        ExtraRewards: "First drop: Grand Key, two memory shards, and a sigil of an ouroboros with a background of a raven.",
+        Traits: [
+            {Title: "Aura of Nobility", Desc: "As an action, Sir Boros may raise his hand in the air and demand assistance from the creatures around him. Roll a d20.<br><br>On a 10+, 1d4 + 1 risen creatures come forward to his aid.<br>On a 15+, 1d4 + 1 of any type of creatures are charmed to come forward to his aid with a CR rating of 15 or lower.<br>On a natural 20, 1d4 of any type of creatures are charmed to come forward to his aid."},
+            {Title: "Curse of Life", Desc: "If Brave Sir Boros dies, he will be revived in 1d4 hours without cost."}
+        ],
+        Actions: [
+            {Title: "Multiattack", Desc: "Brave Sir Boros makes five attacks with his longswords or bombs."},
+            {Title: "+4 Longsword", Desc: "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 12 (1d6 + 9) type damage."},
+            {Title: "Great Bomb", Desc: "Ranged Weapon Attack: +6 to hit, range 30/60 ft., one target. Hit: 25 (8d4 + 5) acid, cold, fire, lightning, radiant, necrotic, or poison damage."}
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Brave Sir Boros (UNW)
+        ID: 100017,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Brave Sir Boros (UNW)",
+        Type: "Medium humanoid, lawful good",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [22, "+3 plate plus 1 for duel wielder"],
+        HitPoints: 200,
+        HitPointsRoll: "20d10 + 77",
+        Speed: "30 ft.",
+        Strength: 20,
+        Dexterity: 11,
+        Constitution: 20,
+        Intelligence: 8,
+        Wisdom: 11,
+        Charisma: 17,
+        SavingThrows: ["Str +11", "Con +11"],
+        Skills: "Animal Handling +6, Athletics +11, Insight +6, Survival +6",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 10",
+        Languages: "Common",
+        Challenge: [20, 25000],
+        ExtraRewards: "+3 plate, two +3 longswords, +3 light crossbow, 20 bolts, mason's tools, shovel, iron pot, common clothes, belt pouch, backpack, bedroll, mess kit, tinderbox, 10 torches, 10 days of rations, waterskin, 50 feet of hempen rope.",
+        Traits: [
+            {
+                Title: "Fighting Style: Two-Weapon Fighting",
+                Desc: "When wielding a weapon in each hand and engaging in two-weapon fighting, Boros can add his ability modifier to the damage of the additional attack."
+            },
+            {
+                Title: "Fighting Style: Archery",
+                Desc: "Boros gains a +2 bonus to attack rolls he makes with ranged weapons."
+            },
+            {
+                Title: "Martial Archetype: Champion",
+                Desc: "Boros focuses on physical excellence, rigorous training, and devastating weapon attacks."
+            },
+            {
+                Title: "Dual Wielder",
+                Desc: "Boros gains a +1 bonus to AC while wielding a separate melee weapon in each hand. He can use two-weapon fighting even when the one-handed melee weapons he wields aren't light. He can draw or stow two one-handed weapons when he would normally be able to draw or stow only one."
+            },
+            {
+                Title: "Improved Critical",
+                Desc: "Boros's weapon attacks score a critical hit on a roll of 19 or 20."
+            },
+            {
+                Title: "Superior Critical",
+                Desc: "Boros's weapon attacks score a critical hit on a roll of 18, 19, or 20."
+            },
+            {
+                Title: "Remarkable Athlete",
+                Desc: "Boros can add half his proficiency bonus (rounded up) to any Strength, Dexterity, or Constitution check he makes that doesn't already use his proficiency bonus. When he makes a running long jump, the distance he can cover increases by 5 feet."
+            },
+            {
+                Title: "Indomitable (Thrice per Long Rest)",
+                Desc: "When Boros fails a saving throw, he can reroll it and must use the new roll. He can use this feature three times between long rests."
+            },
+            {
+                Title: "Savage Attacker",
+                Desc: "Once per turn when Boros rolls damage for a melee weapon attack, he can reroll the weapon's damage dice and use either total."
+            },
+            {
+                Title: "Inspiring Leader",
+                Desc: "Boros can spend 10 minutes inspiring up to six friendly creatures, including himself, within 30 feet who can see or hear him and understand him. Each creature gains 23 temporary hit points. A creature can't gain temporary hit points from this feature again until it finishes a short or long rest."
+            },
+            {
+                Title: "Survivor",
+                Desc: "At the start of each of Boros's turns, he regains 10 hit points if he has no more than half his hit points remaining. He doesn't gain this benefit if he has 0 hit points."
+            },
+            {
+                Title: "Rustic Hospitality",
+                Desc: "Because Boros comes from the ranks of the common folk, he can find a place to hide, rest, or recuperate among other commoners unless he has shown himself to be a danger to them. They will shield him from the law or anyone else searching for him, though they will not risk their lives for him."
+            },
+            {
+                Title: "Plate Armor",
+                Desc: "Boros has disadvantage on Dexterity (Stealth) checks while wearing his plate armor."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Boros makes four weapon attacks. He can make these attacks with his longsword or light crossbow."
+            },
+            {
+                Title: "+3 Longsword",
+                Desc: "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 12 (1d8 + 8) slashing damage."
+            },
+            {
+                Title: "+3 Light Crossbow",
+                Desc: "Ranged Weapon Attack: +9 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+            },
+            {
+                Title: "Action Surge (1/Short or Long Rest)",
+                Desc: "Boros can push beyond his normal limits and take one additional action on his turn. He can use this feature twice between rests, but no more than once on the same turn."
+            },
+            {
+                Title: "Second Wind (1/Short or Long Rest)",
+                Desc: "As a bonus action, Boros regains 1d10 + 20 hit points."
+            },
+            {
+                Title: "Indomitable (3/Long Rest)",
+                Desc: "When Boros fails a saving throw, he can reroll it and must use the new roll. This use is expended even if the new roll fails."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Two-Weapon Fighting",
+                Desc: "While wielding a separate melee weapon in each hand, Boros can make one additional attack with his other weapon as a bonus action."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Brave Sir Boros is a level 20 human Fighter who follows the Champion martial archetype. A lawful good Folk Hero, he is a veteran warrior with exceptional physical strength, resilience, and mastery of weapon combat. His fighting style emphasizes dual-wielding, while his training also supports ranged combat. Boros can inspire allies, rally through adversity, and continue fighting when lesser warriors would fall. Character background: Folk Hero. Race: Human. Class: Fighter 20. Alignment: Lawful Good.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Untitled NPC World"]
+    },
+    { // Ceaseless Discharge
+        ID: 100018,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Ceaseless Discharge",
+        Type: "Gargantuan elemental, chaotic neutral",
+        TypeCategory: "Elemental",
+        Size: "Gargantuan",
+        Source: "Homebrew",
+        ArmorClass: [16, "natural armor"],
+        HitPoints: 238,
+        HitPointsRoll: "14d20 + 70",
+        Speed: "30 ft.",
+        Strength: 23,
+        Dexterity: 10,
+        Constitution: 21,
+        Intelligence: 16,
+        Wisdom: 18,
+        Charisma: 12,
+        SavingThrows: ["Str +11", "Con +10", "Wis +9"],
+        Skills: "Arcana +8, Athletics +11",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Poison"],
+        DamageImmunities: ["Fire", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        ConditionImmunities: ["Charmed", "Deafened", "Frightened", "Grappled", "Poisoned"],
+        Senses: "Passive Perception 14",
+        Languages: "Abyssal",
+        Challenge: [15, 13000],
+        ExtraRewards: "5 boons, 2 Coral, 4 Bloodstone, 7 Banded Agate, Staff of Fire",
+        Traits: [
+            {Title: "Molten Body", Desc: "Ceaseless Discharge's attacks deal an additional 4d6 fire damage (included in the attack)."}
+        ],
+        Actions: [
+            {Title: "Multiattack", Desc: "Ceaseless Discharge makes three tentacle attacks."},
+            {Title: "Tentacle Slam", Desc: "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage plus 14 (4d8) fire damage."},
+            {Title: "Fire Cone (Recharge 5-6)", Desc: "Ceaseless Discharge releases fire in a 60-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 54 (12d8) fire damage on a failed save, or half as much damage on a successful one."}
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [
+            {Title: "Heated Floor", Desc: "At the start of each round, all creatures on the volcano floor take 14 (4d6) fire damage."}
+        ],
+        Description: "description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Elemental Plane of Fire"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Cyphus, King of the Undying
+        ID: 100019,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Cyphus, King of the Undying",
+        Type: "Medium undead, neutral evil",
+        TypeCategory: "Undead",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [18, "natural armor; 21 with the Wand of Orcus"],
+        HitPoints: 437,
+        HitPointsRoll: "35d8 + 280",
+        Speed: "30 ft., fly 50 ft. (hover)",
+        Strength: 19,
+        Dexterity: 25,
+        Constitution: 27,
+        Intelligence: 29,
+        Wisdom: 25,
+        Charisma: 19,
+        SavingThrows: ["Con +16", "Int +17", "Wis +15"],
+        Skills: "Arcana +25, History +16, Insight +15, Perception +15",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Necrotic", "Psychic"],
+        DamageImmunities: ["Fire", "Poison", "Bludgeoning, Piercing, and Slashing from nonmagical weapons"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Poisoned"],
+        Senses: "Truesight 120 ft., Passive Perception 25",
+        Languages: "All, telepathy 120 ft.",
+        Challenge: [26, 90000],
+        ExtraRewards: "16 boons, 6 Very Rare gems, 8 Rare gems, 8 Uncommon gems, 6 Common gems, Memory Shard 'Power Word: Kill'",
+        Traits: [
+            {
+                Title: "The Names Have Power",
+                Desc: "Cyphus attends by many names, but only one is his truer name. When a creature speaks his true name, Cyphus immediately knows the plane of origin of that creature and a location within a 5-mile radius where it is."
+            },
+            {
+                Title: "Avoidance",
+                Desc: "If Cyphus is subjected to an effect that allows him to make a saving throw to take only half damage, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails."
+            },
+            {
+                Title: "Turn Immunity",
+                Desc: "Cyphus is immune to effects that turn undead."
+            },
+            {
+                Title: "Rejuvenation",
+                Desc: "If Cyphus has a phylactery when he is destroyed, he gains a new body in 1d8 days, regaining all his hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Cyphus fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Cyphus has advantage on saving throws against spells and other magical effects."
+            },
+            {
+                Title: "Aura of the Flame",
+                Desc: "Every flame within 300 feet of Cyphus changes its color to blue, and undead creatures inside this area have advantage on saving throws against any effect that turns undead. Additionally, any creature that touches or hits Cyphus with a melee attack or starts its turn within 5 feet of him takes 10 (3d6) fire damage."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "Cyphus is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 25, +17 to hit with spell attacks). Wizard spells prepared:<br><br>Cantrips (at will): Chill Touch, Control Flames, Fire Bolt, Frostbite, Shocking Grasp.<br>1st level (4 slots): Detect Magic, Ice Knife, Magic Missile, Shield.<br>2nd level (3 slots): Detect Thoughts, Invisibility, Melf's Acid Arrow, Mirror Image.<br>3rd level (3 slots): Animate Dead, Counterspell, Dispel Magic, Fireball, Melf's Minute Meteors.<br>4th level (3 slots): Blight, Dimension Door.<br>5th level (3 slots): Cloudkill, Immolation, Scrying.<br>6th level (2 slots): Disintegrate, Investiture of Flame, Globe of Invulnerability.<br>7th level (2 slots): Finger of Death, Forcecage, Plane Shift.<br>8th level (1 slot): Dominate Monster, Power Word Stun.<br>9th level (1 slot): Power Word Kill."
+            },
+            {
+                Title: "Eye and Hand of Vecna",
+                Desc: "While attuned to the Eye and Hand of Vecna, Cyphus is immune to disease and can't be surprised. Additionally, he regains 5 (1d10) hit points if he starts his turn with at least 1 hit point.<br>Eye: Has 8 charges. As an action, Cyphus can see as if wearing a Ring of X-ray Vision, or expend charges to cast Clairvoyance (2 charges), Crown of Madness (1 charge), Disintegrate (4 charges), Dominate Monster (5 charges), or Eyebite (4 charges), save DC 18. The eye regains 1d4 + 4 expended charges daily at dawn.<br>Hand: Has 8 charges. As an action, Cyphus can expend charges to cast Finger of Death (5 charges), Sleep (1 charge), Slow (2 charges), or Teleport (3 charges), save DC 18. The hand regains 1d4 + 4 expended charges daily at dawn."
+            },
+            {
+                Title: "Wand of Orcus",
+                Desc: "The wand has 7 charges, and properties requiring a saving throw use DC 18. While holding it, Cyphus can use an action and expend charges to cast Animate Dead (1 charge), Blight (2 charges), Circle of Death (3 charges), Finger of Death (3 charges), or Power Word Kill (4 charges). The wand regains 1d4 + 3 charges daily at dawn. While holding the wand, Cyphus can use an action to conjure undead creatures whose combined average hit points don't exceed 500. These undead rise from the ground or otherwise form in unoccupied spaces within 300 feet of Cyphus and obey his commands until destroyed or dismissed by him as an action. Once used, this property can't be used again until the next dawn."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Paralyzing Touch",
+                Desc: "Melee Spell Attack: +17 to hit, reach 5 ft., one target. Hit: 10 (3d6) cold damage. If Cyphus is attuned to the Hand of Vecna, the target takes an extra 9 (2d8) cold damage. The target must succeed on a DC 25 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            },
+            {
+                Title: "Spectral Scythe",
+                Desc: "Melee Spell Attack: +17 to hit, reach 10 ft., one target. Hit: 16 (3d10) necrotic damage. If Cyphus is attuned to the Hand of Vecna, the target takes an extra 9 (2d8) cold damage. The target must succeed on a DC 25 Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken, and Cyphus regains hit points equal to the necrotic damage dealt. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+            },
+            {
+                Title: "Wand of Orcus",
+                Desc: "Melee Weapon Attack: +16 to hit, reach 5 ft., one creature. Hit: 11 (1d6 + 8) bludgeoning damage plus 13 (2d12) necrotic damage."
+            },
+            {
+                Title: "Etherealness (Recharge 5–6)",
+                Desc: "Cyphus magically enters the Ethereal Plane from the Material Plane, or vice versa."
+            },
+            {
+                Title: "Capture the Soul (Recharge 6)",
+                Desc: "Melee Spell Attack: +17 to hit, reach 5 ft., one living creature. Hit: 9 (2d8) cold damage, and the creature must succeed on a DC 20 Constitution saving throw or drop to 0 hit points. On a successful save, the creature is frightened until the end of its next turn."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Cast a Cantrip",
+                Desc: "Cyphus casts one cantrip."
+            },
+            {
+                Title: "Attack (Costs 2 Actions)",
+                Desc: "Cyphus uses one of his attack actions."
+            },
+            {
+                Title: "Blue Flame (Costs 2 Actions)",
+                Desc: "Cyphus casts Immolation without spending a spell slot and doesn't need to concentrate on it."
+            },
+            {
+                Title: "Life Drain (Costs 2 Actions)",
+                Desc: "Cyphus targets up to three creatures he can see within 30 feet. Each target must succeed on a DC 25 Constitution saving throw or take 21 (6d6) necrotic damage. Cyphus regains hit points equal to the total damage dealt to all targets."
+            },
+            {
+                Title: "Cast a Spell (Costs 3 Actions)",
+                Desc: "Cyphus casts one of his spells or expends artifact charges."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Shadowfell"],
+        GeographicalLocations: ["Aesis(Shadowfell) Palace of the Undying"],
+        Campaigns_Worlds: ["All", "Soul of Denethor"]
+    },
+    { // Devoted Father Alwyn
+        ID: 100020,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Devoted Father Alwyn",
+        Type: "Medium humanoid (human), neutral evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [17, "+3 padded armor"],
+        HitPoints: 156,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 11,
+        Dexterity: 16,
+        Constitution: 15,
+        Intelligence: 13,
+        Wisdom: 11,
+        Charisma: 20,
+        SavingThrows: ["Dex +9", "Cha +11"],
+        Skills: "Arcana +7, Deception +17, History +13, Insight +6, Persuasion +17, Sleight of Hand +9, Religion +13",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Frightened"],
+        Senses: "Passive Perception 10",
+        Languages: "Common",
+        Challenge: [20, 25000],
+        ExtraRewards: "10 boons, 3 Very Rare gems, 5 Rare gems, 7 Uncommon gems, Memory Shard (Superior Inspiration), Memory Shard (Power Word: Heal), +3 padded armor, Chime of Opening, Cloak of Displacement, Helm of Brilliance, dulcimer, flute, bagpipes",
+        Traits: [
+            {
+                Title: "Bard College: College of Glamour",
+                Desc: "Alwyn follows the College of Glamour."
+            },
+            {
+                Title: "Background: Charlatan",
+                Desc: "Devoted Father Alwyn has the Charlatan background."
+            },
+            {
+                Title: "Cloak of Displacement",
+                Desc: "While wearing this cloak, Alwyn projects an illusion that makes him appear to be standing in a place near his actual location, causing any creature to have disadvantage on attack rolls against him. If he takes damage, this property ceases to function until the start of his next turn. The property is suppressed while he is incapacitated, restrained, or otherwise unable to move."
+            },
+            {
+                Title: "Jack of All Trades",
+                Desc: "Alwyn adds +3 to any ability check he makes that doesn't already include his proficiency bonus."
+            },
+            {
+                Title: "Magical Secrets",
+                Desc: "Alwyn chooses two spells at each of levels 10, 14, and 18 from any class to add to his bard spells. These spells count as bard spells and are included in the number in the Spells Known column of the Bard table."
+            },
+            {
+                Title: "Superior Inspiration",
+                Desc: "When Alwyn rolls initiative and has no uses of Bardic Inspiration left, he regains one use."
+            },
+            {
+                Title: "Enthralling Performance (1/Rest)",
+                Desc: "If Alwyn performs for at least 1 minute, he can attempt to inspire wonder in his audience by singing, reciting a poem, or dancing. At the end, choose up to five humanoids within 60 feet who watched and listened to the entire performance. Each must succeed on a Wisdom saving throw or be charmed for 1 hour. While charmed, the target idolizes Alwyn, speaks glowingly of him, and hinders anyone who opposes him, avoiding violence unless already inclined to fight on his behalf. The effect ends if the target takes damage, Alwyn attacks it, or it witnesses him attacking or damaging one of its allies. A target that succeeds on its save has no hint that Alwyn tried to charm it."
+            },
+            {
+                Title: "War Caster",
+                Desc: "Alwyn has advantage on Constitution saving throws to maintain concentration on a spell when he takes damage. He can perform somatic components even with weapons or a shield in one or both hands. When a hostile creature's movement provokes an opportunity attack from him, he can use his reaction to cast a spell at that creature instead. The spell must have a casting time of 1 action and target only that creature."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Alwyn's spellcasting ability is Charisma (spell save DC 19, +11 to hit with spell attacks). He can cast the following spells without material components:<br><br>Cantrips (at will): Blade Ward, Minor Illusion, Thunderclap, Vicious Mockery.<br>1st level (4 slots): Arms of Hadar, Bane, Bless, Command.<br>2nd level (3 slots): Invisibility, Phantasmal Force, Shatter, Warding Wind.<br>3rd level (3 slots): Bestow Curse, Dispel Magic, Fear.<br>4th level (3 slots): Confusion, Phantasmal Killer.<br>5th level (3 slots): Mislead, Synaptic Static, Scrying.<br>6th level (2 slots): Eyebite.<br>7th level (2 slots): Mirage Arcane, Mordenkainen's Sword, Power Word: Pain.<br>8th level (1 slot): Feeblemind.<br>9th level (1 slot): Power Word: Heal."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Rapier (+3)",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) magical piercing damage."
+            },
+            {
+                Title: "Countercharm",
+                Desc: "Alwyn can start a performance that lasts until the end of his next turn. During that time, he and friendly creatures within 30 feet have advantage on saving throws against being frightened or charmed, provided they can hear him. The performance ends early if he is incapacitated, silenced, or voluntarily ends it (no action required)."
+            },
+            {
+                Title: "Helm of Brilliance",
+                Desc: "The helm contains 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Gems pried from the helm crumble to dust; when all gems are removed or destroyed, the helm loses its magic. <br>"+
+                    "- While wearing it, Alwyn can use an action to cast Daylight (opal), Fireball (fire opal), Prismatic Spray (diamond), or Wall of Fire (ruby), save DC 18, destroying one gem of the appropriate type. <br>"+
+                    "- If it has at least one diamond, it emits dim light in a 30-foot radius when an undead creature is within that area, and any undead starting its turn there takes 1d6 radiant damage. <br>"+
+                    "- If it has at least one ruby, Alwyn has fire resistance. <br>"+
+                    "- If it has at least one fire opal, he can use an action and speak a command word to make a weapon he holds burst into harmless flames, shedding bright light in a 10-foot radius and dim light for another 10 feet. <br>"+
+                    "- Hits with the blazing weapon deal an extra 1d6 fire damage. The flames end when he uses a bonus action to speak the command word again or drops or stows the weapon. <br>"+
+                    "- If Alwyn wears the helm and takes fire damage from failing a saving throw against a spell, he rolls a d20. On a 1, beams of light shoot from the remaining gems. Each creature within 60 feet other than Alwyn must succeed on a DC 17 Dexterity saving throw or take radiant damage equal to the number of gems in the helm. The helm and its gems are then destroyed."
+            },
+            {
+                Title: "Chime of Opening",
+                Desc: "This hollow metal tube is about 1 foot long and weighs 1 pound. As an action, Alwyn can strike it while pointing at an object within 120 feet that can be opened, such as a door, lid, or lock. The chime issues a clear tone, and one lock or latch opens unless the sound can't reach the object. If no locks or latches remain, the object itself opens."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Bardic Inspiration (5/Rest)",
+                Desc: "Alwyn chooses a creature other than himself within 60 feet that can hear him. The creature gains one d12 Bardic Inspiration die, usable within 10 minutes to add to one ability check, attack roll, or saving throw. The creature can decide after rolling the d20 but before the DM says whether the roll succeeds or fails. Once rolled, the die is lost. A creature can have only one Bardic Inspiration die at a time."
+            },
+            {
+                Title: "Mantle of Inspiration",
+                Desc: "Alwyn can expend one use of Bardic Inspiration to choose up to five creatures he can see within 60 feet that can also see him. Each gains 14 temporary hit points and can immediately use its reaction to move up to its speed without provoking opportunity attacks."
+            },
+            {
+                Title: "Unbreakable Majesty (1/Rest)",
+                Desc: "Alwyn's appearance permanently gains an otherworldly aspect that makes him look more lovely and fierce. As a bonus action, he can assume a magically majestic presence for 1 minute or until incapacitated. Whenever a creature tries to attack him for the first time on a turn, the attacker must make a Charisma saving throw. On a failure, it can't attack him that turn and must choose a new target or the attack is wasted. On a success, it can attack him that turn, but it has disadvantage on any saving throw it makes against his spells on his next turn."
+            },
+            {
+                Title: "Mantle of Majesty (1/Rest)",
+                Desc: "Alwyn casts Command without expending a spell slot and takes on an appearance of unearthly beauty for 1 minute or until his concentration ends. During this time, he can cast Command as a bonus action on each of his turns without expending a spell slot. Any creature charmed by him automatically fails its saving throw against the Command he casts."
+            },
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Tridenthia"],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Heart of Growth
+        ID: 100021,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Heart of Growth",
+        Type: "Huge plant, chaotic evil",
+        TypeCategory: "Plant",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: [20],
+        HitPoints: 93,
+        HitPointsRoll: "",
+        Speed: "0 ft.",
+        Strength: 17,
+        Dexterity: 8,
+        Constitution: 17,
+        Intelligence: 7,
+        Wisdom: 16,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Paralyzed", "Prone", "Restrained", "Unconscious"],
+        Senses: "Tremorsense 60 ft., Passive Perception 13",
+        Languages: "None",
+        Challenge: [6, 2500],
+        ExtraRewards: "2 boons",
+        Traits: [
+            {
+                Title: "Tough Husk",
+                Desc: "The Heart of Growth gains 1 AC at the start of each of its turns (maximum 20). Every time an attack hits it or the Heart of Growth fails a save and takes damage, it loses 1 AC point (minimum 8)."
+            },
+            {
+                Title: "Grasping Tendrils",
+                Desc: "The Heart of Growth can have up to six tendrils at a time. Each tendril can be attacked (AC 14; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the Heart of Growth, which can extrude a replacement tendril on its next turn. A tendril can also be broken if a creature takes an action and succeeds on a DC 15 Strength check against it."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Heart of Growth makes four attacks in any combination of Slam and Grapple & Squeeze."
+            },
+            {
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 50 ft., one creature. Hit: 3 (1d6) bludgeoning damage."
+            },
+            {
+                Title: "Grapple & Squeeze",
+                Desc: "The Heart of Growth attempts to grapple a target. If successful, the target is restrained and takes 7 (1d6 + 4) bludgeoning damage. The target also has disadvantage on Strength checks and Strength saving throws, and the Heart of Growth can't use the same tendril on another target."
+            },
+            {
+                Title: "Reel",
+                Desc: "The Heart of Growth pulls each creature grappled by it up to 25 feet straight toward or away from it."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "At the center of these tunnels of growth is a large trunk emitting an orange glow with orange saps on its branches. The wooden texture matches the same as you've seen on the roots across the city; however, this tree feels... alive... and you know it to be when branches animate at your presence.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Underdark", "Thrandul"],
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
+    },
+    { // The Trunk of the Growth
+        ID: 100022,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "The Trunk of the Growth",
+        Type: "Gargantuan plant, chaotic evil",
+        TypeCategory: "Plant",
+        Size: "Gargantuan",
+        Source: "Homebrew",
+        ArmorClass: [20],
+        HitPoints: 25,
+        HitPointsRoll: "25 hit points per root; 7 roots",
+        Speed: "0 ft.",
+        Strength: 19,
+        Dexterity: 8,
+        Constitution: 17,
+        Intelligence: 7,
+        Wisdom: 16,
+        Charisma: 6,
+        SavingThrows: [],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Paralyzed", "Prone", "Restrained", "Unconscious"],
+        Senses: "Tremorsense 60 ft., Passive Perception 13",
+        Languages: "None",
+        Challenge: [8, 4000],
+        ExtraRewards: "1 or 2 boons for each person",
+        Traits: [
+            {
+                Title: "Roots of the Trunk",
+                Desc: "The Trunk of the Growth has seven roots growing from the spring. All seven roots must be killed for the Trunk of the Growth to be defeated. Once a root is killed, it cannot be regained."
+            },
+            {
+                Title: "Tough Husk",
+                Desc: "The Trunk of the Growth gains 1d2 AC at the start of each of its turns (maximum 20). Every time an attack hits it or the Trunk of the Growth fails a save and takes damage, it loses 1 AC point (minimum 8). Each root of the Trunk of the Growth has its own AC."
+            },
+            {
+                Title: "Grasping Tendrils",
+                Desc: "The Trunk of the Growth can have up to six tendrils at a time. Each tendril can be attacked (AC 17; 14 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the Trunk of the Growth, which can extrude a replacement tendril on its next two turns. A tendril can also be broken if a creature takes an action and succeeds on a DC 18 Strength check against it."
+            },
+            {
+                Title: "Source of the Fey",
+                Desc: "The Trunk of the Growth regains 4 (1d8) hit points at the start of each of its turns. The amount of hit points is divided up among the roots."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Trunk of the Growth makes four attacks in any combination of Poison Spray, Slam, and Grapple & Squeeze, and only one attack with its Bite and Reel."
+            },
+            {
+                Title: "Slam",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 50 ft., one creature. Hit: 6 (1d8 + 2) bludgeoning damage. Each creature within 5 feet of the target must make a DC 16 Dexterity saving throw or take half the damage the target received."
+            },
+            {
+                Title: "Grapple & Squeeze",
+                Desc: "The Trunk of the Growth attempts to grapple a target. If successful, the target is restrained and takes 11 (2d8 + 2) bludgeoning damage. The target also has disadvantage on Strength checks and Strength saving throws, and the Trunk of the Growth can't use the same tendril on another target."
+            },
+            {
+                Title: "Reel",
+                Desc: "The Trunk of the Growth pulls each creature grappled by it up to 50 feet straight toward or away from it."
+            },
+            {
+                Title: "Poison Spray (Recharge 5–6)",
+                Desc: "Every creature within 15 feet of the Trunk of the Growth must make a DC 15 Constitution saving throw or take 13 (2d12) poison damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Underdark"],
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
+    },
+    { // Bonfire Sorcerer
+        ID: 100023,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Bonfire Sorcerer",
+        Type: "Medium humanoid (tiefling), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [11, "+5 with Shield"],
+        HitPoints: 21,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 8,
+        Dexterity: 7,
+        Constitution: 10,
+        Intelligence: 8,
+        Wisdom: 6,
+        Charisma: 13,
+        SavingThrows: ["Con +2", "Cha +3"],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Fire"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed"],
+        Senses: "Darkvision 60 ft., Passive Perception 8",
+        Languages: "Common, Infernal, Draconic",
+        Challenge: [4, 1000],
+        ExtraRewards: "Memory Shard for the spell Scorching Ray, 1 boon",
+        Traits: [
+            {
+                Title: "Sorcerous Origin: Draconic Bloodline",
+                Desc: "The Bonfire Sorcerer has a Draconic Bloodline sorcerous origin. Ancestry: Brass Dragon, associated damage type: Fire."
+            },
+            {
+                Title: "Metamagic: Extended Spell",
+                Desc: "When the sorcerer casts a spell that has a duration of 1 minute or longer, it can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours."
+            },
+            {
+                Title: "Metamagic: Twinned Spell",
+                Desc: "When the sorcerer casts a spell that targets only one creature and doesn't have a range of self, it can spend sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip)."
+            },
+            {
+                Title: "Sorcery Points (4/4)",
+                Desc: "The sorcerer has 4 sorcery points. It can use them to gain additional spell slots or sacrifice spell slots to gain additional sorcery points. As a bonus action, it can transform unexpended sorcery points into a spell slot of up to 5th level. Slot costs: 1st level 2 points, 2nd level 3 points, 3rd level 5 points, 4th level 6 points, 5th level 7 points. As a bonus action, it can expend one spell slot and gain sorcery points equal to the slot's level."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "The source lists Intelligence as the sorcerer's spellcasting ability (spell save DC 10). It can cast the following spells without material components:<br><br>Cantrips (at will): Fire Bolt, Prestidigitation, True Strike, Dancing Lights.<br>1st level (4 slots): Burning Hands, Shield.<br>2nd level (3 slots): Gust of Wind, Scorching Ray.<br>1/day: Hellish Rebuke."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Dagger",
+                Desc: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Create Spell Slot",
+                Desc: "The sorcerer can transform unexpended sorcery points into a spell slot as a bonus action. The slot can be no higher than 5th level. Costs: 1st level 2 points, 2nd level 3 points, 3rd level 5 points, 4th level 6 points, 5th level 7 points."
+            },
+            {
+                Title: "Convert Spell Slot",
+                Desc: "As a bonus action, the sorcerer can expend one spell slot and gain a number of sorcery points equal to the slot's level."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Shield",
+                Desc: "When the sorcerer is hit by an attack or targeted by Magic Missile, it casts Shield. An invisible barrier of magical force grants +5 AC until the start of its next turn, including against the triggering attack, and it takes no damage from Magic Missile."
+            },
+            {
+                Title: "Hellish Rebuke (1/Day)",
+                Desc: "In response to being damaged by a creature within 60 feet that it can see, the sorcerer surrounds that creature with hellish flames. The creature must make a Dexterity saving throw, taking 2d10 fire damage on a failed save or half as much on a successful one. When cast using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Description",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Talia Confederacy"],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Manus, Father of the Shadow
+        ID: 100024,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Manus, Father of the Shadow",
+        Type: "Huge aberration, chaotic evil",
+        TypeCategory: "Aberration",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: [22, "natural armor"],
+        HitPoints: 362,
+        HitPointsRoll: "25d12 + 200",
+        Speed: "30 ft.",
+        Strength: 26,
+        Dexterity: 22,
+        Constitution: 26,
+        Intelligence: 25,
+        Wisdom: 30,
+        Charisma: 25,
+        SavingThrows: ["Dex +13", "Con +15", "Wis +17"],
+        Skills: "",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Cold", "Poison"],
+        DamageImmunities: ["Necrotic", "Bludgeoning, Piercing, and Slashing from nonmagical weapons"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Poisoned"],
+        Senses: "Blindsight 120 ft., Darkvision 120 ft., Passive Perception 20",
+        Languages: "Primordial",
+        Challenge: [24, 62000],
+        ExtraRewards: "18 boons, 8 Very Rare gems, 12 Rare gems, 14 Uncommon gems, 16 Common gems, 2 random +3 necrotic weapons, Staff of Manus",
+        Traits: [
+            {
+                Title: "Dark Weapons",
+                Desc: "When Manus hits with any weapon, the weapon deals an extra 6d7 necrotic damage (included in the attack)."
+            },
+            {
+                Title: "Legendary Resistance (3/Day)",
+                Desc: "If Manus fails a saving throw, he can choose to succeed instead."
+            },
+            {
+                Title: "Magic Resistance",
+                Desc: "Manus has advantage on saving throws against spells and other magical effects."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Manus makes two attacks with his staff and one attack with his arm."
+            },
+            {
+                Title: "Staff of Manus",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 22 (4d6 + 8) bludgeoning damage plus 27 (6d8) necrotic damage."
+            },
+            {
+                Title: "Arm",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 20 ft., hitting all creatures in a line of effect. Hit: 26 (4d8 + 8) bludgeoning damage plus 27 (6d8) necrotic damage."
+            },
+            {
+                Title: "Frightful Presence",
+                Desc: "All creatures within 120 feet of Manus that are aware of him must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature succeeds on its saving throw or the effect ends for it, the creature is immune to Manus's Frightful Presence for the next 24 hours."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Reach Around",
+                Desc: "Manus attacks an enemy as it enters a radius of 5 feet around him with his arm. The creature must make a DC 25 Dexterity saving throw, taking 26 (4d8 + 8) bludgeoning damage and 27 (6d8) necrotic damage and being knocked back 10 feet on a failed save, or half as much damage on a successful one."
+            },
+            {
+                Title: "Hail of Darkness (Costs 2 Actions)",
+                Desc: "Manus raises his hand and summons a storm of dark orbs to shower down on his enemies. Each creature in a 20-foot radius must make a DC 25 Dexterity saving throw, taking 28 (8d6) necrotic damage on a failed save or half as much on a successful one."
+            },
+            {
+                Title: "Dark Burst (Costs 3 Actions)",
+                Desc: "Manus shoots multiple dark orbs from his free hand. One target within 60 feet must make a DC 25 Dexterity saving throw, taking 45 (10d8) necrotic damage on a failed save or half as much on a successful one."
+            },
+            {
+                Title: "Dark Circle (Costs 3 Actions)",
+                Desc: "Manus slams his staff into the ground, erupting dozens of dark orbs that shoot out to the edges of the chamber and then rush toward him. All creatures within the circle of dark orbs must make a DC 25 Dexterity saving throw. On a failed save, a creature takes 36 (8d8) necrotic damage and is knocked prone. On a successful save, a creature takes no damage and isn't knocked prone."
+            }
+        ],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "A hulking figure stares down before you from the shadow with multiple red eyes. A huge black left hand slams on the ground before you, with an arm of swirling necrotic shadow bringing its twisted gigantic body out of the shadows. A large staff is wielded in its right hand, with large extruding horns from a vaguely human-shaped head and back, with red eyes encased upon them. The Father of the Shadow growls before unleashing a loud shriek that shakes the very fabric of this dark reality.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Shadowfell"],
+        GeographicalLocations: ["Bellevue Asylum (Shadowfell)"],
+        Campaigns_Worlds: ["Soul of Denethor"]
+    },
+    { // Mordath Vornaar
+        ID: 100025,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Mordath Vornaar",
+        Type: "Medium humanoid (copper dragonborn), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [17, "splint armor"],
+        HitPoints: 286,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 20,
+        Dexterity: 16,
+        Constitution: 19,
+        Intelligence: 10,
+        Wisdom: 11,
+        Charisma: 18,
+        SavingThrows: ["Str +11", "Con +10", "Cha +10"],
+        Skills: "Arcana +6, Athletics +11, Deception +10, Persuasion +10",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid"],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 11",
+        Languages: "Common, Draconic",
+        Challenge: [20, 25000],
+        ExtraRewards: "8 boons, 3 Very Rare gems, 5 Rare gems, 7 Uncommon gems, Flame Tongue (Scimitar), Robe of Scintillating Colors",
+        Traits: [
+            {
+                Title: "Fighting Style: Archery",
+                Desc: "Mordath gains a +2 bonus to attack rolls he makes with ranged weapons."
+            },
+            {
+                Title: "Indomitable (1/Rest)",
+                Desc: "Mordath can reroll a saving throw that he fails. If he does so, he must use the new roll."
+            },
+            {
+                Title: "Curving Shot",
+                Desc: "When Mordath makes an attack roll with a magic arrow and misses, he can use a bonus action to reroll the attack roll against a different target within 60 feet of the original target."
+            },
+            {
+                Title: "Arcane Shot (1/Turn)",
+                Desc: "When Mordath fires an arrow from a shortbow or longbow as part of the Attack action, he can apply one of his Arcane Shot options to that arrow. He decides to use the option when the arrow hits, unless the option doesn't involve an attack roll."
+            },
+            {
+                Title: "Arcane Shot Option: Banishing Arrow",
+                Desc: "Mordath uses abjuration magic to try to temporarily banish his target to a harmless location in the Feywild. The creature hit by the arrow must succeed on a Charisma saving throw or be banished. While banished in this way, its speed is 0 and it is incapacitated. At the end of its next turn, the target reappears in the space it vacated or the nearest unoccupied space if that space is occupied."
+            },
+            {
+                Title: "Arcane Shot Option: Bursting Arrow",
+                Desc: "Mordath imbues an arrow with force energy. Immediately after the arrow hits a creature, the target and all other creatures within 10 feet of it take 2d6 force damage each."
+            },
+            {
+                Title: "Arcane Shot Option: Enfeebling Arrow",
+                Desc: "The creature hit by the arrow takes an extra 2d6 necrotic damage and must succeed on a Constitution saving throw or the damage dealt by its weapon attacks is halved until the start of Mordath's next turn."
+            },
+            {
+                Title: "Arcane Shot Option: Shadow Arrow",
+                Desc: "The creature hit by the arrow takes an extra 2d6 psychic damage and must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of Mordath's next turn."
+            },
+            {
+                Title: "Metamagic: Empowered Spell",
+                Desc: "When Mordath rolls damage for a spell, he can spend 1 sorcery point to reroll a number of damage dice up to his Charisma modifier (minimum one). He must use the new rolls. He can use Empowered Spell even if he has already used a different Metamagic option during the casting of the spell."
+            },
+            {
+                Title: "Metamagic: Quickened Spell",
+                Desc: "When Mordath casts a spell that has a casting time of 1 action, he can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+            },
+            {
+                Title: "Elemental Affinity",
+                Desc: "When Mordath casts a spell that deals damage of the type associated with his draconic ancestry, he adds his Charisma modifier to that damage. He can also spend 1 sorcery point to gain resistance to that damage type for 1 hour."
+            },
+            {
+                Title: "Floating Crossbows",
+                Desc: "Mordath has two heavy crossbows that float within 5 feet of him at all times. He can telepathically command them to fire and reload all in the same turn."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Mordath's spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks, 10 sorcery points). The source lists these spells:<br><br>Cantrips (at will): Prestidigitation.<br>1st level (4 slots): Name of Spell.<br>2nd level (3 slots): Name of Spell.<br>3rd level (3 slots): Counterspell, Fireball, Fly, Slow.<br>4th level (3 slots): Greater Invisibility, Wall of Fire.<br>5th level (2 slots): Dominate Person."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Mordath makes one Flame Tongue attack and two Arcane Arrow attacks, or one Arcane Arrow attack and a cantrip."
+            },
+            {
+                Title: "Flame Tongue (Scimitar)",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 3 (1d6) slashing damage plus 7 (2d6) fire damage. The flames last until Mordath uses a bonus action to speak the command word again or drops or sheathes the sword."
+            },
+            {
+                Title: "Arcane Arrow (+3 Heavy Crossbow)",
+                Desc: "Ranged Weapon Attack: +12 to hit, range 100/400 ft., one target. Hit: 8 (1d10 + 3) piercing damage."
+            },
+            {
+                Title: "Breath Weapon (Per Rest)",
+                Desc: "Mordath exhales destructive acidic energy in a 5-by-30-foot line. Each creature in the area must make a DC 18 Dexterity saving throw, taking 17 (5d6) acid damage on a failed save or half as much on a successful one."
+            },
+            {
+                Title: "Robe of Scintillating Colors (3 Charges/Day)",
+                Desc: "While wearing the robe, Mordath can expend 1 charge to cause it to display a shifting pattern of dazzling hues until the end of his next turn. It sheds bright light in a 30-foot radius and dim light for another 30 feet. Creatures that can see him have disadvantage on attack rolls against him. Any creature in the bright light that can see him when the power is activated must succeed on a DC 15 Wisdom saving throw or become stunned until the effect ends."
+            },
+            {
+                Title: "Elixir of the Divide (Once per Rest)",
+                Desc: "Mordath takes this action when he falls below 150 hit points or all his soldiers die. When he drinks this potion, the effects last until he dies:<br>"+
+                    "- Whenever he deals damage, roll a d6 for five extra damage to his melee and ranged attacks, using acid, cold, fire, poison, or necrotic damage. This doesn't apply to spells, and 1s are rerolled.<br>"+
+                    "- At the end of each of his turns, roll a d100. Rolls of 1–50 are points that damage him; rolls of 51–100 are points that heal him."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Curving Shot",
+                Desc: "When Mordath misses with an attack roll using a magic arrow, he can reroll the attack roll against a different target within 60 feet of the original target."
+            },
+            {
+                Title: "Quickened Spell",
+                Desc: "Mordath can spend 2 sorcery points to cast a spell with a casting time of 1 action as a bonus action for that casting."
+            },
+            {
+                Title: "Activate Flame Tongue",
+                Desc: "Mordath can speak the command word to end the flames on his Flame Tongue scimitar, or activate them again as described in the weapon's properties."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Level 10 Fighter + Level 10 Sorcerer, Martial Archetype = Arcane Archer, Sorcerer ",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Perusia"],
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
+    },
+    { // Nor'gamak
+        ID: 100026,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Nor'gamak",
+        Type: "Huge giant, lawful neutral",
+        TypeCategory: "Giant",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: [20, "plate"],
+        HitPoints: 289,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 25,
+        Dexterity: 9,
+        Constitution: 23,
+        Intelligence: 10,
+        Wisdom: 14,
+        Charisma: 13,
+        SavingThrows: ["Str +11", "Dex +3", "Con +10", "Cha +5"],
+        Skills: "Athletics +11, Perception +6",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Fire", "Necrotic", "Poison"],
+        DamageImmunities: ["Fire", "Lightning"],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 16",
+        Languages: "Common, Giant",
+        Challenge: [15, 13000],
+        ExtraRewards: "5 boons, 2 Rare gems, 4 Uncommon gems, 7 Common gems, possible one or two magical items, Rope of Entanglement",
+        Traits: [
+            {
+                Title: "Pulse of the Divide",
+                Desc: "Resurrected from the power of the Great Divide, Nor'gamak recovers 17 (5d6) hit points at the start of each of his turns."
+            },
+            {
+                Title: "Lightning Carapace",
+                Desc: "If Nor'gamak is hit with lightning damage, the attacker rolls the lightning damage, but it doesn't hurt Nor'gamak. Instead, his lightning-immune body holds the charge, sparkling and zigzagging across his body. The next melee attack that hits Nor'gamak sends the lightning damage to the attacker instead."
+            },
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Nor'gamak makes three greatsword attacks."
+            },
+            {
+                Title: "Greatsword",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 28 (6d6 + 7) slashing damage."
+            },
+            {
+                Title: "Instructor Stick",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) bludgeoning damage. On a hit, if the target is Medium or smaller, it becomes prone."
+            },
+            {
+                Title: "Rock",
+                Desc: "Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 32 (4d10 + 10) bludgeoning damage."
+            },
+            {
+                Title: "Rope of Entanglement",
+                Desc: "While holding one end of the rope, Nor'gamak speaks its command word and the other end darts forward to entangle a creature he can see within 30 feet. The target must succeed on a DC 15 Dexterity saving throw or become restrained."
+            },
+            {
+                Title: "Lightning Strike (Recharge 4–6)",
+                Desc: "Nor'gamak hurls a magical lightning bolt at a point he can see within 500 feet. Each creature within 15 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save or half as much on a successful one."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Looks like a normal Fire Giant, but with the stern look of a drill sergeant and a badge with the Legion of Giants insignia. Visible veins of multiple colors—green, purple, red, blue, and white—mark the part of his body that received the killing blow.<br>Lore: Nor'gamak was revived at Roma when Galon, the Stone King, took him to be revived. He was meant to continue serving as the instructor who turns giants into soldiers of the Legion.<br>"+
+            "Nor'Gamak was revived at Roma when Galon, the Stone King took him to be revived. Meant to continue to serve as the Instructor to turn giants into soldiers of the Legion.<br>" +
+            "References: Seargeant from Red Vs Blue and from Attack on Titan Abridged",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All", "Soul of Denethor"]
+    },
 
 
 
