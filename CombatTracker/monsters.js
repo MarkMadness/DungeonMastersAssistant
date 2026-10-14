@@ -50018,7 +50018,7 @@ const uniqueLocal = [
         ID: 100040,
         ParentID: null,
         ChildrenIDs: [100041],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "The Machinist Phase 1: The Pilot XII",
         Type: "Gargantuan Construct, unaligned",
         TypeCategory: "Construct",
@@ -50078,7 +50078,7 @@ const uniqueLocal = [
         ID: 100041,
         ParentID: 100040,
         ChildrenIDs: [100042],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "The Machinist Phase 2: The Bruz IV",
         Type: "Huge Construct, unaligned",
         TypeCategory: "Construct",
@@ -50139,7 +50139,7 @@ const uniqueLocal = [
         ID: 100042,
         ParentID: 100041,
         ChildrenIDs: [100043],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "The Machinist Phase 3: Humanoid II",
         Type: "Medium Construct, unaligned",
         TypeCategory: "Construct",
@@ -50198,7 +50198,7 @@ const uniqueLocal = [
         ID: 100043,
         ParentID: 100042,
         ChildrenIDs: [],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "The Machinist Phase 4: Head",
         Type: "Tiny Construct, unaligned",
         TypeCategory: "Construct",
@@ -50245,7 +50245,7 @@ const uniqueLocal = [
         ID: 100044,
         ParentID: null,
         ChildrenIDs: [],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "“Emperor” Ilris",
         Type: "Medium Humanoid (Gold Dragonborn), lawful evil",
         TypeCategory: "Humanoid",
@@ -50317,10 +50317,10 @@ const uniqueLocal = [
         Campaigns_Worlds: ["Denethor", "Soul of Denethor"]
     },
     { // Master/Crazy Hand
-        ID: 100047,
+        ID: 100045,
         ParentID: null,
         ChildrenIDs: [],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "Master/Crazy Hand",
         Type: "Huge Celestial, chaotic evil",
         TypeCategory: "Celestial",
@@ -50344,24 +50344,24 @@ const uniqueLocal = [
         ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Paralyzed", "Petrified", "Prone", "Restrained", "Unconscious"],
         Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Passive Perception 10"],
         Languages: ["Understands all languages, but cannot speak"],
-        Challenge: [],
+        Challenge: [16, 15000],
         ExtraRewards: "",
         Traits: [
             {Title: "Far Reach", Desc: "All attacks can reach the full scale of the Final Destination Stage."},
             {Title: "Anti-Opportunity", Desc: "When leaving an enemy's melee range to perform an attack action, Master Hand does not provoke opportunity attacks."}
         ],
         Actions: [
-            {Title: "Attack", Desc: "On its turn, Master Hand rolls 1d10 to determine which attack it uses."},
-            {Title: "Slap (1)", Desc: "Master Hand sweeps across the half of the stage it occupies. Every creature on that side must make a DC 16 Dexterity saving throw or take 7 (2d6) bludgeoning damage."},
-            {Title: "Open Palm/Fist Slam (2)", Desc: "Melee Weapon Attack: +5 to hit, targets in area. Hit: 10 (2d6 + 3) bludgeoning damage."},
-            {Title: "Missile (3)", Desc: "Master Hand leaves the area, then reappears at a distance and speeds toward the party, striking across the stage. Every creature in its path must make a DC 12–14 Dexterity saving throw or take 8 (2d6 + 1) bludgeoning damage."},
-            {Title: "Finger Guns (4)", Desc: "Master Hand makes three ranged attacks: +3 to hit, one target each. Hit: 6 (1d8 + 2) fire damage."},
-            {Title: "Point (5)", Desc: "Melee Weapon Attack: +5 to hit, one target. Hit: 7 (3d4) piercing damage."},
-            {Title: "Finger Walk (6)", Desc: "Master Hand walks in a straight line across the stage, ending on the other side. All creatures in its path must make a DC 14 Dexterity saving throw or take 5 (2d4) bludgeoning damage."},
-            {Title: "Finger Lasers (7)", Desc: "Master Hand unleashes lasers from its fingers, covering the area in front of it. All creatures within 10 feet of Master Hand's front must make a DC 14 Dexterity saving throw or take 14 (4d6) radiant damage."},
-            {Title: "Grab & Squeeze (8)", Desc: "Master Hand attempts to grab a single target, making a grapple check against it. On a success, the target is grabbed and crushed three times, taking 14 (4d6) bludgeoning damage."},
-            {Title: "Drill (9)", Desc: "Melee Weapon Attack: +5 to hit, one target. Hit: 13 (3d8) bludgeoning damage."},
-            {Title: "Bomb Rain (10)", Desc: "Master Hand hovers over an area and rains bombs down. Every creature beneath it must make a DC 16 Dexterity saving throw, taking 16 (3d10) fire damage on a failed save, or half as much damage on a success."},
+            {Title: "Attack", Desc: "On its turn, Master Hand rolls 1d10 to determine which attack it uses.<br>"+
+                "1) Slap: Master Hand sweeps across the half of the stage it occupies. Every creature on that side must make a DC 16 Dexterity saving throw or take 7 (2d6) bludgeoning damage.<br>"+
+                "2) Open Palm/Fist Slam: Melee Weapon Attack: +5 to hit, targets in area. Hit: 10 (2d6 + 3) bludgeoning damage.<br>"+
+                "3) Missile: Master Hand leaves the area, then reappears at a distance and speeds toward the party, striking across the stage. Every creature in its path must make a DC 12–14 Dexterity saving throw or take 8 (2d6 + 1) bludgeoning damage.<br>"+
+                "4) Finger Guns: Master Hand makes three ranged attacks: +3 to hit, one target each. Hit: 6 (1d8 + 2) fire damage.<br>"+
+                "5) Point: Melee Weapon Attack: +5 to hit, one target. Hit: 7 (3d4) piercing damage.<br>"+
+                "6) Finger Walk: Master Hand walks in a straight line across the stage, ending on the other side. All creatures in its path must make a DC 14 Dexterity saving throw or take 5 (2d4) bludgeoning damage.<br>"+
+                "7) Finger Lasers: Master Hand unleashes lasers from its fingers, covering the area in front of it. All creatures within 10 feet of Master Hand's front must make a DC 14 Dexterity saving throw or take 14 (4d6) radiant damage.<br>"+
+                "8) Grab & Squeeze: Master Hand attempts to grab a single target, making a grapple check against it. On a success, the target is grabbed and crushed three times, taking 14 (4d6) bludgeoning damage.<br>"+
+                "9) Drill: Melee Weapon Attack: +5 to hit, one target. Hit: 13 (3d8) bludgeoning damage.<br>"+
+                "10) Bomb Rain: Master Hand hovers over an area and rains bombs down. Every creature beneath it must make a DC 16 Dexterity saving throw, taking 16 (3d10) fire damage on a failed save, or half as much damage on a success."},
             {Title: "Clap Clap Clap (Recharge 5–6)", Desc: "If Master Hand and Crazy Hand are both present in the fight, they sweep across the entire field. Every creature caught in their path must make a DC 15 Dexterity saving throw. On a failed save, a creature takes 5d4 + 4 bludgeoning damage and falls prone. On a successful save, it takes half damage only."}
         ],
         BonusActions: [],
@@ -50373,13 +50373,13 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["Halls of Creation"]
     },
     { // The Headless Horseman
-        ID: 100048,
+        ID: 100046,
         ParentID: null,
         ChildrenIDs: [],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "The Headless Horseman",
         Type: "Medium Undead, chaotic evil",
         TypeCategory: "Undead",
@@ -50437,10 +50437,10 @@ const uniqueLocal = [
         Campaigns_Worlds: ["All"]
     },
     { // Pumpkin King
-        ID: 100049,
+        ID: 100047,
         ParentID: null,
         ChildrenIDs: [],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "Pumpkin King",
         Type: "Huge Plant, chaotic evil",
         TypeCategory: "Plant",
@@ -50491,10 +50491,10 @@ const uniqueLocal = [
         Campaigns_Worlds: ["All"]
     },
     { // Ulgiroth
-        ID: 100050,
+        ID: 100048,
         ParentID: null,
         ChildrenIDs: [],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "Ulgiroth",
         Type: "Large Aberration, neutral evil",
         TypeCategory: "Aberration",
@@ -50552,10 +50552,10 @@ const uniqueLocal = [
         Campaigns_Worlds: ["All"]
     },
     { // Sardithias (Hollow Court)
-        ID: 100051,
+        ID: 100049,
         ParentID: null,
         ChildrenIDs: [],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "Sardithias (Hollow Court)",
         Type: "Medium Humanoid/Demon (High Elf), lawful evil",
         TypeCategory: "Humanoid",
@@ -50623,10 +50623,10 @@ const uniqueLocal = [
         Campaigns_Worlds: ["All"]
     },
     { // Spirit of Bayard
-        ID: 100052,
+        ID: 100050,
         ParentID: null,
         ChildrenIDs: [],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "Spirit of Bayard",
         Type: "Medium Beast, aligned with Marion Silverhelm",
         TypeCategory: "Beast",
@@ -50675,10 +50675,10 @@ const uniqueLocal = [
         Campaigns_Worlds: ["All"]
     },
     { // Tarrasque (Sardithias)
-        ID: 100053,
+        ID: 100051,
         ParentID: null,
-        ChildrenIDs: [100054, 100055],
-        ProfileType: "Monster",
+        ChildrenIDs: [100052, 100053],
+        ProfileType: "Unique",
         Name: "Tarrasque (Sardithias)",
         Type: "Gargantuan Monstrosity (Titan), unaligned",
         TypeCategory: "Monstrosity",
@@ -50737,8 +50737,8 @@ const uniqueLocal = [
         Campaigns_Worlds: ["All"]
     },
     { // Armor
-        ID: 100054,
-        ParentID: 100053,
+        ID: 100052,
+        ParentID: 100051,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Armor",
@@ -50782,8 +50782,8 @@ const uniqueLocal = [
         Campaigns_Worlds: ["All"]
     },
     { // Turret
-        ID: 100055,
-        ParentID: 100053,
+        ID: 100053,
+        ParentID: 100051,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Turret",
@@ -50829,10 +50829,10 @@ const uniqueLocal = [
         Campaigns_Worlds: ["All"]
     },
     { // World Killer
-        ID: 100056,
+        ID: 100054,
         ParentID: null,
         ChildrenIDs: [],
-        ProfileType: "Monster",
+        ProfileType: "Unique",
         Name: "World Killer",
         Type: "Gargantuan Demon, chaotic evil",
         TypeCategory: "Fiend",
