@@ -49439,7 +49439,9 @@ const uniqueLocal = [
         Challenge: [20, 25000],
         ExtraRewards: "8 boons, 3 Very Rare gems, 5 Rare gems, 7 Uncommon gems, Dragon Scale Mail, Dragon Slayer (Greatsword)",
         Traits: [
-            {Title: "Dragon Scale Mail", Desc: "Dragon scale mail is made from the scales of one kind of dragon. While wearing it, Sszara gains a +1 bonus to AC, has advantage on saving throws against the Frightful Presence and breath weapons of dragons, and has resistance to one damage type determined by the kind of dragon that provided the scales. As an action, Sszara can magically discern the distance and direction to the closest dragon within 30 miles that is of the same type as the armor. This special action cannot be used again until the next dawn."},
+            {Title: "Dragon Scale Mail", Desc: "Dragon scale mail is made from the scales of one kind of dragon. <br>"+
+                "While wearing it, Sszara gains a +1 bonus to AC, has advantage on saving throws against the Frightful Presence and breath weapons of dragons, and has resistance to one damage type determined by the kind of dragon that provided the scales. <br>"+
+                "As an action, Sszara can magically discern the distance and direction to the closest dragon within 30 miles that is of the same type as the armor. This special action cannot be used again until the next dawn."},
             {Title: "Second Wind (1/Rest)", Desc: "Sszara regains 1d10 + 20 hit points."},
             {Title: "Action Surge (1/Rest)", Desc: "Sszara takes one additional action on his turn."},
             {Title: "Eldritch Knight: Weapon Bond", Desc: "Sszara creates a magical bond with a weapon, allowing him to summon it to his hand."},
@@ -49447,11 +49449,19 @@ const uniqueLocal = [
             {Title: "Eldritch Knight: Arcane Charge", Desc: "When Sszara uses his action to cast a spell, he can use a bonus action to teleport up to 30 feet to an unoccupied space he can see."},
             {Title: "Cunning Artisan", Desc: "Sszara can make simple items out of natural materials and gains proficiency with Survival."},
             {Title: "Hold Breath", Desc: "Sszara can hold his breath for up to 15 minutes."},
-            {Title: "Great Weapon Master", Desc: "Sszara gains a +10 bonus to damage rolls with heavy weapons he is proficient with. He can take a -5 penalty to his attack roll with a heavy weapon to gain a +10 bonus to the damage roll on a hit. On a critical hit or when he reduces a creature to 0 hit points with a heavy weapon attack, he can make one additional attack as a bonus action."},
-            {Title: "Alert", Desc: "Sszara gains a +5 bonus to initiative rolls, cannot be surprised while conscious, and other creatures do not gain advantage on attack rolls against him as a result of being hidden from him."},
-            {Title: "Sharpshooter", Desc: "Sszara can make ranged weapon attacks at long range without disadvantage, and his ranged weapon attacks ignore half cover and three-quarters cover. He can take a -5 penalty to his attack roll to gain a +10 bonus to the damage roll on a hit."},
-            {Title: "War Caster", Desc: "Sszara has advantage on Constitution saving throws to maintain concentration on a spell when he takes damage. He can perform somatic components even when holding weapons or a shield in one or both hands. When a creature provokes an opportunity attack from him, he can use his reaction to cast a spell at the creature instead of making a melee attack."},
-            {Title: "Innate Spellcasting", Desc: "Sszara's innate spellcasting ability is Intelligence (spell save DC 17, spell attack +9). He can innately cast the following spells, requiring no material components.<br>Cantrips (at will): fire bolt, mage hand<br>1st level (4 slots): magic armor, magic missile, thunderwave<br>2nd level (3 slots): blur, mirror image, misty step<br>3rd level (3 slots): counterspell, dispel magic, fly<br>4th level (3 slots): dimension door, phantasmal killer, stoneskin<br>5th level (2 slots): cloudkill, wall of force"}
+            {Title: "Great Weapon Master", Desc: "- Sszara gains a +10 bonus to damage rolls with heavy weapons he is proficient with. <br>"+
+                "- He can take a -5 penalty to his attack roll with a heavy weapon to gain a +10 bonus to the damage roll on a hit. <br>"+
+                "- On a critical hit or when he reduces a creature to 0 hit points with a heavy weapon attack, he can make one additional attack as a bonus action."},
+            {Title: "Alert", Desc: "- Sszara gains a +5 bonus to initiative rolls. <br>"+
+                "- He cannot be surprised while conscious. <br>"+
+                "- Other creatures do not gain advantage on attack rolls against him as a result of being hidden from him."},
+            {Title: "Sharpshooter", Desc: "- Sszara can make ranged weapon attacks at long range without disadvantage.<br>"+
+                "- His ranged weapon attacks ignore half cover and three-quarters cover.<br>"+
+                "- He can take a -5 penalty to his attack roll to gain a +10 bonus to the damage roll on a hit."},
+            {Title: "War Caster", Desc: "- Sszara has advantage on Constitution saving throws to maintain concentration on a spell when he takes damage.<br>"+
+                "- He can perform somatic components even when holding weapons or a shield in one or both hands.<br>"+
+                "- When a creature provokes an opportunity attack from him, he can use his reaction to cast a spell at the creature instead of making a melee attack."},
+            {Title: "Innate Spellcasting", Desc: "Sszara's innate spellcasting ability is Intelligence (spell save DC 17, spell attack +9). He can innately cast the following spells, requiring no material components.<br><br>Cantrips (at will): fire bolt, mage hand<br>1st level (4 slots): magic armor, magic missile, thunderwave<br>2nd level (3 slots): blur, mirror image, misty step<br>3rd level (3 slots): counterspell, dispel magic, fly<br>4th level (3 slots): dimension door, phantasmal killer, stoneskin<br>5th level (2 slots): cloudkill, wall of force"}
         ],
         Actions: [
             {Title: "Multiattack", Desc: "Sszara makes five attacks."},
@@ -49462,13 +49472,10 @@ const uniqueLocal = [
         ],
         BonusActions: [],
         Reactions: [],
-        LegendaryActions: [
-            {Title: "Attack", Desc: "The [name] makes one attack."},
-            {Title: "Name", Desc: "description"}
-        ],
+        LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "description",
+        Description: "Level 20 fighter – Eldritch Knight",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
@@ -49502,12 +49509,11 @@ const uniqueLocal = [
         ConditionImmunities: [],
         Senses: "Passive Perception 8",
         Languages: "Common, Giant",
-        Challenge: [null, 1800],
+        Challenge: [5, 1800],
         ExtraRewards: "",
         Traits: [
             {Title: "Stone's Endurance (1/Rest)", Desc: "When Tarag takes damage, he can use his reaction to roll a d12 + 1 and reduce the damage by that total."},
             {Title: "Fighting Style: Protection", Desc: "When a creature Tarag can see attacks a target other than him that is within 5 feet of him, he can use his reaction to impose disadvantage on the attack roll. He must be wielding a shield."},
-            {Title: "Second Wind (1/Rest)", Desc: "On his turn, Tarag can use a bonus action to regain hit points equal to 1d10 + 5."},
             {Title: "Action Surge (1/Rest)", Desc: "On his turn, Tarag can take one additional action on top of his regular action and a possible bonus action."},
             {Title: "Improved Critical", Desc: "Tarag's weapon attacks score a critical hit on a roll of 19 or 20."}
         ],
@@ -49516,12 +49522,15 @@ const uniqueLocal = [
             {Title: "Lance", Desc: "Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 7 (1d12 + 1) piercing damage."},
             {Title: "Light Crossbow", Desc: "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d8) piercing damage."}
         ],
-        BonusActions: [],
+        BonusActions: [
+            {Title: "Second Wind (1/Rest)", Desc: "On his turn, Tarag can use a bonus action to regain hit points equal to 1d10 + 5."},
+        ],
         Reactions: [],
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "A seven-foot-tall male goliath, gray-skinned like stone, hairless, tattooed, and muscular. He wears full chainmail armor with a thick wooden shield, a lance, and a light crossbow slung from his back.",
+        Description: "A seven-foot-tall male goliath, gray-skinned like stone, hairless, tattooed, and muscular. He wears full chainmail armor with a thick wooden shield, a lance, and a light crossbow slung from his back.<br>"+
+        "Level 5 Fighter, Martial Archetype = Champion",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
@@ -49549,7 +49558,7 @@ const uniqueLocal = [
         Charisma: 9,
         SavingThrows: ["Dex +5", "Int +1"],
         Skills: "Acrobatics +8, Insight +1, Intimidation +2, Stealth +8",
-        DamageVulnerabilities: ["Radiant?"],
+        DamageVulnerabilities: [],
         DamageResistances: [],
         DamageImmunities: [],
         ConditionImmunities: ["Charmed"],
@@ -49558,10 +49567,11 @@ const uniqueLocal = [
         Challenge: [8, 4150],
         ExtraRewards: "Thieves' Tools, Memory for level 9 Roguish Archetype feature",
         Traits: [
-            {Title: "Sneak Attack", Desc: "Once per turn, The Bad Man can deal 4d6 extra damage to one creature he hits with an attack if he has advantage on the attack roll. The Bad Man doesn't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and he doesn't have disadvantage on the attack roll."},
-            {Title: "Thieves' Cant", Desc: "A secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly. In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."},
+            {Title: "Sneak Attack", Desc: "Once per turn, The Bad Man can deal 4d6 extra damage to one creature he hits with an attack if he has advantage on the attack roll. <br>"+
+                "The Bad Man doesn't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and he doesn't have disadvantage on the attack roll."},
+            {Title: "Thieves' Cant", Desc: "A secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly. <br>"+
+                "In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."},
             {Title: "Cunning Action", Desc: "The Bad Man's quick thinking and agility allow him to move and act quickly. He can take a bonus action on each of his turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."},
-            {Title: "Roguish Archetype", Desc: "Assassin."},
             {Title: "Assassinate", Desc: "The Bad Man is at his deadliest when he gets the drop on his enemies. He has advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit he scores against a creature that is surprised is a critical hit."},
             {Title: "Uncanny Dodge", Desc: "When an attacker that The Bad Man can see hits him with an attack, he can use his reaction to halve the attack's damage against him."},
             {Title: "Evasion", Desc: "The Bad Man can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails."},
@@ -49576,7 +49586,8 @@ const uniqueLocal = [
         LegendaryActions: [],
         RegionalEffects: [],
         LairActions: [],
-        Description: "A seven-foot-tall, slim black and sickly purple-leathered man. A rapier is held in each hand and his head is wrapped in bloodied bandages where a dozen eyes are all around his head and more on his body from his chest, back, shoulders, backhands, hips, thighs, and feet.",
+        Description: "A seven-foot-tall, slim black and sickly purple-leathered man. A rapier is held in each hand and his head is wrapped in bloodied bandages where a dozen eyes are all around his head and more on his body from his chest, back, shoulders, backhands, hips, thighs, and feet.<br>"+
+            "Roguish Archetype: Assassin.",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
@@ -49616,20 +49627,30 @@ const uniqueLocal = [
             {Title: "Crippling Fear", Desc: "When a creature starts its turn within 30 feet of The Mad Royalty, it must make a DC 12 Wisdom saving throw. The creature has disadvantage on the save if it's within 10 feet of The Mad Royalty. On a successful save, the creature is immune to Crippling Fear for 24 hours. On a failed save, the creature becomes frightened of The Mad Royalty for 1 minute. While frightened in this way, the creature is restrained. At the end of each of the frightened creature's turns, it can repeat the saving throw, ending the effect on itself on a success."},
             {Title: "Aberrant Ground", Desc: "The ground in a 15-foot radius around The Mad Royalty is doughlike difficult terrain. Each creature that starts its turn in that area must succeed on a DC 15 Strength saving throw or have its speed reduced to 0 until the start of its next turn."},
             {Title: "Biting Tentacles", Desc: "The Mad Royalty can have up to 4 biting tentacles at a time. Each tentacle can be attacked (AC 14; 12 hit points; immunity to Acid, Cold, Lightning, and Poison damage; resistance to slashing damage). Destroying a tentacle deals no damage to The Mad Royalty, which can extrude up to one replacement tentacle on its next two turns."},
-            {Title: "Corpses", Desc: "When first encountered, The Mad Royalty contains the corpses of 1d10 + 6 humanoids. These remains have total cover against attacks and other effects outside The Mad Royalty. While it has at least one humanoid corpse in its body, The Mad Royalty can use a bonus action to do one of the following: Digest one humanoid corpse in its body and instantly regain 11 (2d10) hit points. Nothing of the digested body remains. Any equipment on the corpse is expelled from The Mad Royalty in its space. Alternatively, animate one dead humanoid in its body, turning it into a mob of zombies. The mob of zombies appears in an unoccupied space within 5 feet of The Mad Royalty and acts immediately after it in the initiative order. The mob acts as an ally of The Mad Royalty, and The Mad Royalty's stench clings to it (see the Stench of Death trait). The Mad Royalty grabs one unsecured dead humanoid within 10 feet of it and stuffs the corpse into itself, along with any equipment the corpse is wearing or carrying. The remains can be used with this trait."},
             {Title: "Stench of Death", Desc: "Each creature that starts its turn within 10 feet of The Mad Royalty or one of its zombies must make a DC 14 Constitution saving throw, unless the creature is a construct or undead. On a failed save, the creature is incapacitated until the end of the turn. Creatures that are immune to poison damage or the poisoned condition automatically succeed on this saving throw. On a successful save, the creature is immune to the stench for 24 hours."},
-            {Title: "Gibbering", Desc: "The Mad Royalty babbles and screams incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 30 feet of The Mad Royalty and can hear the gibbering must succeed on a DC 12 Wisdom saving throw. On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature moves towards The Mad Royalty and touches its oozy form, becoming grappled."},
-            {Title: "Corrosive Form", Desc: "A creature that touches The Mad Royalty or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage and is considered grappled (DC 14 to escape). Any nonmagical weapon made of metal or wood that hits The Mad Royalty corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits The Mad Royalty is destroyed after dealing damage. If a creature continues to be grappled for 2 more rounds, it is considered restrained as the ooze of The Mad Royalty's body begins sucking it in. If it remains restrained for 2 more rounds, it is swallowed in the ooze of the body, not the stomach, and takes 21 (6d6) acid damage that heals The Mad Royalty. The Mad Royalty can eat through 6-inch-thick, nonmagical wood or metal in 1 round."}
+            {Title: "Gibbering", Desc: "The Mad Royalty babbles and screams incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 30 feet of The Mad Royalty and can hear the gibbering must succeed on a DC 12 Wisdom saving throw. <br>"+
+                "On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature moves towards The Mad Royalty and touches its oozy form, becoming grappled."},
+            {Title: "Corrosive Form", Desc: "A creature that touches The Mad Royalty or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage and is considered grappled (DC 14 to escape). Any nonmagical weapon made of metal or wood that hits The Mad Royalty corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits The Mad Royalty is destroyed after dealing damage. <br>"+
+                "If a creature continues to be grappled for 2 more rounds, it is considered restrained as the ooze of The Mad Royalty's body begins sucking it in. If it remains restrained for 2 more rounds, it is swallowed in the ooze of the body, not the stomach, and takes 21 (6d6) acid damage that heals The Mad Royalty. <br>"+
+                "The Mad Royalty can eat through 6-inch-thick, nonmagical wood or metal in 1 round."}
         ],
         Actions: [
             {Title: "Multiattack", Desc: "The Mad Royalty makes five attacks: three with its biting tentacle, one with its pseudopod, and one with its squirt bile attack; and, if it can, one Stretching Bodily Form instead of a pseudopod. It can use its Swallow action instead of a Biting Tentacle."},
-            {Title: "Biting Tentacle", Desc: "Melee Weapon Attack: +9 to hit, reach 30 ft., one target. Hit: 14 (3d6 + 4) piercing damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, The Mad Royalty's biting tentacle can't bite another target. If the target is a creature, it must succeed on a DC 13 Constitution saving throw against disease or become poisoned. At the end of each long rest, the poisoned target can repeat the saving throw, ending the effect on itself on a success."},
-            {Title: "Swallow", Desc: "The Mad Royalty makes one biting tentacle attack against a Medium or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained; it has total cover against attacks and other effects outside The Mad Royalty, and takes 17 (5d6) acid damage at the start of each of The Mad Royalty's turns. If The Mad Royalty takes 20 damage or more on a single turn from a creature inside it, The Mad Royalty must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of The Mad Royalty. If The Mad Royalty dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone."},
+            {Title: "Biting Tentacle", Desc: "Melee Weapon Attack: +9 to hit, reach 30 ft., one target. Hit: 14 (3d6 + 4) piercing damage. <br>"+
+                "If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, The Mad Royalty's biting tentacle can't bite another target. If the target is a creature, it must succeed on a DC 13 Constitution saving throw against disease or become poisoned. At the end of each long rest, the poisoned target can repeat the saving throw, ending the effect on itself on a success."},
+            {Title: "Swallow", Desc: "The Mad Royalty makes one biting tentacle attack against a Medium or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained; it has total cover against attacks and other effects outside The Mad Royalty, and takes 17 (5d6) acid damage at the start of each of The Mad Royalty's turns. <br>"+
+                "If The Mad Royalty takes 20 damage or more on a single turn from a creature inside it, The Mad Royalty must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of The Mad Royalty. If The Mad Royalty dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone."},
             {Title: "Pseudopod", Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The Corrosive Form trait applies."},
             {Title: "Squirt Bile", Desc: "The Mad Royalty targets one creature it can see within 120 feet of it. The target must succeed on a DC 14 Dexterity saving throw or take 21 (6d6) acid damage."},
             {Title: "Stretching Bodily Form (Recharge 5–6)", Desc: "The Mad Royalty expands spears of flesh towards all creatures within 20 feet of it. Each creature must make a DC 16 Dexterity saving throw or be pulled to within 5 feet of The Mad Royalty and subjected to the Corrosive Form trait, taking 4 (1d8) acid damage and becoming grappled (DC 14 to escape)."}
         ],
-        BonusActions: [],
+        BonusActions: [
+            {Title: "Corpses", Desc: "When first encountered, The Mad Royalty contains the corpses of 1d10 + 6 humanoids. These remains have total cover against attacks and other effects outside The Mad Royalty. <br>"+
+                "While it has at least one humanoid corpse in its body, The Mad Royalty can use a bonus action to do one of the following: <br>"+
+                "- Digest one humanoid corpse in its body and instantly regain 11 (2d10) hit points. Nothing of the digested body remains. Any equipment on the corpse is expelled from The Mad Royalty in its space. <br>"+
+                "- Animate one dead humanoid in its body, turning it into a mob of zombies. The mob of zombies appears in an unoccupied space within 5 feet of The Mad Royalty and acts immediately after it in the initiative order. The mob acts as an ally of The Mad Royalty, and The Mad Royalty's stench clings to it (see the Stench of Death trait). <br>"+
+                "- Grab one unsecured dead humanoid within 10 feet of it and stuffs the corpse into itself, along with any equipment the corpse is wearing or carrying. The remains can be used with this trait."},
+        ],
         Reactions: [],
         LegendaryActions: [],
         RegionalEffects: [],
@@ -49637,7 +49658,7 @@ const uniqueLocal = [
         Description: "A gargantuan body of black ooze fluid molting and sloshing around. The forms of dozens of humans float among the black ooze of the monster's body, occasionally pressing against its skin layer then sinking back inside. Some of the humans inside you can recognize as silver knights, others as servants to the crown, and others as royal family members including two who wear the crown of the king and queen. All these human individuals gibber and scream and shout atrocities and wickedness of the voice in a spiraling sound of terror and confusion of the senses.<br><br>From its body, four large tentacles pulse and thrust out, growing to a great length and forming teeth at their ends that drool and hunger. They clank their teeth in your direction as the monstrous ooze of bodies lumps towards you all.",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
-        GeographicalLocations: [],
+        GeographicalLocations: ["Aesis"],
         Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Unstable Chaos
