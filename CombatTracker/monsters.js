@@ -49681,7 +49681,7 @@ const uniqueLocal = [
         Intelligence: 16,
         Wisdom: 16,
         Charisma: 19,
-        SavingThrows: ["Str 5", "Dex 4", "Con +5", "Int +4", "Wis +4", "Cha +5"],
+        SavingThrows: ["Str +5", "Dex +4", "Con +5", "Int +4", "Wis +4", "Cha +5"],
         Skills: "",
         DamageVulnerabilities: [],
         DamageResistances: ["Cold", "Fire", "Lightning", "Radiant", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
@@ -49692,18 +49692,25 @@ const uniqueLocal = [
         Challenge: [13, 10000],
         ExtraRewards: "6 boons (2 extra for other bosses), 1 Rare Gem, 3 Uncommon Gems, 5 Common Gems, (1d6 = 5–6 = Rope of Entanglement)",
         Traits: [
-            {Title: "Unstable Energy", Desc: "Due to the nature of the Unstable Chaos as a being infused of creatures of opposing nature, its damage type changes every round. It cannot have the same damage type as the previous round. Roll to determine the damage type: 1: Radiant; 2: Poison; 3: Fire; 4: Lightning."},
+            {Title: "Unstable Energy", Desc: "Due to the nature of the Unstable Chaos as a being infused of creatures of opposing nature, its damage type changes every round. It cannot have the same damage type as the previous round. Roll to determine the damage type: <br>"+
+                "1: Radiant; <br>"+
+                "2: Poison; <br>"+
+                "3: Fire; <br>"+
+                "4: Lightning;"},
             {Title: "Magic Resistance", Desc: "The Unstable Chaos has advantage on saving throws against spells and other magical effects."},
             {Title: "Magic Weapons", Desc: "The Unstable Chaos's weapon attacks are magical and deal an extra 9 (2d8) Unstable type damage on a hit (included in the attacks)."},
             {Title: "Antimagic Cone", Desc: "The Unstable Chaos's central eye creates an area of antimagic, as in the antimagic field spell, in a 50-foot cone. At the start of each of its turns, the Unstable Chaos decides which way the cone faces and whether it is active. The area works against the Unstable Chaos's own eye rays."},
-            {Title: "Innate Spellcasting", Desc: "The Unstable Chaos's innate spellcasting ability is Charisma (+8 to hit, spell save DC 16). It can innately cast the following spells, requiring no material components: Cantrips at will (2d8 damage): fire bolt, lightning lure, poison spray, sacred flame; 3/day: blade barrier, flame strike; 1/day: insect plague."}
+            {Title: "Innate Spellcasting", Desc: "The Unstable Chaos's innate spellcasting ability is Charisma (+8 to hit, spell save DC 16). It can innately cast the following spells, requiring no material components: <br><br>Cantrips at will (2d8 damage): fire bolt, lightning lure, poison spray, sacred flame; <br>3/day: blade barrier, flame strike; <br>1/day: insect plague."}
         ],
         Actions: [
             {Title: "Multiattack", Desc: "The Unstable Chaos makes either four attacks, three plus Healing Touch, Eye Rays, or Teleport, or two plus Eye Rays, a cantrip, or Teleport."},
             {Title: "Longsword", Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage plus 9 (2d8) unstable damage."},
             {Title: "Greatsword", Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 17 (4d6 + 4) slashing damage plus 9 (2d8) radiant damage."},
             {Title: "Healing Touch (4/Day)", Desc: "The Unstable Chaos draws arcane energy to magically regain 7 (1d8 + 3) hit points for every creature's turn until the start of its next turn. If the Unstable Chaos suffers 30 damage before its next turn, it will be knocked prone and the spell will end. If the Unstable Chaos reaches its next turn, it will heal for 16 (3d8 + 3) hit points and be freed from any curse, disease, poison, blindness, deafness, or any hostile effect on it. The Unstable Chaos cannot use this ability while flying."},
-            {Title: "Eye Rays", Desc: "The Unstable Chaos shoots one of the following magical eye rays at random (reroll duplicates), choosing one target it can see within 120 feet of it: Paralyzing Ray: The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Fear Ray: The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Enervation Ray: The targeted creature must make a DC 16 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one."},
+            {Title: "Eye Rays", Desc: "The Unstable Chaos shoots one of the following magical eye rays at random (reroll duplicates), choosing one target it can see within 120 feet of it: <br>"+
+                "- Paralyzing Ray: The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. <br>"+
+                "- Fear Ray: The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. <br>"+
+                "- Enervation Ray: The targeted creature must make a DC 16 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one."},
             {Title: "Teleport", Desc: "The Unstable Chaos magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."}
         ],
         BonusActions: [],
@@ -49716,7 +49723,7 @@ const uniqueLocal = [
         Description: "Standing before you all is a horrific fusion of an angel, demon, devil, and beholder. Three eyestalks protrude from the neck. A wing of an angel on the left celestial body with a wing of a devil on the right devil body accompanied with a large opened central eye on the chest. The chest also extends four arms with one larger to hold a great sword. The lower body has a scaly tail with its two legs cut off at the ankles, which hover over the ground dripping corrupted blood.",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
-        GeographicalLocations: [],
+        GeographicalLocations: ["Markenworth", "Cathedral of Vindication"],
         Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Valthas, Light Devourer
@@ -49753,7 +49760,6 @@ const uniqueLocal = [
             {Title: "Fey Ancestry", Desc: "Magic can't put you to sleep."},
             {Title: "Improved Critical", Desc: "Rolls of 20, 19, and 18 are critical hits."},
             {Title: "Survivor", Desc: "At the start of his turn, Valthas, Light Devourer regains 10 hit points. No benefit at 0 hit points."},
-            {Title: "Second Wind (1/Rest)", Desc: "Use a bonus action to regain 1d10 + 20 hit points."},
             {Title: "Action Surge (1/Rest)", Desc: "Take one additional action and bonus action."},
             {Title: "Demon's Maw", Desc: "Valthas, Light Devourer's lower torso is a giant mouth with shark-like teeth that eats creatures and devours their light."},
             {Title: "Beholder Eyes", Desc: "If blinded, Valthas, Light Devourer has two beholder eyes that need to be blinded as well to be fully blinded."},
@@ -49762,7 +49768,10 @@ const uniqueLocal = [
         ],
         Actions: [
             {Title: "Multiattack", Desc: "Valthas, Light Devourer makes four weapon attacks or three weapon attacks and another action from below."},
-            {Title: "Weapon Attack", Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Greatsword: Hit 17 (3d6 + 7) slashing plus 5 (1d10) cold damage. Halberd: Hit 18 (2d10 + 7) slashing plus 5 (1d10) necrotic damage. Greataxe/Warhammer: Hit 20 (2d12 + 7) slashing/bludgeoning plus 5 (1d10) thunder damage."},
+            {Title: "Weapon Attack", Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. <br>"+
+                "Greatsword: Hit 17 (3d6 + 7) slashing plus 5 (1d10) cold damage. <br>"+
+                "Halberd: Hit 18 (2d10 + 7) slashing plus 5 (1d10) necrotic damage. <br>"+
+                "Greataxe/Warhammer: Hit 20 (2d12 + 7) slashing/bludgeoning plus 5 (1d10) thunder damage."},
             {Title: "Jump Strike", Desc: "Valthas, Light Devourer leaps to a target within 60 ft. and strikes with the hammer side of his greataxe without provoking opportunity attacks. The target must succeed on a DC 18 Dexterity saving throw or take 25 (3d12 + 6) bludgeoning damage."},
             {Title: "Maw Bite", Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 22 (5d6 + 5) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained and Valthas, Light Devourer can't bite another target. While restrained, the creature has half cover against attacks and other effects outside the maw, and it takes 43 (6d8 + 10) piercing damage at the start of each of Valthas, Light Devourer's turns. The creature cannot deal damage or take actions except to attempt escape. If Valthas, Light Devourer takes 30 damage or more on a single turn, he must succeed on a DC 17 Constitution saving throw at the end of that turn or regurgitate the grappled creature, which falls prone in a space within 5 ft. of Valthas, Light Devourer. If Valthas, Light Devourer dies, a grappled creature is no longer restrained by it and can escape using 15 ft. of movement, exiting prone."},
             {Title: "Dragon's Wing Retreat", Desc: "As an action, Valthas, Light Devourer can use his dragon wing to push himself back up to 50 ft. backwards without provoking opportunity attacks."},
@@ -49771,7 +49780,9 @@ const uniqueLocal = [
             {Title: "Demon's Breath (Recharge 5–6)", Desc: "Valthas, Light Devourer arches his back as his maw heats up with a great fire boiling up until it cannot be contained and spews forth flame across everyone in front of him. All creatures 15 ft. from Valthas, Light Devourer's front (front half of the square spaces) must make a DC 17 Dexterity saving throw. A target takes 44 (8d8 + 8) fire damage on a failed save, or half as much damage on a successful one. The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."},
             {Title: "Rush Strike (Recharge 5–6)", Desc: "Melee Weapon Attack: +12 to hit, reach 40 ft., one target. Hit: 35 (5d10 + 8) piercing damage."}
         ],
-        BonusActions: [],
+        BonusActions: [
+            {Title: "Second Wind (1/Rest)", Desc: "Use a bonus action to regain 1d10 + 20 hit points."},
+        ],
         Reactions: [
             {Title: "Dragon's Wing Shield", Desc: "Valthas, Light Devourer can use his dragon wing to shield his front, gaining +3 AC for that attack. This only works on attacks from the front four squares."}
         ],
@@ -49779,7 +49790,9 @@ const uniqueLocal = [
             {Title: "Attack", Desc: "Valthas, Light Devourer makes one attack."},
             {Title: "Move", Desc: "Valthas, Light Devourer moves up to half his speed."},
             {Title: "Dragon's Wing Retreat", Desc: "Valthas, Light Devourer makes a Dragon's Wing Retreat action."},
-            {Title: "Light Drain", Desc: "If a creature is restrained in his maw, Valthas, Light Devourer can begin to drain the light of a boon. When he does, the creature is aware that their boon is at risk. If Valthas, Light Devourer performs this action again, the creature loses that boon. Cannot occur again until after the restrained creature's next turn. If Valthas, Light Devourer successfully consumes the boon, he regains 100 hit points and +3 to all damage effects. If the creature has no boon, Valthas, Light Devourer instead consumes the creature and gains the same effects."}
+            {Title: "Light Drain", Desc: "If a creature is restrained in his maw, Valthas, Light Devourer can begin to drain the light of a boon. When he does, the creature is aware that their boon is at risk. If Valthas, Light Devourer performs this action again, the creature loses that boon. Cannot occur again until after the restrained creature's next turn. <br>"+
+                "If Valthas, Light Devourer successfully consumes the boon, he regains 100 hit points and +3 to all damage effects. <br>"+
+                "If the creature has no boon, Valthas, Light Devourer instead consumes the creature and gains the same effects."}
         ],
         RegionalEffects: [],
         LairActions: [],
@@ -49836,7 +49849,20 @@ const uniqueLocal = [
             {Title: "Necrotic Storm", Desc: "The Wrath of the Void magically creates three black bolts of necrotic lightning, each of which can strike a target the Wrath of the Void can sense within 200 feet of it. A target must make a DC 23 Dexterity saving throw, taking 22 (4d10) necrotic damage on a failed save, or half as much damage on a successful one."},
             {Title: "Poison Spray (Recharge 5–6)", Desc: "The Wrath of the Void lowers its head to the ground and opens its mouth, spraying a cloud of poison. Every creature within a 100 ft. cone of the Wrath of the Void must make a Constitution saving throw. On a failed save, a creature takes 35 (5d10 + 8) poison damage and half damage on a successful save."},
             {Title: "Mind Blast (Recharge 5–6)", Desc: "The Wrath of the Void magically emits psychic energy in a 150-foot cone. Each creature in that area must succeed on a DC 18 Intelligence saving throw or take 32 (5d10 + 5) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."},
-            {Title: "Eye Rays", Desc: "The Wrath of the Void shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it: Charm Ray: The targeted creature must succeed on a DC 18 Wisdom saving throw or be charmed by the Wrath of the Void for 1 hour, or until the Wrath of the Void harms the creature. Paralyzing Ray: The targeted creature must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Fear Ray: The targeted creature must succeed on a DC 18 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Slowing Ray: The targeted creature must succeed on a DC 18 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Enervation Ray: The targeted creature must make a DC 18 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one. Telekinetic Ray: If the target is a creature, it must succeed on a DC 18 Strength saving throw or the Wrath of the Void moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the Wrath of the Void's next turn or until the Wrath of the Void is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The Wrath of the Void can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container. Sleep Ray: The targeted creature must succeed on a DC 18 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead. Petrification Ray: The targeted creature must make a DC 18 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic. Disintegration Ray: If the target is a creature, it must succeed on a DC 18 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it. Death Ray: The targeted creature must succeed on a DC 18 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points."}
+            {
+                Title: "Eye Rays", 
+                Desc: "The Wrath of the Void shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it: <br>"+
+                "- Charm Ray: The targeted creature must succeed on a DC 18 Wisdom saving throw or be charmed by the Wrath of the Void for 1 hour, or until the Wrath of the Void harms the creature. <br>"+
+                "- Paralyzing Ray: The targeted creature must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. <br>"+
+                "- Fear Ray: The targeted creature must succeed on a DC 18 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. <br>"+
+                "- Slowing Ray: The targeted creature must succeed on a DC 18 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. <br>"+
+                "- Enervation Ray: The targeted creature must make a DC 18 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one. <br>"+
+                "- Telekinetic Ray: If the target is a creature, it must succeed on a DC 18 Strength saving throw or the Wrath of the Void moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the Wrath of the Void's next turn or until the Wrath of the Void is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The Wrath of the Void can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container. <br>"+
+                "- Sleep Ray: The targeted creature must succeed on a DC 18 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead. <br>"+
+                "- Petrification Ray: The targeted creature must make a DC 18 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic. <br>"+
+                "- Disintegration Ray: If the target is a creature, it must succeed on a DC 18 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it. <br>"+
+                "- Death Ray: The targeted creature must succeed on a DC 18 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points."
+            }
         ],
         BonusActions: [],
         Reactions: [],
@@ -49848,7 +49874,7 @@ const uniqueLocal = [
         ],
         RegionalEffects: [],
         LairActions: [],
-        Description: "An enormous pool of blackness suddenly spawns where the ring was and all creatures are shoved back 50 ft. from where they were standing. From this vortex, four colossal arms shoot out reaching as high as a tower then slamming down on four corners of the earth outside the pool's rim breaking the earth on impact. From the Void, a large eye tendril peeks up above looking out upon you all.<br><br>The giant eye tendril lifts up as the head of this colossal aberration rises from the Void. 10 eye tendrils accompany the one gigantic eye tendril on the back of its head. Where an eye would be, a large mouth is there and its lower face is in the shape of a point. The body is black purple blue skin with smaller mouths and eyes decorated all along the rest of its body. The front of its pointed head peels back its flesh releasing gargantuan tentacles with small feelers like hair that sniff the air and tickle with anticipation for your Light.",
+        Description: "An enormous pool of blackness suddenly spawns where the ring was and all creatures are shoved back 50 ft. from where they were standing. From this vortex, four colossal arms shoot out reaching as high as a tower then slamming down on four corners of the earth outside the pool's rim breaking the earth on impact. From the Void, a large eye tendril peeks up above looking out upon you all.<br>The giant eye tendril lifts up as the head of this colossal aberration rises from the Void. 10 eye tendrils accompany the one gigantic eye tendril on the back of its head. Where an eye would be, a large mouth is there and its lower face is in the shape of a point. The body is black purple blue skin with smaller mouths and eyes decorated all along the rest of its body. The front of its pointed head peels back its flesh releasing gargantuan tentacles with small feelers like hair that sniff the air and tickle with anticipation for your Light.",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane", "Far Realm"],
         GeographicalLocations: [],
@@ -49888,10 +49914,9 @@ const uniqueLocal = [
             {Title: "Magic Resistance", Desc: "Hypatia, Daughter of Denethor, has advantage on saving throws against spells and other magical effects."},
             {Title: "Magic Weapon", Desc: "Hypatia, Daughter of Denethor's weapon attacks are magical."},
             {Title: "Mystic Cheat (3/Day)", Desc: "If Hypatia, Daughter of Denethor, fails on a saving throw against a spell or other magical effect, it can choose instead to succeed."},
-            {Title: "Spell Quickdraw", Desc: "Hypatia, Daughter of Denethor, can cast a spell of her choice as a bonus action."},
             {Title: "Heart of Healing (Once per Round)", Desc: "Hypatia, Daughter of Denethor, draws a small amount of energy from the Heart of Denethor to heal her wounds for 20 (6d4 + 5) hit points."},
             {Title: "Rebirth After Death", Desc: "When Hypatia, Daughter of Denethor, is defeated she will transform into the Light of Hypatia, Daughter of Denethor, for phase 2 of the fight."},
-            {Title: "Innate Spellcasting", Desc: "Hypatia, Daughter of Denethor's innate spellcasting ability is Intelligence (spell save DC 20). She can innately cast the following spells, requiring no material components: Cantrips at will: acid splash, blinding smite, charm person, detect magic, detect thoughts, fog cloud, lesser restoration, lightning bolt, mage hand, magic missile (nine darts instead of three), prestidigitation, ray of frost, tidal wave. 3/day: arcane hand, bestow curse, chain lightning, counterspell, dispel magic, dominate person, investiture of flame, investiture of ice, investiture of stone, investiture of wind, mage armor, misty step, telekinesis, sleep. 2/day: darkness, destructive wave, fear, fireball, invisibility, polymorph. 1/day: blade of disaster, dimension door, gaseous form, holy weapon, meteor storm, psychic scream."}
+            {Title: "Innate Spellcasting", Desc: "Hypatia, Daughter of Denethor's innate spellcasting ability is Intelligence (spell save DC 20). She can innately cast the following spells, requiring no material components: <br><br>Cantrips at will: acid splash, blinding smite, charm person, detect magic, detect thoughts, fog cloud, lesser restoration, lightning bolt, mage hand, magic missile (nine darts instead of three), prestidigitation, ray of frost, tidal wave. <br>3/day: arcane hand, bestow curse, chain lightning, counterspell, dispel magic, dominate person, investiture of flame, investiture of ice, investiture of stone, investiture of wind, mage armor, misty step, telekinesis, sleep. <br>2/day: darkness, destructive wave, fear, fireball, invisibility, polymorph. <br>1/day: blade of disaster, dimension door, gaseous form, holy weapon, meteor storm, psychic scream."}
         ],
         Actions: [
             {Title: "Multiattack", Desc: "Hypatia, Daughter of Denethor, makes four action attacks and one Spell Quickdraw."},
@@ -49902,7 +49927,9 @@ const uniqueLocal = [
             {Title: "Summon Elemental (1/Day)", Desc: "Hypatia, Daughter of Denethor, summons one of the four types of elementals. The summoned elemental appears in an unoccupied space within 60 feet of its summoner and acts as an ally of the summoner. It remains for 10 minutes, until it dies, or until its summoner dismisses it as an action."},
             {Title: "Abyssal Eruption (Activate on 6–9)", Desc: "Hypatia, Daughter of Denethor, has too much abyssal corruption in her body and green flames burst forth from her mouth, throat, and chest, randomly spilling 8 green flames in a 50-ft. cone from her. These abyssal flames spread outwards after every round just like the Flames of the Warlord do."}
         ],
-        BonusActions: [],
+        BonusActions: [
+            {Title: "Spell Quickdraw", Desc: "Hypatia, Daughter of Denethor, can cast a spell of her choice as a bonus action."},
+        ],
         Reactions: [],
         LegendaryActions: [
             {Title: "Attack", Desc: "Hypatia, Daughter of Denethor, makes one attack."},
@@ -49910,7 +49937,8 @@ const uniqueLocal = [
         ],
         RegionalEffects: [],
         LairActions: [],
-        Description: "Her weapon is a joining of a large arcane staff with a demonic great sword welded to the end, making it into a long-bladed polearm.",
+        Description: "Her weapon is a joining of a large arcane staff with a demonic great sword welded to the end, making it into a long-bladed polearm.<br>"+
+            "Mercury Titan: https://www.dandwiki.com/wiki/Mercury_Titan_(5e_Creature)",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: ["Heart of Denethor"],
@@ -49950,10 +49978,9 @@ const uniqueLocal = [
             {Title: "Magic Resistance", Desc: "Hypatia, Daughter of Denethor, has advantage on saving throws against spells and other magical effects."},
             {Title: "Magic Weapon", Desc: "Hypatia, Daughter of Denethor's weapon attacks are magical."},
             {Title: "Mystic Cheat (3/Day)", Desc: "If Hypatia, Daughter of Denethor, fails on a saving throw against a spell or other magical effect, it can choose instead to succeed."},
-            {Title: "Spell Quickdraw", Desc: "Hypatia, Daughter of Denethor, can cast a spell of her choice as a bonus action."},
             {Title: "Heart of Healing (Once per Round)", Desc: "Hypatia, Daughter of Denethor, draws a small amount of energy from the Heart of Denethor to heal her wounds for 20 (6d4 + 5) hit points."},
             {Title: "Phase 2", Desc: "After being defeated, Hypatia, Daughter of Denethor, has her titan skin shed and the Light of her soul holds her power together. Now a being of solid Light, she emits a blinding light outward. All creatures who enter within 30 ft. of her must make a Constitution saving throw or be blinded. A creature blinded by this effect makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded."},
-            {Title: "Innate Spellcasting", Desc: "Hypatia, Daughter of Denethor's innate spellcasting ability is Intelligence (spell save DC 20). She can innately cast the following spells, requiring no material components: Cantrips at will: acid splash, blinding smite, charm person, detect magic, detect thoughts, fog cloud, lesser restoration, lightning bolt, mage hand, magic missile (nine darts instead of three), prestidigitation, ray of frost, tidal wave. 3/day: arcane hand, bestow curse, chain lightning, counterspell, dispel magic, dominate person, investiture of flame, investiture of ice, investiture of stone, investiture of wind, mage armor, misty step, telekinesis, sleep. 2/day: darkness, destructive wave, fear, fireball, invisibility, polymorph. 1/day: blade of disaster, dimension door, gaseous form, holy weapon, meteor storm, psychic scream."}
+            {Title: "Innate Spellcasting", Desc: "Hypatia, Daughter of Denethor's innate spellcasting ability is Intelligence (spell save DC 20). She can innately cast the following spells, requiring no material components: <br><br>Cantrips at will: acid splash, blinding smite, charm person, detect magic, detect thoughts, fog cloud, lesser restoration, lightning bolt, mage hand, magic missile (nine darts instead of three), prestidigitation, ray of frost, tidal wave. <br>3/day: arcane hand, bestow curse, chain lightning, counterspell, dispel magic, dominate person, investiture of flame, investiture of ice, investiture of stone, investiture of wind, mage armor, misty step, telekinesis, sleep. <br>2/day: darkness, destructive wave, fear, fireball, invisibility, polymorph. <br>1/day: blade of disaster, dimension door, gaseous form, holy weapon, meteor storm, psychic scream."}
         ],
         Actions: [
             {Title: "Multiattack", Desc: "Hypatia, Daughter of Denethor, makes three Polearm attacks and one Spell Quickdraw."},
@@ -49963,11 +49990,17 @@ const uniqueLocal = [
             {Title: "Arcane Blast (Recharge 5–6)", Desc: "Hypatia, Daughter of Denethor, creates a 60-foot-radius explosion of arcane energy centered on herself. Each creature in that area must make a DC 24 Dexterity saving throw. On a failed save, a creature takes 60 (12d10) force damage and 24 (6d8) thunder damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone."},
             {Title: "Summon Elemental (1/Day)", Desc: "Hypatia, Daughter of Denethor, summons one of the four types of elementals. The summoned elemental appears in an unoccupied space within 60 feet of its summoner and acts as an ally of the summoner. It remains for 10 minutes, until it dies, or until its summoner dismisses it as an action."},
             {Title: "Teleport (Recharge 4–6)", Desc: "Hypatia, Daughter of Denethor, can instantly teleport to anywhere in the Heart of Denethor and not provoke attacks of opportunity."},
-            {Title: "Drain Light", Desc: "Hypatia, Daughter of Denethor, makes a grapple against a creature within 15 ft. of her. On a successful grapple, the creature is raised in the air and must make an Intelligence and Wisdom saving throw. If both saving throws fail, Hypatia drains 2,000 echoes from the creature and is healed for 16d4 hit points. If one saving throw fails, Hypatia drains 1,000 echoes from the creature and is healed for 8d4 hit points. If both saving throws succeed, Hypatia cannot drain the creature's light and throws it 50 ft. from her, leaving it prone."},
+            {Title: "Drain Light", Desc: "Hypatia, Daughter of Denethor, makes a grapple against a creature within 15 ft. of her. On a successful grapple, the creature is raised in the air and must make an Intelligence and Wisdom saving throw. <br>"+
+                "If both saving throws fail, Hypatia drains 2,000 echoes from the creature and is healed for 16d4 hit points. <br>"+
+                "If one saving throw fails, Hypatia drains 1,000 echoes from the creature and is healed for 8d4 hit points. <br>"+
+                "If both saving throws succeed, Hypatia cannot drain the creature's light and throws it 50 ft. from her, leaving it prone."},
             {Title: "Abyssal Eruption (Activate on 6–9)", Desc: "Hypatia, Daughter of Denethor, has too much abyssal corruption in her body and green flames burst forth from her mouth, throat, and chest, randomly spilling 8 green flames in a 50-ft. cone from her. These abyssal flames spread outwards after every round just like the Flames of the Warlord do."},
-            {Title: "Screams of Denethor (Activate on 10)", Desc: "The turmoil of souls affected by The End suddenly strike Hypatia's mind, causing her immense pain. As she screams out, a thousand other screams fill the Heart of Denethor. All creatures must make a Wisdom saving throw. On a failed save, a creature takes 10d10 psychic damage and is stunned until their next turn. On a successful save, a creature takes half damage and isn't stunned. When Hypatia uses this action, she is stunned and cannot take any more actions or legendary actions until her next turn."}
+            {Title: "Screams of Denethor (Activate on 10)", Desc: "The turmoil of souls affected by The End suddenly strike Hypatia's mind, causing her immense pain. As she screams out, a thousand other screams fill the Heart of Denethor. All creatures must make a Wisdom saving throw. On a failed save, a creature takes 10d10 psychic damage and is stunned until their next turn. On a successful save, a creature takes half damage and isn't stunned. <br>"+
+                "When Hypatia uses this action, she is stunned and cannot take any more actions or legendary actions until her next turn."}
         ],
-        BonusActions: [],
+        BonusActions: [
+            {Title: "Spell Quickdraw", Desc: "Hypatia, Daughter of Denethor, can cast a spell of her choice as a bonus action."},
+        ],
         Reactions: [],
         LegendaryActions: [
             {Title: "Attack", Desc: "Hypatia, Daughter of Denethor, makes one attack."},
