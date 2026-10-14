@@ -45190,7 +45190,7 @@ const monstersLocal = [
     },
     { // Prye-Heart Scarecrow
         ID: 698,
-        ParentID: null,
+        ParentID: 100047,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Prye-Heart Scarecrow",
@@ -45258,7 +45258,7 @@ const monstersLocal = [
     },
     { // Pumpkin Bomb
         ID: 699,
-        ParentID: null,
+        ParentID: 100047,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pumpkin Bomb",
@@ -45314,7 +45314,7 @@ const monstersLocal = [
     },
     { // Pumpkin Servant
         ID: 700,
-        ParentID: null,
+        ParentID: 100047,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pumpkin Servant",
@@ -45370,7 +45370,7 @@ const monstersLocal = [
     },
     { // Pumpkin Soldier
         ID: 701,
-        ParentID: null,
+        ParentID: 100047,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Pumpkin Soldier",
@@ -45501,7 +45501,7 @@ const monstersLocal = [
     },
     { // Ulgiroth's Devourer
         ID: 703,
-        ParentID: null, // Ulgiroth
+        ParentID: 100048,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulgiroth's Devourer",
@@ -45565,7 +45565,7 @@ const monstersLocal = [
     },
     { // Ulgiroth's Eye
         ID: 704,
-        ParentID: null, // Ulgiroth
+        ParentID: 100048,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulgiroth's Eye",
@@ -45612,7 +45612,7 @@ const monstersLocal = [
     },
     { // Ulgiroth's Silencer
         ID: 705,
-        ParentID: null, // Ulgiroth
+        ParentID: 100048,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "Ulgiroth's Silencer",
@@ -46609,7 +46609,7 @@ const monstersLocal = [
     },
     { // War Golem (Sardithias)
         ID: 720,
-        ParentID: null,
+        ParentID: 100049,
         ChildrenIDs: [],
         ProfileType: "Monster",
         Name: "War Golem (Sardithias)",
@@ -46696,12 +46696,12 @@ const monstersLocal = [
         GeographicalLocations: [],
         Campaigns_Worlds: ["All"]
     },
-    { // Warlord Elemental
+    { // Warlord's Elemental
         ID: 721,
-        ParentID: null,
+        ParentID: 100053,
         ChildrenIDs: [],
         ProfileType: "Monster",
-        Name: "Warlord Elemental",
+        Name: "Warlord's Elemental",
         Type: "Huge elemental, chaotic evil",
         TypeCategory: "Elemental",
         Size: "Huge",
@@ -46765,7 +46765,95 @@ const monstersLocal = [
         GeographicalLocations: [],
         Campaigns_Worlds: ["All"]
     },
-
+    { // Tarrasque (Sardithias) - Armor
+        ID: 722,
+        ParentID: 100051,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Tarrasque (Sardithias) - Armor",
+        Type: "Structure, dimensions unspecified",
+        TypeCategory: "Structure",
+        Size: "Gargantuan",
+        Source: "Homebrew",
+        ArmorClass: 20,
+        HitPoints: 120,
+        HitPointsRoll: "",
+        Speed: "",
+        Strength: 0,
+        Dexterity: 0,
+        Constitution: 0,
+        Intelligence: 0,
+        Wisdom: 0,
+        Charisma: 0,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Force", "Lightning", "Necrotic", "Radiant", "Thunder"],
+        DamageImmunities: ["Fire", "Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        ConditionImmunities: [],
+        Senses: [],
+        Languages: [],
+        Challenge: [],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "An armor section attached to the enhanced tarrasque. Armor Class 20, 120 hit points, and a damage threshold of 20. Destroying an armor section reduces the tarrasque's armor protection as described in its Enhancements trait.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Tarrasque (Sardithias) - Turret
+        ID: 723,
+        ParentID: 100051,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Tarrasque (Sardithias) - Turret",
+        Type: "Huge Structure, dimensions unspecified",
+        TypeCategory: "Structure",
+        Size: "Huge",
+        Source: "Homebrew",
+        ArmorClass: 16,
+        HitPoints: 120,
+        HitPointsRoll: "",
+        Speed: "",
+        Strength: 0,
+        Dexterity: 0,
+        Constitution: 0,
+        Intelligence: 0,
+        Wisdom: 0,
+        Charisma: 0,
+        SavingThrows: [],
+        Skills: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: ["Fire", "Necrotic", "Poison", "Psychic"],
+        ConditionImmunities: [],
+        Senses: [],
+        Languages: [],
+        Challenge: [],
+        ExtraRewards: "",
+        Traits: [],
+        Actions: [
+            {Title: "Launch Fireball", Desc: "The turret launches a large fireball at a point within 1,000 feet. Each creature within 25 feet of that point must make a DC 20 Dexterity saving throw, taking 55 (20d6) magical fire damage on a failed save, or half as much damage on a successful one. <br>"+
+                "The projectile deals double damage to objects and structures."}
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "A Huge turret mounted on the enhanced tarrasque. It has AC 16, 120 hit points, and a damage threshold of 12. Its projectile attack launches a large fireball at targets up to 1,000 feet away.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
 
 
 ];
@@ -50385,7 +50473,7 @@ const uniqueLocal = [
         TypeCategory: "Undead",
         Size: "Medium",
         Source: "Homebrew",
-        ArmorClass: 21,
+        ArmorClass: [21, "+3 plate"],
         HitPoints: 180,
         HitPointsRoll: "19d8 + 95",
         Speed: "45 ft.",
@@ -50403,7 +50491,7 @@ const uniqueLocal = [
         ConditionImmunities: ["Blinded", "Charmed", "Frightened", "Poisoned"],
         Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Passive Perception 12"],
         Languages: ["Common"],
-        Challenge: ["18 (20,000 XP)"],
+        Challenge: [18, 20000],
         ExtraRewards: "",
         Traits: [
             {Title: "Legendary Resistance (3/Day)", Desc: "If the Headless Horseman fails a saving throw, it can choose to succeed instead."},
@@ -50417,7 +50505,8 @@ const uniqueLocal = [
             {Title: "Multiattack", Desc: "The Headless Horseman makes three attacks."},
             {Title: "Vorpal Sword", Desc: "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 21 (3d8 + 9) slashing damage. When the Headless Horseman attacks a creature that has at least one head with this weapon and rolls a 20 on the attack roll, he cuts off one of the creature's heads. The creature dies if it cannot survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, does not have or need a head, has legendary actions, or the GM decides it is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 27 (6d8) slashing damage from the hit."},
             {Title: "Jack-o'-lantern (Recharge 4–6)", Desc: "Ranged Weapon Attack: +7 to hit, range 30/60 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 14 (4d6) fire damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or become stunned until the end of the Horseman's next turn."},
-            {Title: "Spectral Skulls (Recharge 5–6)", Desc: "Three spectral skulls are summoned from the skulls of the Headless Horseman's mount. Each appears next to the Horseman and moves toward a creature at a speed of 15 ft. Once a skull gets within 5 feet of its target, the target takes 14 (4d4 + 4) necrotic damage. Each spectral skull has 14 hit points, AC 12, and can only be damaged by magical weapons."}
+            {Title: "Spectral Skulls (Recharge 5–6)", Desc: "Three spectral skulls are summoned from the skulls of the Headless Horseman's mount. Each appears next to the Horseman and moves toward a creature at a speed of 15 ft. Once a skull gets within 5 feet of its target, the target takes 14 (4d4 + 4) necrotic damage. <br>"+
+                "Each spectral skull has 14 hit points, AC 12, and can only be damaged by magical weapons."}
         ],
         BonusActions: [],
         Reactions: [
@@ -50432,14 +50521,14 @@ const uniqueLocal = [
         RegionalEffects: [],
         Description: "The Headless Horseman is a mounted undead warrior wielding a vorpal sword and supernatural attacks. He rides a zombie horse, resists many common threats, and can summon servants to aid him in battle.",
         Environments: ["Any"],
-        PlaneOfExistence: ["Material Plane"],
+        PlaneOfExistence: ["Material Plane", "Shadowfell"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["Special Events", "Halls of Creation"]
     },
     { // Pumpkin King
         ID: 100047,
         ParentID: null,
-        ChildrenIDs: [],
+        ChildrenIDs: [698, 699, 700, 701],
         ProfileType: "Unique",
         Name: "Pumpkin King",
         Type: "Huge Plant, chaotic evil",
@@ -50464,7 +50553,7 @@ const uniqueLocal = [
         ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Frightened"],
         Senses: ["Darkvision 120 ft.", "Passive Perception 12"],
         Languages: ["Common", "Sylvan"],
-        Challenge: ["13 (10,000 XP)"],
+        Challenge: [13, 10000],
         ExtraRewards: "",
         Traits: [
             {Title: "Legendary Resistance (3/Day)", Desc: "If the Pumpkin King fails a saving throw, it can choose to succeed instead."}
@@ -50500,7 +50589,7 @@ const uniqueLocal = [
         TypeCategory: "Aberration",
         Size: "Large",
         Source: "Homebrew",
-        ArmorClass: 19,
+        ArmorClass: [19, "natural armor"],
         HitPoints: 580,
         HitPointsRoll: "",
         Speed: "50 ft., burrow 30 ft., fly 70 ft., teleport 100 ft.",
@@ -50516,15 +50605,25 @@ const uniqueLocal = [
         DamageResistances: ["Acid", "Fire", "Lightning", "Poison", "Thunder", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
         DamageImmunities: ["Cold", "Necrotic"],
         ConditionImmunities: ["Charmed", "Deafened", "Exhaustion", "Frightened", "Incapacitated", "Paralyzed", "Petrified", "Poisoned", "Prone", "Stunned"],
-        Senses: ["Blindsight", "Darkvision", "Truesight", "Passive Perception 18"],
+        Senses: ["Blindsight 120 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Passive Perception 18"],
         Languages: ["All languages written and spoken", "Telepathy"],
-        Challenge: ["24 (62,000 XP)"],
+        Challenge: [24, 62000],
         ExtraRewards: "",
         Traits: [
             {Title: "Legendary Resistance (3/Day)", Desc: "If the void speaker fails a saving throw, it can choose to succeed instead."},
             {Title: "Realm Feed (3/Combat)", Desc: "If the void speaker is in the Far Realm, on its turn as a bonus action it can absorb the energies of the Far Realm and heal itself for 4d10 + 10 hit points."},
             {Title: "Power of a Mastered Mind", Desc: "The void speaker can have two concentration spells active at the same time."},
-            {Title: "Spellcasting", Desc: "The void speaker is a spellcaster. Its spellcasting ability is Charisma (+10; spell save DC 19). It has the following spells prepared: Cantrips (at will): Acid Needles, Claws of Evil's Reach, Eldritch Beam, Higher Thaumaturgy, Void Missile; 1st level (5 slots): Armor of the Cold Dark, Command, Entangled Trap, Hex, Witch Bolts; 2nd level (4 slots): Corrupt Earth, Flame Blade, Ray of Enfeeblement, Scorching Ray; 3rd level (4 slots): Bestow Curse, Intense Fear; 4th level (3 slots): Wall of Coldfire; 5th level (3 slots): Cone of Heal Steal, Dominate Person; 6th level (2 slots): Tentacles of the Old Ones; 7th level (2 slots): Prismatic Spray; 8th level (2 slots): Beacon of Hopelessness, Dominate Creatures; 9th level (1 slot): Weird, Oblivion."}
+            {Title: "Innate Spellcasting", Desc: "The void speaker is a spellcaster. Its spellcasting ability is Charisma (+10; spell save DC 19). It has the following spells prepared: <br><br>"+
+                "Cantrips (at will): Acid Needles, Claws of Evil's Reach, Eldritch Beam, Higher Thaumaturgy, Void Missile; <br>"+
+                "1st level (5 slots): Armor of the Cold Dark, Command, Entangled Trap, Hex, Witch Bolts; <br>"+
+                "2nd level (4 slots): Corrupt Earth, Flame Blade, Ray of Enfeeblement, Scorching Ray; <br>"+
+                "3rd level (4 slots): Bestow Curse, Intense Fear; <br>"+
+                "4th level (3 slots): Wall of Coldfire; <br>"+
+                "5th level (3 slots): Cone of Heal Steal, Dominate Person; <br>"+
+                "6th level (2 slots): Tentacles of the Old Ones; <br>"+
+                "7th level (2 slots): Prismatic Spray; <br>"+
+                "8th level (2 slots): Beacon of Hopelessness, Dominate Creatures; <br>"+
+                "9th level (1 slot): Weird, Oblivion."}
         ],
         Actions: [
             {Title: "Death's Touch", Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 26 (4d6 + 10) necrotic damage."},
@@ -50538,23 +50637,29 @@ const uniqueLocal = [
             {Title: "Cantrip", Desc: "The void speaker casts a cantrip."},
             {Title: "Teleport", Desc: "The void speaker uses its teleport action."},
             {Title: "Spell Reaction (Costs 2 Actions)", Desc: "The void speaker casts any spell of 1st through 5th level, expending the spell slot."},
-            {Title: "Summon Void Minions", Desc: "The void speaker summons phantom forms at a chosen location within 100 feet. It can summon a maximum of three creatures from the following list: Void Eye, Void Devourer, or Void Silencer (Recharge 5–6)."},
-            {Title: "Gaze of Fear (Costs 2 Actions)", Desc: "The void speaker invades the minds of creatures of its choice within a 200-foot radius or creatures connected to it. Each target must make a DC 20 Wisdom saving throw. Each point by which a target fails adds a percentage point toward the Terrified condition; a successful save adds no points. At 100%, the creature becomes terrified, loses control of itself, and is frozen in intense fear, unable to move or take actions. The condition ends if the void speaker dies or combat ends."},
-            {Title: "Gaze of Insanity (Costs 2 Actions)", Desc: "The void speaker invades the minds of creatures of its choice within a 200-foot radius or creatures connected to it. Each target must make a DC 20 Charisma saving throw. Each point by which a target fails adds a percentage point toward the Madness condition; a successful save adds no points. At 100%, the creature acts according to the void speaker's will. On its turn, it rolls a die whose number of sides equals the number of creatures around it, excluding the void speaker and its allies, to determine whom it attacks. The DM determines its attack. The condition ends if the void speaker dies or combat ends."},
-            {Title: "Tentacles of the Old Ones (Costs 3 Actions; Once per Combat)", Desc: "The void speaker chooses a location it can see within 100 feet. The ground within a 50-foot radius blackens into fog as massive tentacles erupt. Every creature in the area automatically takes 10 necrotic damage and must make a DC 18 Strength saving throw. On a failure, it takes 8d10 bludgeoning damage and cannot take reactions until its next turn. On a success, it takes half damage and suffers no other effects. A creature that begins its turn in the area must also make a DC 18 Strength saving throw or take 5d10 bludgeoning damage."}
+            {Title: "Summon Minions", Desc: "The void speaker summons phantom forms at a chosen location within 100 feet. It can summon a maximum of three creatures from the following list: <br>"+
+                "Void Eye, <br>"+
+                "Void Devourer, <br>"+
+                "Void Silencer (Recharge 5–6)."},
+            {Title: "Gaze of Fear (Costs 2 Actions)", Desc: "The void speaker invades the minds of creatures of its choice within a 200-foot radius or creatures connected to it. Each target must make a DC 20 Wisdom saving throw. Each point by which a target fails adds a percentage point toward the Terrified condition; a successful save adds no points. <br>"+
+                "At 100%, the creature becomes terrified, loses control of itself, and is frozen in intense fear, unable to move or take actions. The condition ends if the void speaker dies or combat ends."},
+            {Title: "Gaze of Insanity (Costs 2 Actions)", Desc: "The void speaker invades the minds of creatures of its choice within a 200-foot radius or creatures connected to it. Each target must make a DC 20 Charisma saving throw. Each point by which a target fails adds a percentage point toward the Madness condition; a successful save adds no points. <br>"+
+                "At 100%, the creature acts according to the void speaker's will. On its turn, it rolls a die whose number of sides equals the number of creatures around it, excluding the void speaker and its allies, to determine whom it attacks. The DM determines its attack. The condition ends if the void speaker dies or combat ends."},
+            {Title: "Tentacles of the Old Ones (Costs 3 Actions; Once per Combat)", Desc: "The void speaker chooses a location it can see within 100 feet. The ground within a 50-foot radius blackens into fog as massive tentacles erupt. Every creature in the area automatically takes 10 necrotic damage and must make a DC 18 Strength saving throw. On a failure, it takes 8d10 bludgeoning damage and cannot take reactions until its next turn. On a success, it takes half damage and suffers no other effects. <br>"+
+                "A creature that begins its turn in the area must also make a DC 18 Strength saving throw or take 5d10 bludgeoning damage."}
         ],
         LairActions: [],
         RegionalEffects: [],
-        Description: "Ulgiroth, referred to in its abilities as the void speaker, is a powerful aberration with extensive spellcasting, planar perception, teleportation, and mental domination abilities. It can draw power from the Far Realm and summon void minions or otherworldly tentacles.",
+        Description: "Ulgiroth, referred to in its abilities as the void speaker, is a powerful aberration with extensive spellcasting, planar perception, teleportation, and mental domination abilities. It can draw power from the Far Realm and summon otherworldly minions.",
         Environments: ["Any"],
         PlaneOfExistence: ["Far Realm"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["All", "Halls of Creation"]
     },
     { // Sardithias (Hollow Court)
         ID: 100049,
         ParentID: null,
-        ChildrenIDs: [],
+        ChildrenIDs: [720],
         ProfileType: "Unique",
         Name: "Sardithias (Hollow Court)",
         Type: "Medium Humanoid/Demon (High Elf), lawful evil",
@@ -50579,22 +50684,31 @@ const uniqueLocal = [
         ConditionImmunities: ["Charmed", "Frightened", "Paralyzed", "Petrified", "Poisoned"],
         Senses: ["Darkvision 120 ft.", "Passive Perception 18"],
         Languages: ["Common", "Elvish", "Abyssal", "Infernal", "Draconic"],
-        Challenge: [],
+        Challenge: [20, 25000],
         ExtraRewards: "",
         Traits: [
             {Title: "Sorcery Points", Desc: "Sardithias has 20 sorcery points."},
             {Title: "Bend Luck", Desc: "When another creature Sardithias can see makes an attack roll, ability check, or saving throw, he can use his reaction and spend 2 sorcery points to roll 1d4 and apply the number rolled as a bonus or penalty to the creature's roll. He can do so after the creature rolls but before any effects occur."},
             {Title: "Two-Weapon Fighting", Desc: "When Sardithias engages in two-weapon fighting, he can add his ability modifier to the damage of the second attack."},
-            {Title: "Dual Wielder", Desc: "Sardithias gains a +1 bonus to AC while wielding a separate melee weapon in each hand, can use two-weapon fighting with one-handed melee weapons that are not light, and can draw or stow two one-handed weapons when he would normally draw or stow only one."},
-            {Title: "War Caster", Desc: "Sardithias has advantage on Constitution saving throws to maintain concentration when taking damage. He can perform somatic spell components while holding weapons or a shield, and can use his reaction to cast a spell with a casting time of 1 action at a creature that provokes an opportunity attack, provided the spell targets only that creature."},
+            {Title: "Dual Wielder", Desc: "Sardithias master fighting with two weapons, gaining the following benefits:<br>"+
+                "- Sardithias gain a +1 bonus to AC while he is wielding a separate melee weapon in each hand.<br>"+
+                "- Sardithias can use two-weapon fighting even when the one-handed melee weapons he is wielding isn’t light.<br>"+
+                "- Sardithias can draw or stow two one-handed weapons when he would normally be able to draw or stow only one."
+            },
+            {Title: "War Caster", Desc: "Sardithias has practiced casting spells in the midst of combat, learning techniques that grant him the following benefits: <br>"+
+                "- Sardithias has advantage on Constitution saving throws that he makes to maintain his concentration on a spell when he takes damage. <br>"+
+                "- Sardithias can perform the somatic components of spells even when he has weapons or a shield in one or both hands. <br>"+
+                "- When a hostile creature’s movement provokes an opportunity attack from Sardithias, he can use his reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+            },
             {Title: "Distant Spell", Desc: "When Sardithias casts a spell with a range of at least 5 feet, he can spend 1 sorcery point to double its range. When he casts a spell with a range of touch, he can spend 1 sorcery point to make its range 30 feet."},
             {Title: "Twinned Spell", Desc: "When Sardithias casts a spell that targets only one creature and does not have a range of self, he can spend sorcery points equal to the spell's level to target a second creature in range with the same spell, or 1 sorcery point if the spell is a cantrip."},
             {Title: "Quickened Spell", Desc: "When Sardithias casts a spell with a casting time of 1 action, he can spend 2 sorcery points to change the casting time to 1 bonus action for that casting."},
             {Title: "Spell Bombardment", Desc: "When Sardithias rolls damage for a spell and rolls the highest number possible on any of the dice, he can choose one of those dice, roll it again, and add that roll to the damage. He can use this feature only once per turn."},
-            {Title: "Tides of Chaos", Desc: "Sardithias can manipulate chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once he does so, he must finish a long rest before using this feature again. Before he regains its use, the DM can have him roll on the Wild Magic Surge table immediately after he casts a sorcerer spell of 1st level or higher; he then regains the use of this feature."},
+            {Title: "Tides of Chaos", Desc: "Sardithias can manipulate chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once he does so, he must finish a long rest before using this feature again. <br>"+
+                "Before he regains its use, the DM can have him roll on the Wild Magic Surge table immediately after he casts a sorcerer spell of 1st level or higher; he then regains the use of this feature."},
             {Title: "Trance", Desc: "Sardithias does not need to sleep. Instead, he meditates deeply for 4 hours a day, remaining semiconscious. After resting in this way, he gains the same benefit that a human does from 8 hours of sleep."},
             {Title: "Demon Form", Desc: "Empowered with the magic of Krosis, Sardithias has gained demonic traits and abilities."},
-            {Title: "Innate Spellcasting", Desc: "Sardithias's innate spellcasting ability is Charisma (spell save DC 18). He can innately cast the following spells without material components: Cantrips (at will): Cast Flame of the Warlord, Booming Blade, Green-Flame Blade, Lightning Lure, Mold Earth, Sword Burst, Thunderclap, True Strike; 1st level (4 slots): Absorb Elements, Ice Knife, Shield; 2nd level (3 slots): Misty Step, Web, Cloak of the Warlord (Krosis); 3rd level (3 slots): Dispel Magic, Fireball (add Flame of the Warlord damage); 4th level (3 slots): Dimension Door, Storm Sphere; 5th level (3 slots): Wall of Light, Steal Life (Krosis); 6th level (2 slots): Eyebite; 7th level (2 slots): Crown of Stars, Power Word Pain; 8th level (1 slot): Power Word Stun; 9th level (1 slot): Meteor Swarm (add Flame of the Warlord damage)."}
+            {Title: "Innate Spellcasting", Desc: "Sardithias's innate spellcasting ability is Charisma (spell save DC 18). He can innately cast the following spells without material components: <br><br>Cantrips (at will): Cast Flame of the Warlord, Booming Blade, Green-Flame Blade, Lightning Lure, Mold Earth, Sword Burst, Thunderclap, True Strike; <br>1st level (4 slots): Absorb Elements, Ice Knife, Shield; <br>2nd level (3 slots): Misty Step, Web, Cloak of the Warlord (Krosis); <br>3rd level (3 slots): Dispel Magic, Fireball (add Flame of the Warlord damage); <br>4th level (3 slots): Dimension Door, Storm Sphere; <br>5th level (3 slots): Wall of Light, Steal Life (Krosis); <br>6th level (2 slots): Eyebite; <br>7th level (2 slots): Crown of Stars, Power Word Pain; <br>8th level (1 slot): Power Word Stun; <br>9th level (1 slot): Meteor Swarm (add Flame of the Warlord damage)."}
         ],
         Actions: [
             {Title: "Multiattack", Desc: "Sardithias makes three attacks with Sword Slash and Wing Attack."},
@@ -50628,8 +50742,8 @@ const uniqueLocal = [
         ChildrenIDs: [],
         ProfileType: "Unique",
         Name: "Spirit of Bayard",
-        Type: "Medium Beast, aligned with Marion Silverhelm",
-        TypeCategory: "Beast",
+        Type: "Medium Undead, aligned with Marion Silverhelm",
+        TypeCategory: "Undead",
         Size: "Medium",
         Source: "Homebrew",
         ArmorClass: 10,
@@ -50649,8 +50763,8 @@ const uniqueLocal = [
         DamageImmunities: ["Cold", "Necrotic", "Poison"],
         ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Grappled", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained"],
         Senses: ["Darkvision 60 ft.", "Passive Perception 11"],
-        Languages: ["Bayard"],
-        Challenge: ["1/8 (25 XP)"],
+        Languages: ["Bayard", "Understands Common but cannot speak it"],
+        Challenge: [0.125, 25],
         ExtraRewards: "",
         Traits: [
             {Title: "Beast of Burden", Desc: "The Spirit of Bayard is considered to be a Large animal for the purpose of determining its carrying capacity."},
@@ -50677,14 +50791,14 @@ const uniqueLocal = [
     { // Tarrasque (Sardithias)
         ID: 100051,
         ParentID: null,
-        ChildrenIDs: [100052, 100053],
+        ChildrenIDs: [722, 723],
         ProfileType: "Unique",
         Name: "Tarrasque (Sardithias)",
         Type: "Gargantuan Monstrosity (Titan), unaligned",
         TypeCategory: "Monstrosity",
         Size: "Gargantuan",
         Source: "Homebrew",
-        ArmorClass: 25,
+        ArmorClass: [25, "35 when armored"],
         HitPoints: 676,
         HitPointsRoll: "",
         Speed: "40 ft.",
@@ -50702,11 +50816,12 @@ const uniqueLocal = [
         ConditionImmunities: ["Charmed", "Frightened", "Grappled", "Paralyzed", "Poisoned"],
         Senses: ["Blindsight 120 ft.", "Passive Perception 10"],
         Languages: [],
-        Challenge: ["30 (155,000 XP)"],
+        Challenge: [30, 155000],
         ExtraRewards: "",
         Traits: [
             {Title: "Legendary Resistance (3/Day)", Desc: "If the tarrasque fails a saving throw, it can choose to succeed instead."},
-            {Title: "Enhancements", Desc: "The tarrasque has been enhanced by Sardithias, including plated armor and six turrets on its back. Armor sections cover the head, neck, torso (back, bottom, and sides), arms, legs, hands, and feet. Each section can be destroyed, bringing the tarrasque's AC back to 25 and allowing damage to be dealt to the tarrasque."},
+            {Title: "Enhancements", Desc: "The tarrasque has been enhanced by Sardithias, including plated armor and six turrets on its back. <br>"+
+                "Armor sections cover the head, neck, torso (back, bottom, and sides), arms, legs, hands, and feet. Each section can be destroyed, bringing the tarrasque's AC back to 25 and allowing damage to be dealt to the tarrasque."},
             {Title: "Magic Resistance", Desc: "The tarrasque has advantage on saving throws against spells and other magical effects."},
             {Title: "Reflective Carapace", Desc: "Whenever the tarrasque is targeted by a Magic Missile spell, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 1–5, the tarrasque is unaffected. On a 6, it is unaffected and the effect is reflected back at the caster as though it originated from the tarrasque, making the caster the target."},
             {Title: "Siege Monster", Desc: "The tarrasque deals double damage to objects and structures."}
@@ -50734,102 +50849,10 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
-    },
-    { // Armor
-        ID: 100052,
-        ParentID: 100051,
-        ChildrenIDs: [],
-        ProfileType: "Monster",
-        Name: "Armor",
-        Type: "Structure, dimensions unspecified",
-        TypeCategory: "Structure",
-        Size: "Variable",
-        Source: "Homebrew",
-        ArmorClass: 20,
-        HitPoints: 120,
-        HitPointsRoll: "",
-        Speed: "",
-        Strength: 0,
-        Dexterity: 0,
-        Constitution: 0,
-        Intelligence: 0,
-        Wisdom: 0,
-        Charisma: 0,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Acid", "Cold", "Force", "Lightning", "Necrotic", "Radiant", "Thunder"],
-        DamageImmunities: ["Fire", "Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [],
-        ExtraRewards: "",
-        Traits: [
-            {Title: "Feature", Desc: "No additional feature description was provided."}
-        ],
-        Actions: [],
-        BonusActions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        LairActions: [],
-        RegionalEffects: [],
-        Description: "An armor section attached to the enhanced tarrasque. Armor Class 20, 120 hit points, and a damage threshold of 20. Destroying an armor section reduces the tarrasque's armor protection as described in its Enhancements trait.",
-        Environments: ["Any"],
-        PlaneOfExistence: ["Material Plane"],
-        GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
-    },
-    { // Turret
-        ID: 100053,
-        ParentID: 100051,
-        ChildrenIDs: [],
-        ProfileType: "Monster",
-        Name: "Turret",
-        Type: "Huge Structure, dimensions unspecified",
-        TypeCategory: "Structure",
-        Size: "Huge",
-        Source: "Homebrew",
-        ArmorClass: 16,
-        HitPoints: 120,
-        HitPointsRoll: "",
-        Speed: "",
-        Strength: 0,
-        Dexterity: 0,
-        Constitution: 0,
-        Intelligence: 0,
-        Wisdom: 0,
-        Charisma: 0,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
-        DamageImmunities: ["Fire", "Necrotic", "Poison", "Psychic"],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [],
-        ExtraRewards: "",
-        Traits: [
-            {Title: "Feature", Desc: "No additional feature description was provided."}
-        ],
-        Actions: [
-            {Title: "Projectile Action", Desc: "The turret launches a large fireball at a point within 1,000 feet. Each creature within 25 feet of that point must make a DC 20 Dexterity saving throw, taking 55 (20d6) magical fire damage on a failed save, or half as much damage on a successful one. The projectile deals double damage to objects and structures."}
-        ],
-        BonusActions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        LairActions: [],
-        RegionalEffects: [],
-        Description: "A Huge turret mounted on the enhanced tarrasque. It has AC 16, 120 hit points, and a damage threshold of 12. Its projectile attack launches a large fireball at targets up to 1,000 feet away.",
-        Environments: ["Any"],
-        PlaneOfExistence: ["Material Plane"],
-        GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["All", "Halls of Creation"]
     },
     { // World Killer
-        ID: 100054,
+        ID: 100052,
         ParentID: null,
         ChildrenIDs: [],
         ProfileType: "Unique",
@@ -50856,8 +50879,8 @@ const uniqueLocal = [
         ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Incapacitated", "Paralyzed", "Petrified", "Poisoned", "Prone", "Stunned"],
         Senses: ["Tremorsense 500 ft.", "Passive Perception 16"],
         Languages: ["Abyssal"],
-        Challenge: ["25 (75,000 XP)"],
-        ExtraRewards: "750 Platinum each player",
+        Challenge: [25, 75000],
+        ExtraRewards: "",
         Traits: [
             {Title: "Legendary Resistance (3/Day)", Desc: "If the World Killer fails a saving throw, it can choose to succeed instead."},
             {Title: "Siege Monster", Desc: "The World Killer deals double damage to objects and structures."},
@@ -50865,35 +50888,146 @@ const uniqueLocal = [
         ],
         Actions: [
             {Title: "Multiattack", Desc: "The World Killer can use its Frightful Presence. It then makes five attacks: two with its Fists and three with its tentacles. It can use Fire Beam or Bite instead of a tentacle attack."},
-            {Title: "Fist", Desc: "Melee Weapon Attack: +15 to hit, reach 120 ft., one target. Hit: 27 (6d8) damage of an unspecified type. Any creatures within 10 feet of the target must make a DC 18 Dexterity saving throw. On a failure, they take the same damage as the target; on a success, they take half damage. Instead of dealing damage, the World Killer can grapple the creature (DC 22) and deal 42 (12d6) bludgeoning damage immediately after grappling and on each of its turns, provided the target is Huge or smaller. If the Fist takes 60 damage or more in a single turn, the World Killer must succeed on a DC 20 Constitution saving throw at the end of that turn or throw the creature to the back of the lair, dealing 36 (8d8) bludgeoning damage and knocking it prone 500 feet away. If the World Killer dies, the grappled creature falls prone in its hand."},
+            {Title: "Fist", Desc: "Melee Weapon Attack: +15 to hit, reach 120 ft., one target. Hit: 27 (6d8) damage of an unspecified type. Any creatures within 10 feet of the target must make a DC 18 Dexterity saving throw. On a failure, they take the same damage as the target; on a success, they take half damage. <br>"+
+                "Instead of dealing damage, the World Killer can grapple the creature (DC 22) and deal 42 (12d6) bludgeoning damage immediately after grappling and on each of its turns, provided the target is Huge or smaller. <br>"+
+                "If the Fist takes 60 damage or more in a single turn, the World Killer must succeed on a DC 20 Constitution saving throw at the end of that turn or throw the creature to the back of the lair, dealing 36 (8d8) bludgeoning damage and knocking it prone 500 feet away. If the World Killer dies, the grappled creature falls prone in its hand."},
             {Title: "Bite", Desc: "Melee Weapon Attack: +10 to hit, reach 30 ft., one target. Hit: 43 (6d10 + 10) piercing damage plus 23 (3d8 + 10) magical fire damage. If the target is a creature, it is grappled (escape DC 20). Until this grapple ends, the target is restrained, and the World Killer cannot bite another target."},
             {Title: "Tentacle", Desc: "Melee Weapon Attack: +12 to hit, reach 300 ft., one target. Hit: 31 (6d6 + 10) bludgeoning damage, and the target is grappled (escape DC 18). Until this grapple ends, the target is restrained. The World Killer has twenty tentacles, each of which can grapple one target."},
             {Title: "Fire Beam", Desc: "Ranged Spell Attack: +15 to hit, reach 200 ft., one target. Hit: 33 (6d10) magical fire damage."},
             {Title: "Frightful Presence", Desc: "Each creature of the World Killer's choice within its lair and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the World Killer is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the World Killer's Frightful Presence for the next 24 hours."},
             {Title: "Fire Breath (Recharge 5–6)", Desc: "The World Killer exhales fire in a 100-foot half-radius area in front of it. Each creature in that area must make a DC 20 Dexterity saving throw, taking 91 (26d6) magical fire damage on a failed save, or half as much damage on a successful one."},
-            {Title: "Swallow", Desc: "The World Killer makes one bite attack against a Huge or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, is swallowed, and the grapple ends. While swallowed, the creature is restrained, has total cover against attacks and other effects outside the World Killer, and takes 56 (16d6) magical fire damage at the start of each of the World Killer's turns. Lair actions also affect creatures inside the World Killer. If the World Killer takes 60 damage or more on a single turn from a creature inside it, it must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of it. If the World Killer dies, a swallowed creature is no longer restrained and can escape from the corpse by using 30 feet of movement, exiting prone."}
+            {Title: "Swallow", Desc: "The World Killer makes one bite attack against a Huge or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is restrained, it has total cover against attacks and other effects outside the World Killer, and it takes 56 (16d6) magical fire damage at the start of each of the World Killer's turns. (Lair actions apply to inside of World Killer)<br>"+
+                "If the World Killer takes 60 damage or more on a single turn from a creature inside it, the World Killer must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the World Killer. If the World Killer dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone."}
         ],
         BonusActions: [],
         Reactions: [
-            {Title: "Skin Grasp", Desc: "If a creature within 5 feet of the World Killer attacks it, the World Killer can use the vines on its body to trap the attacking weapon or limb. At the start of the World Killer's turn, the creature must make a DC 18 opposed grapple check or be grappled to its body. The World Killer can use this reaction again to force the creature to make a DC 18 escape check with disadvantage or be buried in its body. While buried, the creature is blinded and restrained, unable to physically attack, and has total cover against attacks and other effects outside the World Killer. If the creature has a weapon and lets it go, it is buried. If the buried space (AC 18) takes 50 damage or more in a single turn, the creature is freed and falls prone in the space where it was buried, or falls 10 feet away and prone if buried in a wall of the lair or the World Killer's body."}
+            {Title: "Skin Grasp", Desc: "If a creature within 5 feet of the World Killer attacks it, the World Killer can use the vines on its body to trap the attacking weapon or limb. At the start of the World Killer's turn, the creature must make a DC 18 opposed grapple check or be grappled to its body.<br>"+
+                "The World Killer can use this reaction again to force the creature to make a DC 18 escape check with disadvantage or be buried in its body. While buried, the creature is blinded and restrained, unable to physically attack, and has total cover against attacks and other effects outside the World Killer. <br>"+
+                "If the creature has a weapon and lets it go, it is buried. <br>"+
+                "If the buried space (AC 18) takes 50 damage or more in a single turn, the creature is freed and falls prone in the space where it was buried, or falls 10 feet away and prone if buried in a wall of the lair or the World Killer's body."}
         ],
         LegendaryActions: [
             {Title: "Attack", Desc: "The World Killer makes one attack."},
             {Title: "Chomp (Costs 2 Actions)", Desc: "The World Killer makes one bite attack or uses Swallow."}
         ],
         LairActions: [
-            {Title: "Blossoming Vines", Desc: "On initiative count 20 (losing initiative ties), any creature that touches the ground or is within 10 feet of it must make an opposed grapple check (DC 18) or be grappled to the ground. Immediately after the target is grappled, fire bursts from a blossoming vine, dealing 23 (3d8 + 10) magical fire damage. The target must then succeed on a DC 15 Constitution saving throw or take an additional 4 (1d8) magical fire damage. On a failure, more vines attach to the target, causing its next escape check to be made with disadvantage. If it fails that check, the vines bury it in the floor. While buried, the creature is blinded and restrained, unable to physically attack, and has total cover against attacks and other effects outside the World Killer, except for the other lair action. If the vines covering the target's space (AC 18) take 60 damage or more in a single turn, the target is freed and falls prone in the space where it was buried."},
-            {Title: "Rising Floor Fire", Desc: "On initiative count 20 (losing initiative ties), the floor of the entire lair catches fire, dealing 23 (3d8 + 10) magical fire damage to any creature that touches it. At the end of each subsequent turn, the fire rises 5 feet until the entire lair is filled. Any creature buried in the lair is affected by the fire, but the fire does not affect the vines burying it."}
+            "Any creature that touches the ground or within 10 ft. of the ground must make an opposed grapple check (DC 18) or be grappled to the ground. Immediately after the target is grappled, fire bursts from a blossoming vine dealing 23 (3d8 + 10) magical fire damage and the target must succeed on a Constitution saving throw (DC 15) or take an additional 4 (1d8) magical fire damage.<br>"+
+                "If the target fails, more vines attach to the target causing the target make their next escape check with disadvantage. If they fail that attempt, the vines bury the target in the floor. While buried, the creature is blinded and restrained unable to physically attack, it has total cover against attacks and other effects outside the World Killer except for the other Lair Action.<br>"+
+                "If the vines (AC 18) covering the target’s space take 60 damage or more on a single turn the target is no longer buried, which fall prone in the space they were buried in.",
+            "The floor of the entire lair is set on fire dealing 23 (3d8 + 10) magical fire damage to any creature that touches it. Every turn after the effect takes place the fire rises 5 ft. in the air until the entire lair is filled. Any creature buried in the lair takes this effect and does not affect the vines that bury them.",
         ],
         RegionalEffects: [],
         Description: "The World Killer is a Gargantuan demon with enormous reach, up to twenty tentacles, devastating fire attacks, and the ability to grapple, bury, or swallow its enemies. Within its lair, it can entangle creatures in burning vines and set the floor ablaze. Its fist damage type was not specified in the supplied stat block.",
         Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane", "Abyss"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All", "Halls of Creation"]
+    },
+    { // Krosis, Warlord of the Abyss
+        ID: 100053,
+        ParentID: null,
+        ChildrenIDs: [721],
+        ProfileType: "Monster",
+        Name: "Krosis, Warlord of the Abyss",
+        Type: "Demon (Obyrith)",
+        TypeCategory: "Demon",
+        Size: "Colossal",
+        Source: "Homebrew",
+        ArmorClass: 27,
+        HitPoints: 737,
+        HitPointsRoll: "",
+        Speed: "80 ft., swim 60 ft.",
+        Strength: 30,
+        Dexterity: 21,
+        Constitution: 30,
+        Intelligence: 18,
+        Wisdom: 17,
+        Charisma: 20,
+        SavingThrows: ["Str +15", "Dex +10", "Con +15", "Cha +11"],
+        Skills: ["Athletics +18", "Insight +11", "Intimidation +13", "Perception +11", "Survival +11"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Force", "Lightning", "Necrotic", "Psychic", "Thunder", "Bludgeoning, Piercing, Slashing from non-magical weapons"],
+        DamageImmunities: ["Fire", "Poison"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Incapacitated", "Paralyzed", "Petrified", "Poisoned", "Prone", "Stunned"],
+        Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Passive Perception 21"],
+        Languages: ["Abyssal", "Common", "Infernal"],
+        Challenge: [30, 155000],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Origin of the Flame",
+                Desc: "Krosis is the source of Flame of the Warlord. All attacks by Krosis deal additional damage from Flame of the Warlord (included in the attacks)."
+            },
+            {
+                Title: "Spirit Form (Once per day)",
+                Desc: "Krosis can manifest his spirit, forming a flaming pillar from his body. It extends high into the sky, where the top forms the shape of his upper body and greatsword. All damage Krosis deals in this form is tripled. All damage to structures and objects is increased tenfold. This form lasts up to 10 minutes."
+            },
+            {
+                Title: "Innate Spellcasting",
+                Desc: "Krosis's innate spellcasting ability is Charisma (+11; spell save DC 20). He can innately cast the following spells, requiring no material components. <br>"+
+                    "At will: Cast Flame of the Warlord (Krosis), Flame Strike. <br>"+
+                    "3/day each: Flamewave, Flame Row. <br>"+
+                    "1/day each: Abyssal Meteor Swarm, Gaze of the Abyss."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Krosis makes two attacks or one attack and one cantrip."
+            },
+            {
+                Title: "Greatsword Attack",
+                Desc: "Melee Weapon Attack: +18 to hit, reach 15 ft., one target. Hit: 52 (8d12) slashing damage, or 66 (10d12) slashing damage if used with two hands, plus 13 (3d8) magical fire damage. The target must make a DC 15 Constitution saving throw or take an additional 4 (1d8) magical fire damage."
+            },
+            {
+                Title: "Leap",
+                Desc: "Krosis hurls himself at a target between 30 and 100 ft. away. The target must succeed on a DC 20 Dexterity saving throw or take 74 (12d8 + 20) bludgeoning damage."
+            },
+            {
+                Title: "Stomp",
+                Desc: "Melee Weapon Attack: +18 to hit, reach 10 ft., one target. Hit: 44 (8d10) bludgeoning damage. All creatures within 5 ft. of the target must make a DC 20 Strength saving throw or be knocked prone."
+            },
+            {
+                Title: "Flame Whip",
+                Desc: "Ranged Weapon Attack: +15 to hit, range 120 ft., one target. Hit: 44 (8d10) slashing damage plus 23 (3d8 + 10) magical fire damage. The target must make a DC 15 Constitution saving throw or take an additional 4 (1d8) magical fire damage."
+            },
+            {
+                Title: "Flame Lightning",
+                Desc: "Ranged Spell Attack: +11 to hit, range 200/1,000 ft., one target. Hit: 44 (8d10) lightning damage plus 23 (3d8 + 10) magical fire damage."
+            },
+            {
+                Title: "Throw Fire",
+                Desc: "Ranged Spell Attack: +13 to hit, range 200/800 ft., one target. Hit: 55 (10d10) magical fire damage."
+            },
+            {
+                Title: "Flame Column",
+                Desc: "Each creature in a 10-by-50-foot line must make a Dexterity saving throw. A creature takes 44 (8d10) magical fire damage on a failed save, or half as much on a successful one."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "Krosis makes one attack."
+            },
+            {
+                Title: "Cantrip",
+                Desc: "Krosis casts a cantrip."
+            },
+            {
+                Title: "Summon Warlord Elementals (Costs 2 Actions)",
+                Desc: "Krosis summons two Warlord Elementals."
+            }
+        ],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Krosis, Warlord of the Abyss, is the source of the Flame of the Warlord. This colossal Obyrith demon wields devastating fire and lightning attacks and can manifest a towering spirit form that dramatically magnifies the destruction he causes.",
+        Environments: ["Any"],
         PlaneOfExistence: ["Abyss"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["All", "Halls of Creation"]
     }
-
-
 ];
 
 const playersLocal = [
