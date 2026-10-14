@@ -50222,7 +50222,7 @@ const uniqueLocal = [
         ConditionImmunities: ["Charmed", "Exhaustion", "Frightened", "Paralyzed", "Petrified", "Poisoned", "Unconscious"],
         Senses: ["Darkvision 120 ft.", "Tremorsense 60 ft.", "Passive Perception 10"],
         Languages: ["Common", "Gnomish"],
-        Challenge: [],
+        Challenge: [26, 90000],
         ExtraRewards: "",
         Traits: [
             {Title: "Immutable Form", Desc: "The Machinist is immune to any spell or effect that would alter its form."}
@@ -50251,7 +50251,7 @@ const uniqueLocal = [
         TypeCategory: "Humanoid",
         Size: "Medium",
         Source: "Homebrew",
-        ArmorClass: 20,
+        ArmorClass: [20, "plate, adamantine"],
         HitPoints: 230,
         HitPointsRoll: "",
         Speed: "40 ft.",
@@ -50272,13 +50272,17 @@ const uniqueLocal = [
         Challenge: [20, 25000],
         ExtraRewards: "10 boons, 3 Very Rare Gems, 5 Rare Gems, 7 Uncommon Gems, Adamantine Armor (plate), Berserker Axe (greataxe), Memory Shard “Barbarian – Path of the Ancestral Guardian: Vengeful Ancestors”",
         Traits: [
-            {Title: "Berserker Axe", Desc: "Ilris gains a +1 bonus to attack and damage rolls made with this magic weapon. The axe is cursed, and becoming attuned to it extends the curse to the attuned creature. While cursed, Ilris is unwilling to part with the axe and keeps it within reach at all times. He has disadvantage on attack rolls with weapons other than this one unless no foe is within 60 feet of him that he can see or hear. Whenever a hostile creature damages him while the axe is in his possession, he must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, he must use his action each round to attack the creature nearest to him with the axe. If he can make extra attacks as part of the Attack action, he uses those extra attacks, moving to attack the next nearest creature after felling his current target. If he has multiple possible targets, he attacks one at random. He remains berserk until he starts his turn with no creatures within 60 feet of him that he can see or hear."},
+            {Title: "Berserker Axe", Desc: "Ilris gains a +1 bonus to attack and damage rolls made with this magic weapon. <br>"+
+                "The axe is cursed, and becoming attuned to it extends the curse to the attuned creature. While cursed, Ilris is unwilling to part with the axe and keeps it within reach at all times. He has disadvantage on attack rolls with weapons other than this one unless no foe is within 60 feet of him that he can see or hear. <br>"+
+                "Whenever a hostile creature damages him while the axe is in his possession, he must succeed on a DC 15 Wisdom saving throw or go berserk. <br>"+
+                "While berserk, he must use his action each round to attack the creature nearest to him with the axe. If he can make extra attacks as part of the Attack action, he uses those extra attacks, moving to attack the next nearest creature after felling his current target. If he has multiple possible targets, he attacks one at random. He remains berserk until he starts his turn with no creatures within 60 feet of him that he can see or hear."},
             {Title: "Adamantine Armor", Desc: "While Ilris wears this suit of armor reinforced with adamantine, any critical hit against him becomes a normal hit."},
             {Title: "Reckless Attack", Desc: "When Ilris makes his first attack on his turn, he can choose to attack recklessly, gaining advantage on melee weapon attack rolls using Strength during that turn. Attack rolls against him have advantage until his next turn."},
             {Title: "Danger Sense", Desc: "Ilris has advantage on Dexterity saving throws against effects he can see, such as traps and spells. He can't be blinded, deafened, or incapacitated to gain this benefit."},
             {Title: "Feral Instinct", Desc: "Ilris has advantage on initiative rolls. If surprised at the beginning of combat and not incapacitated, he can act normally on his first turn, but only if he enters his rage before doing anything else on that turn."},
             {Title: "Brutal Critical", Desc: "Ilris can roll three additional weapon damage dice when determining the extra damage for a critical hit with a melee attack."},
-            {Title: "Relentless Rage", Desc: "If Ilris drops to 0 hit points while raging and doesn't die outright, he can make a DC 10 Constitution saving throw. On a success, he drops to 1 hit point instead. Each use after the first increases the DC by 5. The DC resets to 10 when he finishes a short or long rest."},
+            {Title: "Relentless Rage", Desc: "If Ilris drops to 0 hit points while raging and doesn't die outright, he can make a DC 10 Constitution saving throw. On a success, he drops to 1 hit point instead. <br>"+
+                "Each use after the first increases the DC by 5. The DC resets to 10 when he finishes a short or long rest."},
             {Title: "Indomitable Might", Desc: "If Ilris's total for a Strength check is less than 24, he can use 24 in place of the total."},
             {Title: "Ancestral Protectors", Desc: "Spectral warriors appear when Ilris enters his rage. While raging, the first creature he hits with an attack on his turn becomes the target of the warriors. Until the start of his next turn, that target has disadvantage on attack rolls that aren't against him, and creatures other than Ilris have resistance to damage from the target's attacks. The effect ends early if his rage ends."},
             {Title: "Spirit Shield", Desc: "While raging, when another creature Ilris can see within 30 feet of him takes damage, he can use his reaction to reduce that damage by 4d6."},
@@ -50288,11 +50292,17 @@ const uniqueLocal = [
         ],
         Actions: [
             {Title: "Multiattack", Desc: "Ilris makes three Berserker Axe attacks or two Berserker Axe attacks and one Breath Weapon attack."},
-            {Title: "Berserker Axe (+3 Greataxe)", Desc: "Melee Weapon Attack: +17 to hit, reach 5 ft., one target. Hit: 17 (1d12 + 11) slashing damage. Whenever a hostile creature damages Ilris while the axe is in his possession, he must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, he must use his action each round to attack the creature nearest to him with the axe. He uses any extra attacks available and moves to the next nearest creature after felling his current target. If he has multiple possible targets, he attacks one at random. He remains berserk until he starts his turn with no creatures within 60 feet of him that he can see or hear."},
+            {Title: "Berserker Axe (+3 Greataxe)", Desc: "Melee Weapon Attack: +17 to hit, reach 5 ft., one target. Hit: 17 (1d12 + 11) slashing damage. <br>"+
+                "Whenever a hostile creature damages Ilris while the axe is in his possession, he must succeed on a DC 15 Wisdom saving throw or go berserk. <br>"+
+                "While berserk, he must use his action each round to attack the creature nearest to him with the axe. He uses any extra attacks available and moves to the next nearest creature after felling his current target. If he has multiple possible targets, he attacks one at random. He remains berserk until he starts his turn with no creatures within 60 feet of him that he can see or hear."},
             {Title: "Breath Weapon, Fire (Recharge 5–6)", Desc: "Each creature in a 15-foot cone must make a DC 21 Dexterity saving throw. On a failed save, a creature takes 17 (5d6) fire damage, or half as much damage on a successful save."}
         ],
         BonusActions: [
-            {Title: "Rage (6/Rest)", Desc: "Ilris can enter a rage as a bonus action. While raging and not wearing heavy armor, he has advantage on Strength checks and Strength saving throws, gains the rage damage bonus when making melee weapon attacks using Strength, and has resistance to bludgeoning, piercing, and slashing damage. His rage lasts for 1 minute and ends early if he is knocked unconscious or chooses to end it as a bonus action."}
+            {Title: "Rage (6/Rest)", Desc: "Ilris can enter a rage as a bonus action. While raging and not wearing heavy armor, he has the following benefits:<br>"+
+                "- Advantage on Strength checks and Strength saving throws<br>"+
+                "- Gains the rage damage bonus when making melee weapon attacks using Strength<br>"+
+                "- Has resistance to bludgeoning, piercing, and slashing damage<br>"+
+                "His rage lasts for 1 minute and ends early if he is knocked unconscious or chooses to end it as a bonus action."}
         ],
         Reactions: [
             {Title: "Spirit Shield", Desc: "While raging, when another creature Ilris can see within 30 feet of him takes damage, he can reduce that damage by 4d6. Vengeful Ancestors causes the attacker to take force damage equal to the damage prevented."}
@@ -50304,7 +50314,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["Denethor", "Soul of Denethor"]
     },
     { // Master/Crazy Hand
         ID: 100047,
