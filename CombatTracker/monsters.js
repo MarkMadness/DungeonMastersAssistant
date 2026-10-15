@@ -44110,7 +44110,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: ["Tridenthia, Aesis"],
-        Campaigns_Worlds: ["All"],
+        Campaigns_Worlds: ["All", "Halls of Creation"],
     },
     { // Darkwraith
         ID: 682,
@@ -44175,7 +44175,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Mimic Chest
         ID: 683,
@@ -44243,7 +44243,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Mimic Chest (Heroic)
         ID: 684,
@@ -44327,7 +44327,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Mimic Chest (Legendary)
         ID: 685,
@@ -44411,7 +44411,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Mimic Chest (Godly)
         ID: 686,
@@ -44495,7 +44495,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Silver Knight
         ID: 687,
@@ -44559,7 +44559,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: ["Tridenthia", "Aesis"],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["All", "Halls of Creation"]
     },
     { // Tridenthian Archmage
         ID: 688,
@@ -46511,7 +46511,7 @@ const monstersLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["All", "Halls of Creation"]
     },
     { // Time Assassin
         ID: 719,
@@ -47011,7 +47011,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Any"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Halls of Creation (only)"],
+        Campaigns_Worlds: ["Halls of Creation"],
     },
     { // Baphomet
         ID: 100002,
@@ -47921,7 +47921,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: ["Stormhold"],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Arthur, the Wolf Knight
         ID: 100011,
@@ -47976,7 +47976,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Bayard, the Abomination
         ID: 100012,
@@ -48048,7 +48048,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Brave Sir Boros (SoD, Ally)
         ID: 100013,
@@ -48429,7 +48429,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Elemental Plane of Fire"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Cyphus, King of the Undying
         ID: 100019,
@@ -48555,7 +48555,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Shadowfell"],
         GeographicalLocations: ["Aesis(Shadowfell) Palace of the Undying"],
-        Campaigns_Worlds: ["All", "Soul of Denethor"]
+        Campaigns_Worlds: ["All", "Soul of Denethor", "Halls of Creation"]
     },
     { // Devoted Father Alwyn
         ID: 100020,
@@ -49002,7 +49002,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Shadowfell"],
         GeographicalLocations: ["Bellevue Asylum (Shadowfell)"],
-        Campaigns_Worlds: ["Soul of Denethor"]
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
     { // Mordath Vornaar
         ID: 100025,
@@ -49217,7 +49217,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All", "Soul of Denethor"]
+        Campaigns_Worlds: ["All", "Soul of Denethor", "Halls of Creation"]
     },
     { // Rauven, Lord of the Void
         ID: 100027,
@@ -50402,7 +50402,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Denethor", "Soul of Denethor"]
+        Campaigns_Worlds: ["Denethor", "Soul of Denethor", "Halls of Creation"]
     },
     { // Master/Crazy Hand
         ID: 100045,
@@ -50461,7 +50461,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["Halls of Creation"]
+        Campaigns_Worlds: ["Special Events", "Halls of Creation"]
     },
     { // The Headless Horseman
         ID: 100046,
@@ -50577,7 +50577,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["All", "Halls of Creation"]
     },
     { // Ulgiroth
         ID: 100048,
@@ -50734,7 +50734,7 @@ const uniqueLocal = [
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: ["Hollow Court"],
-        Campaigns_Worlds: ["All"]
+        Campaigns_Worlds: ["All", "Halls of Creation"]
     },
     { // Spirit of Bayard
         ID: 100050,
@@ -50897,7 +50897,7 @@ const uniqueLocal = [
             {Title: "Frightful Presence", Desc: "Each creature of the World Killer's choice within its lair and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the World Killer is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the World Killer's Frightful Presence for the next 24 hours."},
             {Title: "Fire Breath (Recharge 5–6)", Desc: "The World Killer exhales fire in a 100-foot half-radius area in front of it. Each creature in that area must make a DC 20 Dexterity saving throw, taking 91 (26d6) magical fire damage on a failed save, or half as much damage on a successful one."},
             {Title: "Swallow", Desc: "The World Killer makes one bite attack against a Huge or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is restrained, it has total cover against attacks and other effects outside the World Killer, and it takes 56 (16d6) magical fire damage at the start of each of the World Killer's turns. (Lair actions apply to inside of World Killer)<br>"+
-                "If the World Killer takes 60 damage or more on a single turn from a creature inside it, the World Killer must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the World Killer. If the World Killer dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone."}
+                "If the World Killer takes 60 damage or more on a single turn from a creature inside it, the World Killer must succeed on aDC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in aspace within 10 feet of the World Killer. If the World Killer dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone."}
         ],
         BonusActions: [],
         Reactions: [
@@ -50913,8 +50913,8 @@ const uniqueLocal = [
         LairActions: [
             "Any creature that touches the ground or within 10 ft. of the ground must make an opposed grapple check (DC 18) or be grappled to the ground. Immediately after the target is grappled, fire bursts from a blossoming vine dealing 23 (3d8 + 10) magical fire damage and the target must succeed on a Constitution saving throw (DC 15) or take an additional 4 (1d8) magical fire damage.<br>"+
                 "If the target fails, more vines attach to the target causing the target make their next escape check with disadvantage. If they fail that attempt, the vines bury the target in the floor. While buried, the creature is blinded and restrained unable to physically attack, it has total cover against attacks and other effects outside the World Killer except for the other Lair Action.<br>"+
-                "If the vines (AC 18) covering the target’s space take 60 damage or more on a single turn the target is no longer buried, which fall prone in the space they were buried in.",
-            "The floor of the entire lair is set on fire dealing 23 (3d8 + 10) magical fire damage to any creature that touches it. Every turn after the effect takes place the fire rises 5 ft. in the air until the entire lair is filled. Any creature buried in the lair takes this effect and does not affect the vines that bury them.",
+                "If the vines (AC 18) covering the target’s space take 60 damage or more on a single turn the target is no longer buried, which fall prone in the space they were buried in.",
+            "The floor of the entire lair is set on fire dealing 23 (3d8 + 10) magical fire damage to any creature that touches it. Every turn after the effect takes place the fire rises 5 ft. in the air until the entire lair is filled. Any creature buried in the lair takes this effect and does not affect the vines that bury them."
         ],
         RegionalEffects: [],
         Description: "The World Killer is a Gargantuan demon with enormous reach, up to twenty tentacles, devastating fire attacks, and the ability to grapple, bury, or swallow its enemies. Within its lair, it can entangle creatures in burning vines and set the floor ablaze. Its fist damage type was not specified in the supplied stat block.",
