@@ -46928,6 +46928,9 @@ const uniqueLocal = [
         InnateSpellcasting: [
             {
                 Description: "Omega’s innate spellcasting ability is Intelligence, Wisdom, or Charisma depending on the spell (spell save DC 20, +20 to hit). Omega can innately cast the following spells, requiring no material components (Roll 10d12 for damage of all spells that deal damage):",
+                SpellModifier: "Intelligence, Wisdom, or Charisma",
+                SpellSaveDC: 20,
+                SpellAttackModifier: 20,
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["all cantrips"]
@@ -46970,6 +46973,7 @@ const uniqueLocal = [
                 }
             }
         ],
+        Spellcasting: [],
         Actions: [
             {
                 Title: "Melee Offense",

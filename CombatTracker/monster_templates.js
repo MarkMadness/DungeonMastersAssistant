@@ -58,6 +58,67 @@ const monstersLocal_Template = [
                 Desc: "Description here."
             }
         ],
+        InnateSpellcasting: [ //Slot: 0 = At Will and for #/Day
+            {
+                Description: "Description here.",
+                SpellModifier: "Intelligence", // Intelligence, Wisdom, or Charisma 
+                SpellSaveDC: 20,
+                SpellAttackModifier: 20,
+                Cantrips: {
+                    Slots: 0, // "At will"
+                    Spells: ["All"] // All, Eldritch Blast, etc.
+                },
+                ThreePerDay: {
+                    Slots: 0, // "Three per day"
+                    Spells: []
+                },
+                TwoPerDay: {
+                    Slots: 0, // "Two per day"
+                    Spells: []
+                },
+                OnePerDay: {
+                    Slots: 0, // "One per day"
+                    Spells: []
+                },
+                Level1: {
+                    Slots: 9,
+                    Spells: ["All"]
+                },
+                Level2: {
+                    Slots: 8,
+                    Spells: ["All"]
+                },
+                Level3: {
+                    Slots: 7,
+                    Spells: ["All"]
+                },
+                Level4: {
+                    Slots: 6,
+                    Spells: ["All"]
+                },
+                Level5: {
+                    Slots: 5,
+                    Spells: ["All"]
+                },
+                Level6: {
+                    Slots: 4,
+                    Spells: ["All"]
+                },
+                Level7: {
+                    Slots: 3,
+                    Spells: ["All"]
+                },
+                Level8: {
+                    Slots: 2,
+                    Spells: ["All"]
+                },
+                Level9: {
+                    Slots: 1,
+                    Spells: ["All"]
+                }
+            }
+        ],
+        Spellcasting: [],
         Actions: [
             {
                 Title: "Multiattack",
