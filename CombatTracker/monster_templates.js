@@ -63,7 +63,7 @@ const monstersLocal_Template = [
                 Description: "Description here.",
                 SpellModifier: "Intelligence", // Intelligence, Wisdom, or Charisma 
                 SpellSaveDC: 20,
-                SpellAttackModifier: 20,
+                SpellAttackModifier: 20, // null if you didn't find it
                 Cantrips: {
                     Slots: 0, // "At will"
                     Spells: ["All"] // All, Eldritch Blast, etc.
