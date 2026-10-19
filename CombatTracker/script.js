@@ -74,6 +74,107 @@ function getFilterTypeLabel(typeText) {
     return baseLabel;
 }
 
+function formatSpellList(spells) {
+    if (!Array.isArray(spells)) {
+        return "";
+    }
+
+    return spells
+        .filter(function(spell) {
+            return typeof spell === "string" && spell.trim() !== "";
+        })
+        .map(function(spell) {
+            return spell.trim();
+        })
+        .join(", ");
+}
+
+function getOrdinalSuffix(value) {
+    const ordinalValue = Number(value);
+
+    if (!Number.isInteger(ordinalValue)) {
+        return "";
+    }
+
+    const mod100 = ordinalValue % 100;
+    if (mod100 >= 11 && mod100 <= 13) {
+        return "th";
+    }
+
+    switch (ordinalValue % 10) {
+        case 1: return "st";
+        case 2: return "nd";
+        case 3: return "rd";
+        default: return "th";
+    }
+}
+
+function renderSpellcastingBlock(spellcastingEntry, titleText) {
+    if (!spellcastingEntry || typeof spellcastingEntry !== "object") {
+        return "";
+    }
+
+    const lines = [];
+    const heading = titleText || "Innate Spellcasting";
+    lines.push("<p class='text-md'><strong>" + heading + "</strong></p>");
+
+    if (typeof spellcastingEntry.Description === "string" && spellcastingEntry.Description.trim() !== "") {
+        lines.push("<p class='text-md'>" + spellcastingEntry.Description.trim() + "</p>");
+        lines.push("<br>");
+    }
+
+    const addSpellGroup = function(label, group) {
+        if (!group || typeof group !== "object") {
+            return;
+        }
+
+        const spells = formatSpellList(group.Spells);
+        if (!spells) {
+            return;
+        }
+
+        if (label === "Cantrips") {
+            const slots = group.Slots;
+            const slotText = (slots === 0 || slots === "0" || String(slots).toLowerCase() === "at will" || String(slots).toLowerCase() === "at-will")
+                ? "at will"
+                : String(slots);
+            lines.push("<p class='text-md'>Cantrips (" + slotText + "): " + spells + "</p>");
+            return;
+        }
+
+        if (group.Slots === 0 || group.Slots === "0" || group.Slots === "" || group.Slots == null) {
+            return;
+        }
+
+        lines.push("<p class='text-md'>" + label + ": " + spells + "</p>");
+    };
+
+    addSpellGroup("Cantrips", spellcastingEntry.Cantrips);
+    addSpellGroup("3/day", spellcastingEntry.ThreePerDay);
+    addSpellGroup("2/day", spellcastingEntry.TwoPerDay);
+    addSpellGroup("1/day", spellcastingEntry.OnePerDay);
+
+    for (let level = 1; level <= 9; level++) {
+        const levelKey = "Level" + level;
+        const group = spellcastingEntry[levelKey];
+
+        if (!group || typeof group !== "object") {
+            continue;
+        }
+
+        const spells = formatSpellList(group.Spells);
+        if (!spells) {
+            continue;
+        }
+
+        const slotCount = Number(group.Slots);
+        const levelLabel = level + getOrdinalSuffix(level) + " Level";
+        lines.push("<p class='text-md'>" + levelLabel + " (" + (Number.isFinite(slotCount) ? slotCount : 0) + " slots): " + spells + "</p>");
+    }
+
+    return lines.join("");
+}
+
 function getLibraryTypeMap(libraryType) {
     let typeMap = {};
     let creatureArray = DB[libraryType] || [];
@@ -886,68 +987,33 @@ function populateProfileDetails(creatureName, creatureType) {
                 $content.find("#profile-traits")
                 .append("<p class='text-md'><strong>" + $creature.Traits[i].Title + "</strong></p><p class='text-md'> " + $creature.Traits[i].Desc + "<p/><br>");
             }
-
-            if($creature.InnateSpellcasting != null) {
-                $content.find("#profile-innateSpellcasting").show();
-                $content.find("#profile-innateSpellcasting").html("<strong>Innate Spellcasting</strong><br>");
-                
-                const cis = $creature.InnateSpellcasting[0];
-                // console.log('InnateSpellcasting = ' + JSON.stringify(cis));
-
-                $content.find("#profile-innateSpellcasting")
-                   .append("<p class='text-md'> " + cis.Description + "<p/><br>" + 
-                       "<p class='text-md'>Cantrips (" + cis.Cantrips.Slots + "): <i>" + cis.Cantrips.Spells + "</i><p/>");
-
-                    if(cis.Level1) {
-                        $content.find("#profile-innateSpellcasting")
-                        .append("<p class='text-md'>Level 1 (" + cis.Level1.Slots + " slots): <i>" + cis.Level1.Spells + "</i><p/>");
-                    }
-
-                    if(cis.Level2) {
-                        $content.find("#profile-innateSpellcasting")
-                        .append("<p class='text-md'>Level 2 (" + cis.Level2.Slots + " slots): <i>" + cis.Level2.Spells + "</i><p/>");
-                    }
-
-                    if(cis.Level3) {
-                        $content.find("#profile-innateSpellcasting")
-                        .append("<p class='text-md'>Level 3 (" + cis.Level3.Slots + " slots): <i>" + cis.Level3.Spells + "</i><p/>");
-                    }
-
-                    if(cis.Level4) {
-                        $content.find("#profile-innateSpellcasting")
-                        .append("<p class='text-md'>Level 4 (" + cis.Level4.Slots + " slots): <i>" + cis.Level4.Spells + "</i><p/>");
-                    }
-
-                    if(cis.Level5) {
-                        $content.find("#profile-innateSpellcasting")
-                        .append("<p class='text-md'>Level 5 (" + cis.Level5.Slots + " slots): <i>" + cis.Level5.Spells + "</i><p/>");
-                    }
-
-                    if(cis.Level6) {
-                        $content.find("#profile-innateSpellcasting")
-                        .append("<p class='text-md'>Level 6 (" + cis.Level6.Slots + " slots): <i>" + cis.Level6.Spells + "</i><p/>");
-                    }
-
-                    if(cis.Level7) {
-                        $content.find("#profile-innateSpellcasting")
-                        .append("<p class='text-md'>Level 7 (" + cis.Level7.Slots + " slots): <i>" + cis.Level7.Spells + "</i><p/>");
-                    }
-
-                    if(cis.Level8) {
-                        $content.find("#profile-innateSpellcasting")
-                        .append("<p class='text-md'>Level 8 (" + cis.Level8.Slots + " slots): <i>" + cis.Level8.Spells + "</i><p/>");
-                    }
-
-                    if(cis.Level9) {
-                        $content.find("#profile-innateSpellcasting")
-                        .append("<p class='text-md'>Level 9 (" + cis.Level9.Slots + " slots): <i>" + cis.Level9.Spells + "</i><p/>");
-                    }
-
-            } else {
-                $content.find("#profile-innateSpellcasting").hide();
-            }
         } else {
             $content.find("#profile-traits").hide();
+        }
+
+        const innateSpellcastingEntries = Array.isArray($creature.InnateSpellcasting) ? $creature.InnateSpellcasting : [];
+        const spellcastingEntries = Array.isArray($creature.Spellcasting) ? $creature.Spellcasting : [];
+        const spellcastingBlocks = [];
+
+        for (let i = 0; i < innateSpellcastingEntries.length; i++) {
+            const block = renderSpellcastingBlock(innateSpellcastingEntries[i], "Innate Spellcasting");
+            if (block) {
+                spellcastingBlocks.push(block);
+            }
+        }
+
+        for (let i = 0; i < spellcastingEntries.length; i++) {
+            const block = renderSpellcastingBlock(spellcastingEntries[i], "Spellcasting");
+            if (block) {
+                spellcastingBlocks.push(block);
+            }
+        }
+
+        if (spellcastingBlocks.length > 0) {
+            $content.find("#profile-innateSpellcasting").show();
+            $content.find("#profile-innateSpellcasting").html(spellcastingBlocks.join("<br>"));
+        } else {
+            $content.find("#profile-innateSpellcasting").hide();
         }
 
         if($creature.Actions.length > 0) {

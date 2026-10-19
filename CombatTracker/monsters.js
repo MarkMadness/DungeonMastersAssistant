@@ -200,7 +200,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 17,
                 SpellAttackModifier: 0,
-                Description: "The deva's spell casting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components:;",
+                Description: "The deva's spell casting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["detect evil and good"],
@@ -1555,7 +1555,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 14,
                 SpellAttackModifier: 0,
-                Description: "The cambion's spellcasting ability is Charisma (spell save DC 14). The cambion can innately cast the following spells, requiring no material components:;",
+                Description: "The cambion's spellcasting ability is Charisma (spell save DC 14). The cambion can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["charm person", "invisibility (self only)"],
@@ -2028,7 +2028,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 14,
                 SpellAttackModifier: 0,
-                Description: "The couatl's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:;",
+                Description: "The couatl's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["detect evil and good", "detect magic", "detect thoughts"],
@@ -2285,7 +2285,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 16,
                 SpellAttackModifier: 0,
-                Description: "The death knight's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components:;",
+                Description: "The death knight's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["detect magic", "discern lies", "magic missile"],
@@ -2522,7 +2522,7 @@ const monstersLocal = [
                 SpellModifier: "Wisdom",
                 SpellSaveDC: 0,
                 SpellAttackModifier: 0,
-                Description: "The barlgura's innate spellcasting ability is Wisdom. It can innately cast the following spell, requiring no material components:;",
+                Description: "The barlgura's innate spellcasting ability is Wisdom. It can innately cast the following spell, requiring no material components:",
                 ThreePerDay: {
                     Slots: 3,
                     Spells: ["entangle"],
@@ -2721,7 +2721,7 @@ const monstersLocal = [
                 SpellModifier: "Intelligence",
                 SpellSaveDC: 16,
                 SpellAttackModifier: 0,
-                Description: "The glabrezu's innate spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:;",
+                Description: "The glabrezu's innate spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["darkness", "detect magic", "dispel magic"],
@@ -3350,7 +3350,7 @@ const monstersLocal = [
                 SpellModifier: "Wisdom",
                 SpellSaveDC: 17,
                 SpellAttackModifier: 0,
-                Description: "The yochlol's innate spellcasting ability is Wisdom (spell save DC 17). It can innately cast the following spells, requiring no material components:;",
+                Description: "The yochlol's innate spellcasting ability is Wisdom (spell save DC 17). It can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["darkness", "detect evil and good", "dispel magic", "fly"],
@@ -7960,7 +7960,7 @@ const monstersLocal = [
                 SpellModifier: "Wisdom",
                 SpellSaveDC: 13,
                 SpellAttackModifier: 0,
-                Description: "The drider's spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:;",
+                Description: "The drider's spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["dancing lights"],
@@ -8054,7 +8054,7 @@ const monstersLocal = [
                 SpellModifier: "Wisdom",
                 SpellSaveDC: 13,
                 SpellAttackModifier: 0,
-                Description: "The dryad's innate spellcasting ability is Wisdom (spell save DC 13). The dryad can innately cast the following spells, requiring no material components:;",
+                Description: "The dryad's innate spellcasting ability is Wisdom (spell save DC 13). The dryad can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["druidcraft"],
@@ -8467,7 +8467,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 11,
                 SpellAttackModifier: 0,
-                Description: "The drow's innate spellcasting ability is Charisma (spell save DC 11). The drow can innately cast the following spells, requiring no material components:;",
+                Description: "The drow's innate spellcasting ability is Charisma (spell save DC 11). The drow can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["dancing lights"],
@@ -8553,7 +8553,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 12,
                 SpellAttackModifier: 0,
-                Description: "The drow's spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:;",
+                Description: "The drow's spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["dancing lights"],
@@ -8648,7 +8648,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 12,
                 SpellAttackModifier: 0,
-                Description: "The drow's innate spellcasting ability is Charisma (spell save DC 12). The drow can innately cast the following spells, requiring no material components:;",
+                Description: "The drow's innate spellcasting ability is Charisma (spell save DC 12). The drow can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["dancing lights"],
@@ -8664,7 +8664,7 @@ const monstersLocal = [
                 SpellModifier: "Intelligence",                
                 SpellSaveDC: 14,
                 SpellAttackModifier: 6,
-                Description: "The drow is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). It requires somatic and verbal components to cast its spells. The drow has the following wizard spells prepared:;",
+                Description: "The drow is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). It requires somatic and verbal components to cast its spells. The drow has the following wizard spells prepared:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["mage hand", "minor illusion", "poison spray", "ray of frost"],
@@ -8761,7 +8761,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 14,
                 SpellAttackModifier: 0,
-                Description: "The drow's innate spellcasting ability is Charisma (spell save DC 14). The drow can innately cast the following spells, requiring no material components:;",
+                Description: "The drow's innate spellcasting ability is Charisma (spell save DC 14). The drow can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["dancing lights"],
@@ -8777,7 +8777,7 @@ const monstersLocal = [
                 SpellModifier: "Wisdom",                
                 SpellSaveDC: 14,
                 SpellAttackModifier: 6,
-                Description: "The drow is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It has the following cleric spells prepared:;",
+                Description: "The drow is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It has the following cleric spells prepared:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["guidance", "poison spray", "thaumaturgy"],
@@ -8878,7 +8878,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 23,
                 SpellAttackModifier: 15,
-                Description: "The empyrean's innate spellcasting ability is Charisma (spell save DC 23, +15 to hit with spell attacks). It can innately cast the following spells, requiring no material components:;",
+                Description: "The empyrean's innate spellcasting ability is Charisma (spell save DC 23, +15 to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["greater restoration", "pass without trace", "water breathing", "water walk"],
@@ -9115,7 +9115,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 11,
                 SpellAttackModifier: 0,
-                Description: "The dragon's innate spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:;",
+                Description: "The dragon's innate spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["dancing lights", "mage hand", "minor illusion"],
@@ -9700,7 +9700,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 14,
                 SpellAttackModifier: 6,
-                Description: "The dao's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:;",
+                Description: "The dao's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["detect evil and good", "detect magic", "stone shape"],
@@ -9786,7 +9786,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 17,
                 SpellAttackModifier: 0,
-                Description: "The djinni's innate spellcasting ability is Charisma (spell save DC 17). The djinni can innately cast the following spells, requiring no material components:;",
+                Description: "The djinni's innate spellcasting ability is Charisma (spell save DC 17). The djinni can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["detect evil and good", "detect magic", "thunderwave"],
@@ -9872,7 +9872,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 15,
                 SpellAttackModifier: 0,
-                Description: "The efreeti's innate spellcasting ability is Charisma (spell save DC 15). The efreeti can innately cast the following spells, requiring no material components:;",
+                Description: "The efreeti's innate spellcasting ability is Charisma (spell save DC 15). The efreeti can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["detect magic"],
@@ -9962,7 +9962,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 16,
                 SpellAttackModifier: 8,
-                Description: "The marid's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:;",
+                Description: "The marid's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["create or destroy water", "detect evil and good", "detect magic", "fog cloud", "purify food and drink"],
@@ -10236,7 +10236,7 @@ const monstersLocal = [
                 SpellModifier: "Wisdom",
                 SpellSaveDC: 16,
                 SpellAttackModifier: 0,
-                Description: "The giant's innate spellcasting ability is Wisdom (spell save DC 16). The giant can innately cast the following spells, requiring no material components:;",
+                Description: "The giant's innate spellcasting ability is Wisdom (spell save DC 16). The giant can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["detect magic", "fog cloud", "light"],
@@ -10564,7 +10564,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 17,
                 SpellAttackModifier: 0,
-                Description: "The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:;",
+                Description: "The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["detect magic", "feather fall", "levitate", "light"],
@@ -10713,7 +10713,7 @@ const monstersLocal = [
                 SpellModifier: "Intelligence",
                 SpellSaveDC: 0,
                 SpellAttackModifier: 0,
-                Description: "The githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:;",
+                Description: "The githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["mage hand (the hand is invisible)"],
@@ -10787,7 +10787,7 @@ const monstersLocal = [
                 SpellModifier: "Intelligence",
                 SpellSaveDC: 13,
                 SpellAttackModifier: 5,
-                Description: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no components:;",
+                Description: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["mage hand (the hand is invisible)"],
@@ -10869,7 +10869,7 @@ const monstersLocal = [
                 SpellModifier: "Wisdom",
                 SpellSaveDC: 0,
                 SpellAttackModifier: 0,
-                Description: "The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components:;",
+                Description: "The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["mage hand (the hand is invisible)"],
@@ -10947,7 +10947,7 @@ const monstersLocal = [
                 SpellModifier: "Wisdom",
                 SpellSaveDC: 14,
                 SpellAttackModifier: 6,
-                Description: "The githzerai's spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no components:;",
+                Description: "The githzerai's spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["mage hand (the hand is invisible)"],
@@ -11230,7 +11230,7 @@ const monstersLocal = [
                 SpellModifier: "Intelligence",
                 SpellSaveDC: 11,
                 SpellAttackModifier: 0,
-                Description: "The gnome's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:;",
+                Description: "The gnome's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["nondetection (self only)"],
@@ -12124,7 +12124,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 12,
                 SpellAttackModifier: 0,
-                Description: "The hag's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:;",
+                Description: "The hag's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["dancing lights", "minor illusion", "vicious mockery"],
@@ -12202,7 +12202,7 @@ const monstersLocal = [
                 SpellModifier: "Charisma",
                 SpellSaveDC: 13,
                 SpellAttackModifier: 5,
-                Description: "The hag's innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). She can innately cast the following spells, requiring no material components:;",
+                Description: "The hag's innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). She can innately cast the following spells, requiring no material components:",
                 Cantrips: {
                     Slots: "at will",
                     Spells: ["detect magic", "magic missile"],
@@ -34584,7 +34584,7 @@ const monstersLocal = [
                 SpellModifier: "Wisdom",                
                 SpellSaveDC: 12,
                 SpellAttackModifier: 4,
-                Description: "The orc is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It requires no verbal components to cast its spells. The orc has the following cleric spells prepared: Cantrips (at-will): guidance, mending, resistance, thaumaturgy;",
+                Description: "The orc is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It requires no verbal components to cast its spells. The orc has the following cleric spells prepared: Cantrips (at-will): guidance, mending, resistance, thaumaturgy",
                 Level1: {
                     Slots: 4,
                     Spells: ["bane", "detect magic", "inflict wounds", "protection from evil and good"],
@@ -55541,7 +55541,7 @@ const uniqueLocal = [
         Traits: [
             {
                 Title: "Unstable Energy",
-                Desc: "Due to the nature of the Unstable Chaos as a being infused of creatures of opposing nature, its damage type changes every round. It cannot have the same damage type as the previous round. Roll to determine the damage type: <br>1: Radiant; <br>2: Poison; <br>3: Fire; <br>4: Lightning;",
+                Desc: "Due to the nature of the Unstable Chaos as a being infused of creatures of opposing nature, its damage type changes every round. It cannot have the same damage type as the previous round. Roll to determine the damage type: <br>1: Radiant; <br>2: Poison; <br>3: Fire; <br>4: Lightning",
             },
             {
                 Title: "Magic Resistance",
