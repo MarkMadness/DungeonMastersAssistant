@@ -124,7 +124,7 @@ const monstersLocal = [
             },
             {
                 Title: "Enslave (3/Day).",
-                Desc: "The aboleth targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.#PWhenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.",
+                Desc: "The aboleth targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.<br>" + "Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.",
             }
         ],
         BonusActions: [],
@@ -227,7 +227,7 @@ const monstersLocal = [
             },
             {
                 Title: "Change Shape.",
-                Desc: "The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).#PIn a new form, the deva retain s its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.",
+                Desc: "The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).<br>" + "In a new form, the deva retain s its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.",
             }
         ],
         BonusActions: [],
@@ -786,7 +786,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Petrifying Gaze.",
-                Desc: "When a creature that can see the basilisk's eyes starts its turn within 30 feet of the basilisk, the basilisk can force it to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic.#PUnless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.#PIf the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.",
+                Desc: "When a creature that can see the basilisk's eyes starts its turn within 30 feet of the basilisk, the basilisk can force it to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic.<br>" + "Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.<br>" + "If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.",
             }
         ],
         InnateSpellcasting: [],
@@ -919,7 +919,7 @@ const monstersLocal = [
             },
             {
                 Title: "Eye Rays.",
-                Desc: "The beholder shoots three of the following eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:#P1. Charm Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the beholder for 1 hour, or until the beholder harms the creature.#P2. Paralyzing Ray. The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P3. Fear Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P4. Slowing Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute, and it takes a -2 penalty to AC and Dexterity saving throws. In addition, the creature can't use reactions. On its turn, it can use either an action or a bonus action, not both. It can't make more than one attack on its turn regardless of its abilities. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P5. Enervation Ray. The targeted creature must make a DC 16 Constitution saving throw, taking 36 (10d6) necrotic damage on a failed save, or half as much damage on a successful one.#P6. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's magic until the start of the beholder's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is instead moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.#P7. Sleep Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or if another creature takes an action to shake it awake. This ray has no effect on constructs and undead.#P8. Petrification Ray. The targeted creature must make a DC 16 Constitution saving throw. If the save fails by 5 or more, the creature is instantly petrified. On a failed save, a creature starts to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. If successful, the effect ends. If it fails, the creature is petrified until freed by the greater restoration spell or similar magic.#P9. Disintegration Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, it is disintegrated.#P10. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. A creature reduced to 0 hit points by this attack dies.",
+                Desc: "The beholder shoots three of the following eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:<br>" + "1. Charm Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the beholder for 1 hour, or until the beholder harms the creature.<br>" + "2. Paralyzing Ray. The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br>" + "3. Fear Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br>" + "4. Slowing Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute, and it takes a -2 penalty to AC and Dexterity saving throws. In addition, the creature can't use reactions. On its turn, it can use either an action or a bonus action, not both. It can't make more than one attack on its turn regardless of its abilities. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br>" + "5. Enervation Ray. The targeted creature must make a DC 16 Constitution saving throw, taking 36 (10d6) necrotic damage on a failed save, or half as much damage on a successful one.<br>" + "6. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's magic until the start of the beholder's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is instead moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.<br>" + "7. Sleep Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or if another creature takes an action to shake it awake. This ray has no effect on constructs and undead.<br>" + "8. Petrification Ray. The targeted creature must make a DC 16 Constitution saving throw. If the save fails by 5 or more, the creature is instantly petrified. On a failed save, a creature starts to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. If successful, the effect ends. If it fails, the creature is petrified until freed by the greater restoration spell or similar magic.<br>" + "9. Disintegration Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, it is disintegrated.<br>" + "10. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. A creature reduced to 0 hit points by this attack dies.",
             }
         ],
         BonusActions: [],
@@ -991,7 +991,7 @@ const monstersLocal = [
             },
             {
                 Title: "Eye Rays.",
-                Desc: "The death tyrant shoots three of the following eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:#P1. Charm Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the death tyrant for 1 hour, or until the death tyrant harms the creature.#P2. Paralyzing Ray. The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P3. Fear Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P4. Withering Ray. The targeted creature must make a DC 16 Constitution saving throw, taking 45 (10d8) necrotic damage on a failed save, or half as much damage on a successful one.#P5. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the death tyrant moves it up to 30 feet in any direction. It is restrained by the ray's magic until the start of the death tyrant's next turn or until the death tyrant is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is instead moved up to 30 feet in any direction.#P6. Sleep Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or if another creature takes an action to shake it awake. This ray has no effect on constructs and undead.#P7. Petrification Ray. The targeted creature must make a DC 16 Constitution saving throw. If the save fails by 5 or more, the creature is instantly petrified. On a failed save, a creature starts to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success.#P8. Disintegration Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, it is disintegrated.#P9. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. A creature reduced to 0 hit points by this attack dies.",
+                Desc: "The death tyrant shoots three of the following eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:<br>" + "1. Charm Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the death tyrant for 1 hour, or until the death tyrant harms the creature.<br>" + "2. Paralyzing Ray. The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br>" + "3. Fear Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br>" + "4. Withering Ray. The targeted creature must make a DC 16 Constitution saving throw, taking 45 (10d8) necrotic damage on a failed save, or half as much damage on a successful one.<br>" + "5. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the death tyrant moves it up to 30 feet in any direction. It is restrained by the ray's magic until the start of the death tyrant's next turn or until the death tyrant is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is instead moved up to 30 feet in any direction.<br>" + "6. Sleep Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or if another creature takes an action to shake it awake. This ray has no effect on constructs and undead.<br>" + "7. Petrification Ray. The targeted creature must make a DC 16 Constitution saving throw. If the save fails by 5 or more, the creature is instantly petrified. On a failed save, a creature starts to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success.<br>" + "8. Disintegration Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, it is disintegrated.<br>" + "9. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. A creature reduced to 0 hit points by this attack dies.",
             }
         ],
         BonusActions: [],
@@ -1050,7 +1050,7 @@ const monstersLocal = [
             },
             {
                 Title: "Eye Rays.",
-                Desc: "The spectator shoots up to two of the following magical eye rays at random (reroll duplicates), choosing one or two targets it can see within 90 feet of it:#P1. Confusion Ray. The targeted creature must succeed on a DC 13 Wisdom saving throw or be unable to take reactions until the start of the spectator's next turn. On its turn, the creature can't move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If no creature is within range, the creature does nothing on its turn.#P2. Paralyzing Ray. The target creature must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P3. Fear Ray. The targeted creature must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.#P4. Wounding Ray. The targeted creature must succeed on a DC 13 Constitution saving throw or take 16 (3d10) necrotic damage.",
+                Desc: "The spectator shoots up to two of the following magical eye rays at random (reroll duplicates), choosing one or two targets it can see within 90 feet of it:<br>" + "1. Confusion Ray. The targeted creature must succeed on a DC 13 Wisdom saving throw or be unable to take reactions until the start of the spectator's next turn. On its turn, the creature can't move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If no creature is within range, the creature does nothing on its turn.<br>" + "2. Paralyzing Ray. The target creature must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br>" + "3. Fear Ray. The targeted creature must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br>" + "4. Wounding Ray. The targeted creature must succeed on a DC 13 Constitution saving throw or take 16 (3d10) necrotic damage.",
             },
             {
                 Title: "Create Food and Water.",
@@ -1543,7 +1543,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The cambion's spellcasting ability is Charisma (spell save DC 14). The cambion can innately cast the following spells, requiring no material components:#PAt will: charm person, invisibility (self only)#P1/day each: fly, suggestion",
+                Desc: "The cambion's spellcasting ability is Charisma (spell save DC 14). The cambion can innately cast the following spells, requiring no material components:<br>" + "At will: charm person, invisibility (self only)<br>" + "1/day each: fly, suggestion",
             },
             {
                 Title: "Magic Resistance.",
@@ -2012,7 +2012,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The couatl's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:#PAt will: detect evil and good, detect magic, detect thoughts#P1/day each: bless, create food and water, protection from poison, sanctuary, shapechange (into humanoid or beast, no other action)",
+                Desc: "The couatl's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:<br>" + "At will: detect evil and good, detect magic, detect thoughts<br>" + "1/day each: bless, create food and water, protection from poison, sanctuary, shapechange (into humanoid or beast, no other action)",
             },
             {
                 Title: "Magic Weapons.",
@@ -2051,7 +2051,7 @@ const monstersLocal = [
             },
             {
                 Title: "Change Shape.",
-                Desc: "The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).#PIn a new form, the couatl retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).<br>" + "In a new form, the couatl retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -2218,7 +2218,7 @@ const monstersLocal = [
         Actions: [
             {
                 Title: "Crush.",
-                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches to the target's head, and the target is blinded and unable to breathe while the darkmantle is attached in this way.#PWhile attached to the target's head, the darkmantle can attack no other creature except the target. The darkmantle can detach itself by spending 5 feet of its movement. As an action, a creature can try to detach the darkmantle by making a DC 13 Strength check.",
+                Desc: "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches to the target's head, and the target is blinded and unable to breathe while the darkmantle is attached in this way.<br>" + "While attached to the target's head, the darkmantle can attack no other creature except the target. The darkmantle can detach itself by spending 5 feet of its movement. As an action, a creature can try to detach the darkmantle by making a DC 13 Strength check.",
             },
             {
                 Title: "Darkness Aura (1/Day).",
@@ -2273,7 +2273,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The death knight's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components:#PAt will: detect magic, discern lies, magic missile#P3/day each: command, dispel magic#P1/day each: animate dead, control undead, create undead, plane shift (self only)",
+                Desc: "The death knight's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components:<br>" + "At will: detect magic, discern lies, magic missile<br>" + "3/day each: command, dispel magic<br>" + "1/day each: animate dead, control undead, create undead, plane shift (self only)",
             },
             {
                 Title: "Magic Resistance.",
@@ -2510,7 +2510,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The barlgura's innate spellcasting ability is Wisdom. It can innately cast the following spell, requiring no material components:#P3/day: entangle",
+                Desc: "The barlgura's innate spellcasting ability is Wisdom. It can innately cast the following spell, requiring no material components:<br>" + "3/day: entangle",
             },
             {
                 Title: "Magic Resistance.",
@@ -2709,7 +2709,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The glabrezu's innate spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:#PAt will: darkness, detect magic, dispel magic#P1/day each: confusion, fly, power word stun",
+                Desc: "The glabrezu's innate spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:<br>" + "At will: darkness, detect magic, dispel magic<br>" + "1/day each: confusion, fly, power word stun",
             },
             {
                 Title: "Magic Resistance.",
@@ -3007,7 +3007,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The marilith's innate spellcasting ability is Wisdom (spell save DC 17). The marilith can innately cast the following spells, requiring no material components:#PAt will: astral projection (self only), telekinesis",
+                Desc: "The marilith's innate spellcasting ability is Wisdom (spell save DC 17). The marilith can innately cast the following spells, requiring no material components:<br>" + "At will: astral projection (self only), telekinesis",
             }
         ],
         BonusActions: [],
@@ -3212,7 +3212,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The shadow demon's innate spellcasting ability is Charisma (spell save DC 13). The shadow demon can innately cast the following spells, requiring no material components:#PAt will: darkness, minor illusion#P1/day: mirror image (using shadow duplicates rather than mirror images)",
+                Desc: "The shadow demon's innate spellcasting ability is Charisma (spell save DC 13). The shadow demon can innately cast the following spells, requiring no material components:<br>" + "At will: darkness, minor illusion<br>" + "1/day: mirror image (using shadow duplicates rather than mirror images)",
             }
         ],
         BonusActions: [],
@@ -3330,7 +3330,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The yochlol's innate spellcasting ability is Wisdom (spell save DC 17). It can innately cast the following spells, requiring no material components:#PAt will: darkness, detect evil and good, dispel magic, fly#P1/day each: insect plague, telepathy",
+                Desc: "The yochlol's innate spellcasting ability is Wisdom (spell save DC 17). It can innately cast the following spells, requiring no material components:<br>" + "At will: darkness, detect evil and good, dispel magic, fly<br>" + "1/day each: insect plague, telepathy",
             },
             {
                 Title: "Magic Resistance.",
@@ -6384,11 +6384,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in an 90-foot line that is 5 feet wide. Each creature in that line must make a DC 21 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.#PSleep Breath. The dragon exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Fire Breath. The dragon exhales fire in an 90-foot line that is 5 feet wide. Each creature in that line must make a DC 21 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.<br>" + "Sleep Breath. The dragon exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -6476,11 +6476,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.#PSleep Breath. The dragon exhales sleep gas in a 60-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Fire Breath. The dragon exhales fire in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.<br>" + "Sleep Breath. The dragon exhales sleep gas in a 60-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -6555,7 +6555,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 38 (11d6) fire damage on a failed save, or half as much damage on a successful one.#PSleep Breath. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 12 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Fire Breath. The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 38 (11d6) fire damage on a failed save, or half as much damage on a successful one.<br>" + "Sleep Breath. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 12 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
             }
         ],
         BonusActions: [],
@@ -6609,7 +6609,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.#PSleep Breath. The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Fire Breath. The dragon exhales fire in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.<br>" + "Sleep Breath. The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
             }
         ],
         BonusActions: [],
@@ -6688,11 +6688,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PLightning Breath. The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 21 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.#PRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or be pushed 60 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 30 feet away but not knocked prone.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Lightning Breath. The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 21 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.<br>" + "Repulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or be pushed 60 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 30 feet away but not knocked prone.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -6784,11 +6784,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PLightning Breath. The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.#PRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 18 Strength saving throw or be pushed 60 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 30 feet away but not knocked prone.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Lightning Breath. The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.<br>" + "Repulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 18 Strength saving throw or be pushed 60 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 30 feet away but not knocked prone.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -6868,7 +6868,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PLightning Breath. The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.#PRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw or be pushed 40 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 20 feet away but not knocked prone.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Lightning Breath. The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.<br>" + "Repulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw or be pushed 40 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 20 feet away but not knocked prone.",
             }
         ],
         BonusActions: [],
@@ -6922,7 +6922,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PLightning Breath. The dragon exhales lightning in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.#PRepulsion Breath. The dragon exhales repulsion energy in a 20-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw or be pushed 20 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 10 feet away but not knocked prone.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Lightning Breath. The dragon exhales lightning in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.<br>" + "Repulsion Breath. The dragon exhales repulsion energy in a 20-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw or be pushed 20 feet away from the dragon and knocked prone. On a successful save, the creature is pushed 10 feet away but not knocked prone.",
             }
         ],
         BonusActions: [],
@@ -6997,11 +6997,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PAcid Breath. The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.#PSlowing Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Acid Breath. The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.<br>" + "Slowing Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -7089,11 +7089,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PAcid Breath. The dragon exhales acid in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 40 (9d8) acid damage on a failed save, or half as much damage on a successful one.#PSlowing Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 16 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Acid Breath. The dragon exhales acid in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 40 (9d8) acid damage on a failed save, or half as much damage on a successful one.<br>" + "Slowing Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 16 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -7168,7 +7168,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PAcid Breath. The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 31 (7d8) acid damage on a failed save, or half as much damage on a successful one.#PSlowing Breath. The dragon exhales gas in a 20-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Acid Breath. The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 31 (7d8) acid damage on a failed save, or half as much damage on a successful one.<br>" + "Slowing Breath. The dragon exhales gas in a 20-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
             }
         ],
         BonusActions: [],
@@ -7222,7 +7222,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PAcid Breath. The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.#PSlowing Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Acid Breath. The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.<br>" + "Slowing Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
             }
         ],
         BonusActions: [],
@@ -7297,11 +7297,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 71 (22d6) fire damage on a failed save, or half as much damage on a successful one.#PWeakening Breath. The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Fire Breath. The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 71 (22d6) fire damage on a failed save, or half as much damage on a successful one.<br>" + "Weakening Breath. The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -7389,11 +7389,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 55 (16d6) fire damage on a failed save, or half as much damage on a successful one.#PWeakening Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Fire Breath. The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 55 (16d6) fire damage on a failed save, or half as much damage on a successful one.<br>" + "Weakening Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -7468,7 +7468,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.#PWeakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Fire Breath. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.<br>" + "Weakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute.",
             }
         ],
         BonusActions: [],
@@ -7522,7 +7522,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PFire Breath. The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 17 (5d6) fire damage on a failed save, or half as much damage on a successful one.#PWeakening Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Fire Breath. The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 17 (5d6) fire damage on a failed save, or half as much damage on a successful one.<br>" + "Weakening Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute.",
             }
         ],
         BonusActions: [],
@@ -7597,11 +7597,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PCold Breath. The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 67 (15d8) cold damage on a failed save, or half as much damage on a successful one.#PParalyzing Breath. The dragon exhales paralyzing gas in a 90-foot cone. Each creature in that area must succeed on a DC 19 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Cold Breath. The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 67 (15d8) cold damage on a failed save, or half as much damage on a successful one.<br>" + "Paralyzing Breath. The dragon exhales paralyzing gas in a 90-foot cone. Each creature in that area must succeed on a DC 19 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -7689,11 +7689,11 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PCold Breath. The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 58 (13d8) cold damage on a failed save, or half as much damage on a successful one.#PParalyzing Breath. The dragon exhales paralyzing gas in a 60-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Cold Breath. The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 58 (13d8) cold damage on a failed save, or half as much damage on a successful one.<br>" + "Paralyzing Breath. The dragon exhales paralyzing gas in a 60-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
             },
             {
                 Title: "Change Shape.",
-                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).#PIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                Desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).<br>" + "In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
             }
         ],
         BonusActions: [],
@@ -7768,7 +7768,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PCold Breath. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.#PParalyzing Breath. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Cold Breath. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.<br>" + "Paralyzing Breath. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
             }
         ],
         BonusActions: [],
@@ -7822,7 +7822,7 @@ const monstersLocal = [
             },
             {
                 Title: "Breath Weapons (Recharge 5-6).",
-                Desc: "The dragon uses one of the following breath weapons.#PCold Breath. The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.#PParalyzing Breath. The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                Desc: "The dragon uses one of the following breath weapons.<br>" + "Cold Breath. The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.<br>" + "Paralyzing Breath. The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
             }
         ],
         BonusActions: [],
@@ -7944,7 +7944,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The drider's spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:#PAt will: dancing lights#P1/day each: darkness, faerie fire",
+                Desc: "The drider's spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:<br>" + "At will: dancing lights<br>" + "1/day each: darkness, faerie fire",
             },
             {
                 Title: "Spider Climb.",
@@ -8034,7 +8034,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The dryad's innate spellcasting ability is Wisdom (spell save DC 13). The dryad can innately cast the following spells, requiring no material components:#PAt will: druidcraft#P1/day each: entangle, goodberry",
+                Desc: "The dryad's innate spellcasting ability is Wisdom (spell save DC 13). The dryad can innately cast the following spells, requiring no material components:<br>" + "At will: druidcraft<br>" + "1/day each: entangle, goodberry",
             },
             {
                 Title: "Magic Resistance.",
@@ -8073,7 +8073,7 @@ const monstersLocal = [
             },
             {
                 Title: "Fey Charm.",
-                Desc: "The dryad targets one Humanoid or Beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can, and it is a willing target for the dryad's spells and other magical effects.#PEach time the dryad or the dryad's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.#PThe dryad can have no more than one humanoid and up to three beasts charmed at a time.",
+                Desc: "The dryad targets one Humanoid or Beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can, and it is a willing target for the dryad's spells and other magical effects.<br>" + "Each time the dryad or the dryad's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.<br>" + "The dryad can have no more than one humanoid and up to three beasts charmed at a time.",
             }
         ],
         BonusActions: [],
@@ -8211,7 +8211,7 @@ const monstersLocal = [
             },
             {
                 Title: "Whirlwind (Recharge 4-6).",
-                Desc: "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.#PIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.",
+                Desc: "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.<br>" + "If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.",
             }
         ],
         BonusActions: [],
@@ -8404,7 +8404,7 @@ const monstersLocal = [
             },
             {
                 Title: "Whelm (Recharge 4-6).",
-                Desc: "Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is engulfed. The engulfed target can't breathe unless it can breathe water, is restrained, and has advantage on saving throws against exhaustion and poison. If the target is engulfed and takes cold damage, it also takes 1 cold damage.#POn a success, the target takes half as much damage, and it isn't engulfed but is instead pushed out of the elemental's space.",
+                Desc: "Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is engulfed. The engulfed target can't breathe unless it can breathe water, is restrained, and has advantage on saving throws against exhaustion and poison. If the target is engulfed and takes cold damage, it also takes 1 cold damage.<br>" + "On a success, the target takes half as much damage, and it isn't engulfed but is instead pushed out of the elemental's space.",
             }
         ],
         BonusActions: [],
@@ -8455,7 +8455,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 11). The drow can innately cast the following spells, requiring no material components:#PAt will: dancing lights#P1/day each: darkness, faerie fire",
+                Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 11). The drow can innately cast the following spells, requiring no material components:<br>" + "At will: dancing lights<br>" + "1/day each: darkness, faerie fire",
             },
             {
                 Title: "Sunlight Sensitivity.",
@@ -8541,7 +8541,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The drow's spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:#PAt will: dancing lights#P1/day each: darkness, faerie fire, levitate (self only)",
+                Desc: "The drow's spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:<br>" + "At will: dancing lights<br>" + "1/day each: darkness, faerie fire, levitate (self only)",
             },
             {
                 Title: "Sunlight Sensitivity.",
@@ -8632,11 +8632,11 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 12). The drow can innately cast the following spells, requiring no material components:#PAt will: dancing lights#P1/day each: darkness, faerie fire",
+                Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 12). The drow can innately cast the following spells, requiring no material components:<br>" + "At will: dancing lights<br>" + "1/day each: darkness, faerie fire",
             },
             {
                 Title: "Spellcasting.",
-                Desc: "The drow is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). It requires somatic and verbal components to cast its spells. The drow has the following wizard spells prepared:#PCantrips (at will): mage hand, minor illusion, poison spray, ray of frost#P1st level (4 slots): magic missile, shield, witch bolt#P2nd level (3 slots): darkness, misty step#P3rd level (3 slots): counterspell, fly, lightning bolt#P4th level (3 slots): dimension door, greater invisibility#P5th level (2 slots): cloudkill",
+                Desc: "The drow is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). It requires somatic and verbal components to cast its spells. The drow has the following wizard spells prepared:<br>" + "Cantrips (at will): mage hand, minor illusion, poison spray, ray of frost<br>" + "1st level (4 slots): magic missile, shield, witch bolt<br>" + "2nd level (3 slots): darkness, misty step<br>" + "3rd level (3 slots): counterspell, fly, lightning bolt<br>" + "4th level (3 slots): dimension door, greater invisibility<br>" + "5th level (2 slots): cloudkill",
             },
             {
                 Title: "Sunlight Sensitivity.",
@@ -8745,11 +8745,11 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 14). The drow can innately cast the following spells, requiring no material components:#PAt will: dancing lights#P1/day each: darkness, faerie fire",
+                Desc: "The drow's innate spellcasting ability is Charisma (spell save DC 14). The drow can innately cast the following spells, requiring no material components:<br>" + "At will: dancing lights<br>" + "1/day each: darkness, faerie fire",
             },
             {
                 Title: "Spellcasting.",
-                Desc: "The drow is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It has the following cleric spells prepared:#PCantrips (at will): guidance, poison spray, thaumaturgy#P1st level (4 slots): bane, command, ensnaring strike, protection from evil and good#P2nd level (3 slots): hold person, spiritual weapon#P3rd level (3 slots): animate dead, bestow curse, dispel magic#P4th level (3 slots): divination, guardian of faith#P5th level (2 slots): contagion, insect plague, mass cure wounds",
+                Desc: "The drow is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It has the following cleric spells prepared:<br>" + "Cantrips (at will): guidance, poison spray, thaumaturgy<br>" + "1st level (4 slots): bane, command, ensnaring strike, protection from evil and good<br>" + "2nd level (3 slots): hold person, spiritual weapon<br>" + "3rd level (3 slots): animate dead, bestow curse, dispel magic<br>" + "4th level (3 slots): divination, guardian of faith<br>" + "5th level (2 slots): contagion, insect plague, mass cure wounds",
             },
             {
                 Title: "Sunlight Sensitivity.",
@@ -8858,7 +8858,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The empyrean's innate spellcasting ability is Charisma (spell save DC 23, +15 to hit with spell attacks). It can innately cast the following spells, requiring no material components:#PAt will: greater restoration, pass without trace, water breathing, water walk#P1/day each: commune, dispel evil and good, earthquake, fire storm, plane shift (self only)",
+                Desc: "The empyrean's innate spellcasting ability is Charisma (spell save DC 23, +15 to hit with spell attacks). It can innately cast the following spells, requiring no material components:<br>" + "At will: greater restoration, pass without trace, water breathing, water walk<br>" + "1/day each: commune, dispel evil and good, earthquake, fire storm, plane shift (self only)",
             },
             {
                 Title: "Legendary Resistance (3/Day).",
@@ -9099,7 +9099,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The dragon's innate spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:#PAt will: dancing lights, mage hand, minor illusion#P3/day: color spray#P1/day: mirror image",
+                Desc: "The dragon's innate spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:<br>" + "At will: dancing lights, mage hand, minor illusion<br>" + "3/day: color spray<br>" + "1/day: mirror image",
             },
             {
                 Title: "Magic Resistance.",
@@ -9205,7 +9205,7 @@ const monstersLocal = [
             },
             {
                 Title: "Spellcasting.",
-                Desc: "The flameskull is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). The flameskull has the following wizard spells prepared:#PCantrips (at will): mage hand, minor illusion, ray of frost#P1st level (4 slots): mage armor, magic missile, shield#P2nd level (3 slots): blur, flaming sphere, invisibility#P3rd level (2 slots): counterspell, fireball",
+                Desc: "The flameskull is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). The flameskull has the following wizard spells prepared:<br>" + "Cantrips (at will): mage hand, minor illusion, ray of frost<br>" + "1st level (4 slots): mage armor, magic missile, shield<br>" + "2nd level (3 slots): blur, flaming sphere, invisibility<br>" + "3rd level (2 slots): counterspell, fireball",
             }
         ],
         BonusActions: [],
@@ -9688,7 +9688,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The dao's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:#PAt will: detect evil and good, detect magic, stone shape#P3/day each: passwall, move earth, tongues#P1/day each: conjure elemental (earth elemental only), gaseous form, invisibility, phantasmal killer, plane shift, wall of stone",
+                Desc: "The dao's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:<br>" + "At will: detect evil and good, detect magic, stone shape<br>" + "3/day each: passwall, move earth, tongues<br>" + "1/day each: conjure elemental (earth elemental only), gaseous form, invisibility, phantasmal killer, plane shift, wall of stone",
             },
             {
                 Title: "Sure-Footed.",
@@ -9778,7 +9778,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The djinni's innate spellcasting ability is Charisma (spell save DC 17). The djinni can innately cast the following spells, requiring no material components:#PAt will: detect evil and good, detect magic, thunderwave#P3/day each: create food and water (can create wine instead of water), tongues, wind walk#P1/day each: conjure elemental (air elemental only), creation, gaseous form, invisibility, major image, plane shift",
+                Desc: "The djinni's innate spellcasting ability is Charisma (spell save DC 17). The djinni can innately cast the following spells, requiring no material components:<br>" + "At will: detect evil and good, detect magic, thunderwave<br>" + "3/day each: create food and water (can create wine instead of water), tongues, wind walk<br>" + "1/day each: conjure elemental (air elemental only), creation, gaseous form, invisibility, major image, plane shift",
             }
         ],
         InnateSpellcasting: [
@@ -9864,7 +9864,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The efreeti's innate spellcasting ability is Charisma (spell save DC 15). The efreeti can innately cast the following spells, requiring no material components:#PAt will: detect magic#P3/day each: enlarge/reduce, tongues#P1/day each: conjure elemental (fire elemental only), gaseous form, invisibility, major image, plane shift, wall of fire",
+                Desc: "The efreeti's innate spellcasting ability is Charisma (spell save DC 15). The efreeti can innately cast the following spells, requiring no material components:<br>" + "At will: detect magic<br>" + "3/day each: enlarge/reduce, tongues<br>" + "1/day each: conjure elemental (fire elemental only), gaseous form, invisibility, major image, plane shift, wall of fire",
             }
         ],
         InnateSpellcasting: [
@@ -9954,7 +9954,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The marid's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:#PAt will: create or destroy water, detect evil and good, detect magic, fog cloud, purify food and drink#P3/day each: tongues, water breathing, water walk#P1/day each: conjure elemental (water elemental only), control water, gaseous form, invisibility, plane shift",
+                Desc: "The marid's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:<br>" + "At will: create or destroy water, detect evil and good, detect magic, fog cloud, purify food and drink<br>" + "3/day each: tongues, water breathing, water walk<br>" + "1/day each: conjure elemental (water elemental only), control water, gaseous form, invisibility, plane shift",
             }
         ],
         InnateSpellcasting: [
@@ -10060,7 +10060,7 @@ const monstersLocal = [
             },
             {
                 Title: "Possession (Recharge 6).",
-                Desc: "One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened, but otherwise uses the possessed target's statistics. It can't use its possessed target's reactions. The ghost can end the possession as a bonus action, whereupon it reappears in an unoccupied space within 5 feet of the body.#PThe target's body, if killed while possessed, dies, and the ghost must succeed on a DC 13 Charisma saving throw or take 3d6 psychic damage before reappearing within 5 feet of the corpse. If the target is or becomes immune to being charmed, it succeeds on its saving throw automatically, and the ghost is ejected from the target's body after failing to possess it.#POnce it successfully possesses a target, the ghost can't attempt to possess another creature for 24 hours.",
+                Desc: "One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened, but otherwise uses the possessed target's statistics. It can't use its possessed target's reactions. The ghost can end the possession as a bonus action, whereupon it reappears in an unoccupied space within 5 feet of the body.<br>" + "The target's body, if killed while possessed, dies, and the ghost must succeed on a DC 13 Charisma saving throw or take 3d6 psychic damage before reappearing within 5 feet of the corpse. If the target is or becomes immune to being charmed, it succeeds on its saving throw automatically, and the ghost is ejected from the target's body after failing to possess it.<br>" + "Once it successfully possesses a target, the ghost can't attempt to possess another creature for 24 hours.",
             }
         ],
         BonusActions: [],
@@ -10228,7 +10228,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The giant's innate spellcasting ability is Wisdom (spell save DC 16). The giant can innately cast the following spells, requiring no material components:#PAt will: detect magic, fog cloud, light#P3/day each: feather fall, fly, misty step#P1/day each: control weather, telekinesis",
+                Desc: "The giant's innate spellcasting ability is Wisdom (spell save DC 16). The giant can innately cast the following spells, requiring no material components:<br>" + "At will: detect magic, fog cloud, light<br>" + "3/day each: feather fall, fly, misty step<br>" + "1/day each: control weather, telekinesis",
             }
         ],
         InnateSpellcasting: [
@@ -10556,7 +10556,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:#PAt will: detect magic, feather fall, levitate, light#P3/day each: control weather, water breathing",
+                Desc: "The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:<br>" + "At will: detect magic, feather fall, levitate, light<br>" + "3/day each: control weather, water breathing",
             }
         ],
         InnateSpellcasting: [
@@ -10705,7 +10705,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting (Psionics).",
-                Desc: "The githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:#PAt will: mage hand (the hand is invisible)#P3/day each: jump, misty step, nondetection (self only)",
+                Desc: "The githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:<br>" + "At will: mage hand (the hand is invisible)<br>" + "3/day each: jump, misty step, nondetection (self only)",
             }
         ],
         InnateSpellcasting: [
@@ -10779,7 +10779,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting (Psionics).",
-                Desc: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no components:#PAt will: mage hand (the hand is invisible)#P3/day each: jump, misty step, nondetection (self only), tongues#P1/day each: plane shift, telekinesis",
+                Desc: "The githyanki's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no components:<br>" + "At will: mage hand (the hand is invisible)<br>" + "3/day each: jump, misty step, nondetection (self only), tongues<br>" + "1/day each: plane shift, telekinesis",
             }
         ],
         InnateSpellcasting: [
@@ -10857,7 +10857,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting (Psionics).",
-                Desc: "The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components:#PAt will: mage hand (the hand is invisible)#P3/day each: feather fall, jump, see invisibility, shield",
+                Desc: "The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components:<br>" + "At will: mage hand (the hand is invisible)<br>" + "3/day each: feather fall, jump, see invisibility, shield",
             },
             {
                 Title: "Psychic Defense.",
@@ -10935,7 +10935,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting (Psionics).",
-                Desc: "The githzerai's spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no components:#PAt will: mage hand (the hand is invisible)#P3/day each: feather fall, jump, see invisibility, shield#P1/day each: phantasmal killer, plane shift",
+                Desc: "The githzerai's spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no components:<br>" + "At will: mage hand (the hand is invisible)<br>" + "3/day each: feather fall, jump, see invisibility, shield<br>" + "1/day each: phantasmal killer, plane shift",
             },
             {
                 Title: "Psychic Defense.",
@@ -11222,7 +11222,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The gnome's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:#PAt will: nondetection (self only)#P1/day each: blindness/deafness, blur, disguise self",
+                Desc: "The gnome's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:<br>" + "At will: nondetection (self only)<br>" + "1/day each: blindness/deafness, blur, disguise self",
             }
         ],
         InnateSpellcasting: [
@@ -12112,7 +12112,7 @@ const monstersLocal = [
             },
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The hag's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:#PAt will: dancing lights, minor illusion, vicious mockery",
+                Desc: "The hag's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:<br>" + "At will: dancing lights, minor illusion, vicious mockery",
             },
             {
                 Title: "Mimicry.",
@@ -12190,7 +12190,7 @@ const monstersLocal = [
         Traits: [
             {
                 Title: "Innate Spellcasting.",
-                Desc: "The hag's innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). She can innately cast the following spells, requiring no material components:#PAt will: detect magic, magic missile#P2/day each: plane shift (self only), ray of enfeeblement, sleep",
+                Desc: "The hag's innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). She can innately cast the following spells, requiring no material components:<br>" + "At will: detect magic, magic missile<br>" + "2/day each: plane shift (self only), ray of enfeeblement, sleep",
             },
             {
                 Title: "Magic Resistance.",
@@ -51599,101 +51599,6 @@ const monstersLocal = [
         GeographicalLocations: [],
         Campaigns_Worlds: ["All"],
     },
-    { // Tarrasque (Sardithias) - Armor
-        ID: 722,
-        ParentID: 100051,
-        ChildrenIDs: [],
-        ProfileType: "Monster",
-        Name: "Tarrasque (Sardithias) - Armor",
-        Type: "Structure, dimensions unspecified",
-        TypeCategory: "Structure",
-        Size: "Gargantuan",
-        Source: "Homebrew",
-        ArmorClass: 20,
-        HitPoints: 120,
-        HitPointsRoll: "",
-        Speed: "",
-        Strength: 0,
-        Dexterity: 0,
-        Constitution: 0,
-        Intelligence: 0,
-        Wisdom: 0,
-        Charisma: 0,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Acid", "Cold", "Force", "Lightning", "Necrotic", "Radiant", "Thunder"],
-        DamageImmunities: ["Fire", "Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [],
-        ExtraRewards: "",
-        Traits: [],
-        InnateSpellcasting: [],
-        Spellcasting: [],
-        Actions: [],
-        BonusActions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        LairActions: [],
-        RegionalEffects: [],
-        Description: "An armor section attached to the enhanced tarrasque. Armor Class 20, 120 hit points, and a damage threshold of 20. Destroying an armor section reduces the tarrasque's armor protection as described in its Enhancements trait.",
-        Environments: ["Any"],
-        PlaneOfExistence: ["Material Plane"],
-        GeographicalLocations: [],
-        Campaigns_Worlds: ["All"],
-    },
-    { // Tarrasque (Sardithias) - Turret
-        ID: 723,
-        ParentID: 100051,
-        ChildrenIDs: [],
-        ProfileType: "Monster",
-        Name: "Tarrasque (Sardithias) - Turret",
-        Type: "Huge Structure, dimensions unspecified",
-        TypeCategory: "Structure",
-        Size: "Huge",
-        Source: "Homebrew",
-        ArmorClass: 16,
-        HitPoints: 120,
-        HitPointsRoll: "",
-        Speed: "",
-        Strength: 0,
-        Dexterity: 0,
-        Constitution: 0,
-        Intelligence: 0,
-        Wisdom: 0,
-        Charisma: 0,
-        SavingThrows: [],
-        Skills: [],
-        DamageVulnerabilities: [],
-        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
-        DamageImmunities: ["Fire", "Necrotic", "Poison", "Psychic"],
-        ConditionImmunities: [],
-        Senses: [],
-        Languages: [],
-        Challenge: [],
-        ExtraRewards: "",
-        Traits: [],
-        InnateSpellcasting: [],
-        Spellcasting: [],
-        Actions: [
-            {
-                Title: "Launch Fireball",
-                Desc: "The turret launches a large fireball at a point within 1,000 feet. Each creature within 25 feet of that point must make a DC 20 Dexterity saving throw, taking 55 (20d6) magical fire damage on a failed save, or half as much damage on a successful one. <br>The projectile deals double damage to objects and structures.",
-            }
-        ],
-        BonusActions: [],
-        Reactions: [],
-        LegendaryActions: [],
-        LairActions: [],
-        RegionalEffects: [],
-        Description: "A Huge turret mounted on the enhanced tarrasque. It has AC 16, 120 hit points, and a damage threshold of 12. Its projectile attack launches a large fireball at targets up to 1,000 feet away.",
-        Environments: ["Any"],
-        PlaneOfExistence: ["Material Plane"],
-        GeographicalLocations: [],
-        Campaigns_Worlds: ["All"],
-    }
 ];
 
 const siegeLocal = [
@@ -52175,7 +52080,146 @@ const siegeLocal = [
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
         Campaigns_Worlds: ["All"]
-    }
+    },
+    { // Armor - Tarrasque (Sardithias): Armor joints and weak spots
+        ID: 10010,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Armor - Tarrasque (Sardithias): Armor joints and weak spots",
+        Type: "Gargantuan Object, unmanned",
+        TypeCategory: "Siege Equipment",
+        Size: "Gargantuan",
+        Source: "Homebrew",
+        ArmorClass: [20, "object"],
+        HitPoints: 120,
+        HitPointsRoll: "", 
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Force", "Lightning", "Necrotic", "Radiant", "Thunder"],
+        DamageImmunities: ["Fire", "Poison", "Psychic", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Siege Weapon",
+                Desc: "This machine is designed for warfare, fortification attacks, or the destruction of structures. Its operation follows the rules described in its CrewActions and Actions."
+            }
+        ],
+        CrewRequired: null, // Minimum crew needed to operate; use null if unspecified
+        CrewActions: [],
+        Actions: [],
+        Description: "An armor section attached to the enhanced tarrasque. Destroying an armor section reduces the tarrasque's armor protection as described in its Enhancements trait allowing an attack at AC 25.",
+        Environments: ["Any"], 
+        PlaneOfExistence: ["Material Plane"], 
+        GeographicalLocations: [], 
+        Campaigns_Worlds: ["Denethor(World)", "Halls of Creation"] 
+    },
+    { // Turret - Tarrasque (Sardithias)
+        ID: 10011,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Turret - Tarrasque (Sardithias)",
+        Type: "Large Object, unmanned",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Homebrew",
+        ArmorClass: [16, "object"],
+        HitPoints: 120,
+        HitPointsRoll: "", 
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: ["Fire", "Necrotic", "Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Siege Weapon",
+                Desc: "This machine is designed for warfare, fortification attacks, or the destruction of structures. Its operation follows the rules described in its CrewActions and Actions."
+            }
+        ],
+        CrewRequired: null, 
+        CrewActions: [],
+        Actions: [
+            {
+                Title: "Launch Fireball",
+                Desc: "The turret launches a large fireball at a point within 1,000 feet. Each creature within 25 feet of that point must make a DC 20 Dexterity saving throw, taking 55 (20d6) magical fire damage on a failed save, or half as much damage on a successful one. <br>The projectile deals double damage to objects and structures.",
+            }
+        ],
+        Description: "A Huge turret mounted on the enhanced tarrasque. Its projectile attack launches a large fireball at targets up to 1,000 feet away.",
+        Environments: ["Any"], 
+        PlaneOfExistence: ["Material Plane"], 
+        GeographicalLocations: [], 
+        Campaigns_Worlds: ["Denethor(World)", "Halls of Creation"] 
+    },
+    { // Flame Cannon
+        ID: 10012,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Flame Cannon",
+        Type: "Large object",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Homebrew",
+        ArmorClass: [18, "object"],
+        HitPoints: 75,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [
+            "Fire",
+            "Bludgeoning, Piercing, and Slashing"
+        ],
+        DamageImmunities: [
+            "Poison",
+            "Psychic"
+        ],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Flame Cannon",
+                Desc: "This large cannon has a single barrel that projects an agonizing stream of fire. It has a long firing range and can readily change its direction of fire, even while operating."
+            },
+            {
+                Title: "Flammable Ammunition",
+                Desc: "The flame cannon uses oil as ammunition. Other flammable liquids can be used to produce the same effect."
+            },
+            {
+                Title: "Sustained Fire",
+                Desc: "Once firing begins, the flame cannon can continue firing in the same direction for three turns before it must be reloaded. Redirecting the cannon changes the direction of its subsequent fire."
+            }
+        ],
+        CrewRequired: null,
+        CrewActions: [
+            {
+                Title: "Load",
+                Desc: "Loading the flame cannon takes two actions. The cannon uses oil or another flammable liquid as ammunition."
+            },
+            {
+                Title: "Fire",
+                Desc: "Firing the flame cannon takes one action. The cannon can continue firing in the same direction for up to three turns before it must be reloaded."
+            },
+            {
+                Title: "Redirect",
+                Desc: "As a bonus action, the operator can redirect the flame cannon's firing direction, including while it is firing."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Flame Breath",
+                Desc: "The flame cannon shoots flame in a 30-foot line that is 5 feet wide, or redirects its fire by 90 degrees while firing in a 20-foot cone. Each creature in the line or cone must make a DC 15 Dexterity saving throw, taking 10 (6d10) fire damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        Description: "The flame cannon is a type of cannon with one large barrel and the ability to shoot an agonizing stream of fire. It has long-range damage capabilities and can easily change its direction of fire, even while in use. It fires oil or other flammable liquids to produce its flames.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
 ];
 
 const uniqueLocal = [
@@ -57812,7 +57856,7 @@ const uniqueLocal = [
     { // Tarrasque (Sardithias)
         ID: 100051,
         ParentID: null,
-        ChildrenIDs: [722, 723],
+        ChildrenIDs: [10010, 10011],
         ProfileType: "Unique",
         Name: "Tarrasque (Sardithias)",
         Type: "Gargantuan Monstrosity (Titan), unaligned",
@@ -59055,7 +59099,7 @@ const uniqueLocal = [
         ConditionImmunities: [],
         Senses: ["Passive Perception 15"],
         Languages: ["Common", "Gnomish", "Elvish", "Abyssal"],
-        Challenge: [],
+        Challenge: [12, 8400],
         ExtraRewards: "",
         Traits: [
             {
@@ -59361,175 +59405,230 @@ const uniqueLocal = [
         GeographicalLocations: [],
         Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
-    { // Zara
+    { // Zara of the Order (Player)
         ID: 100061,
-        ParentID: null, // ID of the boss/leader monster in the encounter or the parent entity of this monster
-        ChildrenIDs: [], // ID's of minions, extensions of the monster, or the next phase of a boss fight
-        ProfileType: "Monster", //Unique, Player
-        Name: "Zara",
-        Type: "Size type, alignment",
-        TypeCategory: "Creature Type",
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Zara of the Order (Player)",
+        Type: "Medium humanoid (reborn moon elf), neutral good",
+        TypeCategory: "Humanoid",
         Size: "Medium",
-        Source: "Homebrew",
-        ArmorClass: [10, "natural armor"],
-        HitPoints: 1,
-        HitPointsRoll: "#d# + #",
+        Source: "Player Character (Madison)",
+        ArmorClass: [24, "Zircon half plate +2, Hematite shield"],
+        HitPoints: 138,
+        HitPointsRoll: "13d10 + 26",
         Speed: ["30 ft."],
         Strength: 10,
-        Dexterity: 10,
-        Constitution: 10,
+        Dexterity: 20,
+        Constitution: 14,
         Intelligence: 10,
-        Wisdom: 10,
-        Charisma: 10,
-        SavingThrows: ["Strength +5", "Dexterity +5", "Constitution +5", "Intelligence +5", "Wisdom +5", "Charisma +5"],
-        Skills: ["Athletics +5", "Acrobatics +5", "Sleight of Hand +5", "Stealth +5", "Arcana +5", "History +5", "Investigation +5", 
-            "Nature +5", "Religion +5", "Animal Handling +5", "Insight +5", "Medicine +5", "Persuasion +5", "Deception +5", 
-            "Intimidation +5", "Perception +5", "Performance +5", "Survival +5"],
-        DamageVulnerabilities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-            "Bludgeoning", "Piercing", "Slashing"],
-        DamageResistances: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-            "Bludgeoning, Piercing, and Slashing from non magical weapons"],
-        DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
-            "Bludgeoning, Piercing, and Slashing from non magical weapons"],
-        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Invisible", "Paralyzed", 
-            "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
-        Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Tremorsense 60 ft.", "Passive Perception 10"],
-        Languages: ["All", "Common", "Draconic", "Elvish", "Dwarvish", "Infernal", "Celestial", "Giant", "Gnomish", "Halfling", "Orc", 
-            "Sylvan", "Abyssal", "Undercommon", "Deep Speech", "Primordial", "Goblin", "Gnoll", "Celestial", "Elvish", "Thieves' Cant", 
-            "Giant", "Draconic", "Aquan", "Ignan", "Terran", "Auran", "Celestial", "Sylvan", "Telepathy 120 ft."],
-        Challenge: [1, 200],
+        Wisdom: 16,
+        Charisma: 20,
+        SavingThrows: ["Wis +8", "Cha +9"],
+        Skills: ["Athletics +5", "Insight +8", "Persuasion +10", "Religion +5"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Poison"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Frightened"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 13"],
+        Languages: ["Common", "Elvish", "Abyssal"],
+        Challenge: [13, 10000],
         ExtraRewards: "",
         Traits: [
             {
-                Title: "Trait One",
-                Desc: "Description here."
+                Title: "Aura of Protection",
+                Desc: "Whenever Zara or a friendly creature within 10 feet of her must make a saving throw, the creature gains a +5 bonus to the saving throw. Zara must be conscious to grant this bonus."
             },
             {
-                Title: "Trait Two",
-                Desc: "Description here."
+                Title: "Aura of Courage",
+                Desc: "Zara and friendly creatures within 10 feet of her can't be frightened while she is conscious."
             },
             {
-                Title: "Trait Three",
-                Desc: "Description here."
+                Title: "Divine Smite",
+                Desc: "When Zara hits a creature with a melee weapon attack, she can expend one spell slot to deal radiant damage in addition to the weapon's damage: 2d8 for a 1st-level slot, plus 1d8 for each slot level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
+            },
+            {
+                Title: "Improved Divine Smite",
+                Desc: "Whenever Zara hits a creature with a melee weapon, the creature takes an extra 4 (1d8) radiant damage."
+            },
+            {
+                Title: "Divine Sense",
+                Desc: "Until the end of her next turn, Zara knows the location of any celestial, fiend, or undead within 60 feet of her that is not behind total cover. She knows the type, but not the identity. Within the same radius, she also detects any place or object that has been consecrated or desecrated. Evil registers as a noxious odor; good as heavenly music."
+            },
+            {
+                Title: "Divine Health",
+                Desc: "Zara is immune to disease."
+            },
+            {
+                Title: "Fighting Style: Blessed Warrior",
+                Desc: "Zara knows two cleric cantrips, which count as paladin spells for her."
+            },
+            {
+                Title: "Mineral Armor",
+                Desc: "While wearing her Zircon half plate (reduces physical damage by 5) and Hematite shield (reduces physical damage by 1), bludgeoning, piercing, and slashing damage Zara takes is reduced by 6."
+            },
+            {
+                Title: "Deathless Nature (Reborn)",
+                Desc: "Zara has advantage on saving throws against disease and being poisoned, and on death saving throws. She doesn't need to eat, drink, breathe, or sleep, and magic can't put her to sleep. She can finish a long rest in 4 hours if she spends those hours in an inactive, motionless state, during which she retains consciousness."
+            },
+            {
+                Title: "Knowledge from a Past Life (5/Day)",
+                Desc: "When Zara makes an ability check that uses a skill, she can roll a d6 and add the number rolled to the check. She regains all expended uses when she finishes a long rest."
+            },
+            {
+                Title: "Faded Memories (Reborn)",
+                Desc: "Zara's body hosts a possessing spirit of redemption that shares its memories and replaces missing appendages with phantasmal limbs."
+            },
+            {
+                Title: "Sentinel",
+                Desc: "When Zara hits a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn. Creatures provoke opportunity attacks from her even if they take the Disengage action before leaving her reach."
+            },
+            {
+                Title: "Shield Master",
+                Desc: "If Zara isn't incapacitated, she can add her shield's AC bonus to any Dexterity saving throw she makes against a spell or other harmful effect that targets only her."
+            },
+            {
+                Title: "Polearm Master",
+                Desc: "While wielding a spear, other creatures provoke an opportunity attack from Zara when they enter her reach."
+            },
+            {
+                Title: "Boots of Elvenkind",
+                Desc: "Zara's steps make no sound, and she has advantage on Dexterity (Stealth) checks that rely on moving silently."
             }
         ],
-        InnateSpellcasting: [ //Slot: 0 = At Will and for #/Day
+        InnateSpellcasting: [],
+        Spellcasting: [
             {
-                Description: "Description here.",
-                SpellModifier: "Intelligence", // Intelligence, Wisdom, or Charisma 
-                SpellSaveDC: 20,
-                SpellAttackModifier: 20, // null if you didn't find it
+                Description: "Zara is a 13th-level paladin (Oath of Redemption). Her spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). Oath spells are always prepared.",
+                SpellModifier: "Charisma",
+                SpellSaveDC: 17,
+                SpellAttackModifier: 9,
                 Cantrips: {
-                    Slots: 0, // "At will"
-                    Spells: ["All"] // All, Eldritch Blast, etc.
+                    Slots: 0,
+                    Spells: ["Light", "Sacred Flame", "Spare the Dying"]
                 },
                 ThreePerDay: {
-                    Slots: 0, // "Three per day"
+                    Slots: 0,
                     Spells: []
                 },
                 TwoPerDay: {
-                    Slots: 0, // "Two per day"
+                    Slots: 0,
                     Spells: []
                 },
                 OnePerDay: {
-                    Slots: 0, // "One per day"
+                    Slots: 0,
                     Spells: []
                 },
                 Level1: {
-                    Slots: 9,
-                    Spells: ["All"]
+                    Slots: 4,
+                    Spells: ["Bless", "Cure Wounds", "Divine Favor", "Sanctuary", "Shield of Faith"]
                 },
                 Level2: {
-                    Slots: 8,
-                    Spells: ["All"]
+                    Slots: 3,
+                    Spells: ["Aid", "Lesser Restoration", "Locate Object"]
                 },
                 Level3: {
-                    Slots: 7,
-                    Spells: ["All"]
+                    Slots: 3,
+                    Spells: ["Counterspell", "Crusader's Mantle", "Hypnotic Pattern", "Remove Curse"]
                 },
                 Level4: {
-                    Slots: 6,
-                    Spells: ["All"]
+                    Slots: 1,
+                    Spells: ["Find Greater Steed"]
                 },
                 Level5: {
-                    Slots: 5,
-                    Spells: ["All"]
+                    Slots: 0,
+                    Spells: []
                 },
                 Level6: {
-                    Slots: 4,
-                    Spells: ["All"]
+                    Slots: 0,
+                    Spells: []
                 },
                 Level7: {
-                    Slots: 3,
-                    Spells: ["All"]
+                    Slots: 0,
+                    Spells: []
                 },
                 Level8: {
-                    Slots: 2,
-                    Spells: ["All"]
+                    Slots: 0,
+                    Spells: []
                 },
                 Level9: {
-                    Slots: 1,
-                    Spells: ["All"]
+                    Slots: 0,
+                    Spells: []
                 }
             }
         ],
-        Spellcasting: [],
         Actions: [
             {
                 Title: "Multiattack",
-                Desc: "The creature makes two attacks: one with its 'Action Two' and one with its 'Action Three'."
+                Desc: "Zara makes two weapon attacks."
             },
             {
-                Title: "Action Two",
-                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 5) slashing damage."
+                Title: "Rapier +1",
+                Desc: "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) piercing damage plus 4 (1d8) radiant damage. The rapier has 3 charges, regained daily; on a hit, Zara can expend 1 charge to deal an extra 3 (1d6) force damage."
             },
             {
-                Title: "Action Three (Recharge 5-6)",
-                Desc: "Description here."
+                Title: "Dagger",
+                Desc: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d4 + 5) piercing damage, plus 4 (1d8) radiant damage if used as a melee attack."
+            },
+            {
+                Title: "Whip",
+                Desc: "Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 7 (1d4 + 5) slashing damage plus 4 (1d8) radiant damage."
+            },
+            {
+                Title: "Lay on Hands",
+                Desc: "Zara touches a creature and restores hit points from a pool of 65 HP, which replenishes after a long rest. Alternatively, she can expend 5 HP from the pool to cure the target of one disease or neutralize one poison."
+            },
+            {
+                Title: "Eyes of Charming",
+                Desc: "Zara casts charm person (save DC 13) on a humanoid within 30 feet that can see her, using one of the item's 3 charges. Charges are regained daily at dawn."
             }
         ],
         BonusActions: [
             {
-                Title: "Bonus Action One",
-                Desc: "Description here."
+                Title: "Shield Bash (Shield Master)",
+                Desc: "If Zara takes the Attack action on her turn, she can try to shove a creature within 5 feet of her with her shield."
+            },
+            {
+                Title: "Channel Divinity: Emissary of Peace",
+                Desc: "Zara augments her presence with divine power, granting herself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes."
+            },
+            {
+                Title: "Channel Divinity: Harness Divine Power",
+                Desc: "Zara regains one expended spell slot of 3rd level or lower. She can use this feature twice between long rests."
+            },
+            {
+                Title: "Polearm Master",
+                Desc: "If Zara takes the Attack action and attacks only with a spear, she can make a melee attack with the opposite end of the weapon. Hit: 1d4 + 5 bludgeoning damage."
             }
         ],
         Reactions: [
             {
-                Title: "Reaction One",
-                Desc: "Description here."
-            }
-        ],
-        LegendaryActions: [
-            {
-                Title: "Attack",
-                Desc: "The creature makes one 'Action Two' attack."
+                Title: "Channel Divinity: Rebuke the Violent",
+                Desc: "Immediately after an attacker within 30 feet of Zara deals damage with an attack against a creature other than her, she forces the attacker to make a DC 17 Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt, or half as much on a successful one."
             },
             {
-                Title: "Big Attack (Costs 2 Actions)",
-                Desc: "Description here."
+                Title: "Aura of the Guardian",
+                Desc: "When a creature within 10 feet of Zara takes damage, she magically takes that damage instead. This doesn't transfer any other effects that accompany the damage, and this damage can't be reduced in any way."
+            },
+            {
+                Title: "Sentinel",
+                Desc: "When a creature within 5 feet of Zara makes an attack against a target other than her (and that target doesn't have the Sentinel feat), she makes a melee weapon attack against the attacking creature."
+            },
+            {
+                Title: "Shield Master",
+                Desc: "If Zara is subjected to an effect that allows a Dexterity saving throw to take only half damage, she takes no damage if she succeeds on the saving throw, interposing her shield between herself and the source of the effect."
             }
         ],
-        LairActions: [
-            "Description here.",
-            "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of ",
-            "Description here.",
-            "Description here."
-        ],
-        RegionalEffects: [
-            "Description here.",
-            "Description here.",
-            "Description here.",
-            "Description here."
-        ],
-        Description: "Description here",
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "A 200-year-old reborn moon elf standing 6'1\" and 210 lb., with pale blue-hued skin, green eyes flecked with gold, and silver shoulder-length hair. She follows Mystra, Mistress of Magic, and is calm in every situation, never raising her voice or letting her emotions control her. She believes there is a spark of good in everyone, but she has a tell that gives her away when she lies.<br>In her former life she was Solana Moonweather, a ranger from Bromwich and follower of Selune, who became an urban bounty hunter in the Sunken City alongside her partner, Mirabella \"Bel\" Swifthands, a halfling rogue (imprisoned or deceased). Crossing the ruthless elven crime lord Ferro Virtris, she was forced to kill his daughter in self-defense, then imprisoned and tortured by his gang. As she died, a spirit of redemption, Zara of the Order, offered her solace; she accepted, and now remembers little of her previous life beyond a faceless childhood sweetheart, her blade in the belly of the woman she killed, and the relief of being possessed in the dark. She carries guilt for that crime and hopes to redeem herself<br>Allies: Prototype, Rowan, Dolphus, Uvan, Yoli, Histori, Rognor, the Crow's Tower allies, the eyeless children and the tiefling Beltari in Wharfton, Cloud in the Sky, and Micah, archangel of Pelor. She can summon a red elk (Rasha) and a mastiff (Steve). As an urban bounty hunter, she has a contact in any city she visits.<br>Notable gear: Amulet of Mystra, Amulet of Melora, Golden Banana, Potion of Storm Giant's Strength, thieves' tools, drums, climber's kit, hunter's trap, net.",
         Environments: ["Any"],
         PlaneOfExistence: ["Material Plane"],
         GeographicalLocations: [],
         Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
     },
-
-
 ];
 
 const playersLocal = [
@@ -59815,7 +59914,7 @@ const buildSpellcastingMetadata = (rawDescription) => {
 
     const cleanedDescription = rawDescription
         .replace(/\r/g, " ")
-        .replace(/#P/g, "; ")
+        .replace(/#P/g, "<br>")
         .replace(/\s+/g, " ")
         .trim();
 
