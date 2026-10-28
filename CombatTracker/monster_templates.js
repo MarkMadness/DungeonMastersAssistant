@@ -175,3 +175,58 @@ const monstersLocal_Template = [
         Campaigns_Worlds: ["All"] // All=Default, Denethor (World), Soul of Denethor, Untitled NPC World, Halls of Creation, Chaos Hunters, Nor'Gamak's Campaign, The Black Seed, The Crimson War, Timeline Krosis War, Trials of Valor, Special Events, etc.
     },
 ];
+
+const siegeLocal_Template = [
+    { // Template
+        ID: 10000,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Template",
+        Type: "Large Object, unmanned",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Homebrew",
+        ArmorClass: [15, "object"],
+        HitPoints: 50,
+        HitPointsRoll: "", // Leave blank if the object has a fixed HP value
+        Speed: [], // Example: ["20 ft."]; [] if stationary
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Siege Weapon",
+                Desc: "This machine is designed for warfare, fortification attacks, or the destruction of structures. Its operation follows the rules described in its CrewActions and Actions."
+            }
+        ],
+        CrewRequired: 1, // Minimum crew needed to operate; use null if unspecified
+        CrewActions: [
+            {
+                Title: "Load",
+                Desc: "A crew member uses an action to load the siege weapon."
+            },
+            {
+                Title: "Aim",
+                Desc: "A crew member uses an action to aim the siege weapon."
+            },
+            {
+                Title: "Fire",
+                Desc: "A crew member uses an action to fire the siege weapon after it has been loaded and aimed."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Siege Attack",
+                Desc: "Describe the attack, its required preparation, attack roll or saving throw, range, and damage here."
+            }
+        ],
+        Environments: ["Any"], // Any=Default, Forest, Jungle, Desert, Grassland, Plains, Tundra, Arctic, Mountain, Hills, Swamp, Marsh, Coastal, Ocean, Underwater, River, Lake, Cave, Underground, Volcanic, Ruins, Dungeon, Urban, Rural, Other
+        PlaneOfExistence: ["Material Plane"], // Material Plane=Default, Feywild, Shadowfell, Astral Plane, Ethereal Plane, Beastlands, Arborea, Ysgard, Limbo, Pandemonium, Abyss, Carceri, Hades, Gehenna, Nine Hells, Acheron, Mechanus, Arcadia, Mount Celestia, Bytopia, Elysium, Outlands, Elemental Plane of Air, Elemental Plane of Earth, Elemental Plane of Fire, Elemental Plane of Water, Plane of Positive Energy, Plane of Negative Energy, Far Realm, Sigil, Other, Any
+        GeographicalLocations: [], // Default=No Specific Location, Country, Region, Province, Territory, City, Town, Village, Settlement, Dungeon, Landmark, Building, etc.
+            // Example = [Tridenthia, Aesis, Palace]
+        Campaigns_Worlds: ["All"] // All=Default, Denethor (World), Soul of Denethor, Untitled NPC World, Halls of Creation, Chaos Hunters, Nor'Gamak's Campaign, The Black Seed, The Crimson War, Timeline Krosis War, Trials of Valor, Special Events, etc.
+    }
+];

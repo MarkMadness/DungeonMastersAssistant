@@ -51696,6 +51696,488 @@ const monstersLocal = [
     }
 ];
 
+const siegeLocal = [
+    { // Ballista
+        ID: 10001,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Ballista",
+        Type: "Large object",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Dungeon Master's Guide",
+        ArmorClass: [15, "object"],
+        HitPoints: 50,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Siege Weapon",
+                Desc: "The ballista is designed to launch heavy bolts at distant targets. It must be loaded and aimed before it can fire."
+            }
+        ],
+        CrewRequired: null,
+        CrewActions: [
+            {
+                Title: "Load",
+                Desc: "One action is required to load the ballista."
+            },
+            {
+                Title: "Aim",
+                Desc: "One action is required to aim the ballista."
+            },
+            {
+                Title: "Fire",
+                Desc: "One action is required to fire the ballista after it has been loaded and aimed."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Ballista Bolt",
+                Desc: "Ranged Weapon Attack: +6 to hit, range 120/480 ft., one target. Hit: 16 (3d10) piercing damage."
+            }
+        ],
+        Description: "A large siege weapon resembling an oversized crossbow. It launches heavy bolts capable of inflicting substantial damage at long range.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Cannon
+        ID: 10002,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Cannon",
+        Type: "Large object",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Dungeon Master's Guide",
+        ArmorClass: [19, "object"],
+        HitPoints: 75,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Gunpowder Weapon",
+                Desc: "The cannon uses gunpowder to propel heavy balls of cast iron. In a campaign without gunpowder, it may instead be an arcane device created by engineers or spellcasters."
+            }
+        ],
+        CrewRequired: null,
+        CrewActions: [
+            {
+                Title: "Load",
+                Desc: "One action is required to load the cannon."
+            },
+            {
+                Title: "Aim",
+                Desc: "One action is required to aim the cannon."
+            },
+            {
+                Title: "Fire",
+                Desc: "One action is required to fire the cannon after it has been loaded and aimed."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Cannon Ball",
+                Desc: "Ranged Weapon Attack: +6 to hit, range 600/2,400 ft., one target. Hit: 44 (8d10) bludgeoning damage."
+            }
+        ],
+        Description: "A heavy artillery piece usually mounted in a wooden wheeled frame. It fires massive iron balls at distant targets and must be loaded and aimed before firing.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Suspended Cauldron
+        ID: 10003,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Suspended Cauldron",
+        Type: "Large object",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Dungeon Master's Guide",
+        ArmorClass: [19, "object"],
+        HitPoints: 20,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Refill and Reheat",
+                Desc: "Once emptied, the cauldron must be refilled and its contents usually reheated before it can be used again. Other liquids, such as acid or green slime, can be used with different effects."
+            }
+        ],
+        CrewRequired: null,
+        CrewActions: [
+            {
+                Title: "Fill",
+                Desc: "Filling the cauldron takes three actions."
+            },
+            {
+                Title: "Tip",
+                Desc: "One action is required to tip the cauldron and spill its contents onto the area directly below it."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Boiling Oil",
+                Desc: "The cauldron pours boiling oil onto a 10-foot-square area directly below it. Each creature in the area must make a DC 15 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        Description: "An iron pot suspended so it can be tipped easily, spilling boiling oil or other hazardous liquids onto creatures beneath it. It is typically used to defend walls and fortifications against attackers.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Mangonel
+        ID: 10004,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Mangonel",
+        Type: "Large object",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Dungeon Master's Guide",
+        ArmorClass: [15, "object"],
+        HitPoints: 100,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "High Arc",
+                Desc: "The mangonel launches heavy projectiles in a high arc, allowing its payload to hit targets behind cover."
+            },
+            {
+                Title: "Alternate Payload",
+                Desc: "A mangonel typically hurls a heavy stone, but it can launch other kinds of projectiles with different effects."
+            }
+        ],
+        CrewRequired: null,
+        CrewActions: [
+            {
+                Title: "Load",
+                Desc: "Loading the mangonel takes two actions."
+            },
+            {
+                Title: "Aim",
+                Desc: "Aiming the mangonel takes two actions."
+            },
+            {
+                Title: "Fire",
+                Desc: "One action is required to fire the mangonel after it has been loaded and aimed."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Mangonel Stone",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 200/800 ft. It can't hit targets within 60 feet of it. Hit: 27 (5d10) bludgeoning damage."
+            }
+        ],
+        Description: "A catapult-style siege weapon that hurls heavy projectiles in a high arc. It is particularly useful for attacking fortifications and targets behind cover.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Ram
+        ID: 10005,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Ram",
+        Type: "Large object",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Dungeon Master's Guide",
+        ArmorClass: [15, "object"],
+        HitPoints: 100,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Protective Gallery",
+                Desc: "Because of the gallery roof, operators have total cover against attacks from above."
+            },
+            {
+                Title: "Structure Breaker",
+                Desc: "The ram is designed to batter through doors and barricades. Its listed attack targets one object."
+            }
+        ],
+        CrewRequired: 4,
+        CrewActions: [
+            {
+                Title: "Operate Ram",
+                Desc: "A minimum of four Medium creatures is required to operate the ram."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Ram",
+                Desc: "Melee Weapon Attack: +8 to hit, reach 5 ft., one object. Hit: 16 (3d10) bludgeoning damage."
+            }
+        ],
+        Description: "A movable covered gallery containing a heavy log suspended from roof beams by chains. The log is shod in iron and swung against doors, barricades, and other obstacles.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Siege Tower
+        ID: 10006,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Siege Tower",
+        Type: "Gargantuan object",
+        TypeCategory: "Siege Equipment",
+        Size: "Gargantuan",
+        Source: "Dungeon Master's Guide",
+        ArmorClass: [15, "object"],
+        HitPoints: 200,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Mobile Structure",
+                Desc: "The siege tower is a wooden structure with a beam frame, slatted walls, and large wooden wheels or rollers. Soldiers or beasts of burden push or pull it."
+            },
+            {
+                Title: "Total Cover",
+                Desc: "A creature inside the tower has total cover from attacks originating outside it."
+            },
+            {
+                Title: "Wall Assault",
+                Desc: "Medium or smaller creatures can use the tower to reach the top of walls up to 40 feet high."
+            }
+        ],
+        CrewRequired: null,
+        CrewActions: [
+            {
+                Title: "Move Tower",
+                Desc: "The tower is pushed or pulled by soldiers or beasts of burden. The source does not specify a fixed crew count or movement speed."
+            },
+            {
+                Title: "Advance",
+                Desc: "Medium or smaller creatures inside the tower can use it to reach the top of walls up to 40 feet high."
+            }
+        ],
+        Actions: [],
+        Description: "A massive mobile wooden structure designed to carry attackers safely toward a fortification. Its height allows troops to reach the tops of walls while protected from outside attacks.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Trebuchet
+        ID: 10007,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Trebuchet",
+        Type: "Huge object",
+        TypeCategory: "Siege Equipment",
+        Size: "Huge",
+        Source: "Dungeon Master's Guide",
+        ArmorClass: [15, "object"],
+        HitPoints: 150,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "High Arc",
+                Desc: "The trebuchet throws its payload in a high arc, allowing it to hit targets behind cover."
+            },
+            {
+                Title: "Alternate Payload",
+                Desc: "A trebuchet typically launches a heavy stone, but it can launch other projectiles, such as barrels of oil or sewage, with different effects."
+            }
+        ],
+        CrewRequired: null,
+        CrewActions: [
+            {
+                Title: "Load",
+                Desc: "Loading the trebuchet takes two actions."
+            },
+            {
+                Title: "Aim",
+                Desc: "Aiming the trebuchet takes two actions."
+            },
+            {
+                Title: "Fire",
+                Desc: "One action is required to fire the trebuchet after it has been loaded and aimed."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Trebuchet Stone",
+                Desc: "Ranged Weapon Attack: +5 to hit, range 300/1,200 ft. It can't hit targets within 60 feet of it. Hit: 44 (8d10) bludgeoning damage."
+            }
+        ],
+        Description: "A powerful counterweight-style catapult that launches heavy projectiles over long distances. Its high trajectory makes it useful for attacking fortifications and targets behind cover.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Boilerdrak
+        ID: 10008,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Boilerdrak",
+        Type: "Large object",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Dragonlance: Shadow of the Dragon Queen",
+        ArmorClass: [15, "object"],
+        HitPoints: 100,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Dragon-Shaped War Machine",
+                Desc: "This wagon-sized device is designed to resemble a dragon. It must be lit and aimed before it can be fired."
+            }
+        ],
+        CrewRequired: null,
+        CrewActions: [
+            {
+                Title: "Light",
+                Desc: "One action is required to light the boilerdrak."
+            },
+            {
+                Title: "Aim",
+                Desc: "One action is required to aim the boilerdrak."
+            },
+            {
+                Title: "Fire",
+                Desc: "One action is required to fire the boilerdrak after it has been lit and aimed. Roll a d20: on a result of 2 or higher, use Flames; on a result of 1, use Explosion."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Flames",
+                Desc: "The boilerdrak expels flames in a 60-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw, taking 27 (5d10) fire damage on a failed save, or half as much damage on a successful one."
+            },
+            {
+                Title: "Explosion",
+                Desc: "The boilerdrak explodes in a 30-foot-radius sphere and is destroyed. Each creature in the area must make a DC 15 Dexterity saving throw, taking 27 (5d10) fire damage on a failed save, or half as much damage on a successful one."
+            }
+        ],
+        Description: "A wagon-sized, dragon-shaped siege device that projects a devastating cone of fire. Its volatile mechanism may cause the entire machine to explode when fired.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    },
+    { // Gnomeflinger
+        ID: 10009,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Siege",
+        Name: "Gnomeflinger",
+        Type: "Large object",
+        TypeCategory: "Siege Equipment",
+        Size: "Large",
+        Source: "Dragonlance: Shadow of the Dragon Queen",
+        ArmorClass: [15, "object"],
+        HitPoints: 100,
+        HitPointsRoll: "",
+        Speed: [],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison", "Psychic"],
+        ConditionImmunities: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Personnel Launcher",
+                Desc: "The gnomeflinger is designed to launch creatures instead of projectiles. It can hold one Medium or smaller creature."
+            },
+            {
+                Title: "Flight Arc",
+                Desc: "The launched creature travels at least 60 feet horizontally and reaches a height of 60 feet vertically. The selected maximum horizontal distance is 60 feet, 150 feet, or 300 feet."
+            },
+            {
+                Title: "Collision",
+                Desc: "A creature that collides with another creature or an object during its trajectory takes 3 (1d6) bludgeoning damage for every 10 feet away from the gnomeflinger it is."
+            }
+        ],
+        CrewRequired: null,
+        CrewActions: [
+            {
+                Title: "Load",
+                Desc: "One action is required to load the gnomeflinger with one Medium or smaller creature."
+            },
+            {
+                Title: "Aim",
+                Desc: "One action is required to aim the gnomeflinger. Choose a maximum horizontal travel distance of 60 feet, 150 feet, or 300 feet."
+            },
+            {
+                Title: "Fire",
+                Desc: "One action is required to launch the loaded creature after the gnomeflinger has been aimed."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Fling Personnel",
+                Desc: "Launch one loaded Medium or smaller creature along the selected trajectory. The maximum horizontal distance is 60 feet, 150 feet, or 300 feet, depending on the option chosen when the gnomeflinger was aimed. During the trajectory, the creature reaches a height of 60 feet vertically."
+            }
+        ],
+        Description: "A specialized catapult developed by gnomes to launch people over large distances. It was designed in conjunction with the narycrash to speed up transportation.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["All"]
+    }
+];
+
 const uniqueLocal = [
     { // Omega
         ID: 100001,
@@ -57666,7 +58148,1388 @@ const uniqueLocal = [
         PlaneOfExistence: ["Abyss"],
         GeographicalLocations: [],
         Campaigns_Worlds: ["All", "Halls of Creation"],
-    }
+    },
+    { // Alagos (Player)
+       ID: 100054,
+       ParentID: null,
+       ChildrenIDs: [],
+       ProfileType: "Unique",
+       Name: "Alagos (Player)",
+       Type: "Medium humanoid(half-elf), alignment",
+       TypeCategory: "Humanoid",
+       Size: "Medium",
+       Source: "Player's Handbook",
+       ArmorClass: [17, ""],
+       HitPoints: 142,
+       HitPointsRoll: "",
+       Speed: ["30 ft."],
+       Strength: 12,
+       Dexterity: 18,
+       Constitution: 16,
+       Intelligence: 11,
+       Wisdom: 13,
+       Charisma: 20,
+       SavingThrows: ["Constitution +10", "Charisma +12"],
+       Skills: ["Athletics +7", "Deception +11", "Insight +7", "Perception +7", "Persuasion +17", "Stealth +10"],
+       DamageVulnerabilities: [],
+       DamageResistances: [],
+       DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+       ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Invisible", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
+       Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Tremorsense 60 ft.", "Passive Perception 17"],
+       Languages: ["All", "Common", "Draconic", "Elvish", "Dwarvish", "Infernal", "Celestial", "Giant", "Gnomish", "Halfling", "Orc", "Sylvan", "Abyssal", "Undercommon", "Deep Speech", "Primordial", "Goblin", "Gnoll", "Thieves' Cant", "Aquan", "Ignan", "Terran", "Auran", "Telepathy 120 ft."],
+       Challenge: [20, 25000],
+       ExtraRewards: "",
+       Traits: [
+           {
+               Title: "Fey Ancestry",
+               Desc: "Alagos has advantage on saving throws against being charmed, and magic cannot put him to sleep."
+           },
+           {
+               Title: "Sorcery Points",
+               Desc: "Alagos has 20 sorcery points, which he can use to fuel his Metamagic features and other sorcerer abilities."
+           },
+           {
+               Title: "Metamagic",
+               Desc: "Alagos knows Quickened Spell, Twinned Spell, and Heightened Spell. Quickened Spell allows him to change the casting time of an eligible spell from 1 action to 1 bonus action by spending 2 sorcery points. Twinned Spell allows him to target an additional eligible creature with a single-target spell by spending sorcery points equal to the spell's level, or 1 point for a cantrip. Heightened Spell allows him to impose disadvantage on a target's saving throw against a spell by spending 3 sorcery points."
+           },
+           {
+               Title: "Storm Sorcery: Wind Speaker",
+               Desc: "Alagos's innate connection to elemental air allows him to speak, read, and write Primordial. When he speaks Primordial, creatures that know its dialects can understand him."
+           },
+           {
+               Title: "Storm Sorcery: Tempestuous Magic",
+               Desc: "Immediately before or after casting a spell of 1st level or higher, Alagos can use a bonus action to fly up to 10 feet without provoking opportunity attacks."
+           },
+           {
+               Title: "Storm Sorcery: Heart of the Storm",
+               Desc: "When Alagos casts a spell of 1st level or higher that deals lightning or thunder damage, creatures of his choice within 10 feet of him take lightning or thunder damage, respectively. He also gains resistance to lightning and thunder damage."
+           },
+           {
+               Title: "Storm Sorcery: Storm Guide",
+               Desc: "Alagos can subtly control the weather around him. When it is raining, he can use an action to stop the rain in a 20-foot-radius sphere centered on himself. He can also use an action to control the direction of the wind within 100 feet of himself, changing its direction or making it stop."
+           },
+           {
+               Title: "Storm Sorcery: Wind Soul",
+               Desc: "Alagos gains immunity to lightning and thunder damage and a flying speed of 60 feet. He can also reduce his flying speed to 30 feet for 1 hour and grant a flying speed of 30 feet to up to three creatures of his choice within 30 feet of himself, provided they remain within range."
+           },
+           {
+               Title: "Elemental Adept (Lightning)",
+               Desc: "Spells Alagos casts ignore resistance to lightning damage. When he rolls damage for a spell that deals lightning damage, he can treat any 1 on a damage die as a 2."
+           },
+           {
+               Title: "Lucky",
+               Desc: "Alagos has 3 luck points. Whenever he makes an attack roll, ability check, or saving throw, he can spend a luck point to roll an additional d20 and choose which die to use. He can also spend a luck point when an attack roll is made against him to roll a d20 and choose which die the attacker uses. He regains spent luck points when he finishes a long rest."
+           },
+           {
+               Title: "Sorcerous Restoration",
+               Desc: "Alagos regains 4 expended sorcery points whenever he finishes a short rest."
+           },
+           {
+               Title: "Deck of Many Things: Throne",
+               Desc: "Alagos has doubled proficiency on Persuasion checks and rightful ownership of a keep somewhere in the world."
+           },
+           {
+               Title: "Artifact: Magical",
+               Desc: "Alagos gains a +3 bonus to attack and damage rolls made with this magic weapon."
+           },
+           {
+               Title: "Artifact: Spellcasting Focus",
+               Desc: "The crown can be used as a sorcerer spellcasting focus."
+           },
+           {
+               Title: "Artifact: Protection from the Warlord's Flame",
+               Desc: "When Alagos is hit with Flame of the Warlord, he no longer needs to make a Constitution saving throw."
+           },
+           {
+               Title: "Artifact: Conjure Thunder Storm",
+               Desc: "Alagos can call upon the world's weather to create a thunderstorm needed for a variety of his abilities. If a natural thunderstorm exists where he is, he can use it to supplement his abilities. Once used, this ability cannot be used again until the next dawn."
+           },
+           {
+               Title: "Artifact: Extra Lightning",
+               Desc: "Sorcerer spells Alagos can cast that deal lightning damage deal an additional 1d8 lightning damage to targets hit by the spells. This feature cannot be applied to automatic lightning damage or to abilities of the Crown of the Storm King. It also does not apply to Storm of Vengeance, Cone of Lightning, or Lightning Arrow, as those abilities explicitly exclude the bonus."
+           },
+           {
+               Title: "Artifact: Storm of Vengeance",
+               Desc: "While a thunderstorm is present, Alagos can cast Storm of Vengeance. Once used, this ability cannot be used again until the next dawn. Extra Lightning does not add damage to this ability."
+           },
+           {
+               Title: "Artifact: Cone of Lightning",
+               Desc: "While a thunderstorm is present, Alagos can cast Cone of Lightning. It has 3 charges. Once all 3 charges are used, this ability cannot be used again until the next dawn. Extra Lightning does not add damage to this ability."
+           },
+           {
+               Title: "Artifact: Throw Lightning Arrow",
+               Desc: "Using his staff, Alagos can cast Lightning Arrow as a 3rd-level spell. This ability has 3 charges. Extra Lightning does not add damage to this ability."
+           }
+       ],
+       InnateSpellcasting: [],
+       Spellcasting: [ //Slot: 0 = At Will and for #/Day
+           {
+               Description: "Alagos is a 20th-level Storm Sorcerer. His spellcasting ability is Charisma (spell save DC 19, +12 to hit with spell attacks). His character sheet lists the following spells and spell slots.",
+               SpellModifier: "Charisma",
+               SpellSaveDC: 19,
+               SpellAttackModifier: 12,              
+               Cantrips: {
+                   Slots: 0, // "At will"
+                   Spells: ["Booming Blade", "Lightning Lure", "Minor Illusion", "Fire Bolt", "Ray of Frost", "Thunderclap", "Lightning Prestidigitation"]
+               },
+               ThreePerDay: {
+                   Slots: 0, // "Three per day"
+                   Spells: []
+               },
+               TwoPerDay: {
+                   Slots: 0, // "Two per day"
+                   Spells: []
+               },
+               OnePerDay: {
+                   Slots: 0, // "One per day"
+                   Spells: []
+               },
+               Level1: {
+                   Slots: 4,
+                   Spells: ["Shield"]
+               },
+               Level2: {
+                   Slots: 3,
+                   Spells: ["Mirror Image"]
+               },
+               Level3: {
+                   Slots: 3,
+                   Spells: ["Counterspell", "Haste", "Lightning Bolt"]
+               },
+               Level4: {
+                   Slots: 3,
+                   Spells: ["Polymorph", "Greater Invisibility", "Sickening Radiance"]
+               },
+               Level5: {
+                   Slots: 3,
+                   Spells: [""]
+               },
+               Level6: {
+                   Slots: 2,
+                   Spells: ["Chain Lightning", "Disintegrate"]
+               },
+               Level7: {
+                   Slots: 2,
+                   Spells: ["Whirlwind", "Teleport"]
+               },
+               Level8: {
+                   Slots: 1,
+                   Spells: ["Dominate Monster"]
+               },
+               Level9: {
+                   Slots: 1,
+                   Spells: ["Meteor Swarm", "Wish"]
+               }
+           }
+       ],
+       Actions: [
+           {
+               Title: "Staff",
+               Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage."
+           }
+       ],
+       BonusActions: [],
+       Reactions: [],
+       LegendaryActions: [],
+       LairActions: [],
+       RegionalEffects: [],
+       Description: "Alagos is a 23-year-old half-elf Storm Sorcerer, born to a human father named Lucas and an elven mother named Tinuel. After his father disappeared on an adventure, Alagos and his mother struggled to survive in the city of Wharfton, and he eventually became a sailor. During a voyage threatened by Vilgmont raiders, Alagos used his power to damage their ship, but the captain betrayed him. When a great storm struck, Alagos was hit by lightning, awakening his sorcerous power. After surviving the strike, he fought back against the captain and killed him. Alagos and his mother later received enough gold through the local justice system to live comfortably. He eventually became a respected shipbound sorcerer before being captured by his old enemies, the Vilgmont. He is suspicious and prickly with most people, though less so with friends. His ideals center on relying on himself and his friends in a world filled with threats and inept leaders. His bond is to Stormhold, his kingdom, and his flaw is that he is quick to anger and use his power. He is associated with Stormhold, Talia Confederacy, the Surviving Titans, Falmora Dynasty, and Iron Union. His appearance includes electric-blue eyes, tanned and scarred skin, and white hair. His equipment includes a Cloak of Protection, Staff of Thunder & Lightning, Robe of Stars, Crown of the Storm King, and Wand of Magic Missile. His treasure is the wealth of Stormhold.",
+       Environments: ["Any"],
+       PlaneOfExistence: ["Material Plane"],
+       GeographicalLocations: ["Stormhold", "Wharfton"],
+       Campaigns_Worlds: ["Denethor (World)", "Halls of Creation"]
+    },
+    { // Marion Silverhelm (Player)
+        ID: 100055,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Marion Silverhelm",
+        Type: "Humanoid (Lightfoot Halfling), Neutral Good",
+        TypeCategory: "Humanoid",
+        Size: "Small",
+        Source: "Homebrew",
+        ArmorClass: 17,
+        HitPoints: 128,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 13,
+        Dexterity: 14,
+        Constitution: 14,
+        Intelligence: 12,
+        Wisdom: 19,
+        Charisma: 13,
+        SavingThrows: ["Dexterity +7", "Constitution +7", "Wisdom +10", "Charisma +7"],
+        Skills: ["Athletics +7", "Acrobatics +14", "Sleight of Hand +4", "Stealth +2", "Arcana +6", "History +6", "Investigation +2", "Nature +2", "Religion +6", "Animal Handling +6", "Insight +9", "Medicine +9", "Perception +6", "Survival +6", "Deception +3", "Intimidation +3", "Performance +12", "Persuasion +6"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 16", "Enhanced Smell and Hearing 21"],
+        Languages: ["Common", "Halfling", "Elvish", "Dwarvish", "Understands spoken Draconic"],
+        Challenge: [20, 25000],
+        ExtraRewards: [],
+        Traits: [
+            {
+                Title: "Life Domain: Disciple of Life",
+                Desc: "Whenever Marion casts a cleric spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+            },
+            {
+                Title: "Channel Divinity: Turn Undead",
+                Desc: "Marion can use Channel Divinity to turn undead, according to her cleric class features."
+            },
+            {
+                Title: "Channel Divinity: Preserve Life",
+                Desc: "Marion can use Channel Divinity to restore hit points to creatures, up to the limit recorded on her character sheet: 85 hit points."
+            },
+            {
+                Title: "Bardic Inspiration",
+                Desc: "Marion can grant Bardic Inspiration using a d6, according to her Bard class features."
+            },
+            {
+                Title: "Song of Rest",
+                Desc: "During a short rest, Marion can provide additional healing using a d6, as recorded on her character sheet."
+            },
+            {
+                Title: "Jack of All Trades",
+                Desc: "Marion gains the Jack of All Trades benefit from her Bard class features. The previous character-sheet transcription recorded a +2 bonus; verify its application against her level and the campaign's rules."
+            },
+            {
+                Title: "Yondalla's Word: Magical Mace",
+                Desc: "Yondalla's Word is a magical mace. Marion gains a +3 bonus to attack and damage rolls made with this weapon. Its base damage is 1d6 bludgeoning."
+            },
+            {
+                Title: "Yondalla's Word: Protection from the Warlord's Flame",
+                Desc: "When Marion is hit with Flame of the Warlord, she no longer needs to make a Constitution saving throw."
+            },
+            {
+                Title: "Yondalla's Word: Spellcasting Focus",
+                Desc: "Yondalla's Word can be used as a cleric spellcasting focus as if it were a holy symbol. While holding the mace, Marion's cleric spells ignore resistance to fire and radiant damage."
+            },
+            {
+                Title: "Yondalla's Word: Holy Light",
+                Desc: "Marion can cause the mace to shed bright light in a 20-foot radius and dim light for an additional 20 feet for 1 hour. She chooses the light's color. Completely covering the mace with an opaque object blocks the light. Marion can end the effect by dismissing it as an action or casting the effect again."
+            },
+            {
+                Title: "Yondalla's Word: Astral Resonance",
+                Desc: "After Marion uses Channel Divinity while holding Yondalla's Word, the mace bursts with astral fire, shedding bright light in a 30-foot radius and dim light for an additional 30 feet for 1 minute. While aflame, the mace deals an additional 1d8 fire damage and 1d8 radiant damage to any target it hits."
+            },
+            {
+                Title: "Yondalla's Word: Purge",
+                Desc: "While holding the mace, Marion can cast Dispel Magic as a 5th-level spell. Once used, this ability cannot be used again until the next dawn."
+            },
+            {
+                Title: "Yondalla's Word: Soulfire",
+                Desc: "While holding the mace, whenever Marion uses a cleric spell of 1st level or higher to restore hit points to a creature, that creature regains an additional 12 hit points."
+            },
+            {
+                Title: "Yondalla's Word: Summon Spirit of Bayard",
+                Desc: "This artifact feature is no longer available and cannot be used. Its former effect summoned the spirit of Bayard for up to 1 hour or until defeated."
+            }
+        ],
+        InnateSpellcasting: [
+            {
+                Description: "Marion is a 17th-level Cleric. Her spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks), as recorded on her Cleric spell sheet.",
+                SpellModifier: "Wisdom",
+                SpellSaveDC: 18,
+                SpellAttackModifier: 10,
+                Cantrips: {
+                    Slots: 0,
+                    Spells: ["Guidance", "Light", "Mending", "Resistance", "Sacred Flame", "Spare the Dying", "Thaumaturgy", "Toll the Dead", "Word of Radiance"]
+                },
+                Level1: {
+                    Slots: 4,
+                    Spells: ["Bane", "Bless", "Cure Wounds", "Guiding Bolt", "Protection from Evil and Good", "Sanctuary", "Shield of Faith"]
+                },
+                Level2: {
+                    Slots: 3,
+                    Spells: ["Augury", "Blindness/Deafness", "Enhance Ability", "Hold Person", "Lesser Restoration", "Prayer of Healing", "Spiritual Weapon", "Warding Bond", "Zone of Truth"]
+                },
+                Level3: {
+                    Slots: 3,
+                    Spells: ["Beacon of Hope", "Dispel Magic", "Mass Healing Word", "Spirit Guardians", "Sending", "Speak with Dead"]
+                },
+                Level4: {
+                    Slots: 3,
+                    Spells: ["Banishment", "Control Water", "Death Ward", "Freedom of Movement", "Guardian of Faith"]
+                },
+                Level5: {
+                    Slots: 2,
+                    Spells: ["Contagion", "Dispel Evil and Good", "Flame Strike", "Mass Cure Wounds", "Greater Restoration", "Holy Weapon"]
+                },
+                Level6: {
+                    Slots: 1,
+                    Spells: ["Blade Barrier", "Create Undead", "Heal", "Heroes' Feast", "Planar Ally"]
+                },
+                Level7: {
+                    Slots: 1,
+                    Spells: []
+                },
+                Level8: {
+                    Slots: 1,
+                    Spells: []
+                },
+                Level9: {
+                    Slots: 1,
+                    Spells: []
+                }
+            }
+        ],
+        Spellcasting: [
+            {
+                Description: "Marion is a 3rd-level Bard. Her spellcasting ability is Charisma. The Bard sheet records a spell save DC of 18 and a +10 spell attack modifier, although these values conflict with the Charisma score of 13 recorded on her main character sheet.",
+                SpellModifier: "Charisma",
+                SpellSaveDC: 18,
+                SpellAttackModifier: 10,
+                Cantrips: {
+                    Slots: 0,
+                    Spells: ["Blade Ward", "Prestidigitation", "Vicious Mockery"]
+                },
+                Level1: {
+                    Slots: 4,
+                    Spells: ["Comprehend Languages", "Faerie Fire", "Feather Fall", "Cure Wounds", "Healing Word", "Heroism", "Thunderwave", "Longstrider", "Bane"]
+                },
+                Level2: {
+                    Slots: 2,
+                    Spells: ["Blindness/Deafness", "Cloud of Daggers", "Heat Metal", "Shatter", "Lesser Restoration"]
+                },
+                Level3: {
+                    Slots: 0,
+                    Spells: []
+                }
+            }
+        ],
+        Actions: [
+            {
+                Title: "Yondalla's Word",
+                Desc: "Melee Weapon Attack: use Marion's applicable attack modifier + 3 to hit, reach 5 ft., one target. Hit: 1d6 + Marion's applicable ability modifier + 3 bludgeoning damage. While Astral Resonance is active, the mace deals an additional 1d8 fire damage and 1d8 radiant damage."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Cutting Words",
+                Desc: "Marion can use her reaction to expend Bardic Inspiration and subtract the appropriate Bardic Inspiration die from an eligible creature's attack roll, ability check, or damage roll, as allowed by her College of Lore features."
+            }
+        ],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Marion Silverhelm is a 26-year-old Lightfoot Halfling cleric of Yondalla with three levels of Bard. Marion has bright green eyes, fair freckled skin, and shoulder-length silver hair. An infected bite on the left shoulder is covered by a blue-flower tattoo. Marion wears a holy silver hammer pendant given by Lidda 'Granny' Silverhelm. Raised in Azurehill, formerly Dusbury, Marion was trained in the family tradition of serving as a cleric of Yondalla. After a feral wolf attack ravaged the village and infected Granny, Marion was sent away for safety. Marion traveled to Bromwich to provide healing in exchange for food, shelter, and money. There, slave traders exploited Marion's good nature, tricked Marion into helping disguised thugs, and captured and sold Marion into slavery. Marion remains compassionate and optimistic, dedicated to helping ordinary people.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: ["Azurehill (formerly Dusbury)", "Bromwich", "Bromwich Temple of Selûne", "Bracklewhyte", "Burrow of Yondalla"],
+        Campaigns_Worlds: ["Denethor (World)", "Halls of Creation"]
+    },
+    { // Riser (Player)
+        ID: 100056,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Riser the Mountain",
+        Type: "Medium humanoid (Goliath), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [21],
+        HitPoints: 183,
+        HitPointsRoll: "",
+        Speed: "70 ft.",
+        Strength: 23,
+        Dexterity: 20,
+        Constitution: 14,
+        Intelligence: 13,
+        Wisdom: 20,
+        Charisma: 10,
+        SavingThrows: ["Str +13", "Dex +12", "Con +9", "Int +8", "Wis +12", "Cha +7"],
+        Skills: "Acrobatics +11, Animal Handling +10, Athletics +12, Intimidation +12, Perception +11, Stealth +11, Survival +1",
+        DamageVulnerabilities: [],
+        DamageResistances: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", "Bludgeoning, Piercing, and Slashing from non-magical weapons"],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Poisoned"],
+        Senses: "Blindsight 60 ft., Darkvision 120 ft., Tremorsense 60 ft., Truesight 120 ft., Passive Perception 21",
+        Languages: "Common, Giant",
+        Challenge: [20, 25000],
+        ExtraRewards: "10 boons, 3 Very Rare Gems, 5 Rare Gems, 7 Uncommon Gems, The Grandmaster's Wraps",
+        Traits: [
+            {
+                Title: "Stone's Endurance",
+                Desc: "When Riser takes damage, he can use his reaction to roll a d12 and add his Constitution modifier, reducing the damage by that total. After using this trait, he cannot use it again until he finishes a short or long rest.",
+            },
+            {
+                Title: "Powerful Build",
+                Desc: "Riser counts as one size larger when determining carrying capacity and the weight he can push, drag, or lift.",
+            },
+            {
+                Title: "Mountain Born",
+                Desc: "Riser is acclimated to high altitude, including elevations above 20,000 feet. He is also naturally adapted to cold climates, as described in the Dungeon Master's Guide.",
+            },
+            {
+                Title: "Martial Arts",
+                Desc: "While unarmed or wielding only monk weapons, and not wearing armor or wielding a shield, Riser can use Dexterity instead of Strength for attack and damage rolls of unarmed strikes and monk weapons. He can roll a d10 in place of the normal damage die of an unarmed strike or monk weapon. When he uses the Attack action with an unarmed strike or monk weapon on his turn, he can make one unarmed strike as a bonus action.",
+            },
+            {
+                Title: "Ki",
+                Desc: "Riser has 20 Ki Points to fuel various Ki features. Expended points return after a short or long rest, at the end of which he must have spent at least 30 minutes meditating. Ki Save DC 19.",
+            },
+            {
+                Title: "Unarmored Movement",
+                Desc: "Riser can move along vertical surfaces and across liquids on his turn without falling during the move.",
+            },
+            {
+                Title: "Deflect Missiles",
+                Desc: "Riser can use his reaction to deflect or catch a missile when hit by a ranged weapon attack, reducing the damage by 1d10 + 25. <br>If he reduces the damage to 0, he can catch the missile if it is small enough to hold in one hand and he has a free hand. He can spend 1 Ki point to make a ranged attack with the caught weapon or ammunition as part of the same reaction. He makes this attack with proficiency, regardless of weapon proficiencies, and the missile counts as a monk weapon for the attack.",
+            },
+            {
+                Title: "Slow Fall",
+                Desc: "Riser can use his reaction when falling to reduce falling damage by an amount equal to 100.",
+            },
+            {
+                Title: "Ki-Empowered Strikes",
+                Desc: "Riser's unarmed strikes count as magical for overcoming resistance and immunity to non-magical attacks and damage.",
+            },
+            {
+                Title: "Evasion",
+                Desc: "When Riser is subjected to an effect that allows a Dexterity saving throw to take only half damage, he instead takes no damage on a success and only half damage on a failure.",
+            },
+            {
+                Title: "Stillness of Mind",
+                Desc: "Riser can use his action to end one effect on himself that is causing him to be charmed or frightened.",
+            },
+            {
+                Title: "Tongue of the Sun and Moon",
+                Desc: "Riser can touch the Ki of other minds to understand all spoken languages. Any creature that can understand a language can understand what he says.",
+            },
+            {
+                Title: "Diamond Soul",
+                Desc: "Riser is proficient in all saving throws. Whenever he makes a saving throw and fails, he can spend 1 Ki point to reroll it and take the second result.",
+            },
+            {
+                Title: "Timeless Body",
+                Desc: "Riser's Ki sustains him so that he suffers none of the frailty of old age and cannot be aged magically. He can still die of old age. He no longer needs food or water.",
+            },
+            {
+                Title: "Perfect Self",
+                Desc: "When Riser rolls initiative and has no Ki points remaining, he regains 4 Ki points.",
+            },
+            {
+                Title: "Open Hand Technique",
+                Desc: "Whenever Riser hits a creature with one of the attacks granted by Flurry of Blows, he can impose one of the following effects: <br>- the target must succeed on a Dexterity saving throw or be knocked prone;<br>- it must make a Strength saving throw or be pushed up to 15 feet away;<br>- it cannot take reactions until the end of Riser's next turn.",
+            },
+            {
+                Title: "Tranquility",
+                Desc: "At the end of a long rest, Riser gains the effect of a sanctuary spell that lasts until the start of his next long rest. The spell can end early as normal. Saving throw DC 19.",
+            },
+            {
+                Title: "Grandmaster's Wraps: Magical",
+                Desc: "Riser gains a +3 bonus to attack and damage rolls made with this magic weapon; this bonus is already calculated.",
+            },
+            {
+                Title: "Grandmaster's Wraps: Protection from the Warlord's Flame",
+                Desc: "When hit with Flame of the Warlord, Riser does not need to make a Constitution saving throw.",
+            },
+            {
+                Title: "Grandmaster's Wraps: Balance Mastery",
+                Desc: "When making a Dexterity check regarding a situation that requires physical balance, such as a handstand or walking on a wire, Riser adds +5 to the check.",
+            },
+            {
+                Title: "Grandmaster's Wraps: Endurance of Steel (Rework)",
+                Desc: "Riser's body has evolved to withstand physical feats and non-combative damages impossible to survive, such as falling from a height that would kill him or being crushed by a boulder. When this happens, his body turns to steel while absorbing the lethal damage. This does not occur in combat except if someone throws him off a ledge or lets a wall fall on top of him.",
+            }
+        ],
+        InnateSpellcasting: [],
+        Spellcasting: [],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "Riser makes three attacks.",
+            },
+            {
+                Title: "Fist",
+                Desc: "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 14 (1d10 + 9) magical bludgeoning damage.",
+            },
+            {
+                Title: "Flurry of Blows",
+                Desc: "Immediately after taking the Attack action on his turn, Riser can spend 1 Ki point to make two unarmed strikes as a bonus action.",
+            },
+            {
+                Title: "Patient Defense",
+                Desc: "Riser can spend 1 Ki point to take the Dodge action as a bonus action on his turn.",
+            },
+            {
+                Title: "Step of the Wind",
+                Desc: "Riser can spend 1 Ki point to take the Disengage or Dash action as a bonus action on his turn, and his jump distance is doubled for the turn.",
+            },
+            {
+                Title: "Stunning Strike",
+                Desc: "When Riser hits another creature with a melee weapon attack, he can spend 1 Ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of Riser's next turn.",
+            },
+            {
+                Title: "Empty Body",
+                Desc: "Riser can spend 4 Ki points to become invisible for 1 minute. During that time, he also has resistance to all damage but force damage. <br>Additionally, he can spend 8 Ki points to cast astral projection without material components. When he does so, he cannot take any other creatures with him.",
+            },
+            {
+                Title: "Wholeness of Body (1/Day)",
+                Desc: "Riser regains 60 hit points.",
+            },
+            {
+                Title: "Quivering Palm",
+                Desc: "When Riser hits a creature with an unarmed strike, he can spend 3 Ki points to start imperceptible vibrations that last for 20 days. The vibrations are harmless unless he uses his action to end them. He and the target must be on the same plane of existence. The target must make a Constitution saving throw (DC 19). On a failure, it is reduced to 0 hit points but not killed. On a success, it takes 10d10 necrotic damage. <br>Riser can have only one creature under this feature at a time and can end the vibrations harmlessly without using an action.",
+            },
+            {
+                Title: "Grandmaster's Wraps: Knockout",
+                Desc: "Riser spends 3 Ki points to attempt to knock a Large or smaller target unconscious. The target must make a Constitution saving throw. On a success, it takes 8d6 bludgeoning damage. On a failure, it becomes unconscious.",
+            },
+            {
+                Title: "Grandmaster's Wraps: Brother's Fist",
+                Desc: "Riser spends his desired number of Ki points to activate Brother's Fist. For the duration, two ghost shapes overlapping behind his attacks follow all melee attacks made with his physical body. Add three more dice to his damage rolls.",
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Grandmaster's Wraps: Combo",
+                Desc: "Immediately after an ally successfully attacks a target that Riser is also attacking, Riser makes one attack as a reaction.",
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "Riser the Mountain is a Goliath whose abilities include extensive monk training and unusual endurance.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Denethor (World)", "Halls of Creation"]
+    },
+    { // Orissa (Player)
+        ID: 100057,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Orissa",
+        Type: "Medium humanoid (Goliath), chaotic evil",
+        TypeCategory: "Humanoid",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [19],
+        HitPoints: 264,
+        HitPointsRoll: "",
+        Speed: "30 ft.",
+        Strength: 20,
+        Dexterity: 12,
+        Constitution: 20,
+        Intelligence: 11,
+        Wisdom: 12,
+        Charisma: 11,
+        SavingThrows: ["Str +11", "Con +11"],
+        Skills: "Acrobatics +17, Animal Handling +17, Athletics +11, Intimidation +11",
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: "Passive Perception 11",
+        Languages: "Common, Giant",
+        Challenge: [20, 25000],
+        ExtraRewards: "Orisa's Sword of Life Stealing",
+        Traits: [
+            {
+                Title: "Great Weapon Fighting",
+                Desc: "When Orissa rolls a 1 or 2 on a damage die for an attack she makes with a melee weapon that she is wielding with two hands, she can reroll the die and must use the new roll. The weapon must have the Two-Handed or Versatile property for this benefit."
+            },
+            {
+                Title: "Heavy Armor Master",
+                Desc: "Orissa gains a +1 bonus to Strength. While wearing heavy armor, bludgeoning, piercing, and slashing damage that she takes from nonmagical attacks is reduced by 3."
+            },
+            {
+                Title: "Tough",
+                Desc: "Orissa's hit point maximum increases by an amount equal to twice her character level when she gains this feat. Whenever she gains a level thereafter, her hit point maximum increases by an additional 2 hit points. At level 20, this feat contributes 40 additional hit points to her maximum."
+            },
+            {
+                Title: "Durable",
+                Desc: "Orissa gains a +1 bonus to Constitution. When she rolls a Hit Die to regain hit points, the minimum number of hit points she regains from the roll equals twice her Constitution modifier, with a minimum of 2 hit points."
+            },
+            {
+                Title: "Action Surge (2/Rest)",
+                Desc: "Orissa can push herself beyond her normal limits for a moment. On her turn, she can take one additional action. At Fighter level 20, she has two uses of Action Surge and regains all expended uses when she finishes a short or long rest. She cannot use Action Surge more than once on the same turn."
+            },
+            {
+                Title: "Indomitable (3/Long Rest)",
+                Desc: "When Orissa fails a saving throw, she can reroll it and must use the new roll. At Fighter level 20, she can use this feature three times and regains all expended uses when she finishes a long rest."
+            },
+            {
+                Title: "Lucky (3/Long Rest)",
+                Desc: "Orissa has 3 luck points, which she regains when she finishes a long rest. Whenever she makes an attack roll, ability check, or saving throw, she can spend 1 luck point to roll an additional d20 and choose which roll to use. She can also spend a luck point when an attack roll is made against her to roll an additional d20 and choose which roll the attacker uses."
+            },
+            {
+                Title: "Artifact: Magical",
+                Desc: "You gain an additional +3 bonus to attack and damage rolls made with this magic weapon. (already applied)",
+            },
+            {
+                Title: "Artifact: Empowered Fury",
+                Desc: "Add two additional dice to all damage rolls.",
+            },
+            {
+                Title: "Artifact: Titan Skin",
+                Desc: "You gain +2 to your AC. (already applied)",
+            },
+            {
+                Title: "Artifact: Protection from the Warlord’s Flame",
+                Desc: "When hit with Flame of the Warlord, you no longer need to make a Constitution saving throw.",
+            },
+        ],
+        InnateSpellcasting: [],
+        Spellcasting: [],
+        Actions: [
+            {
+                Title: "Orisa's Sword of Life Stealing (Longsword)",
+                Desc: "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 13 (1d10 + 8) slashing damage.<br>" + 
+                "When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 3d6 necrotic damage, provided that the target isn't a construct or an undead. You gain temporary hit points equal to the extra damage dealt."
+            },
+        ],
+        BonusActions: [
+            {
+                Title: "Second Wind",
+                Desc: "Orissa can use a bonus action to regain 1d10 + 20 hit points. Once she uses this feature, she must finish a short or long rest before she can use it again."
+            },
+            {
+                Title: "Great Weapon Master",
+                Desc: "On her turn, when Orissa scores a critical hit with a melee weapon or reduces a creature to 0 hit points with one, she can make one melee weapon attack as a bonus action. Before making a melee attack with a heavy weapon that she is proficient with, Orissa can choose to take a -5 penalty to the attack roll. If the attack hits, she adds +10 to the attack's damage."
+            },
+            {
+                Title: "Charger",
+                Desc: "When Orissa uses her action to Dash, she can use a bonus action to make one melee weapon attack or shove a creature. If she moves at least 10 feet in a straight line immediately before taking this bonus action, she gains a +5 bonus to the attack's damage roll, or pushes the target up to 10 feet away on a successful shove."
+            },
+        ],
+        Reactions: [
+            {
+                Title: "Goliath: Stone's Endurance",
+                Desc: "When Orissa takes damage, she can use her reaction to roll 1d12 and add her Constitution modifier, reducing the damage by that total. After using this trait, she cannot use it again until she finishes a short or long rest."
+            },
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Denethor (World)", "Halls of Creation"]
+    },
+    { // Nils Aato Korplanki Kanarva Finnegund (Player)
+        ID: 100058,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Nils Aato Korplanki Kanarva Finnegund",
+        Type: "Humanoid (Rock Gnome)",
+        TypeCategory: "Humanoid",
+        Size: "Small",
+        Source: "Homebrew",
+        ArmorClass: [18, "Half plate, shield"],
+        HitPoints: 184,
+        HitPointsRoll: "184",
+        Speed: "25 ft.",
+        Strength: 12,
+        Dexterity: 17,
+        Constitution: 16,
+        Intelligence: 18,
+        Wisdom: 14,
+        Charisma: 8,
+        SavingThrows: ["Str +7", "Con +9"],
+        Skills: ["Acrobatics +3", "Animal Handling +2", "Arcana +10", "Athletics +1", "Deception -1", "History +10", "Insight +8", "Intimidation -1", "Investigation +10", "Medicine +2", "Nature +4", "Perception +8", "Performance -1", "Persuasion -1", "Religion +4", "Sleight of Hand +9", "Stealth +9", "Survival +2", "Tinker's Tools +9"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 23"],
+        Languages: [],
+        Challenge: [null, null],
+        ExtraRewards: [],
+        Traits: [
+            { // Archery Fighting Style
+                Title: "Archery Fighting Style",
+                Desc: "You gain a +2 bonus to attack rolls you make with ranged weapons."
+            },
+            { // Firearm Proficiency
+                Title: "Firearm Proficiency",
+                Desc: "You are proficient with firearms."
+            },
+            { // Gunsmith
+                Title: "Gunsmith",
+                Desc: "You gain proficiency with Tinker's Tools. You can use them to craft ammunition at half the normal cost, repair damaged firearms, and design and create new firearms, subject to the DM's discretion."
+            },
+            { // Grit
+                Title: "Grit",
+                Desc: "You have 2 grit points, based on your Wisdom modifier. You regain all expended grit points when you finish a short or long rest. You also regain 1 grit point when you score a critical hit with a firearm or reduce a significant threat to 0 hit points with a firearm, as determined by the DM."
+            },
+            { // Trick Shots
+                Title: "Trick Shots",
+                Desc: "You know six Trick Shots: Piercing Shot, Deadeye Shot, Violent Shot, Forceful Shot, Dazing Shot, and Disarming Shot. You can use only one Trick Shot per attack and must declare it before making the attack roll. Your Trick Shot saving throw DC is 17."
+            },
+            { // Quickdraw
+                Title: "Quickdraw",
+                Desc: "You add your proficiency bonus to initiative rolls. You can also stow one firearm and draw another firearm as a single object interaction."
+            },
+            { // Rapid Repair
+                Title: "Rapid Repair",
+                Desc: "You can spend 1 grit point to repair a misfired but not broken firearm as a bonus action."
+            },
+            { // Lightning Reload
+                Title: "Lightning Reload",
+                Desc: "You can reload any firearm as a bonus action."
+            },
+            { // Vicious Intent
+                Title: "Vicious Intent",
+                Desc: "Your firearm attack rolls score a critical hit on a roll of 19 or 20. You regain 1 grit point when you score a critical hit with a firearm."
+            },
+            { // Hemorrhaging Critical
+                Title: "Hemorrhaging Critical",
+                Desc: "When you score a critical hit with a firearm, the target takes additional damage equal to half the damage dealt by the attack at the end of its next turn."
+            },
+            { // Sharpshooter
+                Title: "Sharpshooter",
+                Desc: "Your ranged weapon attacks ignore disadvantage at long range and ignore half cover and three-quarters cover. Before making an attack with a ranged weapon you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, it deals +10 damage."
+            },
+            { // Skilled
+                Title: "Skilled",
+                Desc: "You gain proficiency in three skills or tools of your choice."
+            },
+            { // Observant
+                Title: "Observant",
+                Desc: "You can read the lips of a creature you can see if you understand its language. You gain a +5 bonus to your passive Perception and passive Investigation scores."
+            },
+            { // Crossbow Expert
+                Title: "Crossbow Expert",
+                Desc: "You ignore the loading quality of crossbows with which you are proficient. Being within 5 feet of a hostile creature does not impose disadvantage on your ranged attack rolls. When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a hand crossbow you are holding. This bonus-action attack applies to hand crossbows, not firearms."
+            },
+            { // Medium Armor Master
+                Title: "Medium Armor Master",
+                Desc: "Wearing medium armor does not impose disadvantage on your Dexterity (Stealth) checks. When wearing medium armor, you can add up to +3 of your Dexterity modifier to your Armor Class if your Dexterity is 16 or higher."
+            },
+            { // Lucky
+                Title: "Lucky",
+                Desc: "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, or when an attack roll is made against you, you can spend a luck point to roll an additional d20 and choose which result to use. You regain all expended luck points when you finish a long rest."
+            },
+            { // Gnome Cunning
+                Title: "Gnome Cunning",
+                Desc: "You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+            },
+            { // Artificer's Lore
+                Title: "Artificer's Lore",
+                Desc: "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus instead of any proficiency bonus you normally apply."
+            },
+            { // Tinker
+                Title: "Tinker",
+                Desc: "You can use Tinker's Tools to construct a Tiny clockwork device, such as a clockwork toy, fire starter, or music box. Each device has AC 5, 1 hit point, takes 1 hour to construct, costs 10 gp in materials, and functions for 24 hours before breaking down. You can have up to three such devices active at a time."
+            },
+            {
+                Title: "Nils' Gun of Awesomeness: Protection from the Warlord’s Flame",
+                Desc: ""
+            },
+            {
+                Title: "Nils' Gun of Awesomeness: Gamble (3/Day)",
+                Desc: "Roll a d100 and add this number to the damage roll of your next attack up to 3 charges. Once all three charges are used, this ability cannot be used again until the next dawn."
+            },
+            {
+                Title: "Nils' Gun of Awesomeness: Misfire Proof",
+                Desc: "Nils' Gun of Awesomeness cannot misfire"
+            }
+        ],
+        InnateSpellcasting: [],
+        Spellcasting: [],
+        Actions: [
+            {
+                Title: "Attack",
+                Desc: "You can attack four times whenever you take the Attack action."
+            },
+            // { // Bad News +1
+            //     Title: "Bad News +1",
+            //     Desc: "Ranged Weapon Attack: +12 to hit, range 200/800 ft., one target. Hit: 17 (2d12 + 4) piercing damage. Two-handed, reload 1, misfire 3. This firearm scores a critical hit on a roll of 19 or 20."
+            // },
+            // { // Bad News +1 Sharpshooter
+            //     Title: "Bad News +1 (Sharpshooter)",
+            //     Desc: "Ranged Weapon Attack: +7 to hit, range 200/800 ft., one target. Hit: 27 (2d12 + 14) piercing damage. This attack uses Sharpshooter's -5 attack roll and +10 damage option. Two-handed, reload 1, misfire 3. This firearm scores a critical hit on a roll of 19 or 20."
+            // },
+            // { // Pepperbox
+            //     Title: "Pepperbox",
+            //     Desc: "Ranged Weapon Attack: +11 to hit, range 80/320 ft., one target. Hit: 8 (1d10 + 3) piercing damage. Reload 6, misfire 2. This firearm scores a critical hit on a roll of 19 or 20."
+            // },
+            // { // Pepperbox Sharpshooter
+            //     Title: "Pepperbox (Sharpshooter)",
+            //     Desc: "Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 18 (1d10 + 13) piercing damage. This attack uses Sharpshooter's -5 attack roll and +10 damage option. Reload 6, misfire 2. This firearm scores a critical hit on a roll of 19 or 20."
+            // },
+            {
+                Title: "Nils' Gun of Awesomeness",
+                Desc: "Ranged Weapon Attack: +12 to hit, range 200/800 ft., one target. Hit: 19 (2d12 + 6) piercing damage. Two-handed, reload 10, misfire 0. This firearm scores a critical hit on a roll of 19 or 20."
+            },
+            {
+                Title: "Nils' Gun of Awesomeness (Sharpshooter)",
+                Desc: "Ranged Weapon Attack: +7 to hit, range 200/800 ft., one target. Hit: 29 (2d12 + 16) piercing damage. Two-handed, reload 10, misfire 0. This firearm scores a critical hit on a roll of 19 or 20."
+            },
+            {
+                Title: "Nils' Gun of Awesomeness: Burst Fire",
+                Desc: "With a full magazine, consume all your ammunition to spray a 10-foot cube area within normal range with shots. Each creature in the area must succeed on a DC 15 Dexterity saving throw or take the weapon’s normal damage."
+            },
+            { // Piercing Shot
+                Title: "Piercing Shot (1 Grit)",
+                Desc: "When you hit a creature with a firearm attack, you can spend 1 grit point to attempt to fire through the target and hit creatures behind it. Make an attack roll with disadvantage against each creature in a line directly behind the original target, out to a distance equal to the firearm's first range increment. Only the initial attack can misfire, but the firearm's misfire score increases by 1 for this attack."
+            },
+            { // Deadeye Shot
+                Title: "Deadeye Shot (1 Grit)",
+                Desc: "You can spend 1 grit point to gain advantage on one firearm attack roll."
+            },
+            { // Violent Shot
+                Title: "Violent Shot (1+ Grit)",
+                Desc: "When making a firearm attack, you can spend 1 or more grit points to increase the attack's damage. For each grit point spent, add one additional weapon damage die if the attack hits. For each grit point spent, the firearm's misfire score increases by 2 for that attack."
+            },
+            { // Forceful Shot
+                Title: "Forceful Shot (1 Grit)",
+                Desc: "When you hit a creature with a firearm attack, you can spend 1 grit point to force it to make a DC 17 Strength saving throw. On a failed save, the creature is pushed 15 feet away from you."
+            },
+            { // Dazing Shot
+                Title: "Dazing Shot (1 Grit)",
+                Desc: "When you hit a creature with a firearm attack, you can spend 1 grit point to force it to make a DC 17 Constitution saving throw. On a failed save, the creature has disadvantage on attack rolls until the end of its next turn."
+            },
+            { // Disarming Shot
+                Title: "Disarming Shot (1 Grit)",
+                Desc: "When you hit a creature with a firearm attack, you can spend 1 grit point to force it to make a DC 17 Strength saving throw. On a failed save, it drops one object of your choice that it is holding, and the object is pushed 10 feet away."
+            },
+            { // Repair Misfire
+                Title: "Repair Misfire",
+                Desc: "When a firearm misfires, you can use an action to make a Tinker's Tools check with a DC equal to 8 + the firearm's misfire score. On a success, the firearm is repaired and can be used normally. On a failure, the firearm is broken and must be repaired outside combat, costing one-quarter of the firearm's market value."
+            }
+        ],
+        BonusActions: [
+            { // Second Wind
+                Title: "Second Wind (1/Short or Long Rest)",
+                Desc: "You can use a bonus action to regain 1d10 + 20 hit points."
+            },
+            { // Rapid Repair
+                Title: "Rapid Repair (1 Grit)",
+                Desc: "Spend 1 grit point to repair a misfired but not broken firearm as a bonus action."
+            },
+            { // Lightning Reload
+                Title: "Lightning Reload",
+                Desc: "Reload a firearm as a bonus action."
+            },
+            {
+                Title: "Nils' Gun of Awesomeness: Thynna’s Blessing",
+                Desc: "Able to add elemental coating to your bullets. As a bonus action, turn the damage type on the component to the coating you desire (fire, cold, acid, lightning, none). On a hit, add 1d8 damage type to the damage per bullet."
+            }
+        ],
+        Reactions: [],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Nils Aato Korplanki Kanarva Finnegund is a level 20 Rock Gnome Fighter who follows the Gunslinger archetype. He is a master marksman who specializes in powerful firearms, precision shots, and trick shots that can pierce, disarm, daze, or forcibly move his enemies.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Denethor (World)", "Halls of Creation"]
+    },
+    { // Prototype Aato Korplanki Kanarva Finnegund-Skyclaimer (Player)
+        ID: 100059,
+        ParentID: null,
+        ChildrenIDs: [100060],
+        ProfileType: "Unique",
+        Name: "Prototype Aato Korplanki Kanarva Finnegund-Skyclaimer",
+        Type: "Medium humanoid (Warforged), neutral",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Player's Handbook",
+        ArmorClass: [25, ""],
+        HitPoints: 130,
+        HitPointsRoll: "",
+        Speed: ["30 ft."],
+        Strength: 6,
+        Dexterity: 6,
+        Constitution: 20,
+        Intelligence: 20,
+        Wisdom: 12,
+        Charisma: 6,
+        SavingThrows: ["Strength -1", "Dexterity -1", "Constitution +10", "Intelligence +10", "Wisdom +2", "Charisma -1"],
+        Skills: ["Acrobatics -2", "Animal Handling 0", "Arcana +9", "Athletics -2", "Deception -2", "History +9", "Insight 0", "Intimidation -2", "Investigation +9", "Medicine 0", "Nature +9", "Perception +5", "Performance -2", "Persuasion -2", "Religion +5", "Sleight of Hand -2", "Stealth -2", "Survival 0"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: [],
+        ConditionImmunities: [],
+        Senses: ["Passive Perception 15"],
+        Languages: ["Common", "Gnomish", "Elvish", "Abyssal"],
+        Challenge: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Warforged: Constructed Resilience",
+                Desc: "Prototype has advantage on saving throws against being poisoned and resistance to poison damage. He is immune to disease, does not need to eat, drink, or breathe, and does not need to sleep. Instead, he enters an inactive state for 6 hours to gain the benefits of a long rest."
+            },
+            {
+                Title: "Warforged: Sentry's Rest",
+                Desc: "When Prototype takes a long rest, he spends at least 6 hours in an inactive, motionless state rather than sleeping. During this state, he appears inert but remains conscious."
+            },
+            {
+                Title: "Warforged: Integrated Protection",
+                Desc: "Prototype's body has built-in defensive capabilities. His armor and body are integrated according to the Warforged rules used by the campaign. His recorded Armor Class is 25."
+            },
+            {
+                Title: "Warforged: Specialized Design",
+                Desc: "Prototype has a specialized design granting a skill proficiency and a tool proficiency. The specific choices are not clearly identified in the character sheet."
+            },
+            {
+                Title: "Magical Tinkering",
+                Desc: "Prototype can imbue a Tiny nonmagical object with a minor magical property, such as producing light or sound, emitting an odor, displaying a visual effect, or recording a short message, according to his Artificer feature."
+            },
+            {
+                Title: "Spellcasting",
+                Desc: "Prototype is a 12th-level Artificer. Intelligence is his spellcasting ability. His spell save DC is 17, and his spell attack modifier is +9."
+            },
+            {
+                Title: "Infuse Item",
+                Desc: "Prototype can imbue suitable nonmagical objects with magical properties using his Artificer infusions. His recorded equipment includes several infused items."
+            },
+            {
+                Title: "Artificer Specialist: Armorer",
+                Desc: "Prototype is an Armorer Artificer. His specialized armor is the focus of his combat capabilities and incorporates the Guardian armor model."
+            },
+            {
+                Title: "Tools of the Trade",
+                Desc: "Prototype gains the proficiencies and capabilities associated with the Armorer Artificer specialization."
+            },
+            {
+                Title: "Armorer Spells",
+                Desc: "Prototype has access to the additional spells associated with the Armorer specialization. The character sheet marks some spells with an asterisk, including Tasha's Caustic Brew, Magic Missile, Thunderwave, Mirror Image, Shatter, Hypnotic Pattern, and Lightning Bolt."
+            },
+            {
+                Title: "Arcane Armor: Guardian Model",
+                Desc: "Prototype's Arcane Armor uses the Guardian model. His recorded Guardian armor configuration is 4/4."
+            },
+            {
+                Title: "The Right Tool for the Job",
+                Desc: "Prototype can use tinker's tools to create a set of artisan's tools during a period of work, provided he has the required tools and materials."
+            },
+            {
+                Title: "Extra Attack",
+                Desc: "When Prototype takes the Attack action on his turn, he can attack twice instead of once."
+            },
+            {
+                Title: "Tool Expertise",
+                Desc: "Prototype doubles his proficiency bonus for ability checks made using tools with which he is proficient."
+            },
+            {
+                Title: "Flash of Genius",
+                Desc: "When Prototype or another creature he can see within 30 feet makes an ability check or saving throw, Prototype can use his reaction to add +5 to the roll. He can use this feature 5 times and regains all expended uses after a long rest."
+            },
+            {
+                Title: "War Caster",
+                Desc: "Prototype has advantage on Constitution saving throws that he makes to maintain concentration on a spell when he takes damage. He can perform somatic components of spells even when he has weapons or a shield in one or both hands. He can also cast a spell as an opportunity attack when a hostile creature provokes one, subject to the feat's requirements."
+            },
+            {
+                Title: "Armor Modifications",
+                Desc: "Prototype can modify his Arcane Armor to support additional infusions. His armor is treated as separate pieces for infusion purposes according to his Armorer feature."
+            },
+            {
+                Title: "Magic Item Adept",
+                Desc: "Prototype can attune to up to four magic items at once and can craft common or uncommon magic items more efficiently, according to his Artificer feature."
+            },
+            {
+                Title: "Spell-Storing Item",
+                Desc: "Prototype has the Spell-Storing Item feature recorded on his sheet, with training still needed. The stored spell and item have not been specified."
+            }
+        ],
+        InnateSpellcasting: [],
+        Spellcasting: [
+            {
+                Description: "Prototype is a 12th-level Artificer with the Armorer specialization. His spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The character sheet records 4 1st-level slots, 3 2nd-level slots, and 3 3rd-level slots. The spell list below transcribes the spells appearing on the sheet; the prepared selections are not fully distinguishable from the extracted checkbox data.",
+                SpellModifier: "Intelligence",
+                SpellSaveDC: 17,
+                SpellAttackModifier: 9,
+                Cantrips: {
+                    Slots: 0,
+                    Spells: ["Fire Bolt", "Booming Blade", "Mending"]
+                },
+                ThreePerDay: {
+                    Slots: 0,
+                    Spells: []
+                },
+                TwoPerDay: {
+                    Slots: 0,
+                    Spells: []
+                },
+                OnePerDay: {
+                    Slots: 0,
+                    Spells: []
+                },
+                Level1: {
+                    Slots: 4,
+                    Spells: [
+                        "Absorb Elements",
+                        "Alarm",
+                        "Catapult",
+                        "Cure Wounds",
+                        "Detect Magic",
+                        "Disguise Self",
+                        "Expeditious Retreat",
+                        "Faerie Fire",
+                        "False Life",
+                        "Feather Fall",
+                        "Grease",
+                        "Jump",
+                        "Longstrider",
+                        "Purify Food and Drink",
+                        "Sanctuary",
+                        "Snare",
+                        "Tasha's Caustic Brew",
+                        "Magic Missile",
+                        "Thunderwave"
+                    ]
+                },
+                Level2: {
+                    Slots: 3,
+                    Spells: [
+                        "Aid",
+                        "Alter Self",
+                        "Arcane Lock",
+                        "Blur",
+                        "Continual Flame",
+                        "Darkvision",
+                        "Enhance Ability",
+                        "Enlarge/Reduce",
+                        "Heat Metal",
+                        "Invisibility",
+                        "Lesser Restoration",
+                        "Levitate",
+                        "Magic Mouth",
+                        "Magic Weapon",
+                        "Protection from Poison",
+                        "Pyrotechnics",
+                        "Rope Trick",
+                        "See Invisibility",
+                        "Skywrite",
+                        "Spider Climb",
+                        "Web",
+                        "Mirror Image",
+                        "Shatter"
+                    ]
+                },
+                Level3: {
+                    Slots: 3,
+                    Spells: [
+                        "Blink",
+                        "Catnap",
+                        "Create Food and Water",
+                        "Dispel Magic",
+                        "Elemental Weapon",
+                        "Flame Arrows",
+                        "Fly",
+                        "Glyph of Warding",
+                        "Haste",
+                        "Intellect Fortress",
+                        "Protection from Energy",
+                        "Revivify",
+                        "Tiny Servant",
+                        "Water Breathing",
+                        "Water Walk",
+                        "Hypnotic Pattern",
+                        "Lightning Bolt"
+                    ]
+                },
+                Level4: {
+                    Slots: 0,
+                    Spells: []
+                },
+                Level5: {
+                    Slots: 0,
+                    Spells: []
+                },
+                Level6: {
+                    Slots: 0,
+                    Spells: []
+                },
+                Level7: {
+                    Slots: 0,
+                    Spells: []
+                },
+                Level8: {
+                    Slots: 0,
+                    Spells: []
+                },
+                Level9: {
+                    Slots: 0,
+                    Spells: []
+                }
+            }
+        ],
+        Actions: [
+            {
+                Title: "Fire Bolt",
+                Desc: "Ranged Spell Attack: +9 to hit, range 120 ft., one target. Hit: 3d10 fire damage."
+            },
+            {
+                Title: "Thunder Gauntlet +2",
+                Desc: "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 1d8 + 7 thunder damage. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than Prototype until the start of his next turn."
+            }
+        ],
+        BonusActions: [],
+        Reactions: [
+            {
+                Title: "Flash of Genius",
+                Desc: "When Prototype or another creature he can see within 30 feet makes an ability check or saving throw, Prototype can add +5 to the roll. He can use this reaction 5 times and regains all expended uses after a long rest."
+            },
+            {
+                Title: "War Caster",
+                Desc: "When a hostile creature's movement provokes an opportunity attack from Prototype, he can use his reaction to cast a spell at that creature instead of making the opportunity attack, provided the spell has a casting time of 1 action and targets only that creature."
+            }
+        ],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Prototype Aato Korplanki Kanarva Finnegund-Skyclaimer is a Warforged Artificer and the first Warforged created in his world. He was deeply loved by his creators: Nils Aato Korplanki Kanarva Finnegund, his wife Thena, and the savant Garrett Skyclaimer. After his design became reliably replicable, his creators retired him to infrequent use. His long dormancy left many systems and memory banks degraded. Prototype has now awakened in a world facing an imminent and perplexing catastrophe, possessing little more knowledge or ability than his companions. He stands 6 feet 10 inches tall and weighs 318 pounds. His body is burnished bronze, his eyes flicker and stutter green, and he has no hair. His personality involves verbally analyzing unfamiliar beings according to the threat they pose and seeking hidden lore and information. He strives to understand the world into which he has awakened and believes his creators' memory must be honored. However, he views the world's inhabitants as far devolved and inferior to the world he remembers. His recorded equipment includes +1 plate mail, a metal shield +2 infusion, a bag of holding infusion, winged boots infusion, a cloak of protection infusion, a homunculus infusion, a special weapon infusion +2, potions of healing, greater healing potions, supreme healing potions, a Potion of Dragon's Majesty, two boons, and a golden banana.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
+    },
+    { // Prototype's Homunculus Servant
+        ID: 100060,
+        ParentID: 100059,
+        ChildrenIDs: [],
+        ProfileType: "Unique",
+        Name: "Prototype's Homunculus Servant",
+        Type: "Tiny construct, unaligned",
+        TypeCategory: "Construct",
+        Size: "Tiny",
+        Source: "Tasha's Cauldron of Everything",
+        ArmorClass: [13, "natural armor"],
+        HitPoints: 17,
+        HitPointsRoll: "Artificer level + Intelligence modifier (minimum 1)",
+        Speed: ["20 ft.", "Fly 30 ft."],
+        Strength: 4,
+        Dexterity: 15,
+        Constitution: 12,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 7,
+        SavingThrows: [],
+        Skills: ["Perception +4"],
+        DamageVulnerabilities: [],
+        DamageResistances: [],
+        DamageImmunities: ["Poison"],
+        ConditionImmunities: ["Charmed", "Exhaustion", "Poisoned"],
+        Senses: ["Darkvision 60 ft.", "Passive Perception 14"],
+        Languages: ["Understands the languages of its creator but cannot speak"],
+        Challenge: [],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Homunculus Servant",
+                Desc: "This construct was created through Prototype's Artificer Homunculus Servant infusion. It acts independently of Prototype but always obeys its creator's commands. Its abilities and durability are tied to Prototype's Artificer abilities."
+            },
+            {
+                Title: "Construct Nature",
+                Desc: "The homunculus does not require air, food, drink, or sleep."
+            },
+            {
+                Title: "Magical Connection",
+                Desc: "The homunculus is magically connected to Prototype and understands the languages Prototype speaks, although it cannot speak."
+            }
+        ],
+        InnateSpellcasting: [],
+        Spellcasting: [],
+        Actions: [
+            {
+                Title: "Force Strike",
+                Desc: "Ranged Spell Attack: +9 to hit, range 30 ft., one target. Hit: 6 (1d4 + 4) force damage. This attack uses Prototype's spell attack modifier. The homunculus uses Prototype's proficiency bonus for its attack and damage calculations."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Command Homunculus",
+                Desc: "Prototype can command the homunculus to take an action other than Dodge. The homunculus takes its turn immediately after Prototype. If Prototype is incapacitated, the homunculus can take any action of its choice, not just Dodge."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Channel Magic",
+                Desc: "The homunculus delivers a touch spell for Prototype. The homunculus must be within 120 feet of Prototype when Prototype casts the spell. If the spell has a range of touch, the homunculus can deliver it as though it had cast the spell. The homunculus must use its reaction to deliver the spell when Prototype casts it."
+            }
+        ],
+        LegendaryActions: [],
+        LairActions: [],
+        RegionalEffects: [],
+        Description: "Prototype's Homunculus Servant is a small magical construct created through the Artificer's Homunculus Servant infusion. It serves as a companion, assisting Prototype in combat and other situations. It can fly, strike enemies with magical force, and deliver touch spells on Prototype's behalf. Its current statistics reflect Prototype at Artificer level 12, with an Intelligence modifier of +5 and a proficiency bonus of +4. Its appearance, individual personality, and name have not been specified.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
+    },
+    { // Zara
+        ID: 100061,
+        ParentID: null, // ID of the boss/leader monster in the encounter or the parent entity of this monster
+        ChildrenIDs: [], // ID's of minions, extensions of the monster, or the next phase of a boss fight
+        ProfileType: "Monster", //Unique, Player
+        Name: "Zara",
+        Type: "Size type, alignment",
+        TypeCategory: "Creature Type",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [10, "natural armor"],
+        HitPoints: 1,
+        HitPointsRoll: "#d# + #",
+        Speed: ["30 ft."],
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+        SavingThrows: ["Strength +5", "Dexterity +5", "Constitution +5", "Intelligence +5", "Wisdom +5", "Charisma +5"],
+        Skills: ["Athletics +5", "Acrobatics +5", "Sleight of Hand +5", "Stealth +5", "Arcana +5", "History +5", "Investigation +5", 
+            "Nature +5", "Religion +5", "Animal Handling +5", "Insight +5", "Medicine +5", "Persuasion +5", "Deception +5", 
+            "Intimidation +5", "Perception +5", "Performance +5", "Survival +5"],
+        DamageVulnerabilities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+            "Bludgeoning", "Piercing", "Slashing"],
+        DamageResistances: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+            "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+        DamageImmunities: ["Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", 
+            "Bludgeoning, Piercing, and Slashing from non magical weapons"],
+        ConditionImmunities: ["Blinded", "Charmed", "Deafened", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Invisible", "Paralyzed", 
+            "Petrified", "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"],
+        Senses: ["Blindsight 60 ft.", "Darkvision 120 ft.", "Truesight 120 ft.", "Tremorsense 60 ft.", "Passive Perception 10"],
+        Languages: ["All", "Common", "Draconic", "Elvish", "Dwarvish", "Infernal", "Celestial", "Giant", "Gnomish", "Halfling", "Orc", 
+            "Sylvan", "Abyssal", "Undercommon", "Deep Speech", "Primordial", "Goblin", "Gnoll", "Celestial", "Elvish", "Thieves' Cant", 
+            "Giant", "Draconic", "Aquan", "Ignan", "Terran", "Auran", "Celestial", "Sylvan", "Telepathy 120 ft."],
+        Challenge: [1, 200],
+        ExtraRewards: "",
+        Traits: [
+            {
+                Title: "Trait One",
+                Desc: "Description here."
+            },
+            {
+                Title: "Trait Two",
+                Desc: "Description here."
+            },
+            {
+                Title: "Trait Three",
+                Desc: "Description here."
+            }
+        ],
+        InnateSpellcasting: [ //Slot: 0 = At Will and for #/Day
+            {
+                Description: "Description here.",
+                SpellModifier: "Intelligence", // Intelligence, Wisdom, or Charisma 
+                SpellSaveDC: 20,
+                SpellAttackModifier: 20, // null if you didn't find it
+                Cantrips: {
+                    Slots: 0, // "At will"
+                    Spells: ["All"] // All, Eldritch Blast, etc.
+                },
+                ThreePerDay: {
+                    Slots: 0, // "Three per day"
+                    Spells: []
+                },
+                TwoPerDay: {
+                    Slots: 0, // "Two per day"
+                    Spells: []
+                },
+                OnePerDay: {
+                    Slots: 0, // "One per day"
+                    Spells: []
+                },
+                Level1: {
+                    Slots: 9,
+                    Spells: ["All"]
+                },
+                Level2: {
+                    Slots: 8,
+                    Spells: ["All"]
+                },
+                Level3: {
+                    Slots: 7,
+                    Spells: ["All"]
+                },
+                Level4: {
+                    Slots: 6,
+                    Spells: ["All"]
+                },
+                Level5: {
+                    Slots: 5,
+                    Spells: ["All"]
+                },
+                Level6: {
+                    Slots: 4,
+                    Spells: ["All"]
+                },
+                Level7: {
+                    Slots: 3,
+                    Spells: ["All"]
+                },
+                Level8: {
+                    Slots: 2,
+                    Spells: ["All"]
+                },
+                Level9: {
+                    Slots: 1,
+                    Spells: ["All"]
+                }
+            }
+        ],
+        Spellcasting: [],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The creature makes two attacks: one with its 'Action Two' and one with its 'Action Three'."
+            },
+            {
+                Title: "Action Two",
+                Desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 5) slashing damage."
+            },
+            {
+                Title: "Action Three (Recharge 5-6)",
+                Desc: "Description here."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Bonus Action One",
+                Desc: "Description here."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Reaction One",
+                Desc: "Description here."
+            }
+        ],
+        LegendaryActions: [
+            {
+                Title: "Attack",
+                Desc: "The creature makes one 'Action Two' attack."
+            },
+            {
+                Title: "Big Attack (Costs 2 Actions)",
+                Desc: "Description here."
+            }
+        ],
+        LairActions: [
+            "Description here.",
+            "On initiative count 20 (losing initiative ties), the [template] rolls a d20. On a result of ",
+            "Description here.",
+            "Description here."
+        ],
+        RegionalEffects: [
+            "Description here.",
+            "Description here.",
+            "Description here.",
+            "Description here."
+        ],
+        Description: "Description here",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Soul of Denethor", "Halls of Creation"]
+    },
+
+
 ];
 
 const playersLocal = [
