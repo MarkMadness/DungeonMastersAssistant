@@ -238,14 +238,14 @@ const spellsLocal = [
         Name: "template",
         Type: "Evocation", // Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation
         Level: 0, // 0 = Cantrip, 1-9 = Spell Level
-        CastingTime: 1, // 1 = 1 Action; use a string for other casting times
+        CastingTime: "1 Action", // 1 = 1 Action; use a string for other casting times
         Range: "60 ft.",
         Components: ["V", "S"], // V = Verbal, S = Somatic, M = Material
         MaterialComponents: "",
         Duration: "Instantaneous",
         Concentration: false,
         Ritual: false,
-        Source: "Player's Handbook",
+        Source: "Homebrew", // Player's Handbook, Xanathar's Guide to Everything, Tasha's Cauldron of Everything, Homebrew, etc.
         Classes: [],
         SpellAttackAttribute: "", // Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma, or "" if not applicable
         SpellSave: "", // None, Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma, or Special
