@@ -12005,13 +12005,13 @@ const spellsLocal = [
         SpellSave: "", 
         DamageType: "",
         DamageDice: [],
-        Description: "Green flames consume all it touches. Until the matter that is being burned is either destroyed or at the point that it can no longer burn the flame continues to burn and spread.  Spreading and attempts to put it out are determined by DM. If a creature touches the flames they immediately take 2d8 + 6 magical fire damage and are set on fire. At the start of its turn, creature can make a Constitution saving throw (DC 16) to put the flames out and it costs an action.",
-        Description: "On a hit, the target immediately take (1d8 + 2 + Charisma modifier) magical fire damage and is set on fire. For every turn a creature is on fire they will take 1d8 magical fire damage. This fire damage cannot be negated by resistances.<br>" +
+        Description: "Green flames consume all it touches. Until the matter that is being burned is either destroyed or at the point that it can no longer burn the flame continues to burn and spread.  Spreading and attempts to put it out are determined by DM. If a creature touches the flames they immediately take 2d8 + 6 magical fire damage and are set on fire. At the start of its turn, creature can make a Constitution saving throw (DC 16) to put the flames out and it costs an action.<br>" +
+            "On a hit, the target immediately take (1d8 + 2 + Charisma modifier) magical fire damage and is set on fire. For every turn a creature is on fire they will take 1d8 magical fire damage. This fire damage cannot be negated by resistances.<br>" +
             "At the start of its turn, the creature can make a Constitution saving throw (DC 16). On a successful save, the creature has put out the flames. On a failed save, the creature remains on fire.<br>" +
             "On a miss, flame touches the ground 5 feet behind the target and sets the ground on fire. The fire spreads at the start of every round by a 5ft by 5ft square. How it spreads is determined by the DM.<br>" +
             "Any creature starting their turn within the fire must make a Dexterity saving throw (DC 16). On a failed save, a creature takes 2d8 + 6 magical fire damage, or half as much damage on a successful save.",
         AtHigherLevels: "", 
-        Tags: [],
+        Tags: ["Krosis"],
     },
     { // Cast Flame of the Warlord
         ID: 522,
@@ -12038,7 +12038,8 @@ const spellsLocal = [
             "Any creature starting their turn within the fire must make a Dexterity saving throw (DC 16). On a failed save, a creature takes 2d8 + 6 magical fire damage, or half as much damage on a successful save.",
         AtHigherLevels: "When you cast this spell using a spell slot of 1st level or higher, the damage increases by 1d8 for each slot level above cantrip.<br>" +
             "This spell’s damage increases by 1d8 when you reach level 5th level(2d8), 11th level(3d8), and 17th level(4d8)", 
-        Tags: [],
+        Tags: ["Krosis"],
+        AdditionalNotes: "Warlord's Flame: Green flames consume all it touches. Until the matter that is being burned is either destroyed or at the point that it can no longer burn the flame continues to burn and spread.  Spreading and attempts to put it out are determined by DM. If a creature touches the flames they immediately take 2d8 + 6 magical fire damage and are set on fire. At the start of its turn, creature can make a Constitution saving throw (DC 16) to put the flames out and it costs an action."
     },
     { // Cast Flame of the Warlord (Colossal)
         ID: 523,
@@ -12064,7 +12065,8 @@ const spellsLocal = [
             "On a miss, flame touches the ground 15 feet behind the target and sets the ground on fire. The fire spreads at the start of every round by a 5ft by 5ft square. How it spreads is determined by the DM.<br>" +
             "Any creature starting their turn within the fire must make a Dexterity saving throw (DC 16). On a failed save, a creature takes 2d8 + 6 magical fire damage, or half as much damage on a successful save.",
         AtHigherLevels: "", 
-        Tags: [],
+        Tags: ["Krosis"],
+        AdditionalNotes: "Warlord's Flame: Green flames consume all it touches. Until the matter that is being burned is either destroyed or at the point that it can no longer burn the flame continues to burn and spread.  Spreading and attempts to put it out are determined by DM. If a creature touches the flames they immediately take 2d8 + 6 magical fire damage and are set on fire. At the start of its turn, creature can make a Constitution saving throw (DC 16) to put the flames out and it costs an action."
     },
     { // Cast Flame of the Warlord (Krosis)
         ID: 524,
@@ -12090,7 +12092,8 @@ const spellsLocal = [
             "On a miss, flame touches the ground 5 by 15 ft. line behind target. Fire spreads at the start of every round, how it spreads it determined by DM.<br>" +
             "Any creature starting their turn within the fire must make a Dexterity saving throw (DC 16). On a failed save, a creature takes 2d8 + 6 magical fire damage, or half as much damage on a successful save.",
         AtHigherLevels: "", 
-        Tags: [],
+        Tags: ["Krosis"],
+        AdditionalNotes: "Warlord's Flame: Green flames consume all it touches. Until the matter that is being burned is either destroyed or at the point that it can no longer burn the flame continues to burn and spread.  Spreading and attempts to put it out are determined by DM. If a creature touches the flames they immediately take 2d8 + 6 magical fire damage and are set on fire. At the start of its turn, creature can make a Constitution saving throw (DC 16) to put the flames out and it costs an action."
     },
     { // Cloak of the Warlord
         ID: 525,
@@ -12118,15 +12121,16 @@ const spellsLocal = [
             "3rd-5th : Green fire sprouts around creature’s head like a horned helmet. Doesn’t burn details on the head like hair<br>" +
             "6th-7th : Green fire sprouts in the shape of demonic wings from the creeture. Doesn’t grant flight.<br>" +
             "8th-9th : At the end of the creature’s turn, green fire pours out on the ground around the target. Any creature within 5 feet of the target must make a Constitution saving throw (DC 15). On a failed save, a creature takes 2d8 + 6 magical fire damage and half on a successful one.",
-        Tags: [],
+        Tags: ["Krosis"],
+        AdditionalNotes: "Warlord's Flame: Green flames consume all it touches. Until the matter that is being burned is either destroyed or at the point that it can no longer burn the flame continues to burn and spread.  Spreading and attempts to put it out are determined by DM. If a creature touches the flames they immediately take 2d8 + 6 magical fire damage and are set on fire. At the start of its turn, creature can make a Constitution saving throw (DC 16) to put the flames out and it costs an action."
     },
-    { // templateSpell Name
+    { // Cast Flame of Hellshadow
         ID: 526,
-        Name: "template",
-        Type: "Evocation", 
+        Name: "Cast Flame of Hellshadow",
+        Type: "Conjuration", 
         Level: 0, 
         CastingTime: "1 Action", 
-        Range: "60 ft.", 
+        Range: "120/200 ft.", 
         Components: ["V", "S"], 
         MaterialComponents: "",
         Duration: "Instantaneous",
@@ -12139,20 +12143,23 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
-        AtHigherLevels: "", 
-        Tags: [],
+        Description: "On a hit, target immediately take 1d6 + proficiency bonus magical fire damage. The target is also covered in a fading purple flame. If you cast this spell again against the same target or another spell of Hellshadow, you have a +2 to your attack and damage roll.<br>" +
+            "On a miss, flame touches the ground 5 feet behind target and is temporarily on fire. If you cast a Hellshadow spell that hits that spot on the ground (AC 10), the flame on the ground explodes. All creatures in a 10 ft. radius circle must make a Dexterity saving throw (DC 14 or the caster’s spell save DC, whichever is higher). On a failed save, the creature takes 2d6 + original caster’s proficiency bonus fire damage. On a success, the creature takes half damage.",
+        AtHigherLevels: "When you cast this spell using a spell slot of 1st level or higher, the damage increases by 1d4 for each slot level above cantrip.<br>" + 
+            "This spell’s damage increases by 1d6 when you reach level 5th level(2d6), 11th level(3d6), and 17th level(4d6)", 
+        Tags: ["Darthraxxis", "Hellshadow"],
+        AdditionalNotes: "Hellshadow Flame: Purple flames linger when they strike a target or environment. If another source of Hellshadow hits it (AC 10) from a spell like Cast Flame of Hellshadow, the flame on the ground explodes. All creatures in a 10 ft. radius circle must make a Dexterity saving throw (DC 14 or the caster’s spell save DC, whichever is higher). On a failed save, the creature takes 2d6 + original caster’s proficiency bonus fire damage. On a success, the creature takes half damage."
     },
-    { // templateSpell Name
+    { // Imbue Hellshadow Weapon
         ID: 527,
-        Name: "template",
-        Type: "Evocation", 
-        Level: 0, 
+        Name: "Imbue Hellshadow Weapon",
+        Type: "Transmutation", 
+        Level: 2, 
         CastingTime: "1 Action", 
-        Range: "60 ft.", 
+        Range: "Self", 
         Components: ["V", "S"], 
         MaterialComponents: "",
-        Duration: "Instantaneous",
+        Duration: "1 minute",
         Concentration: false,
         Ritual: false,
         Source: "Homebrew", 
@@ -12162,17 +12169,19 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
-        AtHigherLevels: "", 
-        Tags: [],
+        Description: "With the magic of Hellshadow, you imbue a weapon with flame adding 1d6 + 4 fire damage to all damage rolls with that weapon. Purple flames cover the blade of your melee weapons and ranged weapons have a flame near the barrel so projectiles are set aflame when fired.<br>" +
+            "If there is a flame of Hellshadow on the ground, you can ignite it by hitting it with your weapon (AC 8).",
+        AtHigherLevels: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 3rd (max 3d6).", 
+        Tags: ["Darthraxxis", "Hellshadow"],
+        AdditionalNotes: "Hellshadow Flame: Purple flames linger when they strike a target or environment. If another source of Hellshadow hits it (AC 10) from a spell like Cast Flame of Hellshadow, the flame on the ground explodes. All creatures in a 10 ft. radius circle must make a Dexterity saving throw (DC 14 or the caster’s spell save DC, whichever is higher). On a failed save, the creature takes 2d6 + original caster’s proficiency bonus fire damage. On a success, the creature takes half damage."
     },
-    { // templateSpell Name
+    { // Light of Hellshadow
         ID: 528,
-        Name: "template",
+        Name: "Light of Hellshadow3",
         Type: "Evocation", 
-        Level: 0, 
+        Level: 3, 
         CastingTime: "1 Action", 
-        Range: "60 ft.", 
+        Range: "Touch", 
         Components: ["V", "S"], 
         MaterialComponents: "",
         Duration: "Instantaneous",
@@ -12185,17 +12194,18 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
-        AtHigherLevels: "", 
-        Tags: [],
+        Description: "The life essence of Hellshadow and Darthraxxis himself is given to you. You conjure a light purple flame in your hand and let the flame seep into flesh wounds. A creature you touch regains a number of hit points equal to 3d4 + 4 + your proficiency bonus. This spell has no effect on undead or constructs.",
+        AtHigherLevels: "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd.", 
+        Tags: ["Darthraxxis", "Hellshadow"],
+        AdditionalNotes: "Hellshadow Flame: Purple flames linger when they strike a target or environment. If another source of Hellshadow hits it (AC 10) from a spell like Cast Flame of Hellshadow, the flame on the ground explodes. All creatures in a 10 ft. radius circle must make a Dexterity saving throw (DC 14 or the caster’s spell save DC, whichever is higher). On a failed save, the creature takes 2d6 + original caster’s proficiency bonus fire damage. On a success, the creature takes half damage."
     },
-    { // templateSpell Name
+    { // Conjure Hellshadow Orbs
         ID: 529,
-        Name: "template",
-        Type: "Evocation", 
-        Level: 0, 
+        Name: "Conjure Hellshadow Orbs",
+        Type: "Conjuration", 
+        Level: 4, 
         CastingTime: "1 Action", 
-        Range: "60 ft.", 
+        Range: "Self", 
         Components: ["V", "S"], 
         MaterialComponents: "",
         Duration: "Instantaneous",
@@ -12208,17 +12218,21 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
-        AtHigherLevels: "", 
-        Tags: [],
+        Description: "The caster summons 3 black and purple flaming orbs of necrotic energy that float above their head and shoulders. As a bonus action, the caster can send any number of these orbs towards a creature who must make a Dexterity saving throw for each orb (If the player has no spell save DC, it is 14 + proficiency bonus). On a success, the creature dodges the orb and it fades. On a failed save, the creature gets hit and takes 2d8 + proficiency bonus magical necrotic damage for each orb.<br>" +
+            "If you cast Flame of Hellshadow against the same target, you have a +3 to your attack and damage roll if it hits. <br>" +
+            "The caster can control if the orbs sent hit the same target or multiple. The caster can also have the orb hit the floor or part of the environment which will light a small purple flame on the spot temporarily.<br>" +
+            "If you cast a Hellshadow spell that hits that spot (AC 8), the flame explodes. All creatures within 5 feet of the flame must make a Dexterity saving throw. On a failed save, the creature takes 2d6 + original caster’s proficiency bonus fire damage. On a success, the creature takes half damage.",
+        AtHigherLevels: "When you cast this spell using a spell slot of 5th level or higher, you conjure another orb for every spell slot higher.", 
+        Tags: ["Darthraxxis", "Hellshadow"],
+        AdditionalNotes: "Hellshadow Flame: Purple flames linger when they strike a target or environment. If another source of Hellshadow hits it (AC 10) from a spell like Cast Flame of Hellshadow, the flame on the ground explodes. All creatures in a 10 ft. radius circle must make a Dexterity saving throw (DC 14 or the caster’s spell save DC, whichever is higher). On a failed save, the creature takes 2d6 + original caster’s proficiency bonus fire damage. On a success, the creature takes half damage."
     },
-    { // templateSpell Name
+    { // Phantom Blade of Darthraxxis
         ID: 530,
-        Name: "template",
+        Name: "Phantom Blade of Darthraxxis",
         Type: "Evocation", 
-        Level: 0, 
+        Level: 7, 
         CastingTime: "1 Action", 
-        Range: "60 ft.", 
+        Range: "Self", 
         Components: ["V", "S"], 
         MaterialComponents: "",
         Duration: "Instantaneous",
@@ -12231,20 +12245,22 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
-        AtHigherLevels: "", 
-        Tags: [],
+        Description: "The power of Darthraxxis flows through you and into your palm conjuring a magical energy blade that extends from the forearm and forward like a double-bladed arm sword with a desire guiding your arm to pierce through a target’s protection. Make a melee attack (using your class’s attack modifier for melee or spellcasting) against a target. On a hit, target takes 32 (8d6 + 4 + proficiency bonus) necrotic damage. If the target is resistant to necrotic damage, this attack ignores it.<br>" + 
+            "Once the attack is made, the phantom blade dissipates.",
+        AtHigherLevels: "When you cast this spell using a spell slot of 8th level or higher, the damage increases by 1d6 for each slot level above 7th.", 
+        Tags: ["Darthraxxis", "Hellshadow"],
+        AdditionalNotes: "Hellshadow Flame: Purple flames linger when they strike a target or environment. If another source of Hellshadow hits it (AC 10) from a spell like Cast Flame of Hellshadow, the flame on the ground explodes. All creatures in a 10 ft. radius circle must make a Dexterity saving throw (DC 14 or the caster’s spell save DC, whichever is higher). On a failed save, the creature takes 2d6 + original caster’s proficiency bonus fire damage. On a success, the creature takes half damage."
     },
-    { // templateSpell Name
+    { // Lightning Prestidigitation
         ID: 531,
-        Name: "template",
-        Type: "Evocation", 
+        Name: "Lightning Prestidigitation",
+        Type: "Transmutation", 
         Level: 0, 
         CastingTime: "1 Action", 
-        Range: "60 ft.", 
+        Range: "10 ft.", 
         Components: ["V", "S"], 
         MaterialComponents: "",
-        Duration: "Instantaneous",
+        Duration: "Up to 1 hour",
         Concentration: false,
         Ritual: false,
         Source: "Homebrew", 
@@ -12254,21 +12270,24 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
+        Description: "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following lightning or thunder magical effects or something similar within range:<br>" + 
+            "- You create an instantaneous, harmless sensory effect, such as a shower of sparks, a string of lightning between your fingers, a pocket-sized thunderstorm, a cape of lightning, crown of lightning, design of electricity, etc.<br>" + 
+            "- You instantaneously light a candle, a torch, or a small campfire.<br>" + 
+            "- You warm, or flavor up to 1 cubic foot of non-living material for 1 hour.",
         AtHigherLevels: "", 
-        Tags: [],
+        Tags: ["Alagos", "Crown of Storms"],
     },
-    { // templateSpell Name
+    { // Lightning Arrow
         ID: 532,
-        Name: "template",
-        Type: "Evocation", 
-        Level: 0, 
+        Name: "Lightning Arrow",
+        Type: "Transmutation", 
+        Level: 3, 
         CastingTime: "1 Action", 
-        Range: "60 ft.", 
+        Range: "Self", 
         Components: ["V", "S"], 
         MaterialComponents: "",
-        Duration: "Instantaneous",
-        Concentration: false,
+        Duration: "Concentration, up to 1 minute ",
+        Concentration: true,
         Ritual: false,
         Source: "Homebrew", 
         Classes: [],
@@ -12277,18 +12296,20 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
+        Description: "The next time you make a ranged weapon attack during the spell’s duration, the weapon’s ammunition, or the weapon itself if it’s a thrown weapon, transforms intoa bolt of lightning. Make the attack roll as normal. The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage. <br>" + 
+            "Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 4d8 lightning damage on a failed save, or half as much damage on a successful one. <br>" + 
+            "Extra Lightning does not apply to this spell.",
         AtHigherLevels: "", 
-        Tags: [],
+        Tags: ["Alagos", "Crown of Storms"],
     },
-    { // templateSpell Name
+    { // Cone of Lightning
         ID: 533,
-        Name: "template",
+        Name: "Cone of Lightning",
         Type: "Evocation", 
-        Level: 0, 
+        Level: 5, 
         CastingTime: "1 Action", 
-        Range: "60 ft.", 
-        Components: ["V", "S"], 
+        Range: "60 ft. cone", 
+        Components: ["V", "S", "Thunder Storm (Conjured or Natural)"], 
         MaterialComponents: "",
         Duration: "Instantaneous",
         Concentration: false,
@@ -12300,22 +12321,25 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
+        Description: "Webs of lightning erupt from your hands. Each creature in a 60-foot cone must make a Dexterity saving throw. A creature takes 8d10 lightning damage on a failed save, or half as much damage on a successful one. <br>" + 
+            "If you cast Cone of Lightning with more than one charge, add 4d10 lightning damage to your roll. It takes an action to charge the storm inside you and an action to cast Cone of Lightning. A creature killed by this spell explodes. <br>" +
+            "You must have a Thunderstorm to perform this spell. <br>" +
+            "Extra Lightning does not apply to this spell.",
         AtHigherLevels: "", 
-        Tags: [],
+        Tags: ["Alagos", "Crown of Storms"],
     },
-    { // templateSpell Name
+    { // Conjure Thunderstorm
         ID: 534,
-        Name: "template",
-        Type: "Evocation", 
-        Level: 0, 
-        CastingTime: "1 Action", 
-        Range: "60 ft.", 
-        Components: ["V", "S"], 
-        MaterialComponents: "",
-        Duration: "Instantaneous",
+        Name: "Conjure Thunderstorm",
+        Type: "Conjuration", 
+        Level: 8, 
+        CastingTime: "10 minutes", 
+        Range: "Self (5-mile radius)", 
+        Components: ["V", "S", "M"], 
+        MaterialComponents: "burning incense and bits of earth and wood mixed in water",
+        Duration: "Up to 8 hours",
         Concentration: false,
-        Ritual: false,
+        Ritual: true,
         Source: "Homebrew", 
         Classes: [],
         SpellAttackAttribute: "", 
@@ -12323,17 +12347,102 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
+        Description: "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don’t have a clear path to the sky ends the spell early.<br>" +
+            "When you cast the spell, you change the current weather conditions to conjure a thunderstorm. It takes 1d4 x 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal. <br>" +
+            "You need a thunderstorm to cast Storm of Vengeance and Cone of Lightning. If a thunderstorm already exists in the natural weather where you are, use that as a supplement.",
         AtHigherLevels: "", 
-        Tags: [],
+        Tags: ["Alagos", "Crown of Storms"],
+        AdditionalNotes: ""
     },
-    { // templateSpell Name
+    { // Storm of Vengeance
         ID: 535,
-        Name: "template",
-        Type: "Evocation", 
+        Name: "Storm of Vengeance",
+        Type: "Conjuration", 
+        Level: 9, 
+        CastingTime: "1 Action", 
+        Range: "Sight", 
+        Components: ["V", "S", "Thunderstorm (Conjured or Natural)"], 
+        MaterialComponents: "",
+        Duration: "Concentration, up to 1 minute ",
+        Concentration: true,
+        Ritual: false,
+        Source: "Homebrew", 
+        Classes: [],
+        SpellAttackAttribute: "", 
+        SpellSave: "", 
+        DamageType: "",
+        DamageDice: [],
+        ConditionsInflicted: [],
+        Description: "A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud (no more than 5,000 feet beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 5 minutes. Each round you maintain concentration on this spell, the storm produces additional effects on your turn.<br>" +
+            "- Round 2. Acidic rain falls from the cloud.<br>" +
+            "Each creature and object under the cloud takes 1d6 acid damage.<br>" +
+            "- Round 3. You call six bolts of lightning from the cloud to strike six creatures or objects of your choice beneath the cloud. A given creature or object can’t be struck by more than one bolt. A struck creature must make a Dexterity saving throw. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.<br>" +
+            "- Round 4. Hailstones rain down from the cloud. Each creature under the cloud takes 2d6 bludgeoning damage.<br>" +
+            "- Round 5-10. Gusts and freezing rain assail the area under the cloud. The area becomes difficult terrain and is heavily obscured. Each creature there takes 1d6 cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical.<br>" +
+            "Extra Lightning does not apply to this spell.",
+        AtHigherLevels: "", 
+        Tags: ["Alagos", "Crown of Storms"],
+        AdditionalNotes: ""
+    },
+    { // Will of All For One
+        ID: 535,
+        Name: "Will of All For One",
+        Type: "Enchantment", 
+        Level: 0, 
+        CastingTime: "1 Action/10 minute ritual", 
+        Range: "Touch", 
+        Components: ["V", "S"], 
+        MaterialComponents: "",
+        Duration: "Instantaneous",
+        Concentration: false,
+        Ritual: false,
+        Source: "Homebrew", 
+        Classes: [],
+        SpellAttackAttribute: "Wisdom", 
+        SpellSave: "Wisdom", 
+        DamageType: "",
+        DamageDice: [],
+        ConditionsInflicted: [],
+        Description: "You attempt to beguile a creature that you touch. It must succeed on a Wisdom saving throw or be charmed by you for 10 minutes. All creatures above CR rating of 10 have a modifier to their save that equals half their CR (rounded down). All creatures above CR rating of 18 have a modifier to their save that equals half their CR (rounded down) and advantage.<br>" +
+	        "If the creature is surprised, they roll their saving throw with disadvantage.<br>" +
+            "If you succeed your saving throw challenge and remain in physical contact with the creature’s head for that 10-minute duration maintaining concentration, you will have extended the duration for 1 day.<br>" +
+            "While the target is charmed, its eyes are shrouded in a shadow of the Void and are obedient. You have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability.<br>" +
+            "You can cast this spell three times per day. This number changes depending on your alignment with the Void.",
+        AtHigherLevels: "", 
+        Tags: ["Soul of Denethor", "Lord of the Void"],
+        AdditionalNotes: "Your saving throw DC = 8 + wisdom modifier + proficiency bonus."
+    },
+    { // Consume Being
+        ID: 536,
+        Name: "Consume Being",
+        Type: "Conjuration", 
+        Level: 0, 
+        CastingTime: "10 minutes", 
+        Range: "5 ft.", 
+        Components: ["V", "S"], 
+        MaterialComponents: "",
+        Duration: "10 minutes",
+        Concentration: false,
+        Ritual: true,
+        Source: "Homebrew", 
+        Classes: [],
+        SpellAttackAttribute: "", 
+        SpellSave: "", 
+        DamageType: "",
+        DamageDice: [],
+        ConditionsInflicted: [],
+        Description: "The Lord of the Void projects their ethereal spirit as eldritch mouths that latch and devour a creature’s body, mind, and soul. After 10 minutes, the creature is fully devoured and the Lord of the Void gains full hit points restored, the creature’s memories, and depending on the creature may gain additional benefits that further the powers of The Void.",
+        AtHigherLevels: "", 
+        Tags: ["Soul of Denethor", "Lord of the Void"],
+        AdditionalNotes: ""
+    },
+    { // Mind Blast
+        ID: 537,
+        Name: "Mind Blast",
+        Type: "Psionic", 
         Level: 0, 
         CastingTime: "1 Action", 
-        Range: "60 ft.", 
+        Range: "15 ft.", 
         Components: ["V", "S"], 
         MaterialComponents: "",
         Duration: "Instantaneous",
@@ -12346,8 +12455,63 @@ const spellsLocal = [
         DamageType: "",
         DamageDice: [],
         ConditionsInflicted: [],
-        Description: "",
+        Description: "You have developed the psionic ability of the mind flayers and can magically emit psychic energy into a 15 foot cone from you. The target must succeed on an Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br>" +
+	        "You can perform this ability once per day.<br>" +
+	        "The range and uses per day for this ability increases depending on your alignment with the Void.",
         AtHigherLevels: "", 
+        Tags: ["Soul of Denethor", "Lord of the Void"],
+        AdditionalNotes: ""
+    },
+    { // Summon Dominated Companion
+        ID: 538,
+        Name: "Summon Dominated Companion",
+        Type: "Conjuration", 
+        Level: 0, 
+        CastingTime: "10 minutes", 
+        Range: "60 ft.", 
+        Components: ["V", "S"], 
+        MaterialComponents: "",
+        Duration: "1 hour",
+        Concentration: false,
+        Ritual: true,
+        Source: "Homebrew", 
+        Classes: [],
+        SpellAttackAttribute: "", 
+        SpellSave: "", 
+        DamageType: "",
+        DamageDice: [],
+        ConditionsInflicted: [],
+        Description: "Once you have a dominated creature upon the altar, you may call upon your powers as Lord of the Void to summon your dominated companion to your side at any time.<br>" +
+	        "You have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability.<br>" +
+	        "While the dominated creature stays upon the altar of servitude, they are permanently dominated unless you bring a different creature to replace them upon the altar. If that happens, the previous creature is no longer dominated and disappears.<br>" +
+            "You can only cast this spell once per long rest.",
+        AtHigherLevels: "", 
+        Tags: ["Soul of Denethor", "Lord of the Void"],
+        AdditionalNotes: ""
+    },
+    { // Steal Life
+        ID: 539,
+        Name: "Steal Life",
+        Type: "Necromancy", 
+        Level: 5, 
+        CastingTime: "1 Action", 
+        Range: "Touch", 
+        Components: ["V", "S"], 
+        MaterialComponents: "",
+        Duration: "Concentration, up to 1 minute",
+        Concentration: true,
+        Ritual: false,
+        Source: "Homebrew", 
+        Classes: [],
+        SpellAttackAttribute: "", 
+        SpellSave: "", 
+        DamageType: "",
+        DamageDice: [],
+        ConditionsInflicted: [],
+        Descripxtion: "You touch a creature and siphon the life force from it to heal your wounds. Make a melee spell attack against a creature within your reach(if your other hand is free you can attack another creature with reach simultaneously). On a hit, the target takes (2d6 + 4) necrotic damage, becomes restrained, unable to move, and you regain hit points equal to the necrotic damage dealt. The target(s) can make a Charisma saving throw (DC 8 + Wisdom modifier + proficiency bonus) to break free or take another (2d6 + 4) necrotic damage and the caster gains that damage as hit points. If the target runs out of hit points, they die and the spell ends.",
+        AtHigherLevels: "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level above 5th.", 
         Tags: [],
+        AdditionalNotes: ""
     }
+ // #endregion
 ];
