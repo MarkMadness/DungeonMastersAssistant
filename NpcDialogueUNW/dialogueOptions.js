@@ -31,7 +31,7 @@ const dialogueOptions = {
                 { id: "moonroseGuildhall", text: "The Moonrose Guildhall" },
                 { id: "farrowfootsTrinketry", text: "Farrowfoot’s Trinketry" },
                 { id: "briellasBloom", text: "Briella’s Bloom" },
-                { id: "barracks", text: "Barracks" },
+                { id: "silvershireBarracks", text: "Barracks" },
             ]
         },
             gildedAcornInn: {
@@ -97,7 +97,7 @@ const dialogueOptions = {
                     { id: "silvershireBriellaStormwhisper", text: "Briella Stormwhisper" }
                 ]
             },
-            barracks: {
+            silvershireBarracks: {
                 header: "You are in the Barracks. Who are you talking to?",
                 options: [
                     { id: "silvershireTownGuard", text: "Town Guard" },
@@ -109,7 +109,7 @@ const dialogueOptions = {
                 header: "How can I help you, adventurer?",
                 options: [
                     { id: "silvershireTownguardDirections", text: "Can you give me directions?" },
-                    { id: "silvershireTownguardTalk", text: "Just talking." },
+                    // { id: "silvershireTownguardTalk", text: "Just talking." },
                     { id: "goodbye", text: "Goodbye.", goBack: true }
                 ]
             },
@@ -244,81 +244,81 @@ const dialogueOptions = {
                                 ]
                             }
                         },
-                        { id: "cabbageManQuest", text: `Quest?` },
+                        // { id: "cabbageManQuest", text: `Quest?` },
                         { id: "goodbye", text: "Goodbye.", goBack: true } 
                     ]
                 },
-                    cabbageManQuest: {
-                        title: "Cabbage Man",
-                        header: `“Ah! Please adventurers! You must help me! My fine cabbages, my friends, are unlike any you've ever seen before. They're fresh, organic, and guaranteed to change your life!”
-                                ` + $newPara + `He looks around nervously and leans in closer, as if afraid someone might overhear.
-                                ` + $newPara + `“There’s just one problem. Lately, a group of ruffians keeps stealing or destroying my cabbages! I have no idea why, but my business can’t stand it anymore. Please, I beg of you—keep them away from my cart! I can’t afford to lose any more of my precious cabbages! You must protect it with your lives! Well, at least... until I finish selling them.”
-                                ` + $newPara + `His eyes gleam with desperate hope. "I’m going to take my cart to the market and try to get as many sales as I can while my cart is intact. I will need you to hold off anyone who tries to destroy my cart or steal my cabbages. Will you help me?"`,
-                        options: [
-                            { id: "cabbageManAccepted", text: `Accept Quest?` },
-                            { id: "cabbageManDeclined", text: `Decline Quest?` }
-                        ]
-                    },
-                        cabbageManAccepted: {
-                            title: "Cabbage Man",
-                            header: `“Oh thank you, thank you! You won’t regret this! Keep your eyes peeled and your weapons ready—these cabbage bandits are sneaky and relentless. I’ll start shouting about my cabbages to lure in customers—and hopefully not trouble.”`,
-                            options: [
-                                { id: "cabbageManQuestCompleted", text: "Quest Completed?" },
-                                { id: "cabbageManQuestFailed", text: "Quest Failed?" }
-                            ]
-                        },
-                        cabbageManDeclined: {
-                            title: "Cabbage Man",
-                            header: `The man's hopeful expression collapses like a wilted leaf. “Oh... well. I understand. Cabbages are a dangerous business. I’ll find someone else... I have to.”`,
-                            options: [
-                                { id: "goodbye", text: "Goodbye", goBack: true }
-                            ]
-                        },
-                            cabbageManQuestCompleted: {
-                                header: `Cabbage Man grins with the glee of someone who has narrowly avoided disaster. His eyes sparkle as he looks over the cabbages, untouched and in perfect condition.
-                                    ` + $newPara + `“You did it! My cabbages are safe! You’re my heroes, my saviors! I... I can't believe it! This is the best day of my life! You've protected my legacy! My cabbages will thrive in this town, thanks to you!”
-                                    ` + $newPara + `He quickly rummages through his cart and pulls out a small, wrapped bundle. “Take this, my friends! A token of my eternal gratitude. You’ve earned it, and so much more!”
-                                    ` + $newPara + `Cabbage Man hands you 20 gp, 400 xp, and one Arezoth Quest Completion Token.
-                                    ` + $newPara + `“No one will ever steal my cabbages again, I promise you that! Now, if you'll excuse me, I must go... tend to my cabbages. They’re my true love.”`,
-                            },
-                            cabbageManQuestFailed: {
-                                header: `Cabbage Man falls to his knees in despair. “MY CABBAGES!!!” He slumps down beside the cart, looking utterly defeated as his tears flow endlessly down his cheers and saturating the soil beneath his feet.`,
-                            },
+                    // cabbageManQuest: {
+                    //     title: "Cabbage Man",
+                    //     header: `“Ah! Please adventurers! You must help me! My fine cabbages, my friends, are unlike any you've ever seen before. They're fresh, organic, and guaranteed to change your life!”
+                    //             ` + $newPara + `He looks around nervously and leans in closer, as if afraid someone might overhear.
+                    //             ` + $newPara + `“There’s just one problem. Lately, a group of ruffians keeps stealing or destroying my cabbages! I have no idea why, but my business can’t stand it anymore. Please, I beg of you—keep them away from my cart! I can’t afford to lose any more of my precious cabbages! You must protect it with your lives! Well, at least... until I finish selling them.”
+                    //             ` + $newPara + `His eyes gleam with desperate hope. "I’m going to take my cart to the market and try to get as many sales as I can while my cart is intact. I will need you to hold off anyone who tries to destroy my cart or steal my cabbages. Will you help me?"`,
+                    //     options: [
+                    //         { id: "cabbageManAccepted", text: `Accept Quest?` },
+                    //         { id: "cabbageManDeclined", text: `Decline Quest?` }
+                    //     ]
+                    // },
+                    //     cabbageManAccepted: {
+                    //         title: "Cabbage Man",
+                    //         header: `“Oh thank you, thank you! You won’t regret this! Keep your eyes peeled and your weapons ready—these cabbage bandits are sneaky and relentless. I’ll start shouting about my cabbages to lure in customers—and hopefully not trouble.”`,
+                    //         options: [
+                    //             { id: "cabbageManQuestCompleted", text: "Quest Completed?" },
+                    //             { id: "cabbageManQuestFailed", text: "Quest Failed?" }
+                    //         ]
+                    //     },
+                    //     cabbageManDeclined: {
+                    //         title: "Cabbage Man",
+                    //         header: `The man's hopeful expression collapses like a wilted leaf. “Oh... well. I understand. Cabbages are a dangerous business. I’ll find someone else... I have to.”`,
+                    //         options: [
+                    //             { id: "goodbye", text: "Goodbye", goBack: true }
+                    //         ]
+                    //     },
+                    //         cabbageManQuestCompleted: {
+                    //             header: `Cabbage Man grins with the glee of someone who has narrowly avoided disaster. His eyes sparkle as he looks over the cabbages, untouched and in perfect condition.
+                    //                 ` + $newPara + `“You did it! My cabbages are safe! You’re my heroes, my saviors! I... I can't believe it! This is the best day of my life! You've protected my legacy! My cabbages will thrive in this town, thanks to you!”
+                    //                 ` + $newPara + `He quickly rummages through his cart and pulls out a small, wrapped bundle. “Take this, my friends! A token of my eternal gratitude. You’ve earned it, and so much more!”
+                    //                 ` + $newPara + `Cabbage Man hands you 20 gp, 400 xp, and one Arezoth Quest Completion Token.
+                    //                 ` + $newPara + `“No one will ever steal my cabbages again, I promise you that! Now, if you'll excuse me, I must go... tend to my cabbages. They’re my true love.”`,
+                    //         },
+                    //         cabbageManQuestFailed: {
+                    //             header: `Cabbage Man falls to his knees in despair. “MY CABBAGES!!!” He slumps down beside the cart, looking utterly defeated as his tears flow endlessly down his cheers and saturating the soil beneath his feet.`,
+                    //         },
                 silvershireErritMarwin: {
                     title: "Errit Marwin",
                     header: `An illusionary flickering mirror image of a gnome Halfling man dressed in a dirted white robe with yellow front capes over his scale armor with a mace and shield sheathed.
                         ` + $newPara + `“Adventurer! Quick! I haven’t much time. I’m Errit Marwin. I’m a cleric in need of aid. There is a spellbook that was taken from me by the orcs to the northwest. I would retrieve it myself so I sent my mirror image in my place, but as you can see. My magic is fading right now and I can’t go any further. If you could retrieve my spellbook from the orcs and bring it to my residence, I will reward you.”`,
                     options: [
-                        { id: "TheClericsSpellbookAccept", text: "Accept Quest?" },
-                        { id: "TheClericsSpellbookDecline", text: "Decline Quest?" },
+                        // { id: "TheClericsSpellbookAccept", text: "Accept Quest?" },
+                        // { id: "TheClericsSpellbookDecline", text: "Decline Quest?" },
                         { id: "goodbye", text: "Goodbye.", goBack: true } 
                     ]
                 },
-                    TheClericsSpellbookAccept: {
-                        title: "Errit Marwin",
-                        header: `“Thank you! Now quickly go and-” The image of Errit fades away...`,
-                        options: [
-                            { id: "TheClericsSpellbookQuestCompleted", text: "Quest Completed?" }
-                        ]
-                    },
-                    TheClericsSpellbookDecline: {
-                        title: "Errit Marwin",
-                        header: `“Please! I need your help! I can’t do this alone!”`,
-                        options: [
-                            { id: "TheClericsSpellbookAccept", text: "Reconsider Quest?" },
-                            { id: "goodbye", text: "Goodbye", goBack: true }
-                        ]
-                    },
-                        TheClericsSpellbookQuestCompleted: {
-                            title: "Errit Marwin",
-                            header: `Inside his tower, another spectral image of the gnome cleric stands before you, looking relieved and grateful.
-                                ` + $newPara + `“Thank you adventurers for retrieving my spellbook! I unfortunately am caught between duties again, but if you could travel south to Glintmere and deliver it to me in person at my residence in the Moonfen Spire, I will add onto your reward from today.”
-                                ` + $newPara + `The specter of Errit Marwin hands you 10 gp and 200 xp.`,
-                                options: [
-                                    { id: "theHolyDeliveryAccept", text: "Quest Accept?" },
-                                    { id: "theHolyDeliveryDecline", text: "Quest Decline?" }
-                                ]
-                        },
+                    // TheClericsSpellbookAccept: {
+                    //     title: "Errit Marwin",
+                    //     header: `“Thank you! Now quickly go and-” The image of Errit fades away...`,
+                    //     options: [
+                    //         { id: "TheClericsSpellbookQuestCompleted", text: "Quest Completed?" }
+                    //     ]
+                    // },
+                    // TheClericsSpellbookDecline: {
+                    //     title: "Errit Marwin",
+                    //     header: `“Please! I need your help! I can’t do this alone!”`,
+                    //     options: [
+                    //         { id: "TheClericsSpellbookAccept", text: "Reconsider Quest?" },
+                    //         { id: "goodbye", text: "Goodbye", goBack: true }
+                    //     ]
+                    // },
+                    //     TheClericsSpellbookQuestCompleted: {
+                    //         title: "Errit Marwin",
+                    //         header: `Inside his tower, another spectral image of the gnome cleric stands before you, looking relieved and grateful.
+                    //             ` + $newPara + `“Thank you adventurers for retrieving my spellbook! I unfortunately am caught between duties again, but if you could travel south to Glintmere and deliver it to me in person at my residence in the Moonfen Spire, I will add onto your reward from today.”
+                    //             ` + $newPara + `The specter of Errit Marwin hands you 10 gp and 200 xp.`,
+                    //             options: [
+                    //                 { id: "theHolyDeliveryAccept", text: "Quest Accept?" },
+                    //                 { id: "theHolyDeliveryDecline", text: "Quest Decline?" }
+                    //             ]
+                    //     },
                 // silvershireQuib: {
                 //     title: "Quib",
                 //     header: `A short, wiry man with tousled red hair and sharp, alert eyes that miss nothing. His skin is sun-touched and freckled, and he wears a patchy leather coat that hangs a bit too big on his frame. His hands are quick and stained with ink and oil, always fidgeting with something small and strange.
@@ -987,8 +987,9 @@ const dialogueOptions = {
                                 ]
                             }
                         },
-                        { id: "fadedPetalsAccepted", text: `Accept Quest?` },
-                        { id: "fadedPetalsDeclined", text: `Decline Quest?` }
+                        // { id: "fadedPetalsAccepted", text: `Accept Quest?` },
+                        // { id: "fadedPetalsDeclined", text: `Decline Quest?` },
+                        { id: "goodbye", text: "Goodbye", goBack: true }
                     ]
                 },
                     fadedPetalsAccepted: {
@@ -1073,16 +1074,16 @@ const dialogueOptions = {
                     ` + $newPara + `“Don’t just take the quest—finish it. I don’t hand out medals for intent.”`,
                     options: [
                         { id: "questDepthsOfSilenceIntro", text: "Depths of Silence." },
-                        { id: "questThornrootIntro", text: "Shadows Over Thornroot" },
+                        // { id: "questThornrootIntro", text: "Shadows Over Thornroot" },
                         { id: "barracks", text: "Leave." }
                     ]
                 },
                     questDepthsOfSilenceIntro: {
                         title: "Captain Rennar Vex",
                         header: `"I don’t usually send people off to drown,” he mutters, tapping a soaked map of the coast. "But the sea’s become a warfront." He gestures to a water-stained scroll showing a reef off the coast. 
-                        ` + $newPara + `“Something’s stirring in the deeps. One of our patrol boats washed up yesterday—what was left of it. The survivors babbled about a creature older than time, tearing through both sea folk and sailors alike.”
-                        ` + $newPara + `He crosses his arms, jaw set. “Normally I wouldn’t trust the merfolk, but they reached out too. That says everything.”,
-                        ` + $newPara + `“If you’re willing to dive in, find the beast, and kill it, you’ll be doing more than protecting Silvershire. You’ll be keeping the sea from swallowing half the coast.”`,
+                        ` + $newPara + `“Something’s stirring in the deeps. One of our patrol boats washed up yesterday—what was left of it. The survivors babbled about small ice elementals and a man inside a cave on the eastern shore near the port, speaking of a great sea beast.”
+                        ` + $newPara + `He crosses his arms, jaw set. “I don't know what kind of creature we're dealing with, but this man must be dealt with for the loss of my men”,
+                        ` + $newPara + `“If you’re willing to search for the cave, get in there and kill this man. You’ll be doing more than protecting Silvershire. You’ll be keeping the sea safe for all travelers.”`,
                         options: [
                             { id: "questDepthsOfSilenceAccept", text: "I'll handle it." },
                             { id: "questDepthsOfSilenceDecline", text: "That sounds... dangerous. Maybe later.", goBack: true }
@@ -1090,7 +1091,7 @@ const dialogueOptions = {
                     },
                         questDepthsOfSilenceAccept: {
                             title: "Captain Rennar Vex",
-                            header: `"Good. Find it. Kill it. Or the sea may swallow half the coast. And if you return alive... you’ll have the respect of more than just me."`,
+                            header: `"Good. Find the man and kill him or we may lose more than just control of the seas. And if you return alive... you’ll have the respect of more than just me."`,
                             options: [
                                 { id: "questDepthsOfSilenceComplete", text: "Quest Completed?" },
                             ]
@@ -1098,9 +1099,8 @@ const dialogueOptions = {
                             questDepthsOfSilenceComplete: {
                                 title: "Captain Rennar Vex",
                                 header: `Rennar is waiting by the edge of the barracks courtyard when you return, seawater still dripping from your gear. He meets your gaze with an unreadable expression—until he sees the evidence. Then, for a moment, the stoic captain lets out a quiet breath.  
-                            ` + $newPara + `“You really did it…” he says, voice low. “The deep’s gone still again. That thing… it’s finally dead.”  
-                            ` + $newPara + `He produces 25 gp, 500 xp, and a gem of pearl. “One of the merfolk dropped this off not long ago. Said it was for the one who ended the nightmare. Looks like that’s you.”  
-                            ` + $newPara + `He nods once—deep, respectful. “You’ve got my respect. Thank you adventurer. You’ve done more than you know.”`,
+                            ` + $newPara + `“You really did it…” he says, voice low. “The man has been killed. I don't know what plan a kraken priest had for Arezoth, but it is good that he is dead.”  
+                            ` + $newPara + `He produces 25 gp, 500 xp, and a gem of pearl. “You’ve got my respect. Thank you adventurer. You’ve done more than you know.”`,
                                 options: [
                                     { id: "barracks", text: "Nod respectfully and leave.",goBack: true }
                                 ]
@@ -1163,35 +1163,97 @@ const dialogueOptions = {
         locationGlintmere: {
             header: "You are in Glintmere. Which location are you in?",
             options: [
-                { id: "runestoneCrossing", text: "Runestone Crossing (Streets)" },
-                { id: "moonfenSpire", text: "Moonfen Spire" },
-                { id: "starbrookSanctum", text: "Starbrook Sanctum" },
-                { id: "gildedEcho", text: "Gilded Echo" },
-                { id: "bramble_Broth", text: "Bramble & Broth" },
-                { id: "wyrdwoodRoost", text: "Wyrdwood Roost" },
-                { id: "shatterglassAtelier", text: "Shatterglass Atelier" },
+                { id: "glintmereStreets", text: "Streets" },
+                { id: "glintmereMoonfenSpire", text: "Moonfen Spire" },
+                { id: "glintmereStarbrookSanctum", text: "Starbrook Sanctum" },
+                { id: "glintmereGildedEcho", text: "Gilded Echo" },
+                { id: "glintmereBrambleBroth", text: "Bramble & Broth" },
+                { id: "glintmereWyrdwoodRoost", text: "Wyrdwood Roost" },
+                { id: "glintmereShatterglassAtelier", text: "Shatterglass Atelier" },
             ]
         },
-            runestoneCrossing: {
-                header: "You are in the Runestone Crossing (streets). Who are you talking to?",
+
+            //#region Streets (Town Guard)
+            glintmereStreets: {
+                header: "You are in the Streets of Glintmere (Runestone Crossing). Who are you talking to?",
                 options: [
-                    {id: "", text: ""}
+                    { id: "glintmereTownGuard", text: "Town Guard" },
                 ]
             },
-            moonfenSpire: {
+                glintmereTownGuard: {
+                    title: "Town Guard",
+                    header: "How can I help you, adventurer?",
+                    options: [
+                        { id: "glintmereTownguardDirections", text: "Can you give me directions?" },
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
+                    ]
+                },
+                    glintmereTownguardDirections: {
+                        title: "Town Guard",
+                        header: "Of course. Where do you need to go?",
+                        options: [
+                            { id: "glintmereTownguardDirectionSpire", text: "Where is the Moonfen Spire?" },
+                            { id: "glintmereTownguardDirectionSanctum", text: "Where is the Starbrook Sanctum?" },
+                            { id: "glintmereTownguardDirectionEcho", text: "Where is the Gilded Echo?" },
+                            { id: "glintmereTownguardDirectionBrambleBroth", text: "Where is Bramble & Broth?" },
+                            { id: "glintmereTownguardDirectionRoost", text: "Where is the Wyrdwood Roost?" },
+                            { id: "glintmereTownguardDirectionAtelier", text: "Where is the Shatterglass Atelier?" },
+                            { id: "glintmereTownGuard", text: "Back to main options" }
+                        ]
+                    },
+                        glintmereTownguardDirectionSpire: {
+                            header: "The Moonfen Spire towers over the north end of the crossing—hard to miss, what with it floating.",
+                            options: [{ id: "glintmereTownguardDirections", text: "More directions?", goBack: true }]
+                        },
+                        glintmereTownguardDirectionSanctum: {
+                            header: "Starbrook Sanctum sits just east of the fountain, beneath the levitating stones. You'll feel it before you see it.",
+                            options: [{ id: "glintmereTownguardDirections", text: "More directions?", goBack: true }]
+                        },
+                        glintmereTownguardDirectionEcho: {
+                            header: "The Gilded Echo is the crescent-shaped storefront to the west. Watch the signs—they change their mind a lot.",
+                            options: [{ id: "glintmereTownguardDirections", text: "More directions?", goBack: true }]
+                        },
+                        glintmereTownguardDirectionBrambleBroth: {
+                            header: "Bramble & Broth is just south of the crossing. You'll smell the spiced brews before you see the door.",
+                            options: [{ id: "glintmereTownguardDirections", text: "More directions?", goBack: true }]
+                        },
+                        glintmereTownguardDirectionRoost: {
+                            header: "The Wyrdwood Roost is tucked into the tree line southeast of here. Mind the eyes in the rafters.",
+                            options: [{ id: "glintmereTownguardDirections", text: "More directions?", goBack: true }]
+                        },
+                        glintmereTownguardDirectionAtelier: {
+                            header: "The Shatterglass Atelier is the glass dome just north of the sanctum. Bright as day, even at twilight.",
+                            options: [{ id: "glintmereTownguardDirections", text: "More directions?", goBack: true }]
+                        },
+            //#endregion
+
+            //#region Moonfen Spire
+            glintmereMoonfenSpire: {
                 header: "You are in the Moonfen Spire. Where are you inside?",
                 options: [
-                    {id: "moonfenSpireLobby", text: "Lobby"},
-                    {id: "moonfenSpireOffice", text: "Office"},
-                    {id: "moonfenSpireLibrary", text: "Library"},
-                    {id: "moonfenSpireClassroom", text: "Classroom"},
-                    {id: "moonfenSpireMagusHollow", text: "Magus Hollow"}
+                    { id: "glintmereMoonfenSpireLobby", text: "Lobby" },
+                    { id: "glintmereMoonfenSpireOffice", text: "Office" },
+                    { id: "glintmereMoonfenSpireLibrary", text: "Library" },
+                    { id: "glintmereMoonfenSpireClassroom", text: "Classroom" },
+                    { id: "glintmereMoonfenSpireMagusHollow", text: "Magus Hollow" }
                 ]
             },
-                moonfenSpireOffice: {
+                glintmereMoonfenSpireLobby: {
+                    header: "The lobby is quiet, its arcane glyphs dimming and brightening gently with the passing footsteps of students. No one seems to need anything from you here—yet.",
+                    options: []
+                },
+                glintmereMoonfenSpireLibrary: {
+                    header: "Shelves of drifting tomes hum softly overhead, murmuring half-remembered spells to no one in particular. Nothing here requires your attention right now.",
+                    options: []
+                },
+                glintmereMoonfenSpireClassroom: {
+                    header: "Rows of empty desks face a chalkboard still covered in half-erased runes from the last lesson. No one's here at the moment.",
+                    options: []
+                },
+                glintmereMoonfenSpireOffice: {
                     header: "You are in the Office of Moonfen Spire. Who are you talking to?",
                     options: [
-                        {id: "glintmereHeadmistressEnvaraMyrr", text: "Headmistress Envara Myrr"}
+                        { id: "glintmereHeadmistressEnvaraMyrr", text: "Headmistress Envara Myrr" }
                     ]
                 },
                     glintmereHeadmistressEnvaraMyrr: {
@@ -1199,137 +1261,135 @@ const dialogueOptions = {
                         header: `A stern-looking elf with sharp features and piercing green eyes. She wears a long, flowing robe adorned with intricate silver embroidery, and her hair is pulled back into a tight bun. As you approach, she looks up from a stack of papers with a raised eyebrow and a hint of curiosity.
                         ` + $newPara + `“Ah, a visitor. What brings you to Moonfen Spire?”`,
                         options: [
-                            { id: "envaraQuest", text: "quest name here" },
+                            { id: "glintmereSentientInkOffer", text: "The Sentient Ink" },
                             { id: "goodbye", text: "Goodbye.", goBack: true }
                         ]
                     },
-                moonfenSpireMagusHollow: {
+                        glintmereSentientInkOffer: {
+                            title: "Headmistress Envara Myrr",
+                            header: `“Oh, adventurers, what a marvel—yet a terror! A grimoire, once silent and obedient, has gained sentience. It dances across these halls, rewriting its own pages…and reality itself, if someone does not intervene. Retrieve it for me, before the words escape into chaos. But beware—books, like minds, can be clever adversaries.”`,
+                            options: [
+                                { id: "glintmereSentientInkAccept", text: "Quest Accept?" },
+                                { id: "glintmereSentientInkDecline", text: "Quest Decline?" },
+                            ]
+                        },
+                            glintmereSentientInkAccept: {
+                                title: "Headmistress Envara Myrr",
+                                header: `“Excellent! Mind the grimoire’s clever tricks. Its mischief is boundless, but so too is your resolve.”`,
+                                options: [
+                                    { id: "glintmereSentientInkComplete", text: "Quest Completed?" }
+                                ]
+                            },
+                                glintmereSentientInkComplete: {
+                                    title: "Headmistress Envara Myrr",
+                                    header: `“You’ve returned! And the grimoire… quiet once more. I am grateful beyond words. Take this reward, and may your insight continue to illuminate the Weave.”
+                                    ` + $newPara + `Envara Myrr hands you 9 gp, 180 xp, and one Arezoth Quest Completion Token.`,
+                                    options: [
+                                        { id: "goodbye", text: "Goodbye", goBack: true }
+                                    ]
+                                },
+                            glintmereSentientInkDecline: {
+                                title: "Headmistress Envara Myrr",
+                                header: `“Alas… I feared as much. Knowledge unchecked can be dangerous indeed. Should you wish to aid me later, the grimoire waits.”`,
+                                options: [
+                                    { id: "goodbye", text: "Goodbye", goBack: true }
+                                ]
+                            },
+                glintmereMoonfenSpireMagusHollow: {
                     header: "You are in the Magus Hollow. Who are you talking to?",
                     options: [
-                        {id: "glintmereErritMarwin", text: "Errit Marwin"}
+                        { id: "glintmereErritMarwin", text: "Errit Marwin" }
                     ]
                 },
                     glintmereErritMarwin: {
                         title: "Errit Marwin",
                         header: `Hello, friend. Good to see you!`,
                         options: [
-                            { id: "theHolyDeliveryQuestComplete", text: "A Holy Delivery Quest Complete?" },
-                            { id: "theUnstableCoreQuestOffer", text: "The Unstable Core" },
-                            { id: "questNameQuestOffer", text: "Quest Name" },
-                            { id: "dungeonOfTheBadGuyQuestOffer", text: "[DUNGEON] Dungeon of the Bad Guy" },
+                            { id: "glintmereHolyDeliveryQuestComplete", text: "A Holy Delivery Quest Complete?" },
+                            { id: "glintmereUnstableCoreQuestOffer", text: "The Unstable Core" },
+                            { id: "glintmereDungeonOfTheBadGuyQuestOffer", text: "[DUNGEON] Dungeon of the Bad Guy" },
                         ]
                     },
-                        theHolyDeliveryQuestComplete: {
+                        glintmereHolyDeliveryQuestComplete: {
                             title: "Errit Marwin",
                             header: `Inside the room of Magus Hollow, erratic sparks continue to burst from nearby devices. The scent of singed parchment and magical ozone clings to the air. Arcane gadgets buzz, float, and occasionally pop with harmless sparks of light. At the back of the room, Errit Marwin now stands in the flesh—no longer a mere image. He turns to greet you as you approach, his eyes lighting up with gratitude. 
                             ` + $newPara + `“Ah, splendid! You’ve returned my spellbook. With this back in hand, my work for Glintmere—and its people—can continue uninterrupted. There’s still much to do, but with help like yours, this town is in good hands.”
                             ` + $newPara + `He bows his head with quiet respect, adjusting his soot-stained sleeves. “Thank you again for your help, adventurers. May the Weave guide your path.”
-                            ` + $newPara + `Errit hands you 10 gp, 200 xp, and an Arezoth Quest Completion Token.
-                            ` + $newPara + `[DEV NOTE: This is currently the final quest available in Glintmere, as additional content for this town is still in development. In the next patch, our team will be completing additional NPCs, quests, and encounters. Thank you for your patience—and as always, enjoy your adventure in Arezoth!]`,
+                            ` + $newPara + `Errit hands you 10 gp, 200 xp, and an Arezoth Quest Completion Token.`,
                             options: [
                                 { id: "goodbye", text: "Goodbye", goBack: true }
                             ]
                         },
-                        theUnstableCoreQuestOffer: {
+                        glintmereUnstableCoreQuestOffer: {
                             title: "Errit Marwin",
-                            header: `dialogue text 
-                            ` + $newPara + `“dialogue text continued”`,
+                            header: `Inside Magus Hollow, sparks crackle from a floating battery that hovers near a workbench, humming ominously. The air smells faintly of ozone and burnt parchment. Errit Marwin paces, glancing nervously at the unstable core.
+                            ` + $newPara + `“Ah, there you are again! Excellent, just in time. My latest prototype—the Arcane Core—has become… temperamental. It thrums with energy in ways I cannot fully control. If left unchecked, it could tear the Etherwood asunder—or worse, unravel the very threads of the Weave.”
+                            ` + $newPara + `He gestures to the glowing, floating battery. “I need someone with a steady hand and a calm mind to either stabilize it… or release it safely into the deep woods. Can I count on you to prevent a magical catastrophe?”`,
                             options: [
-                                { id: "theUnstableCoreQuestAccept", text: "Quest Accept?" },
-                                { id: "theUnstableCoreQuestDecline", text: "Quest Decline?" },
+                                { id: "glintmereUnstableCoreQuestAccept", text: "Quest Accept?" },
+                                { id: "glintmereUnstableCoreQuestDecline", text: "Quest Decline?" },
                             ]
                         },
-                            theUnstableCoreQuestAccept: {
+                            glintmereUnstableCoreQuestAccept: {
                                 title: "Errit Marwin",
-                                header: `"Thank you!"`,
+                                header: `“Splendid! I knew I could rely on you. Go carefully, and remember—stability is the key. May the Weave guide your hands.”`,
                                 options: [
-                                    { id: "theUnstableCoreQuestComplete", text: "Quest Completed?" },
-                                    { id: "theUnstableCoreQuestFailed", text: "Quest Failed?" }
+                                    { id: "glintmereUnstableCoreQuestComplete", text: "Quest Completed?" }
                                 ]
                             },
-                                theUnstableCoreQuestComplete: {
+                                glintmereUnstableCoreQuestComplete: {
                                     title: "Errit Marwin",  
-                                    header: `dialogue text
-                                    ` + $newPara + `dialogue text continued`,
+                                    header: `“You’ve done it! The core hums now in perfect harmony. You have my deepest gratitude—truly, Glintmere is safer thanks to your steady hands. Take this reward as a token of my appreciation.”
+                                    ` + $newPara + `Errit Marwin gives you all 9 gp, 180 xp, and an Arezoth Quest Completion Token.`,
                                     options: [
                                         { id: "goodbye", text: "Goodbye", goBack: true }
                                     ]
                                 },
-                                theUnstableCoreQuestDecline: {
-                                    title: "Errit Marwin",
-                                    header: `"Oh...Ok..."`,
-                                    options: [
-                                        { id: "goodbye", text: "Goodbye", goBack: true }
-                                    ]
-                                },
-                        questNameQuestOffer: {
-                            title: "Errit Marwin",
-                            header: `dialogue text 
-                            ` + $newPara + `“dialogue text continued”`,
-                            options: [
-                                { id: "questNameQuestAccept", text: "Quest Accept?" },
-                                { id: "questNameQuestDecline", text: "Quest Decline?" },
-                            ]
-                        },
-                            questNameQuestAccept: {
+                            glintmereUnstableCoreQuestDecline: {
                                 title: "Errit Marwin",
-                                header: `"Thank you!"`,
-                                options: [
-                                    { id: "questNameQuestComplete", text: "Quest Completed?" },
-                                    { id: "questNameQuestFailed", text: "Quest Failed?" }
-                                ]
-                            },
-                                questNameQuestComplete: {
-                                    title: "Errit Marwin",  
-                                    header: `dialogue text
-                                    ` + $newPara + `dialogue text continued`,
-                                    options: [
-                                        { id: "goodbye", text: "Goodbye", goBack: true }
-                                    ]
-                                },
-                                questNameQuestDecline: {
-                                    title: "Errit Marwin",
-                                    header: `"Oh...Ok..."`,
-                                    options: [
-                                        { id: "goodbye", text: "Goodbye", goBack: true }
-                                    ]
-                                },
-                        dungeonOfTheBadGuyQuestOffer: {
-                            title: "Errit Marwin",
-                            header: `dialogue text 
-                            ` + $newPara + `“dialogue text continued”`,
-                            options: [
-                                { id: "dungeonOfTheBadGuyQuestAccept", text: "Quest Accept?" },
-                                { id: "dungeonOfTheBadGuyQuestDecline", text: "Quest Decline?" },
-                            ]
-                        },
-                            dungeonOfTheBadGuyQuestAccept: {
-                                title: "Errit Marwin",
-                                header: `"Thank you!"`,
-                                options: [
-                                    { id: "dungeonOfTheBadGuyQuestComplete", text: "Quest Completed?" },
-                                    { id: "dungeonOfTheBadGuyQuestFailed", text: "Quest Failed?" }
-                                ]
-                            },
-                                dungeonOfTheBadGuyQuestComplete: {
-                                    title: "Errit Marwin",  
-                                    header: `dialogue text
-                                    ` + $newPara + `dialogue text continued`,
-                                    options: [
-                                        { id: "goodbye", text: "Goodbye", goBack: true }
-                                    ]
-                                },
-                            dungeonOfTheBadGuyQuestDecline: {
-                                title: "Errit Marwin",
-                                header: `"Oh...Ok..."`,
+                                header: `“Oh… I see. Well, perhaps caution is wise, though I fear the consequences. Should you reconsider, the Arcane Core waits, humming its discordant song.”`,
                                 options: [
                                     { id: "goodbye", text: "Goodbye", goBack: true }
                                 ]
                             },
-            starbrookSanctum: {
+                        glintmereDungeonOfTheBadGuyQuestOffer: {
+                            title: "Errit Marwin",
+                            header: `Errit rubs his head in a stressful gesture.
+                            ` + $newPara + `“Adventurers. There is a place to the east of Glintmere that holds terrible things. A Bad Guy has made an old dungeon his lair and now has his forces there. He must be stopped. You must travel to the dungeon and kill The Bad Guy before he does something crazy like kill someone or some other bad thing that bad guys do.”`,
+                            options: [
+                                { id: "glintmereDungeonOfTheBadGuyQuestAccept", text: "Quest Accept?" },
+                                { id: "glintmereDungeonOfTheBadGuyQuestDecline", text: "Quest Decline?" },
+                            ]
+                        },
+                            glintmereDungeonOfTheBadGuyQuestAccept: {
+                                title: "Errit Marwin",
+                                header: `“Good! Venture forth and face the darkness. I await tales of your victory.”`,
+                                options: [
+                                    { id: "glintmereDungeonOfTheBadGuyQuestComplete", text: "Quest Completed?" }
+                                ]
+                            },
+                                glintmereDungeonOfTheBadGuyQuestComplete: {
+                                    title: "Errit Marwin",  
+                                    header: `“The Bad Guy is defeated! Your courage and skill have saved countless lives. Take this reward as a testament to your valor.”
+                                    ` + $newPara + `Errit Marwin gives you all 50 gp, 1000 xp, and an Arezoth Quest Completion Token.`,
+                                    options: [
+                                        { id: "goodbye", text: "Goodbye", goBack: true }
+                                    ]
+                                },
+                            glintmereDungeonOfTheBadGuyQuestDecline: {
+                                title: "Errit Marwin",
+                                header: `“Caution can be wise, though the darkness grows with each delay. If you reconsider, the dungeon remains… and so does the challenge.”`,
+                                options: [
+                                    { id: "goodbye", text: "Goodbye", goBack: true }
+                                ]
+                            },
+            //#endregion
+
+            //#region Starbrook Sanctum
+            glintmereStarbrookSanctum: {
                 header: "You are in the Starbrook Sanctum. Who are you talking to?",
                 options: [
-                    {id: "glintmereMiraWexley", text: "Mira Wexley"}
+                    { id: "glintmereMiraWexley", text: "Mira Wexley" }
                 ]
             },
                 glintmereMiraWexley: {
@@ -1338,7 +1398,7 @@ const dialogueOptions = {
                     ` + $newPara + `“Welcome to the Starbrook Sanctum. It’s a place of reflection and knowledge. If you have any questions about the stars or seek guidance, feel free to ask.”`,   
                     options: [
                         { 
-                            id: "miraShop", 
+                            id: "glintmereMiraShop", 
                             text: "Shop", 
                             openStore: true,
                             storeData: {
@@ -1388,14 +1448,48 @@ const dialogueOptions = {
                                 ]
                             }
                         },
-                        { id: "miraQuest", text: "Quest name here" },
+                        { id: "glintmereHerbThatWasntOffer", text: "The Herb That Wasn't" },
                         { id: "goodbye", text: "Goodbye.", goBack: true }
                     ]
                 },
-            gildedEcho: {
+                    glintmereHerbThatWasntOffer: {
+                        title: "Mira Wexley",
+                        header: `In the Veilgrove to the northeast, faint ghost-blooms shimmer between the trees. Mira Wexley bounces on her toes, hands covered in vibrant herbs.
+                        ` + $newPara + `“Oh, hello hello! You’re just in time! I need a ghost-bloom—but mind you, it only appears when no one’s looking! Blink, and it’s gone. Step lightly, move quietly, and gather it for me. Once I have it, I can brew potions that make you float, glow, or even chat with squirrels. Exciting, right?”`,
+                        options: [
+                            { id: "glintmereHerbThatWasntAccept", text: "Quest Accept?" },
+                            { id: "glintmereHerbThatWasntDecline", text: "Quest Decline?" },
+                        ]
+                    },
+                        glintmereHerbThatWasntAccept: {
+                            title: "Mira Wexley",
+                            header: `“Yay! You’re perfect for this! Be quick and quiet… the bloom is shy, but your eyes are keen.”`,
+                            options: [
+                                { id: "glintmereHerbThatWasntComplete", text: "Quest Completed?" }
+                            ]
+                        },
+                            glintmereHerbThatWasntComplete: {
+                                title: "Mira Wexley",  
+                                header: `“You did it! The ghost-bloom! Magnificent! Now I can brew my delightful potions once again. Please, accept this reward for your deftness and care.”
+                                ` + $newPara + `Mira Wexley gives you all 25 gp, 500 xp, and an Arezoth Quest Completion Token.`,
+                                options: [
+                                    { id: "goodbye", text: "Goodbye", goBack: true }
+                                ]
+                            },
+                        glintmereHerbThatWasntDecline: {
+                            title: "Mira Wexley",
+                            header: `“Oh… well, perhaps another will have better luck. The ghost-bloom waits for patient hands, should you reconsider.”`,
+                            options: [
+                                { id: "goodbye", text: "Goodbye", goBack: true }
+                            ]
+                        },
+            //#endregion
+
+            //#region Gilded Echo
+            glintmereGildedEcho: {
                 header: "You are in the Gilded Echo. Who are you talking to?",
                 options: [
-                    {id: "glintmereJasperFen", text: "Jasper “Featherlock” Fen"}
+                    { id: "glintmereJasperFen", text: "Jasper “Featherlock” Fen" }
                 ]
             },
                 glintmereJasperFen: {
@@ -1469,14 +1563,48 @@ const dialogueOptions = {
                                 ]
                             }
                         },
-                        { id: "ownerQuest", text: "Quest name here" },
+                        { id: "glintmereWingedWarningsOffer", text: "Winged Warnings" },
                         { id: "goodbye", text: "Goodbye.", goBack: true }
                     ]
                 },
-            bramble_Broth: {
+                    glintmereWingedWarningsOffer: {
+                        title: "Jasper “Featherlock” Fen",
+                        header: `Feathers drift down like snow around Jasper Fen. His druidic eyes scan the trees nervously.
+                        ` + $newPara + `“Adventurers, a storm owl familiar has vanished! I sense a shadow stirring deep within the woods to the northeast. This is no ordinary flight—dark omens trail the wings of my companion. Find it, return it, and I shall reward you for keeping the forest’s balance intact. Hurry… before the skies grow heavy with ill portent.”`,
+                        options: [
+                            { id: "glintmereWingedWarningsAccept", text: "Quest Accept?" },
+                            { id: "glintmereWingedWarningsDecline", text: "Quest Decline?" },
+                        ]
+                    },
+                        glintmereWingedWarningsAccept: {
+                            title: "Jasper “Featherlock” Fen",
+                            header: `“Excellent! Swiftly now, but be gentle. The forest and its creatures are delicate… as is your mission.”`,
+                            options: [
+                                { id: "glintmereWingedWarningsComplete", text: "Quest Completed?" }
+                            ]
+                        },
+                            glintmereWingedWarningsComplete: {
+                                title: "Jasper “Featherlock” Fen",  
+                                header: `“You’ve returned with my companion safe! Bless you, adventurers. Balance is restored to the woods. Take this reward as thanks from the trees and me.”
+                                ` + $newPara + `Jasper Fen gives you all 25 gp, 500 xp, and an Arezoth Quest Completion Token.`,
+                                options: [
+                                    { id: "goodbye", text: "Goodbye", goBack: true }
+                                ]
+                            },
+                        glintmereWingedWarningsDecline: {
+                            title: "Jasper “Featherlock” Fen",
+                            header: `“I understand. The forest can be intimidating to outsiders. Should you reconsider, the owl waits—and so do the omens.”`,
+                            options: [
+                                { id: "goodbye", text: "Goodbye", goBack: true }
+                            ]
+                        },
+            //#endregion
+
+            //#region Bramble & Broth
+            glintmereBrambleBroth: {
                 header: "You are in the Bramble & Broth. Who are you talking to?",
                 options: [
-                    {id: "glintmereZelbinCoppercloak", text: "Zelbin Coppercloak"}
+                    { id: "glintmereZelbinCoppercloak", text: "Zelbin Coppercloak" }
                 ]
             },
                 glintmereZelbinCoppercloak: {
@@ -1485,7 +1613,7 @@ const dialogueOptions = {
                     ` + $newPara + `“Looking for something special? I might have just the thing. Or maybe you’re here for a story? I’ve got plenty of those too, if you’re interested.”`,
                     options: [
                         { 
-                            id: "zelbinShop", 
+                            id: "glintmereZelbinShop", 
                             text: "Shop", 
                             openStore: true,
                             storeData: {
@@ -1541,20 +1669,57 @@ const dialogueOptions = {
                                 ]
                             }
                         },
-                        { id: "zelbinQuest", text: "Déjà Brew" }
+                        { id: "glintmereDejaBrewOffer", text: "Déjà Brew" },
+                        { id: "goodbye", text: "Goodbye.", goBack: true }
                     ]
                 },
-            wyrdwoodRoost: {
-                header: "You are in the Wyrdwood Roost. Who are you talking to?",
-                options: [
-                    {id: "", text: ""}
-                ]
+                    glintmereDejaBrewOffer: {
+                        title: "Zelbin Coppercloak",
+                        header: `The inn’s alchemical café smells of baked herbs and spiced beverages. Zelbin Coppercloak spins in a loop, as if forgetting where he is.
+                        ` + $newPara + `“Oh, wonderful! Oh… where was I? Yes! A memory bottle—a most curious thing—has wandered off. Mischievous homunculus, likely. Retrieve it, I beg you, for without it I might forget… everything! Time loops, you see. Dangerous things, memory bottles. But I trust you, yes, yes, I trust you.”`,
+                        options: [
+                            { id: "glintmereDejaBrewAccept", text: "Quest Accept?" },
+                            { id: "glintmereDejaBrewDecline", text: "Quest Decline?" },
+                        ]
+                    },
+                        glintmereDejaBrewAccept: {
+                            title: "Zelbin Coppercloak",
+                            header: `“Splendid! Follow the trail of its magic carefully. I have every faith in you!”`,
+                            options: [
+                                { id: "glintmereDejaBrewComplete", text: "Quest Completed?" }
+                            ]
+                        },
+                            glintmereDejaBrewComplete: {
+                                title: "Zelbin Coppercloak",  
+                                header: `“Ah-ha! You found it! Splendid, simply splendid! The loops of time seem kinder with your help.” Zelbin takes a drink from the memory bottle.
+                                ` + $newPara + `“Take this reward and know you’ve set my mind at ease…wait…who are you again?”
+                                ` + $newPara + `Zelbin Coppercloak gives you all 9 gp, 180 xp, and an Arezoth Quest Completion Token.`,
+                                options: [
+                                    { id: "goodbye", text: "Goodbye", goBack: true }
+                                ]
+                            },
+                        glintmereDejaBrewDecline: {
+                            title: "Zelbin Coppercloak",
+                            header: `“Oh… I see. My memory may be safer than my patience, perhaps. If you change your mind, it remains adrift.”`,
+                            options: [
+                                { id: "goodbye", text: "Goodbye", goBack: true }
+                            ]
+                        },
+            //#endregion
+
+            //#region Wyrdwood Roost
+            glintmereWyrdwoodRoost: {
+                header: "A tree-grown structure serving as a home and adoption center for magical familiars. Branches arc overhead like a cathedral, and chirps, mews, and hisses echo gently through the air. Some eyes blink at you from the rafters... and vanish. There's no one here to talk to right now.",
+                options: []
             },
-            shatterglassAtelier: {
+            //#endregion
+
+            //#region Shatterglass Atelier
+            glintmereShatterglassAtelier: {
                 header: "You are in the Shatterglass Atelier. Who are you talking to?",
                 options: [
-                    {id: "glintmereTovik", text: "Specter-Cleric Tovik"},
-                    {id: "glintmereLirael", text: "Lirael"}
+                    { id: "glintmereTovik", text: "Specter-Cleric Tovik" },
+                    { id: "glintmereLirael", text: "Lirael" }
                 ]
             },
                 glintmereTovik: {
@@ -1563,7 +1728,7 @@ const dialogueOptions = {
                     ` + $newPara + `“Welcome to the Shatterglass Atelier. I am Tovik, a cleric who has long since passed from this world. If you seek knowledge of the afterlife or guidance on matters of the spirit, I may be able to assist you.”`,
                     options: [
                         { 
-                            id: "tovikShop", 
+                            id: "glintmereTovikShop", 
                             text: "Shop", 
                             openStore: true,
                             storeData: {
@@ -1624,17 +1789,48 @@ const dialogueOptions = {
                                 ]
                             }
                         },
-                        { id: "tovikQuest", text: "Quest name here" },
+                        { id: "glintmereFaithThroughFragmentsOffer", text: "Faith Through Fragments" },
                         { id: "goodbye", text: "Goodbye.", goBack: true }
                     ]
                 },
+                    glintmereFaithThroughFragmentsOffer: {
+                        title: "Specter-Cleric Tovik",
+                        header: `The air shimmers slightly as Tovik appears, flickering like a candle flame. Dust motes swirl in his ghostly presence.
+                        ` + $newPara + `“Adventurers… I am but a shadow now, yet my purpose lingers. Three relics, broken and scattered, contain fragments of my essence. Restore them, and my flickering will stabilize. Each piece is precious… and guarded. Bring them to me, and the light of my faith will shine once more.”`,
+                        options: [
+                            { id: "glintmereFaithThroughFragmentsAccept", text: "Quest Accept?" },
+                            { id: "glintmereFaithThroughFragmentsDecline", text: "Quest Decline?" },
+                        ]
+                    },
+                        glintmereFaithThroughFragmentsAccept: {
+                            title: "Specter-Cleric Tovik",
+                            header: `“Blessed be your courage. Seek the relics with care, for each contains a piece of what I once was.”`,
+                            options: [
+                                { id: "glintmereFaithThroughFragmentsComplete", text: "Quest Completed?" }
+                            ]
+                        },
+                            glintmereFaithThroughFragmentsComplete: {
+                                title: "Specter-Cleric Tovik",  
+                                header: `“You’ve returned… with all three. My flicker steadies, my presence grows. I am in your debt. Accept this token of my gratitude, adventurers.”
+                                ` + $newPara + `Tovik gives you all 25 gp, 500 xp, and an Arezoth Quest Completion Token.`,
+                                options: [
+                                    { id: "goodbye", text: "Goodbye", goBack: true }
+                                ]
+                            },
+                        glintmereFaithThroughFragmentsDecline: {
+                            title: "Specter-Cleric Tovik",
+                            header: `“I understand… The path is perilous, and my essence remains fragile. If your heart changes, the fragments await your hands.”`,
+                            options: [
+                                { id: "goodbye", text: "Goodbye", goBack: true }
+                            ]
+                        },
                 glintmereLirael: {
                     title: "Lirael",
                     header: `A mysterious woman with long, flowing hair that seems to shimmer with an otherworldly light. Her eyes are a deep, mesmerizing shade of violet, and her voice carries a melodic quality that captivates those who listen. As you approach, she offers a warm smile and a gentle nod of acknowledgment.
                     ` + $newPara + `“Welcome to the Shatterglass Atelier. I am Lirael, a practitioner of the arcane arts. If you have any questions about magic or seek guidance on your magical journey, I may be able to assist you.”`,
                     options: [
                         { 
-                            id: "liraelShop", 
+                            id: "glintmereLiraelShop", 
                             text: "Shop", 
                             openStore: true,
                             storeData: {
@@ -1681,10 +1877,10 @@ const dialogueOptions = {
                                 ]
                             }
                         },
-                        { id: "liraelQuest", text: "Quest name here" },
                         { id: "goodbye", text: "Goodbye.", goBack: true }
                     ]
-                },  
+                },
+            //#endregion
     //#endregion
 
     //#region Barleyshade Fields
@@ -4694,7 +4890,7 @@ const dialogueOptions = {
             //#endregion
         //#endregion
     //#endregion
-            
+//#endregion
 }
 
 const rumorDialogueOptions = {
