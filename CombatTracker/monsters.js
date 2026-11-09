@@ -51599,6 +51599,107 @@ const monstersLocal = [
         GeographicalLocations: [],
         Campaigns_Worlds: ["All"],
     },
+    { // Bad Cop
+        ID: 722,
+        ParentID: null,
+        ChildrenIDs: [],
+        ProfileType: "Monster",
+        Name: "Bad Cop",
+        Type: "Medium Construct, lawful neutral",
+        TypeCategory: "Construct",
+        Size: "Medium",
+        Source: "Homebrew",
+        ArmorClass: [18, "Reinforced tactical uniform"],
+        HitPoints: 225,
+        HitPointsRoll: "30d8 + 90",
+        Speed: "40 ft.",
+        Strength: [20],
+        Dexterity: [18],
+        Constitution: [18],
+        Intelligence: [14],
+        Wisdom: [16],
+        Charisma: [16],
+        SavingThrows: ["Strength +9", "Dexterity +8", "Constitution +8", "Wisdom +7"],
+        Skills: ["Athletics +9", "Insight +7", "Intimidation +7", "Investigation +6", "Perception +7"],
+        DamageVulnerabilities: [],
+        DamageResistances: ["Psychic", "Bludgeoning, Piercing, and Slashing from nonmagical attacks"],
+        DamageImmunities: [],
+        ConditionImmunities: ["Charmed", "Frightened"],
+        Senses: ["Blindsight 60 ft.", "Passive Perception 17"],
+        Languages: "All",
+        Challenge: [12, 8400],
+        ExtraRewards: [],
+        Traits: [
+            {
+                Title: "Tactical Pursuit",
+                Desc: "The Bad Cop can move through the spaces of hostile creatures. A hostile creature whose space it moves through must succeed on a DC 17 Dexterity saving throw or be pushed 5 feet to an unoccupied space of its choice. This movement does not provoke opportunity attacks."
+            },
+            {
+                Title: "Good Cop / Bad Cop",
+                Desc: "The Bad Cop has two behavioral protocols, “Bad Cop” and “Good Cop”. It begins combat in “Bad Cop” mode. As a bonus action, it can switch between the two modes. In “Bad Cop” mode, it has advantage on Charisma (Intimidation) checks, and its weapon attacks deal an additional 2 damage. In “Good Cop” mode, it has advantage on Charisma (Persuasion) and Wisdom (Insight) checks. Additionally, when it hits a creature with an attack, the next attack roll made against that creature by an ally of the Bad Cop before the start of the Bad Cop's next turn has advantage."
+            },
+            {
+                Title: "Arrest Protocol",
+                Desc: "The Bad Cop has advantage on attack rolls against creatures that are grappled, restrained, or prone."
+            }
+        ],
+        Actions: [
+            {
+                Title: "Multiattack",
+                Desc: "The Bad Cop makes three attacks, using its Unarmed Strike, Baton Strike, or Handgun attacks in any combination."
+            },
+            {
+                Title: "Unarmed Strike",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+            },
+            {
+                Title: "Baton Strike",
+                Desc: "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage. If the target is Large or smaller, it must succeed on a DC 17 Strength saving throw or be knocked prone."
+            },
+            {
+                Title: "Handgun",
+                Desc: "Ranged Weapon Attack: +8 to hit, range 60/180 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+            },
+            {
+                Title: "You're Under Arrest! (Recharge 5–6)",
+                Desc: "The Bad Cop attempts to restrain one Large or smaller creature within 5 feet. The target must succeed on a DC 17 Dexterity saving throw or become restrained by digital handcuffs on its arms and legs (like the wrap). While restrained this way, the creature's speed is 0, and it cannot benefit from bonuses to its speed. The target can use its action to make a DC 17 Strength (Athletics) or Dexterity (Acrobatics) check, ending the restraint on a success. The handcuffs also disappear if the Bad Cop is incapacitated or chooses to release the target."
+            }
+        ],
+        BonusActions: [
+            {
+                Title: "Protocol Switch",
+                Desc: "The Bad Cop switches between “Good Cop” and “Bad Cop” mode, activating the benefits of the selected mode."
+            },
+            {
+                Title: "Tactical Dash",
+                Desc: "The Bad Cop takes the Dash or Disengage action."
+            }
+        ],
+        Reactions: [
+            {
+                Title: "Take Cover!",
+                Desc: "When the Bad Cop is hit by a ranged weapon attack, it can reduce the damage by 10 (1d10 + 5) as it quickly shifts behind available cover."
+            },
+            {
+                Title: "Not So Fast!",
+                Desc: "When a creature within 5 feet of the Bad Cop attempts to move away from it, the Bad Cop can make one Baton Strike against that creature."
+            }
+        ],
+        LegendaryActions: [],
+        RegionalEffects: [],
+        LairActions: [],
+        Description: "- Role: Bad Cop is the developers' second-line security solution, deployed when the World Agent is unavailable. While the Agent represents the world's ultimate enforcement mechanism, Bad Cop represents conventional authority taken to an unreasonable extreme.<br>" + 
+            "- Appearance: A stocky, sharply dressed officer approaches with a perfectly maintained uniform, polished badge, and a stern expression. His posture is rigid, his voice is loud, and his patience is practically nonexistent. He carries himself like the entire world is his jurisdiction and every person in it is a suspect.<br>" +
+            "- Combat Style: Unlike World Agent, Bad Cop cannot phase through solid objects, run along walls, or move at impossible speeds. He is, however, exceptionally strong, remarkably durable, and highly trained in combat. He favors direct confrontation, tactical positioning, and overwhelming opponents with a relentless combination of baton strikes and handgun fire.<br>" +
+            "- Personality: His personality is as much a weapon as his equipment. In Bad Cop mode, he is aggressive, threatening, and quick to resort to force. In Good Cop mode, he becomes unexpectedly polite and reassuring, attempting to manipulate suspects into cooperating. The shift can be abrupt, awkward, and unsettling.<br>" +
+            "- Behavior: Bad Cop is not particularly subtle. He announces violations, demands compliance, and treats nearly every interaction as a police matter. He may interrupt a conversation to demand identification, accuse someone of resisting arrest for simply disagreeing with him, or loudly declare that an individual is making things worse for themselves.<br>" + 
+            "- Catchphrase: “You have the right to remain silent. I strongly suggest you exercise it.”<br>" +
+            "- Summary: Bad Cop may not be the strongest thing the system can deploy, but he is still a formidable opponent. He is the law enforcement backup that the developers send when their most dangerous weapon is no longer available.",
+        Environments: ["Any"],
+        PlaneOfExistence: ["Material Plane"],
+        GeographicalLocations: [],
+        Campaigns_Worlds: ["Untitled NPC World"]
+    },
 ];
 
 const siegeLocal = [
